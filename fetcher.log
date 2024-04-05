@@ -1567,3 +1567,19 @@
 [2024-04-06 01:45:20] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.1.0.tar.gz]
 [2024-04-06 01:45:20] INFO root fetch - main [MainThread]: End processing [open-samus-returns-rando]: success
 [2024-04-06 01:45:20] INFO root fetch - main [MainThread]: Store serial: [22643075]
+[2024-04-06 01:47:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643075]
+[2024-04-06 01:47:28] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 01:49:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643075]
+[2024-04-06 01:49:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 01:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-04-06 01:49:33] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240405.248] Old Version: [0.44.20240319.246]
+[2024-04-06 01:49:34] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/a3/64/13956e1364cb60d24171f276349eadd95f6609b66c7feed8a1cec28b805a/pkscreener-0.44.20240319.246.tar.gz
+[2024-04-06 01:49:34] WARNING root fetch - processPackages [pkscreener]: Timeout reached during download
+[2024-04-06 01:49:34] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/5c/0d/ceb9da6e3e73601f4c9d68fcc3079bcd79bb9feb3f7cd21868df17e6120b/pkscreener-0.44.20240405.248.tar.gz
+[2024-04-06 01:49:34] WARNING root fetch - processPackages [pkscreener]: Timeout reached during download
+[2024-04-06 01:49:34] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-06 01:49:34] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240319.246.tar.gz tmp/pkscreener-0.44.20240405.248.tar.gz --markdown 20240406/p/pkscreener/0.44.20240319.246-0.44.20240405.248/diff.md --exclude *.pyd
+[2024-04-06 01:49:35] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240319.246.tar.gz]
+[2024-04-06 01:49:35] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240405.248.tar.gz]
+[2024-04-06 01:49:35] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-06 01:49:35] INFO root fetch - main [MainThread]: Store serial: [22643078]
