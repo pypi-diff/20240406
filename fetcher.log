@@ -1506,3 +1506,39 @@
 [2024-04-06 01:40:59] WARNING root fetch - processPackages [act-atmos]: Skipping package: exceeds size limit 12967331>=10485760
 [2024-04-06 01:40:59] INFO root fetch - main [MainThread]: End processing [act-atmos] error
 [2024-04-06 01:40:59] INFO root fetch - main [MainThread]: Store serial: [22643060]
+[2024-04-06 01:43:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643060]
+[2024-04-06 01:43:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 01:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edgedb-pydantic-codegen
+[2024-04-06 01:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-circleci-oidc
+[2024-04-06 01:43:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flask-terminal
+[2024-04-06 01:43:08] INFO root fetch - processPackages [cdk-circleci-oidc]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 01:43:08] INFO root fetch - processPackages [cdk-circleci-oidc]: Downloading https://files.pythonhosted.org/packages/02/f1/e758079ab1e7dcb0059fb29335d499bd4530aee0cf679fad458b92163c1e/cdk-circleci-oidc-0.0.2.tar.gz
+[2024-04-06 01:43:08] INFO root fetch - processPackages [flask-terminal]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-06 01:43:08] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.4.0] Old Version: [2024.3.4]
+[2024-04-06 01:43:08] WARNING root fetch - processPackages [cdk-circleci-oidc]: Timeout reached during download
+[2024-04-06 01:43:08] INFO root fetch - processPackages [flask-terminal]: Downloading https://files.pythonhosted.org/packages/71/09/0f67c2019d9d12a4dc24c0314b4754795d8d4ae8ad85c3a74bbfd25900b2/flask_terminal-0.1.0.tar.gz
+[2024-04-06 01:43:08] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/17/6e/b83f13d810f28e247f0eb3a42ef4658c60a0dfb97ddc4bdd5373d4ee34f1/edgedb_pydantic_codegen-2024.3.4.tar.gz
+[2024-04-06 01:43:08] INFO root fetch - processPackages [cdk-circleci-oidc]: Downloading https://files.pythonhosted.org/packages/2c/89/8bb66fa8903fdb75621744d2b9a652f8841b11a1ba45c5fcea90444b47c2/cdk-circleci-oidc-0.0.3.tar.gz
+[2024-04-06 01:43:08] WARNING root fetch - processPackages [flask-terminal]: Timeout reached during download
+[2024-04-06 01:43:08] WARNING root fetch - processPackages [edgedb-pydantic-codegen]: Timeout reached during download
+[2024-04-06 01:43:08] WARNING root fetch - processPackages [cdk-circleci-oidc]: Timeout reached during download
+[2024-04-06 01:43:08] INFO root fetch - processPackages [cdk-circleci-oidc]: executing diffoscope
+[2024-04-06 01:43:08] INFO root fetch - processPackages [cdk-circleci-oidc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-circleci-oidc-0.0.2.tar.gz tmp/cdk-circleci-oidc-0.0.3.tar.gz --markdown 20240406/c/cdk-circleci-oidc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 01:43:09] INFO root fetch - processPackages [flask-terminal]: Downloading https://files.pythonhosted.org/packages/24/cd/02227b63f0255f04a3ba90b6fa724a67550b09fd5384ec4bd7307cb4d7c1/flask_terminal-0.2.0.tar.gz
+[2024-04-06 01:43:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/f1/23/478668d27e67053beae06688ee87a0810a918c39526edb66e8a6137a0b36/edgedb_pydantic_codegen-2024.4.0.tar.gz
+[2024-04-06 01:43:09] WARNING root fetch - processPackages [edgedb-pydantic-codegen]: Timeout reached during download
+[2024-04-06 01:43:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-04-06 01:43:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.3.4.tar.gz tmp/edgedb_pydantic_codegen-2024.4.0.tar.gz --markdown 20240406/e/edgedb-pydantic-codegen/2024.3.4-2024.4.0/diff.md --exclude *.pyd
+[2024-04-06 01:43:09] WARNING root fetch - processPackages [flask-terminal]: Timeout reached during download
+[2024-04-06 01:43:09] INFO root fetch - processPackages [flask-terminal]: executing diffoscope
+[2024-04-06 01:43:09] INFO root fetch - processPackages [flask-terminal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_terminal-0.1.0.tar.gz tmp/flask_terminal-0.2.0.tar.gz --markdown 20240406/f/flask-terminal/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 01:43:09] INFO root fetch - processPackages [cdk-circleci-oidc]: Remove: archive file [/home/abi/fetcher/tmp/cdk-circleci-oidc-0.0.2.tar.gz]
+[2024-04-06 01:43:09] INFO root fetch - processPackages [cdk-circleci-oidc]: Remove: archive file [/home/abi/fetcher/tmp/cdk-circleci-oidc-0.0.3.tar.gz]
+[2024-04-06 01:43:09] INFO root fetch - main [MainThread]: End processing [cdk-circleci-oidc]: success
+[2024-04-06 01:43:09] INFO root fetch - processPackages [flask-terminal]: Remove: archive file [/home/abi/fetcher/tmp/flask_terminal-0.1.0.tar.gz]
+[2024-04-06 01:43:09] INFO root fetch - processPackages [flask-terminal]: Remove: archive file [/home/abi/fetcher/tmp/flask_terminal-0.2.0.tar.gz]
+[2024-04-06 01:43:09] INFO root fetch - main [MainThread]: End processing [flask-terminal]: success
+[2024-04-06 01:43:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.3.4.tar.gz]
+[2024-04-06 01:43:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.0.tar.gz]
+[2024-04-06 01:43:09] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-04-06 01:43:09] INFO root fetch - main [MainThread]: Store serial: [22643069]
