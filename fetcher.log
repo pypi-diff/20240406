@@ -1,0 +1,14 @@
+[2024-04-06 00:00:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642361]
+[2024-04-06 00:00:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 00:00:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-04-06 00:00:35] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.133] Old Version: [0.1.132]
+[2024-04-06 00:00:35] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/16/9e/5ec7bd7c398d060c5e4cb64029d4d6e98539029c83fccdbdabc6070f07bd/ansar-connect-0.1.132.tar.gz
+[2024-04-06 00:00:35] WARNING root fetch - processPackages [ansar-connect]: Timeout reached during download
+[2024-04-06 00:00:36] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/9b/39/cc378379f38e80dda29a7bb6ec5dd0d138557e7021d7b5de2d5a70b0d8fc/ansar-connect-0.1.133.tar.gz
+[2024-04-06 00:00:36] WARNING root fetch - processPackages [ansar-connect]: Timeout reached during download
+[2024-04-06 00:00:36] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-06 00:00:36] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar-connect-0.1.132.tar.gz tmp/ansar-connect-0.1.133.tar.gz --markdown 20240406/a/ansar-connect/0.1.132-0.1.133/diff.md --exclude *.pyd
+[2024-04-06 00:00:37] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.132.tar.gz]
+[2024-04-06 00:00:37] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.133.tar.gz]
+[2024-04-06 00:00:37] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-06 00:00:37] INFO root fetch - main [MainThread]: Store serial: [22642371]
