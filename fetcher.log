@@ -610,3 +610,50 @@
 [2024-04-06 00:37:38] INFO root fetch - processPackages [pulumiverse-fortios]: Remove: archive file [/home/abi/fetcher/tmp/pulumiverse_fortios-0.0.4.tar.gz]
 [2024-04-06 00:37:38] INFO root fetch - main [MainThread]: End processing [pulumiverse-fortios]: success
 [2024-04-06 00:37:38] INFO root fetch - main [MainThread]: Store serial: [22642675]
+[2024-04-06 00:39:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642675]
+[2024-04-06 00:39:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 00:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-energy
+[2024-04-06 00:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: shuttleai
+[2024-04-06 00:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-uwg
+[2024-04-06 00:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PHX
+[2024-04-06 00:39:47] INFO root fetch - processPackages [shuttleai]: New version: [3.8.4] Old Version: [3.8.3]
+[2024-04-06 00:39:47] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-06 00:39:47] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-06 00:39:47] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/a6/3c/7afbd082f170d8d51ed57abdf8bb67058ca404ede70f9d982fd95c8bb807/dragonfly-uwg-0.5.98.tar.gz
+[2024-04-06 00:39:47] INFO root fetch - processPackages [PHX]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-06 00:39:47] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/e5/26/7f63d8ba446fc4d5a9c5e4ff343aa81ff003e9e02a0024c53c8bce14e0b3/shuttleai-3.8.3.tar.gz
+[2024-04-06 00:39:48] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [shuttleai]: Timeout reached during download
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [dragonfly-uwg]: Timeout reached during download
+[2024-04-06 00:39:48] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/ad/48/a9b966f484d5fbfbde35e2c15c1211cc18359a09978bfbaafcd30f095d50/PHX-1.8.1.tar.gz
+[2024-04-06 00:39:48] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/55/b3/3f9a36d82b87f343d4e196e93a8cf3e838b9c80b0849f927d4f3505355af/dragonfly-uwg-0.5.99.tar.gz
+[2024-04-06 00:39:48] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/02/2a/23f0da184cbb2429d25999161b58cb364bb92c8e94c33a9f8cace0c0b903/shuttleai-3.8.4.tar.gz
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [PHX]: Timeout reached during download
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [dragonfly-uwg]: Timeout reached during download
+[2024-04-06 00:39:48] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2024-04-06 00:39:48] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20240406/d/dragonfly-uwg/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [shuttleai]: Timeout reached during download
+[2024-04-06 00:39:48] INFO root fetch - processPackages [shuttleai]: executing diffoscope
+[2024-04-06 00:39:48] INFO root fetch - processPackages [shuttleai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleai-3.8.3.tar.gz tmp/shuttleai-3.8.4.tar.gz --markdown 20240406/s/shuttleai/3.8.3-3.8.4/diff.md --exclude *.pyd
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [dragonfly-energy]: Timeout reached during download
+[2024-04-06 00:39:48] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-04-06 00:39:48] INFO root fetch - processPackages [PHX]: Downloading https://files.pythonhosted.org/packages/d5/cf/427f0ced8ef3cc98e22c877b4eb980575483e2cf3ac2387f5e901120b744/PHX-1.9.0.tar.gz
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [dragonfly-energy]: Timeout reached during download
+[2024-04-06 00:39:48] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-04-06 00:39:48] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240406/d/dragonfly-energy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2024-04-06 00:39:48] WARNING root fetch - processPackages [PHX]: Timeout reached during download
+[2024-04-06 00:39:48] INFO root fetch - processPackages [PHX]: executing diffoscope
+[2024-04-06 00:39:48] INFO root fetch - processPackages [PHX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PHX-1.8.1.tar.gz tmp/PHX-1.9.0.tar.gz --markdown 20240406/P/PHX/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2024-04-06 00:39:48] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.8.3.tar.gz]
+[2024-04-06 00:39:48] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.8.4.tar.gz]
+[2024-04-06 00:39:48] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
+[2024-04-06 00:39:49] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.98.tar.gz]
+[2024-04-06 00:39:49] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
+[2024-04-06 00:39:49] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2024-04-06 00:39:49] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-04-06 00:39:49] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-04-06 00:39:49] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-04-06 00:39:49] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.8.1.tar.gz]
+[2024-04-06 00:39:49] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.9.0.tar.gz]
+[2024-04-06 00:39:49] INFO root fetch - main [MainThread]: End processing [PHX]: success
+[2024-04-06 00:39:49] INFO root fetch - main [MainThread]: Store serial: [22642686]
