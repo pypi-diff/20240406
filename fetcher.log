@@ -1403,3 +1403,39 @@
 [2024-04-06 01:30:10] INFO root fetch - processPackages [headjack-keymaker]: Remove: archive file [/home/abi/fetcher/tmp/headjack_keymaker-0.9.2.tar.gz]
 [2024-04-06 01:30:10] INFO root fetch - main [MainThread]: End processing [headjack-keymaker]: success
 [2024-04-06 01:30:10] INFO root fetch - main [MainThread]: Store serial: [22642960]
+[2024-04-06 01:32:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642960]
+[2024-04-06 01:32:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 01:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vision-agent
+[2024-04-06 01:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auto-sdk
+[2024-04-06 01:32:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: savemoney
+[2024-04-06 01:32:19] INFO root fetch - processPackages [auto-sdk]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-06 01:32:19] INFO root fetch - processPackages [vision-agent]: New version: [0.0.48] Old Version: [0.0.47]
+[2024-04-06 01:32:19] INFO root fetch - processPackages [savemoney]: New version: [0.2.9] Old Version: [0.2.8b2]
+[2024-04-06 01:32:19] INFO root fetch - processPackages [auto-sdk]: Downloading https://files.pythonhosted.org/packages/e5/aa/e9b778a0933172c1b7bc2d4a245e0c244c840e82975ea020b82a195d2423/auto-sdk-0.1.2.tar.gz
+[2024-04-06 01:32:20] INFO root fetch - processPackages [vision-agent]: Downloading https://files.pythonhosted.org/packages/17/6b/c2fd58f3b2ad0810672e1801afa951997bc1c6757f755d7571dbbf079d0c/vision_agent-0.0.47.tar.gz
+[2024-04-06 01:32:20] WARNING root fetch - processPackages [auto-sdk]: Timeout reached during download
+[2024-04-06 01:32:20] INFO root fetch - processPackages [savemoney]: Downloading https://files.pythonhosted.org/packages/6c/13/a1a93e0c185d626dcf4a874180aa7a639ff876b6d42cd1a48f53546000ac/savemoney-0.2.8b2.tar.gz
+[2024-04-06 01:32:20] WARNING root fetch - processPackages [vision-agent]: Timeout reached during download
+[2024-04-06 01:32:20] INFO root fetch - processPackages [auto-sdk]: Downloading https://files.pythonhosted.org/packages/b3/14/fb5385d1c33877a9e3cb552edb8cbd4b261c6b4c6692697f0f9d911740a7/auto-sdk-0.1.3.tar.gz
+[2024-04-06 01:32:20] WARNING root fetch - processPackages [savemoney]: Timeout reached during download
+[2024-04-06 01:32:20] INFO root fetch - processPackages [vision-agent]: Downloading https://files.pythonhosted.org/packages/7c/f7/0f95b95f938ca5200ae6a859fd5c4878324a4e3573624a9a9feda021ab0c/vision_agent-0.0.48.tar.gz
+[2024-04-06 01:32:20] WARNING root fetch - processPackages [auto-sdk]: Timeout reached during download
+[2024-04-06 01:32:20] INFO root fetch - processPackages [auto-sdk]: executing diffoscope
+[2024-04-06 01:32:20] INFO root fetch - processPackages [auto-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto-sdk-0.1.2.tar.gz tmp/auto-sdk-0.1.3.tar.gz --markdown 20240406/a/auto-sdk/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-06 01:32:20] WARNING root fetch - processPackages [vision-agent]: Timeout reached during download
+[2024-04-06 01:32:20] INFO root fetch - processPackages [vision-agent]: executing diffoscope
+[2024-04-06 01:32:20] INFO root fetch - processPackages [vision-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vision_agent-0.0.47.tar.gz tmp/vision_agent-0.0.48.tar.gz --markdown 20240406/v/vision-agent/0.0.47-0.0.48/diff.md --exclude *.pyd
+[2024-04-06 01:32:20] INFO root fetch - processPackages [savemoney]: Downloading https://files.pythonhosted.org/packages/a9/9a/5ba41b65cfe3d107996e156a4076cd66d718ba3fa191aa62cc52a9514fb0/savemoney-0.2.9.tar.gz
+[2024-04-06 01:32:20] WARNING root fetch - processPackages [savemoney]: Timeout reached during download
+[2024-04-06 01:32:20] INFO root fetch - processPackages [savemoney]: executing diffoscope
+[2024-04-06 01:32:20] INFO root fetch - processPackages [savemoney]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/savemoney-0.2.8b2.tar.gz tmp/savemoney-0.2.9.tar.gz --markdown 20240406/s/savemoney/0.2.8b2-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 01:32:20] INFO root fetch - processPackages [auto-sdk]: Remove: archive file [/home/abi/fetcher/tmp/auto-sdk-0.1.2.tar.gz]
+[2024-04-06 01:32:20] INFO root fetch - processPackages [auto-sdk]: Remove: archive file [/home/abi/fetcher/tmp/auto-sdk-0.1.3.tar.gz]
+[2024-04-06 01:32:20] INFO root fetch - main [MainThread]: End processing [auto-sdk]: success
+[2024-04-06 01:32:21] INFO root fetch - processPackages [vision-agent]: Remove: archive file [/home/abi/fetcher/tmp/vision_agent-0.0.47.tar.gz]
+[2024-04-06 01:32:21] INFO root fetch - processPackages [vision-agent]: Remove: archive file [/home/abi/fetcher/tmp/vision_agent-0.0.48.tar.gz]
+[2024-04-06 01:32:21] INFO root fetch - main [MainThread]: End processing [vision-agent]: success
+[2024-04-06 01:32:22] INFO root fetch - processPackages [savemoney]: Remove: archive file [/home/abi/fetcher/tmp/savemoney-0.2.8b2.tar.gz]
+[2024-04-06 01:32:22] INFO root fetch - processPackages [savemoney]: Remove: archive file [/home/abi/fetcher/tmp/savemoney-0.2.9.tar.gz]
+[2024-04-06 01:32:22] INFO root fetch - main [MainThread]: End processing [savemoney]: success
+[2024-04-06 01:32:22] INFO root fetch - main [MainThread]: Store serial: [22643012]
