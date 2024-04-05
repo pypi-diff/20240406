@@ -1227,3 +1227,51 @@
 [2024-04-06 01:16:48] INFO root fetch - processPackages [optilogic]: Remove: archive file [/home/abi/fetcher/tmp/optilogic-2.9.0-py3-none-any.whl.zip]
 [2024-04-06 01:16:48] INFO root fetch - main [MainThread]: End processing [optilogic]: success
 [2024-04-06 01:16:48] INFO root fetch - main [MainThread]: Store serial: [22642907]
+[2024-04-06 01:18:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642907]
+[2024-04-06 01:18:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 01:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atopile
+[2024-04-06 01:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: derived-product-database
+[2024-04-06 01:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: derived-product-database
+[2024-04-06 01:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dragonfly-schema
+[2024-04-06 01:18:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: derived-product-database
+[2024-04-06 01:18:56] INFO root fetch - processPackages [atopile]: New version: [0.3.0.dev0] Old Version: [0.2.9]
+[2024-04-06 01:18:56] INFO root fetch - processPackages [atopile]: Downloading https://files.pythonhosted.org/packages/b9/4b/f9ec536fd464d0e26a65a2027efe19630c4f5dbd38d7329e74df46ff0a91/atopile-0.2.9.tar.gz
+[2024-04-06 01:18:56] INFO root fetch - processPackages [dragonfly-schema]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-06 01:18:56] INFO root fetch - processPackages [derived-product-database]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 01:18:56] INFO root fetch - processPackages [derived-product-database]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 01:18:56] INFO root fetch - processPackages [derived-product-database]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 01:18:56] WARNING root fetch - processPackages [atopile]: Skipping package: exceeds size limit 25663075>=10485760
+[2024-04-06 01:18:56] INFO root fetch - main [MainThread]: End processing [atopile] error
+[2024-04-06 01:18:57] INFO root fetch - processPackages [dragonfly-schema]: Downloading https://files.pythonhosted.org/packages/aa/e2/bcac8ea300eeeb0279f6f2514a0acbac6333a1faf1455af1c2be2ef191a5/dragonfly-schema-1.9.8.tar.gz
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/4b/f2/6cffd95899daf80197f9b1c2de8852d912922c288db0453c70202e9bb11e/derived-product-database-0.0.4.tar.gz
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/4b/f2/6cffd95899daf80197f9b1c2de8852d912922c288db0453c70202e9bb11e/derived-product-database-0.0.4.tar.gz
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/4b/f2/6cffd95899daf80197f9b1c2de8852d912922c288db0453c70202e9bb11e/derived-product-database-0.0.4.tar.gz
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [dragonfly-schema]: Timeout reached during download
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:18:57] INFO root fetch - processPackages [dragonfly-schema]: Downloading https://files.pythonhosted.org/packages/9c/5f/ed2f74b91cc0705cb8b21da19bcd6de5277af21290a49695e0e464c4ef08/dragonfly-schema-1.9.9.tar.gz
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/53/10/7141c386c6af0ffc7473bcf18947dc031f1aca7708cfecc063c09ba3adbd/derived-product-database-0.0.5.tar.gz
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/53/10/7141c386c6af0ffc7473bcf18947dc031f1aca7708cfecc063c09ba3adbd/derived-product-database-0.0.5.tar.gz
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/53/10/7141c386c6af0ffc7473bcf18947dc031f1aca7708cfecc063c09ba3adbd/derived-product-database-0.0.5.tar.gz
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [dragonfly-schema]: Timeout reached during download
+[2024-04-06 01:18:57] INFO root fetch - processPackages [dragonfly-schema]: executing diffoscope
+[2024-04-06 01:18:57] INFO root fetch - processPackages [dragonfly-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-schema-1.9.8.tar.gz tmp/dragonfly-schema-1.9.9.tar.gz --markdown 20240406/d/dragonfly-schema/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: executing diffoscope
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/derived-product-database-0.0.4.tar.gz tmp/derived-product-database-0.0.5.tar.gz --markdown 20240406/d/derived-product-database/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: executing diffoscope
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/derived-product-database-0.0.4.tar.gz tmp/derived-product-database-0.0.5.tar.gz --markdown 20240406/d/derived-product-database/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 01:18:57] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: executing diffoscope
+[2024-04-06 01:18:57] INFO root fetch - processPackages [derived-product-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/derived-product-database-0.0.4.tar.gz tmp/derived-product-database-0.0.5.tar.gz --markdown 20240406/d/derived-product-database/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 01:18:58] INFO root fetch - processPackages [derived-product-database]: Remove: archive file [/home/abi/fetcher/tmp/derived-product-database-0.0.4.tar.gz]
+[2024-04-06 01:18:58] INFO root fetch - processPackages [derived-product-database]: Remove: archive file [/home/abi/fetcher/tmp/derived-product-database-0.0.5.tar.gz]
+[2024-04-06 01:18:58] INFO root fetch - main [MainThread]: End processing [derived-product-database]: success
+[2024-04-06 01:18:58] INFO root fetch - processPackages [dragonfly-schema]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-schema-1.9.8.tar.gz]
+[2024-04-06 01:18:58] INFO root fetch - processPackages [dragonfly-schema]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-schema-1.9.9.tar.gz]
+[2024-04-06 01:18:58] INFO root fetch - main [MainThread]: End processing [dragonfly-schema]: success
+[2024-04-06 01:18:58] INFO root fetch - main [MainThread]: End processing [derived-product-database]: success
+[2024-04-06 01:18:58] INFO root fetch - main [MainThread]: End processing [derived-product-database]: success
+[2024-04-06 01:18:58] INFO root fetch - main [MainThread]: Store serial: [22642921]
