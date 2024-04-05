@@ -326,3 +326,17 @@
 [2024-04-06 00:22:18] INFO root fetch - processPackages [tecton]: Remove: archive file [/home/abi/fetcher/tmp/tecton-0.9.0rc4.tar.gz]
 [2024-04-06 00:22:18] INFO root fetch - main [MainThread]: End processing [tecton]: success
 [2024-04-06 00:22:18] INFO root fetch - main [MainThread]: Store serial: [22642602]
+[2024-04-06 00:24:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642602]
+[2024-04-06 00:24:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 00:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: automation-tools
+[2024-04-06 00:24:27] INFO root fetch - processPackages [automation-tools]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-06 00:24:27] INFO root fetch - processPackages [automation-tools]: Downloading https://files.pythonhosted.org/packages/2f/e9/78f0213ae233a1783de56bce112fcf7237b1e1a9174972d586a0f5509936/automation_tools-1.0.6.tar.gz
+[2024-04-06 00:24:27] WARNING root fetch - processPackages [automation-tools]: Timeout reached during download
+[2024-04-06 00:24:28] INFO root fetch - processPackages [automation-tools]: Downloading https://files.pythonhosted.org/packages/81/bb/44b331789627c3bfe3156c5c16e3e5a805c6c2ff984bfd227c2e5b914264/automation_tools-1.0.7.tar.gz
+[2024-04-06 00:24:28] WARNING root fetch - processPackages [automation-tools]: Timeout reached during download
+[2024-04-06 00:24:28] INFO root fetch - processPackages [automation-tools]: executing diffoscope
+[2024-04-06 00:24:28] INFO root fetch - processPackages [automation-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/automation_tools-1.0.6.tar.gz tmp/automation_tools-1.0.7.tar.gz --markdown 20240406/a/automation-tools/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2024-04-06 00:24:28] INFO root fetch - processPackages [automation-tools]: Remove: archive file [/home/abi/fetcher/tmp/automation_tools-1.0.6.tar.gz]
+[2024-04-06 00:24:28] INFO root fetch - processPackages [automation-tools]: Remove: archive file [/home/abi/fetcher/tmp/automation_tools-1.0.7.tar.gz]
+[2024-04-06 00:24:28] INFO root fetch - main [MainThread]: End processing [automation-tools]: success
+[2024-04-06 00:24:28] INFO root fetch - main [MainThread]: Store serial: [22642605]
