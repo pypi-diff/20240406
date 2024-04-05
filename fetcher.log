@@ -909,3 +909,39 @@
 [2024-04-06 00:55:01] INFO root fetch - processPackages [superagent-py]: Remove: archive file [/home/abi/fetcher/tmp/superagent_py-0.2.26.tar.gz]
 [2024-04-06 00:55:01] INFO root fetch - main [MainThread]: End processing [superagent-py]: success
 [2024-04-06 00:55:01] INFO root fetch - main [MainThread]: Store serial: [22642825]
+[2024-04-06 00:57:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642825]
+[2024-04-06 00:57:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 00:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modgeosys-graph-algorithms
+[2024-04-06 00:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: agt-server
+[2024-04-06 00:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dkist-processing-ops
+[2024-04-06 00:57:09] INFO root fetch - processPackages [modgeosys-graph-algorithms]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 00:57:09] INFO root fetch - processPackages [dkist-processing-ops]: New version: [1.0.0rc4] Old Version: [1.0.0rc3]
+[2024-04-06 00:57:09] INFO root fetch - processPackages [agt-server]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-06 00:57:10] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/e9/5b/a01700e00d0f6c893b5254267cfeefb41e644420ff8096f032913980449f/modgeosys_graph_algorithms-0.1.0.tar.gz
+[2024-04-06 00:57:10] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/c7/7f/417c55c51be754437fcfeaa64ad3ef5658a7fb1f6b9d675fdaf8c0369958/agt_server-1.2.4.tar.gz
+[2024-04-06 00:57:10] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-06 00:57:10] INFO root fetch - processPackages [dkist-processing-ops]: Downloading https://files.pythonhosted.org/packages/16/1c/f2fed73363d8502c208e31fb69d5bf3e74c9cbebe6ca29d9114531d1a158/dkist-processing-ops-1.0.0rc3.tar.gz
+[2024-04-06 00:57:10] WARNING root fetch - processPackages [agt-server]: Timeout reached during download
+[2024-04-06 00:57:10] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/6f/b6/e6bc59391d3421fa7ccf66c4bc75d04b5ffb2a970a7366432cc3b523b938/modgeosys_graph_algorithms-0.1.1.tar.gz
+[2024-04-06 00:57:10] WARNING root fetch - processPackages [dkist-processing-ops]: Timeout reached during download
+[2024-04-06 00:57:10] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/10/f3/d29f3c58bdb66e845db394eb5d2dab95c5acbd53e545d48f769f2fe31a14/agt_server-1.2.5.tar.gz
+[2024-04-06 00:57:10] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-06 00:57:10] INFO root fetch - processPackages [modgeosys-graph-algorithms]: executing diffoscope
+[2024-04-06 00:57:10] INFO root fetch - processPackages [modgeosys-graph-algorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modgeosys_graph_algorithms-0.1.0.tar.gz tmp/modgeosys_graph_algorithms-0.1.1.tar.gz --markdown 20240406/m/modgeosys-graph-algorithms/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 00:57:10] INFO root fetch - processPackages [dkist-processing-ops]: Downloading https://files.pythonhosted.org/packages/5b/fb/7c600ad98124f0a003ea8e1570d21e596db017f180f32dfa38a30e15e42b/dkist-processing-ops-1.0.0rc4.tar.gz
+[2024-04-06 00:57:10] WARNING root fetch - processPackages [agt-server]: Timeout reached during download
+[2024-04-06 00:57:10] INFO root fetch - processPackages [agt-server]: executing diffoscope
+[2024-04-06 00:57:10] INFO root fetch - processPackages [agt-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agt_server-1.2.4.tar.gz tmp/agt_server-1.2.5.tar.gz --markdown 20240406/a/agt-server/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2024-04-06 00:57:10] WARNING root fetch - processPackages [dkist-processing-ops]: Timeout reached during download
+[2024-04-06 00:57:10] INFO root fetch - processPackages [dkist-processing-ops]: executing diffoscope
+[2024-04-06 00:57:10] INFO root fetch - processPackages [dkist-processing-ops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dkist-processing-ops-1.0.0rc3.tar.gz tmp/dkist-processing-ops-1.0.0rc4.tar.gz --markdown 20240406/d/dkist-processing-ops/1.0.0rc3-1.0.0rc4/diff.md --exclude *.pyd
+[2024-04-06 00:57:11] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.1.0.tar.gz]
+[2024-04-06 00:57:11] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.1.1.tar.gz]
+[2024-04-06 00:57:11] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
+[2024-04-06 00:57:11] INFO root fetch - processPackages [dkist-processing-ops]: Remove: archive file [/home/abi/fetcher/tmp/dkist-processing-ops-1.0.0rc3.tar.gz]
+[2024-04-06 00:57:11] INFO root fetch - processPackages [dkist-processing-ops]: Remove: archive file [/home/abi/fetcher/tmp/dkist-processing-ops-1.0.0rc4.tar.gz]
+[2024-04-06 00:57:11] INFO root fetch - main [MainThread]: End processing [dkist-processing-ops]: success
+[2024-04-06 00:57:12] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.4.tar.gz]
+[2024-04-06 00:57:12] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.5.tar.gz]
+[2024-04-06 00:57:12] INFO root fetch - main [MainThread]: End processing [agt-server]: success
+[2024-04-06 00:57:12] INFO root fetch - main [MainThread]: Store serial: [22642835]
