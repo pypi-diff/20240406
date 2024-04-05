@@ -282,3 +282,30 @@
 [2024-04-06 00:15:51] INFO root fetch - processPackages [pepeline]: Remove: archive file [/home/abi/fetcher/tmp/pepeline-0.2.3-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip]
 [2024-04-06 00:15:51] INFO root fetch - main [MainThread]: End processing [pepeline]: success
 [2024-04-06 00:15:51] INFO root fetch - main [MainThread]: Store serial: [22642551]
+[2024-04-06 00:17:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642551]
+[2024-04-06 00:17:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 00:19:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642588]
+[2024-04-06 00:20:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 00:20:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kkpyui
+[2024-04-06 00:20:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: latch
+[2024-04-06 00:20:05] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-04-06 00:20:05] INFO root fetch - processPackages [kkpyui]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-06 00:20:05] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2024-04-06 00:20:05] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/2f/72/7f37c9071384c52da0ce987ae47d1b7cc0518f058349895ed4c081bb4bcd/kkpyui-0.9.4.tar.gz
+[2024-04-06 00:20:05] WARNING root fetch - processPackages [latch]: Timeout reached during download
+[2024-04-06 00:20:05] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 00:20:05] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/fc/9a/f1edfb0fcbcd4f8acd8bd78fe9455405427448ed3d2f2c36e987ac03a04d/kkpyui-0.9.5.tar.gz
+[2024-04-06 00:20:05] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2024-04-06 00:20:05] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 00:20:05] INFO root fetch - processPackages [kkpyui]: executing diffoscope
+[2024-04-06 00:20:05] INFO root fetch - processPackages [kkpyui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyui-0.9.4.tar.gz tmp/kkpyui-0.9.5.tar.gz --markdown 20240406/k/kkpyui/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2024-04-06 00:20:05] WARNING root fetch - processPackages [latch]: Timeout reached during download
+[2024-04-06 00:20:05] INFO root fetch - processPackages [latch]: executing diffoscope
+[2024-04-06 00:20:05] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20240406/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2024-04-06 00:20:06] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.4.tar.gz]
+[2024-04-06 00:20:06] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.5.tar.gz]
+[2024-04-06 00:20:06] INFO root fetch - main [MainThread]: End processing [kkpyui]: success
+[2024-04-06 00:20:06] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.5.tar.gz]
+[2024-04-06 00:20:06] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
+[2024-04-06 00:20:06] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2024-04-06 00:20:06] INFO root fetch - main [MainThread]: Store serial: [22642594]
