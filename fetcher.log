@@ -959,3 +959,72 @@
 [2024-04-06 00:59:21] INFO root fetch - processPackages [pyapi-server]: Remove: archive file [/home/abi/fetcher/tmp/pyapi_server-0.5.0.tar.gz]
 [2024-04-06 00:59:21] INFO root fetch - main [MainThread]: End processing [pyapi-server]: success
 [2024-04-06 00:59:21] INFO root fetch - main [MainThread]: Store serial: [22642838]
+[2024-04-06 01:01:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642838]
+[2024-04-06 01:01:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 01:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Information-Retrieval
+[2024-04-06 01:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aifs
+[2024-04-06 01:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: structifyai
+[2024-04-06 01:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xchangelib
+[2024-04-06 01:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crewai
+[2024-04-06 01:01:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyshared
+[2024-04-06 01:01:30] INFO root fetch - processPackages [Information-Retrieval]: New version: [2.0] Old Version: [1.0]
+[2024-04-06 01:01:30] INFO root fetch - processPackages [crewai]: New version: [0.5.5] Old Version: [0.5.3]
+[2024-04-06 01:01:30] INFO root fetch - processPackages [Information-Retrieval]: Downloading https://files.pythonhosted.org/packages/69/77/e5eb5107709a851e17d34afb601b4bd5ad097ddc5a01819f4493c14009ab/Information_Retrieval-1.0.tar.gz
+[2024-04-06 01:01:30] INFO root fetch - processPackages [structifyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 01:01:30] INFO root fetch - processPackages [xchangelib]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-06 01:01:30] INFO root fetch - processPackages [pyshared]: New version: [1.5.3] Old Version: [1.5.2]
+[2024-04-06 01:01:31] INFO root fetch - processPackages [aifs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 01:01:31] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/e9/e3/15cbe7ed14b2b805613edd70fe8d16de0f00ad49e45f0496db0d34c3274c/crewai-0.5.3.tar.gz
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [Information-Retrieval]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [structifyai]: Downloading https://files.pythonhosted.org/packages/fb/48/d8ae9d97526f9fe8aaa87dbd3738a9f0181f42d8069e6296ef3dc95ba011/structifyai-0.8.0.tar.gz
+[2024-04-06 01:01:31] INFO root fetch - processPackages [xchangelib]: Downloading https://files.pythonhosted.org/packages/a7/5b/d9ebb29bb0af792fed34754b933005a8d796ecddec05da563b46579a3b1d/xchangelib-0.0.3.tar.gz
+[2024-04-06 01:01:31] INFO root fetch - processPackages [aifs]: Downloading https://files.pythonhosted.org/packages/77/4d/e645f0a6d50f78803115feca3770a5addb80c837b0d0da0c7c2459d44d9c/aifs-0.0.8.tar.gz
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [pyshared]: Downloading https://files.pythonhosted.org/packages/03/fc/85e73b2989dfb4afbc330d6dcc1822ad4523d7b51584cb53ac708585da32/pyshared-1.5.2-py3-none-any.whl
+[2024-04-06 01:01:31] INFO root fetch - processPackages [Information-Retrieval]: Downloading https://files.pythonhosted.org/packages/75/4e/73d55e3cc23020fcd79077084273729b27e4c1efbdbdecebeab754e15499/Information_Retrieval-2.0.tar.gz
+[2024-04-06 01:01:31] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/4e/2d/131d296cf0495637bfea59b11af0767de8fa11466880e3d702ab43a360d0/crewai-0.5.5.tar.gz
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [aifs]: Timeout reached during download
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [pyshared]: Timeout reached during download
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [structifyai]: Timeout reached during download
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [Information-Retrieval]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [Information-Retrieval]: executing diffoscope
+[2024-04-06 01:01:31] INFO root fetch - processPackages [Information-Retrieval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Information_Retrieval-1.0.tar.gz tmp/Information_Retrieval-2.0.tar.gz --markdown 20240406/I/Information-Retrieval/1.0-2.0/diff.md --exclude *.pyd
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [xchangelib]: Timeout reached during download
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [crewai]: executing diffoscope
+[2024-04-06 01:01:31] INFO root fetch - processPackages [crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai-0.5.3.tar.gz tmp/crewai-0.5.5.tar.gz --markdown 20240406/c/crewai/0.5.3-0.5.5/diff.md --exclude *.pyd
+[2024-04-06 01:01:31] INFO root fetch - processPackages [aifs]: Downloading https://files.pythonhosted.org/packages/66/12/f6096bda96f1e804b208056fd0f824c3afe2dbb038bd18876a378c41a3d1/aifs-0.0.9.tar.gz
+[2024-04-06 01:01:31] INFO root fetch - processPackages [pyshared]: Downloading https://files.pythonhosted.org/packages/d0/1c/39be0afae2b64fe0fa0db7c0a9c4731b822961fb95a392a28b9cdccac3dc/pyshared-1.5.3-py3-none-any.whl
+[2024-04-06 01:01:31] INFO root fetch - processPackages [structifyai]: Downloading https://files.pythonhosted.org/packages/a2/30/35ee236f19dac5e3f595bedeabbbb3e29fee055ddc18222df1f7e833f066/structifyai-0.9.0.tar.gz
+[2024-04-06 01:01:31] INFO root fetch - processPackages [xchangelib]: Downloading https://files.pythonhosted.org/packages/82/67/565e93853db3c12d43cc00d8834618425c92e75706063f1724699b821705/xchangelib-0.0.5.tar.gz
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [aifs]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [aifs]: executing diffoscope
+[2024-04-06 01:01:31] INFO root fetch - processPackages [aifs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aifs-0.0.8.tar.gz tmp/aifs-0.0.9.tar.gz --markdown 20240406/a/aifs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [pyshared]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [pyshared]: executing diffoscope
+[2024-04-06 01:01:31] INFO root fetch - processPackages [pyshared]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyshared-1.5.2-py3-none-any.whl.zip tmp/pyshared-1.5.3-py3-none-any.whl.zip --markdown 20240406/p/pyshared/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [structifyai]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [structifyai]: executing diffoscope
+[2024-04-06 01:01:31] INFO root fetch - processPackages [structifyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structifyai-0.8.0.tar.gz tmp/structifyai-0.9.0.tar.gz --markdown 20240406/s/structifyai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 01:01:31] WARNING root fetch - processPackages [xchangelib]: Timeout reached during download
+[2024-04-06 01:01:31] INFO root fetch - processPackages [xchangelib]: executing diffoscope
+[2024-04-06 01:01:31] INFO root fetch - processPackages [xchangelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xchangelib-0.0.3.tar.gz tmp/xchangelib-0.0.5.tar.gz --markdown 20240406/x/xchangelib/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 01:01:32] INFO root fetch - processPackages [Information-Retrieval]: Remove: archive file [/home/abi/fetcher/tmp/Information_Retrieval-1.0.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - processPackages [Information-Retrieval]: Remove: archive file [/home/abi/fetcher/tmp/Information_Retrieval-2.0.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - main [MainThread]: End processing [Information-Retrieval]: success
+[2024-04-06 01:01:32] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.3.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.5.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - main [MainThread]: End processing [crewai]: success
+[2024-04-06 01:01:32] INFO root fetch - processPackages [aifs]: Remove: archive file [/home/abi/fetcher/tmp/aifs-0.0.8.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - processPackages [aifs]: Remove: archive file [/home/abi/fetcher/tmp/aifs-0.0.9.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - main [MainThread]: End processing [aifs]: success
+[2024-04-06 01:01:32] INFO root fetch - processPackages [xchangelib]: Remove: archive file [/home/abi/fetcher/tmp/xchangelib-0.0.3.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - processPackages [xchangelib]: Remove: archive file [/home/abi/fetcher/tmp/xchangelib-0.0.5.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - main [MainThread]: End processing [xchangelib]: success
+[2024-04-06 01:01:32] INFO root fetch - processPackages [structifyai]: Remove: archive file [/home/abi/fetcher/tmp/structifyai-0.8.0.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - processPackages [structifyai]: Remove: archive file [/home/abi/fetcher/tmp/structifyai-0.9.0.tar.gz]
+[2024-04-06 01:01:32] INFO root fetch - main [MainThread]: End processing [structifyai]: success
+[2024-04-06 01:01:32] INFO root fetch - processPackages [pyshared]: Remove: archive file [/home/abi/fetcher/tmp/pyshared-1.5.2-py3-none-any.whl.zip]
+[2024-04-06 01:01:32] INFO root fetch - processPackages [pyshared]: Remove: archive file [/home/abi/fetcher/tmp/pyshared-1.5.3-py3-none-any.whl.zip]
+[2024-04-06 01:01:32] INFO root fetch - main [MainThread]: End processing [pyshared]: success
+[2024-04-06 01:01:32] INFO root fetch - main [MainThread]: Store serial: [22642855]
