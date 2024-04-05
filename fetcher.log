@@ -1314,3 +1314,42 @@
 [2024-04-06 01:23:37] INFO root fetch - processPackages [benchling-api-client]: Remove: archive file [/home/abi/fetcher/tmp/benchling_api_client-2.0.99.tar.gz]
 [2024-04-06 01:23:37] INFO root fetch - main [MainThread]: End processing [benchling-api-client]: success
 [2024-04-06 01:23:37] INFO root fetch - main [MainThread]: Store serial: [22642933]
+[2024-04-06 01:25:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642933]
+[2024-04-06 01:25:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 01:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mirascope
+[2024-04-06 01:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gen3-tracker
+[2024-04-06 01:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipython-openai
+[2024-04-06 01:25:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: derived-product-database
+[2024-04-06 01:25:46] INFO root fetch - processPackages [derived-product-database]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 01:25:46] INFO root fetch - processPackages [mirascope]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-04-06 01:25:46] WARNING root fetch - processPackages [ipython-openai]: Skipping, unable to determine old version
+[2024-04-06 01:25:46] INFO root fetch - main [MainThread]: End processing [ipython-openai] error
+[2024-04-06 01:25:46] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/4b/f2/6cffd95899daf80197f9b1c2de8852d912922c288db0453c70202e9bb11e/derived-product-database-0.0.4.tar.gz
+[2024-04-06 01:25:46] INFO root fetch - processPackages [mirascope]: Downloading https://files.pythonhosted.org/packages/7d/b9/3f61b7a9bf54abcb7668124c09dbe1096005b2ca416139a24890dcd0b3e7/mirascope-0.8.4.tar.gz
+[2024-04-06 01:25:46] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:25:46] WARNING root fetch - processPackages [mirascope]: Timeout reached during download
+[2024-04-06 01:25:46] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.2rc9] Old Version: [0.0.2rc8]
+[2024-04-06 01:25:46] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/53/10/7141c386c6af0ffc7473bcf18947dc031f1aca7708cfecc063c09ba3adbd/derived-product-database-0.0.5.tar.gz
+[2024-04-06 01:25:46] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:25:46] INFO root fetch - processPackages [derived-product-database]: executing diffoscope
+[2024-04-06 01:25:46] INFO root fetch - processPackages [derived-product-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/derived-product-database-0.0.4.tar.gz tmp/derived-product-database-0.0.5.tar.gz --markdown 20240406/d/derived-product-database/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 01:25:46] INFO root fetch - processPackages [mirascope]: Downloading https://files.pythonhosted.org/packages/1e/60/6b94f4a0c0a3442e0030ec4b7912738aea1506f5f2cfbbaab0f9f6c973ee/mirascope-0.9.0.tar.gz
+[2024-04-06 01:25:46] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/55/9b/070e4b93fbfb6bd5747f540db77b4d18186650e26f265944fe1974cc7cd4/gen3_tracker-0.0.2rc8.tar.gz
+[2024-04-06 01:25:46] WARNING root fetch - processPackages [mirascope]: Timeout reached during download
+[2024-04-06 01:25:46] INFO root fetch - processPackages [mirascope]: executing diffoscope
+[2024-04-06 01:25:46] INFO root fetch - processPackages [mirascope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mirascope-0.8.4.tar.gz tmp/mirascope-0.9.0.tar.gz --markdown 20240406/m/mirascope/0.8.4-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 01:25:46] WARNING root fetch - processPackages [gen3-tracker]: Timeout reached during download
+[2024-04-06 01:25:46] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/a5/e3/f4a38692501057b03e20276e198339744ffe0fb0b320c907aabb66dfabaf/gen3_tracker-0.0.2rc9.tar.gz
+[2024-04-06 01:25:47] WARNING root fetch - processPackages [gen3-tracker]: Timeout reached during download
+[2024-04-06 01:25:47] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-04-06 01:25:47] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.2rc8.tar.gz tmp/gen3_tracker-0.0.2rc9.tar.gz --markdown 20240406/g/gen3-tracker/0.0.2rc8-0.0.2rc9/diff.md --exclude *.pyd
+[2024-04-06 01:25:47] INFO root fetch - processPackages [derived-product-database]: Remove: archive file [/home/abi/fetcher/tmp/derived-product-database-0.0.4.tar.gz]
+[2024-04-06 01:25:47] INFO root fetch - processPackages [derived-product-database]: Remove: archive file [/home/abi/fetcher/tmp/derived-product-database-0.0.5.tar.gz]
+[2024-04-06 01:25:47] INFO root fetch - main [MainThread]: End processing [derived-product-database]: success
+[2024-04-06 01:25:47] INFO root fetch - processPackages [mirascope]: Remove: archive file [/home/abi/fetcher/tmp/mirascope-0.8.4.tar.gz]
+[2024-04-06 01:25:47] INFO root fetch - processPackages [mirascope]: Remove: archive file [/home/abi/fetcher/tmp/mirascope-0.9.0.tar.gz]
+[2024-04-06 01:25:47] INFO root fetch - main [MainThread]: End processing [mirascope]: success
+[2024-04-06 01:25:47] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.2rc8.tar.gz]
+[2024-04-06 01:25:47] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.2rc9.tar.gz]
+[2024-04-06 01:25:47] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-04-06 01:25:47] INFO root fetch - main [MainThread]: Store serial: [22642949]
