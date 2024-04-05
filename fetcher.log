@@ -1300,3 +1300,17 @@
 [2024-04-06 01:21:08] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.47.tar.gz]
 [2024-04-06 01:21:08] INFO root fetch - main [MainThread]: End processing [experimental-yt-fts]: success
 [2024-04-06 01:21:08] INFO root fetch - main [MainThread]: Store serial: [22642927]
+[2024-04-06 01:23:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642927]
+[2024-04-06 01:23:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 01:23:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: benchling-api-client
+[2024-04-06 01:23:16] INFO root fetch - processPackages [benchling-api-client]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-06 01:23:17] INFO root fetch - processPackages [benchling-api-client]: Downloading https://files.pythonhosted.org/packages/ce/1d/9c3669396c4c52924ccf39a48a438a2c8167c4fb512eca865bd64066d33e/benchling_api_client-2.0.98.tar.gz
+[2024-04-06 01:23:17] WARNING root fetch - processPackages [benchling-api-client]: Timeout reached during download
+[2024-04-06 01:23:18] INFO root fetch - processPackages [benchling-api-client]: Downloading https://files.pythonhosted.org/packages/f9/23/649c2147d11c171b4b3d27c6a52dab32d22dc24ec1c248cf5d1dd8a4451d/benchling_api_client-2.0.99.tar.gz
+[2024-04-06 01:23:18] WARNING root fetch - processPackages [benchling-api-client]: Timeout reached during download
+[2024-04-06 01:23:18] INFO root fetch - processPackages [benchling-api-client]: executing diffoscope
+[2024-04-06 01:23:18] INFO root fetch - processPackages [benchling-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/benchling_api_client-2.0.98.tar.gz tmp/benchling_api_client-2.0.99.tar.gz --markdown 20240406/b/benchling-api-client/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2024-04-06 01:23:37] INFO root fetch - processPackages [benchling-api-client]: Remove: archive file [/home/abi/fetcher/tmp/benchling_api_client-2.0.98.tar.gz]
+[2024-04-06 01:23:37] INFO root fetch - processPackages [benchling-api-client]: Remove: archive file [/home/abi/fetcher/tmp/benchling_api_client-2.0.99.tar.gz]
+[2024-04-06 01:23:37] INFO root fetch - main [MainThread]: End processing [benchling-api-client]: success
+[2024-04-06 01:23:37] INFO root fetch - main [MainThread]: Store serial: [22642933]
