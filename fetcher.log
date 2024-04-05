@@ -798,3 +798,20 @@
 [2024-04-06 00:46:20] INFO root fetch - processPackages [netbox-healthcheck-plugin]: Remove: archive file [/home/abi/fetcher/tmp/netbox-healthcheck-plugin-0.1.2.tar.gz]
 [2024-04-06 00:46:20] INFO root fetch - main [MainThread]: End processing [netbox-healthcheck-plugin]: success
 [2024-04-06 00:46:20] INFO root fetch - main [MainThread]: Store serial: [22642720]
+[2024-04-06 00:48:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642720]
+[2024-04-06 00:48:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 00:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modgeosys-graph-algorithms
+[2024-04-06 00:48:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpop
+[2024-04-06 00:48:29] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Skipping, unable to determine old version
+[2024-04-06 00:48:29] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms] error
+[2024-04-06 00:48:29] INFO root fetch - processPackages [cpop]: New version: [30.0.0] Old Version: [29.1.0]
+[2024-04-06 00:48:29] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/5f/ba/796debb8ccaa5b0415ab65c1108b3b93323431de694c7ac141ead8b16fe5/cpop-29.1.0.tar.gz
+[2024-04-06 00:48:30] WARNING root fetch - processPackages [cpop]: Timeout reached during download
+[2024-04-06 00:48:30] INFO root fetch - processPackages [cpop]: Downloading https://files.pythonhosted.org/packages/b9/24/4ce2c8b25417a6be2635ffe90e95adc7e7c2f804d4830e40426cf9ed12bb/cpop-30.0.0.tar.gz
+[2024-04-06 00:48:30] WARNING root fetch - processPackages [cpop]: Timeout reached during download
+[2024-04-06 00:48:30] INFO root fetch - processPackages [cpop]: executing diffoscope
+[2024-04-06 00:48:30] INFO root fetch - processPackages [cpop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpop-29.1.0.tar.gz tmp/cpop-30.0.0.tar.gz --markdown 20240406/c/cpop/29.1.0-30.0.0/diff.md --exclude *.pyd
+[2024-04-06 00:48:31] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-29.1.0.tar.gz]
+[2024-04-06 00:48:31] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-30.0.0.tar.gz]
+[2024-04-06 00:48:31] INFO root fetch - main [MainThread]: End processing [cpop]: success
+[2024-04-06 00:48:31] INFO root fetch - main [MainThread]: Store serial: [22642726]
