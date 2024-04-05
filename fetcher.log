@@ -1100,3 +1100,28 @@
 [2024-04-06 01:05:53] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240405.tar.gz]
 [2024-04-06 01:05:53] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2024-04-06 01:05:53] INFO root fetch - main [MainThread]: Store serial: [22642871]
+[2024-04-06 01:07:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642871]
+[2024-04-06 01:08:01] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 01:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skeletonkey
+[2024-04-06 01:08:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: synapse
+[2024-04-06 01:08:02] INFO root fetch - processPackages [skeletonkey]: New version: [0.2.10] Old Version: [0.2.0]
+[2024-04-06 01:08:02] INFO root fetch - processPackages [synapse]: New version: [2.99.0] Old Version: [2.98.0]
+[2024-04-06 01:08:02] INFO root fetch - processPackages [skeletonkey]: Downloading https://files.pythonhosted.org/packages/4e/d5/c4076abc8ce545f25f72c5de9d5a13dae8724bb386bc5c36e11d40e43f32/skeletonkey-0.2.0.tar.gz
+[2024-04-06 01:08:02] INFO root fetch - processPackages [synapse]: Downloading https://files.pythonhosted.org/packages/a0/16/05b574cbcacea5a4e03b3992f83fa15d65e908bbe429c52c6c618808810e/synapse-2.98.0.tar.gz
+[2024-04-06 01:08:02] WARNING root fetch - processPackages [skeletonkey]: Timeout reached during download
+[2024-04-06 01:08:02] INFO root fetch - processPackages [skeletonkey]: Downloading https://files.pythonhosted.org/packages/ae/3c/1348922ee85b45a3243918748c3bdbf00021e319c86b7a673ea35b44a308/skeletonkey-0.2.10.tar.gz
+[2024-04-06 01:08:02] WARNING root fetch - processPackages [synapse]: Timeout reached during download
+[2024-04-06 01:08:02] WARNING root fetch - processPackages [skeletonkey]: Timeout reached during download
+[2024-04-06 01:08:02] INFO root fetch - processPackages [skeletonkey]: executing diffoscope
+[2024-04-06 01:08:02] INFO root fetch - processPackages [skeletonkey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skeletonkey-0.2.0.tar.gz tmp/skeletonkey-0.2.10.tar.gz --markdown 20240406/s/skeletonkey/0.2.0-0.2.10/diff.md --exclude *.pyd
+[2024-04-06 01:08:02] INFO root fetch - processPackages [synapse]: Downloading https://files.pythonhosted.org/packages/6d/c7/9f83caee3522a85b4e4c80a4308801fb6bbbdcd7ba86efd93fd74ee3accf/synapse-2.99.0.tar.gz
+[2024-04-06 01:08:03] INFO root fetch - processPackages [skeletonkey]: Remove: archive file [/home/abi/fetcher/tmp/skeletonkey-0.2.0.tar.gz]
+[2024-04-06 01:08:03] INFO root fetch - processPackages [skeletonkey]: Remove: archive file [/home/abi/fetcher/tmp/skeletonkey-0.2.10.tar.gz]
+[2024-04-06 01:08:03] INFO root fetch - main [MainThread]: End processing [skeletonkey]: success
+[2024-04-06 01:08:03] WARNING root fetch - processPackages [synapse]: Timeout reached during download
+[2024-04-06 01:08:03] INFO root fetch - processPackages [synapse]: executing diffoscope
+[2024-04-06 01:08:03] INFO root fetch - processPackages [synapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/synapse-2.98.0.tar.gz tmp/synapse-2.99.0.tar.gz --markdown 20240406/s/synapse/2.98.0-2.99.0/diff.md --exclude *.pyd
+[2024-04-06 01:08:06] INFO root fetch - processPackages [synapse]: Remove: archive file [/home/abi/fetcher/tmp/synapse-2.98.0.tar.gz]
+[2024-04-06 01:08:06] INFO root fetch - processPackages [synapse]: Remove: archive file [/home/abi/fetcher/tmp/synapse-2.99.0.tar.gz]
+[2024-04-06 01:08:06] INFO root fetch - main [MainThread]: End processing [synapse]: success
+[2024-04-06 01:08:06] INFO root fetch - main [MainThread]: Store serial: [22642879]
