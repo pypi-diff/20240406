@@ -1542,3 +1542,28 @@
 [2024-04-06 01:43:09] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.4.0.tar.gz]
 [2024-04-06 01:43:09] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
 [2024-04-06 01:43:09] INFO root fetch - main [MainThread]: Store serial: [22643069]
+[2024-04-06 01:45:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643069]
+[2024-04-06 01:45:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 01:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-samus-returns-rando
+[2024-04-06 01:45:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: suql
+[2024-04-06 01:45:18] INFO root fetch - processPackages [suql]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2024-04-06 01:45:18] INFO root fetch - processPackages [open-samus-returns-rando]: New version: [1.1.0] Old Version: [1.0.9]
+[2024-04-06 01:45:18] INFO root fetch - processPackages [suql]: Downloading https://files.pythonhosted.org/packages/9b/1b/dd5fb40b1a3c53ee521fd0d30c63d06932a6df97f4c6963f531683c9bab3/suql-1.0.0a2.tar.gz
+[2024-04-06 01:45:18] WARNING root fetch - processPackages [suql]: Timeout reached during download
+[2024-04-06 01:45:18] INFO root fetch - processPackages [open-samus-returns-rando]: Downloading https://files.pythonhosted.org/packages/38/9e/c2bdfa13143673152eb1bde23af27d571600474c1d42a1513417d676ae38/open_samus_returns_rando-1.0.9.tar.gz
+[2024-04-06 01:45:18] INFO root fetch - processPackages [suql]: Downloading https://files.pythonhosted.org/packages/b5/31/8a4e6f457ccf9e1644f5d0c23662ce74de627226f3972d7c11f8774e1d94/suql-1.0.0a3.tar.gz
+[2024-04-06 01:45:18] WARNING root fetch - processPackages [open-samus-returns-rando]: Timeout reached during download
+[2024-04-06 01:45:18] WARNING root fetch - processPackages [suql]: Timeout reached during download
+[2024-04-06 01:45:18] INFO root fetch - processPackages [suql]: executing diffoscope
+[2024-04-06 01:45:18] INFO root fetch - processPackages [suql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suql-1.0.0a2.tar.gz tmp/suql-1.0.0a3.tar.gz --markdown 20240406/s/suql/1.0.0a2-1.0.0a3/diff.md --exclude *.pyd
+[2024-04-06 01:45:18] INFO root fetch - processPackages [open-samus-returns-rando]: Downloading https://files.pythonhosted.org/packages/8e/aa/3ea380d39199565d33e4710cfc65af0f4a5a2f80945242be74cd0714ec6a/open_samus_returns_rando-1.1.0.tar.gz
+[2024-04-06 01:45:19] WARNING root fetch - processPackages [open-samus-returns-rando]: Timeout reached during download
+[2024-04-06 01:45:19] INFO root fetch - processPackages [open-samus-returns-rando]: executing diffoscope
+[2024-04-06 01:45:19] INFO root fetch - processPackages [open-samus-returns-rando]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_samus_returns_rando-1.0.9.tar.gz tmp/open_samus_returns_rando-1.1.0.tar.gz --markdown 20240406/o/open-samus-returns-rando/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2024-04-06 01:45:19] INFO root fetch - processPackages [suql]: Remove: archive file [/home/abi/fetcher/tmp/suql-1.0.0a2.tar.gz]
+[2024-04-06 01:45:19] INFO root fetch - processPackages [suql]: Remove: archive file [/home/abi/fetcher/tmp/suql-1.0.0a3.tar.gz]
+[2024-04-06 01:45:19] INFO root fetch - main [MainThread]: End processing [suql]: success
+[2024-04-06 01:45:20] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.0.9.tar.gz]
+[2024-04-06 01:45:20] INFO root fetch - processPackages [open-samus-returns-rando]: Remove: archive file [/home/abi/fetcher/tmp/open_samus_returns_rando-1.1.0.tar.gz]
+[2024-04-06 01:45:20] INFO root fetch - main [MainThread]: End processing [open-samus-returns-rando]: success
+[2024-04-06 01:45:20] INFO root fetch - main [MainThread]: Store serial: [22643075]
