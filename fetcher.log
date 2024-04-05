@@ -76,3 +76,23 @@
 [2024-04-06 00:02:49] INFO root fetch - processPackages [quantconnect-stubs]: Remove: archive file [/home/abi/fetcher/tmp/quantconnect-stubs-9998.tar.gz]
 [2024-04-06 00:02:49] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2024-04-06 00:02:49] INFO root fetch - main [MainThread]: Store serial: [22642444]
+[2024-04-06 00:04:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642444]
+[2024-04-06 00:04:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythreadserver
+[2024-04-06 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mkdocs-swagger-ui
+[2024-04-06 00:04:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: faust-avro-codec-codegen
+[2024-04-06 00:04:57] WARNING root fetch - processPackages [pythreadserver]: Skipping, unable to determine old version
+[2024-04-06 00:04:57] INFO root fetch - main [MainThread]: End processing [pythreadserver] error
+[2024-04-06 00:04:58] INFO root fetch - processPackages [mkdocs-swagger-ui]: New version: [0.2] Old Version: [0.1.1]
+[2024-04-06 00:04:58] WARNING root fetch - processPackages [faust-avro-codec-codegen]: Skipping, unable to determine old version
+[2024-04-06 00:04:58] INFO root fetch - main [MainThread]: End processing [faust-avro-codec-codegen] error
+[2024-04-06 00:04:58] INFO root fetch - processPackages [mkdocs-swagger-ui]: Downloading https://files.pythonhosted.org/packages/f1/bf/b116d0ca19c60dc60d4122487e9e91b426c75fe60da331d6c6ce96e83b9f/mkdocs-swagger-ui-0.1.1.tar.gz
+[2024-04-06 00:04:58] WARNING root fetch - processPackages [mkdocs-swagger-ui]: Timeout reached during download
+[2024-04-06 00:04:58] INFO root fetch - processPackages [mkdocs-swagger-ui]: Downloading https://files.pythonhosted.org/packages/13/e6/270a93f77c4e12ce343e830c7ec9862e1820b6bb3d76c473f95bbc315ba6/mkdocs-swagger-ui-0.2.tar.gz
+[2024-04-06 00:04:58] WARNING root fetch - processPackages [mkdocs-swagger-ui]: Timeout reached during download
+[2024-04-06 00:04:58] INFO root fetch - processPackages [mkdocs-swagger-ui]: executing diffoscope
+[2024-04-06 00:04:58] INFO root fetch - processPackages [mkdocs-swagger-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdocs-swagger-ui-0.1.1.tar.gz tmp/mkdocs-swagger-ui-0.2.tar.gz --markdown 20240406/m/mkdocs-swagger-ui/0.1.1-0.2/diff.md --exclude *.pyd
+[2024-04-06 00:04:59] INFO root fetch - processPackages [mkdocs-swagger-ui]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-swagger-ui-0.1.1.tar.gz]
+[2024-04-06 00:04:59] INFO root fetch - processPackages [mkdocs-swagger-ui]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-swagger-ui-0.2.tar.gz]
+[2024-04-06 00:04:59] INFO root fetch - main [MainThread]: End processing [mkdocs-swagger-ui]: success
+[2024-04-06 00:04:59] INFO root fetch - main [MainThread]: Store serial: [22642482]
