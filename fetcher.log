@@ -1053,3 +1053,50 @@
 [2024-04-06 01:03:42] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Remove: archive file [/home/abi/fetcher/tmp/robotframework-browser-translation-fi-0.4.2.tar.gz]
 [2024-04-06 01:03:42] INFO root fetch - main [MainThread]: End processing [robotframework-browser-translation-fi]: success
 [2024-04-06 01:03:42] INFO root fetch - main [MainThread]: Store serial: [22642861]
+[2024-04-06 01:05:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642861]
+[2024-04-06 01:05:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 01:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finagg
+[2024-04-06 01:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: experimental-yt-fts
+[2024-04-06 01:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmnt
+[2024-04-06 01:05:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flwr-nightly
+[2024-04-06 01:05:51] INFO root fetch - processPackages [tmnt]: New version: [0.7.4b20231227] Old Version: [0.7.47b20240404]
+[2024-04-06 01:05:51] INFO root fetch - processPackages [experimental-yt-fts]: New version: [0.1.47] Old Version: [0.1.45]
+[2024-04-06 01:05:51] INFO root fetch - processPackages [finagg]: New version: [1.0.0] Old Version: [0.3.1]
+[2024-04-06 01:05:51] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/26/67/b5a152b02bc83a8f92b36b37b9e45dbbdcf64ef6f1c4e588ccc1e41fdb0f/tmnt-0.7.47b20240404.tar.gz
+[2024-04-06 01:05:51] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/cf/78/63ab6a06effd25dc26f53fe4cbb96898cf49c45d1a24db0ba1464203f774/experimental-yt-fts-0.1.45.tar.gz
+[2024-04-06 01:05:51] INFO root fetch - processPackages [finagg]: Downloading https://files.pythonhosted.org/packages/7d/e5/d37fda6bb49e82b8b7e9dc979d745b2aadd340f2639f81d523626f2a269d/finagg-0.3.1.tar.gz
+[2024-04-06 01:05:51] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240405] Old Version: [1.9.0.dev20240404]
+[2024-04-06 01:05:51] WARNING root fetch - processPackages [tmnt]: Timeout reached during download
+[2024-04-06 01:05:51] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 01:05:51] WARNING root fetch - processPackages [finagg]: Timeout reached during download
+[2024-04-06 01:05:51] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/ea/3a/0cd54af36ea52550ab5b0361342ea6cbae9843227af8a4fe56d32695a1f3/tmnt-0.7.4b20231227.tar.gz
+[2024-04-06 01:05:51] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/f0/da/7976ebb76357dca6afc76a13de83e5bb160ac33cdcb0c5213bb3f9cc97ed/flwr_nightly-1.9.0.dev20240404.tar.gz
+[2024-04-06 01:05:51] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/46/cd/3c635e8b1616e31de5765565ae39b5a65d0eb347cfa9b742502665f4b69b/experimental-yt-fts-0.1.47.tar.gz
+[2024-04-06 01:05:52] INFO root fetch - processPackages [finagg]: Downloading https://files.pythonhosted.org/packages/72/da/4c2e52009a25a1bb36979659e83130e193dc27c65c72aff791f95719090a/finagg-1.0.0.tar.gz
+[2024-04-06 01:05:52] WARNING root fetch - processPackages [tmnt]: Timeout reached during download
+[2024-04-06 01:05:52] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-04-06 01:05:52] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.47b20240404.tar.gz tmp/tmnt-0.7.4b20231227.tar.gz --markdown 20240406/t/tmnt/0.7.47b20240404-0.7.4b20231227/diff.md --exclude *.pyd
+[2024-04-06 01:05:52] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 01:05:52] INFO root fetch - processPackages [experimental-yt-fts]: executing diffoscope
+[2024-04-06 01:05:52] INFO root fetch - processPackages [experimental-yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimental-yt-fts-0.1.45.tar.gz tmp/experimental-yt-fts-0.1.47.tar.gz --markdown 20240406/e/experimental-yt-fts/0.1.45-0.1.47/diff.md --exclude *.pyd
+[2024-04-06 01:05:52] WARNING root fetch - processPackages [flwr-nightly]: Timeout reached during download
+[2024-04-06 01:05:52] WARNING root fetch - processPackages [finagg]: Timeout reached during download
+[2024-04-06 01:05:52] INFO root fetch - processPackages [finagg]: executing diffoscope
+[2024-04-06 01:05:52] INFO root fetch - processPackages [finagg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finagg-0.3.1.tar.gz tmp/finagg-1.0.0.tar.gz --markdown 20240406/f/finagg/0.3.1-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 01:05:52] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/a6/f0/577e8cf909505fb3ce4b6883706428ba2e87b4e92f76455c45ca336b9750/flwr_nightly-1.9.0.dev20240405.tar.gz
+[2024-04-06 01:05:52] WARNING root fetch - processPackages [flwr-nightly]: Timeout reached during download
+[2024-04-06 01:05:52] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-04-06 01:05:52] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240404.tar.gz tmp/flwr_nightly-1.9.0.dev20240405.tar.gz --markdown 20240406/f/flwr-nightly/1.9.0.dev20240404-1.9.0.dev20240405/diff.md --exclude *.pyd
+[2024-04-06 01:05:52] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.47b20240404.tar.gz]
+[2024-04-06 01:05:52] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.4b20231227.tar.gz]
+[2024-04-06 01:05:52] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-04-06 01:05:52] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.45.tar.gz]
+[2024-04-06 01:05:52] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.47.tar.gz]
+[2024-04-06 01:05:52] INFO root fetch - main [MainThread]: End processing [experimental-yt-fts]: success
+[2024-04-06 01:05:53] INFO root fetch - processPackages [finagg]: Remove: archive file [/home/abi/fetcher/tmp/finagg-0.3.1.tar.gz]
+[2024-04-06 01:05:53] INFO root fetch - processPackages [finagg]: Remove: archive file [/home/abi/fetcher/tmp/finagg-1.0.0.tar.gz]
+[2024-04-06 01:05:53] INFO root fetch - main [MainThread]: End processing [finagg]: success
+[2024-04-06 01:05:53] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240404.tar.gz]
+[2024-04-06 01:05:53] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240405.tar.gz]
+[2024-04-06 01:05:53] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-04-06 01:05:53] INFO root fetch - main [MainThread]: Store serial: [22642871]
