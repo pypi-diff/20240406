@@ -490,3 +490,20 @@
 [2024-04-06 00:31:01] INFO root fetch - processPackages [whylogs]: Remove: archive file [/home/abi/fetcher/tmp/whylogs-1.3.9.dev0.tar.gz]
 [2024-04-06 00:31:01] INFO root fetch - main [MainThread]: End processing [whylogs]: success
 [2024-04-06 00:31:01] INFO root fetch - main [MainThread]: Store serial: [22642644]
+[2024-04-06 00:33:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642644]
+[2024-04-06 00:33:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 00:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: deepgram-sdk
+[2024-04-06 00:33:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gpt-suite
+[2024-04-06 00:33:11] WARNING root fetch - processPackages [gpt-suite]: Skipping, unable to determine old version
+[2024-04-06 00:33:11] INFO root fetch - main [MainThread]: End processing [gpt-suite] error
+[2024-04-06 00:33:11] INFO root fetch - processPackages [deepgram-sdk]: New version: [3.2.4] Old Version: [3.2.3]
+[2024-04-06 00:33:11] INFO root fetch - processPackages [deepgram-sdk]: Downloading https://files.pythonhosted.org/packages/67/3a/fdb443bd171977ef001d00f41e0a4092c84bb0e7bac55d9c90425a45ee93/deepgram-sdk-3.2.3.tar.gz
+[2024-04-06 00:33:11] WARNING root fetch - processPackages [deepgram-sdk]: Timeout reached during download
+[2024-04-06 00:33:11] INFO root fetch - processPackages [deepgram-sdk]: Downloading https://files.pythonhosted.org/packages/2f/50/63fdd4044137ebc3414bbaa4198fdf2d788c1a713176d9f4659e5ae41cba/deepgram-sdk-3.2.4.tar.gz
+[2024-04-06 00:33:11] WARNING root fetch - processPackages [deepgram-sdk]: Timeout reached during download
+[2024-04-06 00:33:11] INFO root fetch - processPackages [deepgram-sdk]: executing diffoscope
+[2024-04-06 00:33:11] INFO root fetch - processPackages [deepgram-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepgram-sdk-3.2.3.tar.gz tmp/deepgram-sdk-3.2.4.tar.gz --markdown 20240406/d/deepgram-sdk/3.2.3-3.2.4/diff.md --exclude *.pyd
+[2024-04-06 00:33:12] INFO root fetch - processPackages [deepgram-sdk]: Remove: archive file [/home/abi/fetcher/tmp/deepgram-sdk-3.2.3.tar.gz]
+[2024-04-06 00:33:12] INFO root fetch - processPackages [deepgram-sdk]: Remove: archive file [/home/abi/fetcher/tmp/deepgram-sdk-3.2.4.tar.gz]
+[2024-04-06 00:33:12] INFO root fetch - main [MainThread]: End processing [deepgram-sdk]: success
+[2024-04-06 00:33:12] INFO root fetch - main [MainThread]: Store serial: [22642650]
