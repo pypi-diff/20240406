@@ -507,3 +507,28 @@
 [2024-04-06 00:33:12] INFO root fetch - processPackages [deepgram-sdk]: Remove: archive file [/home/abi/fetcher/tmp/deepgram-sdk-3.2.4.tar.gz]
 [2024-04-06 00:33:12] INFO root fetch - main [MainThread]: End processing [deepgram-sdk]: success
 [2024-04-06 00:33:12] INFO root fetch - main [MainThread]: Store serial: [22642650]
+[2024-04-06 00:35:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642650]
+[2024-04-06 00:35:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 00:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NNSOM
+[2024-04-06 00:35:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kaggle
+[2024-04-06 00:35:21] INFO root fetch - processPackages [kaggle]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-04-06 00:35:21] INFO root fetch - processPackages [NNSOM]: New version: [1.4.3] Old Version: [1.4.2]
+[2024-04-06 00:35:21] INFO root fetch - processPackages [kaggle]: Downloading https://files.pythonhosted.org/packages/d8/24/e0300e0be3943a7d667552352dbd3985c1338210c31855993e73c434b8ae/kaggle-1.6.8.tar.gz
+[2024-04-06 00:35:21] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/a5/57/04a1ed3f6e33e12e1bbff11f00d64599c4c22a0a347ff68a615e33d70d1a/nnsom-1.4.2.tar.gz
+[2024-04-06 00:35:21] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 00:35:21] WARNING root fetch - processPackages [kaggle]: Timeout reached during download
+[2024-04-06 00:35:21] INFO root fetch - processPackages [kaggle]: Downloading https://files.pythonhosted.org/packages/95/06/00bc695e4270dc477f7b9bc8f595acf909ea72272a05fe10f5547905cdcf/kaggle-1.6.9.tar.gz
+[2024-04-06 00:35:21] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/5a/fc/4f6a8db280cca765f776c574ccb7c3fe52b3590e8b25fe038cc1f37fe54b/nnsom-1.4.3.tar.gz
+[2024-04-06 00:35:21] WARNING root fetch - processPackages [kaggle]: Timeout reached during download
+[2024-04-06 00:35:21] INFO root fetch - processPackages [kaggle]: executing diffoscope
+[2024-04-06 00:35:21] INFO root fetch - processPackages [kaggle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kaggle-1.6.8.tar.gz tmp/kaggle-1.6.9.tar.gz --markdown 20240406/k/kaggle/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2024-04-06 00:35:21] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 00:35:21] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-06 00:35:21] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.4.2.tar.gz tmp/nnsom-1.4.3.tar.gz --markdown 20240406/N/NNSOM/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2024-04-06 00:35:22] INFO root fetch - processPackages [kaggle]: Remove: archive file [/home/abi/fetcher/tmp/kaggle-1.6.8.tar.gz]
+[2024-04-06 00:35:22] INFO root fetch - processPackages [kaggle]: Remove: archive file [/home/abi/fetcher/tmp/kaggle-1.6.9.tar.gz]
+[2024-04-06 00:35:22] INFO root fetch - main [MainThread]: End processing [kaggle]: success
+[2024-04-06 00:35:22] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.2.tar.gz]
+[2024-04-06 00:35:22] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.3.tar.gz]
+[2024-04-06 00:35:22] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-06 00:35:22] INFO root fetch - main [MainThread]: Store serial: [22642655]
