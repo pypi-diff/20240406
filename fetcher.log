@@ -1028,3 +1028,28 @@
 [2024-04-06 01:01:32] INFO root fetch - processPackages [pyshared]: Remove: archive file [/home/abi/fetcher/tmp/pyshared-1.5.3-py3-none-any.whl.zip]
 [2024-04-06 01:01:32] INFO root fetch - main [MainThread]: End processing [pyshared]: success
 [2024-04-06 01:01:32] INFO root fetch - main [MainThread]: Store serial: [22642855]
+[2024-04-06 01:03:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642855]
+[2024-04-06 01:03:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 01:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gasm
+[2024-04-06 01:03:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotframework-browser-translation-fi
+[2024-04-06 01:03:41] INFO root fetch - processPackages [gasm]: New version: [1.1.6] Old Version: [1.1.5]
+[2024-04-06 01:03:41] INFO root fetch - processPackages [gasm]: Downloading https://files.pythonhosted.org/packages/35/8f/89c1f6a60e82e5f5477f323407acc762c6f4c3b3e2aabfd8334e27a67f3c/gasm-1.1.5.tar.gz
+[2024-04-06 01:03:41] INFO root fetch - processPackages [robotframework-browser-translation-fi]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-06 01:03:41] WARNING root fetch - processPackages [gasm]: Timeout reached during download
+[2024-04-06 01:03:41] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Downloading https://files.pythonhosted.org/packages/27/7d/2698246027a6f24e99344d85e23c3fd194b1320789735bd7536641a3c45f/robotframework-browser-translation-fi-0.4.1.tar.gz
+[2024-04-06 01:03:41] INFO root fetch - processPackages [gasm]: Downloading https://files.pythonhosted.org/packages/59/c7/6230c801368a927ea4408f0139bc0dc2c01a2c61ed13aa8214dd2c16d49a/gasm-1.1.6.tar.gz
+[2024-04-06 01:03:41] WARNING root fetch - processPackages [gasm]: Timeout reached during download
+[2024-04-06 01:03:41] INFO root fetch - processPackages [gasm]: executing diffoscope
+[2024-04-06 01:03:41] INFO root fetch - processPackages [gasm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gasm-1.1.5.tar.gz tmp/gasm-1.1.6.tar.gz --markdown 20240406/g/gasm/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2024-04-06 01:03:41] WARNING root fetch - processPackages [robotframework-browser-translation-fi]: Timeout reached during download
+[2024-04-06 01:03:42] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Downloading https://files.pythonhosted.org/packages/ba/f4/33b01191e96c7d31b71a16fdc804101713d1c2d29e992065635ae677d1b0/robotframework-browser-translation-fi-0.4.2.tar.gz
+[2024-04-06 01:03:42] WARNING root fetch - processPackages [robotframework-browser-translation-fi]: Timeout reached during download
+[2024-04-06 01:03:42] INFO root fetch - processPackages [robotframework-browser-translation-fi]: executing diffoscope
+[2024-04-06 01:03:42] INFO root fetch - processPackages [robotframework-browser-translation-fi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotframework-browser-translation-fi-0.4.1.tar.gz tmp/robotframework-browser-translation-fi-0.4.2.tar.gz --markdown 20240406/r/robotframework-browser-translation-fi/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2024-04-06 01:03:42] INFO root fetch - processPackages [gasm]: Remove: archive file [/home/abi/fetcher/tmp/gasm-1.1.5.tar.gz]
+[2024-04-06 01:03:42] INFO root fetch - processPackages [gasm]: Remove: archive file [/home/abi/fetcher/tmp/gasm-1.1.6.tar.gz]
+[2024-04-06 01:03:42] INFO root fetch - main [MainThread]: End processing [gasm]: success
+[2024-04-06 01:03:42] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Remove: archive file [/home/abi/fetcher/tmp/robotframework-browser-translation-fi-0.4.1.tar.gz]
+[2024-04-06 01:03:42] INFO root fetch - processPackages [robotframework-browser-translation-fi]: Remove: archive file [/home/abi/fetcher/tmp/robotframework-browser-translation-fi-0.4.2.tar.gz]
+[2024-04-06 01:03:42] INFO root fetch - main [MainThread]: End processing [robotframework-browser-translation-fi]: success
+[2024-04-06 01:03:42] INFO root fetch - main [MainThread]: Store serial: [22642861]
