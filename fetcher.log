@@ -726,3 +726,39 @@
 [2024-04-06 00:42:00] INFO root fetch - processPackages [lean]: Remove: archive file [/home/abi/fetcher/tmp/lean-1.0.99.tar.gz]
 [2024-04-06 00:42:00] INFO root fetch - main [MainThread]: End processing [lean]: success
 [2024-04-06 00:42:00] INFO root fetch - main [MainThread]: Store serial: [22642703]
+[2024-04-06 00:44:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642703]
+[2024-04-06 00:44:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 00:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-dragonfly
+[2024-04-06 00:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: experimental-yt-fts
+[2024-04-06 00:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipen
+[2024-04-06 00:44:09] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-06 00:44:09] INFO root fetch - processPackages [experimental-yt-fts]: New version: [0.1.45] Old Version: [0.1.42]
+[2024-04-06 00:44:09] INFO root fetch - processPackages [pipen]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 00:44:09] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-06 00:44:09] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/89/8d/9c6dc54d1785255af9c0f2b040483e2d6d4b2c0f75ac4eef36237b5ba735/pipen-0.9.8.tar.gz
+[2024-04-06 00:44:09] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/6f/5f/668702037706b55f1d2ae942f71a7b2939ceb81ec45e03af0275b1c23809/experimental-yt-fts-0.1.42.tar.gz
+[2024-04-06 00:44:09] WARNING root fetch - processPackages [lbt-dragonfly]: Timeout reached during download
+[2024-04-06 00:44:09] WARNING root fetch - processPackages [pipen]: Timeout reached during download
+[2024-04-06 00:44:09] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 00:44:09] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-06 00:44:10] WARNING root fetch - processPackages [lbt-dragonfly]: Timeout reached during download
+[2024-04-06 00:44:10] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-06 00:44:10] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240406/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2024-04-06 00:44:10] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/cf/78/63ab6a06effd25dc26f53fe4cbb96898cf49c45d1a24db0ba1464203f774/experimental-yt-fts-0.1.45.tar.gz
+[2024-04-06 00:44:10] INFO root fetch - processPackages [pipen]: Downloading https://files.pythonhosted.org/packages/45/94/66725f0ebe253ae8e488f0eba36085ecc25349bc326bfe14d38c76bb9482/pipen-0.9.9.tar.gz
+[2024-04-06 00:44:10] WARNING root fetch - processPackages [pipen]: Timeout reached during download
+[2024-04-06 00:44:10] INFO root fetch - processPackages [pipen]: executing diffoscope
+[2024-04-06 00:44:10] INFO root fetch - processPackages [pipen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen-0.9.8.tar.gz tmp/pipen-0.9.9.tar.gz --markdown 20240406/p/pipen/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 00:44:10] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 00:44:10] INFO root fetch - processPackages [experimental-yt-fts]: executing diffoscope
+[2024-04-06 00:44:10] INFO root fetch - processPackages [experimental-yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimental-yt-fts-0.1.42.tar.gz tmp/experimental-yt-fts-0.1.45.tar.gz --markdown 20240406/e/experimental-yt-fts/0.1.42-0.1.45/diff.md --exclude *.pyd
+[2024-04-06 00:44:10] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-06 00:44:10] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-06 00:44:10] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-06 00:44:10] INFO root fetch - processPackages [pipen]: Remove: archive file [/home/abi/fetcher/tmp/pipen-0.9.8.tar.gz]
+[2024-04-06 00:44:10] INFO root fetch - processPackages [pipen]: Remove: archive file [/home/abi/fetcher/tmp/pipen-0.9.9.tar.gz]
+[2024-04-06 00:44:10] INFO root fetch - main [MainThread]: End processing [pipen]: success
+[2024-04-06 00:44:11] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.42.tar.gz]
+[2024-04-06 00:44:11] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.45.tar.gz]
+[2024-04-06 00:44:11] INFO root fetch - main [MainThread]: End processing [experimental-yt-fts]: success
+[2024-04-06 00:44:11] INFO root fetch - main [MainThread]: Store serial: [22642712]
