@@ -945,3 +945,17 @@
 [2024-04-06 00:57:12] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.5.tar.gz]
 [2024-04-06 00:57:12] INFO root fetch - main [MainThread]: End processing [agt-server]: success
 [2024-04-06 00:57:12] INFO root fetch - main [MainThread]: Store serial: [22642835]
+[2024-04-06 00:59:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642835]
+[2024-04-06 00:59:20] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 00:59:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyapi-server
+[2024-04-06 00:59:20] INFO root fetch - processPackages [pyapi-server]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-06 00:59:20] INFO root fetch - processPackages [pyapi-server]: Downloading https://files.pythonhosted.org/packages/e6/99/2757b13ebcee7d7ce563285a8c247b6d6a1ffba83ddd040a0563855dd0de/pyapi-server-0.4.1.tar.gz
+[2024-04-06 00:59:21] WARNING root fetch - processPackages [pyapi-server]: Timeout reached during download
+[2024-04-06 00:59:21] INFO root fetch - processPackages [pyapi-server]: Downloading https://files.pythonhosted.org/packages/30/c6/98a1de7f74988d900dd78634643030fe0f6d018dd72f7ff36e9443cd97d2/pyapi_server-0.5.0.tar.gz
+[2024-04-06 00:59:21] WARNING root fetch - processPackages [pyapi-server]: Timeout reached during download
+[2024-04-06 00:59:21] INFO root fetch - processPackages [pyapi-server]: executing diffoscope
+[2024-04-06 00:59:21] INFO root fetch - processPackages [pyapi-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyapi-server-0.4.1.tar.gz tmp/pyapi_server-0.5.0.tar.gz --markdown 20240406/p/pyapi-server/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2024-04-06 00:59:21] INFO root fetch - processPackages [pyapi-server]: Remove: archive file [/home/abi/fetcher/tmp/pyapi-server-0.4.1.tar.gz]
+[2024-04-06 00:59:21] INFO root fetch - processPackages [pyapi-server]: Remove: archive file [/home/abi/fetcher/tmp/pyapi_server-0.5.0.tar.gz]
+[2024-04-06 00:59:21] INFO root fetch - main [MainThread]: End processing [pyapi-server]: success
+[2024-04-06 00:59:21] INFO root fetch - main [MainThread]: Store serial: [22642838]
