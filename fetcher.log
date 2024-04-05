@@ -96,3 +96,39 @@
 [2024-04-06 00:04:59] INFO root fetch - processPackages [mkdocs-swagger-ui]: Remove: archive file [/home/abi/fetcher/tmp/mkdocs-swagger-ui-0.2.tar.gz]
 [2024-04-06 00:04:59] INFO root fetch - main [MainThread]: End processing [mkdocs-swagger-ui]: success
 [2024-04-06 00:04:59] INFO root fetch - main [MainThread]: Store serial: [22642482]
+[2024-04-06 00:07:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642482]
+[2024-04-06 00:07:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 00:07:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docugami-langchain
+[2024-04-06 00:07:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sapiopylib
+[2024-04-06 00:07:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shipyard-sftp
+[2024-04-06 00:07:07] INFO root fetch - processPackages [shipyard-sftp]: New version: [0.3.2a0] Old Version: [0.3.1a0]
+[2024-04-06 00:07:07] INFO root fetch - processPackages [shipyard-sftp]: Downloading https://files.pythonhosted.org/packages/a0/90/ed8a7f08a2dd2bdf90b7ed716cc2b89233d4fad6db09bd107d5a5ef65d44/shipyard_sftp-0.3.1a0.tar.gz
+[2024-04-06 00:07:07] INFO root fetch - processPackages [sapiopylib]: New version: [2024.4.5a179] Old Version: [2024.2.7a178]
+[2024-04-06 00:07:07] INFO root fetch - processPackages [docugami-langchain]: New version: [0.0.7rc9] Old Version: [0.0.7rc8]
+[2024-04-06 00:07:07] WARNING root fetch - processPackages [shipyard-sftp]: Timeout reached during download
+[2024-04-06 00:07:07] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/61/fb/e065e9733519fa7f9c379746d05be5069415a0888c754b8d12a4b7595069/docugami_langchain-0.0.7rc8.tar.gz
+[2024-04-06 00:07:07] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/0f/7a/e6b2797c372643c114dfeb72d27fdd5cead98bc24756932d32bf26ef3000/sapiopylib-2024.2.7a178.tar.gz
+[2024-04-06 00:07:08] INFO root fetch - processPackages [shipyard-sftp]: Downloading https://files.pythonhosted.org/packages/6c/cd/a17db58d5196ba9cfdb58d54295353e63564fb233779820ba5267e1f4633/shipyard_sftp-0.3.2a0.tar.gz
+[2024-04-06 00:07:08] WARNING root fetch - processPackages [docugami-langchain]: Timeout reached during download
+[2024-04-06 00:07:08] WARNING root fetch - processPackages [sapiopylib]: Timeout reached during download
+[2024-04-06 00:07:08] WARNING root fetch - processPackages [shipyard-sftp]: Timeout reached during download
+[2024-04-06 00:07:08] INFO root fetch - processPackages [shipyard-sftp]: executing diffoscope
+[2024-04-06 00:07:08] INFO root fetch - processPackages [shipyard-sftp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipyard_sftp-0.3.1a0.tar.gz tmp/shipyard_sftp-0.3.2a0.tar.gz --markdown 20240406/s/shipyard-sftp/0.3.1a0-0.3.2a0/diff.md --exclude *.pyd
+[2024-04-06 00:07:08] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/d3/dc/ebfc94d3428173a7827916947f5e84317c665bab439e99dd9fd634dcc60f/docugami_langchain-0.0.7rc9.tar.gz
+[2024-04-06 00:07:08] INFO root fetch - processPackages [sapiopylib]: Downloading https://files.pythonhosted.org/packages/46/9c/4450ec4f6826130fa3f65bd7aee1383ad2d785bea84ce7db37e38cd43653/sapiopylib-2024.4.5a179.tar.gz
+[2024-04-06 00:07:08] WARNING root fetch - processPackages [docugami-langchain]: Timeout reached during download
+[2024-04-06 00:07:08] INFO root fetch - processPackages [docugami-langchain]: executing diffoscope
+[2024-04-06 00:07:08] INFO root fetch - processPackages [docugami-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugami_langchain-0.0.7rc8.tar.gz tmp/docugami_langchain-0.0.7rc9.tar.gz --markdown 20240406/d/docugami-langchain/0.0.7rc8-0.0.7rc9/diff.md --exclude *.pyd
+[2024-04-06 00:07:08] WARNING root fetch - processPackages [sapiopylib]: Timeout reached during download
+[2024-04-06 00:07:08] INFO root fetch - processPackages [sapiopylib]: executing diffoscope
+[2024-04-06 00:07:08] INFO root fetch - processPackages [sapiopylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sapiopylib-2024.2.7a178.tar.gz tmp/sapiopylib-2024.4.5a179.tar.gz --markdown 20240406/s/sapiopylib/2024.2.7a178-2024.4.5a179/diff.md --exclude *.pyd
+[2024-04-06 00:07:08] INFO root fetch - processPackages [shipyard-sftp]: Remove: archive file [/home/abi/fetcher/tmp/shipyard_sftp-0.3.1a0.tar.gz]
+[2024-04-06 00:07:08] INFO root fetch - processPackages [shipyard-sftp]: Remove: archive file [/home/abi/fetcher/tmp/shipyard_sftp-0.3.2a0.tar.gz]
+[2024-04-06 00:07:08] INFO root fetch - main [MainThread]: End processing [shipyard-sftp]: success
+[2024-04-06 00:07:09] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.7rc8.tar.gz]
+[2024-04-06 00:07:09] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.7rc9.tar.gz]
+[2024-04-06 00:07:09] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
+[2024-04-06 00:07:09] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.2.7a178.tar.gz]
+[2024-04-06 00:07:09] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.4.5a179.tar.gz]
+[2024-04-06 00:07:09] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
+[2024-04-06 00:07:09] INFO root fetch - main [MainThread]: Store serial: [22642491]
