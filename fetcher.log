@@ -1200,3 +1200,11 @@
 [2024-04-06 01:12:29] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-0.0.99-py39-none-any.whl.zip]
 [2024-04-06 01:12:29] INFO root fetch - main [MainThread]: End processing [OZI]: success
 [2024-04-06 01:12:29] INFO root fetch - main [MainThread]: Store serial: [22642902]
+[2024-04-06 01:14:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642902]
+[2024-04-06 01:14:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 01:14:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libera_utils
+[2024-04-06 01:14:37] INFO root fetch - processPackages [libera_utils]: New version: [2.3.0rc1] Old Version: [2.2.2rc5]
+[2024-04-06 01:14:38] INFO root fetch - processPackages [libera_utils]: Downloading https://files.pythonhosted.org/packages/1d/b8/4b0f6ac0f3e86196550f6dfda53d8d7e3c2ad9849a4e8411b3d22797685a/libera_utils-2.2.2rc5.tar.gz
+[2024-04-06 01:14:38] WARNING root fetch - processPackages [libera_utils]: Skipping package: exceeds size limit 31167288>=10485760
+[2024-04-06 01:14:38] INFO root fetch - main [MainThread]: End processing [libera_utils] error
+[2024-04-06 01:14:38] INFO root fetch - main [MainThread]: Store serial: [22642905]
