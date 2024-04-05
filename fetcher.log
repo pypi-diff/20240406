@@ -1208,3 +1208,22 @@
 [2024-04-06 01:14:38] WARNING root fetch - processPackages [libera_utils]: Skipping package: exceeds size limit 31167288>=10485760
 [2024-04-06 01:14:38] INFO root fetch - main [MainThread]: End processing [libera_utils] error
 [2024-04-06 01:14:38] INFO root fetch - main [MainThread]: Store serial: [22642905]
+[2024-04-06 01:16:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642905]
+[2024-04-06 01:16:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 01:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: optilogic
+[2024-04-06 01:16:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: atopile
+[2024-04-06 01:16:46] INFO root fetch - processPackages [optilogic]: New version: [2.9.0] Old Version: [2.8.4]
+[2024-04-06 01:16:47] INFO root fetch - processPackages [optilogic]: Downloading https://files.pythonhosted.org/packages/3f/17/86adf91aa2e268f1bccc8e9833caaab7aa33e86ec71bb1993073f57cae53/optilogic-2.8.4-py3-none-any.whl
+[2024-04-06 01:16:47] INFO root fetch - processPackages [atopile]: New version: [0.3.0.dev0] Old Version: [0.2.9]
+[2024-04-06 01:16:47] WARNING root fetch - processPackages [optilogic]: Timeout reached during download
+[2024-04-06 01:16:47] INFO root fetch - processPackages [optilogic]: Downloading https://files.pythonhosted.org/packages/de/27/810ef2a58e45abe5184bcc3467d6db4caef551a363ba20a532dd83d9bce2/optilogic-2.9.0-py3-none-any.whl
+[2024-04-06 01:16:47] INFO root fetch - processPackages [atopile]: Downloading https://files.pythonhosted.org/packages/b9/4b/f9ec536fd464d0e26a65a2027efe19630c4f5dbd38d7329e74df46ff0a91/atopile-0.2.9.tar.gz
+[2024-04-06 01:16:47] WARNING root fetch - processPackages [atopile]: Skipping package: exceeds size limit 25663075>=10485760
+[2024-04-06 01:16:47] INFO root fetch - main [MainThread]: End processing [atopile] error
+[2024-04-06 01:16:47] WARNING root fetch - processPackages [optilogic]: Timeout reached during download
+[2024-04-06 01:16:47] INFO root fetch - processPackages [optilogic]: executing diffoscope
+[2024-04-06 01:16:47] INFO root fetch - processPackages [optilogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/optilogic-2.8.4-py3-none-any.whl.zip tmp/optilogic-2.9.0-py3-none-any.whl.zip --markdown 20240406/o/optilogic/2.8.4-2.9.0/diff.md --exclude *.pyd
+[2024-04-06 01:16:48] INFO root fetch - processPackages [optilogic]: Remove: archive file [/home/abi/fetcher/tmp/optilogic-2.8.4-py3-none-any.whl.zip]
+[2024-04-06 01:16:48] INFO root fetch - processPackages [optilogic]: Remove: archive file [/home/abi/fetcher/tmp/optilogic-2.9.0-py3-none-any.whl.zip]
+[2024-04-06 01:16:48] INFO root fetch - main [MainThread]: End processing [optilogic]: success
+[2024-04-06 01:16:48] INFO root fetch - main [MainThread]: Store serial: [22642907]
