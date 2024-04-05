@@ -1439,3 +1439,20 @@
 [2024-04-06 01:32:22] INFO root fetch - processPackages [savemoney]: Remove: archive file [/home/abi/fetcher/tmp/savemoney-0.2.9.tar.gz]
 [2024-04-06 01:32:22] INFO root fetch - main [MainThread]: End processing [savemoney]: success
 [2024-04-06 01:32:22] INFO root fetch - main [MainThread]: Store serial: [22643012]
+[2024-04-06 01:34:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643012]
+[2024-04-06 01:34:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 01:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: svgsimplegraph
+[2024-04-06 01:34:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-terminal
+[2024-04-06 01:34:31] INFO root fetch - processPackages [svgsimplegraph]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-06 01:34:31] WARNING root fetch - processPackages [flask-terminal]: Skipping, unable to determine old version
+[2024-04-06 01:34:31] INFO root fetch - main [MainThread]: End processing [flask-terminal] error
+[2024-04-06 01:34:31] INFO root fetch - processPackages [svgsimplegraph]: Downloading https://files.pythonhosted.org/packages/c4/6f/70b2cc049fe30ee4e9aeaed337c88fac480c1aaf1dad1e0462e21ee3af5b/svgsimplegraph-0.2.1.tar.gz
+[2024-04-06 01:34:31] WARNING root fetch - processPackages [svgsimplegraph]: Timeout reached during download
+[2024-04-06 01:34:31] INFO root fetch - processPackages [svgsimplegraph]: Downloading https://files.pythonhosted.org/packages/f5/c3/37b783d3c34b6450fb0140266270192ad96093628155391038177e09f11d/svgsimplegraph-0.2.2.tar.gz
+[2024-04-06 01:34:31] WARNING root fetch - processPackages [svgsimplegraph]: Timeout reached during download
+[2024-04-06 01:34:31] INFO root fetch - processPackages [svgsimplegraph]: executing diffoscope
+[2024-04-06 01:34:31] INFO root fetch - processPackages [svgsimplegraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/svgsimplegraph-0.2.1.tar.gz tmp/svgsimplegraph-0.2.2.tar.gz --markdown 20240406/s/svgsimplegraph/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-06 01:34:32] INFO root fetch - processPackages [svgsimplegraph]: Remove: archive file [/home/abi/fetcher/tmp/svgsimplegraph-0.2.1.tar.gz]
+[2024-04-06 01:34:32] INFO root fetch - processPackages [svgsimplegraph]: Remove: archive file [/home/abi/fetcher/tmp/svgsimplegraph-0.2.2.tar.gz]
+[2024-04-06 01:34:32] INFO root fetch - main [MainThread]: End processing [svgsimplegraph]: success
+[2024-04-06 01:34:32] INFO root fetch - main [MainThread]: Store serial: [22643040]
