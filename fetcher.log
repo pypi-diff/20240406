@@ -1275,3 +1275,28 @@
 [2024-04-06 01:18:58] INFO root fetch - main [MainThread]: End processing [derived-product-database]: success
 [2024-04-06 01:18:58] INFO root fetch - main [MainThread]: End processing [derived-product-database]: success
 [2024-04-06 01:18:58] INFO root fetch - main [MainThread]: Store serial: [22642921]
+[2024-04-06 01:21:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642921]
+[2024-04-06 01:21:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 01:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: derived-product-database
+[2024-04-06 01:21:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: experimental-yt-fts
+[2024-04-06 01:21:07] INFO root fetch - processPackages [experimental-yt-fts]: New version: [0.1.47] Old Version: [0.1.45]
+[2024-04-06 01:21:07] INFO root fetch - processPackages [derived-product-database]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 01:21:07] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/cf/78/63ab6a06effd25dc26f53fe4cbb96898cf49c45d1a24db0ba1464203f774/experimental-yt-fts-0.1.45.tar.gz
+[2024-04-06 01:21:07] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/4b/f2/6cffd95899daf80197f9b1c2de8852d912922c288db0453c70202e9bb11e/derived-product-database-0.0.4.tar.gz
+[2024-04-06 01:21:07] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:21:07] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 01:21:07] INFO root fetch - processPackages [derived-product-database]: Downloading https://files.pythonhosted.org/packages/53/10/7141c386c6af0ffc7473bcf18947dc031f1aca7708cfecc063c09ba3adbd/derived-product-database-0.0.5.tar.gz
+[2024-04-06 01:21:07] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/46/cd/3c635e8b1616e31de5765565ae39b5a65d0eb347cfa9b742502665f4b69b/experimental-yt-fts-0.1.47.tar.gz
+[2024-04-06 01:21:07] WARNING root fetch - processPackages [derived-product-database]: Timeout reached during download
+[2024-04-06 01:21:07] INFO root fetch - processPackages [derived-product-database]: executing diffoscope
+[2024-04-06 01:21:07] INFO root fetch - processPackages [derived-product-database]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/derived-product-database-0.0.4.tar.gz tmp/derived-product-database-0.0.5.tar.gz --markdown 20240406/d/derived-product-database/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 01:21:07] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 01:21:07] INFO root fetch - processPackages [experimental-yt-fts]: executing diffoscope
+[2024-04-06 01:21:07] INFO root fetch - processPackages [experimental-yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimental-yt-fts-0.1.45.tar.gz tmp/experimental-yt-fts-0.1.47.tar.gz --markdown 20240406/e/experimental-yt-fts/0.1.45-0.1.47/diff.md --exclude *.pyd
+[2024-04-06 01:21:08] INFO root fetch - processPackages [derived-product-database]: Remove: archive file [/home/abi/fetcher/tmp/derived-product-database-0.0.4.tar.gz]
+[2024-04-06 01:21:08] INFO root fetch - processPackages [derived-product-database]: Remove: archive file [/home/abi/fetcher/tmp/derived-product-database-0.0.5.tar.gz]
+[2024-04-06 01:21:08] INFO root fetch - main [MainThread]: End processing [derived-product-database]: success
+[2024-04-06 01:21:08] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.45.tar.gz]
+[2024-04-06 01:21:08] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.47.tar.gz]
+[2024-04-06 01:21:08] INFO root fetch - main [MainThread]: End processing [experimental-yt-fts]: success
+[2024-04-06 01:21:08] INFO root fetch - main [MainThread]: Store serial: [22642927]
