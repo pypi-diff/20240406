@@ -1583,3 +1583,30 @@
 [2024-04-06 01:49:35] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240405.248.tar.gz]
 [2024-04-06 01:49:35] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-04-06 01:49:35] INFO root fetch - main [MainThread]: Store serial: [22643078]
+[2024-04-06 01:51:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643078]
+[2024-04-06 01:51:44] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 01:53:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643078]
+[2024-04-06 01:53:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 01:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pictorus
+[2024-04-06 01:53:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: typed-stream
+[2024-04-06 01:53:50] INFO root fetch - processPackages [pictorus]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-06 01:53:50] INFO root fetch - processPackages [typed-stream]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-06 01:53:50] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/10/f3/9ca887bf05fe3aa24b638a70a59a310bd2e51bcc51db98fcce7555184246/typed_stream-0.8.1.tar.gz
+[2024-04-06 01:53:50] INFO root fetch - processPackages [pictorus]: Downloading https://files.pythonhosted.org/packages/5e/73/9a8ddd20a558be6976faf2f6c7d23c233e157267348d70066391a1d3cd05/pictorus-0.2.2.tar.gz
+[2024-04-06 01:53:50] WARNING root fetch - processPackages [pictorus]: Timeout reached during download
+[2024-04-06 01:53:50] INFO root fetch - processPackages [pictorus]: Downloading https://files.pythonhosted.org/packages/19/4b/c7dae62594e1c7ec3a0e394c721b2458884261d92d2bd8096b37d7797268/pictorus-0.2.3.tar.gz
+[2024-04-06 01:53:50] WARNING root fetch - processPackages [pictorus]: Timeout reached during download
+[2024-04-06 01:53:50] INFO root fetch - processPackages [pictorus]: executing diffoscope
+[2024-04-06 01:53:50] INFO root fetch - processPackages [pictorus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pictorus-0.2.2.tar.gz tmp/pictorus-0.2.3.tar.gz --markdown 20240406/p/pictorus/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2024-04-06 01:53:50] WARNING root fetch - processPackages [typed-stream]: Timeout reached during download
+[2024-04-06 01:53:50] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/bb/24/f83cc57bb674412ca23bf059d7fda90ee02a53f9e08c6abc49d9a6b56408/typed_stream-0.8.2.tar.gz
+[2024-04-06 01:53:51] INFO root fetch - processPackages [pictorus]: Remove: archive file [/home/abi/fetcher/tmp/pictorus-0.2.2.tar.gz]
+[2024-04-06 01:53:51] INFO root fetch - processPackages [pictorus]: Remove: archive file [/home/abi/fetcher/tmp/pictorus-0.2.3.tar.gz]
+[2024-04-06 01:53:51] INFO root fetch - main [MainThread]: End processing [pictorus]: success
+[2024-04-06 01:53:51] WARNING root fetch - processPackages [typed-stream]: Timeout reached during download
+[2024-04-06 01:53:51] INFO root fetch - processPackages [typed-stream]: executing diffoscope
+[2024-04-06 01:53:51] INFO root fetch - processPackages [typed-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typed_stream-0.8.1.tar.gz tmp/typed_stream-0.8.2.tar.gz --markdown 20240406/t/typed-stream/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-06 01:53:52] INFO root fetch - processPackages [typed-stream]: Remove: archive file [/home/abi/fetcher/tmp/typed_stream-0.8.1.tar.gz]
+[2024-04-06 01:53:52] INFO root fetch - processPackages [typed-stream]: Remove: archive file [/home/abi/fetcher/tmp/typed_stream-0.8.2.tar.gz]
+[2024-04-06 01:53:52] INFO root fetch - main [MainThread]: End processing [typed-stream]: success
+[2024-04-06 01:53:52] INFO root fetch - main [MainThread]: Store serial: [22643084]
