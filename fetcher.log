@@ -1353,3 +1353,17 @@
 [2024-04-06 01:25:47] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.2rc9.tar.gz]
 [2024-04-06 01:25:47] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
 [2024-04-06 01:25:47] INFO root fetch - main [MainThread]: Store serial: [22642949]
+[2024-04-06 01:27:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642949]
+[2024-04-06 01:27:56] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 01:27:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shuttleai
+[2024-04-06 01:27:56] INFO root fetch - processPackages [shuttleai]: New version: [3.8.6] Old Version: [3.8.5]
+[2024-04-06 01:27:56] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/b4/1e/1a04a5b8c517099cb7a48726cf1613c6ee43c38bafcbccc8ae5ba58f6d80/shuttleai-3.8.5.tar.gz
+[2024-04-06 01:27:56] WARNING root fetch - processPackages [shuttleai]: Timeout reached during download
+[2024-04-06 01:27:56] INFO root fetch - processPackages [shuttleai]: Downloading https://files.pythonhosted.org/packages/32/6d/9e852437db0de3a31513805106618f6cbdc2905f927a68591b4fe35a63a3/shuttleai-3.8.6.tar.gz
+[2024-04-06 01:27:57] WARNING root fetch - processPackages [shuttleai]: Timeout reached during download
+[2024-04-06 01:27:57] INFO root fetch - processPackages [shuttleai]: executing diffoscope
+[2024-04-06 01:27:57] INFO root fetch - processPackages [shuttleai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shuttleai-3.8.5.tar.gz tmp/shuttleai-3.8.6.tar.gz --markdown 20240406/s/shuttleai/3.8.5-3.8.6/diff.md --exclude *.pyd
+[2024-04-06 01:27:57] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.8.5.tar.gz]
+[2024-04-06 01:27:57] INFO root fetch - processPackages [shuttleai]: Remove: archive file [/home/abi/fetcher/tmp/shuttleai-3.8.6.tar.gz]
+[2024-04-06 01:27:57] INFO root fetch - main [MainThread]: End processing [shuttleai]: success
+[2024-04-06 01:27:57] INFO root fetch - main [MainThread]: Store serial: [22642951]
