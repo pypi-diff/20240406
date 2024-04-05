@@ -340,3 +340,28 @@
 [2024-04-06 00:24:28] INFO root fetch - processPackages [automation-tools]: Remove: archive file [/home/abi/fetcher/tmp/automation_tools-1.0.7.tar.gz]
 [2024-04-06 00:24:28] INFO root fetch - main [MainThread]: End processing [automation-tools]: success
 [2024-04-06 00:24:28] INFO root fetch - main [MainThread]: Store serial: [22642605]
+[2024-04-06 00:26:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642605]
+[2024-04-06 00:26:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 00:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-core
+[2024-04-06 00:26:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openelo
+[2024-04-06 00:26:36] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-06 00:26:37] INFO root fetch - processPackages [openelo]: New version: [0.0.2.post2] Old Version: [0.0.2.post1]
+[2024-04-06 00:26:37] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2024-04-06 00:26:37] INFO root fetch - processPackages [openelo]: Downloading https://files.pythonhosted.org/packages/98/94/d1cb845b522c12192e9d054ac9bae7d260e01ac86baa4205ed7bd9746c0e/openelo-0.0.2.post1.tar.gz
+[2024-04-06 00:26:37] WARNING root fetch - processPackages [dragonfly-core]: Timeout reached during download
+[2024-04-06 00:26:37] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2024-04-06 00:26:37] WARNING root fetch - processPackages [openelo]: Timeout reached during download
+[2024-04-06 00:26:37] WARNING root fetch - processPackages [dragonfly-core]: Timeout reached during download
+[2024-04-06 00:26:37] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2024-04-06 00:26:37] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20240406/d/dragonfly-core/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2024-04-06 00:26:37] INFO root fetch - processPackages [openelo]: Downloading https://files.pythonhosted.org/packages/a1/54/7202e9805f56f304d3a5319938cb8b57251a19e4a215c57ea8b74d0d759a/openelo-0.0.2.post2.tar.gz
+[2024-04-06 00:26:37] WARNING root fetch - processPackages [openelo]: Timeout reached during download
+[2024-04-06 00:26:37] INFO root fetch - processPackages [openelo]: executing diffoscope
+[2024-04-06 00:26:37] INFO root fetch - processPackages [openelo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openelo-0.0.2.post1.tar.gz tmp/openelo-0.0.2.post2.tar.gz --markdown 20240406/o/openelo/0.0.2.post1-0.0.2.post2/diff.md --exclude *.pyd
+[2024-04-06 00:26:38] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.8.1.tar.gz]
+[2024-04-06 00:26:38] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.9.0.tar.gz]
+[2024-04-06 00:26:38] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2024-04-06 00:26:38] INFO root fetch - processPackages [openelo]: Remove: archive file [/home/abi/fetcher/tmp/openelo-0.0.2.post1.tar.gz]
+[2024-04-06 00:26:38] INFO root fetch - processPackages [openelo]: Remove: archive file [/home/abi/fetcher/tmp/openelo-0.0.2.post2.tar.gz]
+[2024-04-06 00:26:38] INFO root fetch - main [MainThread]: End processing [openelo]: success
+[2024-04-06 00:26:38] INFO root fetch - main [MainThread]: Store serial: [22642610]
