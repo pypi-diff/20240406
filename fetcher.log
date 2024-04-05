@@ -132,3 +132,42 @@
 [2024-04-06 00:07:09] INFO root fetch - processPackages [sapiopylib]: Remove: archive file [/home/abi/fetcher/tmp/sapiopylib-2024.4.5a179.tar.gz]
 [2024-04-06 00:07:09] INFO root fetch - main [MainThread]: End processing [sapiopylib]: success
 [2024-04-06 00:07:09] INFO root fetch - main [MainThread]: Store serial: [22642491]
+[2024-04-06 00:09:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642491]
+[2024-04-06 00:09:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 00:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythreadserver
+[2024-04-06 00:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decayangle
+[2024-04-06 00:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datasette-enrichments-quickjs
+[2024-04-06 00:09:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: noveler
+[2024-04-06 00:09:17] INFO root fetch - processPackages [pythreadserver]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 00:09:18] INFO root fetch - processPackages [decayangle]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 00:09:18] INFO root fetch - processPackages [datasette-enrichments-quickjs]: New version: [0.1a2] Old Version: [0.1a1]
+[2024-04-06 00:09:18] WARNING root fetch - processPackages [noveler]: Skipping, unable to determine old version
+[2024-04-06 00:09:18] INFO root fetch - main [MainThread]: End processing [noveler] error
+[2024-04-06 00:09:18] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/64/8a/397e23edb0785b7d407a92ba89bb01b4059f7c3c834de69f377e75ad5b62/pythreadserver-0.1.0.tar.gz
+[2024-04-06 00:09:18] INFO root fetch - processPackages [decayangle]: Downloading https://files.pythonhosted.org/packages/ce/40/19693ed28a1d0da68a5421f8ea7b61bec17a3c315aa78b2bfaefc51e3c10/decayangle-1.0.0.tar.gz
+[2024-04-06 00:09:18] INFO root fetch - processPackages [datasette-enrichments-quickjs]: Downloading https://files.pythonhosted.org/packages/44/44/a3fbde06de31ee7331ac1b83c166b93c2e807e4b8036a49b1c9fd2db8dc2/datasette-enrichments-quickjs-0.1a1.tar.gz
+[2024-04-06 00:09:18] WARNING root fetch - processPackages [pythreadserver]: Timeout reached during download
+[2024-04-06 00:09:18] WARNING root fetch - processPackages [decayangle]: Timeout reached during download
+[2024-04-06 00:09:18] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/68/07/d19aab01117a7922f0931fe3cf28bc177ac9925f88ddf9d982855ddfedd6/pythreadserver-0.1.1.tar.gz
+[2024-04-06 00:09:18] WARNING root fetch - processPackages [datasette-enrichments-quickjs]: Timeout reached during download
+[2024-04-06 00:09:18] INFO root fetch - processPackages [decayangle]: Downloading https://files.pythonhosted.org/packages/85/db/16f3db4f392584ebc0ed5b99919e4c5cd492eb13e40285fbf9e79421cff8/decayangle-1.0.1.tar.gz
+[2024-04-06 00:09:18] WARNING root fetch - processPackages [pythreadserver]: Timeout reached during download
+[2024-04-06 00:09:18] INFO root fetch - processPackages [pythreadserver]: executing diffoscope
+[2024-04-06 00:09:18] INFO root fetch - processPackages [pythreadserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythreadserver-0.1.0.tar.gz tmp/pythreadserver-0.1.1.tar.gz --markdown 20240406/p/pythreadserver/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 00:09:18] WARNING root fetch - processPackages [decayangle]: Timeout reached during download
+[2024-04-06 00:09:18] INFO root fetch - processPackages [decayangle]: executing diffoscope
+[2024-04-06 00:09:18] INFO root fetch - processPackages [decayangle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decayangle-1.0.0.tar.gz tmp/decayangle-1.0.1.tar.gz --markdown 20240406/d/decayangle/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 00:09:18] INFO root fetch - processPackages [datasette-enrichments-quickjs]: Downloading https://files.pythonhosted.org/packages/3e/2d/04baadc71a566372e245893d0c4ceb565eb77d6cd3be5de88824840914b9/datasette-enrichments-quickjs-0.1a2.tar.gz
+[2024-04-06 00:09:19] WARNING root fetch - processPackages [datasette-enrichments-quickjs]: Timeout reached during download
+[2024-04-06 00:09:19] INFO root fetch - processPackages [datasette-enrichments-quickjs]: executing diffoscope
+[2024-04-06 00:09:19] INFO root fetch - processPackages [datasette-enrichments-quickjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette-enrichments-quickjs-0.1a1.tar.gz tmp/datasette-enrichments-quickjs-0.1a2.tar.gz --markdown 20240406/d/datasette-enrichments-quickjs/0.1a1-0.1a2/diff.md --exclude *.pyd
+[2024-04-06 00:09:19] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.0.tar.gz]
+[2024-04-06 00:09:19] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.1.tar.gz]
+[2024-04-06 00:09:19] INFO root fetch - main [MainThread]: End processing [pythreadserver]: success
+[2024-04-06 00:09:19] INFO root fetch - processPackages [decayangle]: Remove: archive file [/home/abi/fetcher/tmp/decayangle-1.0.0.tar.gz]
+[2024-04-06 00:09:19] INFO root fetch - processPackages [decayangle]: Remove: archive file [/home/abi/fetcher/tmp/decayangle-1.0.1.tar.gz]
+[2024-04-06 00:09:19] INFO root fetch - main [MainThread]: End processing [decayangle]: success
+[2024-04-06 00:09:19] INFO root fetch - processPackages [datasette-enrichments-quickjs]: Remove: archive file [/home/abi/fetcher/tmp/datasette-enrichments-quickjs-0.1a1.tar.gz]
+[2024-04-06 00:09:19] INFO root fetch - processPackages [datasette-enrichments-quickjs]: Remove: archive file [/home/abi/fetcher/tmp/datasette-enrichments-quickjs-0.1a2.tar.gz]
+[2024-04-06 00:09:19] INFO root fetch - main [MainThread]: End processing [datasette-enrichments-quickjs]: success
+[2024-04-06 00:09:19] INFO root fetch - main [MainThread]: Store serial: [22642505]
