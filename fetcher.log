@@ -843,3 +843,39 @@
 [2024-04-06 00:50:40] INFO root fetch - processPackages [UncountablePythonSDK]: Remove: archive file [/home/abi/fetcher/tmp/UncountablePythonSDK-0.0.9.tar.gz]
 [2024-04-06 00:50:40] INFO root fetch - main [MainThread]: End processing [UncountablePythonSDK]: success
 [2024-04-06 00:50:40] INFO root fetch - main [MainThread]: Store serial: [22642735]
+[2024-04-06 00:52:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642735]
+[2024-04-06 00:52:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 00:52:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asifjamali
+[2024-04-06 00:52:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aws-packages
+[2024-04-06 00:52:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PH-units
+[2024-04-06 00:52:49] INFO root fetch - processPackages [asifjamali]: New version: [0.6.1] Old Version: [0.2.4.3]
+[2024-04-06 00:52:49] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/55/67/d67f93a4dfe286e048d42e4dfa97080bbde00910ca89e93019a00865bdd1/asifjamali-0.2.4.3.tar.gz
+[2024-04-06 00:52:49] INFO root fetch - processPackages [PH-units]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-04-06 00:52:49] INFO root fetch - processPackages [aws-packages]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 00:52:49] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 00:52:50] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/da/b7/fae420a2622aa14dda6ae17a4ef436ef8afa6994cd4ad3587e3f3b3dd2e2/asifjamali-0.6.1.tar.gz
+[2024-04-06 00:52:50] INFO root fetch - processPackages [PH-units]: Downloading https://files.pythonhosted.org/packages/47/04/3a1601e2976ae5abd7d92c635789b7474b62e653f96cf9f3ddec43af02b5/PH-units-1.5.6.tar.gz
+[2024-04-06 00:52:50] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 00:52:50] INFO root fetch - processPackages [asifjamali]: executing diffoscope
+[2024-04-06 00:52:50] INFO root fetch - processPackages [asifjamali]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asifjamali-0.2.4.3.tar.gz tmp/asifjamali-0.6.1.tar.gz --markdown 20240406/a/asifjamali/0.2.4.3-0.6.1/diff.md --exclude *.pyd
+[2024-04-06 00:52:50] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/67/9a/f76822853c5e60e46af39a01b755163e37792c9276c05d8d59483289de44/aws_packages-0.0.3.tar.gz
+[2024-04-06 00:52:50] WARNING root fetch - processPackages [PH-units]: Timeout reached during download
+[2024-04-06 00:52:50] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 00:52:50] INFO root fetch - processPackages [PH-units]: Downloading https://files.pythonhosted.org/packages/45/da/8dd7a4d23a8ef27cfd5d92aeda84d433bde0c4a4f0871e3436e5ea861663/PH-units-1.5.7.tar.gz
+[2024-04-06 00:52:50] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/6d/e7/eea15eeeace1823f81b93343ec7836f992c03e79419a7d93e19734cb3d3f/aws_packages-0.0.4-cp310-none-win32.whl
+[2024-04-06 00:52:50] WARNING root fetch - processPackages [PH-units]: Timeout reached during download
+[2024-04-06 00:52:50] INFO root fetch - processPackages [PH-units]: executing diffoscope
+[2024-04-06 00:52:50] INFO root fetch - processPackages [PH-units]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PH-units-1.5.6.tar.gz tmp/PH-units-1.5.7.tar.gz --markdown 20240406/P/PH-units/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2024-04-06 00:52:50] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 00:52:50] INFO root fetch - processPackages [aws-packages]: executing diffoscope
+[2024-04-06 00:52:50] INFO root fetch - processPackages [aws-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_packages-0.0.3.tar.gz tmp/aws_packages-0.0.4-cp310-none-win32.whl.zip --markdown 20240406/a/aws-packages/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 00:52:50] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.2.4.3.tar.gz]
+[2024-04-06 00:52:50] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.1.tar.gz]
+[2024-04-06 00:52:50] INFO root fetch - main [MainThread]: End processing [asifjamali]: success
+[2024-04-06 00:52:51] INFO root fetch - processPackages [PH-units]: Remove: archive file [/home/abi/fetcher/tmp/PH-units-1.5.6.tar.gz]
+[2024-04-06 00:52:51] INFO root fetch - processPackages [PH-units]: Remove: archive file [/home/abi/fetcher/tmp/PH-units-1.5.7.tar.gz]
+[2024-04-06 00:52:51] INFO root fetch - main [MainThread]: End processing [PH-units]: success
+[2024-04-06 00:52:51] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.3.tar.gz]
+[2024-04-06 00:52:51] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.4-cp310-none-win32.whl.zip]
+[2024-04-06 00:52:51] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
+[2024-04-06 00:52:51] INFO root fetch - main [MainThread]: Store serial: [22642749]
