@@ -657,3 +657,72 @@
 [2024-04-06 00:39:49] INFO root fetch - processPackages [PHX]: Remove: archive file [/home/abi/fetcher/tmp/PHX-1.9.0.tar.gz]
 [2024-04-06 00:39:49] INFO root fetch - main [MainThread]: End processing [PHX]: success
 [2024-04-06 00:39:49] INFO root fetch - main [MainThread]: Store serial: [22642686]
+[2024-04-06 00:41:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642686]
+[2024-04-06 00:41:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 00:41:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-radiance
+[2024-04-06 00:41:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snakemake-executor-plugin-googlebatch
+[2024-04-06 00:41:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: amino.light.py
+[2024-04-06 00:41:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: agentops
+[2024-04-06 00:41:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lean
+[2024-04-06 00:41:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: UncountablePythonSDK
+[2024-04-06 00:41:58] INFO root fetch - processPackages [UncountablePythonSDK]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 00:41:58] INFO root fetch - processPackages [lean]: New version: [1.0.99] Old Version: [1.0.98]
+[2024-04-06 00:41:58] INFO root fetch - processPackages [snakemake-executor-plugin-googlebatch]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-06 00:41:58] INFO root fetch - processPackages [UncountablePythonSDK]: Downloading https://files.pythonhosted.org/packages/34/57/4724d7206f98ce6cecef86b9faffe9faf8bf1f8726fe1f1ef71b4bf02fc6/UncountablePythonSDK-0.0.8.tar.gz
+[2024-04-06 00:41:58] INFO root fetch - processPackages [agentops]: New version: [0.1.1] Old Version: [0.1.0b7]
+[2024-04-06 00:41:58] INFO root fetch - processPackages [amino.light.py]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 00:41:58] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 00:41:58] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a2/41/805cddd3de27bfc114d3b54bbf0a558b1d450bb0bc346c8bbfc9f9e1ca04/dragonfly-radiance-0.3.8.tar.gz
+[2024-04-06 00:41:58] WARNING root fetch - processPackages [UncountablePythonSDK]: Timeout reached during download
+[2024-04-06 00:41:58] INFO root fetch - processPackages [snakemake-executor-plugin-googlebatch]: Downloading https://files.pythonhosted.org/packages/6d/57/e48b608aca036a68f3ed1f1eb29944e8fbc7d7348cbb38bdd2c080ac9773/snakemake_executor_plugin_googlebatch-0.3.1.tar.gz
+[2024-04-06 00:41:58] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/90/86/7f2861af2b43f0acfa41bd5938ce1263d2b43106f51aa605614ef93f8bda/amino.light.py-0.0.8.tar.gz
+[2024-04-06 00:41:58] INFO root fetch - processPackages [lean]: Downloading https://files.pythonhosted.org/packages/81/84/aa7a74f65750436a15b38183f9eefe7f25e7578b5617ab6ccf158e947080/lean-1.0.98.tar.gz
+[2024-04-06 00:41:58] INFO root fetch - processPackages [agentops]: Downloading https://files.pythonhosted.org/packages/cb/f0/c32014a8ee12df4596ec4d90428e73e0cc5277d1b9bd2b53f815a7f0ea1f/agentops-0.1.0b7.tar.gz
+[2024-04-06 00:41:58] INFO root fetch - processPackages [UncountablePythonSDK]: Downloading https://files.pythonhosted.org/packages/5a/1e/ac0ed5ceac8bcca979ee094df4e06671d813bf5a23ad57d0f2d7ea7a498f/UncountablePythonSDK-0.0.9.tar.gz
+[2024-04-06 00:41:58] WARNING root fetch - processPackages [dragonfly-radiance]: Timeout reached during download
+[2024-04-06 00:41:58] WARNING root fetch - processPackages [snakemake-executor-plugin-googlebatch]: Timeout reached during download
+[2024-04-06 00:41:58] WARNING root fetch - processPackages [agentops]: Timeout reached during download
+[2024-04-06 00:41:58] WARNING root fetch - processPackages [lean]: Timeout reached during download
+[2024-04-06 00:41:58] WARNING root fetch - processPackages [amino.light.py]: Timeout reached during download
+[2024-04-06 00:41:58] WARNING root fetch - processPackages [UncountablePythonSDK]: Timeout reached during download
+[2024-04-06 00:41:58] INFO root fetch - processPackages [UncountablePythonSDK]: executing diffoscope
+[2024-04-06 00:41:58] INFO root fetch - processPackages [UncountablePythonSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UncountablePythonSDK-0.0.8.tar.gz tmp/UncountablePythonSDK-0.0.9.tar.gz --markdown 20240406/U/UncountablePythonSDK/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 00:41:59] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a9/93/8933c5c67b8d336f624b3e7f9cb128678c38867dac08b6bb30a824b7cb3d/dragonfly-radiance-0.3.9.tar.gz
+[2024-04-06 00:41:59] INFO root fetch - processPackages [snakemake-executor-plugin-googlebatch]: Downloading https://files.pythonhosted.org/packages/35/6b/782ddae0388ab9131120152773fced5cfcbbe060016488c3f75e91f77312/snakemake_executor_plugin_googlebatch-0.3.2.tar.gz
+[2024-04-06 00:41:59] INFO root fetch - processPackages [agentops]: Downloading https://files.pythonhosted.org/packages/1d/ec/1d2af6e33dd097feaf1e41a4d34c66d4e4e59ce35c5efac85c18614b9d4b/agentops-0.1.1.tar.gz
+[2024-04-06 00:41:59] INFO root fetch - processPackages [amino.light.py]: Downloading https://files.pythonhosted.org/packages/84/30/471aeca8cd3ca6fdc47c21a6e7d7ea4a849f26f24ca5e4b95f644285e13b/amino.light.py-0.0.9.tar.gz
+[2024-04-06 00:41:59] WARNING root fetch - processPackages [snakemake-executor-plugin-googlebatch]: Timeout reached during download
+[2024-04-06 00:41:59] INFO root fetch - processPackages [snakemake-executor-plugin-googlebatch]: executing diffoscope
+[2024-04-06 00:41:59] INFO root fetch - processPackages [snakemake-executor-plugin-googlebatch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snakemake_executor_plugin_googlebatch-0.3.1.tar.gz tmp/snakemake_executor_plugin_googlebatch-0.3.2.tar.gz --markdown 20240406/s/snakemake-executor-plugin-googlebatch/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2024-04-06 00:41:59] WARNING root fetch - processPackages [dragonfly-radiance]: Timeout reached during download
+[2024-04-06 00:41:59] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2024-04-06 00:41:59] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.3.8.tar.gz tmp/dragonfly-radiance-0.3.9.tar.gz --markdown 20240406/d/dragonfly-radiance/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 00:41:59] INFO root fetch - processPackages [lean]: Downloading https://files.pythonhosted.org/packages/3e/2f/0bee377e322251efe06c06a9769bd227936117bc32f26bc970e1580283b2/lean-1.0.99.tar.gz
+[2024-04-06 00:41:59] WARNING root fetch - processPackages [agentops]: Timeout reached during download
+[2024-04-06 00:41:59] INFO root fetch - processPackages [agentops]: executing diffoscope
+[2024-04-06 00:41:59] INFO root fetch - processPackages [agentops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agentops-0.1.0b7.tar.gz tmp/agentops-0.1.1.tar.gz --markdown 20240406/a/agentops/0.1.0b7-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 00:41:59] WARNING root fetch - processPackages [amino.light.py]: Timeout reached during download
+[2024-04-06 00:41:59] INFO root fetch - processPackages [amino.light.py]: executing diffoscope
+[2024-04-06 00:41:59] INFO root fetch - processPackages [amino.light.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amino.light.py-0.0.8.tar.gz tmp/amino.light.py-0.0.9.tar.gz --markdown 20240406/a/amino.light.py/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 00:41:59] WARNING root fetch - processPackages [lean]: Timeout reached during download
+[2024-04-06 00:41:59] INFO root fetch - processPackages [lean]: executing diffoscope
+[2024-04-06 00:41:59] INFO root fetch - processPackages [lean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lean-1.0.98.tar.gz tmp/lean-1.0.99.tar.gz --markdown 20240406/l/lean/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2024-04-06 00:41:59] INFO root fetch - processPackages [snakemake-executor-plugin-googlebatch]: Remove: archive file [/home/abi/fetcher/tmp/snakemake_executor_plugin_googlebatch-0.3.1.tar.gz]
+[2024-04-06 00:41:59] INFO root fetch - processPackages [snakemake-executor-plugin-googlebatch]: Remove: archive file [/home/abi/fetcher/tmp/snakemake_executor_plugin_googlebatch-0.3.2.tar.gz]
+[2024-04-06 00:41:59] INFO root fetch - main [MainThread]: End processing [snakemake-executor-plugin-googlebatch]: success
+[2024-04-06 00:42:00] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.8.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.9.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2024-04-06 00:42:00] INFO root fetch - processPackages [UncountablePythonSDK]: Remove: archive file [/home/abi/fetcher/tmp/UncountablePythonSDK-0.0.8.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - processPackages [UncountablePythonSDK]: Remove: archive file [/home/abi/fetcher/tmp/UncountablePythonSDK-0.0.9.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - main [MainThread]: End processing [UncountablePythonSDK]: success
+[2024-04-06 00:42:00] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.0.8.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - processPackages [amino.light.py]: Remove: archive file [/home/abi/fetcher/tmp/amino.light.py-0.0.9.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - main [MainThread]: End processing [amino.light.py]: success
+[2024-04-06 00:42:00] INFO root fetch - processPackages [agentops]: Remove: archive file [/home/abi/fetcher/tmp/agentops-0.1.0b7.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - processPackages [agentops]: Remove: archive file [/home/abi/fetcher/tmp/agentops-0.1.1.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - main [MainThread]: End processing [agentops]: success
+[2024-04-06 00:42:00] INFO root fetch - processPackages [lean]: Remove: archive file [/home/abi/fetcher/tmp/lean-1.0.98.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - processPackages [lean]: Remove: archive file [/home/abi/fetcher/tmp/lean-1.0.99.tar.gz]
+[2024-04-06 00:42:00] INFO root fetch - main [MainThread]: End processing [lean]: success
+[2024-04-06 00:42:00] INFO root fetch - main [MainThread]: Store serial: [22642703]
