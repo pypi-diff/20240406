@@ -309,3 +309,20 @@
 [2024-04-06 00:20:06] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
 [2024-04-06 00:20:06] INFO root fetch - main [MainThread]: End processing [latch]: success
 [2024-04-06 00:20:06] INFO root fetch - main [MainThread]: Store serial: [22642594]
+[2024-04-06 00:22:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642594]
+[2024-04-06 00:22:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 00:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tecton
+[2024-04-06 00:22:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: three_d_converter
+[2024-04-06 00:22:15] INFO root fetch - processPackages [tecton]: New version: [0.9.0rc4] Old Version: [0.9.0rc3]
+[2024-04-06 00:22:15] INFO root fetch - processPackages [tecton]: Downloading https://files.pythonhosted.org/packages/56/67/d7d5672a602250dee16a33e4280e55d3be0c150a59371333cefcc171fab7/tecton-0.9.0rc3.tar.gz
+[2024-04-06 00:22:15] WARNING root fetch - processPackages [three_d_converter]: Skipping, unable to determine old version
+[2024-04-06 00:22:15] INFO root fetch - main [MainThread]: End processing [three_d_converter] error
+[2024-04-06 00:22:15] WARNING root fetch - processPackages [tecton]: Timeout reached during download
+[2024-04-06 00:22:15] INFO root fetch - processPackages [tecton]: Downloading https://files.pythonhosted.org/packages/ee/f8/5fe3af4429cd4d8c6e3c285d58e482c6e4a15f2ffd28bd9c32075939d341/tecton-0.9.0rc4.tar.gz
+[2024-04-06 00:22:15] WARNING root fetch - processPackages [tecton]: Timeout reached during download
+[2024-04-06 00:22:15] INFO root fetch - processPackages [tecton]: executing diffoscope
+[2024-04-06 00:22:15] INFO root fetch - processPackages [tecton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tecton-0.9.0rc3.tar.gz tmp/tecton-0.9.0rc4.tar.gz --markdown 20240406/t/tecton/0.9.0rc3-0.9.0rc4/diff.md --exclude *.pyd
+[2024-04-06 00:22:18] INFO root fetch - processPackages [tecton]: Remove: archive file [/home/abi/fetcher/tmp/tecton-0.9.0rc3.tar.gz]
+[2024-04-06 00:22:18] INFO root fetch - processPackages [tecton]: Remove: archive file [/home/abi/fetcher/tmp/tecton-0.9.0rc4.tar.gz]
+[2024-04-06 00:22:18] INFO root fetch - main [MainThread]: End processing [tecton]: success
+[2024-04-06 00:22:18] INFO root fetch - main [MainThread]: Store serial: [22642602]
