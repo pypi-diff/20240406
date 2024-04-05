@@ -815,3 +815,31 @@
 [2024-04-06 00:48:31] INFO root fetch - processPackages [cpop]: Remove: archive file [/home/abi/fetcher/tmp/cpop-30.0.0.tar.gz]
 [2024-04-06 00:48:31] INFO root fetch - main [MainThread]: End processing [cpop]: success
 [2024-04-06 00:48:31] INFO root fetch - main [MainThread]: Store serial: [22642726]
+[2024-04-06 00:50:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642726]
+[2024-04-06 00:50:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 00:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dash-emoji-mart
+[2024-04-06 00:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: petrichor-script-lexer
+[2024-04-06 00:50:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: UncountablePythonSDK
+[2024-04-06 00:50:39] WARNING root fetch - processPackages [dash-emoji-mart]: Skipping, unable to determine old version
+[2024-04-06 00:50:39] INFO root fetch - main [MainThread]: End processing [dash-emoji-mart] error
+[2024-04-06 00:50:39] INFO root fetch - processPackages [UncountablePythonSDK]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 00:50:39] INFO root fetch - processPackages [UncountablePythonSDK]: Downloading https://files.pythonhosted.org/packages/34/57/4724d7206f98ce6cecef86b9faffe9faf8bf1f8726fe1f1ef71b4bf02fc6/UncountablePythonSDK-0.0.8.tar.gz
+[2024-04-06 00:50:39] INFO root fetch - processPackages [petrichor-script-lexer]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-06 00:50:39] WARNING root fetch - processPackages [UncountablePythonSDK]: Timeout reached during download
+[2024-04-06 00:50:39] INFO root fetch - processPackages [petrichor-script-lexer]: Downloading https://files.pythonhosted.org/packages/99/40/a515695483da2d10694dcb2953d7391fffa826057f4af80bfeec7fa7441c/petrichor_script_lexer-1.0.1.tar.gz
+[2024-04-06 00:50:39] INFO root fetch - processPackages [UncountablePythonSDK]: Downloading https://files.pythonhosted.org/packages/5a/1e/ac0ed5ceac8bcca979ee094df4e06671d813bf5a23ad57d0f2d7ea7a498f/UncountablePythonSDK-0.0.9.tar.gz
+[2024-04-06 00:50:39] WARNING root fetch - processPackages [UncountablePythonSDK]: Timeout reached during download
+[2024-04-06 00:50:39] WARNING root fetch - processPackages [petrichor-script-lexer]: Timeout reached during download
+[2024-04-06 00:50:39] INFO root fetch - processPackages [UncountablePythonSDK]: executing diffoscope
+[2024-04-06 00:50:39] INFO root fetch - processPackages [UncountablePythonSDK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/UncountablePythonSDK-0.0.8.tar.gz tmp/UncountablePythonSDK-0.0.9.tar.gz --markdown 20240406/U/UncountablePythonSDK/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 00:50:40] INFO root fetch - processPackages [petrichor-script-lexer]: Downloading https://files.pythonhosted.org/packages/1e/50/17ac100df0b1fa8413777de2d914d303329a1d9fc4bc27aa200f06ed7cf1/petrichor_script_lexer-1.0.2.tar.gz
+[2024-04-06 00:50:40] WARNING root fetch - processPackages [petrichor-script-lexer]: Timeout reached during download
+[2024-04-06 00:50:40] INFO root fetch - processPackages [petrichor-script-lexer]: executing diffoscope
+[2024-04-06 00:50:40] INFO root fetch - processPackages [petrichor-script-lexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petrichor_script_lexer-1.0.1.tar.gz tmp/petrichor_script_lexer-1.0.2.tar.gz --markdown 20240406/p/petrichor-script-lexer/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-06 00:50:40] INFO root fetch - processPackages [petrichor-script-lexer]: Remove: archive file [/home/abi/fetcher/tmp/petrichor_script_lexer-1.0.1.tar.gz]
+[2024-04-06 00:50:40] INFO root fetch - processPackages [petrichor-script-lexer]: Remove: archive file [/home/abi/fetcher/tmp/petrichor_script_lexer-1.0.2.tar.gz]
+[2024-04-06 00:50:40] INFO root fetch - main [MainThread]: End processing [petrichor-script-lexer]: success
+[2024-04-06 00:50:40] INFO root fetch - processPackages [UncountablePythonSDK]: Remove: archive file [/home/abi/fetcher/tmp/UncountablePythonSDK-0.0.8.tar.gz]
+[2024-04-06 00:50:40] INFO root fetch - processPackages [UncountablePythonSDK]: Remove: archive file [/home/abi/fetcher/tmp/UncountablePythonSDK-0.0.9.tar.gz]
+[2024-04-06 00:50:40] INFO root fetch - main [MainThread]: End processing [UncountablePythonSDK]: success
+[2024-04-06 00:50:40] INFO root fetch - main [MainThread]: Store serial: [22642735]
