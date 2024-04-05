@@ -12,3 +12,67 @@
 [2024-04-06 00:00:37] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.133.tar.gz]
 [2024-04-06 00:00:37] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
 [2024-04-06 00:00:37] INFO root fetch - main [MainThread]: Store serial: [22642371]
+[2024-04-06 00:02:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642371]
+[2024-04-06 00:02:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 00:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aws-packages
+[2024-04-06 00:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pythreadserver
+[2024-04-06 00:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octobase
+[2024-04-06 00:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pz-rail-lephare
+[2024-04-06 00:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quantconnect-stubs
+[2024-04-06 00:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: njsscan
+[2024-04-06 00:02:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: diffpy.mpdf
+[2024-04-06 00:02:45] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [pythreadserver]: Skipping, unable to determine old version
+[2024-04-06 00:02:45] INFO root fetch - main [MainThread]: End processing [pythreadserver] error
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [pz-rail-lephare]: Skipping, unable to determine old version
+[2024-04-06 00:02:45] INFO root fetch - main [MainThread]: End processing [pz-rail-lephare] error
+[2024-04-06 00:02:45] INFO root fetch - processPackages [octobase]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 00:02:45] INFO root fetch - processPackages [diffpy.mpdf]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-06 00:02:45] INFO root fetch - processPackages [njsscan]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-06 00:02:45] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/c1/05/f15c16a3f852decfd032ce1688dfdf02fd7289f1780742453533e8c55209/quantconnect-stubs-9997.tar.gz
+[2024-04-06 00:02:45] INFO root fetch - processPackages [aws-packages]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 00:02:45] INFO root fetch - processPackages [octobase]: Downloading https://files.pythonhosted.org/packages/3f/d6/3055998bfa31e50ca2b7a2ba101c8101527570730972ba3eb31e6c8b55fe/octobase-0.9.0.tar.gz
+[2024-04-06 00:02:45] INFO root fetch - processPackages [diffpy.mpdf]: Downloading https://files.pythonhosted.org/packages/54/12/afafec69926dc2767cfed2be45771fc9f1928e0049004dc7fbe395cc2cb6/diffpy.mpdf-1.0.1.tar.gz
+[2024-04-06 00:02:45] INFO root fetch - processPackages [njsscan]: Downloading https://files.pythonhosted.org/packages/62/ef/24e9f5844fa479597cd373365a411d9e51208760d064d2cf63b965c2e43f/njsscan-0.3.6.tar.gz
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [octobase]: Timeout reached during download
+[2024-04-06 00:02:45] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/06/5b/767b2de7fb05ddf18be2b580cfaf87c4a040b9e77b5a2fa589e7254702f1/aws_packages-0.0.2.tar.gz
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [diffpy.mpdf]: Timeout reached during download
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [njsscan]: Timeout reached during download
+[2024-04-06 00:02:45] INFO root fetch - processPackages [octobase]: Downloading https://files.pythonhosted.org/packages/81/06/b1cd76374c1db4bd3130321f816645b675cbf317f2badbd6911ba8d3ceb1/octobase-0.9.1.tar.gz
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [quantconnect-stubs]: Timeout reached during download
+[2024-04-06 00:02:45] WARNING root fetch - processPackages [octobase]: Timeout reached during download
+[2024-04-06 00:02:45] INFO root fetch - processPackages [octobase]: executing diffoscope
+[2024-04-06 00:02:45] INFO root fetch - processPackages [octobase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octobase-0.9.0.tar.gz tmp/octobase-0.9.1.tar.gz --markdown 20240406/o/octobase/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 00:02:45] INFO root fetch - processPackages [diffpy.mpdf]: Downloading https://files.pythonhosted.org/packages/f3/52/d5b1df6aa15065e2f85f65d18737e9d65e32daa94b76b6e94d50307856e6/diffpy.mpdf-1.0.2-py3-none-any.whl
+[2024-04-06 00:02:45] INFO root fetch - processPackages [njsscan]: Downloading https://files.pythonhosted.org/packages/7d/8b/eca79d53fd35d762cfd0ef9a9e7079bfea3e247470e18151ebffff6076cb/njsscan-0.3.7.tar.gz
+[2024-04-06 00:02:46] INFO root fetch - processPackages [quantconnect-stubs]: Downloading https://files.pythonhosted.org/packages/b7/4c/71e6bb724f14efcd8865f2aa692528a4c45877c58f5cf8c964a8e0fc0e74/quantconnect-stubs-9998.tar.gz
+[2024-04-06 00:02:46] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/ba/a5/f08348c5333002d3403e3ec4bed6eb0421ee5e6b0ab2ba069b480eafd237/aws_packages-0.0.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-04-06 00:02:46] WARNING root fetch - processPackages [diffpy.mpdf]: Timeout reached during download
+[2024-04-06 00:02:46] WARNING root fetch - processPackages [njsscan]: Timeout reached during download
+[2024-04-06 00:02:46] INFO root fetch - processPackages [diffpy.mpdf]: executing diffoscope
+[2024-04-06 00:02:46] INFO root fetch - processPackages [diffpy.mpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diffpy.mpdf-1.0.1.tar.gz tmp/diffpy.mpdf-1.0.2-py3-none-any.whl.zip --markdown 20240406/d/diffpy.mpdf/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-06 00:02:46] INFO root fetch - processPackages [njsscan]: executing diffoscope
+[2024-04-06 00:02:46] INFO root fetch - processPackages [njsscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/njsscan-0.3.6.tar.gz tmp/njsscan-0.3.7.tar.gz --markdown 20240406/n/njsscan/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2024-04-06 00:02:46] WARNING root fetch - processPackages [quantconnect-stubs]: Timeout reached during download
+[2024-04-06 00:02:46] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2024-04-06 00:02:46] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20240406/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2024-04-06 00:02:46] INFO root fetch - processPackages [diffpy.mpdf]: Remove: archive file [/home/abi/fetcher/tmp/diffpy.mpdf-1.0.1.tar.gz]
+[2024-04-06 00:02:46] INFO root fetch - processPackages [diffpy.mpdf]: Remove: archive file [/home/abi/fetcher/tmp/diffpy.mpdf-1.0.2-py3-none-any.whl.zip]
+[2024-04-06 00:02:46] INFO root fetch - main [MainThread]: End processing [diffpy.mpdf]: success
+[2024-04-06 00:02:46] INFO root fetch - processPackages [octobase]: Remove: archive file [/home/abi/fetcher/tmp/octobase-0.9.0.tar.gz]
+[2024-04-06 00:02:46] INFO root fetch - processPackages [octobase]: Remove: archive file [/home/abi/fetcher/tmp/octobase-0.9.1.tar.gz]
+[2024-04-06 00:02:46] INFO root fetch - main [MainThread]: End processing [octobase]: success
+[2024-04-06 00:02:47] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 00:02:47] INFO root fetch - processPackages [aws-packages]: executing diffoscope
+[2024-04-06 00:02:47] INFO root fetch - processPackages [aws-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_packages-0.0.2.tar.gz tmp/aws_packages-0.0.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl.zip --markdown 20240406/a/aws-packages/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 00:02:47] INFO root fetch - processPackages [njsscan]: Remove: archive file [/home/abi/fetcher/tmp/njsscan-0.3.6.tar.gz]
+[2024-04-06 00:02:47] INFO root fetch - processPackages [njsscan]: Remove: archive file [/home/abi/fetcher/tmp/njsscan-0.3.7.tar.gz]
+[2024-04-06 00:02:47] INFO root fetch - main [MainThread]: End processing [njsscan]: success
+[2024-04-06 00:02:47] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.2.tar.gz]
+[2024-04-06 00:02:47] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.3-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-04-06 00:02:47] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
+[2024-04-06 00:02:49] INFO root fetch - processPackages [quantconnect-stubs]: Remove: archive file [/home/abi/fetcher/tmp/quantconnect-stubs-9997.tar.gz]
+[2024-04-06 00:02:49] INFO root fetch - processPackages [quantconnect-stubs]: Remove: archive file [/home/abi/fetcher/tmp/quantconnect-stubs-9998.tar.gz]
+[2024-04-06 00:02:49] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2024-04-06 00:02:49] INFO root fetch - main [MainThread]: Store serial: [22642444]
