@@ -1462,3 +1462,39 @@
 [2024-04-06 01:36:40] WARNING root fetch - processPackages [hich-restrict]: Skipping, unable to determine old version
 [2024-04-06 01:36:40] INFO root fetch - main [MainThread]: End processing [hich-restrict] error
 [2024-04-06 01:36:40] INFO root fetch - main [MainThread]: Store serial: [22643048]
+[2024-04-06 01:38:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643048]
+[2024-04-06 01:38:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naluconfigs
+[2024-04-06 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: experimental-yt-fts
+[2024-04-06 01:38:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: swebench
+[2024-04-06 01:38:49] INFO root fetch - processPackages [naluconfigs]: New version: [13.7.4] Old Version: [13.7.3]
+[2024-04-06 01:38:49] INFO root fetch - processPackages [experimental-yt-fts]: New version: [0.1.49] Old Version: [0.1.48]
+[2024-04-06 01:38:49] INFO root fetch - processPackages [swebench]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-06 01:38:49] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/0e/06/c108834a731485c7cac61058d25866a5e34da2df5c21f5dd05321686dcad/naluconfigs-13.7.3.tar.gz
+[2024-04-06 01:38:49] INFO root fetch - processPackages [swebench]: Downloading https://files.pythonhosted.org/packages/55/20/ea26cd3c2c0ff78107686d2cd062837961d09d5ef4cc2b859e5896ead73f/swebench-1.0.3.tar.gz
+[2024-04-06 01:38:49] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/b0/03/b27dc356db82338804cbbebff8e0af8223ac2d448bfcd5c4abbf3a8462f4/experimental-yt-fts-0.1.48.tar.gz
+[2024-04-06 01:38:49] WARNING root fetch - processPackages [naluconfigs]: Timeout reached during download
+[2024-04-06 01:38:49] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 01:38:49] WARNING root fetch - processPackages [swebench]: Timeout reached during download
+[2024-04-06 01:38:49] INFO root fetch - processPackages [naluconfigs]: Downloading https://files.pythonhosted.org/packages/12/27/89a55ee6de40105bb70c75fc9a7fefe2e7af7bd614b722e754f61c8260ae/naluconfigs-13.7.4.tar.gz
+[2024-04-06 01:38:49] WARNING root fetch - processPackages [naluconfigs]: Timeout reached during download
+[2024-04-06 01:38:49] INFO root fetch - processPackages [naluconfigs]: executing diffoscope
+[2024-04-06 01:38:49] INFO root fetch - processPackages [naluconfigs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naluconfigs-13.7.3.tar.gz tmp/naluconfigs-13.7.4.tar.gz --markdown 20240406/n/naluconfigs/13.7.3-13.7.4/diff.md --exclude *.pyd
+[2024-04-06 01:38:49] INFO root fetch - processPackages [swebench]: Downloading https://files.pythonhosted.org/packages/e8/3a/062ba77f631a9c50dd8cc2b405b367456c21694e72685ea6763f1eb8a4e8/swebench-1.0.4.tar.gz
+[2024-04-06 01:38:49] INFO root fetch - processPackages [experimental-yt-fts]: Downloading https://files.pythonhosted.org/packages/22/27/2ea88a17fd5701a6e07218b994c8982f8651bbe38718f229f9a11305a1f3/experimental-yt-fts-0.1.49.tar.gz
+[2024-04-06 01:38:49] WARNING root fetch - processPackages [experimental-yt-fts]: Timeout reached during download
+[2024-04-06 01:38:49] INFO root fetch - processPackages [experimental-yt-fts]: executing diffoscope
+[2024-04-06 01:38:49] INFO root fetch - processPackages [experimental-yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimental-yt-fts-0.1.48.tar.gz tmp/experimental-yt-fts-0.1.49.tar.gz --markdown 20240406/e/experimental-yt-fts/0.1.48-0.1.49/diff.md --exclude *.pyd
+[2024-04-06 01:38:49] WARNING root fetch - processPackages [swebench]: Timeout reached during download
+[2024-04-06 01:38:49] INFO root fetch - processPackages [swebench]: executing diffoscope
+[2024-04-06 01:38:49] INFO root fetch - processPackages [swebench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swebench-1.0.3.tar.gz tmp/swebench-1.0.4.tar.gz --markdown 20240406/s/swebench/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2024-04-06 01:38:50] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.48.tar.gz]
+[2024-04-06 01:38:50] INFO root fetch - processPackages [experimental-yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/experimental-yt-fts-0.1.49.tar.gz]
+[2024-04-06 01:38:50] INFO root fetch - main [MainThread]: End processing [experimental-yt-fts]: success
+[2024-04-06 01:38:50] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.7.3.tar.gz]
+[2024-04-06 01:38:50] INFO root fetch - processPackages [naluconfigs]: Remove: archive file [/home/abi/fetcher/tmp/naluconfigs-13.7.4.tar.gz]
+[2024-04-06 01:38:50] INFO root fetch - main [MainThread]: End processing [naluconfigs]: success
+[2024-04-06 01:38:50] INFO root fetch - processPackages [swebench]: Remove: archive file [/home/abi/fetcher/tmp/swebench-1.0.3.tar.gz]
+[2024-04-06 01:38:50] INFO root fetch - processPackages [swebench]: Remove: archive file [/home/abi/fetcher/tmp/swebench-1.0.4.tar.gz]
+[2024-04-06 01:38:50] INFO root fetch - main [MainThread]: End processing [swebench]: success
+[2024-04-06 01:38:50] INFO root fetch - main [MainThread]: Store serial: [22643057]
