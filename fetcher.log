@@ -268,3 +268,17 @@
 [2024-04-06 00:13:40] INFO root fetch - processPackages [tonic-validate]: Remove: archive file [/home/abi/fetcher/tmp/tonic_validate-4.0.5.tar.gz]
 [2024-04-06 00:13:40] INFO root fetch - main [MainThread]: End processing [tonic-validate]: success
 [2024-04-06 00:13:40] INFO root fetch - main [MainThread]: Store serial: [22642536]
+[2024-04-06 00:15:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642536]
+[2024-04-06 00:15:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 00:15:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepeline
+[2024-04-06 00:15:48] INFO root fetch - processPackages [pepeline]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-06 00:15:49] INFO root fetch - processPackages [pepeline]: Downloading https://files.pythonhosted.org/packages/54/ec/f94c5d06538cb2f1a6f5fbc45ee5dcb675068d6116430355a2a4e1ae5f0b/pepeline-0.2.2.tar.gz
+[2024-04-06 00:15:49] WARNING root fetch - processPackages [pepeline]: Timeout reached during download
+[2024-04-06 00:15:49] INFO root fetch - processPackages [pepeline]: Downloading https://files.pythonhosted.org/packages/f5/f0/4dde90ce9c9749347c029ad97769ec290a8ef56c994fecbef82f342162d2/pepeline-0.2.3-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl
+[2024-04-06 00:15:50] WARNING root fetch - processPackages [pepeline]: Timeout reached during download
+[2024-04-06 00:15:50] INFO root fetch - processPackages [pepeline]: executing diffoscope
+[2024-04-06 00:15:50] INFO root fetch - processPackages [pepeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepeline-0.2.2.tar.gz tmp/pepeline-0.2.3-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip --markdown 20240406/p/pepeline/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2024-04-06 00:15:51] INFO root fetch - processPackages [pepeline]: Remove: archive file [/home/abi/fetcher/tmp/pepeline-0.2.2.tar.gz]
+[2024-04-06 00:15:51] INFO root fetch - processPackages [pepeline]: Remove: archive file [/home/abi/fetcher/tmp/pepeline-0.2.3-cp311-cp311-manylinux_2_17_armv7l.manylinux2014_armv7l.whl.zip]
+[2024-04-06 00:15:51] INFO root fetch - main [MainThread]: End processing [pepeline]: success
+[2024-04-06 00:15:51] INFO root fetch - main [MainThread]: Store serial: [22642551]
