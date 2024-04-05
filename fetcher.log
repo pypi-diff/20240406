@@ -1125,3 +1125,50 @@
 [2024-04-06 01:08:06] INFO root fetch - processPackages [synapse]: Remove: archive file [/home/abi/fetcher/tmp/synapse-2.99.0.tar.gz]
 [2024-04-06 01:08:06] INFO root fetch - main [MainThread]: End processing [synapse]: success
 [2024-04-06 01:08:06] INFO root fetch - main [MainThread]: Store serial: [22642879]
+[2024-04-06 01:10:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642879]
+[2024-04-06 01:10:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 01:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iog-randomizer
+[2024-04-06 01:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyspedas
+[2024-04-06 01:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyroblack
+[2024-04-06 01:10:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: structifyai
+[2024-04-06 01:10:14] INFO root fetch - processPackages [iog-randomizer]: New version: [4.7.2] Old Version: [4.4.9.1]
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyspedas]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-04-06 01:10:15] INFO root fetch - processPackages [structifyai]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyroblack]: New version: [2.3.60] Old Version: [2.3.52]
+[2024-04-06 01:10:15] INFO root fetch - processPackages [iog-randomizer]: Downloading https://files.pythonhosted.org/packages/e9/43/7da153299040664e10c4badb39cce1a351e31d42698ddb8039dfa0c94a8d/iog-randomizer-4.4.9.1.tar.gz
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyspedas]: Downloading https://files.pythonhosted.org/packages/72/78/3dd5b7398521940cde19592ab1469a21a4ed3cb17265f00aabc0aedcd8cf/pyspedas-1.5.6.tar.gz
+[2024-04-06 01:10:15] INFO root fetch - processPackages [structifyai]: Downloading https://files.pythonhosted.org/packages/fb/48/d8ae9d97526f9fe8aaa87dbd3738a9f0181f42d8069e6296ef3dc95ba011/structifyai-0.8.0.tar.gz
+[2024-04-06 01:10:15] WARNING root fetch - processPackages [iog-randomizer]: Timeout reached during download
+[2024-04-06 01:10:15] WARNING root fetch - processPackages [structifyai]: Timeout reached during download
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/ea/eb/6597e0027a9142e590bac6ae4746ad27e2f49b09e3253fc87ffe2e5beb2e/pyroblack-2.3.52.tar.gz
+[2024-04-06 01:10:15] INFO root fetch - processPackages [structifyai]: Downloading https://files.pythonhosted.org/packages/a2/30/35ee236f19dac5e3f595bedeabbbb3e29fee055ddc18222df1f7e833f066/structifyai-0.9.0.tar.gz
+[2024-04-06 01:10:15] INFO root fetch - processPackages [iog-randomizer]: Downloading https://files.pythonhosted.org/packages/d6/c2/353e006c56f3715c1a6984dc09c9a0d2968c10debb58fb8be50a2b219941/iog-randomizer-4.7.2.tar.gz
+[2024-04-06 01:10:15] WARNING root fetch - processPackages [pyspedas]: Timeout reached during download
+[2024-04-06 01:10:15] WARNING root fetch - processPackages [structifyai]: Timeout reached during download
+[2024-04-06 01:10:15] INFO root fetch - processPackages [structifyai]: executing diffoscope
+[2024-04-06 01:10:15] INFO root fetch - processPackages [structifyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structifyai-0.8.0.tar.gz tmp/structifyai-0.9.0.tar.gz --markdown 20240406/s/structifyai/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyspedas]: Downloading https://files.pythonhosted.org/packages/14/3c/9c3f71f2efca8ccb5cbf73e30390a1d75b84b71cac7b4f148582b24bca1a/pyspedas-1.5.7.tar.gz
+[2024-04-06 01:10:15] WARNING root fetch - processPackages [pyroblack]: Timeout reached during download
+[2024-04-06 01:10:15] WARNING root fetch - processPackages [iog-randomizer]: Timeout reached during download
+[2024-04-06 01:10:15] INFO root fetch - processPackages [iog-randomizer]: executing diffoscope
+[2024-04-06 01:10:15] INFO root fetch - processPackages [iog-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iog-randomizer-4.4.9.1.tar.gz tmp/iog-randomizer-4.7.2.tar.gz --markdown 20240406/i/iog-randomizer/4.4.9.1-4.7.2/diff.md --exclude *.pyd
+[2024-04-06 01:10:15] WARNING root fetch - processPackages [pyspedas]: Timeout reached during download
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyspedas]: executing diffoscope
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyspedas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyspedas-1.5.6.tar.gz tmp/pyspedas-1.5.7.tar.gz --markdown 20240406/p/pyspedas/1.5.6-1.5.7/diff.md --exclude *.pyd
+[2024-04-06 01:10:15] INFO root fetch - processPackages [pyroblack]: Downloading https://files.pythonhosted.org/packages/bf/0f/1b9184213c4d5fd381747828a9973d89b804169904ae1a8807a91c8fa631/pyroblack-2.3.60.tar.gz
+[2024-04-06 01:10:16] WARNING root fetch - processPackages [pyroblack]: Timeout reached during download
+[2024-04-06 01:10:16] INFO root fetch - processPackages [pyroblack]: executing diffoscope
+[2024-04-06 01:10:16] INFO root fetch - processPackages [pyroblack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyroblack-2.3.52.tar.gz tmp/pyroblack-2.3.60.tar.gz --markdown 20240406/p/pyroblack/2.3.52-2.3.60/diff.md --exclude *.pyd
+[2024-04-06 01:10:16] INFO root fetch - processPackages [structifyai]: Remove: archive file [/home/abi/fetcher/tmp/structifyai-0.8.0.tar.gz]
+[2024-04-06 01:10:16] INFO root fetch - processPackages [structifyai]: Remove: archive file [/home/abi/fetcher/tmp/structifyai-0.9.0.tar.gz]
+[2024-04-06 01:10:16] INFO root fetch - main [MainThread]: End processing [structifyai]: success
+[2024-04-06 01:10:16] INFO root fetch - processPackages [iog-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/iog-randomizer-4.4.9.1.tar.gz]
+[2024-04-06 01:10:16] INFO root fetch - processPackages [iog-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/iog-randomizer-4.7.2.tar.gz]
+[2024-04-06 01:10:16] INFO root fetch - main [MainThread]: End processing [iog-randomizer]: success
+[2024-04-06 01:10:18] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.52.tar.gz]
+[2024-04-06 01:10:18] INFO root fetch - processPackages [pyroblack]: Remove: archive file [/home/abi/fetcher/tmp/pyroblack-2.3.60.tar.gz]
+[2024-04-06 01:10:18] INFO root fetch - main [MainThread]: End processing [pyroblack]: success
+[2024-04-06 01:10:18] INFO root fetch - processPackages [pyspedas]: Remove: archive file [/home/abi/fetcher/tmp/pyspedas-1.5.6.tar.gz]
+[2024-04-06 01:10:18] INFO root fetch - processPackages [pyspedas]: Remove: archive file [/home/abi/fetcher/tmp/pyspedas-1.5.7.tar.gz]
+[2024-04-06 01:10:18] INFO root fetch - main [MainThread]: End processing [pyspedas]: success
+[2024-04-06 01:10:18] INFO root fetch - main [MainThread]: Store serial: [22642891]
