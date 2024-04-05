@@ -210,3 +210,61 @@
 [2024-04-06 00:11:29] INFO root fetch - processPackages [pytoon]: Remove: archive file [/home/abi/fetcher/tmp/pytoon-1.3.0.tar.gz]
 [2024-04-06 00:11:29] INFO root fetch - main [MainThread]: End processing [pytoon]: success
 [2024-04-06 00:11:29] INFO root fetch - main [MainThread]: Store serial: [22642520]
+[2024-04-06 00:13:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22642520]
+[2024-04-06 00:13:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NitroPy
+[2024-04-06 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tonic-validate
+[2024-04-06 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omnix
+[2024-04-06 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ecutils
+[2024-04-06 00:13:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hatch-ci
+[2024-04-06 00:13:38] INFO root fetch - processPackages [omnix]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-06 00:13:38] INFO root fetch - processPackages [hatch-ci]: New version: [0.1.4b71] Old Version: [0.1.4b70]
+[2024-04-06 00:13:38] INFO root fetch - processPackages [omnix]: Downloading https://files.pythonhosted.org/packages/28/84/f8619762dba126b800006ee3caef30784aaca2331aa4fcd9e06c10568622/omnix-0.3.3.tar.gz
+[2024-04-06 00:13:38] INFO root fetch - processPackages [hatch-ci]: Downloading https://files.pythonhosted.org/packages/2c/e3/be4b0535090e1ba95becfb903ff94a25c3b6d213b9596916b9c3a6a59229/hatch-ci-0.1.4b70.tar.gz
+[2024-04-06 00:13:38] INFO root fetch - processPackages [ecutils]: New version: [0.0.1a0] Old Version: [0.0.1.dev4]
+[2024-04-06 00:13:38] INFO root fetch - processPackages [NitroPy]: New version: [1.2.1] Old Version: [1.1.0]
+[2024-04-06 00:13:38] INFO root fetch - processPackages [tonic-validate]: New version: [4.0.5] Old Version: [4.0.4]
+[2024-04-06 00:13:38] WARNING root fetch - processPackages [hatch-ci]: Timeout reached during download
+[2024-04-06 00:13:38] WARNING root fetch - processPackages [omnix]: Timeout reached during download
+[2024-04-06 00:13:38] INFO root fetch - processPackages [ecutils]: Downloading https://files.pythonhosted.org/packages/12/35/e893e4cf65a176fc27598a1b7af35c7ef94c5874cc0378438c997162c357/ecutils-0.0.1.dev4.tar.gz
+[2024-04-06 00:13:38] INFO root fetch - processPackages [tonic-validate]: Downloading https://files.pythonhosted.org/packages/13/6b/8bc0de9316e7d13ed39aec6c0ef41b323ff12ba2d8f7b0943beb0585c1d1/tonic_validate-4.0.4.tar.gz
+[2024-04-06 00:13:38] INFO root fetch - processPackages [omnix]: Downloading https://files.pythonhosted.org/packages/b3/d9/de6a7aeb228c31ce35edeb424f972b2c741f05e917e4d8f4c1134ab23ece/omnix-0.3.4.tar.gz
+[2024-04-06 00:13:38] INFO root fetch - processPackages [hatch-ci]: Downloading https://files.pythonhosted.org/packages/3c/f4/c20271782a2ea38b15a241d216f4942d9aa0890b5391a706e2a1b6c84939/hatch-ci-0.1.4b71.tar.gz
+[2024-04-06 00:13:38] INFO root fetch - processPackages [NitroPy]: Downloading https://files.pythonhosted.org/packages/8f/34/bfd769f440a20a901a84e1c8e6f8b33386b2d3f43d36d196fd250711145f/NitroPy-1.1.0.tar.gz
+[2024-04-06 00:13:38] WARNING root fetch - processPackages [omnix]: Timeout reached during download
+[2024-04-06 00:13:38] INFO root fetch - processPackages [omnix]: executing diffoscope
+[2024-04-06 00:13:38] INFO root fetch - processPackages [omnix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnix-0.3.3.tar.gz tmp/omnix-0.3.4.tar.gz --markdown 20240406/o/omnix/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2024-04-06 00:13:38] WARNING root fetch - processPackages [ecutils]: Timeout reached during download
+[2024-04-06 00:13:39] WARNING root fetch - processPackages [tonic-validate]: Timeout reached during download
+[2024-04-06 00:13:39] WARNING root fetch - processPackages [hatch-ci]: Timeout reached during download
+[2024-04-06 00:13:39] INFO root fetch - processPackages [hatch-ci]: executing diffoscope
+[2024-04-06 00:13:39] INFO root fetch - processPackages [hatch-ci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch-ci-0.1.4b70.tar.gz tmp/hatch-ci-0.1.4b71.tar.gz --markdown 20240406/h/hatch-ci/0.1.4b70-0.1.4b71/diff.md --exclude *.pyd
+[2024-04-06 00:13:39] WARNING root fetch - processPackages [NitroPy]: Timeout reached during download
+[2024-04-06 00:13:39] INFO root fetch - processPackages [ecutils]: Downloading https://files.pythonhosted.org/packages/f0/71/1db220dc9c617198e017741159dfd2f5ac31f51930a0518a65b1e204d3ff/ecutils-0.0.1a0.tar.gz
+[2024-04-06 00:13:39] INFO root fetch - processPackages [tonic-validate]: Downloading https://files.pythonhosted.org/packages/6c/d4/20fbe8500ea22363a5885ed395758950a3aa54be231b057827666c462415/tonic_validate-4.0.5.tar.gz
+[2024-04-06 00:13:39] INFO root fetch - processPackages [NitroPy]: Downloading https://files.pythonhosted.org/packages/85/ba/35eff4be4ddba45cdd6d0ec3dd837a6f7f432535eeaaeaf7df4c9c43e919/NitroPy-1.2.1.tar.gz
+[2024-04-06 00:13:39] WARNING root fetch - processPackages [ecutils]: Timeout reached during download
+[2024-04-06 00:13:39] INFO root fetch - processPackages [ecutils]: executing diffoscope
+[2024-04-06 00:13:39] INFO root fetch - processPackages [ecutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecutils-0.0.1.dev4.tar.gz tmp/ecutils-0.0.1a0.tar.gz --markdown 20240406/e/ecutils/0.0.1.dev4-0.0.1a0/diff.md --exclude *.pyd
+[2024-04-06 00:13:39] WARNING root fetch - processPackages [tonic-validate]: Timeout reached during download
+[2024-04-06 00:13:39] INFO root fetch - processPackages [tonic-validate]: executing diffoscope
+[2024-04-06 00:13:39] INFO root fetch - processPackages [tonic-validate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tonic_validate-4.0.4.tar.gz tmp/tonic_validate-4.0.5.tar.gz --markdown 20240406/t/tonic-validate/4.0.4-4.0.5/diff.md --exclude *.pyd
+[2024-04-06 00:13:39] WARNING root fetch - processPackages [NitroPy]: Timeout reached during download
+[2024-04-06 00:13:39] INFO root fetch - processPackages [NitroPy]: executing diffoscope
+[2024-04-06 00:13:39] INFO root fetch - processPackages [NitroPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NitroPy-1.1.0.tar.gz tmp/NitroPy-1.2.1.tar.gz --markdown 20240406/N/NitroPy/1.1.0-1.2.1/diff.md --exclude *.pyd
+[2024-04-06 00:13:39] INFO root fetch - processPackages [hatch-ci]: Remove: archive file [/home/abi/fetcher/tmp/hatch-ci-0.1.4b70.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - processPackages [hatch-ci]: Remove: archive file [/home/abi/fetcher/tmp/hatch-ci-0.1.4b71.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - main [MainThread]: End processing [hatch-ci]: success
+[2024-04-06 00:13:39] INFO root fetch - processPackages [ecutils]: Remove: archive file [/home/abi/fetcher/tmp/ecutils-0.0.1.dev4.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - processPackages [ecutils]: Remove: archive file [/home/abi/fetcher/tmp/ecutils-0.0.1a0.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - main [MainThread]: End processing [ecutils]: success
+[2024-04-06 00:13:39] INFO root fetch - processPackages [omnix]: Remove: archive file [/home/abi/fetcher/tmp/omnix-0.3.3.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - processPackages [omnix]: Remove: archive file [/home/abi/fetcher/tmp/omnix-0.3.4.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - main [MainThread]: End processing [omnix]: success
+[2024-04-06 00:13:39] INFO root fetch - processPackages [NitroPy]: Remove: archive file [/home/abi/fetcher/tmp/NitroPy-1.1.0.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - processPackages [NitroPy]: Remove: archive file [/home/abi/fetcher/tmp/NitroPy-1.2.1.tar.gz]
+[2024-04-06 00:13:39] INFO root fetch - main [MainThread]: End processing [NitroPy]: success
+[2024-04-06 00:13:40] INFO root fetch - processPackages [tonic-validate]: Remove: archive file [/home/abi/fetcher/tmp/tonic_validate-4.0.4.tar.gz]
+[2024-04-06 00:13:40] INFO root fetch - processPackages [tonic-validate]: Remove: archive file [/home/abi/fetcher/tmp/tonic_validate-4.0.5.tar.gz]
+[2024-04-06 00:13:40] INFO root fetch - main [MainThread]: End processing [tonic-validate]: success
+[2024-04-06 00:13:40] INFO root fetch - main [MainThread]: Store serial: [22642536]
