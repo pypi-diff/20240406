@@ -18992,3 +18992,39 @@ EOFError: EOF read where object expected
 [2024-04-06 17:49:25] INFO root fetch - processPackages [systemslink-python]: Remove: archive file [/home/abi/fetcher/tmp/systemslink_python-0.1.1.tar.gz]
 [2024-04-06 17:49:25] INFO root fetch - main [MainThread]: End processing [systemslink-python]: success
 [2024-04-06 17:49:25] INFO root fetch - main [MainThread]: Store serial: [22649129]
+[2024-04-06 17:51:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649129]
+[2024-04-06 17:51:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ring-attention-pytorch
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fredquery
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: librus-apix
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/69/4a/8925c7ce7e550c0e2780a1c71a7a50ad68a2591d8c63f837522379a6da9f/ring-attention-pytorch-0.3.0.tar.gz
+[2024-04-06 17:51:34] INFO root fetch - processPackages [librus-apix]: New version: [0.6.9.post3] Old Version: [0.6.9.post2]
+[2024-04-06 17:51:34] INFO root fetch - processPackages [fredquery]: New version: [0.0.51] Old Version: [0.0.50]
+[2024-04-06 17:51:34] INFO root fetch - processPackages [librus-apix]: Downloading https://files.pythonhosted.org/packages/80/92/1084523995350cdf2015073d9b1d2ed59b454f5d083d41edf716582e7acd/librus_apix-0.6.9.post2.tar.gz
+[2024-04-06 17:51:34] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 17:51:34] INFO root fetch - processPackages [fredquery]: Downloading https://files.pythonhosted.org/packages/4b/5e/7df15ffdc54c228feb059e71b9339ffcb957533d88299ed6a6275e04a084/fredquery-0.0.50.tar.gz
+[2024-04-06 17:51:34] WARNING root fetch - processPackages [librus-apix]: Timeout reached during download
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/9c/f2/ff0f5e9c582afdc3e77d042e6bd74b046271894a1c4ad86a92c402b27892/ring-attention-pytorch-0.3.1.tar.gz
+[2024-04-06 17:51:34] INFO root fetch - processPackages [librus-apix]: Downloading https://files.pythonhosted.org/packages/a3/94/74df5631d825f1689c17ee9ea928e016d0c8c022086352e698660f0a0f17/librus_apix-0.6.9.post3.tar.gz
+[2024-04-06 17:51:34] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-06 17:51:34] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.3.0.tar.gz tmp/ring-attention-pytorch-0.3.1.tar.gz --markdown 20240406/r/ring-attention-pytorch/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2024-04-06 17:51:34] WARNING root fetch - processPackages [librus-apix]: Timeout reached during download
+[2024-04-06 17:51:34] INFO root fetch - processPackages [librus-apix]: executing diffoscope
+[2024-04-06 17:51:34] INFO root fetch - processPackages [librus-apix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librus_apix-0.6.9.post2.tar.gz tmp/librus_apix-0.6.9.post3.tar.gz --markdown 20240406/l/librus-apix/0.6.9.post2-0.6.9.post3/diff.md --exclude *.pyd
+[2024-04-06 17:51:35] INFO root fetch - processPackages [librus-apix]: Remove: archive file [/home/abi/fetcher/tmp/librus_apix-0.6.9.post2.tar.gz]
+[2024-04-06 17:51:35] INFO root fetch - processPackages [librus-apix]: Remove: archive file [/home/abi/fetcher/tmp/librus_apix-0.6.9.post3.tar.gz]
+[2024-04-06 17:51:35] INFO root fetch - main [MainThread]: End processing [librus-apix]: success
+[2024-04-06 17:51:35] WARNING root fetch - processPackages [fredquery]: Timeout reached during download
+[2024-04-06 17:51:35] INFO root fetch - processPackages [fredquery]: Downloading https://files.pythonhosted.org/packages/51/55/b33991cc50cedc01fc1fe1e4c90e48269eb2ad77d49a0b7a11cb7d6cd64c/fredquery-0.0.51.tar.gz
+[2024-04-06 17:51:35] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.0.tar.gz]
+[2024-04-06 17:51:35] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.1.tar.gz]
+[2024-04-06 17:51:35] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-06 17:51:36] WARNING root fetch - processPackages [fredquery]: Timeout reached during download
+[2024-04-06 17:51:36] INFO root fetch - processPackages [fredquery]: executing diffoscope
+[2024-04-06 17:51:36] INFO root fetch - processPackages [fredquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fredquery-0.0.50.tar.gz tmp/fredquery-0.0.51.tar.gz --markdown 20240406/f/fredquery/0.0.50-0.0.51/diff.md --exclude *.pyd
+[2024-04-06 17:51:37] INFO root fetch - processPackages [fredquery]: Remove: archive file [/home/abi/fetcher/tmp/fredquery-0.0.50.tar.gz]
+[2024-04-06 17:51:37] INFO root fetch - processPackages [fredquery]: Remove: archive file [/home/abi/fetcher/tmp/fredquery-0.0.51.tar.gz]
+[2024-04-06 17:51:37] INFO root fetch - main [MainThread]: End processing [fredquery]: success
+[2024-04-06 17:51:37] INFO root fetch - main [MainThread]: Store serial: [22649138]
