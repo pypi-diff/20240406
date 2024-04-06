@@ -23036,3 +23036,17 @@ EOFError: EOF read where object expected
 [2024-04-06 21:28:05] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.4.3.tar.gz]
 [2024-04-06 21:28:05] INFO root fetch - main [MainThread]: End processing [pyaogmaneo]: success
 [2024-04-06 21:28:05] INFO root fetch - main [MainThread]: Store serial: [22650489]
+[2024-04-06 21:30:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650489]
+[2024-04-06 21:30:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 21:30:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fusio-sdk
+[2024-04-06 21:30:14] INFO root fetch - processPackages [fusio-sdk]: New version: [5.0.3] Old Version: [5.0.2]
+[2024-04-06 21:30:14] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/b8/94/631c475b8fb1fecd599f1e3ea34ec955bb8619d0087cf9093f9cd502c47a/fusio-sdk-5.0.2.tar.gz
+[2024-04-06 21:30:14] WARNING root fetch - processPackages [fusio-sdk]: Timeout reached during download
+[2024-04-06 21:30:15] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/fe/79/9b25cf96ad86d2f27c3cf327a3abebdee7f735276f80940498b79684ef8a/fusio-sdk-5.0.3.tar.gz
+[2024-04-06 21:30:15] WARNING root fetch - processPackages [fusio-sdk]: Timeout reached during download
+[2024-04-06 21:30:15] INFO root fetch - processPackages [fusio-sdk]: executing diffoscope
+[2024-04-06 21:30:15] INFO root fetch - processPackages [fusio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusio-sdk-5.0.2.tar.gz tmp/fusio-sdk-5.0.3.tar.gz --markdown 20240406/f/fusio-sdk/5.0.2-5.0.3/diff.md --exclude *.pyd
+[2024-04-06 21:30:16] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio-sdk-5.0.2.tar.gz]
+[2024-04-06 21:30:16] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio-sdk-5.0.3.tar.gz]
+[2024-04-06 21:30:16] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
+[2024-04-06 21:30:16] INFO root fetch - main [MainThread]: Store serial: [22650492]
