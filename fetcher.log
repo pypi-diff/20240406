@@ -21321,3 +21321,50 @@ EOFError: EOF read where object expected
 [2024-04-06 20:00:20] INFO root fetch - processPackages [PyFusion]: Remove: archive file [/home/abi/fetcher/tmp/pyfusion-1.0.9.tar.gz]
 [2024-04-06 20:00:20] INFO root fetch - main [MainThread]: End processing [PyFusion]: success
 [2024-04-06 20:00:20] INFO root fetch - main [MainThread]: Store serial: [22649952]
+[2024-04-06 20:02:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649952]
+[2024-04-06 20:02:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 20:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: weight-training-tracker
+[2024-04-06 20:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: IS2view
+[2024-04-06 20:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keri
+[2024-04-06 20:02:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spiffe-tls
+[2024-04-06 20:02:29] INFO root fetch - processPackages [weight-training-tracker]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 20:02:29] INFO root fetch - processPackages [weight-training-tracker]: Downloading https://files.pythonhosted.org/packages/cd/aa/c38f33930c86850366b55421f41626063905c2fe2c8f17bc2775f40065e1/weight_training_tracker-0.8.0.tar.gz
+[2024-04-06 20:02:29] INFO root fetch - processPackages [spiffe-tls]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 20:02:29] INFO root fetch - processPackages [IS2view]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 20:02:29] INFO root fetch - processPackages [keri]: New version: [1.2.dev0] Old Version: [1.1.9]
+[2024-04-06 20:02:29] INFO root fetch - processPackages [IS2view]: Downloading https://files.pythonhosted.org/packages/30/dc/f1981bc0bd70fa6e6b2a2fe79b36bea7f1e37cad4c16900cb81ddf8861cb/IS2view-0.0.6.tar.gz
+[2024-04-06 20:02:29] WARNING root fetch - processPackages [weight-training-tracker]: Timeout reached during download
+[2024-04-06 20:02:29] INFO root fetch - processPackages [weight-training-tracker]: Downloading https://files.pythonhosted.org/packages/58/f6/886d8555f118679f1a90a58f2aba160c8ebfa8b00157c0a2b157a947d0da/weight_training_tracker-0.9.0.tar.gz
+[2024-04-06 20:02:29] INFO root fetch - processPackages [keri]: Downloading https://files.pythonhosted.org/packages/a7/2f/60b5294f4098b422cb91093be33f1770bd310d911ae3741f04f0b7d828fb/keri-1.1.9.tar.gz
+[2024-04-06 20:02:29] INFO root fetch - processPackages [spiffe-tls]: Downloading https://files.pythonhosted.org/packages/c9/bf/5b2b1e0fe0b370ad82d742b708523152303516516f583c552dd7a4a9e714/spiffe_tls-0.1.1.tar.gz
+[2024-04-06 20:02:29] WARNING root fetch - processPackages [IS2view]: Timeout reached during download
+[2024-04-06 20:02:29] WARNING root fetch - processPackages [weight-training-tracker]: Timeout reached during download
+[2024-04-06 20:02:29] INFO root fetch - processPackages [weight-training-tracker]: executing diffoscope
+[2024-04-06 20:02:29] INFO root fetch - processPackages [weight-training-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weight_training_tracker-0.8.0.tar.gz tmp/weight_training_tracker-0.9.0.tar.gz --markdown 20240406/w/weight-training-tracker/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 20:02:29] WARNING root fetch - processPackages [keri]: Timeout reached during download
+[2024-04-06 20:02:29] WARNING root fetch - processPackages [spiffe-tls]: Timeout reached during download
+[2024-04-06 20:02:29] INFO root fetch - processPackages [IS2view]: Downloading https://files.pythonhosted.org/packages/b4/dd/46939fce69ad449ea9e99ff96c86ecad1bd4cfc42dc45fdc1ab47c7ad0e9/IS2view-0.0.7.tar.gz
+[2024-04-06 20:02:29] WARNING root fetch - processPackages [IS2view]: Timeout reached during download
+[2024-04-06 20:02:29] INFO root fetch - processPackages [IS2view]: executing diffoscope
+[2024-04-06 20:02:29] INFO root fetch - processPackages [IS2view]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IS2view-0.0.6.tar.gz tmp/IS2view-0.0.7.tar.gz --markdown 20240406/I/IS2view/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 20:02:29] INFO root fetch - processPackages [keri]: Downloading https://files.pythonhosted.org/packages/ab/4f/477fea94530cb2004ba28371e14810a3a080cd84dde6ba585ce33da0a609/keri-1.2.dev0.tar.gz
+[2024-04-06 20:02:30] INFO root fetch - processPackages [spiffe-tls]: Downloading https://files.pythonhosted.org/packages/1b/2d/ac090a62a11a72e9352819674a4d0a37b65e70790fbb01d9f340d613437f/spiffe_tls-0.1.2.tar.gz
+[2024-04-06 20:02:30] WARNING root fetch - processPackages [keri]: Timeout reached during download
+[2024-04-06 20:02:30] INFO root fetch - processPackages [keri]: executing diffoscope
+[2024-04-06 20:02:30] INFO root fetch - processPackages [keri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keri-1.1.9.tar.gz tmp/keri-1.2.dev0.tar.gz --markdown 20240406/k/keri/1.1.9-1.2.dev0/diff.md --exclude *.pyd
+[2024-04-06 20:02:30] WARNING root fetch - processPackages [spiffe-tls]: Timeout reached during download
+[2024-04-06 20:02:30] INFO root fetch - processPackages [spiffe-tls]: executing diffoscope
+[2024-04-06 20:02:30] INFO root fetch - processPackages [spiffe-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiffe_tls-0.1.1.tar.gz tmp/spiffe_tls-0.1.2.tar.gz --markdown 20240406/s/spiffe-tls/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 20:02:30] INFO root fetch - processPackages [weight-training-tracker]: Remove: archive file [/home/abi/fetcher/tmp/weight_training_tracker-0.8.0.tar.gz]
+[2024-04-06 20:02:30] INFO root fetch - processPackages [weight-training-tracker]: Remove: archive file [/home/abi/fetcher/tmp/weight_training_tracker-0.9.0.tar.gz]
+[2024-04-06 20:02:30] INFO root fetch - main [MainThread]: End processing [weight-training-tracker]: success
+[2024-04-06 20:02:30] INFO root fetch - processPackages [IS2view]: Remove: archive file [/home/abi/fetcher/tmp/IS2view-0.0.6.tar.gz]
+[2024-04-06 20:02:30] INFO root fetch - processPackages [IS2view]: Remove: archive file [/home/abi/fetcher/tmp/IS2view-0.0.7.tar.gz]
+[2024-04-06 20:02:30] INFO root fetch - main [MainThread]: End processing [IS2view]: success
+[2024-04-06 20:02:30] INFO root fetch - processPackages [spiffe-tls]: Remove: archive file [/home/abi/fetcher/tmp/spiffe_tls-0.1.1.tar.gz]
+[2024-04-06 20:02:30] INFO root fetch - processPackages [spiffe-tls]: Remove: archive file [/home/abi/fetcher/tmp/spiffe_tls-0.1.2.tar.gz]
+[2024-04-06 20:02:30] INFO root fetch - main [MainThread]: End processing [spiffe-tls]: success
+[2024-04-06 20:02:31] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.1.9.tar.gz]
+[2024-04-06 20:02:31] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.2.dev0.tar.gz]
+[2024-04-06 20:02:31] INFO root fetch - main [MainThread]: End processing [keri]: success
+[2024-04-06 20:02:31] INFO root fetch - main [MainThread]: Store serial: [22649963]
