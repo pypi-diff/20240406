@@ -9039,3 +9039,17 @@
 [2024-04-06 05:57:24] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.2.9.tar.gz]
 [2024-04-06 05:57:24] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
 [2024-04-06 05:57:24] INFO root fetch - main [MainThread]: Store serial: [22645329]
+[2024-04-06 05:59:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645329]
+[2024-04-06 05:59:33] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 05:59:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: istari
+[2024-04-06 05:59:33] INFO root fetch - processPackages [istari]: New version: [0.0.5] Old Version: [0.0.1]
+[2024-04-06 05:59:33] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/4a/3f/4dc89f887d5a5bbd445d89b070918d8df6724590ec6df1e93c8247475f53/istari-0.0.1.tar.gz
+[2024-04-06 05:59:33] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-06 05:59:33] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/b8/f5/0e681b333ecd60e7af09b04892fe26149d80555f5dab304af501eb9143be/istari-0.0.5.tar.gz
+[2024-04-06 05:59:34] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-06 05:59:34] INFO root fetch - processPackages [istari]: executing diffoscope
+[2024-04-06 05:59:34] INFO root fetch - processPackages [istari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istari-0.0.1.tar.gz tmp/istari-0.0.5.tar.gz --markdown 20240406/i/istari/0.0.1-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 05:59:34] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.1.tar.gz]
+[2024-04-06 05:59:34] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.5.tar.gz]
+[2024-04-06 05:59:34] INFO root fetch - main [MainThread]: End processing [istari]: success
+[2024-04-06 05:59:34] INFO root fetch - main [MainThread]: Store serial: [22645331]
