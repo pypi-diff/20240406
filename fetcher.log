@@ -24179,3 +24179,53 @@ EOFError: EOF read where object expected
 [2024-04-06 22:41:19] ERROR root fetch - processPackages [zxing]: Timeout during execution of pkgdiff
 [2024-04-06 22:41:19] INFO root fetch - main [MainThread]: End processing [zxing] error
 [2024-04-06 22:41:19] INFO root fetch - main [MainThread]: Store serial: [22650904]
+[2024-04-06 22:43:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650904]
+[2024-04-06 22:43:29] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 22:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stomp-py
+[2024-04-06 22:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbcli-jm
+[2024-04-06 22:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysysq
+[2024-04-06 22:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: football-stats-scraper
+[2024-04-06 22:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: graphscope
+[2024-04-06 22:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wassersteinwormhole
+[2024-04-06 22:43:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: winprivilege
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [sbcli-jm]: Skipping, unable to determine old version
+[2024-04-06 22:43:29] INFO root fetch - main [MainThread]: End processing [sbcli-jm] error
+[2024-04-06 22:43:29] INFO root fetch - processPackages [pysysq]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [winprivilege]: Skipping, unable to determine old version
+[2024-04-06 22:43:29] INFO root fetch - main [MainThread]: End processing [winprivilege] error
+[2024-04-06 22:43:29] INFO root fetch - processPackages [wassersteinwormhole]: New version: [0.2.2] Old Version: [0.2.0]
+[2024-04-06 22:43:29] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/cc/9a/132e91d3896572b4126c0e9d08342f6a4835bf5fa9ebd455ce7e67c38f44/pysysq-0.0.6.tar.gz
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [football-stats-scraper]: Skipping, unable to determine old version
+[2024-04-06 22:43:29] INFO root fetch - main [MainThread]: End processing [football-stats-scraper] error
+[2024-04-06 22:43:29] INFO root fetch - processPackages [graphscope]: New version: [0.27.0a20240406] Old Version: [0.27.0a20240405]
+[2024-04-06 22:43:29] INFO root fetch - processPackages [stomp-py]: New version: [8.1.1] Old Version: [8.1.0]
+[2024-04-06 22:43:29] INFO root fetch - processPackages [wassersteinwormhole]: Downloading https://files.pythonhosted.org/packages/3f/5a/94bfb716942f8423e8a560555a5bf250ad1efd6343f61fbb88f9ac898bdf/wassersteinwormhole-0.2.0.tar.gz
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 22:43:29] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/67/99/4955564e7e50730a5b0bbb225aef582cfadabf4a1aed136cee03a4aff764/graphscope-0.27.0a20240405-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-06 22:43:29] INFO root fetch - processPackages [stomp-py]: Downloading https://files.pythonhosted.org/packages/9c/0f/d7f782d0f945d2f37054832c3fbfb5fdd23ff98166ccccc9f6c00cca025e/stomp.py-8.1.0.tar.gz
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [graphscope]: Skipping package: exceeds size limit 195914564>=10485760
+[2024-04-06 22:43:29] INFO root fetch - main [MainThread]: End processing [graphscope] error
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [stomp-py]: Timeout reached during download
+[2024-04-06 22:43:29] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/d4/a4/87ace06291918ec7e444f094bac55237e55a69f147b7be01170a246a675e/pysysq-0.0.7.tar.gz
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [wassersteinwormhole]: Timeout reached during download
+[2024-04-06 22:43:29] INFO root fetch - processPackages [stomp-py]: Downloading https://files.pythonhosted.org/packages/fc/d5/9b90651889fc86d1be4dafa510ff0eb3a4cb391315dc3f572217cf1c3204/stomp_py-8.1.1.tar.gz
+[2024-04-06 22:43:29] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 22:43:29] INFO root fetch - processPackages [pysysq]: executing diffoscope
+[2024-04-06 22:43:29] INFO root fetch - processPackages [pysysq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysysq-0.0.6.tar.gz tmp/pysysq-0.0.7.tar.gz --markdown 20240406/p/pysysq/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 22:43:30] INFO root fetch - processPackages [wassersteinwormhole]: Downloading https://files.pythonhosted.org/packages/f4/02/7d63775228102112bec80180f7ccad06183a169e72582e765a1a2f3d1c2a/wassersteinwormhole-0.2.2.tar.gz
+[2024-04-06 22:43:30] WARNING root fetch - processPackages [stomp-py]: Timeout reached during download
+[2024-04-06 22:43:30] INFO root fetch - processPackages [stomp-py]: executing diffoscope
+[2024-04-06 22:43:30] INFO root fetch - processPackages [stomp-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stomp.py-8.1.0.tar.gz tmp/stomp_py-8.1.1.tar.gz --markdown 20240406/s/stomp-py/8.1.0-8.1.1/diff.md --exclude *.pyd
+[2024-04-06 22:43:30] WARNING root fetch - processPackages [wassersteinwormhole]: Timeout reached during download
+[2024-04-06 22:43:30] INFO root fetch - processPackages [wassersteinwormhole]: executing diffoscope
+[2024-04-06 22:43:30] INFO root fetch - processPackages [wassersteinwormhole]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wassersteinwormhole-0.2.0.tar.gz tmp/wassersteinwormhole-0.2.2.tar.gz --markdown 20240406/w/wassersteinwormhole/0.2.0-0.2.2/diff.md --exclude *.pyd
+[2024-04-06 22:43:30] INFO root fetch - processPackages [wassersteinwormhole]: Remove: archive file [/home/abi/fetcher/tmp/wassersteinwormhole-0.2.0.tar.gz]
+[2024-04-06 22:43:30] INFO root fetch - processPackages [wassersteinwormhole]: Remove: archive file [/home/abi/fetcher/tmp/wassersteinwormhole-0.2.2.tar.gz]
+[2024-04-06 22:43:30] INFO root fetch - main [MainThread]: End processing [wassersteinwormhole]: success
+[2024-04-06 22:43:30] INFO root fetch - processPackages [stomp-py]: Remove: archive file [/home/abi/fetcher/tmp/stomp.py-8.1.0.tar.gz]
+[2024-04-06 22:43:30] INFO root fetch - processPackages [stomp-py]: Remove: archive file [/home/abi/fetcher/tmp/stomp_py-8.1.1.tar.gz]
+[2024-04-06 22:43:30] INFO root fetch - main [MainThread]: End processing [stomp-py]: success
+[2024-04-06 22:43:30] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.6.tar.gz]
+[2024-04-06 22:43:30] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.7.tar.gz]
+[2024-04-06 22:43:30] INFO root fetch - main [MainThread]: End processing [pysysq]: success
+[2024-04-06 22:43:30] INFO root fetch - main [MainThread]: Store serial: [22650930]
