@@ -22412,3 +22412,39 @@ EOFError: EOF read where object expected
 [2024-04-06 20:55:05] INFO root fetch - processPackages [py-ballisticcalc.exts]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc.exts-2.0.0b5.tar.gz]
 [2024-04-06 20:55:05] INFO root fetch - main [MainThread]: End processing [py-ballisticcalc.exts]: success
 [2024-04-06 20:55:05] INFO root fetch - main [MainThread]: Store serial: [22650267]
+[2024-04-06 20:57:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650267]
+[2024-04-06 20:57:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 20:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyquantify
+[2024-04-06 20:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pointpp
+[2024-04-06 20:57:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reddit2text
+[2024-04-06 20:57:14] INFO root fetch - processPackages [reddit2text]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-06 20:57:14] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/3d/e7/59760b0d3ea3cebacd5ed4f528a112c99114febb5bbcab29d2194295fd9b/reddit2text-0.0.2.tar.gz
+[2024-04-06 20:57:14] INFO root fetch - processPackages [pyquantify]: New version: [1.2.0] Old Version: [1.1.2]
+[2024-04-06 20:57:14] INFO root fetch - processPackages [pointpp]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-06 20:57:14] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 20:57:14] INFO root fetch - processPackages [pointpp]: Downloading https://files.pythonhosted.org/packages/2e/9d/6cfb132a2dc216047ac4ebf22f0d4a572edd14208d9002d4dea974ef4e5c/pointpp-0.2.0.tar.gz
+[2024-04-06 20:57:14] INFO root fetch - processPackages [pyquantify]: Downloading https://files.pythonhosted.org/packages/e9/0b/e907befa00ff0b4e8a4f47d198cfd6d0cd80bd8da70bdf521ef989b38f51/pyquantify-1.1.2.tar.gz
+[2024-04-06 20:57:15] WARNING root fetch - processPackages [pyquantify]: Timeout reached during download
+[2024-04-06 20:57:15] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/fd/63/0e066dec6cc7d24a2a02f278368b5d64a204bdb27d8063a7d65e8b69356b/reddit2text-0.0.4.tar.gz
+[2024-04-06 20:57:15] WARNING root fetch - processPackages [pointpp]: Timeout reached during download
+[2024-04-06 20:57:15] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 20:57:15] INFO root fetch - processPackages [reddit2text]: executing diffoscope
+[2024-04-06 20:57:15] INFO root fetch - processPackages [reddit2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit2text-0.0.2.tar.gz tmp/reddit2text-0.0.4.tar.gz --markdown 20240406/r/reddit2text/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pyquantify]: Downloading https://files.pythonhosted.org/packages/bd/b2/1f023ec4496237867ecd6d17ff497fc6a524b25073a28c7492b4150e513f/pyquantify-1.2.0.tar.gz
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pointpp]: Downloading https://files.pythonhosted.org/packages/df/e6/fed9a138b2a2d1ea10042771f6152e8121625985c74e55a9f86cbfed4296/pointpp-0.2.1.tar.gz
+[2024-04-06 20:57:15] WARNING root fetch - processPackages [pyquantify]: Timeout reached during download
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pyquantify]: executing diffoscope
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pyquantify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyquantify-1.1.2.tar.gz tmp/pyquantify-1.2.0.tar.gz --markdown 20240406/p/pyquantify/1.1.2-1.2.0/diff.md --exclude *.pyd
+[2024-04-06 20:57:15] WARNING root fetch - processPackages [pointpp]: Timeout reached during download
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pointpp]: executing diffoscope
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pointpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pointpp-0.2.0.tar.gz tmp/pointpp-0.2.1.tar.gz --markdown 20240406/p/pointpp/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-06 20:57:15] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.2.tar.gz]
+[2024-04-06 20:57:15] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.4.tar.gz]
+[2024-04-06 20:57:15] INFO root fetch - main [MainThread]: End processing [reddit2text]: success
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pyquantify]: Remove: archive file [/home/abi/fetcher/tmp/pyquantify-1.1.2.tar.gz]
+[2024-04-06 20:57:15] INFO root fetch - processPackages [pyquantify]: Remove: archive file [/home/abi/fetcher/tmp/pyquantify-1.2.0.tar.gz]
+[2024-04-06 20:57:15] INFO root fetch - main [MainThread]: End processing [pyquantify]: success
+[2024-04-06 20:57:16] INFO root fetch - processPackages [pointpp]: Remove: archive file [/home/abi/fetcher/tmp/pointpp-0.2.0.tar.gz]
+[2024-04-06 20:57:16] INFO root fetch - processPackages [pointpp]: Remove: archive file [/home/abi/fetcher/tmp/pointpp-0.2.1.tar.gz]
+[2024-04-06 20:57:16] INFO root fetch - main [MainThread]: End processing [pointpp]: success
+[2024-04-06 20:57:16] INFO root fetch - main [MainThread]: Store serial: [22650286]
