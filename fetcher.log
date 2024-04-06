@@ -11346,3 +11346,34 @@
 [2024-04-06 08:49:57] INFO root fetch - processPackages [Geode-Conversion]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Conversion-5.2.8rc1-cp39-cp39-win_amd64.whl.zip]
 [2024-04-06 08:49:57] INFO root fetch - main [MainThread]: End processing [Geode-Conversion]: success
 [2024-04-06 08:49:57] INFO root fetch - main [MainThread]: Store serial: [22646173]
+[2024-04-06 08:52:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646173]
+[2024-04-06 08:52:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 08:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paita
+[2024-04-06 08:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: actionlint-py
+[2024-04-06 08:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dydantic
+[2024-04-06 08:52:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dydantic
+[2024-04-06 08:52:06] WARNING root fetch - processPackages [dydantic]: Skipping, unable to determine old version
+[2024-04-06 08:52:06] INFO root fetch - main [MainThread]: End processing [dydantic] error
+[2024-04-06 08:52:06] WARNING root fetch - processPackages [dydantic]: Skipping, unable to determine old version
+[2024-04-06 08:52:06] INFO root fetch - main [MainThread]: End processing [dydantic] error
+[2024-04-06 08:52:06] INFO root fetch - processPackages [actionlint-py]: New version: [1.6.27.13] Old Version: [1.6.27.12]
+[2024-04-06 08:52:06] INFO root fetch - processPackages [paita]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-06 08:52:06] INFO root fetch - processPackages [actionlint-py]: Downloading https://files.pythonhosted.org/packages/8f/6a/2aa1c090dd60af9ac37ab1372d96be68798608da6147a82cceaf2311b432/actionlint_py-1.6.27.12.tar.gz
+[2024-04-06 08:52:06] INFO root fetch - processPackages [paita]: Downloading https://files.pythonhosted.org/packages/b0/9c/ffd34a961e9427819027ef2203c062dd21bb3c947b403b320269991bd1b0/paita-0.1.7.tar.gz
+[2024-04-06 08:52:07] WARNING root fetch - processPackages [paita]: Timeout reached during download
+[2024-04-06 08:52:07] WARNING root fetch - processPackages [actionlint-py]: Timeout reached during download
+[2024-04-06 08:52:08] INFO root fetch - processPackages [paita]: Downloading https://files.pythonhosted.org/packages/88/8c/85b64d7ee891e5e249bb7990fac57237de07fe905df9083eed14019e1554/paita-0.1.8.tar.gz
+[2024-04-06 08:52:08] INFO root fetch - processPackages [actionlint-py]: Downloading https://files.pythonhosted.org/packages/00/cd/8e07d39e805949613607b521cdafdcadb989dd1e73ef37a9800efbe2f737/actionlint_py-1.6.27.13.tar.gz
+[2024-04-06 08:52:08] WARNING root fetch - processPackages [actionlint-py]: Timeout reached during download
+[2024-04-06 08:52:08] INFO root fetch - processPackages [actionlint-py]: executing diffoscope
+[2024-04-06 08:52:08] INFO root fetch - processPackages [actionlint-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/actionlint_py-1.6.27.12.tar.gz tmp/actionlint_py-1.6.27.13.tar.gz --markdown 20240406/a/actionlint-py/1.6.27.12-1.6.27.13/diff.md --exclude *.pyd
+[2024-04-06 08:52:08] WARNING root fetch - processPackages [paita]: Timeout reached during download
+[2024-04-06 08:52:08] INFO root fetch - processPackages [paita]: executing diffoscope
+[2024-04-06 08:52:08] INFO root fetch - processPackages [paita]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paita-0.1.7.tar.gz tmp/paita-0.1.8.tar.gz --markdown 20240406/p/paita/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2024-04-06 08:52:08] INFO root fetch - processPackages [paita]: Remove: archive file [/home/abi/fetcher/tmp/paita-0.1.7.tar.gz]
+[2024-04-06 08:52:08] INFO root fetch - processPackages [paita]: Remove: archive file [/home/abi/fetcher/tmp/paita-0.1.8.tar.gz]
+[2024-04-06 08:52:08] INFO root fetch - main [MainThread]: End processing [paita]: success
+[2024-04-06 08:52:08] INFO root fetch - processPackages [actionlint-py]: Remove: archive file [/home/abi/fetcher/tmp/actionlint_py-1.6.27.12.tar.gz]
+[2024-04-06 08:52:08] INFO root fetch - processPackages [actionlint-py]: Remove: archive file [/home/abi/fetcher/tmp/actionlint_py-1.6.27.13.tar.gz]
+[2024-04-06 08:52:08] INFO root fetch - main [MainThread]: End processing [actionlint-py]: success
+[2024-04-06 08:52:08] INFO root fetch - main [MainThread]: Store serial: [22646191]
