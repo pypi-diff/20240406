@@ -16958,3 +16958,23 @@ EOFError: EOF read where object expected
 [2024-04-06 15:51:47] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.3.tar.gz]
 [2024-04-06 15:51:47] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
 [2024-04-06 15:51:47] INFO root fetch - main [MainThread]: Store serial: [22648314]
+[2024-04-06 15:53:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648314]
+[2024-04-06 15:53:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: firewall-cmd
+[2024-04-06 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nimfilt
+[2024-04-06 15:53:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensordict-nightly
+[2024-04-06 15:53:56] WARNING root fetch - processPackages [firewall-cmd]: Skipping, unable to determine old version
+[2024-04-06 15:53:56] WARNING root fetch - processPackages [nimfilt]: Skipping, unable to determine old version
+[2024-04-06 15:53:56] INFO root fetch - main [MainThread]: End processing [firewall-cmd] error
+[2024-04-06 15:53:56] INFO root fetch - main [MainThread]: End processing [nimfilt] error
+[2024-04-06 15:53:56] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.4.6] Old Version: [2024.4.5]
+[2024-04-06 15:53:56] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/3f/71/7b341adb29f79799674531b4a3c7ff62a511ec7ebf3f14a21d55995ded6f/tensordict_nightly-2024.4.5-cp39-cp39-win_amd64.whl
+[2024-04-06 15:53:56] WARNING root fetch - processPackages [tensordict-nightly]: Timeout reached during download
+[2024-04-06 15:53:57] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/c4/39/4d7d516d25b4be7396935841c972b7b9a6c13f210f5da299003b1975b4ae/tensordict_nightly-2024.4.6-cp39-cp39-macosx_11_0_x86_64.whl
+[2024-04-06 15:53:57] WARNING root fetch - processPackages [tensordict-nightly]: Timeout reached during download
+[2024-04-06 15:53:57] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-04-06 15:53:57] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.4.5-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.4.6-cp39-cp39-macosx_11_0_x86_64.whl.zip --markdown 20240406/t/tensordict-nightly/2024.4.5-2024.4.6/diff.md --exclude *.pyd
+[2024-04-06 15:53:58] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.5-cp39-cp39-win_amd64.whl.zip]
+[2024-04-06 15:53:58] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.6-cp39-cp39-macosx_11_0_x86_64.whl.zip]
+[2024-04-06 15:53:58] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-04-06 15:53:58] INFO root fetch - main [MainThread]: Store serial: [22648329]
