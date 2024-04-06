@@ -22253,3 +22253,76 @@ EOFError: EOF read where object expected
 [2024-04-06 20:48:34] INFO root fetch - processPackages [Liara]: Remove: archive file [/home/abi/fetcher/tmp/Liara-2.6.0.tar.gz]
 [2024-04-06 20:48:34] INFO root fetch - main [MainThread]: End processing [Liara]: success
 [2024-04-06 20:48:34] INFO root fetch - main [MainThread]: Store serial: [22650219]
+[2024-04-06 20:50:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650219]
+[2024-04-06 20:50:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vertex-protocol
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FFATS
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epidemik
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sbmlnetwork
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pybud-gui
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PYield
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Tree.Network
+[2024-04-06 20:50:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: epidemik
+[2024-04-06 20:50:43] INFO root fetch - processPackages [pybud-gui]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-04-06 20:50:43] INFO root fetch - processPackages [epidemik]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 20:50:43] INFO root fetch - processPackages [sbmlnetwork]: New version: [0.0.18] Old Version: [0.0.17]
+[2024-04-06 20:50:43] INFO root fetch - processPackages [epidemik]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [Tree.Network]: Skipping, unable to determine old version
+[2024-04-06 20:50:43] INFO root fetch - main [MainThread]: End processing [Tree.Network] error
+[2024-04-06 20:50:43] INFO root fetch - processPackages [vertex-protocol]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [FFATS]: Skipping, unable to determine old version
+[2024-04-06 20:50:43] INFO root fetch - main [MainThread]: End processing [FFATS] error
+[2024-04-06 20:50:43] INFO root fetch - processPackages [PYield]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-06 20:50:43] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/f0/8f/e092a66a5a9b6991978d188d176e7f0a25b8276f675307cb9d3df02e71b3/epidemik-0.0.3.tar.gz
+[2024-04-06 20:50:43] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/f0/8f/e092a66a5a9b6991978d188d176e7f0a25b8276f675307cb9d3df02e71b3/epidemik-0.0.3.tar.gz
+[2024-04-06 20:50:43] INFO root fetch - processPackages [pybud-gui]: Downloading https://files.pythonhosted.org/packages/86/72/f8cd6add3eb74c266635c61419b4e2e8776ca39bd18ae25f6512f72928f5/pybud-gui-0.9.3.tar.gz
+[2024-04-06 20:50:43] INFO root fetch - processPackages [sbmlnetwork]: Downloading https://files.pythonhosted.org/packages/d0/cf/cf33555956538681bb5fae0eab2b2c927f8fcd17b77d65d4d150b0823c78/sbmlnetwork-0.0.17-py3-none-any.whl
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:50:43] INFO root fetch - processPackages [vertex-protocol]: Downloading https://files.pythonhosted.org/packages/77/a3/2cfa3aea41041d58a033542f5825518ff55838274b52e17d12b1923f5195/vertex_protocol-2.0.0.tar.gz
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [pybud-gui]: Timeout reached during download
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [sbmlnetwork]: Timeout reached during download
+[2024-04-06 20:50:43] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/3c/90/e8a6fd73a87723a7a01a7f041118c60d3e7feb9f9a532bd3fef08398d6ae/pyield-0.4.1.tar.gz
+[2024-04-06 20:50:43] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/3e/06/9c9e78be77ccf8fb4c97049e0d39ddec533f62bb65a2170b1cb0150c2489/epidemik-0.0.4.tar.gz
+[2024-04-06 20:50:43] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/3e/06/9c9e78be77ccf8fb4c97049e0d39ddec533f62bb65a2170b1cb0150c2489/epidemik-0.0.4.tar.gz
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [vertex-protocol]: Timeout reached during download
+[2024-04-06 20:50:43] INFO root fetch - processPackages [sbmlnetwork]: Downloading https://files.pythonhosted.org/packages/36/f9/4ea0b169e691b22cefafbc87071d761dec4dd0bd57964cf0cbe5556d39be/sbmlnetwork-0.0.18-py3-none-any.whl
+[2024-04-06 20:50:43] INFO root fetch - processPackages [pybud-gui]: Downloading https://files.pythonhosted.org/packages/20/f0/c25f332b36ab24c5eb5c42f1b6056722a647c3220f47e065ffa030e08235/pybud-gui-0.9.4.tar.gz
+[2024-04-06 20:50:43] WARNING root fetch - processPackages [PYield]: Timeout reached during download
+[2024-04-06 20:50:44] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:50:44] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:50:44] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-06 20:50:44] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-06 20:50:44] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.3.tar.gz tmp/epidemik-0.0.4.tar.gz --markdown 20240406/e/epidemik/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 20:50:44] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.3.tar.gz tmp/epidemik-0.0.4.tar.gz --markdown 20240406/e/epidemik/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 20:50:44] WARNING root fetch - processPackages [sbmlnetwork]: Timeout reached during download
+[2024-04-06 20:50:44] INFO root fetch - processPackages [sbmlnetwork]: executing diffoscope
+[2024-04-06 20:50:44] INFO root fetch - processPackages [sbmlnetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbmlnetwork-0.0.17-py3-none-any.whl.zip tmp/sbmlnetwork-0.0.18-py3-none-any.whl.zip --markdown 20240406/s/sbmlnetwork/0.0.17-0.0.18/diff.md --exclude *.pyd
+[2024-04-06 20:50:44] WARNING root fetch - processPackages [pybud-gui]: Timeout reached during download
+[2024-04-06 20:50:44] INFO root fetch - processPackages [pybud-gui]: executing diffoscope
+[2024-04-06 20:50:44] INFO root fetch - processPackages [pybud-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybud-gui-0.9.3.tar.gz tmp/pybud-gui-0.9.4.tar.gz --markdown 20240406/p/pybud-gui/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2024-04-06 20:50:44] INFO root fetch - processPackages [vertex-protocol]: Downloading https://files.pythonhosted.org/packages/42/8c/3a7317a8e147fc08ba0589bdabc50e96e707db778b9c814b848a22128c84/vertex_protocol-2.0.1.tar.gz
+[2024-04-06 20:50:44] INFO root fetch - processPackages [PYield]: Downloading https://files.pythonhosted.org/packages/a1/54/474a8ffbeaaff78ebc7ddd516525409e4b077a5d0044ecb1a85c7b666683/pyield-0.5.0.tar.gz
+[2024-04-06 20:50:44] WARNING root fetch - processPackages [vertex-protocol]: Timeout reached during download
+[2024-04-06 20:50:44] INFO root fetch - processPackages [vertex-protocol]: executing diffoscope
+[2024-04-06 20:50:44] INFO root fetch - processPackages [vertex-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vertex_protocol-2.0.0.tar.gz tmp/vertex_protocol-2.0.1.tar.gz --markdown 20240406/v/vertex-protocol/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-06 20:50:44] WARNING root fetch - processPackages [PYield]: Timeout reached during download
+[2024-04-06 20:50:44] INFO root fetch - processPackages [PYield]: executing diffoscope
+[2024-04-06 20:50:44] INFO root fetch - processPackages [PYield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyield-0.4.1.tar.gz tmp/pyield-0.5.0.tar.gz --markdown 20240406/P/PYield/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2024-04-06 20:50:44] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.3.tar.gz]
+[2024-04-06 20:50:44] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.4.tar.gz]
+[2024-04-06 20:50:44] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-06 20:50:44] INFO root fetch - processPackages [sbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/sbmlnetwork-0.0.17-py3-none-any.whl.zip]
+[2024-04-06 20:50:44] INFO root fetch - processPackages [sbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/sbmlnetwork-0.0.18-py3-none-any.whl.zip]
+[2024-04-06 20:50:44] INFO root fetch - main [MainThread]: End processing [sbmlnetwork]: success
+[2024-04-06 20:50:44] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-06 20:50:44] INFO root fetch - processPackages [pybud-gui]: Remove: archive file [/home/abi/fetcher/tmp/pybud-gui-0.9.3.tar.gz]
+[2024-04-06 20:50:44] INFO root fetch - processPackages [pybud-gui]: Remove: archive file [/home/abi/fetcher/tmp/pybud-gui-0.9.4.tar.gz]
+[2024-04-06 20:50:44] INFO root fetch - main [MainThread]: End processing [pybud-gui]: success
+[2024-04-06 20:50:45] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.4.1.tar.gz]
+[2024-04-06 20:50:45] INFO root fetch - processPackages [PYield]: Remove: archive file [/home/abi/fetcher/tmp/pyield-0.5.0.tar.gz]
+[2024-04-06 20:50:45] INFO root fetch - main [MainThread]: End processing [PYield]: success
+[2024-04-06 20:50:45] INFO root fetch - processPackages [vertex-protocol]: Remove: archive file [/home/abi/fetcher/tmp/vertex_protocol-2.0.0.tar.gz]
+[2024-04-06 20:50:45] INFO root fetch - processPackages [vertex-protocol]: Remove: archive file [/home/abi/fetcher/tmp/vertex_protocol-2.0.1.tar.gz]
+[2024-04-06 20:50:45] INFO root fetch - main [MainThread]: End processing [vertex-protocol]: success
+[2024-04-06 20:50:45] INFO root fetch - main [MainThread]: Store serial: [22650245]
