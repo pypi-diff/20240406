@@ -24102,3 +24102,39 @@ EOFError: EOF read where object expected
 [2024-04-06 22:31:49] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-04-06 22:31:49] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-04-06 22:31:49] INFO root fetch - main [MainThread]: Store serial: [22650879]
+[2024-04-06 22:33:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650879]
+[2024-04-06 22:33:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 22:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copyparty
+[2024-04-06 22:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aisploit
+[2024-04-06 22:33:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysysq
+[2024-04-06 22:33:57] INFO root fetch - processPackages [pysysq]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 22:33:57] INFO root fetch - processPackages [aisploit]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 22:33:57] INFO root fetch - processPackages [copyparty]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-06 22:33:58] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/06/51/3e61c19accc6dcd3c26b8862f85d5d23eab2c2512aafc2fb7a1339cd06f5/pysysq-0.0.5-py3-none-any.whl
+[2024-04-06 22:33:58] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1b/4d/ad5f986bf2a6baf67e93df77a8dd6c161722e322bc99a1c5e215fc1d7faa/aisploit-0.0.7.tar.gz
+[2024-04-06 22:33:58] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/aa/91/e640302f729af122c993bc72216142859cf0d38009436473c9de51f2918f/copyparty-1.9.8.tar.gz
+[2024-04-06 22:33:58] WARNING root fetch - processPackages [copyparty]: Timeout reached during download
+[2024-04-06 22:33:58] WARNING root fetch - processPackages [aisploit]: Timeout reached during download
+[2024-04-06 22:33:58] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 22:33:58] INFO root fetch - processPackages [aisploit]: Downloading https://files.pythonhosted.org/packages/1d/74/57334bbb6cdd1f5fb94ed46c97de575ed8c0ab6a66b52cc953fe6946746c/aisploit-0.0.8.tar.gz
+[2024-04-06 22:33:58] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/cc/9a/132e91d3896572b4126c0e9d08342f6a4835bf5fa9ebd455ce7e67c38f44/pysysq-0.0.6.tar.gz
+[2024-04-06 22:33:58] INFO root fetch - processPackages [copyparty]: Downloading https://files.pythonhosted.org/packages/fb/5b/a1bc07b4a139d33dbbb0b5355223c94f0621cab166e1b656113ab7ccb921/copyparty-1.9.9.tar.gz
+[2024-04-06 22:33:58] WARNING root fetch - processPackages [aisploit]: Timeout reached during download
+[2024-04-06 22:33:58] INFO root fetch - processPackages [aisploit]: executing diffoscope
+[2024-04-06 22:33:58] INFO root fetch - processPackages [aisploit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aisploit-0.0.7.tar.gz tmp/aisploit-0.0.8.tar.gz --markdown 20240406/a/aisploit/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 22:33:58] WARNING root fetch - processPackages [copyparty]: Timeout reached during download
+[2024-04-06 22:33:58] INFO root fetch - processPackages [copyparty]: executing diffoscope
+[2024-04-06 22:33:58] INFO root fetch - processPackages [copyparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copyparty-1.9.8.tar.gz tmp/copyparty-1.9.9.tar.gz --markdown 20240406/c/copyparty/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2024-04-06 22:33:58] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 22:33:58] INFO root fetch - processPackages [pysysq]: executing diffoscope
+[2024-04-06 22:33:58] INFO root fetch - processPackages [pysysq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysysq-0.0.5-py3-none-any.whl.zip tmp/pysysq-0.0.6.tar.gz --markdown 20240406/p/pysysq/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 22:33:59] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.7.tar.gz]
+[2024-04-06 22:33:59] INFO root fetch - processPackages [aisploit]: Remove: archive file [/home/abi/fetcher/tmp/aisploit-0.0.8.tar.gz]
+[2024-04-06 22:33:59] INFO root fetch - main [MainThread]: End processing [aisploit]: success
+[2024-04-06 22:33:59] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.5-py3-none-any.whl.zip]
+[2024-04-06 22:33:59] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.6.tar.gz]
+[2024-04-06 22:33:59] INFO root fetch - main [MainThread]: End processing [pysysq]: success
+[2024-04-06 22:33:59] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.8.tar.gz]
+[2024-04-06 22:33:59] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.9.tar.gz]
+[2024-04-06 22:33:59] INFO root fetch - main [MainThread]: End processing [copyparty]: success
+[2024-04-06 22:33:59] INFO root fetch - main [MainThread]: Store serial: [22650888]
