@@ -16480,3 +16480,17 @@ EOFError: EOF read where object expected
 [2024-04-06 15:16:48] INFO root fetch - processPackages [physicsml]: Remove: archive file [/home/abi/fetcher/tmp/physicsml-0.2.2.tar.gz]
 [2024-04-06 15:16:48] INFO root fetch - main [MainThread]: End processing [physicsml]: success
 [2024-04-06 15:16:48] INFO root fetch - main [MainThread]: Store serial: [22648141]
+[2024-04-06 15:18:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648141]
+[2024-04-06 15:18:57] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 15:18:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metron-tagger
+[2024-04-06 15:18:57] INFO root fetch - processPackages [metron-tagger]: New version: [2.2.4] Old Version: [2.2.3]
+[2024-04-06 15:18:57] INFO root fetch - processPackages [metron-tagger]: Downloading https://files.pythonhosted.org/packages/65/b2/5d9d35ff030f31b485359fdef58f8117bcc4e067e3a2d099cde159585612/metron_tagger-2.2.3.tar.gz
+[2024-04-06 15:18:57] WARNING root fetch - processPackages [metron-tagger]: Timeout reached during download
+[2024-04-06 15:18:58] INFO root fetch - processPackages [metron-tagger]: Downloading https://files.pythonhosted.org/packages/7a/aa/418bc73319437359570b834053cb281596c4a4ea193a134959f8afda65a6/metron_tagger-2.2.4.tar.gz
+[2024-04-06 15:18:58] WARNING root fetch - processPackages [metron-tagger]: Timeout reached during download
+[2024-04-06 15:18:58] INFO root fetch - processPackages [metron-tagger]: executing diffoscope
+[2024-04-06 15:18:58] INFO root fetch - processPackages [metron-tagger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metron_tagger-2.2.3.tar.gz tmp/metron_tagger-2.2.4.tar.gz --markdown 20240406/m/metron-tagger/2.2.3-2.2.4/diff.md --exclude *.pyd
+[2024-04-06 15:18:58] INFO root fetch - processPackages [metron-tagger]: Remove: archive file [/home/abi/fetcher/tmp/metron_tagger-2.2.3.tar.gz]
+[2024-04-06 15:18:58] INFO root fetch - processPackages [metron-tagger]: Remove: archive file [/home/abi/fetcher/tmp/metron_tagger-2.2.4.tar.gz]
+[2024-04-06 15:18:58] INFO root fetch - main [MainThread]: End processing [metron-tagger]: success
+[2024-04-06 15:18:58] INFO root fetch - main [MainThread]: Store serial: [22648154]
