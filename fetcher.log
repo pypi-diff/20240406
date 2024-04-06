@@ -20367,3 +20367,67 @@ EOFError: EOF read where object expected
 [2024-04-06 19:01:40] INFO root fetch - processPackages [easynetwork]: Remove: archive file [/home/abi/fetcher/tmp/easynetwork-1.0.0rc8.tar.gz]
 [2024-04-06 19:01:40] INFO root fetch - main [MainThread]: End processing [easynetwork]: success
 [2024-04-06 19:01:40] INFO root fetch - main [MainThread]: Store serial: [22649594]
+[2024-04-06 19:03:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649594]
+[2024-04-06 19:03:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 19:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rmnt
+[2024-04-06 19:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protodump
+[2024-04-06 19:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: freegenius
+[2024-04-06 19:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: medusa-logger
+[2024-04-06 19:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nestpython
+[2024-04-06 19:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: not-again-ai
+[2024-04-06 19:03:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moveread-core
+[2024-04-06 19:03:50] INFO root fetch - processPackages [medusa-logger]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-06 19:03:50] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 19:03:50] INFO root fetch - processPackages [not-again-ai]: New version: [0.5.0] Old Version: [0.4.5]
+[2024-04-06 19:03:50] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [protodump]: Skipping, unable to determine old version
+[2024-04-06 19:03:50] INFO root fetch - main [MainThread]: End processing [protodump] error
+[2024-04-06 19:03:50] INFO root fetch - processPackages [rmnt]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [moveread-core]: Skipping, unable to determine old version
+[2024-04-06 19:03:50] INFO root fetch - main [MainThread]: End processing [moveread-core] error
+[2024-04-06 19:03:50] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/a7/47/caf42fcea68f1ff0cdca4e02f9190db80e7451c7b0e0aa90f906aff764ba/not_again_ai-0.4.5.tar.gz
+[2024-04-06 19:03:50] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/d2/43/3271c3f2fa34311f7c9142ee1bb17ae8fd89b22114d7ef64093ae92435f5/medusa-logger-1.0.3.tar.gz
+[2024-04-06 19:03:50] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [not-again-ai]: Timeout reached during download
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [nestpython]: Timeout reached during download
+[2024-04-06 19:03:50] INFO root fetch - processPackages [rmnt]: Downloading https://files.pythonhosted.org/packages/f4/e8/828d0d265572a8012dd4482ea89c32af6091e3464c90fe90d5e01fdad1c7/rmnt-1.0.0.tar.gz
+[2024-04-06 19:03:50] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/6f/a0/f28ee0e233993d710b958fb4eca9f4892fdc879db0894cb221c3c672db85/freegenius-0.0.8.tar.gz
+[2024-04-06 19:03:50] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/88/23/4ce2d605b621ce732fa2a8da213beed717ed917bbd5258624fbabec5d26d/not_again_ai-0.5.0.tar.gz
+[2024-04-06 19:03:50] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [rmnt]: Timeout reached during download
+[2024-04-06 19:03:50] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/bd/51/f95c21d1e660a3e45a035580d8399b59e7b3cb853d98297e8f586da37b08/medusa-logger-1.0.4.tar.gz
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [not-again-ai]: Timeout reached during download
+[2024-04-06 19:03:50] INFO root fetch - processPackages [not-again-ai]: executing diffoscope
+[2024-04-06 19:03:50] INFO root fetch - processPackages [not-again-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not_again_ai-0.4.5.tar.gz tmp/not_again_ai-0.5.0.tar.gz --markdown 20240406/n/not-again-ai/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [nestpython]: Timeout reached during download
+[2024-04-06 19:03:50] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-04-06 19:03:50] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240406/n/nestpython/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 19:03:50] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:03:50] INFO root fetch - processPackages [medusa-logger]: executing diffoscope
+[2024-04-06 19:03:50] INFO root fetch - processPackages [medusa-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medusa-logger-1.0.3.tar.gz tmp/medusa-logger-1.0.4.tar.gz --markdown 20240406/m/medusa-logger/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2024-04-06 19:03:50] INFO root fetch - processPackages [rmnt]: Downloading https://files.pythonhosted.org/packages/15/f9/eb55d8073c9bf861c52655fb22373257ca0d27e375c928c208c2c15bdef5/rmnt-1.0.1.tar.gz
+[2024-04-06 19:03:51] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-06 19:03:51] WARNING root fetch - processPackages [rmnt]: Timeout reached during download
+[2024-04-06 19:03:51] INFO root fetch - processPackages [rmnt]: executing diffoscope
+[2024-04-06 19:03:51] INFO root fetch - processPackages [rmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmnt-1.0.0.tar.gz tmp/rmnt-1.0.1.tar.gz --markdown 20240406/r/rmnt/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 19:03:51] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-06 19:03:51] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-06 19:03:51] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.8.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240406/f/freegenius/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 19:03:51] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.4.5.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.5.0.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - main [MainThread]: End processing [not-again-ai]: success
+[2024-04-06 19:03:51] INFO root fetch - processPackages [rmnt]: Remove: archive file [/home/abi/fetcher/tmp/rmnt-1.0.0.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - processPackages [rmnt]: Remove: archive file [/home/abi/fetcher/tmp/rmnt-1.0.1.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - main [MainThread]: End processing [rmnt]: success
+[2024-04-06 19:03:51] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.0.3.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.0.4.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - main [MainThread]: End processing [medusa-logger]: success
+[2024-04-06 19:03:51] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.8.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-06 19:03:51] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-04-06 19:03:51] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-04-06 19:03:51] INFO root fetch - main [MainThread]: Store serial: [22649618]
