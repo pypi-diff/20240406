@@ -17084,3 +17084,17 @@ EOFError: EOF read where object expected
 [2024-04-06 15:58:30] INFO root fetch - processPackages [pulumi-azure]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azure-5.9.0a1654522381.tar.gz]
 [2024-04-06 15:58:30] INFO root fetch - main [MainThread]: End processing [pulumi-azure]: success
 [2024-04-06 15:58:30] INFO root fetch - main [MainThread]: Store serial: [22648371]
+[2024-04-06 16:00:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648371]
+[2024-04-06 16:00:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 16:00:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-animalvoice
+[2024-04-06 16:00:39] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: New version: [0.2.0] Old Version: [0.0.3]
+[2024-04-06 16:00:39] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Downloading https://files.pythonhosted.org/packages/77/fa/11a564345ee69bb19ae01f04c30ef09f36e5f00e92b50ded23c57080213f/nonebot_plugin_animalVoice-0.0.3.tar.gz
+[2024-04-06 16:00:40] WARNING root fetch - processPackages [nonebot-plugin-animalvoice]: Timeout reached during download
+[2024-04-06 16:00:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Downloading https://files.pythonhosted.org/packages/e5/3b/489f09c84622efd8994c2cb34991ba2b413a7dc97f18ae125370dfff3567/nonebot_plugin_animalvoice-0.2.0.tar.gz
+[2024-04-06 16:00:40] WARNING root fetch - processPackages [nonebot-plugin-animalvoice]: Timeout reached during download
+[2024-04-06 16:00:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: executing diffoscope
+[2024-04-06 16:00:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_animalVoice-0.0.3.tar.gz tmp/nonebot_plugin_animalvoice-0.2.0.tar.gz --markdown 20240406/n/nonebot-plugin-animalvoice/0.0.3-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 16:00:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_animalVoice-0.0.3.tar.gz]
+[2024-04-06 16:00:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_animalvoice-0.2.0.tar.gz]
+[2024-04-06 16:00:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-animalvoice]: success
+[2024-04-06 16:00:40] INFO root fetch - main [MainThread]: Store serial: [22648375]
