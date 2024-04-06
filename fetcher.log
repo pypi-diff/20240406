@@ -2008,3 +2008,31 @@
 [2024-04-06 02:13:32] INFO root fetch - processPackages [rule-engine]: Remove: archive file [/home/abi/fetcher/tmp/rule-engine-4.4.0.tar.gz]
 [2024-04-06 02:13:32] INFO root fetch - main [MainThread]: End processing [rule-engine]: success
 [2024-04-06 02:13:32] INFO root fetch - main [MainThread]: Store serial: [22643255]
+[2024-04-06 02:15:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643255]
+[2024-04-06 02:15:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 02:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-common
+[2024-04-06 02:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipython-openai
+[2024-04-06 02:15:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: devopsdriver
+[2024-04-06 02:15:41] WARNING root fetch - processPackages [ipython-openai]: Skipping, unable to determine old version
+[2024-04-06 02:15:41] INFO root fetch - main [MainThread]: End processing [ipython-openai] error
+[2024-04-06 02:15:41] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-06 02:15:41] INFO root fetch - processPackages [devopsdriver]: New version: [0.1.37] Old Version: [0.1.36]
+[2024-04-06 02:15:41] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-04-06 02:15:41] INFO root fetch - processPackages [devopsdriver]: Downloading https://files.pythonhosted.org/packages/03/07/50c1c5f57d50904c2e4ff2fccd341411e6952d8a400e8a300cf1e4109452/devopsdriver-0.1.36.tar.gz
+[2024-04-06 02:15:41] WARNING root fetch - processPackages [cdk-common]: Timeout reached during download
+[2024-04-06 02:15:41] WARNING root fetch - processPackages [devopsdriver]: Timeout reached during download
+[2024-04-06 02:15:41] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-04-06 02:15:41] INFO root fetch - processPackages [devopsdriver]: Downloading https://files.pythonhosted.org/packages/4e/73/9137ce746440781c8aab3c0b6c43a20decb8abcce345ee3188e589e9c032/devopsdriver-0.1.37.tar.gz
+[2024-04-06 02:15:41] WARNING root fetch - processPackages [cdk-common]: Timeout reached during download
+[2024-04-06 02:15:41] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-04-06 02:15:41] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240406/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2024-04-06 02:15:42] WARNING root fetch - processPackages [devopsdriver]: Timeout reached during download
+[2024-04-06 02:15:42] INFO root fetch - processPackages [devopsdriver]: executing diffoscope
+[2024-04-06 02:15:42] INFO root fetch - processPackages [devopsdriver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devopsdriver-0.1.36.tar.gz tmp/devopsdriver-0.1.37.tar.gz --markdown 20240406/d/devopsdriver/0.1.36-0.1.37/diff.md --exclude *.pyd
+[2024-04-06 02:15:42] INFO root fetch - processPackages [devopsdriver]: Remove: archive file [/home/abi/fetcher/tmp/devopsdriver-0.1.36.tar.gz]
+[2024-04-06 02:15:42] INFO root fetch - processPackages [devopsdriver]: Remove: archive file [/home/abi/fetcher/tmp/devopsdriver-0.1.37.tar.gz]
+[2024-04-06 02:15:42] INFO root fetch - main [MainThread]: End processing [devopsdriver]: success
+[2024-04-06 02:15:42] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-04-06 02:15:42] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-04-06 02:15:42] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-04-06 02:15:42] INFO root fetch - main [MainThread]: Store serial: [22643266]
