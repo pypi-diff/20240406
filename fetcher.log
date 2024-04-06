@@ -13324,3 +13324,31 @@
 [2024-04-06 11:31:18] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-acm-reminder-0.1.9.tar.gz]
 [2024-04-06 11:31:18] INFO root fetch - main [MainThread]: End processing [nonebot_plugin_acm_reminder]: success
 [2024-04-06 11:31:18] INFO root fetch - main [MainThread]: Store serial: [22647058]
+[2024-04-06 11:33:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647058]
+[2024-04-06 11:33:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 11:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drag-copilot
+[2024-04-06 11:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yfinance-cache
+[2024-04-06 11:33:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ofdcomparer
+[2024-04-06 11:33:26] INFO root fetch - processPackages [ofdcomparer]: New version: [1.5.38] Old Version: [1.5.37]
+[2024-04-06 11:33:27] INFO root fetch - processPackages [ofdcomparer]: Downloading https://files.pythonhosted.org/packages/03/9e/45c2a5d4dec5b74e8b3be9713e73bc6553c3c96a4464ad4e8c02f867af6e/ofdcomparer-1.5.37.tar.gz
+[2024-04-06 11:33:27] WARNING root fetch - processPackages [drag-copilot]: Skipping, unable to determine old version
+[2024-04-06 11:33:27] INFO root fetch - main [MainThread]: End processing [drag-copilot] error
+[2024-04-06 11:33:27] INFO root fetch - processPackages [yfinance-cache]: New version: [0.6.0rc2] Old Version: [0.6.0rc1]
+[2024-04-06 11:33:27] WARNING root fetch - processPackages [ofdcomparer]: Timeout reached during download
+[2024-04-06 11:33:27] INFO root fetch - processPackages [yfinance-cache]: Downloading https://files.pythonhosted.org/packages/6c/7b/48b26e97f79d345b21b5f2750de84cea6a2e6ead44455c434b00208c369a/yfinance-cache-0.6.0rc1.tar.gz
+[2024-04-06 11:33:27] INFO root fetch - processPackages [ofdcomparer]: Downloading https://files.pythonhosted.org/packages/f7/52/03af716847e60c61643bf24e93aae4ab0f086aa3973bfac276457cecae2f/ofdcomparer-1.5.38.tar.gz
+[2024-04-06 11:33:27] WARNING root fetch - processPackages [ofdcomparer]: Timeout reached during download
+[2024-04-06 11:33:27] INFO root fetch - processPackages [ofdcomparer]: executing diffoscope
+[2024-04-06 11:33:27] INFO root fetch - processPackages [ofdcomparer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofdcomparer-1.5.37.tar.gz tmp/ofdcomparer-1.5.38.tar.gz --markdown 20240406/o/ofdcomparer/1.5.37-1.5.38/diff.md --exclude *.pyd
+[2024-04-06 11:33:27] WARNING root fetch - processPackages [yfinance-cache]: Timeout reached during download
+[2024-04-06 11:33:27] INFO root fetch - processPackages [yfinance-cache]: Downloading https://files.pythonhosted.org/packages/96/aa/aa1ecf9728f157a8eac3dc9111450384ef6bb1d8ee2aeedf6143eed032ca/yfinance-cache-0.6.0rc2.tar.gz
+[2024-04-06 11:33:27] WARNING root fetch - processPackages [yfinance-cache]: Timeout reached during download
+[2024-04-06 11:33:27] INFO root fetch - processPackages [yfinance-cache]: executing diffoscope
+[2024-04-06 11:33:27] INFO root fetch - processPackages [yfinance-cache]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yfinance-cache-0.6.0rc1.tar.gz tmp/yfinance-cache-0.6.0rc2.tar.gz --markdown 20240406/y/yfinance-cache/0.6.0rc1-0.6.0rc2/diff.md --exclude *.pyd
+[2024-04-06 11:33:27] INFO root fetch - processPackages [ofdcomparer]: Remove: archive file [/home/abi/fetcher/tmp/ofdcomparer-1.5.37.tar.gz]
+[2024-04-06 11:33:27] INFO root fetch - processPackages [ofdcomparer]: Remove: archive file [/home/abi/fetcher/tmp/ofdcomparer-1.5.38.tar.gz]
+[2024-04-06 11:33:27] INFO root fetch - main [MainThread]: End processing [ofdcomparer]: success
+[2024-04-06 11:33:28] INFO root fetch - processPackages [yfinance-cache]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-cache-0.6.0rc1.tar.gz]
+[2024-04-06 11:33:28] INFO root fetch - processPackages [yfinance-cache]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-cache-0.6.0rc2.tar.gz]
+[2024-04-06 11:33:28] INFO root fetch - main [MainThread]: End processing [yfinance-cache]: success
+[2024-04-06 11:33:28] INFO root fetch - main [MainThread]: Store serial: [22647069]
