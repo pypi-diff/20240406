@@ -24716,3 +24716,25 @@ EOFError: EOF read where object expected
 [2024-04-06 23:05:27] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
 [2024-04-06 23:05:27] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
 [2024-04-06 23:05:27] INFO root fetch - main [MainThread]: Store serial: [22651146]
+[2024-04-06 23:07:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651146]
+[2024-04-06 23:07:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 23:09:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651172]
+[2024-04-06 23:09:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 23:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: evennia
+[2024-04-06 23:09:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redsauce
+[2024-04-06 23:09:41] INFO root fetch - processPackages [redsauce]: New version: [0.0.1.12] Old Version: [0.0.1.11]
+[2024-04-06 23:09:41] INFO root fetch - processPackages [redsauce]: Downloading https://files.pythonhosted.org/packages/69/a8/3f2fd4686e2343ff696414fe8ad62d62a36287c1539c700fea184717ddcd/redsauce-0.0.1.11.tar.gz
+[2024-04-06 23:09:41] INFO root fetch - processPackages [evennia]: New version: [4.1.1] Old Version: [4.1.0]
+[2024-04-06 23:09:41] WARNING root fetch - processPackages [redsauce]: Timeout reached during download
+[2024-04-06 23:09:41] INFO root fetch - processPackages [evennia]: Downloading https://files.pythonhosted.org/packages/59/f7/51dec8087d5fdc3aab1a2ec403a2a3b3bedba61f193adf43c50aa9dbb328/evennia-4.1.0.tar.gz
+[2024-04-06 23:09:41] ERROR root fetch - processPackages [redsauce]: Unable to fetch info: No such project/version 'redsauce' 0.0.1.12
+[2024-04-06 23:09:41] INFO root fetch - main [MainThread]: End processing [redsauce] error
+[2024-04-06 23:09:42] WARNING root fetch - processPackages [evennia]: Timeout reached during download
+[2024-04-06 23:09:42] INFO root fetch - processPackages [evennia]: Downloading https://files.pythonhosted.org/packages/02/8e/9282e73309662d62b4e4a57597cc034c126a9e5c3da647e782a1a66e2c93/evennia-4.1.1.tar.gz
+[2024-04-06 23:09:42] WARNING root fetch - processPackages [evennia]: Timeout reached during download
+[2024-04-06 23:09:42] INFO root fetch - processPackages [evennia]: executing diffoscope
+[2024-04-06 23:09:42] INFO root fetch - processPackages [evennia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evennia-4.1.0.tar.gz tmp/evennia-4.1.1.tar.gz --markdown 20240406/e/evennia/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2024-04-06 23:09:45] INFO root fetch - processPackages [evennia]: Remove: archive file [/home/abi/fetcher/tmp/evennia-4.1.0.tar.gz]
+[2024-04-06 23:09:45] INFO root fetch - processPackages [evennia]: Remove: archive file [/home/abi/fetcher/tmp/evennia-4.1.1.tar.gz]
+[2024-04-06 23:09:45] INFO root fetch - main [MainThread]: End processing [evennia]: success
+[2024-04-06 23:09:45] INFO root fetch - main [MainThread]: Store serial: [22651198]
