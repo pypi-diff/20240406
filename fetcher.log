@@ -25213,3 +25213,53 @@ EOFError: EOF read where object expected
 [2024-04-06 23:42:21] INFO root fetch - processPackages [amilib]: Remove: archive file [/home/abi/fetcher/tmp/amilib-0.0.3.tar.gz]
 [2024-04-06 23:42:21] INFO root fetch - main [MainThread]: End processing [amilib]: success
 [2024-04-06 23:42:21] INFO root fetch - main [MainThread]: Store serial: [22651350]
+[2024-04-06 23:44:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651350]
+[2024-04-06 23:44:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 23:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: service-oriented
+[2024-04-06 23:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xls-updater
+[2024-04-06 23:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cursesplus
+[2024-04-06 23:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: brahmai
+[2024-04-06 23:44:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbviews-django
+[2024-04-06 23:44:30] INFO root fetch - processPackages [brahmai]: New version: [0.0.1a1] Old Version: [0.0.1.0.1a3]
+[2024-04-06 23:44:30] WARNING root fetch - processPackages [dbviews-django]: Skipping, unable to determine old version
+[2024-04-06 23:44:30] INFO root fetch - main [MainThread]: End processing [dbviews-django] error
+[2024-04-06 23:44:30] INFO root fetch - processPackages [brahmai]: Downloading https://files.pythonhosted.org/packages/0a/9a/a3902879730c340f8a0f4098b6285aac8c4f6532c87a3f619c5f4753927f/brahmai-0.0.1.0.1a3.tar.gz
+[2024-04-06 23:44:30] INFO root fetch - processPackages [service-oriented]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2024-04-06 23:44:30] INFO root fetch - processPackages [cursesplus]: New version: [3.6.2] Old Version: [3.6]
+[2024-04-06 23:44:30] INFO root fetch - processPackages [xls-updater]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-06 23:44:30] INFO root fetch - processPackages [service-oriented]: Downloading https://files.pythonhosted.org/packages/cc/e0/a196a6cd6ec1d279dbc362dd8d9d940370eb873c7d3aa02032dc3dd534ba/service_oriented-0.0.2a8.tar.gz
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [brahmai]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/83/f1/c69ccb9d2d34dfb877112242ff1792042b38d674f57395be4bf7fb7617b8/cursesplus-3.6.tar.gz
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [service-oriented]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [xls-updater]: Downloading https://files.pythonhosted.org/packages/12/c6/de033210dcc517a99a940a3a06d4286d8b7cf4fe38819bc9d6f14683ee79/xls_updater-0.1.6.tar.gz
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [cursesplus]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [brahmai]: Downloading https://files.pythonhosted.org/packages/0c/a1/2869112e63c4c0c7d13f977797f7afdcef1703c9538067638b8fed16da91/brahmai-0.0.1a1.tar.gz
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [xls-updater]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [service-oriented]: Downloading https://files.pythonhosted.org/packages/91/93/8808e2b0a7e857434b3c8a2d8ecd72eb853035e8af948edf46e51c3d1101/service_oriented-0.0.2a9.tar.gz
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [brahmai]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [brahmai]: executing diffoscope
+[2024-04-06 23:44:31] INFO root fetch - processPackages [brahmai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brahmai-0.0.1.0.1a3.tar.gz tmp/brahmai-0.0.1a1.tar.gz --markdown 20240406/b/brahmai/0.0.1.0.1a3-0.0.1a1/diff.md --exclude *.pyd
+[2024-04-06 23:44:31] INFO root fetch - processPackages [cursesplus]: Downloading https://files.pythonhosted.org/packages/4c/1c/a837dbfce2813c79cd4da4941ddbfa216fb2a9cec373cbe8c419bde0f44d/cursesplus-3.6.2.tar.gz
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [service-oriented]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [service-oriented]: executing diffoscope
+[2024-04-06 23:44:31] INFO root fetch - processPackages [service-oriented]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/service_oriented-0.0.2a8.tar.gz tmp/service_oriented-0.0.2a9.tar.gz --markdown 20240406/s/service-oriented/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2024-04-06 23:44:31] INFO root fetch - processPackages [xls-updater]: Downloading https://files.pythonhosted.org/packages/2e/d0/6ca4e8605a408dc6a202d4bb7a9dafa7227c23eddadd0047e4f20714b632/xls_updater-0.1.7.tar.gz
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [cursesplus]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [cursesplus]: executing diffoscope
+[2024-04-06 23:44:31] INFO root fetch - processPackages [cursesplus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cursesplus-3.6.tar.gz tmp/cursesplus-3.6.2.tar.gz --markdown 20240406/c/cursesplus/3.6-3.6.2/diff.md --exclude *.pyd
+[2024-04-06 23:44:31] WARNING root fetch - processPackages [xls-updater]: Timeout reached during download
+[2024-04-06 23:44:31] INFO root fetch - processPackages [xls-updater]: executing diffoscope
+[2024-04-06 23:44:31] INFO root fetch - processPackages [xls-updater]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xls_updater-0.1.6.tar.gz tmp/xls_updater-0.1.7.tar.gz --markdown 20240406/x/xls-updater/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-06 23:44:32] INFO root fetch - processPackages [service-oriented]: Remove: archive file [/home/abi/fetcher/tmp/service_oriented-0.0.2a8.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - processPackages [service-oriented]: Remove: archive file [/home/abi/fetcher/tmp/service_oriented-0.0.2a9.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - main [MainThread]: End processing [service-oriented]: success
+[2024-04-06 23:44:32] INFO root fetch - processPackages [cursesplus]: Remove: archive file [/home/abi/fetcher/tmp/cursesplus-3.6.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - processPackages [cursesplus]: Remove: archive file [/home/abi/fetcher/tmp/cursesplus-3.6.2.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - main [MainThread]: End processing [cursesplus]: success
+[2024-04-06 23:44:32] INFO root fetch - processPackages [xls-updater]: Remove: archive file [/home/abi/fetcher/tmp/xls_updater-0.1.6.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - processPackages [xls-updater]: Remove: archive file [/home/abi/fetcher/tmp/xls_updater-0.1.7.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - main [MainThread]: End processing [xls-updater]: success
+[2024-04-06 23:44:32] INFO root fetch - processPackages [brahmai]: Remove: archive file [/home/abi/fetcher/tmp/brahmai-0.0.1.0.1a3.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - processPackages [brahmai]: Remove: archive file [/home/abi/fetcher/tmp/brahmai-0.0.1a1.tar.gz]
+[2024-04-06 23:44:32] INFO root fetch - main [MainThread]: End processing [brahmai]: success
+[2024-04-06 23:44:32] INFO root fetch - main [MainThread]: Store serial: [22651367]
