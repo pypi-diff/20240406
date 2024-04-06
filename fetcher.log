@@ -22900,3 +22900,53 @@ EOFError: EOF read where object expected
 [2024-04-06 21:21:33] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.9.tar.gz]
 [2024-04-06 21:21:33] INFO root fetch - main [MainThread]: End processing [avtdl]: success
 [2024-04-06 21:21:33] INFO root fetch - main [MainThread]: Store serial: [22650419]
+[2024-04-06 21:23:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650419]
+[2024-04-06 21:23:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dlio-profiler-py
+[2024-04-06 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ffconverter
+[2024-04-06 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oakrocklib
+[2024-04-06 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CheeseAPI
+[2024-04-06 21:23:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: symbol-shoestring
+[2024-04-06 21:23:42] WARNING root fetch - processPackages [oakrocklib]: Skipping, unable to determine old version
+[2024-04-06 21:23:42] INFO root fetch - main [MainThread]: End processing [oakrocklib] error
+[2024-04-06 21:23:42] INFO root fetch - processPackages [symbol-shoestring]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 21:23:42] INFO root fetch - processPackages [symbol-shoestring]: Downloading https://files.pythonhosted.org/packages/b5/20/4889d3360b6e7c469cf565b41a308fdc93bbbedc1f8f6a222e1b88d79884/symbol_shoestring-0.1.0.tar.gz
+[2024-04-06 21:23:42] INFO root fetch - processPackages [ffconverter]: New version: [2.4.0] Old Version: [2.3.2]
+[2024-04-06 21:23:42] INFO root fetch - processPackages [dlio-profiler-py]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 21:23:42] INFO root fetch - processPackages [CheeseAPI]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-06 21:23:42] WARNING root fetch - processPackages [symbol-shoestring]: Timeout reached during download
+[2024-04-06 21:23:42] INFO root fetch - processPackages [ffconverter]: Downloading https://files.pythonhosted.org/packages/32/e4/d13910db06370fc1710e4b831131c62cf49f3d7bbce950de86431ca809b1/ffconverter-2.3.2.tar.gz
+[2024-04-06 21:23:42] INFO root fetch - processPackages [dlio-profiler-py]: Downloading https://files.pythonhosted.org/packages/2e/0b/e39bbf024ec2d2237855a147a66764e4ae80a61b482ca8c7a3bc5d2c95ef/dlio_profiler_py-0.0.4.tar.gz
+[2024-04-06 21:23:42] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/92/b3/71650462441ed08a696a08ca66c42169a0d5a458d0dce9862bacc8f7fb9e/cheeseapi-0.4.8.tar.gz
+[2024-04-06 21:23:42] INFO root fetch - processPackages [symbol-shoestring]: Downloading https://files.pythonhosted.org/packages/d7/aa/9a6fed3e5a3b3a4bab8b164b1d2b273cfcbdd567e2418c294ffa14d260b7/symbol_shoestring-0.1.1.tar.gz
+[2024-04-06 21:23:42] WARNING root fetch - processPackages [symbol-shoestring]: Timeout reached during download
+[2024-04-06 21:23:42] INFO root fetch - processPackages [symbol-shoestring]: executing diffoscope
+[2024-04-06 21:23:42] INFO root fetch - processPackages [symbol-shoestring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbol_shoestring-0.1.0.tar.gz tmp/symbol_shoestring-0.1.1.tar.gz --markdown 20240406/s/symbol-shoestring/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 21:23:42] WARNING root fetch - processPackages [dlio-profiler-py]: Timeout reached during download
+[2024-04-06 21:23:42] WARNING root fetch - processPackages [ffconverter]: Timeout reached during download
+[2024-04-06 21:23:42] WARNING root fetch - processPackages [CheeseAPI]: Timeout reached during download
+[2024-04-06 21:23:43] INFO root fetch - processPackages [dlio-profiler-py]: Downloading https://files.pythonhosted.org/packages/57/28/0f21bc99b5b081b576b371cd0bfbd5d0002030b8f30574a91d0c18f9817b/dlio_profiler_py-0.0.5.tar.gz
+[2024-04-06 21:23:43] INFO root fetch - processPackages [ffconverter]: Downloading https://files.pythonhosted.org/packages/b8/70/733ac73841746c50717062c9b15be34a73bc209c0bedd8bf56cfe65deea8/ffconverter-2.4.0.tar.gz
+[2024-04-06 21:23:43] WARNING root fetch - processPackages [ffconverter]: Timeout reached during download
+[2024-04-06 21:23:43] INFO root fetch - processPackages [ffconverter]: executing diffoscope
+[2024-04-06 21:23:43] INFO root fetch - processPackages [ffconverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffconverter-2.3.2.tar.gz tmp/ffconverter-2.4.0.tar.gz --markdown 20240406/f/ffconverter/2.3.2-2.4.0/diff.md --exclude *.pyd
+[2024-04-06 21:23:43] INFO root fetch - processPackages [CheeseAPI]: Downloading https://files.pythonhosted.org/packages/7f/08/69377bd33c0bdcb65ea2ed6a3018cf243492be45847030ee51309866d113/cheeseapi-0.4.9.tar.gz
+[2024-04-06 21:23:43] WARNING root fetch - processPackages [dlio-profiler-py]: Timeout reached during download
+[2024-04-06 21:23:43] INFO root fetch - processPackages [dlio-profiler-py]: executing diffoscope
+[2024-04-06 21:23:43] INFO root fetch - processPackages [dlio-profiler-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlio_profiler_py-0.0.4.tar.gz tmp/dlio_profiler_py-0.0.5.tar.gz --markdown 20240406/d/dlio-profiler-py/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 21:23:43] WARNING root fetch - processPackages [CheeseAPI]: Timeout reached during download
+[2024-04-06 21:23:43] INFO root fetch - processPackages [CheeseAPI]: executing diffoscope
+[2024-04-06 21:23:43] INFO root fetch - processPackages [CheeseAPI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheeseapi-0.4.8.tar.gz tmp/cheeseapi-0.4.9.tar.gz --markdown 20240406/C/CheeseAPI/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2024-04-06 21:23:43] INFO root fetch - processPackages [symbol-shoestring]: Remove: archive file [/home/abi/fetcher/tmp/symbol_shoestring-0.1.0.tar.gz]
+[2024-04-06 21:23:43] INFO root fetch - processPackages [symbol-shoestring]: Remove: archive file [/home/abi/fetcher/tmp/symbol_shoestring-0.1.1.tar.gz]
+[2024-04-06 21:23:43] INFO root fetch - main [MainThread]: End processing [symbol-shoestring]: success
+[2024-04-06 21:23:43] INFO root fetch - processPackages [dlio-profiler-py]: Remove: archive file [/home/abi/fetcher/tmp/dlio_profiler_py-0.0.4.tar.gz]
+[2024-04-06 21:23:43] INFO root fetch - processPackages [dlio-profiler-py]: Remove: archive file [/home/abi/fetcher/tmp/dlio_profiler_py-0.0.5.tar.gz]
+[2024-04-06 21:23:43] INFO root fetch - main [MainThread]: End processing [dlio-profiler-py]: success
+[2024-04-06 21:23:44] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-0.4.8.tar.gz]
+[2024-04-06 21:23:44] INFO root fetch - processPackages [CheeseAPI]: Remove: archive file [/home/abi/fetcher/tmp/cheeseapi-0.4.9.tar.gz]
+[2024-04-06 21:23:44] INFO root fetch - main [MainThread]: End processing [CheeseAPI]: success
+[2024-04-06 21:23:44] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.3.2.tar.gz]
+[2024-04-06 21:23:44] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.4.0.tar.gz]
+[2024-04-06 21:23:44] INFO root fetch - main [MainThread]: End processing [ffconverter]: success
+[2024-04-06 21:23:44] INFO root fetch - main [MainThread]: Store serial: [22650441]
