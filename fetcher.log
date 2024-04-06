@@ -23838,3 +23838,50 @@ EOFError: EOF read where object expected
 [2024-04-06 22:16:30] INFO root fetch - processPackages [libsbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/libsbmlnetwork-0.0.17-py3-none-macosx_14_0_arm64.whl.zip]
 [2024-04-06 22:16:30] INFO root fetch - main [MainThread]: End processing [libsbmlnetwork]: success
 [2024-04-06 22:16:30] INFO root fetch - main [MainThread]: Store serial: [22650774]
+[2024-04-06 22:18:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650774]
+[2024-04-06 22:18:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 22:18:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyautogen
+[2024-04-06 22:18:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybarnes
+[2024-04-06 22:18:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gadapt
+[2024-04-06 22:18:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gentrace-py
+[2024-04-06 22:18:39] INFO root fetch - processPackages [gadapt]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-06 22:18:39] INFO root fetch - processPackages [gentrace-py]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 22:18:39] INFO root fetch - processPackages [pybarnes]: New version: [0.2.0b0] Old Version: [0.2.0a0]
+[2024-04-06 22:18:39] INFO root fetch - processPackages [pyautogen]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pybarnes]: Downloading https://files.pythonhosted.org/packages/43/4e/086fb3eafcfa2935852eb65c7429a44e1243ce7e1020effcef14252d756a/pybarnes-0.2.0a0.tar.gz
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pyautogen]: Downloading https://files.pythonhosted.org/packages/ee/94/1a890fc4c776fc04c255fe92a910c2326ac4e56c923d500ad9ec07d48d8f/pyautogen-0.2.8.tar.gz
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/d8/4d/87de5d1efcb471f64c49ac6d82e2beffb576692d73df4f79a908f9518360/gadapt-0.3.3.tar.gz
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/28/1d/260a9d1832a0c7e40a19de65e5b9680ece0b1ee669ef7cfa9dd7006b2787/gentrace_py-0.9.0.tar.gz
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [pybarnes]: Timeout reached during download
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [gadapt]: Timeout reached during download
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [gentrace-py]: Timeout reached during download
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [pyautogen]: Timeout reached during download
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pybarnes]: Downloading https://files.pythonhosted.org/packages/c0/ba/84779fdb6c687aaca3e6dba7487a993398a9337b302fce615b075477908d/pybarnes-0.2.0b0.tar.gz
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gentrace-py]: Downloading https://files.pythonhosted.org/packages/e5/c3/d0ce9414bb9b5a3467baa87d578314dae84fe8b66d2b1f2d38cab4e20714/gentrace_py-0.9.1.tar.gz
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [pybarnes]: Timeout reached during download
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pybarnes]: executing diffoscope
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pybarnes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybarnes-0.2.0a0.tar.gz tmp/pybarnes-0.2.0b0.tar.gz --markdown 20240406/p/pybarnes/0.2.0a0-0.2.0b0/diff.md --exclude *.pyd
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pyautogen]: Downloading https://files.pythonhosted.org/packages/d0/99/a3efee9be20f34aac6015f3bdfde3b7bee1fee1dea8d4514b739f13e0673/pyautogen-0.2.9.tar.gz
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gadapt]: Downloading https://files.pythonhosted.org/packages/b8/1e/25288f6d0ae2192313969dfff8c0cdd336483b983b5c48d9954ae4196dc9/gadapt-0.3.4.tar.gz
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [gentrace-py]: Timeout reached during download
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gentrace-py]: executing diffoscope
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gentrace-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gentrace_py-0.9.0.tar.gz tmp/gentrace_py-0.9.1.tar.gz --markdown 20240406/g/gentrace-py/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [pyautogen]: Timeout reached during download
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pyautogen]: executing diffoscope
+[2024-04-06 22:18:40] INFO root fetch - processPackages [pyautogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyautogen-0.2.8.tar.gz tmp/pyautogen-0.2.9.tar.gz --markdown 20240406/p/pyautogen/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 22:18:40] WARNING root fetch - processPackages [gadapt]: Timeout reached during download
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gadapt]: executing diffoscope
+[2024-04-06 22:18:40] INFO root fetch - processPackages [gadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gadapt-0.3.3.tar.gz tmp/gadapt-0.3.4.tar.gz --markdown 20240406/g/gadapt/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2024-04-06 22:18:41] INFO root fetch - processPackages [pybarnes]: Remove: archive file [/home/abi/fetcher/tmp/pybarnes-0.2.0a0.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - processPackages [pybarnes]: Remove: archive file [/home/abi/fetcher/tmp/pybarnes-0.2.0b0.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - main [MainThread]: End processing [pybarnes]: success
+[2024-04-06 22:18:41] INFO root fetch - processPackages [gentrace-py]: Remove: archive file [/home/abi/fetcher/tmp/gentrace_py-0.9.0.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - processPackages [gentrace-py]: Remove: archive file [/home/abi/fetcher/tmp/gentrace_py-0.9.1.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - main [MainThread]: End processing [gentrace-py]: success
+[2024-04-06 22:18:41] INFO root fetch - processPackages [pyautogen]: Remove: archive file [/home/abi/fetcher/tmp/pyautogen-0.2.8.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - processPackages [pyautogen]: Remove: archive file [/home/abi/fetcher/tmp/pyautogen-0.2.9.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - main [MainThread]: End processing [pyautogen]: success
+[2024-04-06 22:18:41] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.3.3.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - processPackages [gadapt]: Remove: archive file [/home/abi/fetcher/tmp/gadapt-0.3.4.tar.gz]
+[2024-04-06 22:18:41] INFO root fetch - main [MainThread]: End processing [gadapt]: success
+[2024-04-06 22:18:41] INFO root fetch - main [MainThread]: Store serial: [22650802]
