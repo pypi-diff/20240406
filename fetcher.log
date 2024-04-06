@@ -8428,3 +8428,20 @@
 [2024-04-06 05:01:07] INFO root fetch - processPackages [hmeg]: Remove: archive file [/home/abi/fetcher/tmp/hmeg-0.1.2.tar.gz]
 [2024-04-06 05:01:07] INFO root fetch - main [MainThread]: End processing [hmeg]: success
 [2024-04-06 05:01:07] INFO root fetch - main [MainThread]: Store serial: [22645101]
+[2024-04-06 05:03:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645101]
+[2024-04-06 05:03:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 05:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CINOSUM
+[2024-04-06 05:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scullery
+[2024-04-06 05:03:15] WARNING root fetch - processPackages [CINOSUM]: Skipping, unable to determine old version
+[2024-04-06 05:03:15] INFO root fetch - main [MainThread]: End processing [CINOSUM] error
+[2024-04-06 05:03:15] INFO root fetch - processPackages [scullery]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 05:03:15] INFO root fetch - processPackages [scullery]: Downloading https://files.pythonhosted.org/packages/85/3c/2e47b27443dceec50118cd001d2ab35ae63226c3082327f77832c6db2b38/scullery-0.1.8.tar.gz
+[2024-04-06 05:03:15] WARNING root fetch - processPackages [scullery]: Timeout reached during download
+[2024-04-06 05:03:16] INFO root fetch - processPackages [scullery]: Downloading https://files.pythonhosted.org/packages/d6/8b/b5b3ab8d1f10f10a605e16ca2c93bd3e2b787ef227d7b756ce0c9a8e5135/scullery-0.1.9.tar.gz
+[2024-04-06 05:03:16] WARNING root fetch - processPackages [scullery]: Timeout reached during download
+[2024-04-06 05:03:16] INFO root fetch - processPackages [scullery]: executing diffoscope
+[2024-04-06 05:03:16] INFO root fetch - processPackages [scullery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scullery-0.1.8.tar.gz tmp/scullery-0.1.9.tar.gz --markdown 20240406/s/scullery/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 05:03:17] INFO root fetch - processPackages [scullery]: Remove: archive file [/home/abi/fetcher/tmp/scullery-0.1.8.tar.gz]
+[2024-04-06 05:03:17] INFO root fetch - processPackages [scullery]: Remove: archive file [/home/abi/fetcher/tmp/scullery-0.1.9.tar.gz]
+[2024-04-06 05:03:17] INFO root fetch - main [MainThread]: End processing [scullery]: success
+[2024-04-06 05:03:17] INFO root fetch - main [MainThread]: Store serial: [22645107]
