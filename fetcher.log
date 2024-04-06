@@ -13680,3 +13680,50 @@
 [2024-04-06 12:01:41] INFO root fetch - processPackages [django-db-connection-pool]: Remove: archive file [/home/abi/fetcher/tmp/django-db-connection-pool-1.2.5.tar.gz]
 [2024-04-06 12:01:41] INFO root fetch - main [MainThread]: End processing [django-db-connection-pool]: success
 [2024-04-06 12:01:41] INFO root fetch - main [MainThread]: Store serial: [22647158]
+[2024-04-06 12:03:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647158]
+[2024-04-06 12:03:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 12:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spyder-modelx
+[2024-04-06 12:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hesmapy
+[2024-04-06 12:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: praklib
+[2024-04-06 12:03:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: octomy-common
+[2024-04-06 12:03:50] INFO root fetch - processPackages [praklib]: New version: [0.1.369] Old Version: [0.1.365]
+[2024-04-06 12:03:50] INFO root fetch - processPackages [octomy-common]: New version: [2.0.0] Old Version: [1.0.9]
+[2024-04-06 12:03:50] INFO root fetch - processPackages [hesmapy]: New version: [24.4.1] Old Version: [23.12.1]
+[2024-04-06 12:03:50] INFO root fetch - processPackages [spyder-modelx]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 12:03:50] INFO root fetch - processPackages [praklib]: Downloading https://files.pythonhosted.org/packages/08/a7/b04d7e292eb771342ea626d04213ea528e03c980f16af749037e80ebe0fd/praklib-0.1.365.tar.gz
+[2024-04-06 12:03:50] WARNING root fetch - processPackages [praklib]: Timeout reached during download
+[2024-04-06 12:03:50] INFO root fetch - processPackages [hesmapy]: Downloading https://files.pythonhosted.org/packages/6d/13/cfa4eff35b248b230a5d1758a830574fe05cdc9853e9879d19ac868739c9/hesmapy-23.12.1.tar.gz
+[2024-04-06 12:03:50] INFO root fetch - processPackages [spyder-modelx]: Downloading https://files.pythonhosted.org/packages/31/15/7d7a804b99bc14bf01aa2637d2b30479db7395e36780b6c90ceaf0348f18/spyder-modelx-0.8.0.tar.gz
+[2024-04-06 12:03:50] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/d3/82/29bf0bc1695f9655aea09edb99429fabbcbad2cc853e208fe7598d559817/octomy-common-1.0.9.tar.gz
+[2024-04-06 12:03:50] WARNING root fetch - processPackages [hesmapy]: Timeout reached during download
+[2024-04-06 12:03:50] INFO root fetch - processPackages [praklib]: Downloading https://files.pythonhosted.org/packages/a8/5d/f8ab1346d576641e506e8e579e74d7497e78dd682258b527598eb2270ebd/praklib-0.1.369.tar.gz
+[2024-04-06 12:03:50] WARNING root fetch - processPackages [spyder-modelx]: Timeout reached during download
+[2024-04-06 12:03:50] INFO root fetch - processPackages [hesmapy]: Downloading https://files.pythonhosted.org/packages/f0/ad/e1b5e6165596306743dfa8077ac56aa8484a81c46aaec44e12fcb938b0e2/hesmapy-24.4.1.tar.gz
+[2024-04-06 12:03:50] WARNING root fetch - processPackages [praklib]: Timeout reached during download
+[2024-04-06 12:03:50] INFO root fetch - processPackages [praklib]: executing diffoscope
+[2024-04-06 12:03:50] INFO root fetch - processPackages [praklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/praklib-0.1.365.tar.gz tmp/praklib-0.1.369.tar.gz --markdown 20240406/p/praklib/0.1.365-0.1.369/diff.md --exclude *.pyd
+[2024-04-06 12:03:50] WARNING root fetch - processPackages [hesmapy]: Timeout reached during download
+[2024-04-06 12:03:50] INFO root fetch - processPackages [spyder-modelx]: Downloading https://files.pythonhosted.org/packages/30/f5/9d19dd9e8ad907f2722ae17d2cd2ab399c5cfd645829d867e7eb9f69d40f/spyder-modelx-0.9.0.tar.gz
+[2024-04-06 12:03:50] INFO root fetch - processPackages [hesmapy]: executing diffoscope
+[2024-04-06 12:03:50] INFO root fetch - processPackages [hesmapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hesmapy-23.12.1.tar.gz tmp/hesmapy-24.4.1.tar.gz --markdown 20240406/h/hesmapy/23.12.1-24.4.1/diff.md --exclude *.pyd
+[2024-04-06 12:03:51] WARNING root fetch - processPackages [spyder-modelx]: Timeout reached during download
+[2024-04-06 12:03:51] INFO root fetch - processPackages [spyder-modelx]: executing diffoscope
+[2024-04-06 12:03:51] INFO root fetch - processPackages [spyder-modelx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spyder-modelx-0.8.0.tar.gz tmp/spyder-modelx-0.9.0.tar.gz --markdown 20240406/s/spyder-modelx/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 12:03:51] INFO root fetch - processPackages [praklib]: Remove: archive file [/home/abi/fetcher/tmp/praklib-0.1.365.tar.gz]
+[2024-04-06 12:03:51] INFO root fetch - processPackages [praklib]: Remove: archive file [/home/abi/fetcher/tmp/praklib-0.1.369.tar.gz]
+[2024-04-06 12:03:51] INFO root fetch - main [MainThread]: End processing [praklib]: success
+[2024-04-06 12:03:51] INFO root fetch - processPackages [hesmapy]: Remove: archive file [/home/abi/fetcher/tmp/hesmapy-23.12.1.tar.gz]
+[2024-04-06 12:03:51] INFO root fetch - processPackages [hesmapy]: Remove: archive file [/home/abi/fetcher/tmp/hesmapy-24.4.1.tar.gz]
+[2024-04-06 12:03:51] INFO root fetch - main [MainThread]: End processing [hesmapy]: success
+[2024-04-06 12:03:51] INFO root fetch - processPackages [spyder-modelx]: Remove: archive file [/home/abi/fetcher/tmp/spyder-modelx-0.8.0.tar.gz]
+[2024-04-06 12:03:51] INFO root fetch - processPackages [spyder-modelx]: Remove: archive file [/home/abi/fetcher/tmp/spyder-modelx-0.9.0.tar.gz]
+[2024-04-06 12:03:51] INFO root fetch - main [MainThread]: End processing [spyder-modelx]: success
+[2024-04-06 12:03:52] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 12:03:52] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/eb/dd/88b072353284ce6314aae91d68f21360402212eb6e92b2016efd86fb3f5c/octomy-common-2.0.0.tar.gz
+[2024-04-06 12:03:52] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 12:03:52] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-06 12:03:52] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-1.0.9.tar.gz tmp/octomy-common-2.0.0.tar.gz --markdown 20240406/o/octomy-common/1.0.9-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 12:03:53] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-1.0.9.tar.gz]
+[2024-04-06 12:03:53] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.0.tar.gz]
+[2024-04-06 12:03:53] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-06 12:03:53] INFO root fetch - main [MainThread]: Store serial: [22647168]
