@@ -23680,3 +23680,28 @@ EOFError: EOF read where object expected
 [2024-04-06 22:05:31] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.4.tar.gz]
 [2024-04-06 22:05:31] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
 [2024-04-06 22:05:31] INFO root fetch - main [MainThread]: Store serial: [22650693]
+[2024-04-06 22:07:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650693]
+[2024-04-06 22:07:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 22:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modern-greek-inflexion
+[2024-04-06 22:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vinted-scraper
+[2024-04-06 22:07:40] INFO root fetch - processPackages [modern-greek-inflexion]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-06 22:07:40] INFO root fetch - processPackages [modern-greek-inflexion]: Downloading https://files.pythonhosted.org/packages/8a/72/630edadbe9a50bdcb9e64352b8d264b0e6bb1eb9d76a532f1fe1590b0e94/modern-greek-inflexion-2.0.0.tar.gz
+[2024-04-06 22:07:40] INFO root fetch - processPackages [vinted-scraper]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-06 22:07:40] INFO root fetch - processPackages [vinted-scraper]: Downloading https://files.pythonhosted.org/packages/7f/05/aba5b4f13911cf24c3167818531309efa0c4a291a7cd00a49528fec1996f/vinted_scraper-2.2.0.tar.gz
+[2024-04-06 22:07:40] WARNING root fetch - processPackages [vinted-scraper]: Timeout reached during download
+[2024-04-06 22:07:40] WARNING root fetch - processPackages [modern-greek-inflexion]: Timeout reached during download
+[2024-04-06 22:07:40] INFO root fetch - processPackages [modern-greek-inflexion]: Downloading https://files.pythonhosted.org/packages/48/f8/d25e8eae1feff9ea49cdfc54e47956413ddeeaf4d0b506e44f70dd748adc/modern-greek-inflexion-2.0.1.tar.gz
+[2024-04-06 22:07:40] INFO root fetch - processPackages [vinted-scraper]: Downloading https://files.pythonhosted.org/packages/ed/92/169f68db777d4d83b6c6e03257116a07ba653cfb8aa6e9de487040719b1f/vinted_scraper-2.2.1.tar.gz
+[2024-04-06 22:07:40] WARNING root fetch - processPackages [vinted-scraper]: Timeout reached during download
+[2024-04-06 22:07:40] INFO root fetch - processPackages [vinted-scraper]: executing diffoscope
+[2024-04-06 22:07:40] INFO root fetch - processPackages [vinted-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vinted_scraper-2.2.0.tar.gz tmp/vinted_scraper-2.2.1.tar.gz --markdown 20240406/v/vinted-scraper/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2024-04-06 22:07:41] WARNING root fetch - processPackages [modern-greek-inflexion]: Timeout reached during download
+[2024-04-06 22:07:41] INFO root fetch - processPackages [modern-greek-inflexion]: executing diffoscope
+[2024-04-06 22:07:41] INFO root fetch - processPackages [modern-greek-inflexion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modern-greek-inflexion-2.0.0.tar.gz tmp/modern-greek-inflexion-2.0.1.tar.gz --markdown 20240406/m/modern-greek-inflexion/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-06 22:07:41] INFO root fetch - processPackages [vinted-scraper]: Remove: archive file [/home/abi/fetcher/tmp/vinted_scraper-2.2.0.tar.gz]
+[2024-04-06 22:07:41] INFO root fetch - processPackages [vinted-scraper]: Remove: archive file [/home/abi/fetcher/tmp/vinted_scraper-2.2.1.tar.gz]
+[2024-04-06 22:07:41] INFO root fetch - main [MainThread]: End processing [vinted-scraper]: success
+[2024-04-06 22:07:43] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern-greek-inflexion-2.0.0.tar.gz]
+[2024-04-06 22:07:43] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern-greek-inflexion-2.0.1.tar.gz]
+[2024-04-06 22:07:43] INFO root fetch - main [MainThread]: End processing [modern-greek-inflexion]: success
+[2024-04-06 22:07:43] INFO root fetch - main [MainThread]: Store serial: [22650700]
