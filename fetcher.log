@@ -13088,3 +13088,37 @@
 [2024-04-06 11:13:40] INFO root fetch - processPackages [Comel]: Remove: archive file [/home/abi/fetcher/tmp/Comel-0.2.3.tar.gz]
 [2024-04-06 11:13:40] INFO root fetch - main [MainThread]: End processing [Comel]: success
 [2024-04-06 11:13:40] INFO root fetch - main [MainThread]: Store serial: [22646989]
+[2024-04-06 11:15:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646989]
+[2024-04-06 11:15:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 11:15:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-06 11:15:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-04-06 11:15:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: just_design_phase
+[2024-04-06 11:15:49] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 11:15:49] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/7d/f5/e1e6f21f81f306ebcde6bba08c09cb5dc644f3603c310cafc00ab3de077e/just_design_phase-0.0.8.tar.gz
+[2024-04-06 11:15:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-06 11:15:49] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:15:49] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-06 11:15:49] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-06 11:15:49] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/aa/b5/29ee0abf7aa594516a36ed125483f2184a52d792c0c9a50f97903114d895/just_design_phase-0.0.9.tar.gz
+[2024-04-06 11:15:49] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-06 11:15:50] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 11:15:50] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:15:50] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 11:15:50] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.8.tar.gz tmp/just_design_phase-0.0.9.tar.gz --markdown 20240406/j/just_design_phase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:15:50] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-06 11:15:50] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240406/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-06 11:15:50] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240406/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-06 11:15:50] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.8.tar.gz]
+[2024-04-06 11:15:50] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.9.tar.gz]
+[2024-04-06 11:15:50] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-06 11:15:50] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-06 11:15:50] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-06 11:15:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-06 11:15:51] INFO root fetch - main [MainThread]: Store serial: [22646998]
