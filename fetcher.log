@@ -2431,3 +2431,31 @@
 [2024-04-06 02:34:58] INFO root fetch - processPackages [pypscloud]: Remove: archive file [/home/abi/fetcher/tmp/pypscloud-0.0.9.tar.gz]
 [2024-04-06 02:34:58] INFO root fetch - main [MainThread]: End processing [pypscloud]: success
 [2024-04-06 02:34:58] INFO root fetch - main [MainThread]: Store serial: [22643401]
+[2024-04-06 02:37:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643401]
+[2024-04-06 02:37:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 02:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypscloud
+[2024-04-06 02:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fedscale
+[2024-04-06 02:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aios-sdk
+[2024-04-06 02:37:07] INFO root fetch - processPackages [pypscloud]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 02:37:07] WARNING root fetch - processPackages [aios-sdk]: Skipping, unable to determine old version
+[2024-04-06 02:37:07] INFO root fetch - main [MainThread]: End processing [aios-sdk] error
+[2024-04-06 02:37:07] INFO root fetch - processPackages [pypscloud]: Downloading https://files.pythonhosted.org/packages/ae/e9/4711ed1ab3eb9653ff773fd0c3c60e8b4de3f65aa9b949fa557d08c2cae8/pypscloud-0.0.8.tar.gz
+[2024-04-06 02:37:07] INFO root fetch - processPackages [fedscale]: New version: [1.0] Old Version: [0.5]
+[2024-04-06 02:37:07] WARNING root fetch - processPackages [pypscloud]: Timeout reached during download
+[2024-04-06 02:37:07] INFO root fetch - processPackages [pypscloud]: Downloading https://files.pythonhosted.org/packages/56/7f/2d33a563336e49dc7101d9150eef89a71b861dd07a4b9ae18b8e443dfea7/pypscloud-0.0.9.tar.gz
+[2024-04-06 02:37:07] INFO root fetch - processPackages [fedscale]: Downloading https://files.pythonhosted.org/packages/af/71/c920e9d4e3ce0843fe9c925c54675e97b21d2a7b340e11241626c757bbac/fedscale-0.5.tar.gz
+[2024-04-06 02:37:07] WARNING root fetch - processPackages [pypscloud]: Timeout reached during download
+[2024-04-06 02:37:07] INFO root fetch - processPackages [pypscloud]: executing diffoscope
+[2024-04-06 02:37:07] INFO root fetch - processPackages [pypscloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypscloud-0.0.8.tar.gz tmp/pypscloud-0.0.9.tar.gz --markdown 20240406/p/pypscloud/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 02:37:07] WARNING root fetch - processPackages [fedscale]: Timeout reached during download
+[2024-04-06 02:37:07] INFO root fetch - processPackages [fedscale]: Downloading https://files.pythonhosted.org/packages/d6/60/31f5fbfe00914e434e7e83c25575f069eb177f813c4a105442cfb3fd0ef1/fedscale-1.0.tar.gz
+[2024-04-06 02:37:07] INFO root fetch - processPackages [pypscloud]: Remove: archive file [/home/abi/fetcher/tmp/pypscloud-0.0.8.tar.gz]
+[2024-04-06 02:37:07] INFO root fetch - processPackages [pypscloud]: Remove: archive file [/home/abi/fetcher/tmp/pypscloud-0.0.9.tar.gz]
+[2024-04-06 02:37:07] INFO root fetch - main [MainThread]: End processing [pypscloud]: success
+[2024-04-06 02:37:08] WARNING root fetch - processPackages [fedscale]: Timeout reached during download
+[2024-04-06 02:37:08] INFO root fetch - processPackages [fedscale]: executing diffoscope
+[2024-04-06 02:37:08] INFO root fetch - processPackages [fedscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedscale-0.5.tar.gz tmp/fedscale-1.0.tar.gz --markdown 20240406/f/fedscale/0.5-1.0/diff.md --exclude *.pyd
+[2024-04-06 02:37:09] INFO root fetch - processPackages [fedscale]: Remove: archive file [/home/abi/fetcher/tmp/fedscale-0.5.tar.gz]
+[2024-04-06 02:37:09] INFO root fetch - processPackages [fedscale]: Remove: archive file [/home/abi/fetcher/tmp/fedscale-1.0.tar.gz]
+[2024-04-06 02:37:09] INFO root fetch - main [MainThread]: End processing [fedscale]: success
+[2024-04-06 02:37:09] INFO root fetch - main [MainThread]: Store serial: [22643411]
