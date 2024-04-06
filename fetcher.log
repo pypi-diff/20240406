@@ -8824,3 +8824,17 @@
 [2024-04-06 05:32:35] INFO root fetch - processPackages [statesxt]: Remove: archive file [/home/abi/fetcher/tmp/statesxt-0.5.8.tar.gz]
 [2024-04-06 05:32:35] INFO root fetch - main [MainThread]: End processing [statesxt]: success
 [2024-04-06 05:32:35] INFO root fetch - main [MainThread]: Store serial: [22645274]
+[2024-04-06 05:34:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645274]
+[2024-04-06 05:34:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 05:34:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bolton-clack
+[2024-04-06 05:34:44] INFO root fetch - processPackages [bolton-clack]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 05:34:44] INFO root fetch - processPackages [bolton-clack]: Downloading https://files.pythonhosted.org/packages/99/ac/f286f5389c0a0edc124347cb65e3eeef36b5f15fbdf97c0023b8c7dcf3c1/bolton-clack-0.3.8.tar.gz
+[2024-04-06 05:34:44] WARNING root fetch - processPackages [bolton-clack]: Timeout reached during download
+[2024-04-06 05:34:44] INFO root fetch - processPackages [bolton-clack]: Downloading https://files.pythonhosted.org/packages/24/a0/e77ff3e7cbce1f91174517288f414597175af22e0acb3bdfc2c75cb47663/bolton-clack-0.3.9.tar.gz
+[2024-04-06 05:34:44] WARNING root fetch - processPackages [bolton-clack]: Timeout reached during download
+[2024-04-06 05:34:44] INFO root fetch - processPackages [bolton-clack]: executing diffoscope
+[2024-04-06 05:34:44] INFO root fetch - processPackages [bolton-clack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bolton-clack-0.3.8.tar.gz tmp/bolton-clack-0.3.9.tar.gz --markdown 20240406/b/bolton-clack/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 05:34:45] INFO root fetch - processPackages [bolton-clack]: Remove: archive file [/home/abi/fetcher/tmp/bolton-clack-0.3.8.tar.gz]
+[2024-04-06 05:34:45] INFO root fetch - processPackages [bolton-clack]: Remove: archive file [/home/abi/fetcher/tmp/bolton-clack-0.3.9.tar.gz]
+[2024-04-06 05:34:45] INFO root fetch - main [MainThread]: End processing [bolton-clack]: success
+[2024-04-06 05:34:45] INFO root fetch - main [MainThread]: Store serial: [22645277]
