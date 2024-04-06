@@ -23663,3 +23663,20 @@ EOFError: EOF read where object expected
 [2024-04-06 22:03:21] INFO root fetch - processPackages [sunpy-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-sphinx-theme-2.0.8rc1.tar.gz]
 [2024-04-06 22:03:21] INFO root fetch - main [MainThread]: End processing [sunpy-sphinx-theme]: success
 [2024-04-06 22:03:21] INFO root fetch - main [MainThread]: Store serial: [22650685]
+[2024-04-06 22:05:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650685]
+[2024-04-06 22:05:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 22:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dekpkglock
+[2024-04-06 22:05:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: large_audiofile_transcription
+[2024-04-06 22:05:30] INFO root fetch - processPackages [dekpkglock]: New version: [0.1.4] Old Version: [0.1.2]
+[2024-04-06 22:05:30] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/12/83/413666c28660a57cea262b18a56b58859e95626bcd4c2bdf5a64a4a640db/dekpkglock-0.1.2.tar.gz
+[2024-04-06 22:05:30] WARNING root fetch - processPackages [large_audiofile_transcription]: Skipping, unable to determine old version
+[2024-04-06 22:05:30] INFO root fetch - main [MainThread]: End processing [large_audiofile_transcription] error
+[2024-04-06 22:05:30] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-06 22:05:30] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/d3/18/64d1a49119a4aaec23819d6716bf5186ba497e800506bc6479f76438a76a/dekpkglock-0.1.4.tar.gz
+[2024-04-06 22:05:30] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-06 22:05:30] INFO root fetch - processPackages [dekpkglock]: executing diffoscope
+[2024-04-06 22:05:30] INFO root fetch - processPackages [dekpkglock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekpkglock-0.1.2.tar.gz tmp/dekpkglock-0.1.4.tar.gz --markdown 20240406/d/dekpkglock/0.1.2-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 22:05:31] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.2.tar.gz]
+[2024-04-06 22:05:31] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.4.tar.gz]
+[2024-04-06 22:05:31] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
+[2024-04-06 22:05:31] INFO root fetch - main [MainThread]: Store serial: [22650693]
