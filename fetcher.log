@@ -13633,3 +13633,50 @@
 [2024-04-06 11:59:30] INFO root fetch - processPackages [django-commands2]: Remove: archive file [/home/abi/fetcher/tmp/django_commands2-0.5.0.tar.gz]
 [2024-04-06 11:59:30] INFO root fetch - main [MainThread]: End processing [django-commands2]: success
 [2024-04-06 11:59:30] INFO root fetch - main [MainThread]: Store serial: [22647146]
+[2024-04-06 12:01:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647146]
+[2024-04-06 12:01:39] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 12:01:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: settings-doc
+[2024-04-06 12:01:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-115
+[2024-04-06 12:01:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kkpyui
+[2024-04-06 12:01:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-db-connection-pool
+[2024-04-06 12:01:39] INFO root fetch - processPackages [python-115]: New version: [0.0.5.8] Old Version: [0.0.5.7]
+[2024-04-06 12:01:39] INFO root fetch - processPackages [kkpyui]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-06 12:01:39] INFO root fetch - processPackages [django-db-connection-pool]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-04-06 12:01:39] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/2f/72/7f37c9071384c52da0ce987ae47d1b7cc0518f058349895ed4c081bb4bcd/kkpyui-0.9.4.tar.gz
+[2024-04-06 12:01:39] INFO root fetch - processPackages [settings-doc]: New version: [4.0.1] Old Version: [4.0.0]
+[2024-04-06 12:01:39] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/ac/1e/2a2a45bdee75d95f5134b03ce00c9bcdb2b1bd54dc3cb6353aaadec79174/python_115-0.0.5.7.tar.gz
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [python-115]: Timeout reached during download
+[2024-04-06 12:01:40] INFO root fetch - processPackages [settings-doc]: Downloading https://files.pythonhosted.org/packages/71/5d/4752afdb51312e441c52046425ad77947544913590f39781609b64aefcb3/settings_doc-4.0.0.tar.gz
+[2024-04-06 12:01:40] INFO root fetch - processPackages [django-db-connection-pool]: Downloading https://files.pythonhosted.org/packages/59/b3/81687f66accdc8eadb39c37ca5e61099083bad31dbf0e8f9754303549197/django-db-connection-pool-1.2.4.tar.gz
+[2024-04-06 12:01:40] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/fc/9a/f1edfb0fcbcd4f8acd8bd78fe9455405427448ed3d2f2c36e987ac03a04d/kkpyui-0.9.5.tar.gz
+[2024-04-06 12:01:40] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/e1/eb/f9ff1c69706e42ab4cc4b5b295c2929abbcbc4b370c64c4ae5ee1a395cee/python_115-0.0.5.8.tar.gz
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [settings-doc]: Timeout reached during download
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 12:01:40] INFO root fetch - processPackages [kkpyui]: executing diffoscope
+[2024-04-06 12:01:40] INFO root fetch - processPackages [kkpyui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyui-0.9.4.tar.gz tmp/kkpyui-0.9.5.tar.gz --markdown 20240406/k/kkpyui/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [django-db-connection-pool]: Timeout reached during download
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [python-115]: Timeout reached during download
+[2024-04-06 12:01:40] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-06 12:01:40] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.5.7.tar.gz tmp/python_115-0.0.5.8.tar.gz --markdown 20240406/p/python-115/0.0.5.7-0.0.5.8/diff.md --exclude *.pyd
+[2024-04-06 12:01:40] INFO root fetch - processPackages [settings-doc]: Downloading https://files.pythonhosted.org/packages/b5/51/ca4e2d49b918a74fa1e2ce5f87a82573b57539c3c046b7dde70882717a05/settings_doc-4.0.1.tar.gz
+[2024-04-06 12:01:40] INFO root fetch - processPackages [django-db-connection-pool]: Downloading https://files.pythonhosted.org/packages/38/5c/e66057ac68028f6172f381125585125cea938a1e16a18a4ce25cb90fd35b/django-db-connection-pool-1.2.5.tar.gz
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [settings-doc]: Timeout reached during download
+[2024-04-06 12:01:40] INFO root fetch - processPackages [settings-doc]: executing diffoscope
+[2024-04-06 12:01:40] INFO root fetch - processPackages [settings-doc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/settings_doc-4.0.0.tar.gz tmp/settings_doc-4.0.1.tar.gz --markdown 20240406/s/settings-doc/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2024-04-06 12:01:40] WARNING root fetch - processPackages [django-db-connection-pool]: Timeout reached during download
+[2024-04-06 12:01:40] INFO root fetch - processPackages [django-db-connection-pool]: executing diffoscope
+[2024-04-06 12:01:40] INFO root fetch - processPackages [django-db-connection-pool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-db-connection-pool-1.2.4.tar.gz tmp/django-db-connection-pool-1.2.5.tar.gz --markdown 20240406/d/django-db-connection-pool/1.2.4-1.2.5/diff.md --exclude *.pyd
+[2024-04-06 12:01:40] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.4.tar.gz]
+[2024-04-06 12:01:40] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.5.tar.gz]
+[2024-04-06 12:01:40] INFO root fetch - main [MainThread]: End processing [kkpyui]: success
+[2024-04-06 12:01:41] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.5.7.tar.gz]
+[2024-04-06 12:01:41] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.5.8.tar.gz]
+[2024-04-06 12:01:41] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-06 12:01:41] INFO root fetch - processPackages [settings-doc]: Remove: archive file [/home/abi/fetcher/tmp/settings_doc-4.0.0.tar.gz]
+[2024-04-06 12:01:41] INFO root fetch - processPackages [settings-doc]: Remove: archive file [/home/abi/fetcher/tmp/settings_doc-4.0.1.tar.gz]
+[2024-04-06 12:01:41] INFO root fetch - main [MainThread]: End processing [settings-doc]: success
+[2024-04-06 12:01:41] INFO root fetch - processPackages [django-db-connection-pool]: Remove: archive file [/home/abi/fetcher/tmp/django-db-connection-pool-1.2.4.tar.gz]
+[2024-04-06 12:01:41] INFO root fetch - processPackages [django-db-connection-pool]: Remove: archive file [/home/abi/fetcher/tmp/django-db-connection-pool-1.2.5.tar.gz]
+[2024-04-06 12:01:41] INFO root fetch - main [MainThread]: End processing [django-db-connection-pool]: success
+[2024-04-06 12:01:41] INFO root fetch - main [MainThread]: Store serial: [22647158]
