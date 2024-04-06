@@ -24517,3 +24517,116 @@ EOFError: EOF read where object expected
 [2024-04-06 22:58:53] INFO root fetch - processPackages [mmcif]: Remove: archive file [/home/abi/fetcher/tmp/mmcif-0.87.0.tar.gz]
 [2024-04-06 22:58:53] INFO root fetch - main [MainThread]: End processing [mmcif]: success
 [2024-04-06 22:58:53] INFO root fetch - main [MainThread]: Store serial: [22651082]
+[2024-04-06 23:00:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651082]
+[2024-04-06 23:01:02] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-dev
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: football-stats-scraper
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: networkinfotranslator
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: etrc
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: metpx-sr3
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: reddit2text
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dtrc
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pysysq
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fundamentals
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: ProcruSQL
+[2024-04-06 23:01:02] INFO root fetch - processPackages [reddit2text]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [dtrc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [football-stats-scraper]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [etrc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [pysysq]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [networkinfotranslator]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [ProcruSQL]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [fundamentals]: New version: [2.6.3] Old Version: [2.6.2]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [metpx-sr3]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [sbcli-dev]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-04-06 23:01:02] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/fd/63/0e066dec6cc7d24a2a02f278368b5d64a204bdb27d8063a7d65e8b69356b/reddit2text-0.0.4.tar.gz
+[2024-04-06 23:01:02] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/84/76/09893e2bb8c9673a5a810aa33d1f3e2fad5691566cdc67af1e456f5df742/dtrc-0.0.8.tar.gz
+[2024-04-06 23:01:02] INFO root fetch - processPackages [etrc]: Downloading https://files.pythonhosted.org/packages/3e/d8/54c8d53559b3d73dca07a4bd165692b6a4c406e3affb0a94d2b6d18b2935/etrc-0.0.8.tar.gz
+[2024-04-06 23:01:02] INFO root fetch - processPackages [networkinfotranslator]: Downloading https://files.pythonhosted.org/packages/f6/91/9b6e0195eddc39e21cd8cf349f1b0d53faf6cc5c2b8871a67a5597fea7bf/networkinfotranslator-0.0.7-py3-none-any.whl
+[2024-04-06 23:01:02] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/d4/a4/87ace06291918ec7e444f094bac55237e55a69f147b7be01170a246a675e/pysysq-0.0.7.tar.gz
+[2024-04-06 23:01:02] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/4f/5c/ff6579bab32f0cfd33f80e770ccc78cd05180c171f6d21cc9adf5aff869e/football-stats-scraper-0.1.0.tar.gz
+[2024-04-06 23:01:02] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 23:01:02] WARNING root fetch - processPackages [etrc]: Timeout reached during download
+[2024-04-06 23:01:02] WARNING root fetch - processPackages [dtrc]: Timeout reached during download
+[2024-04-06 23:01:02] WARNING root fetch - processPackages [networkinfotranslator]: Timeout reached during download
+[2024-04-06 23:01:02] INFO root fetch - processPackages [sbcli-dev]: Downloading https://files.pythonhosted.org/packages/ef/a1/c38eb8769a9ed04eb7e61e1b79d7d2db61e10a2ea39f8c625fdede810a69/sbcli-dev-2.1.1.zip
+[2024-04-06 23:01:03] INFO root fetch - processPackages [ProcruSQL]: Downloading https://files.pythonhosted.org/packages/14/e9/7719dd5baf60a7dd0d0ba51096977fb0f6a2a041fa2a324f072ce7d06417/ProcruSQL-0.0.8.tar.gz
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/89/06/0f745164c2089adef9236ac31fbe46f4158d18631576d682cf9658757694/metpx_sr3-3.0.8-py3-none-any.whl
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [fundamentals]: Downloading https://files.pythonhosted.org/packages/16/e5/3e061ab77008c990d0cea909a0bbd41a802c862edc23bcf8357f781db1e8/fundamentals-2.6.2.tar.gz
+[2024-04-06 23:01:03] INFO root fetch - processPackages [etrc]: Downloading https://files.pythonhosted.org/packages/d5/83/0539ff753ac74be3b9dd276365fd4061b16211d7c5dbd77193f92b242d12/etrc-0.0.9.tar.gz
+[2024-04-06 23:01:03] INFO root fetch - processPackages [networkinfotranslator]: Downloading https://files.pythonhosted.org/packages/f8/65/06bf6cb06c862e77b23a21bfa2bd4f27cf9d4396c92ecc222d30884a96fa/networkinfotranslator-0.0.8-py3-none-any.whl
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [ProcruSQL]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/53/82/85c7a48d6543b1766220c2c54d5e605c9f1a4596515c6d4d1608a5171a04/reddit2text-0.0.5.tar.gz
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [metpx-sr3]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/1d/0d/b26e24492a2141328a018620f30bbb36c89a4a7b314ca1f628824a0748a2/dtrc-0.0.9.tar.gz
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [sbcli-dev]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/1f/9c/888eb22060f6d55ba8820f4032ab0f472c4b5b0d109108776474cc7d42ac/pysysq-0.0.8.tar.gz
+[2024-04-06 23:01:03] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/b8/bb/a205d44e5a522ee06251d698c789206f8f5621c3f7fbdc93eae8318fc875/football_stats_scraper-0.1.1-py3-none-any.whl
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [networkinfotranslator]: Timeout reached during download
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [etrc]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [networkinfotranslator]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [networkinfotranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkinfotranslator-0.0.7-py3-none-any.whl.zip tmp/networkinfotranslator-0.0.8-py3-none-any.whl.zip --markdown 20240406/n/networkinfotranslator/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] INFO root fetch - processPackages [etrc]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [etrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etrc-0.0.8.tar.gz tmp/etrc-0.0.9.tar.gz --markdown 20240406/e/etrc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [reddit2text]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [reddit2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit2text-0.0.4.tar.gz tmp/reddit2text-0.0.5.tar.gz --markdown 20240406/r/reddit2text/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [fundamentals]: Timeout reached during download
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [dtrc]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [dtrc]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [dtrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtrc-0.0.8.tar.gz tmp/dtrc-0.0.9.tar.gz --markdown 20240406/d/dtrc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] INFO root fetch - processPackages [ProcruSQL]: Downloading https://files.pythonhosted.org/packages/ce/35/dfef9dbf67f8d315963cd8425b14659a88e1ec27c29ba21259dcb76a74e6/ProcruSQL-0.0.9.tar.gz
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/a4/8a/64230448bcafc80a1f9a2c5805a6cf7fb4956c1fea5a9c7439c01449480c/metpx_sr3-3.0.9-py3-none-any.whl
+[2024-04-06 23:01:03] INFO root fetch - processPackages [football-stats-scraper]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [football-stats-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/football-stats-scraper-0.1.0.tar.gz tmp/football_stats_scraper-0.1.1-py3-none-any.whl.zip --markdown 20240406/f/football-stats-scraper/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [pysysq]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [pysysq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysysq-0.0.7.tar.gz tmp/pysysq-0.0.8.tar.gz --markdown 20240406/p/pysysq/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] INFO root fetch - processPackages [sbcli-dev]: Downloading https://files.pythonhosted.org/packages/15/2b/b0039ef62873c45de4fecc5bb847a9375c531dac5c7a1b78e672400de5bc/sbcli-dev-2.1.2.zip
+[2024-04-06 23:01:03] INFO root fetch - processPackages [fundamentals]: Downloading https://files.pythonhosted.org/packages/b1/6c/ae62c468b9f501b85a0fc510feae06a1b8f112bbd93a22375b4d295184be/fundamentals-2.6.3.tar.gz
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [ProcruSQL]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [ProcruSQL]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [ProcruSQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ProcruSQL-0.0.8.tar.gz tmp/ProcruSQL-0.0.9.tar.gz --markdown 20240406/P/ProcruSQL/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [fundamentals]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [fundamentals]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [fundamentals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fundamentals-2.6.2.tar.gz tmp/fundamentals-2.6.3.tar.gz --markdown 20240406/f/fundamentals/2.6.2-2.6.3/diff.md --exclude *.pyd
+[2024-04-06 23:01:03] WARNING root fetch - processPackages [sbcli-dev]: Timeout reached during download
+[2024-04-06 23:01:03] INFO root fetch - processPackages [sbcli-dev]: executing diffoscope
+[2024-04-06 23:01:03] INFO root fetch - processPackages [sbcli-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbcli-dev-2.1.1.zip tmp/sbcli-dev-2.1.2.zip --markdown 20240406/s/sbcli-dev/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2024-04-06 23:01:04] WARNING root fetch - processPackages [metpx-sr3]: Timeout reached during download
+[2024-04-06 23:01:04] INFO root fetch - processPackages [metpx-sr3]: executing diffoscope
+[2024-04-06 23:01:04] INFO root fetch - processPackages [metpx-sr3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metpx_sr3-3.0.8-py3-none-any.whl.zip tmp/metpx_sr3-3.0.9-py3-none-any.whl.zip --markdown 20240406/m/metpx-sr3/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:01:04] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.4.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.5.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [reddit2text]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football-stats-scraper-0.1.0.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.1-py3-none-any.whl.zip]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [football-stats-scraper]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [networkinfotranslator]: Remove: archive file [/home/abi/fetcher/tmp/networkinfotranslator-0.0.7-py3-none-any.whl.zip]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [networkinfotranslator]: Remove: archive file [/home/abi/fetcher/tmp/networkinfotranslator-0.0.8-py3-none-any.whl.zip]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [networkinfotranslator]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.8.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.9.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [dtrc]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [ProcruSQL]: Remove: archive file [/home/abi/fetcher/tmp/ProcruSQL-0.0.8.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [ProcruSQL]: Remove: archive file [/home/abi/fetcher/tmp/ProcruSQL-0.0.9.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [ProcruSQL]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [etrc]: Remove: archive file [/home/abi/fetcher/tmp/etrc-0.0.8.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [etrc]: Remove: archive file [/home/abi/fetcher/tmp/etrc-0.0.9.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [etrc]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.7.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.8.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [pysysq]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [fundamentals]: Remove: archive file [/home/abi/fetcher/tmp/fundamentals-2.6.2.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [fundamentals]: Remove: archive file [/home/abi/fetcher/tmp/fundamentals-2.6.3.tar.gz]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [fundamentals]: success
+[2024-04-06 23:01:04] INFO root fetch - processPackages [sbcli-dev]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-dev-2.1.1.zip]
+[2024-04-06 23:01:04] INFO root fetch - processPackages [sbcli-dev]: Remove: archive file [/home/abi/fetcher/tmp/sbcli-dev-2.1.2.zip]
+[2024-04-06 23:01:04] INFO root fetch - main [MainThread]: End processing [sbcli-dev]: success
+[2024-04-06 23:01:05] INFO root fetch - processPackages [metpx-sr3]: Remove: archive file [/home/abi/fetcher/tmp/metpx_sr3-3.0.8-py3-none-any.whl.zip]
+[2024-04-06 23:01:05] INFO root fetch - processPackages [metpx-sr3]: Remove: archive file [/home/abi/fetcher/tmp/metpx_sr3-3.0.9-py3-none-any.whl.zip]
+[2024-04-06 23:01:05] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
+[2024-04-06 23:01:05] INFO root fetch - main [MainThread]: Store serial: [22651108]
