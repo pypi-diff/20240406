@@ -16228,3 +16228,50 @@ EOFError: EOF read where object expected
 [2024-04-06 14:59:18] INFO root fetch - processPackages [t-object]: Remove: archive file [/home/abi/fetcher/tmp/t_object-0.1.6.tar.gz]
 [2024-04-06 14:59:18] INFO root fetch - main [MainThread]: End processing [t-object]: success
 [2024-04-06 14:59:18] INFO root fetch - main [MainThread]: Store serial: [22647962]
+[2024-04-06 15:01:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647962]
+[2024-04-06 15:01:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 15:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: groups-local
+[2024-04-06 15:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: networkx
+[2024-04-06 15:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: homa
+[2024-04-06 15:01:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spotidex
+[2024-04-06 15:01:27] INFO root fetch - processPackages [homa]: New version: [0.25] Old Version: [0.24]
+[2024-04-06 15:01:27] INFO root fetch - processPackages [spotidex]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 15:01:27] INFO root fetch - processPackages [networkx]: New version: [3.3rc0] Old Version: [3.2rc0]
+[2024-04-06 15:01:27] INFO root fetch - processPackages [homa]: Downloading https://files.pythonhosted.org/packages/39/27/c33b60a1df8bbea6bb1db9f7e8c3635c0eae349f16f0d4176442f595cf11/homa-0.24.tar.gz
+[2024-04-06 15:01:27] INFO root fetch - processPackages [groups-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 15:01:27] INFO root fetch - processPackages [spotidex]: Downloading https://files.pythonhosted.org/packages/e6/69/9ca88ad070794f4161418386aaf0ae5a36260be16744956055441d4e099a/spotidex-0.0.1.tar.gz
+[2024-04-06 15:01:27] INFO root fetch - processPackages [networkx]: Downloading https://files.pythonhosted.org/packages/f1/94/5e42e01e816a797801348b773f045e1d7650a104d44f89a39430188fa105/networkx-3.2rc0.tar.gz
+[2024-04-06 15:01:27] WARNING root fetch - processPackages [homa]: Timeout reached during download
+[2024-04-06 15:01:27] WARNING root fetch - processPackages [spotidex]: Timeout reached during download
+[2024-04-06 15:01:28] INFO root fetch - processPackages [homa]: Downloading https://files.pythonhosted.org/packages/4b/30/bdadf37cca7399c006ea2a55713c58411ae6a3e9a582d9cc8d229a506888/homa-0.25.tar.gz
+[2024-04-06 15:01:28] WARNING root fetch - processPackages [homa]: Timeout reached during download
+[2024-04-06 15:01:28] INFO root fetch - processPackages [homa]: executing diffoscope
+[2024-04-06 15:01:28] INFO root fetch - processPackages [homa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homa-0.24.tar.gz tmp/homa-0.25.tar.gz --markdown 20240406/h/homa/0.24-0.25/diff.md --exclude *.pyd
+[2024-04-06 15:01:28] INFO root fetch - processPackages [groups-local]: Downloading https://files.pythonhosted.org/packages/6d/46/ca2635e1d6c8f7cad5134d2647a61a40022092fb5b86528572828b3195a5/groups-local-0.0.8.tar.gz
+[2024-04-06 15:01:28] INFO root fetch - processPackages [spotidex]: Downloading https://files.pythonhosted.org/packages/2e/f9/3758ed95f69fea39474aa29b3a1950105be82ab0569f657b04b1601535fd/spotidex-0.0.2.tar.gz
+[2024-04-06 15:01:28] WARNING root fetch - processPackages [groups-local]: Timeout reached during download
+[2024-04-06 15:01:28] WARNING root fetch - processPackages [spotidex]: Timeout reached during download
+[2024-04-06 15:01:28] INFO root fetch - processPackages [spotidex]: executing diffoscope
+[2024-04-06 15:01:28] INFO root fetch - processPackages [spotidex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotidex-0.0.1.tar.gz tmp/spotidex-0.0.2.tar.gz --markdown 20240406/s/spotidex/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 15:01:28] WARNING root fetch - processPackages [networkx]: Timeout reached during download
+[2024-04-06 15:01:28] INFO root fetch - processPackages [groups-local]: Downloading https://files.pythonhosted.org/packages/b6/a8/b9747901af0f33b23ed26b55906c2b7181378d22fa25be12ab68af641fc0/groups-local-0.0.9.tar.gz
+[2024-04-06 15:01:28] INFO root fetch - processPackages [networkx]: Downloading https://files.pythonhosted.org/packages/d5/e1/104908a8059dd88fb7338a7fc05d3a513491384abcc188ffb507b2e53f92/networkx-3.3rc0.tar.gz
+[2024-04-06 15:01:28] WARNING root fetch - processPackages [groups-local]: Timeout reached during download
+[2024-04-06 15:01:28] INFO root fetch - processPackages [groups-local]: executing diffoscope
+[2024-04-06 15:01:28] INFO root fetch - processPackages [groups-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/groups-local-0.0.8.tar.gz tmp/groups-local-0.0.9.tar.gz --markdown 20240406/g/groups-local/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 15:01:28] INFO root fetch - processPackages [homa]: Remove: archive file [/home/abi/fetcher/tmp/homa-0.24.tar.gz]
+[2024-04-06 15:01:28] INFO root fetch - processPackages [homa]: Remove: archive file [/home/abi/fetcher/tmp/homa-0.25.tar.gz]
+[2024-04-06 15:01:28] INFO root fetch - main [MainThread]: End processing [homa]: success
+[2024-04-06 15:01:28] WARNING root fetch - processPackages [networkx]: Timeout reached during download
+[2024-04-06 15:01:28] INFO root fetch - processPackages [networkx]: executing diffoscope
+[2024-04-06 15:01:28] INFO root fetch - processPackages [networkx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkx-3.2rc0.tar.gz tmp/networkx-3.3rc0.tar.gz --markdown 20240406/n/networkx/3.2rc0-3.3rc0/diff.md --exclude *.pyd
+[2024-04-06 15:01:28] INFO root fetch - processPackages [spotidex]: Remove: archive file [/home/abi/fetcher/tmp/spotidex-0.0.1.tar.gz]
+[2024-04-06 15:01:28] INFO root fetch - processPackages [spotidex]: Remove: archive file [/home/abi/fetcher/tmp/spotidex-0.0.2.tar.gz]
+[2024-04-06 15:01:28] INFO root fetch - main [MainThread]: End processing [spotidex]: success
+[2024-04-06 15:01:29] INFO root fetch - processPackages [groups-local]: Remove: archive file [/home/abi/fetcher/tmp/groups-local-0.0.8.tar.gz]
+[2024-04-06 15:01:29] INFO root fetch - processPackages [groups-local]: Remove: archive file [/home/abi/fetcher/tmp/groups-local-0.0.9.tar.gz]
+[2024-04-06 15:01:29] INFO root fetch - main [MainThread]: End processing [groups-local]: success
+[2024-04-06 15:01:34] INFO root fetch - processPackages [networkx]: Remove: archive file [/home/abi/fetcher/tmp/networkx-3.2rc0.tar.gz]
+[2024-04-06 15:01:34] INFO root fetch - processPackages [networkx]: Remove: archive file [/home/abi/fetcher/tmp/networkx-3.3rc0.tar.gz]
+[2024-04-06 15:01:34] INFO root fetch - main [MainThread]: End processing [networkx]: success
+[2024-04-06 15:01:34] INFO root fetch - main [MainThread]: Store serial: [22647983]
