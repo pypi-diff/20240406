@@ -14123,3 +14123,31 @@
 [2024-04-06 12:49:18] INFO root fetch - processPackages [sparrow-python]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_python-0.2.0.tar.gz]
 [2024-04-06 12:49:18] INFO root fetch - main [MainThread]: End processing [sparrow-python]: success
 [2024-04-06 12:49:18] INFO root fetch - main [MainThread]: Store serial: [22647306]
+[2024-04-06 12:51:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647306]
+[2024-04-06 12:51:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 12:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rubier
+[2024-04-06 12:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: promplate
+[2024-04-06 12:51:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deforce
+[2024-04-06 12:51:26] INFO root fetch - processPackages [rubier]: New version: [3.9.5] Old Version: [3.9.4]
+[2024-04-06 12:51:26] WARNING root fetch - processPackages [deforce]: Skipping, unable to determine old version
+[2024-04-06 12:51:26] INFO root fetch - main [MainThread]: End processing [deforce] error
+[2024-04-06 12:51:26] INFO root fetch - processPackages [promplate]: New version: [0.3.4] Old Version: [0.3.3.post1]
+[2024-04-06 12:51:27] INFO root fetch - processPackages [rubier]: Downloading https://files.pythonhosted.org/packages/67/33/586c8de6a4861fc09e66b5b427d8daab22ce0b532d384b976b9b16baa7ed/rubier-3.9.4.tar.gz
+[2024-04-06 12:51:27] INFO root fetch - processPackages [promplate]: Downloading https://files.pythonhosted.org/packages/a6/f4/4af7fd7cec5e52653f61fe5d49250b5d32513debaf142bb0f94923145e29/promplate-0.3.3.post1.tar.gz
+[2024-04-06 12:51:27] WARNING root fetch - processPackages [rubier]: Timeout reached during download
+[2024-04-06 12:51:27] WARNING root fetch - processPackages [promplate]: Timeout reached during download
+[2024-04-06 12:51:27] INFO root fetch - processPackages [rubier]: Downloading https://files.pythonhosted.org/packages/ea/2d/fdcf2e4b73465177d6028442c413b035e7dfac38d5212bafa600ef631374/rubier-3.9.5.tar.gz
+[2024-04-06 12:51:27] INFO root fetch - processPackages [promplate]: Downloading https://files.pythonhosted.org/packages/5d/c2/f9ecdb02a11f84ee03bd8c4d5955dcb52c44741e9c6be3d1ad3c19d397d6/promplate-0.3.4.tar.gz
+[2024-04-06 12:51:27] WARNING root fetch - processPackages [promplate]: Timeout reached during download
+[2024-04-06 12:51:27] INFO root fetch - processPackages [promplate]: executing diffoscope
+[2024-04-06 12:51:27] INFO root fetch - processPackages [promplate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promplate-0.3.3.post1.tar.gz tmp/promplate-0.3.4.tar.gz --markdown 20240406/p/promplate/0.3.3.post1-0.3.4/diff.md --exclude *.pyd
+[2024-04-06 12:51:27] WARNING root fetch - processPackages [rubier]: Timeout reached during download
+[2024-04-06 12:51:27] INFO root fetch - processPackages [rubier]: executing diffoscope
+[2024-04-06 12:51:27] INFO root fetch - processPackages [rubier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubier-3.9.4.tar.gz tmp/rubier-3.9.5.tar.gz --markdown 20240406/r/rubier/3.9.4-3.9.5/diff.md --exclude *.pyd
+[2024-04-06 12:51:28] INFO root fetch - processPackages [rubier]: Remove: archive file [/home/abi/fetcher/tmp/rubier-3.9.4.tar.gz]
+[2024-04-06 12:51:28] INFO root fetch - processPackages [rubier]: Remove: archive file [/home/abi/fetcher/tmp/rubier-3.9.5.tar.gz]
+[2024-04-06 12:51:28] INFO root fetch - main [MainThread]: End processing [rubier]: success
+[2024-04-06 12:51:28] INFO root fetch - processPackages [promplate]: Remove: archive file [/home/abi/fetcher/tmp/promplate-0.3.3.post1.tar.gz]
+[2024-04-06 12:51:28] INFO root fetch - processPackages [promplate]: Remove: archive file [/home/abi/fetcher/tmp/promplate-0.3.4.tar.gz]
+[2024-04-06 12:51:28] INFO root fetch - main [MainThread]: End processing [promplate]: success
+[2024-04-06 12:51:28] INFO root fetch - main [MainThread]: Store serial: [22647313]
