@@ -14832,3 +14832,50 @@
 [2024-04-06 13:23:07] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.0rc1.tar.gz]
 [2024-04-06 13:23:07] INFO root fetch - main [MainThread]: End processing [fleece-network]: success
 [2024-04-06 13:23:07] INFO root fetch - main [MainThread]: Store serial: [22647505]
+[2024-04-06 13:25:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647505]
+[2024-04-06 13:25:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 13:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-nomad
+[2024-04-06 13:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-docker
+[2024-04-06 13:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kkappkit
+[2024-04-06 13:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-onelogin
+[2024-04-06 13:25:17] INFO root fetch - processPackages [kkappkit]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-nomad]: New version: [2.3.0a1712400228] Old Version: [2.3.0a1711739774]
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-docker]: New version: [4.7.0a1705628423] Old Version: [4.7.0a1705607229]
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-onelogin]: New version: [0.6.3a1712400576] Old Version: [0.6.3a1711738893]
+[2024-04-06 13:25:17] INFO root fetch - processPackages [kkappkit]: Downloading https://files.pythonhosted.org/packages/e5/57/bf4e9e8216200edba252ae059ca7af20e56aa5bb76e6155489032b0371e6/kkappkit-0.9.0.tar.gz
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/60/4d/20db01394ae207e38e34244a087a77010c3163b5176d5ed60b9e938b94df/pulumi_docker-4.7.0a1705607229.tar.gz
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-nomad]: Downloading https://files.pythonhosted.org/packages/50/c9/93e80a90c499760633cef7d4aadf927802404186c370b6cf80a3d4992d98/pulumi_nomad-2.3.0a1711739774.tar.gz
+[2024-04-06 13:25:17] WARNING root fetch - processPackages [pulumi-nomad]: Timeout reached during download
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/d2/a9/e0d5b0ec1b0754e62ce200c1bfeb1a76e2c67ca0ee995b0cfe492b1d700d/pulumi_onelogin-0.6.3a1711738893.tar.gz
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-nomad]: Downloading https://files.pythonhosted.org/packages/48/9f/4ada22408d5c6f151425d9bf4a59c5a71aba4e72005028d302d37f77d527/pulumi_nomad-2.3.0a1712400228.tar.gz
+[2024-04-06 13:25:17] WARNING root fetch - processPackages [kkappkit]: Timeout reached during download
+[2024-04-06 13:25:17] WARNING root fetch - processPackages [pulumi-onelogin]: Timeout reached during download
+[2024-04-06 13:25:17] WARNING root fetch - processPackages [pulumi-docker]: Timeout reached during download
+[2024-04-06 13:25:17] WARNING root fetch - processPackages [pulumi-nomad]: Timeout reached during download
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-nomad]: executing diffoscope
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-nomad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_nomad-2.3.0a1711739774.tar.gz tmp/pulumi_nomad-2.3.0a1712400228.tar.gz --markdown 20240406/p/pulumi-nomad/2.3.0a1711739774-2.3.0a1712400228/diff.md --exclude *.pyd
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/f6/d5/0b5397996b20f28e0b748250a3f54eea51f93d6821849dd8b1add7e3eb2e/pulumi_onelogin-0.6.3a1712400576.tar.gz
+[2024-04-06 13:25:17] INFO root fetch - processPackages [kkappkit]: Downloading https://files.pythonhosted.org/packages/04/89/d66107ea47baf9d7789b9d1e910d4bcf1f45230ff597ac00429cf6b0728e/kkappkit-0.9.1.tar.gz
+[2024-04-06 13:25:17] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/3a/93/a866b50173039bae813e131505cf7ed97c33cb79c113926b2b63dfd1caf2/pulumi_docker-4.7.0a1705628423.tar.gz
+[2024-04-06 13:25:18] WARNING root fetch - processPackages [pulumi-docker]: Timeout reached during download
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.7.0a1705607229.tar.gz tmp/pulumi_docker-4.7.0a1705628423.tar.gz --markdown 20240406/p/pulumi-docker/4.7.0a1705607229-4.7.0a1705628423/diff.md --exclude *.pyd
+[2024-04-06 13:25:18] WARNING root fetch - processPackages [pulumi-onelogin]: Timeout reached during download
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-onelogin]: executing diffoscope
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-onelogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_onelogin-0.6.3a1711738893.tar.gz tmp/pulumi_onelogin-0.6.3a1712400576.tar.gz --markdown 20240406/p/pulumi-onelogin/0.6.3a1711738893-0.6.3a1712400576/diff.md --exclude *.pyd
+[2024-04-06 13:25:18] WARNING root fetch - processPackages [kkappkit]: Timeout reached during download
+[2024-04-06 13:25:18] INFO root fetch - processPackages [kkappkit]: executing diffoscope
+[2024-04-06 13:25:18] INFO root fetch - processPackages [kkappkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkappkit-0.9.0.tar.gz tmp/kkappkit-0.9.1.tar.gz --markdown 20240406/k/kkappkit/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-nomad]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_nomad-2.3.0a1711739774.tar.gz]
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-nomad]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_nomad-2.3.0a1712400228.tar.gz]
+[2024-04-06 13:25:18] INFO root fetch - main [MainThread]: End processing [pulumi-nomad]: success
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705607229.tar.gz]
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705628423.tar.gz]
+[2024-04-06 13:25:18] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-onelogin]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_onelogin-0.6.3a1711738893.tar.gz]
+[2024-04-06 13:25:18] INFO root fetch - processPackages [pulumi-onelogin]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_onelogin-0.6.3a1712400576.tar.gz]
+[2024-04-06 13:25:18] INFO root fetch - main [MainThread]: End processing [pulumi-onelogin]: success
+[2024-04-06 13:25:20] INFO root fetch - processPackages [kkappkit]: Remove: archive file [/home/abi/fetcher/tmp/kkappkit-0.9.0.tar.gz]
+[2024-04-06 13:25:20] INFO root fetch - processPackages [kkappkit]: Remove: archive file [/home/abi/fetcher/tmp/kkappkit-0.9.1.tar.gz]
+[2024-04-06 13:25:20] INFO root fetch - main [MainThread]: End processing [kkappkit]: success
+[2024-04-06 13:25:20] INFO root fetch - main [MainThread]: Store serial: [22647521]
