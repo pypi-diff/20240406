@@ -7911,3 +7911,28 @@
 [2024-04-06 04:22:05] INFO root fetch - processPackages [celldega]: Remove: archive file [/home/abi/fetcher/tmp/celldega-0.1.0.tar.gz]
 [2024-04-06 04:22:05] INFO root fetch - main [MainThread]: End processing [celldega]: success
 [2024-04-06 04:22:05] INFO root fetch - main [MainThread]: Store serial: [22644949]
+[2024-04-06 04:24:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644949]
+[2024-04-06 04:24:14] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 04:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fgo-api-types
+[2024-04-06 04:24:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cpymake
+[2024-04-06 04:24:14] INFO root fetch - processPackages [cpymake]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-06 04:24:15] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/7c/f3/564e360f14fdd0e60f8bacb0f991ca2c3d72dfe76dd4846f7c5574dcd87e/cpymake-0.1.2.tar.gz
+[2024-04-06 04:24:15] INFO root fetch - processPackages [fgo-api-types]: New version: [2024.4.6.2.22.3] Old Version: [2024.3.9.2.57.16]
+[2024-04-06 04:24:15] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:24:15] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/7a/56/00395ddf4308e6812a633b95e6446cd6dfce16dac00390aa014b624e0b1c/fgo_api_types-2024.3.9.2.57.16.tar.gz
+[2024-04-06 04:24:15] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/28/93/7fe790d402d9afa11629da3862cc79441ab2e80546a6285dc10e8da7d45a/cpymake-0.1.3.tar.gz
+[2024-04-06 04:24:15] WARNING root fetch - processPackages [fgo-api-types]: Timeout reached during download
+[2024-04-06 04:24:15] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:24:15] INFO root fetch - processPackages [cpymake]: executing diffoscope
+[2024-04-06 04:24:15] INFO root fetch - processPackages [cpymake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpymake-0.1.2.tar.gz tmp/cpymake-0.1.3.tar.gz --markdown 20240406/c/cpymake/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-06 04:24:15] INFO root fetch - processPackages [fgo-api-types]: Downloading https://files.pythonhosted.org/packages/b9/41/3dbb26f0f980c564a1e8ae75299afc724991934ffaf1a8a59ab70aafb784/fgo_api_types-2024.4.6.2.22.3.tar.gz
+[2024-04-06 04:24:15] WARNING root fetch - processPackages [fgo-api-types]: Timeout reached during download
+[2024-04-06 04:24:15] INFO root fetch - processPackages [fgo-api-types]: executing diffoscope
+[2024-04-06 04:24:15] INFO root fetch - processPackages [fgo-api-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fgo_api_types-2024.3.9.2.57.16.tar.gz tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz --markdown 20240406/f/fgo-api-types/2024.3.9.2.57.16-2024.4.6.2.22.3/diff.md --exclude *.pyd
+[2024-04-06 04:24:16] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.2.tar.gz]
+[2024-04-06 04:24:16] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.3.tar.gz]
+[2024-04-06 04:24:16] INFO root fetch - main [MainThread]: End processing [cpymake]: success
+[2024-04-06 04:24:16] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.3.9.2.57.16.tar.gz]
+[2024-04-06 04:24:16] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz]
+[2024-04-06 04:24:16] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
+[2024-04-06 04:24:16] INFO root fetch - main [MainThread]: Store serial: [22644955]
