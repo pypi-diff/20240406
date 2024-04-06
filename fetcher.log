@@ -2320,3 +2320,50 @@
 [2024-04-06 02:26:36] INFO root fetch - processPackages [Unified-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/Unified-python-sdk-0.21.3.tar.gz]
 [2024-04-06 02:26:36] INFO root fetch - main [MainThread]: End processing [Unified-python-sdk]: success
 [2024-04-06 02:26:36] INFO root fetch - main [MainThread]: Store serial: [22643366]
+[2024-04-06 02:28:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643366]
+[2024-04-06 02:28:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 02:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-certbot-dns-route53
+[2024-04-06 02:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-aurora-globaldatabase
+[2024-04-06 02:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-core
+[2024-04-06 02:28:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docugami-langchain
+[2024-04-06 02:28:45] INFO root fetch - processPackages [docugami-langchain]: New version: [0.0.7rc9] Old Version: [0.0.7rc8]
+[2024-04-06 02:28:45] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.97] Old Version: [2.4.96]
+[2024-04-06 02:28:45] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/61/fb/e065e9733519fa7f9c379746d05be5069415a0888c754b8d12a4b7595069/docugami_langchain-0.0.7rc8.tar.gz
+[2024-04-06 02:28:45] INFO root fetch - processPackages [dragonfly-core]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-04-06 02:28:45] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/b5/0c/5e660fa0008a937989f3a92d3b186ea23efb5ba18178d035adcfec4f6148/cdk-certbot-dns-route53-2.4.96.tar.gz
+[2024-04-06 02:28:45] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-04-06 02:28:45] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/93/fd/7cad9d4c9406e421f7ce31b725936bb32ec8a421f9b143e829c33cae55dd/dragonfly-core-1.8.1.tar.gz
+[2024-04-06 02:28:45] WARNING root fetch - processPackages [docugami-langchain]: Timeout reached during download
+[2024-04-06 02:28:45] WARNING root fetch - processPackages [cdk-certbot-dns-route53]: Timeout reached during download
+[2024-04-06 02:28:45] INFO root fetch - processPackages [docugami-langchain]: Downloading https://files.pythonhosted.org/packages/d3/dc/ebfc94d3428173a7827916947f5e84317c665bab439e99dd9fd634dcc60f/docugami_langchain-0.0.7rc9.tar.gz
+[2024-04-06 02:28:45] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/e2/d5/e4dd629f1bda71e18ea4a18d3ad49b8369d944f01f535776a491e1173719/cdk-certbot-dns-route53-2.4.97.tar.gz
+[2024-04-06 02:28:45] WARNING root fetch - processPackages [dragonfly-core]: Timeout reached during download
+[2024-04-06 02:28:45] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-04-06 02:28:45] WARNING root fetch - processPackages [docugami-langchain]: Timeout reached during download
+[2024-04-06 02:28:45] INFO root fetch - processPackages [docugami-langchain]: executing diffoscope
+[2024-04-06 02:28:45] INFO root fetch - processPackages [docugami-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugami_langchain-0.0.7rc8.tar.gz tmp/docugami_langchain-0.0.7rc9.tar.gz --markdown 20240406/d/docugami-langchain/0.0.7rc8-0.0.7rc9/diff.md --exclude *.pyd
+[2024-04-06 02:28:45] INFO root fetch - processPackages [dragonfly-core]: Downloading https://files.pythonhosted.org/packages/75/cb/4a1ce4726a070a188305b8d5343b4300bf24190845d85c8718cc31aa3e53/dragonfly-core-1.9.0.tar.gz
+[2024-04-06 02:28:45] WARNING root fetch - processPackages [cdk-certbot-dns-route53]: Timeout reached during download
+[2024-04-06 02:28:45] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-04-06 02:28:45] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.96.tar.gz tmp/cdk-certbot-dns-route53-2.4.97.tar.gz --markdown 20240406/c/cdk-certbot-dns-route53/2.4.96-2.4.97/diff.md --exclude *.pyd
+[2024-04-06 02:28:45] WARNING root fetch - processPackages [cdk-aurora-globaldatabase]: Timeout reached during download
+[2024-04-06 02:28:45] WARNING root fetch - processPackages [dragonfly-core]: Timeout reached during download
+[2024-04-06 02:28:45] INFO root fetch - processPackages [dragonfly-core]: executing diffoscope
+[2024-04-06 02:28:45] INFO root fetch - processPackages [dragonfly-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-core-1.8.1.tar.gz tmp/dragonfly-core-1.9.0.tar.gz --markdown 20240406/d/dragonfly-core/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-04-06 02:28:46] WARNING root fetch - processPackages [cdk-aurora-globaldatabase]: Timeout reached during download
+[2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240406/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.96.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.97.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-04-06 02:28:46] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.7rc8.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - processPackages [docugami-langchain]: Remove: archive file [/home/abi/fetcher/tmp/docugami_langchain-0.0.7rc9.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - main [MainThread]: End processing [docugami-langchain]: success
+[2024-04-06 02:28:46] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.8.1.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - processPackages [dragonfly-core]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-core-1.9.0.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - main [MainThread]: End processing [dragonfly-core]: success
+[2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-04-06 02:28:46] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-04-06 02:28:46] INFO root fetch - main [MainThread]: Store serial: [22643381]
