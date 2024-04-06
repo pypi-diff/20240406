@@ -17407,3 +17407,23 @@ EOFError: EOF read where object expected
 [2024-04-06 16:09:34] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.3.tar.gz]
 [2024-04-06 16:09:34] INFO root fetch - main [MainThread]: End processing [learning3d]: success
 [2024-04-06 16:09:34] INFO root fetch - main [MainThread]: Store serial: [22648535]
+[2024-04-06 16:11:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648535]
+[2024-04-06 16:11:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 16:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chessgui
+[2024-04-06 16:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: usercfg-opt-parser
+[2024-04-06 16:11:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wolta
+[2024-04-06 16:11:44] WARNING root fetch - processPackages [usercfg-opt-parser]: Skipping, unable to determine old version
+[2024-04-06 16:11:44] WARNING root fetch - processPackages [chessgui]: Skipping, unable to determine old version
+[2024-04-06 16:11:44] INFO root fetch - main [MainThread]: End processing [usercfg-opt-parser] error
+[2024-04-06 16:11:44] INFO root fetch - main [MainThread]: End processing [chessgui] error
+[2024-04-06 16:11:44] INFO root fetch - processPackages [wolta]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 16:11:44] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/47/15/bd9b69568eb8be13be07151c54beadc0dfe0ec1b774b4cf344f4e340fec3/wolta-0.1.4.tar.gz
+[2024-04-06 16:11:44] WARNING root fetch - processPackages [wolta]: Timeout reached during download
+[2024-04-06 16:11:44] INFO root fetch - processPackages [wolta]: Downloading https://files.pythonhosted.org/packages/7f/3d/cf9492d3741c578f50c1059e7c6c2aeab45b16d5d98631b68e66212207d5/wolta-0.1.5.tar.gz
+[2024-04-06 16:11:44] WARNING root fetch - processPackages [wolta]: Timeout reached during download
+[2024-04-06 16:11:44] INFO root fetch - processPackages [wolta]: executing diffoscope
+[2024-04-06 16:11:44] INFO root fetch - processPackages [wolta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolta-0.1.4.tar.gz tmp/wolta-0.1.5.tar.gz --markdown 20240406/w/wolta/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-06 16:11:45] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.1.4.tar.gz]
+[2024-04-06 16:11:45] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.1.5.tar.gz]
+[2024-04-06 16:11:45] INFO root fetch - main [MainThread]: End processing [wolta]: success
+[2024-04-06 16:11:45] INFO root fetch - main [MainThread]: Store serial: [22648554]
