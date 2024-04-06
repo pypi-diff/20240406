@@ -13947,3 +13947,17 @@
 [2024-04-06 12:34:05] INFO root fetch - processPackages [Flask-Alchemist]: Remove: archive file [/home/abi/fetcher/tmp/flask_alchemist-1.0.1.tar.gz]
 [2024-04-06 12:34:05] INFO root fetch - main [MainThread]: End processing [Flask-Alchemist]: success
 [2024-04-06 12:34:05] INFO root fetch - main [MainThread]: Store serial: [22647245]
+[2024-04-06 12:36:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647245]
+[2024-04-06 12:36:13] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 12:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sparrow-python
+[2024-04-06 12:36:14] INFO root fetch - processPackages [sparrow-python]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-04-06 12:36:14] INFO root fetch - processPackages [sparrow-python]: Downloading https://files.pythonhosted.org/packages/4a/b2/e33dac60ae9dce881eacdabf37ce25a383434593f0912a09f6966b6da6c1/sparrow_python-0.1.9.tar.gz
+[2024-04-06 12:36:14] WARNING root fetch - processPackages [sparrow-python]: Timeout reached during download
+[2024-04-06 12:36:14] INFO root fetch - processPackages [sparrow-python]: Downloading https://files.pythonhosted.org/packages/d5/d5/db366eedb22a4a36b15cbf1379e5a04ee50ea3034e404c5f702b5ee0d6f7/sparrow_python-0.2.0.tar.gz
+[2024-04-06 12:36:14] WARNING root fetch - processPackages [sparrow-python]: Timeout reached during download
+[2024-04-06 12:36:14] INFO root fetch - processPackages [sparrow-python]: executing diffoscope
+[2024-04-06 12:36:14] INFO root fetch - processPackages [sparrow-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparrow_python-0.1.9.tar.gz tmp/sparrow_python-0.2.0.tar.gz --markdown 20240406/s/sparrow-python/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 12:36:15] INFO root fetch - processPackages [sparrow-python]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_python-0.1.9.tar.gz]
+[2024-04-06 12:36:15] INFO root fetch - processPackages [sparrow-python]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_python-0.2.0.tar.gz]
+[2024-04-06 12:36:15] INFO root fetch - main [MainThread]: End processing [sparrow-python]: success
+[2024-04-06 12:36:15] INFO root fetch - main [MainThread]: Store serial: [22647248]
