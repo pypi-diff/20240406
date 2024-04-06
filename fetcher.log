@@ -17217,3 +17217,66 @@ EOFError: EOF read where object expected
 [2024-04-06 16:05:10] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.4b1.tar.gz]
 [2024-04-06 16:05:10] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
 [2024-04-06 16:05:10] INFO root fetch - main [MainThread]: Store serial: [22648400]
+[2024-04-06 16:07:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648400]
+[2024-04-06 16:07:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 16:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solie
+[2024-04-06 16:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rookiepy
+[2024-04-06 16:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autowsgr
+[2024-04-06 16:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dbtc
+[2024-04-06 16:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pytest-data-suites
+[2024-04-06 16:07:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulsectl
+[2024-04-06 16:07:19] INFO root fetch - processPackages [solie]: New version: [8.5.1] Old Version: [8.5.0]
+[2024-04-06 16:07:19] INFO root fetch - processPackages [solie]: Downloading https://files.pythonhosted.org/packages/c0/48/102f8df1b2fef10850f65786f6e830ce6b5db32efeaa320433730d27032f/solie-8.5.0.tar.gz
+[2024-04-06 16:07:19] INFO root fetch - processPackages [autowsgr]: New version: [0.2.2.9] Old Version: [0.2.2.8]
+[2024-04-06 16:07:19] INFO root fetch - processPackages [dbtc]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 16:07:19] INFO root fetch - processPackages [pytest-data-suites]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-06 16:07:19] INFO root fetch - processPackages [pulsectl]: New version: [24.4.0] Old Version: [23.5.2]
+[2024-04-06 16:07:19] INFO root fetch - processPackages [autowsgr]: Downloading https://files.pythonhosted.org/packages/20/db/bb4942509a54b1f01fa10e10e3dca250f9cf92488729f8292657988ac8e2/autowsgr-0.2.2.8.tar.gz
+[2024-04-06 16:07:19] WARNING root fetch - processPackages [solie]: Timeout reached during download
+[2024-04-06 16:07:19] INFO root fetch - processPackages [dbtc]: Downloading https://files.pythonhosted.org/packages/e5/84/16db538022fe328200897902d186e56c8295c0b86035fc8243fcf5ab6f4a/dbtc-0.8.0.tar.gz
+[2024-04-06 16:07:19] INFO root fetch - processPackages [pytest-data-suites]: Downloading https://files.pythonhosted.org/packages/e6/c4/42a534eb2f4ed0283d190972bc6c08e0dbf8a58c931b369bd6fe472986cb/pytest-data-suites-1.0.4.tar.gz
+[2024-04-06 16:07:19] INFO root fetch - processPackages [rookiepy]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pulsectl]: Downloading https://files.pythonhosted.org/packages/8d/df/73af0b1a7d9f29b97c9a78ef871767bfb02e90b6fde673b0228495fab214/pulsectl-23.5.2.tar.gz
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [pytest-data-suites]: Timeout reached during download
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [autowsgr]: Skipping package: exceeds size limit 18156638>=10485760
+[2024-04-06 16:07:20] INFO root fetch - main [MainThread]: End processing [autowsgr] error
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [dbtc]: Timeout reached during download
+[2024-04-06 16:07:20] INFO root fetch - processPackages [solie]: Downloading https://files.pythonhosted.org/packages/42/1a/abe921c9e7779daa82848cd56ce01e4471aaefffe67adfbb9b2c3a4b8048/solie-8.5.1.tar.gz
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [pulsectl]: Timeout reached during download
+[2024-04-06 16:07:20] INFO root fetch - processPackages [rookiepy]: Downloading https://files.pythonhosted.org/packages/91/6f/4b7680195dcde4f941222de66e3eba2fe36d26b1d9355d40d1209e18b7c8/rookiepy-0.3.6.tar.gz
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pytest-data-suites]: Downloading https://files.pythonhosted.org/packages/a5/9f/198fdcfecddd525f0ce5b6d7c3bc0ba17632fb558257ac20bd04e077e863/pytest_data_suites-1.0.5.tar.gz
+[2024-04-06 16:07:20] INFO root fetch - processPackages [dbtc]: Downloading https://files.pythonhosted.org/packages/3a/0f/8084f897e6d45f4ed9184afa7f549d7f72e3e1c0dac6a5ab854661a7035a/dbtc-0.9.0.tar.gz
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [solie]: Timeout reached during download
+[2024-04-06 16:07:20] INFO root fetch - processPackages [solie]: executing diffoscope
+[2024-04-06 16:07:20] INFO root fetch - processPackages [solie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solie-8.5.0.tar.gz tmp/solie-8.5.1.tar.gz --markdown 20240406/s/solie/8.5.0-8.5.1/diff.md --exclude *.pyd
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [pytest-data-suites]: Timeout reached during download
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pytest-data-suites]: executing diffoscope
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pytest-data-suites]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-data-suites-1.0.4.tar.gz tmp/pytest_data_suites-1.0.5.tar.gz --markdown 20240406/p/pytest-data-suites/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [dbtc]: Timeout reached during download
+[2024-04-06 16:07:20] INFO root fetch - processPackages [dbtc]: executing diffoscope
+[2024-04-06 16:07:20] INFO root fetch - processPackages [dbtc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbtc-0.8.0.tar.gz tmp/dbtc-0.9.0.tar.gz --markdown 20240406/d/dbtc/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [rookiepy]: Timeout reached during download
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pulsectl]: Downloading https://files.pythonhosted.org/packages/9d/bf/c10b9ccdffbd4d5c1e7d0aef1874e3d9adb72524339e825728777898ff51/pulsectl-24.4.0.tar.gz
+[2024-04-06 16:07:20] WARNING root fetch - processPackages [pulsectl]: Timeout reached during download
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pulsectl]: executing diffoscope
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pulsectl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulsectl-23.5.2.tar.gz tmp/pulsectl-24.4.0.tar.gz --markdown 20240406/p/pulsectl/23.5.2-24.4.0/diff.md --exclude *.pyd
+[2024-04-06 16:07:20] INFO root fetch - processPackages [rookiepy]: Downloading https://files.pythonhosted.org/packages/a9/f2/25d0b6fb6fc1c6f2abdef483cb77d367fb32801595e014f3c2ff58758f66/rookiepy-0.3.7-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.whl
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pytest-data-suites]: Remove: archive file [/home/abi/fetcher/tmp/pytest-data-suites-1.0.4.tar.gz]
+[2024-04-06 16:07:20] INFO root fetch - processPackages [pytest-data-suites]: Remove: archive file [/home/abi/fetcher/tmp/pytest_data_suites-1.0.5.tar.gz]
+[2024-04-06 16:07:20] INFO root fetch - main [MainThread]: End processing [pytest-data-suites]: success
+[2024-04-06 16:07:21] INFO root fetch - processPackages [dbtc]: Remove: archive file [/home/abi/fetcher/tmp/dbtc-0.8.0.tar.gz]
+[2024-04-06 16:07:21] INFO root fetch - processPackages [dbtc]: Remove: archive file [/home/abi/fetcher/tmp/dbtc-0.9.0.tar.gz]
+[2024-04-06 16:07:21] INFO root fetch - main [MainThread]: End processing [dbtc]: success
+[2024-04-06 16:07:21] INFO root fetch - processPackages [solie]: Remove: archive file [/home/abi/fetcher/tmp/solie-8.5.0.tar.gz]
+[2024-04-06 16:07:21] INFO root fetch - processPackages [solie]: Remove: archive file [/home/abi/fetcher/tmp/solie-8.5.1.tar.gz]
+[2024-04-06 16:07:21] INFO root fetch - main [MainThread]: End processing [solie]: success
+[2024-04-06 16:07:21] INFO root fetch - processPackages [pulsectl]: Remove: archive file [/home/abi/fetcher/tmp/pulsectl-23.5.2.tar.gz]
+[2024-04-06 16:07:21] INFO root fetch - processPackages [pulsectl]: Remove: archive file [/home/abi/fetcher/tmp/pulsectl-24.4.0.tar.gz]
+[2024-04-06 16:07:21] INFO root fetch - main [MainThread]: End processing [pulsectl]: success
+[2024-04-06 16:07:22] WARNING root fetch - processPackages [rookiepy]: Timeout reached during download
+[2024-04-06 16:07:22] INFO root fetch - processPackages [rookiepy]: executing diffoscope
+[2024-04-06 16:07:22] INFO root fetch - processPackages [rookiepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rookiepy-0.3.6.tar.gz tmp/rookiepy-0.3.7-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.whl.zip --markdown 20240406/r/rookiepy/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2024-04-06 16:07:22] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.3.6.tar.gz]
+[2024-04-06 16:07:22] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.3.7-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.whl.zip]
+[2024-04-06 16:07:22] INFO root fetch - main [MainThread]: End processing [rookiepy]: success
+[2024-04-06 16:07:22] INFO root fetch - main [MainThread]: Store serial: [22648467]
