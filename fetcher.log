@@ -19603,3 +19603,42 @@ EOFError: EOF read where object expected
 [2024-04-06 18:24:24] INFO root fetch - processPackages [morebs2]: Remove: archive file [/home/abi/fetcher/tmp/morebs2-0.0.7.tar.gz]
 [2024-04-06 18:24:24] INFO root fetch - main [MainThread]: End processing [morebs2]: success
 [2024-04-06 18:24:24] INFO root fetch - main [MainThread]: Store serial: [22649334]
+[2024-04-06 18:26:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649334]
+[2024-04-06 18:26:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 18:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quicktype-ts
+[2024-04-06 18:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: symbol-shoestring
+[2024-04-06 18:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datasette-paste
+[2024-04-06 18:26:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ynca
+[2024-04-06 18:26:33] INFO root fetch - processPackages [datasette-paste]: New version: [0.1a5] Old Version: [0.1a4]
+[2024-04-06 18:26:33] INFO root fetch - processPackages [symbol-shoestring]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 18:26:33] WARNING root fetch - processPackages [quicktype-ts]: Skipping, unable to determine old version
+[2024-04-06 18:26:33] INFO root fetch - main [MainThread]: End processing [quicktype-ts] error
+[2024-04-06 18:26:33] INFO root fetch - processPackages [ynca]: New version: [5.9.0] Old Version: [5.8.0]
+[2024-04-06 18:26:33] INFO root fetch - processPackages [symbol-shoestring]: Downloading https://files.pythonhosted.org/packages/b5/20/4889d3360b6e7c469cf565b41a308fdc93bbbedc1f8f6a222e1b88d79884/symbol_shoestring-0.1.0.tar.gz
+[2024-04-06 18:26:33] INFO root fetch - processPackages [datasette-paste]: Downloading https://files.pythonhosted.org/packages/11/5e/ae34d01b4e90e62e40a1d950eefcb9a195189e7372b8f714e11e0bc4f01f/datasette-paste-0.1a4.tar.gz
+[2024-04-06 18:26:33] INFO root fetch - processPackages [ynca]: Downloading https://files.pythonhosted.org/packages/f2/8a/097b50099f44670954072acffe1d1693b33ce89e76376e923ad2ce6c4901/ynca-5.8.0.tar.gz
+[2024-04-06 18:26:33] WARNING root fetch - processPackages [ynca]: Timeout reached during download
+[2024-04-06 18:26:33] WARNING root fetch - processPackages [datasette-paste]: Timeout reached during download
+[2024-04-06 18:26:33] WARNING root fetch - processPackages [symbol-shoestring]: Timeout reached during download
+[2024-04-06 18:26:34] INFO root fetch - processPackages [datasette-paste]: Downloading https://files.pythonhosted.org/packages/ef/21/2d66dbbf37b7db2c8ce7fd61ad428ec87f350ced4102e84bb254e5b274e6/datasette-paste-0.1a5.tar.gz
+[2024-04-06 18:26:34] INFO root fetch - processPackages [symbol-shoestring]: Downloading https://files.pythonhosted.org/packages/d7/aa/9a6fed3e5a3b3a4bab8b164b1d2b273cfcbdd567e2418c294ffa14d260b7/symbol_shoestring-0.1.1.tar.gz
+[2024-04-06 18:26:34] INFO root fetch - processPackages [ynca]: Downloading https://files.pythonhosted.org/packages/ee/90/41e5a4404f34a69869739e0f727adc948ab3ab64894994959a2922362eb1/ynca-5.9.0.tar.gz
+[2024-04-06 18:26:34] WARNING root fetch - processPackages [datasette-paste]: Timeout reached during download
+[2024-04-06 18:26:34] INFO root fetch - processPackages [datasette-paste]: executing diffoscope
+[2024-04-06 18:26:34] INFO root fetch - processPackages [datasette-paste]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette-paste-0.1a4.tar.gz tmp/datasette-paste-0.1a5.tar.gz --markdown 20240406/d/datasette-paste/0.1a4-0.1a5/diff.md --exclude *.pyd
+[2024-04-06 18:26:34] WARNING root fetch - processPackages [symbol-shoestring]: Timeout reached during download
+[2024-04-06 18:26:34] INFO root fetch - processPackages [symbol-shoestring]: executing diffoscope
+[2024-04-06 18:26:34] INFO root fetch - processPackages [symbol-shoestring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symbol_shoestring-0.1.0.tar.gz tmp/symbol_shoestring-0.1.1.tar.gz --markdown 20240406/s/symbol-shoestring/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 18:26:34] WARNING root fetch - processPackages [ynca]: Timeout reached during download
+[2024-04-06 18:26:34] INFO root fetch - processPackages [ynca]: executing diffoscope
+[2024-04-06 18:26:34] INFO root fetch - processPackages [ynca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ynca-5.8.0.tar.gz tmp/ynca-5.9.0.tar.gz --markdown 20240406/y/ynca/5.8.0-5.9.0/diff.md --exclude *.pyd
+[2024-04-06 18:26:34] INFO root fetch - processPackages [datasette-paste]: Remove: archive file [/home/abi/fetcher/tmp/datasette-paste-0.1a4.tar.gz]
+[2024-04-06 18:26:34] INFO root fetch - processPackages [datasette-paste]: Remove: archive file [/home/abi/fetcher/tmp/datasette-paste-0.1a5.tar.gz]
+[2024-04-06 18:26:34] INFO root fetch - main [MainThread]: End processing [datasette-paste]: success
+[2024-04-06 18:26:34] INFO root fetch - processPackages [ynca]: Remove: archive file [/home/abi/fetcher/tmp/ynca-5.8.0.tar.gz]
+[2024-04-06 18:26:34] INFO root fetch - processPackages [ynca]: Remove: archive file [/home/abi/fetcher/tmp/ynca-5.9.0.tar.gz]
+[2024-04-06 18:26:34] INFO root fetch - main [MainThread]: End processing [ynca]: success
+[2024-04-06 18:26:34] INFO root fetch - processPackages [symbol-shoestring]: Remove: archive file [/home/abi/fetcher/tmp/symbol_shoestring-0.1.0.tar.gz]
+[2024-04-06 18:26:34] INFO root fetch - processPackages [symbol-shoestring]: Remove: archive file [/home/abi/fetcher/tmp/symbol_shoestring-0.1.1.tar.gz]
+[2024-04-06 18:26:34] INFO root fetch - main [MainThread]: End processing [symbol-shoestring]: success
+[2024-04-06 18:26:34] INFO root fetch - main [MainThread]: Store serial: [22649348]
