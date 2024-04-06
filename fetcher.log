@@ -13582,3 +13582,17 @@
 [2024-04-06 11:53:00] INFO root fetch - processPackages [lungmask]: Remove: archive file [/home/abi/fetcher/tmp/lungmask-0.2.20.tar.gz]
 [2024-04-06 11:53:00] INFO root fetch - main [MainThread]: End processing [lungmask]: success
 [2024-04-06 11:53:00] INFO root fetch - main [MainThread]: Store serial: [22647134]
+[2024-04-06 11:55:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647134]
+[2024-04-06 11:55:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 11:55:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: time-lapse
+[2024-04-06 11:55:09] INFO root fetch - processPackages [time-lapse]: New version: [7.0] Old Version: [6.0]
+[2024-04-06 11:55:09] INFO root fetch - processPackages [time-lapse]: Downloading https://files.pythonhosted.org/packages/ad/ea/54fbb632ffb81a6073fcd3a77d2f4ee840578f393f7a3963a172e249bfad/time_lapse-6.0.tar.gz
+[2024-04-06 11:55:09] WARNING root fetch - processPackages [time-lapse]: Timeout reached during download
+[2024-04-06 11:55:10] INFO root fetch - processPackages [time-lapse]: Downloading https://files.pythonhosted.org/packages/90/10/32024143b29bd0a3f093ea940e0baa0c83150425a76577b4d1dc747d6b86/time_lapse-7.0.tar.gz
+[2024-04-06 11:55:10] WARNING root fetch - processPackages [time-lapse]: Timeout reached during download
+[2024-04-06 11:55:10] INFO root fetch - processPackages [time-lapse]: executing diffoscope
+[2024-04-06 11:55:10] INFO root fetch - processPackages [time-lapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/time_lapse-6.0.tar.gz tmp/time_lapse-7.0.tar.gz --markdown 20240406/t/time-lapse/6.0-7.0/diff.md --exclude *.pyd
+[2024-04-06 11:55:11] INFO root fetch - processPackages [time-lapse]: Remove: archive file [/home/abi/fetcher/tmp/time_lapse-6.0.tar.gz]
+[2024-04-06 11:55:11] INFO root fetch - processPackages [time-lapse]: Remove: archive file [/home/abi/fetcher/tmp/time_lapse-7.0.tar.gz]
+[2024-04-06 11:55:11] INFO root fetch - main [MainThread]: End processing [time-lapse]: success
+[2024-04-06 11:55:11] INFO root fetch - main [MainThread]: Store serial: [22647137]
