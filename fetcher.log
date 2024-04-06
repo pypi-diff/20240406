@@ -8838,3 +8838,31 @@
 [2024-04-06 05:34:45] INFO root fetch - processPackages [bolton-clack]: Remove: archive file [/home/abi/fetcher/tmp/bolton-clack-0.3.9.tar.gz]
 [2024-04-06 05:34:45] INFO root fetch - main [MainThread]: End processing [bolton-clack]: success
 [2024-04-06 05:34:45] INFO root fetch - main [MainThread]: Store serial: [22645277]
+[2024-04-06 05:36:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645277]
+[2024-04-06 05:36:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 05:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CINOSUM
+[2024-04-06 05:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RelaDB
+[2024-04-06 05:36:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wi1-bot
+[2024-04-06 05:36:54] INFO root fetch - processPackages [CINOSUM]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-06 05:36:54] INFO root fetch - processPackages [wi1-bot]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-06 05:36:54] WARNING root fetch - processPackages [RelaDB]: Skipping, unable to determine old version
+[2024-04-06 05:36:54] INFO root fetch - main [MainThread]: End processing [RelaDB] error
+[2024-04-06 05:36:54] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/82/96/770356273f625bc920700c9800b62d758fd9958b1ebcadd7ec2da22c2803/wi1-bot-1.4.1.tar.gz
+[2024-04-06 05:36:54] INFO root fetch - processPackages [CINOSUM]: Downloading https://files.pythonhosted.org/packages/1f/1a/ae6fd7886a3883b02488e0bea3f275b23024188ebcb4b81850f1472f1bbc/CINOSUM-1.0.1.tar.gz
+[2024-04-06 05:36:54] WARNING root fetch - processPackages [wi1-bot]: Timeout reached during download
+[2024-04-06 05:36:54] WARNING root fetch - processPackages [CINOSUM]: Timeout reached during download
+[2024-04-06 05:36:54] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/a9/f1/90ed6c2afcced7e92a42cc969ff4ef72549b283f8924afbc33e1b9fbffec/wi1-bot-1.4.2.tar.gz
+[2024-04-06 05:36:54] WARNING root fetch - processPackages [wi1-bot]: Timeout reached during download
+[2024-04-06 05:36:54] INFO root fetch - processPackages [wi1-bot]: executing diffoscope
+[2024-04-06 05:36:54] INFO root fetch - processPackages [wi1-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wi1-bot-1.4.1.tar.gz tmp/wi1-bot-1.4.2.tar.gz --markdown 20240406/w/wi1-bot/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2024-04-06 05:36:54] INFO root fetch - processPackages [CINOSUM]: Downloading https://files.pythonhosted.org/packages/6c/aa/bfa0d39460f80fe256feaa060a928c2558b6d23627716afb737cb9daa94b/CINOSUM-1.0.2.tar.gz
+[2024-04-06 05:36:54] WARNING root fetch - processPackages [CINOSUM]: Timeout reached during download
+[2024-04-06 05:36:54] INFO root fetch - processPackages [CINOSUM]: executing diffoscope
+[2024-04-06 05:36:54] INFO root fetch - processPackages [CINOSUM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CINOSUM-1.0.1.tar.gz tmp/CINOSUM-1.0.2.tar.gz --markdown 20240406/C/CINOSUM/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-06 05:36:55] INFO root fetch - processPackages [wi1-bot]: Remove: archive file [/home/abi/fetcher/tmp/wi1-bot-1.4.1.tar.gz]
+[2024-04-06 05:36:55] INFO root fetch - processPackages [wi1-bot]: Remove: archive file [/home/abi/fetcher/tmp/wi1-bot-1.4.2.tar.gz]
+[2024-04-06 05:36:55] INFO root fetch - main [MainThread]: End processing [wi1-bot]: success
+[2024-04-06 05:36:55] INFO root fetch - processPackages [CINOSUM]: Remove: archive file [/home/abi/fetcher/tmp/CINOSUM-1.0.1.tar.gz]
+[2024-04-06 05:36:55] INFO root fetch - processPackages [CINOSUM]: Remove: archive file [/home/abi/fetcher/tmp/CINOSUM-1.0.2.tar.gz]
+[2024-04-06 05:36:55] INFO root fetch - main [MainThread]: End processing [CINOSUM]: success
+[2024-04-06 05:36:55] INFO root fetch - main [MainThread]: Store serial: [22645286]
