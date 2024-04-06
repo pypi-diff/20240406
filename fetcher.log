@@ -9053,3 +9053,19 @@
 [2024-04-06 05:59:34] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.5.tar.gz]
 [2024-04-06 05:59:34] INFO root fetch - main [MainThread]: End processing [istari]: success
 [2024-04-06 05:59:34] INFO root fetch - main [MainThread]: Store serial: [22645331]
+[2024-04-06 06:01:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645331]
+[2024-04-06 06:01:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 06:03:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645331]
+[2024-04-06 06:03:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 06:03:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: authwa
+[2024-04-06 06:03:48] INFO root fetch - processPackages [authwa]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 06:03:48] INFO root fetch - processPackages [authwa]: Downloading https://files.pythonhosted.org/packages/ef/3f/942a69666f63b9bf850889b7918f5f6711b2c1e109b7a94c44acf9f87f34/authwa-0.3.8.tar.gz
+[2024-04-06 06:03:48] WARNING root fetch - processPackages [authwa]: Timeout reached during download
+[2024-04-06 06:03:48] INFO root fetch - processPackages [authwa]: Downloading https://files.pythonhosted.org/packages/eb/8e/24ba062d1d809b08a8907c7b16cb3bb2a774774312578dfffcf7102874cc/authwa-0.3.9.tar.gz
+[2024-04-06 06:03:49] WARNING root fetch - processPackages [authwa]: Timeout reached during download
+[2024-04-06 06:03:49] INFO root fetch - processPackages [authwa]: executing diffoscope
+[2024-04-06 06:03:49] INFO root fetch - processPackages [authwa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/authwa-0.3.8.tar.gz tmp/authwa-0.3.9.tar.gz --markdown 20240406/a/authwa/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 06:03:49] INFO root fetch - processPackages [authwa]: Remove: archive file [/home/abi/fetcher/tmp/authwa-0.3.8.tar.gz]
+[2024-04-06 06:03:49] INFO root fetch - processPackages [authwa]: Remove: archive file [/home/abi/fetcher/tmp/authwa-0.3.9.tar.gz]
+[2024-04-06 06:03:49] INFO root fetch - main [MainThread]: End processing [authwa]: success
+[2024-04-06 06:03:49] INFO root fetch - main [MainThread]: Store serial: [22645334]
