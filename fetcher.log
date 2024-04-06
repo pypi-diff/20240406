@@ -16027,3 +16027,33 @@ EOFError: EOF read where object expected
 [2024-04-06 14:48:27] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.0.9.tar.gz]
 [2024-04-06 14:48:27] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
 [2024-04-06 14:48:27] INFO root fetch - main [MainThread]: Store serial: [22647874]
+[2024-04-06 14:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647874]
+[2024-04-06 14:50:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 14:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: liba
+[2024-04-06 14:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: biaspeech
+[2024-04-06 14:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2024-04-06 14:50:36] INFO root fetch - processPackages [biaspeech]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 14:50:36] INFO root fetch - processPackages [dxsp]: New version: [9.0.7] Old Version: [9.0.6]
+[2024-04-06 14:50:36] INFO root fetch - processPackages [liba]: New version: [0.1.9.post1] Old Version: [0.1.9]
+[2024-04-06 14:50:36] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/a1/1f/4b20f69e5b75066726b10760e4d553170d395263325ba26fe170c2978d0b/dxsp-9.0.6.tar.gz
+[2024-04-06 14:50:36] INFO root fetch - processPackages [biaspeech]: Downloading https://files.pythonhosted.org/packages/a9/91/19e3b29528886935d3f598fa02ff108df875bb2228a4b050d7dbd99a2ea3/biaspeech-0.1.4.tar.gz
+[2024-04-06 14:50:36] WARNING root fetch - processPackages [dxsp]: Timeout reached during download
+[2024-04-06 14:50:36] WARNING root fetch - processPackages [biaspeech]: Skipping package: exceeds size limit 18534070>=10485760
+[2024-04-06 14:50:36] INFO root fetch - main [MainThread]: End processing [biaspeech] error
+[2024-04-06 14:50:36] INFO root fetch - processPackages [liba]: Downloading https://files.pythonhosted.org/packages/ac/bc/368c264d046489a2f3d130ea00f13e593a4374d9341b69f551aacaa485ef/liba-0.1.9.tar.gz
+[2024-04-06 14:50:36] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/c1/02/3119800c1eceb087f71694d8f6d21bce46ec401d2511bf92ed3ee83d9db4/dxsp-9.0.7.tar.gz
+[2024-04-06 14:50:37] WARNING root fetch - processPackages [dxsp]: Timeout reached during download
+[2024-04-06 14:50:37] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2024-04-06 14:50:37] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-9.0.6.tar.gz tmp/dxsp-9.0.7.tar.gz --markdown 20240406/d/dxsp/9.0.6-9.0.7/diff.md --exclude *.pyd
+[2024-04-06 14:50:37] WARNING root fetch - processPackages [liba]: Timeout reached during download
+[2024-04-06 14:50:37] INFO root fetch - processPackages [liba]: Downloading https://files.pythonhosted.org/packages/91/13/60d567762a089ae949d6ad871f2c80a524299fb9d19fae52567a70d6657d/liba-0.1.9.post1.tar.gz
+[2024-04-06 14:50:37] WARNING root fetch - processPackages [liba]: Timeout reached during download
+[2024-04-06 14:50:37] INFO root fetch - processPackages [liba]: executing diffoscope
+[2024-04-06 14:50:37] INFO root fetch - processPackages [liba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liba-0.1.9.tar.gz tmp/liba-0.1.9.post1.tar.gz --markdown 20240406/l/liba/0.1.9-0.1.9.post1/diff.md --exclude *.pyd
+[2024-04-06 14:50:37] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.6.tar.gz]
+[2024-04-06 14:50:37] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.7.tar.gz]
+[2024-04-06 14:50:37] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2024-04-06 14:50:38] INFO root fetch - processPackages [liba]: Remove: archive file [/home/abi/fetcher/tmp/liba-0.1.9.tar.gz]
+[2024-04-06 14:50:38] INFO root fetch - processPackages [liba]: Remove: archive file [/home/abi/fetcher/tmp/liba-0.1.9.post1.tar.gz]
+[2024-04-06 14:50:38] INFO root fetch - main [MainThread]: End processing [liba]: success
+[2024-04-06 14:50:38] INFO root fetch - main [MainThread]: Store serial: [22647883]
