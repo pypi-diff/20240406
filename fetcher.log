@@ -7975,3 +7975,17 @@
 [2024-04-06 04:26:26] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.9.tar.gz]
 [2024-04-06 04:26:26] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
 [2024-04-06 04:26:26] INFO root fetch - main [MainThread]: Store serial: [22644967]
+[2024-04-06 04:28:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644967]
+[2024-04-06 04:28:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 04:28:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vios
+[2024-04-06 04:28:35] INFO root fetch - processPackages [vios]: New version: [2.3.0] Old Version: [2.2.9]
+[2024-04-06 04:28:35] INFO root fetch - processPackages [vios]: Downloading https://files.pythonhosted.org/packages/ce/79/2c8b34d0babc4e16df636a34ab5f4f8e5ef2fe1ca7f99e6ae81ed1f71846/vios-2.2.9-py3-none-any.whl
+[2024-04-06 04:28:35] WARNING root fetch - processPackages [vios]: Timeout reached during download
+[2024-04-06 04:28:35] INFO root fetch - processPackages [vios]: Downloading https://files.pythonhosted.org/packages/36/45/d0ac6b511df3dee1d56b2cd17f85a8da2e2538d22f6dc663d18ed5f05bbd/vios-2.3.0-py3-none-any.whl
+[2024-04-06 04:28:35] WARNING root fetch - processPackages [vios]: Timeout reached during download
+[2024-04-06 04:28:35] INFO root fetch - processPackages [vios]: executing diffoscope
+[2024-04-06 04:28:35] INFO root fetch - processPackages [vios]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vios-2.2.9-py3-none-any.whl.zip tmp/vios-2.3.0-py3-none-any.whl.zip --markdown 20240406/v/vios/2.2.9-2.3.0/diff.md --exclude *.pyd
+[2024-04-06 04:28:36] INFO root fetch - processPackages [vios]: Remove: archive file [/home/abi/fetcher/tmp/vios-2.2.9-py3-none-any.whl.zip]
+[2024-04-06 04:28:36] INFO root fetch - processPackages [vios]: Remove: archive file [/home/abi/fetcher/tmp/vios-2.3.0-py3-none-any.whl.zip]
+[2024-04-06 04:28:36] INFO root fetch - main [MainThread]: End processing [vios]: success
+[2024-04-06 04:28:36] INFO root fetch - main [MainThread]: Store serial: [22644970]
