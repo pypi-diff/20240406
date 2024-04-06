@@ -22473,3 +22473,42 @@ EOFError: EOF read where object expected
 [2024-04-06 20:59:26] INFO root fetch - processPackages [diskinfo]: Remove: archive file [/home/abi/fetcher/tmp/diskinfo-3.1.1.tar.gz]
 [2024-04-06 20:59:26] INFO root fetch - main [MainThread]: End processing [diskinfo]: success
 [2024-04-06 20:59:26] INFO root fetch - main [MainThread]: Store serial: [22650294]
+[2024-04-06 21:01:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650294]
+[2024-04-06 21:01:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emlabpkg
+[2024-04-06 21:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tira
+[2024-04-06 21:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iog-randomizer
+[2024-04-06 21:01:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zstarfile
+[2024-04-06 21:01:35] INFO root fetch - processPackages [tira]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 21:01:35] INFO root fetch - processPackages [emlabpkg]: New version: [4.9] Old Version: [4.8]
+[2024-04-06 21:01:35] WARNING root fetch - processPackages [zstarfile]: Skipping, unable to determine old version
+[2024-04-06 21:01:35] INFO root fetch - main [MainThread]: End processing [zstarfile] error
+[2024-04-06 21:01:35] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/4b/d0/2e61e71a65015785af087e247c1a0fb86643b1a1315e058857f4c30e93d1/tira-0.0.98.tar.gz
+[2024-04-06 21:01:35] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/52/84/fdb1e8cae2adf2f6cf197367140c6b20a8c8eda120c2bc0d0194ce818811/emlabpkg-4.8.tar.gz
+[2024-04-06 21:01:35] INFO root fetch - processPackages [iog-randomizer]: New version: [4.7.2.2] Old Version: [4.7.2.1]
+[2024-04-06 21:01:35] WARNING root fetch - processPackages [emlabpkg]: Timeout reached during download
+[2024-04-06 21:01:35] INFO root fetch - processPackages [iog-randomizer]: Downloading https://files.pythonhosted.org/packages/17/2d/df758a93e66adc988c853d74f890dfd7d8fd0ec1541bff4ceb5450a8d31c/iog-randomizer-4.7.2.1.tar.gz
+[2024-04-06 21:01:35] WARNING root fetch - processPackages [tira]: Timeout reached during download
+[2024-04-06 21:01:35] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/a5/5c/7b2101613235dde0b137fb467ab282b086e41c8bf81553a844a00b88ba64/emlabpkg-4.9.tar.gz
+[2024-04-06 21:01:35] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/2d/31/b9af5a5b67ff777b2c9209808c8e4e18c7fd17c6348a13651170d8884d62/tira-0.0.99.tar.gz
+[2024-04-06 21:01:35] WARNING root fetch - processPackages [iog-randomizer]: Timeout reached during download
+[2024-04-06 21:01:35] WARNING root fetch - processPackages [tira]: Timeout reached during download
+[2024-04-06 21:01:35] INFO root fetch - processPackages [tira]: executing diffoscope
+[2024-04-06 21:01:35] INFO root fetch - processPackages [tira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tira-0.0.98.tar.gz tmp/tira-0.0.99.tar.gz --markdown 20240406/t/tira/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 21:01:35] WARNING root fetch - processPackages [emlabpkg]: Timeout reached during download
+[2024-04-06 21:01:35] INFO root fetch - processPackages [emlabpkg]: executing diffoscope
+[2024-04-06 21:01:35] INFO root fetch - processPackages [emlabpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlabpkg-4.8.tar.gz tmp/emlabpkg-4.9.tar.gz --markdown 20240406/e/emlabpkg/4.8-4.9/diff.md --exclude *.pyd
+[2024-04-06 21:01:35] INFO root fetch - processPackages [iog-randomizer]: Downloading https://files.pythonhosted.org/packages/e2/e3/557f2d7100e358303d8692a8317f3a841efcc952423896201a82222cd1a0/iog-randomizer-4.7.2.2.tar.gz
+[2024-04-06 21:01:36] WARNING root fetch - processPackages [iog-randomizer]: Timeout reached during download
+[2024-04-06 21:01:36] INFO root fetch - processPackages [iog-randomizer]: executing diffoscope
+[2024-04-06 21:01:36] INFO root fetch - processPackages [iog-randomizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iog-randomizer-4.7.2.1.tar.gz tmp/iog-randomizer-4.7.2.2.tar.gz --markdown 20240406/i/iog-randomizer/4.7.2.1-4.7.2.2/diff.md --exclude *.pyd
+[2024-04-06 21:01:36] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.8.tar.gz]
+[2024-04-06 21:01:36] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.9.tar.gz]
+[2024-04-06 21:01:36] INFO root fetch - main [MainThread]: End processing [emlabpkg]: success
+[2024-04-06 21:01:36] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.98.tar.gz]
+[2024-04-06 21:01:36] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.99.tar.gz]
+[2024-04-06 21:01:36] INFO root fetch - main [MainThread]: End processing [tira]: success
+[2024-04-06 21:01:36] INFO root fetch - processPackages [iog-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/iog-randomizer-4.7.2.1.tar.gz]
+[2024-04-06 21:01:36] INFO root fetch - processPackages [iog-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/iog-randomizer-4.7.2.2.tar.gz]
+[2024-04-06 21:01:36] INFO root fetch - main [MainThread]: End processing [iog-randomizer]: success
+[2024-04-06 21:01:36] INFO root fetch - main [MainThread]: Store serial: [22650310]
