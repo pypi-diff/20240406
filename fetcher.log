@@ -13860,3 +13860,28 @@
 [2024-04-06 12:19:02] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.5.tar.gz]
 [2024-04-06 12:19:02] INFO root fetch - main [MainThread]: End processing [kkpyui]: success
 [2024-04-06 12:19:02] INFO root fetch - main [MainThread]: Store serial: [22647199]
+[2024-04-06 12:21:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647199]
+[2024-04-06 12:21:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 12:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: so-vits-svc-fork
+[2024-04-06 12:21:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ngtools
+[2024-04-06 12:21:11] INFO root fetch - processPackages [ngtools]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 12:21:11] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [4.1.9] Old Version: [4.1.8]
+[2024-04-06 12:21:11] INFO root fetch - processPackages [ngtools]: Downloading https://files.pythonhosted.org/packages/28/35/825b957c76b8967506e7d326a84d263b56e72d2dd4dbcd914a5900d17e66/ngtools-0.0.1.tar.gz
+[2024-04-06 12:21:11] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/33/16/dbf732889045a03c11e0d67a1c8b05848e9e4efd3856458d2fec67c6d908/so_vits_svc_fork-4.1.8.tar.gz
+[2024-04-06 12:21:11] WARNING root fetch - processPackages [ngtools]: Timeout reached during download
+[2024-04-06 12:21:11] WARNING root fetch - processPackages [so-vits-svc-fork]: Timeout reached during download
+[2024-04-06 12:21:12] INFO root fetch - processPackages [ngtools]: Downloading https://files.pythonhosted.org/packages/da/49/55087556259d7f2ab47fa2a9b16d442472fdde72fb71af75eee37ac2e849/ngtools-0.0.2.tar.gz
+[2024-04-06 12:21:12] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/1a/ac/9056791de3f9246fcbd01c2016a1d3eac9a959ac01eeeab32d904c10ddd5/so_vits_svc_fork-4.1.9.tar.gz
+[2024-04-06 12:21:12] WARNING root fetch - processPackages [ngtools]: Timeout reached during download
+[2024-04-06 12:21:12] INFO root fetch - processPackages [ngtools]: executing diffoscope
+[2024-04-06 12:21:12] INFO root fetch - processPackages [ngtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngtools-0.0.1.tar.gz tmp/ngtools-0.0.2.tar.gz --markdown 20240406/n/ngtools/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 12:21:12] WARNING root fetch - processPackages [so-vits-svc-fork]: Timeout reached during download
+[2024-04-06 12:21:12] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2024-04-06 12:21:12] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-4.1.8.tar.gz tmp/so_vits_svc_fork-4.1.9.tar.gz --markdown 20240406/s/so-vits-svc-fork/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2024-04-06 12:21:12] INFO root fetch - processPackages [ngtools]: Remove: archive file [/home/abi/fetcher/tmp/ngtools-0.0.1.tar.gz]
+[2024-04-06 12:21:12] INFO root fetch - processPackages [ngtools]: Remove: archive file [/home/abi/fetcher/tmp/ngtools-0.0.2.tar.gz]
+[2024-04-06 12:21:12] INFO root fetch - main [MainThread]: End processing [ngtools]: success
+[2024-04-06 12:21:12] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.1.8.tar.gz]
+[2024-04-06 12:21:12] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.1.9.tar.gz]
+[2024-04-06 12:21:12] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2024-04-06 12:21:12] INFO root fetch - main [MainThread]: Store serial: [22647205]
