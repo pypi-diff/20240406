@@ -24778,3 +24778,17 @@ EOFError: EOF read where object expected
 [2024-04-06 23:11:56] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.1.tar.gz]
 [2024-04-06 23:11:56] INFO root fetch - main [MainThread]: End processing [legal-citation-parser]: success
 [2024-04-06 23:11:56] INFO root fetch - main [MainThread]: Store serial: [22651210]
+[2024-04-06 23:14:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651210]
+[2024-04-06 23:14:04] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 23:14:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kindle2pdf
+[2024-04-06 23:14:04] INFO root fetch - processPackages [kindle2pdf]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-06 23:14:05] INFO root fetch - processPackages [kindle2pdf]: Downloading https://files.pythonhosted.org/packages/00/1e/189ebd6c49a59c3d2966f743a549bfcb27d8d8ef92bcfc87e1c24c7c301a/kindle2pdf-0.1.2.tar.gz
+[2024-04-06 23:14:05] WARNING root fetch - processPackages [kindle2pdf]: Timeout reached during download
+[2024-04-06 23:14:05] INFO root fetch - processPackages [kindle2pdf]: Downloading https://files.pythonhosted.org/packages/cb/81/e5acfc8619cadc2a69c61ba45bb2a5269586510492b69d9cd9f0db19ed77/kindle2pdf-0.1.3.tar.gz
+[2024-04-06 23:14:05] WARNING root fetch - processPackages [kindle2pdf]: Timeout reached during download
+[2024-04-06 23:14:05] INFO root fetch - processPackages [kindle2pdf]: executing diffoscope
+[2024-04-06 23:14:05] INFO root fetch - processPackages [kindle2pdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kindle2pdf-0.1.2.tar.gz tmp/kindle2pdf-0.1.3.tar.gz --markdown 20240406/k/kindle2pdf/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-06 23:14:06] INFO root fetch - processPackages [kindle2pdf]: Remove: archive file [/home/abi/fetcher/tmp/kindle2pdf-0.1.2.tar.gz]
+[2024-04-06 23:14:06] INFO root fetch - processPackages [kindle2pdf]: Remove: archive file [/home/abi/fetcher/tmp/kindle2pdf-0.1.3.tar.gz]
+[2024-04-06 23:14:06] INFO root fetch - main [MainThread]: End processing [kindle2pdf]: success
+[2024-04-06 23:14:06] INFO root fetch - main [MainThread]: Store serial: [22651214]
