@@ -15777,3 +15777,20 @@ EOFError: EOF read where object expected
 [2024-04-06 14:24:31] INFO root fetch - processPackages [skytemple-files]: Remove: archive file [/home/abi/fetcher/tmp/skytemple_files-1.6.6-py3-none-any.whl.zip]
 [2024-04-06 14:24:31] INFO root fetch - main [MainThread]: End processing [skytemple-files]: success
 [2024-04-06 14:24:31] INFO root fetch - main [MainThread]: Store serial: [22647795]
+[2024-04-06 14:26:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647795]
+[2024-04-06 14:26:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 14:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-theme-css-loader
+[2024-04-06 14:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydmt
+[2024-04-06 14:26:40] WARNING root fetch - processPackages [django-theme-css-loader]: Skipping, unable to determine old version
+[2024-04-06 14:26:40] INFO root fetch - main [MainThread]: End processing [django-theme-css-loader] error
+[2024-04-06 14:26:40] INFO root fetch - processPackages [pydmt]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-06 14:26:40] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/60/b3/2021406892f6e144c4a1b7f4ed6693d9682cebdba242b8aaf150d298180c/pydmt-0.3.5.tar.gz
+[2024-04-06 14:26:40] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:26:41] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/e5/58/40f0c8ea02d889b473900a9dc236e71d2a4e442c7646736d7a43a0db1087/pydmt-0.3.6.tar.gz
+[2024-04-06 14:26:41] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:26:41] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2024-04-06 14:26:41] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.3.5.tar.gz tmp/pydmt-0.3.6.tar.gz --markdown 20240406/p/pydmt/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-06 14:26:41] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.5.tar.gz]
+[2024-04-06 14:26:41] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.6.tar.gz]
+[2024-04-06 14:26:41] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2024-04-06 14:26:41] INFO root fetch - main [MainThread]: Store serial: [22647801]
