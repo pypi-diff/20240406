@@ -7239,3 +7239,19 @@
 [2024-04-06 03:18:51] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.5.5.tar.gz]
 [2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [abses]: success
 [2024-04-06 03:18:51] INFO root fetch - main [MainThread]: Store serial: [22644423]
+[2024-04-06 03:20:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644423]
+[2024-04-06 03:21:00] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 03:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644490]
+[2024-04-06 03:23:06] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 03:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: HGQ
+[2024-04-06 03:23:06] INFO root fetch - processPackages [HGQ]: New version: [0.2.0rc1] Old Version: [0.2.0b2]
+[2024-04-06 03:23:06] INFO root fetch - processPackages [HGQ]: Downloading https://files.pythonhosted.org/packages/c6/6b/ab157e2d33beae6047ad91316b48c44acdc317ca0f3400a0ffa9ed736ecb/HGQ-0.2.0b2.tar.gz
+[2024-04-06 03:23:06] WARNING root fetch - processPackages [HGQ]: Timeout reached during download
+[2024-04-06 03:23:07] INFO root fetch - processPackages [HGQ]: Downloading https://files.pythonhosted.org/packages/3b/17/36ddfc7d5bce1edfd335f4190f3f880448db267e1d033d8c08d89c55e12a/HGQ-0.2.0rc1.tar.gz
+[2024-04-06 03:23:07] WARNING root fetch - processPackages [HGQ]: Timeout reached during download
+[2024-04-06 03:23:07] INFO root fetch - processPackages [HGQ]: executing diffoscope
+[2024-04-06 03:23:07] INFO root fetch - processPackages [HGQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/HGQ-0.2.0b2.tar.gz tmp/HGQ-0.2.0rc1.tar.gz --markdown 20240406/H/HGQ/0.2.0b2-0.2.0rc1/diff.md --exclude *.pyd
+[2024-04-06 03:23:08] INFO root fetch - processPackages [HGQ]: Remove: archive file [/home/abi/fetcher/tmp/HGQ-0.2.0b2.tar.gz]
+[2024-04-06 03:23:08] INFO root fetch - processPackages [HGQ]: Remove: archive file [/home/abi/fetcher/tmp/HGQ-0.2.0rc1.tar.gz]
+[2024-04-06 03:23:08] INFO root fetch - main [MainThread]: End processing [HGQ]: success
+[2024-04-06 03:23:08] INFO root fetch - main [MainThread]: Store serial: [22644553]
