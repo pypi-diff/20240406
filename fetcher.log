@@ -8445,3 +8445,23 @@
 [2024-04-06 05:03:17] INFO root fetch - processPackages [scullery]: Remove: archive file [/home/abi/fetcher/tmp/scullery-0.1.9.tar.gz]
 [2024-04-06 05:03:17] INFO root fetch - main [MainThread]: End processing [scullery]: success
 [2024-04-06 05:03:17] INFO root fetch - main [MainThread]: Store serial: [22645107]
+[2024-04-06 05:05:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645107]
+[2024-04-06 05:05:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 05:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyrix86b
+[2024-04-06 05:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-rahavard
+[2024-04-06 05:05:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: test-upload-to-pypi-project1
+[2024-04-06 05:05:25] WARNING root fetch - processPackages [cyrix86b]: Skipping, unable to determine old version
+[2024-04-06 05:05:25] WARNING root fetch - processPackages [test-upload-to-pypi-project1]: Skipping, unable to determine old version
+[2024-04-06 05:05:25] INFO root fetch - main [MainThread]: End processing [cyrix86b] error
+[2024-04-06 05:05:25] INFO root fetch - processPackages [django-rahavard]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-06 05:05:25] INFO root fetch - main [MainThread]: End processing [test-upload-to-pypi-project1] error
+[2024-04-06 05:05:26] INFO root fetch - processPackages [django-rahavard]: Downloading https://files.pythonhosted.org/packages/59/4a/f0157537ba0e3228723b85f1cca373c332b0a01bae764e8cfd2fd62a0b9b/django-rahavard-0.0.16.tar.gz
+[2024-04-06 05:05:26] WARNING root fetch - processPackages [django-rahavard]: Timeout reached during download
+[2024-04-06 05:05:26] INFO root fetch - processPackages [django-rahavard]: Downloading https://files.pythonhosted.org/packages/64/78/039d86bdcc0eb54ff4631c3fa46ab4c79c7187b318a0a905040bc8dc1dd3/django-rahavard-0.0.17.tar.gz
+[2024-04-06 05:05:26] WARNING root fetch - processPackages [django-rahavard]: Timeout reached during download
+[2024-04-06 05:05:26] INFO root fetch - processPackages [django-rahavard]: executing diffoscope
+[2024-04-06 05:05:26] INFO root fetch - processPackages [django-rahavard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-rahavard-0.0.16.tar.gz tmp/django-rahavard-0.0.17.tar.gz --markdown 20240406/d/django-rahavard/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2024-04-06 05:05:26] INFO root fetch - processPackages [django-rahavard]: Remove: archive file [/home/abi/fetcher/tmp/django-rahavard-0.0.16.tar.gz]
+[2024-04-06 05:05:26] INFO root fetch - processPackages [django-rahavard]: Remove: archive file [/home/abi/fetcher/tmp/django-rahavard-0.0.17.tar.gz]
+[2024-04-06 05:05:26] INFO root fetch - main [MainThread]: End processing [django-rahavard]: success
+[2024-04-06 05:05:26] INFO root fetch - main [MainThread]: Store serial: [22645119]
