@@ -21382,3 +21382,50 @@ EOFError: EOF read where object expected
 [2024-04-06 20:04:41] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
 [2024-04-06 20:04:41] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
 [2024-04-06 20:04:41] INFO root fetch - main [MainThread]: Store serial: [22649966]
+[2024-04-06 20:06:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649966]
+[2024-04-06 20:06:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 20:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yet-another-json-config
+[2024-04-06 20:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sprocketship
+[2024-04-06 20:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weight-training-tracker
+[2024-04-06 20:06:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aicscytoparam
+[2024-04-06 20:06:50] INFO root fetch - processPackages [sprocketship]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 20:06:50] INFO root fetch - processPackages [weight-training-tracker]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 20:06:50] INFO root fetch - processPackages [yet-another-json-config]: New version: [1.0.0] Old Version: [0.0.4]
+[2024-04-06 20:06:50] INFO root fetch - processPackages [aicscytoparam]: New version: [0.1.9] Old Version: [0.1.6]
+[2024-04-06 20:06:50] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/66/3c/702d57e028413ec74683f0e7b8ec1e8cb6a44fe5b50245f2e479d1d4ceee/sprocketship-0.1.0.tar.gz
+[2024-04-06 20:06:50] INFO root fetch - processPackages [weight-training-tracker]: Downloading https://files.pythonhosted.org/packages/cd/aa/c38f33930c86850366b55421f41626063905c2fe2c8f17bc2775f40065e1/weight_training_tracker-0.8.0.tar.gz
+[2024-04-06 20:06:50] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 20:06:50] INFO root fetch - processPackages [yet-another-json-config]: Downloading https://files.pythonhosted.org/packages/fd/c6/a5a3dc23d1af0496d3e50bcaddb101ef029c90ad741ef9a788a4ee842ffc/yet-another-json-config-0.0.4.tar.gz
+[2024-04-06 20:06:50] INFO root fetch - processPackages [aicscytoparam]: Downloading https://files.pythonhosted.org/packages/2f/db/d4335df0fa67c8f0448043c60ae2b1ebf00b20a70ff02383bb6d2259734b/aicscytoparam-0.1.6.tar.gz
+[2024-04-06 20:06:50] WARNING root fetch - processPackages [weight-training-tracker]: Timeout reached during download
+[2024-04-06 20:06:51] INFO root fetch - processPackages [weight-training-tracker]: Downloading https://files.pythonhosted.org/packages/58/f6/886d8555f118679f1a90a58f2aba160c8ebfa8b00157c0a2b157a947d0da/weight_training_tracker-0.9.0.tar.gz
+[2024-04-06 20:06:51] WARNING root fetch - processPackages [aicscytoparam]: Timeout reached during download
+[2024-04-06 20:06:51] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/a2/b9/cfc993ddba991738337815d9480edcc2fcd4ecba9e2190eb23410db2020f/sprocketship-0.1.1.tar.gz
+[2024-04-06 20:06:51] WARNING root fetch - processPackages [yet-another-json-config]: Timeout reached during download
+[2024-04-06 20:06:51] WARNING root fetch - processPackages [weight-training-tracker]: Timeout reached during download
+[2024-04-06 20:06:51] INFO root fetch - processPackages [weight-training-tracker]: executing diffoscope
+[2024-04-06 20:06:51] INFO root fetch - processPackages [weight-training-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weight_training_tracker-0.8.0.tar.gz tmp/weight_training_tracker-0.9.0.tar.gz --markdown 20240406/w/weight-training-tracker/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 20:06:51] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 20:06:51] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 20:06:51] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.1.0.tar.gz tmp/sprocketship-0.1.1.tar.gz --markdown 20240406/s/sprocketship/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 20:06:51] INFO root fetch - processPackages [aicscytoparam]: Downloading https://files.pythonhosted.org/packages/29/fb/3cf376c35ed6cac323128fe192db086d44aa0c9305e91596c8da8109bb47/aicscytoparam-0.1.9.tar.gz
+[2024-04-06 20:06:51] INFO root fetch - processPackages [yet-another-json-config]: Downloading https://files.pythonhosted.org/packages/df/b9/9723bd11fd1a74bb55edf15f7bba6da04912aa0bc5c620fcc1128da3a72a/yet-another-json-config-1.0.0.tar.gz
+[2024-04-06 20:06:51] WARNING root fetch - processPackages [aicscytoparam]: Timeout reached during download
+[2024-04-06 20:06:51] INFO root fetch - processPackages [aicscytoparam]: executing diffoscope
+[2024-04-06 20:06:51] INFO root fetch - processPackages [aicscytoparam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicscytoparam-0.1.6.tar.gz tmp/aicscytoparam-0.1.9.tar.gz --markdown 20240406/a/aicscytoparam/0.1.6-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 20:06:51] WARNING root fetch - processPackages [yet-another-json-config]: Timeout reached during download
+[2024-04-06 20:06:51] INFO root fetch - processPackages [yet-another-json-config]: executing diffoscope
+[2024-04-06 20:06:51] INFO root fetch - processPackages [yet-another-json-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yet-another-json-config-0.0.4.tar.gz tmp/yet-another-json-config-1.0.0.tar.gz --markdown 20240406/y/yet-another-json-config/0.0.4-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 20:06:51] INFO root fetch - processPackages [weight-training-tracker]: Remove: archive file [/home/abi/fetcher/tmp/weight_training_tracker-0.8.0.tar.gz]
+[2024-04-06 20:06:51] INFO root fetch - processPackages [weight-training-tracker]: Remove: archive file [/home/abi/fetcher/tmp/weight_training_tracker-0.9.0.tar.gz]
+[2024-04-06 20:06:51] INFO root fetch - main [MainThread]: End processing [weight-training-tracker]: success
+[2024-04-06 20:06:51] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.0.tar.gz]
+[2024-04-06 20:06:51] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.1.tar.gz]
+[2024-04-06 20:06:51] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 20:06:51] INFO root fetch - processPackages [yet-another-json-config]: Remove: archive file [/home/abi/fetcher/tmp/yet-another-json-config-0.0.4.tar.gz]
+[2024-04-06 20:06:51] INFO root fetch - processPackages [yet-another-json-config]: Remove: archive file [/home/abi/fetcher/tmp/yet-another-json-config-1.0.0.tar.gz]
+[2024-04-06 20:06:51] INFO root fetch - main [MainThread]: End processing [yet-another-json-config]: success
+[2024-04-06 20:06:52] INFO root fetch - processPackages [aicscytoparam]: Remove: archive file [/home/abi/fetcher/tmp/aicscytoparam-0.1.6.tar.gz]
+[2024-04-06 20:06:52] INFO root fetch - processPackages [aicscytoparam]: Remove: archive file [/home/abi/fetcher/tmp/aicscytoparam-0.1.9.tar.gz]
+[2024-04-06 20:06:52] INFO root fetch - main [MainThread]: End processing [aicscytoparam]: success
+[2024-04-06 20:06:52] INFO root fetch - main [MainThread]: Store serial: [22649978]
