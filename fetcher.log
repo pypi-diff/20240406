@@ -25299,3 +25299,28 @@ EOFError: EOF read where object expected
 [2024-04-06 23:46:42] INFO root fetch - processPackages [PhysioKit2]: Remove: archive file [/home/abi/fetcher/tmp/PhysioKit2-1.8.8.tar.gz]
 [2024-04-06 23:46:42] INFO root fetch - main [MainThread]: End processing [PhysioKit2]: success
 [2024-04-06 23:46:42] INFO root fetch - main [MainThread]: Store serial: [22651376]
+[2024-04-06 23:48:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651376]
+[2024-04-06 23:48:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 23:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphistry
+[2024-04-06 23:48:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linuxnet-iptables
+[2024-04-06 23:48:51] INFO root fetch - processPackages [graphistry]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 23:48:51] INFO root fetch - processPackages [linuxnet-iptables]: New version: [7.0.3] Old Version: [7.0.0]
+[2024-04-06 23:48:51] INFO root fetch - processPackages [graphistry]: Downloading https://files.pythonhosted.org/packages/ab/7f/7620662045f10e9ac7253f7ff6549ca63979fc192d5e9e43fe6267eb1d02/graphistry-0.9.8.tar.gz
+[2024-04-06 23:48:52] WARNING root fetch - processPackages [graphistry]: Timeout reached during download
+[2024-04-06 23:48:52] INFO root fetch - processPackages [linuxnet-iptables]: Downloading https://files.pythonhosted.org/packages/9f/38/f6f7878e2fc676dd8034ea95591dc65b9651e64ca8b7be923de12a713fec/linuxnet-iptables-7.0.0.tar.gz
+[2024-04-06 23:48:52] INFO root fetch - processPackages [graphistry]: Downloading https://files.pythonhosted.org/packages/46/f5/6c3813ac8351a438fe2a39d4a797c716dfabee8a96bb8237f10df87bb319/graphistry-0.9.9.tar.gz
+[2024-04-06 23:48:52] WARNING root fetch - processPackages [linuxnet-iptables]: Timeout reached during download
+[2024-04-06 23:48:52] WARNING root fetch - processPackages [graphistry]: Timeout reached during download
+[2024-04-06 23:48:52] INFO root fetch - processPackages [graphistry]: executing diffoscope
+[2024-04-06 23:48:52] INFO root fetch - processPackages [graphistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphistry-0.9.8.tar.gz tmp/graphistry-0.9.9.tar.gz --markdown 20240406/g/graphistry/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 23:48:52] INFO root fetch - processPackages [linuxnet-iptables]: Downloading https://files.pythonhosted.org/packages/a4/a9/ecb2ab65dba5c1835f03a669177172c824e9c3112410364281a79fccfbdd/linuxnet-iptables-7.0.3.tar.gz
+[2024-04-06 23:48:52] WARNING root fetch - processPackages [linuxnet-iptables]: Timeout reached during download
+[2024-04-06 23:48:52] INFO root fetch - processPackages [linuxnet-iptables]: executing diffoscope
+[2024-04-06 23:48:52] INFO root fetch - processPackages [linuxnet-iptables]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linuxnet-iptables-7.0.0.tar.gz tmp/linuxnet-iptables-7.0.3.tar.gz --markdown 20240406/l/linuxnet-iptables/7.0.0-7.0.3/diff.md --exclude *.pyd
+[2024-04-06 23:48:52] INFO root fetch - processPackages [graphistry]: Remove: archive file [/home/abi/fetcher/tmp/graphistry-0.9.8.tar.gz]
+[2024-04-06 23:48:52] INFO root fetch - processPackages [graphistry]: Remove: archive file [/home/abi/fetcher/tmp/graphistry-0.9.9.tar.gz]
+[2024-04-06 23:48:52] INFO root fetch - main [MainThread]: End processing [graphistry]: success
+[2024-04-06 23:48:53] INFO root fetch - processPackages [linuxnet-iptables]: Remove: archive file [/home/abi/fetcher/tmp/linuxnet-iptables-7.0.0.tar.gz]
+[2024-04-06 23:48:53] INFO root fetch - processPackages [linuxnet-iptables]: Remove: archive file [/home/abi/fetcher/tmp/linuxnet-iptables-7.0.3.tar.gz]
+[2024-04-06 23:48:53] INFO root fetch - main [MainThread]: End processing [linuxnet-iptables]: success
+[2024-04-06 23:48:53] INFO root fetch - main [MainThread]: Store serial: [22651382]
