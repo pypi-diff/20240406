@@ -10829,3 +10829,39 @@
 [2024-04-06 08:04:48] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_stock_logistics_barcode-14.0.20240405.0-py3-none-any.whl.zip]
 [2024-04-06 08:04:48] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-stock-logistics-barcode]: success
 [2024-04-06 08:04:48] INFO root fetch - main [MainThread]: Store serial: [22645966]
+[2024-04-06 08:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645966]
+[2024-04-06 08:06:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 08:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yaml-to-markdown
+[2024-04-06 08:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leads
+[2024-04-06 08:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyrest
+[2024-04-06 08:06:56] INFO root fetch - processPackages [yaml-to-markdown]: New version: [0.1.1712382686] Old Version: [0.1.1712381225]
+[2024-04-06 08:06:56] INFO root fetch - processPackages [yaml-to-markdown]: Downloading https://files.pythonhosted.org/packages/f1/ca/fcc07e3a686b3b98df27f98ec95ea140da3d7b3191eed7f6d20b26611eec/yaml-to-markdown-0.1.1712381225.tar.gz
+[2024-04-06 08:06:56] INFO root fetch - processPackages [jupyrest]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-06 08:06:56] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-06 08:06:56] WARNING root fetch - processPackages [yaml-to-markdown]: Timeout reached during download
+[2024-04-06 08:06:56] INFO root fetch - processPackages [jupyrest]: Downloading https://files.pythonhosted.org/packages/17/ac/17605511fe54348e8aea3243b20d36a4c9e414da1d3d554bef5c4cf8b994/jupyrest-0.1.0.tar.gz
+[2024-04-06 08:06:56] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-04-06 08:06:56] INFO root fetch - processPackages [yaml-to-markdown]: Downloading https://files.pythonhosted.org/packages/34/d5/0c4cbb8400ecfe5de2f0d7493bcf6ff74c86ae93c1add8c4aa7e30f11891/yaml-to-markdown-0.1.1712382686.tar.gz
+[2024-04-06 08:06:57] WARNING root fetch - processPackages [jupyrest]: Timeout reached during download
+[2024-04-06 08:06:57] WARNING root fetch - processPackages [yaml-to-markdown]: Timeout reached during download
+[2024-04-06 08:06:57] INFO root fetch - processPackages [yaml-to-markdown]: executing diffoscope
+[2024-04-06 08:06:57] INFO root fetch - processPackages [yaml-to-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yaml-to-markdown-0.1.1712381225.tar.gz tmp/yaml-to-markdown-0.1.1712382686.tar.gz --markdown 20240406/y/yaml-to-markdown/0.1.1712381225-0.1.1712382686/diff.md --exclude *.pyd
+[2024-04-06 08:06:57] WARNING root fetch - processPackages [leads]: Timeout reached during download
+[2024-04-06 08:06:57] INFO root fetch - processPackages [jupyrest]: Downloading https://files.pythonhosted.org/packages/eb/2e/f5e160218e81c5d4a22caad877f8798c8b1a45a1ffb6844473427036a600/jupyrest-0.2.0.tar.gz
+[2024-04-06 08:06:57] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-04-06 08:06:57] WARNING root fetch - processPackages [jupyrest]: Timeout reached during download
+[2024-04-06 08:06:57] INFO root fetch - processPackages [jupyrest]: executing diffoscope
+[2024-04-06 08:06:57] INFO root fetch - processPackages [jupyrest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyrest-0.1.0.tar.gz tmp/jupyrest-0.2.0.tar.gz --markdown 20240406/j/jupyrest/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 08:06:57] WARNING root fetch - processPackages [leads]: Timeout reached during download
+[2024-04-06 08:06:57] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-04-06 08:06:57] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240406/l/leads/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2024-04-06 08:06:57] INFO root fetch - processPackages [yaml-to-markdown]: Remove: archive file [/home/abi/fetcher/tmp/yaml-to-markdown-0.1.1712381225.tar.gz]
+[2024-04-06 08:06:57] INFO root fetch - processPackages [yaml-to-markdown]: Remove: archive file [/home/abi/fetcher/tmp/yaml-to-markdown-0.1.1712382686.tar.gz]
+[2024-04-06 08:06:57] INFO root fetch - main [MainThread]: End processing [yaml-to-markdown]: success
+[2024-04-06 08:06:57] INFO root fetch - processPackages [jupyrest]: Remove: archive file [/home/abi/fetcher/tmp/jupyrest-0.1.0.tar.gz]
+[2024-04-06 08:06:57] INFO root fetch - processPackages [jupyrest]: Remove: archive file [/home/abi/fetcher/tmp/jupyrest-0.2.0.tar.gz]
+[2024-04-06 08:06:57] INFO root fetch - main [MainThread]: End processing [jupyrest]: success
+[2024-04-06 08:06:58] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-04-06 08:06:58] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-04-06 08:06:58] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-04-06 08:06:58] INFO root fetch - main [MainThread]: Store serial: [22645975]
