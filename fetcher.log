@@ -7730,3 +7730,97 @@
 [2024-04-06 04:13:18] INFO root fetch - processPackages [tko]: Remove: archive file [/home/abi/fetcher/tmp/tko-0.3.7.tar.gz]
 [2024-04-06 04:13:18] INFO root fetch - main [MainThread]: End processing [tko]: success
 [2024-04-06 04:13:18] INFO root fetch - main [MainThread]: Store serial: [22644884]
+[2024-04-06 04:15:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644884]
+[2024-04-06 04:15:26] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: types-docutils
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: types-Pillow
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: types-python-xlib
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: types-fpdf2
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: types-PyScreeze
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: types-requests
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: types-PyAutoGUI
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cpymake
+[2024-04-06 04:15:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: RelaDB
+[2024-04-06 04:15:26] INFO root fetch - processPackages [cpymake]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 04:15:26] INFO root fetch - processPackages [types-requests]: New version: [2.31.0.9] Old Version: [2.31.0.8]
+[2024-04-06 04:15:26] INFO root fetch - processPackages [types-docutils]: New version: [0.20.0.3] Old Version: [0.20.0.20240406]
+[2024-04-06 04:15:26] INFO root fetch - processPackages [types-python-xlib]: New version: [0.33.0.9] Old Version: [0.33.0.8]
+[2024-04-06 04:15:26] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/f4/8f/0a2f05c1c09e44be58f50fa6f83b58e451a9c4784358b8a4170b501585b3/cpymake-0.1.0.tar.gz
+[2024-04-06 04:15:26] INFO root fetch - processPackages [types-PyAutoGUI]: New version: [0.9.3.8] Old Version: [0.9.3.7]
+[2024-04-06 04:15:26] WARNING root fetch - processPackages [RelaDB]: Skipping, unable to determine old version
+[2024-04-06 04:15:26] INFO root fetch - main [MainThread]: End processing [RelaDB] error
+[2024-04-06 04:15:26] INFO root fetch - processPackages [types-PyScreeze]: New version: [0.1.30.20240406] Old Version: [0.1.30.20240313]
+[2024-04-06 04:15:26] INFO root fetch - processPackages [types-fpdf2]: New version: [2.7.8.20240406] Old Version: [2.7.8.20240331]
+[2024-04-06 04:15:26] INFO root fetch - processPackages [types-Pillow]: New version: [9.5.0.6] Old Version: [9.5.0.5]
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-fpdf2]: Downloading https://files.pythonhosted.org/packages/d2/4e/9b581d95d88899f074e7efbe2c0473319f60d33e1a2b6caf845642c0b1b1/types-fpdf2-2.7.8.20240331.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-docutils]: Downloading https://files.pythonhosted.org/packages/03/2d/1eaa21bdb976db924ce458323bf2d21d82b4c95599080f61c181961764d1/types-docutils-0.20.0.20240406.tar.gz
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-requests]: Downloading https://files.pythonhosted.org/packages/db/8b/2e5f939a1851935096fe8ab0fb949a19072a445da9b6a9ed436c1db53300/types-requests-2.31.0.8.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyAutoGUI]: Downloading https://files.pythonhosted.org/packages/43/83/9f416019606581d571deff3c83e81eaf8f8037e479a77ec87deee29e098d/types-PyAutoGUI-0.9.3.7.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-python-xlib]: Downloading https://files.pythonhosted.org/packages/cd/73/4ff60477f78be027e6ae7f50ccc186a9d89ebb2c659f223bc991dade3dfc/types-python-xlib-0.33.0.8.tar.gz
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-fpdf2]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyScreeze]: Downloading https://files.pythonhosted.org/packages/c6/c8/be8a3de3fe36ec54b256f7cad101a0695446f3695cbd6b087dc1746d0d1f/types-PyScreeze-0.1.30.20240313.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-Pillow]: Downloading https://files.pythonhosted.org/packages/fe/b4/ffa2908d4b69a4cb983289fdf30cb11ca33bee293012fc663529fcba7615/types-Pillow-9.5.0.5.tar.gz
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-docutils]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/d4/13/c7cf1d8b996af1a9263feba26895b3fc30a118a1a999e0f06a280ea10653/cpymake-0.1.1.tar.gz
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-requests]: Timeout reached during download
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-PyAutoGUI]: Timeout reached during download
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-python-xlib]: Timeout reached during download
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-Pillow]: Timeout reached during download
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-PyScreeze]: Timeout reached during download
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [cpymake]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [cpymake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpymake-0.1.0.tar.gz tmp/cpymake-0.1.1.tar.gz --markdown 20240406/c/cpymake/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-fpdf2]: Downloading https://files.pythonhosted.org/packages/42/29/07a1da46755dbe97918e047bc69b1ea4c05fd225b1b421741eb7b048beeb/types-fpdf2-2.7.8.20240406.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-docutils]: Downloading https://files.pythonhosted.org/packages/40/b9/472176552e479aa7d5ce005007faece47bc42444263ea6adc2388fd303f8/types-docutils-0.20.0.3.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-requests]: Downloading https://files.pythonhosted.org/packages/a0/d4/0f39c44150f7301b7dcafb2a9e7be02105da871b8e5286041c1096b258b6/types-requests-2.31.0.9.tar.gz
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-fpdf2]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-fpdf2]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-fpdf2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-fpdf2-2.7.8.20240331.tar.gz tmp/types-fpdf2-2.7.8.20240406.tar.gz --markdown 20240406/t/types-fpdf2/2.7.8.20240331-2.7.8.20240406/diff.md --exclude *.pyd
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyAutoGUI]: Downloading https://files.pythonhosted.org/packages/ff/54/13c62b27be43f09e9021bc3dfaef0f28708d148a101ed0046486aa30b9bf/types-PyAutoGUI-0.9.3.8.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-Pillow]: Downloading https://files.pythonhosted.org/packages/2d/78/d71281c253ba82f7630f5fabef175ea2f19556f2d1004eecae276e71bc75/types-Pillow-9.5.0.6.tar.gz
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-python-xlib]: Downloading https://files.pythonhosted.org/packages/95/86/eb775af9c0557bbb4242c7a6f9b5a3ef5eb6d4cbfa5c9fd6611d9145186a/types-python-xlib-0.33.0.9.tar.gz
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-docutils]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-docutils]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-docutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-docutils-0.20.0.20240406.tar.gz tmp/types-docutils-0.20.0.3.tar.gz --markdown 20240406/t/types-docutils/0.20.0.20240406-0.20.0.3/diff.md --exclude *.pyd
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyScreeze]: Downloading https://files.pythonhosted.org/packages/3a/5a/3f1f35a6eba9d320e9f179049d80389f30aee5f01a00db664bff33406940/types-PyScreeze-0.1.30.20240406.tar.gz
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-requests]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-requests]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-requests-2.31.0.8.tar.gz tmp/types-requests-2.31.0.9.tar.gz --markdown 20240406/t/types-requests/2.31.0.8-2.31.0.9/diff.md --exclude *.pyd
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-PyAutoGUI]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyAutoGUI]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyAutoGUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-PyAutoGUI-0.9.3.7.tar.gz tmp/types-PyAutoGUI-0.9.3.8.tar.gz --markdown 20240406/t/types-PyAutoGUI/0.9.3.7-0.9.3.8/diff.md --exclude *.pyd
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-Pillow]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-Pillow]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-Pillow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-Pillow-9.5.0.5.tar.gz tmp/types-Pillow-9.5.0.6.tar.gz --markdown 20240406/t/types-Pillow/9.5.0.5-9.5.0.6/diff.md --exclude *.pyd
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-PyScreeze]: Timeout reached during download
+[2024-04-06 04:15:27] WARNING root fetch - processPackages [types-python-xlib]: Timeout reached during download
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-python-xlib]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyScreeze]: executing diffoscope
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-python-xlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-python-xlib-0.33.0.8.tar.gz tmp/types-python-xlib-0.33.0.9.tar.gz --markdown 20240406/t/types-python-xlib/0.33.0.8-0.33.0.9/diff.md --exclude *.pyd
+[2024-04-06 04:15:27] INFO root fetch - processPackages [types-PyScreeze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-PyScreeze-0.1.30.20240313.tar.gz tmp/types-PyScreeze-0.1.30.20240406.tar.gz --markdown 20240406/t/types-PyScreeze/0.1.30.20240313-0.1.30.20240406/diff.md --exclude *.pyd
+[2024-04-06 04:15:28] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.0.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.1.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [cpymake]: success
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-docutils]: Remove: archive file [/home/abi/fetcher/tmp/types-docutils-0.20.0.20240406.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-docutils]: Remove: archive file [/home/abi/fetcher/tmp/types-docutils-0.20.0.3.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-docutils]: success
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-fpdf2]: Remove: archive file [/home/abi/fetcher/tmp/types-fpdf2-2.7.8.20240331.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-fpdf2]: Remove: archive file [/home/abi/fetcher/tmp/types-fpdf2-2.7.8.20240406.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-fpdf2]: success
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-PyAutoGUI]: Remove: archive file [/home/abi/fetcher/tmp/types-PyAutoGUI-0.9.3.7.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-PyAutoGUI]: Remove: archive file [/home/abi/fetcher/tmp/types-PyAutoGUI-0.9.3.8.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-PyAutoGUI]: success
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-requests]: Remove: archive file [/home/abi/fetcher/tmp/types-requests-2.31.0.8.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-requests]: Remove: archive file [/home/abi/fetcher/tmp/types-requests-2.31.0.9.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-requests]: success
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-Pillow]: Remove: archive file [/home/abi/fetcher/tmp/types-Pillow-9.5.0.5.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-Pillow]: Remove: archive file [/home/abi/fetcher/tmp/types-Pillow-9.5.0.6.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-Pillow]: success
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-python-xlib]: Remove: archive file [/home/abi/fetcher/tmp/types-python-xlib-0.33.0.8.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-python-xlib]: Remove: archive file [/home/abi/fetcher/tmp/types-python-xlib-0.33.0.9.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-python-xlib]: success
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-PyScreeze]: Remove: archive file [/home/abi/fetcher/tmp/types-PyScreeze-0.1.30.20240313.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - processPackages [types-PyScreeze]: Remove: archive file [/home/abi/fetcher/tmp/types-PyScreeze-0.1.30.20240406.tar.gz]
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-PyScreeze]: success
+[2024-04-06 04:15:28] INFO root fetch - main [MainThread]: Store serial: [22644911]
