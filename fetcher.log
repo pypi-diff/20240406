@@ -13122,3 +13122,17 @@
 [2024-04-06 11:15:50] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-06 11:15:51] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-04-06 11:15:51] INFO root fetch - main [MainThread]: Store serial: [22646998]
+[2024-04-06 11:17:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646998]
+[2024-04-06 11:17:59] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 11:17:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nodoc
+[2024-04-06 11:17:59] INFO root fetch - processPackages [nodoc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 11:17:59] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/4c/d1/8b9aa7fc6079375d39e4c528d339a014438130e763c7270344c15002a321/nodoc-1.0.8.tar.gz
+[2024-04-06 11:17:59] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:17:59] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/c3/01/365275f65437bdcd49fb8054d4dd45304b5a0f8ee40ef9cdaf3d0fa5ad12/nodoc-1.0.9.tar.gz
+[2024-04-06 11:17:59] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:17:59] INFO root fetch - processPackages [nodoc]: executing diffoscope
+[2024-04-06 11:17:59] INFO root fetch - processPackages [nodoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodoc-1.0.8.tar.gz tmp/nodoc-1.0.9.tar.gz --markdown 20240406/n/nodoc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:18:00] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.8.tar.gz]
+[2024-04-06 11:18:00] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.9.tar.gz]
+[2024-04-06 11:18:00] INFO root fetch - main [MainThread]: End processing [nodoc]: success
+[2024-04-06 11:18:00] INFO root fetch - main [MainThread]: Store serial: [22647002]
