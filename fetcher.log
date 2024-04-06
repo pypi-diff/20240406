@@ -20758,3 +20758,20 @@ EOFError: EOF read where object expected
 [2024-04-06 19:27:46] INFO root fetch - processPackages [vyper]: Remove: archive file [/home/abi/fetcher/tmp/vyper-0.4.0b6.tar.gz]
 [2024-04-06 19:27:46] INFO root fetch - main [MainThread]: End processing [vyper]: success
 [2024-04-06 19:27:46] INFO root fetch - main [MainThread]: Store serial: [22649723]
+[2024-04-06 19:29:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649723]
+[2024-04-06 19:29:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 19:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: detect-advisor
+[2024-04-06 19:29:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-intra
+[2024-04-06 19:29:55] INFO root fetch - processPackages [django-intra]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 19:29:55] INFO root fetch - processPackages [django-intra]: Downloading https://files.pythonhosted.org/packages/d3/43/a3bf345dc323aeae015606f93027cb0e726e0aa7d268163d514bb5a4a4e5/django-intra-0.1.0.tar.gz
+[2024-04-06 19:29:55] WARNING root fetch - processPackages [detect-advisor]: Skipping, unable to determine old version
+[2024-04-06 19:29:55] INFO root fetch - main [MainThread]: End processing [detect-advisor] error
+[2024-04-06 19:29:55] WARNING root fetch - processPackages [django-intra]: Timeout reached during download
+[2024-04-06 19:29:55] INFO root fetch - processPackages [django-intra]: Downloading https://files.pythonhosted.org/packages/80/a8/dca0c9893c5ef19a161fc2d3a9b460a937768af4d9c0ce4ad737e0aaf65f/django-intra-0.1.1.tar.gz
+[2024-04-06 19:29:56] WARNING root fetch - processPackages [django-intra]: Timeout reached during download
+[2024-04-06 19:29:56] INFO root fetch - processPackages [django-intra]: executing diffoscope
+[2024-04-06 19:29:56] INFO root fetch - processPackages [django-intra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-intra-0.1.0.tar.gz tmp/django-intra-0.1.1.tar.gz --markdown 20240406/d/django-intra/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 19:29:56] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.1.0.tar.gz]
+[2024-04-06 19:29:56] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.1.1.tar.gz]
+[2024-04-06 19:29:56] INFO root fetch - main [MainThread]: End processing [django-intra]: success
+[2024-04-06 19:29:56] INFO root fetch - main [MainThread]: Store serial: [22649731]
