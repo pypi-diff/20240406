@@ -21798,3 +21798,72 @@ EOFError: EOF read where object expected
 [2024-04-06 20:24:35] INFO root fetch - processPackages [libsbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/libsbmlnetwork-0.0.16-py3-none-macosx_14_0_arm64.whl.zip]
 [2024-04-06 20:24:35] INFO root fetch - main [MainThread]: End processing [libsbmlnetwork]: success
 [2024-04-06 20:24:35] INFO root fetch - main [MainThread]: Store serial: [22650083]
+[2024-04-06 20:26:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650083]
+[2024-04-06 20:26:44] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 20:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysteve
+[2024-04-06 20:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyutils
+[2024-04-06 20:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redivis
+[2024-04-06 20:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pre-commit-hooks
+[2024-04-06 20:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flatpack
+[2024-04-06 20:26:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: unicodedata-reader
+[2024-04-06 20:26:44] INFO root fetch - processPackages [pysteve]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 20:26:44] INFO root fetch - processPackages [unicodedata-reader]: New version: [1.0.0] Old Version: [0.2.0]
+[2024-04-06 20:26:44] INFO root fetch - processPackages [pysteve]: Downloading https://files.pythonhosted.org/packages/6f/7a/571ca573eedbe1e7c69eb7bde737ba7e2a660c8081e43eefb7931e918e3f/pysteve-0.0.8.tar.gz
+[2024-04-06 20:26:44] INFO root fetch - processPackages [redivis]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 20:26:44] INFO root fetch - processPackages [pyutils]: New version: [0.0.1b9] Old Version: [0.0.1b8]
+[2024-04-06 20:26:44] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/b3/5d/734ed64c27aa0f2dc6ed80fec9fe103a29ae25f1a94b3dbfbc459798c4f1/unicodedata_reader-0.2.0.tar.gz
+[2024-04-06 20:26:44] INFO root fetch - processPackages [pre-commit-hooks]: New version: [4.6.0] Old Version: [4.5.0]
+[2024-04-06 20:26:44] WARNING root fetch - processPackages [pysteve]: Timeout reached during download
+[2024-04-06 20:26:44] INFO root fetch - processPackages [redivis]: Downloading https://files.pythonhosted.org/packages/3d/83/fbeb47bc43c8d9c7b8608fd4c9ffb0993a894a6141f62a5031201ed2920b/redivis-0.9.0.tar.gz
+[2024-04-06 20:26:44] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 20:26:44] INFO root fetch - processPackages [flatpack]: New version: [3.2.9] Old Version: [3.2.8]
+[2024-04-06 20:26:44] INFO root fetch - processPackages [pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/19/13/d59329154e755f2431df505d58906f8378b9c6adae255cd85bb06c0e9ebd/pre_commit_hooks-4.5.0.tar.gz
+[2024-04-06 20:26:44] INFO root fetch - processPackages [pyutils]: Downloading https://files.pythonhosted.org/packages/27/50/3ae892a4bd4fcdaa42f4a04d9bd0076733357c659cf7c794bdc24883d3cf/pyutils-0.0.1b8-py3-none-any.whl
+[2024-04-06 20:26:44] INFO root fetch - processPackages [pysteve]: Downloading https://files.pythonhosted.org/packages/c0/36/a879bd18b5836d305472dea03823f05fc2acf4abd39485cf905bacddb55a/pysteve-0.0.9.tar.gz
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [pre-commit-hooks]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/24/d9/a8ed04dd5eeda3661b18f75139acd1f136405578e6de94b652c8704aeb80/unicodedata_reader-1.0.0.tar.gz
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [pysteve]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pysteve]: executing diffoscope
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pysteve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysteve-0.0.8.tar.gz tmp/pysteve-0.0.9.tar.gz --markdown 20240406/p/pysteve/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [pyutils]: Timeout reached during download
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [redivis]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/2e/9b/347dc13b4a801da0b7668f89949f20aff0026b16546a097b00fd21617aef/flatpack-3.2.8.tar.gz
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-06 20:26:45] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata_reader-0.2.0.tar.gz tmp/unicodedata_reader-1.0.0.tar.gz --markdown 20240406/u/unicodedata-reader/0.2.0-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/83/0d/b4e97cd99b26c0cd8265c9f19ee7e55248142f0c9955e4d119de96fa4a13/pre_commit_hooks-4.6.0.tar.gz
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pyutils]: Downloading https://files.pythonhosted.org/packages/c8/9a/0d17bafc8102fc91fad611435c794bf7de1fd2751d1710ad8a41f99a4da1/pyutils-0.0.1b9-py3-none-any.whl
+[2024-04-06 20:26:45] INFO root fetch - processPackages [redivis]: Downloading https://files.pythonhosted.org/packages/fc/b7/8e87aa3597067847f359d7f578b25dc23c16d87725161e60bf98df2b4289/redivis-0.9.1.tar.gz
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [pre-commit-hooks]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pre-commit-hooks]: executing diffoscope
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pre-commit-hooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pre_commit_hooks-4.5.0.tar.gz tmp/pre_commit_hooks-4.6.0.tar.gz --markdown 20240406/p/pre-commit-hooks/4.5.0-4.6.0/diff.md --exclude *.pyd
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [flatpack]: Timeout reached during download
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [pyutils]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pyutils]: executing diffoscope
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyutils-0.0.1b8-py3-none-any.whl.zip tmp/pyutils-0.0.1b9-py3-none-any.whl.zip --markdown 20240406/p/pyutils/0.0.1b8-0.0.1b9/diff.md --exclude *.pyd
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [redivis]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [redivis]: executing diffoscope
+[2024-04-06 20:26:45] INFO root fetch - processPackages [redivis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redivis-0.9.0.tar.gz tmp/redivis-0.9.1.tar.gz --markdown 20240406/r/redivis/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 20:26:45] INFO root fetch - processPackages [flatpack]: Downloading https://files.pythonhosted.org/packages/29/b7/893d96d2f54641fcee1ae67dd518bb9b07e93f3fb79715c6a81718363233/flatpack-3.2.9.tar.gz
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pysteve]: Remove: archive file [/home/abi/fetcher/tmp/pysteve-0.0.8.tar.gz]
+[2024-04-06 20:26:45] INFO root fetch - processPackages [pysteve]: Remove: archive file [/home/abi/fetcher/tmp/pysteve-0.0.9.tar.gz]
+[2024-04-06 20:26:45] INFO root fetch - main [MainThread]: End processing [pysteve]: success
+[2024-04-06 20:26:45] WARNING root fetch - processPackages [flatpack]: Timeout reached during download
+[2024-04-06 20:26:45] INFO root fetch - processPackages [flatpack]: executing diffoscope
+[2024-04-06 20:26:45] INFO root fetch - processPackages [flatpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flatpack-3.2.8.tar.gz tmp/flatpack-3.2.9.tar.gz --markdown 20240406/f/flatpack/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2024-04-06 20:26:45] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-0.2.0.tar.gz]
+[2024-04-06 20:26:45] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.0.0.tar.gz]
+[2024-04-06 20:26:45] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-06 20:26:46] INFO root fetch - processPackages [pre-commit-hooks]: Remove: archive file [/home/abi/fetcher/tmp/pre_commit_hooks-4.5.0.tar.gz]
+[2024-04-06 20:26:46] INFO root fetch - processPackages [pre-commit-hooks]: Remove: archive file [/home/abi/fetcher/tmp/pre_commit_hooks-4.6.0.tar.gz]
+[2024-04-06 20:26:46] INFO root fetch - main [MainThread]: End processing [pre-commit-hooks]: success
+[2024-04-06 20:26:46] INFO root fetch - processPackages [pyutils]: Remove: archive file [/home/abi/fetcher/tmp/pyutils-0.0.1b8-py3-none-any.whl.zip]
+[2024-04-06 20:26:46] INFO root fetch - processPackages [pyutils]: Remove: archive file [/home/abi/fetcher/tmp/pyutils-0.0.1b9-py3-none-any.whl.zip]
+[2024-04-06 20:26:46] INFO root fetch - main [MainThread]: End processing [pyutils]: success
+[2024-04-06 20:26:46] INFO root fetch - processPackages [redivis]: Remove: archive file [/home/abi/fetcher/tmp/redivis-0.9.0.tar.gz]
+[2024-04-06 20:26:46] INFO root fetch - processPackages [redivis]: Remove: archive file [/home/abi/fetcher/tmp/redivis-0.9.1.tar.gz]
+[2024-04-06 20:26:46] INFO root fetch - main [MainThread]: End processing [redivis]: success
+[2024-04-06 20:26:46] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.2.8.tar.gz]
+[2024-04-06 20:26:46] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.2.9.tar.gz]
+[2024-04-06 20:26:46] INFO root fetch - main [MainThread]: End processing [flatpack]: success
+[2024-04-06 20:26:46] INFO root fetch - main [MainThread]: Store serial: [22650103]
