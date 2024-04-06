@@ -25263,3 +25263,39 @@ EOFError: EOF read where object expected
 [2024-04-06 23:44:32] INFO root fetch - processPackages [brahmai]: Remove: archive file [/home/abi/fetcher/tmp/brahmai-0.0.1a1.tar.gz]
 [2024-04-06 23:44:32] INFO root fetch - main [MainThread]: End processing [brahmai]: success
 [2024-04-06 23:44:32] INFO root fetch - main [MainThread]: Store serial: [22651367]
+[2024-04-06 23:46:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651367]
+[2024-04-06 23:46:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 23:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PhysioKit2
+[2024-04-06 23:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modgeosys-graph-algorithms
+[2024-04-06 23:46:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vulcan-logger
+[2024-04-06 23:46:41] INFO root fetch - processPackages [vulcan-logger]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-06 23:46:41] INFO root fetch - processPackages [modgeosys-graph-algorithms]: New version: [0.2.0] Old Version: [0.1.5]
+[2024-04-06 23:46:41] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/48/a8/2ca4f263aa96c6904aed8ba61ff077d850edde9f467552fc401b867b0593/modgeosys_graph_algorithms-0.1.5.tar.gz
+[2024-04-06 23:46:41] INFO root fetch - processPackages [PhysioKit2]: New version: [1.8.8] Old Version: [1.8.7]
+[2024-04-06 23:46:41] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/9f/35/a225d97a6772f103ec0ecc2da6d731def467557e73214d90b19145298b1d/vulcan-logger-1.3.8.tar.gz
+[2024-04-06 23:46:41] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-06 23:46:41] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:46:41] INFO root fetch - processPackages [PhysioKit2]: Downloading https://files.pythonhosted.org/packages/3e/06/3159afe5c91d3ec179bfa44a37f4dae2dcd2219f1b97db88b804b5ee4089/PhysioKit2-1.8.7.tar.gz
+[2024-04-06 23:46:41] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/99/24/090cc2eb216035dfa61b40cefdc573a33824a23677c4b9a8b5eabeeb5b70/vulcan-logger-1.3.9.tar.gz
+[2024-04-06 23:46:41] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/db/da/3745dcbdb4099ec78980cdd47b9a4bc2b2517d053bc2ddb6e7e056605c66/modgeosys_graph_algorithms-0.2.0.tar.gz
+[2024-04-06 23:46:41] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:46:41] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-06 23:46:41] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.8.tar.gz tmp/vulcan-logger-1.3.9.tar.gz --markdown 20240406/v/vulcan-logger/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2024-04-06 23:46:41] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-06 23:46:41] INFO root fetch - processPackages [modgeosys-graph-algorithms]: executing diffoscope
+[2024-04-06 23:46:41] INFO root fetch - processPackages [modgeosys-graph-algorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modgeosys_graph_algorithms-0.1.5.tar.gz tmp/modgeosys_graph_algorithms-0.2.0.tar.gz --markdown 20240406/m/modgeosys-graph-algorithms/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 23:46:41] WARNING root fetch - processPackages [PhysioKit2]: Timeout reached during download
+[2024-04-06 23:46:41] INFO root fetch - processPackages [PhysioKit2]: Downloading https://files.pythonhosted.org/packages/1b/b1/12a32efe6521fd63045f350c768f343dc7b65f562b6fb4667e89bc655fae/PhysioKit2-1.8.8.tar.gz
+[2024-04-06 23:46:42] WARNING root fetch - processPackages [PhysioKit2]: Timeout reached during download
+[2024-04-06 23:46:42] INFO root fetch - processPackages [PhysioKit2]: executing diffoscope
+[2024-04-06 23:46:42] INFO root fetch - processPackages [PhysioKit2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PhysioKit2-1.8.7.tar.gz tmp/PhysioKit2-1.8.8.tar.gz --markdown 20240406/P/PhysioKit2/1.8.7-1.8.8/diff.md --exclude *.pyd
+[2024-04-06 23:46:42] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.8.tar.gz]
+[2024-04-06 23:46:42] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.9.tar.gz]
+[2024-04-06 23:46:42] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-06 23:46:42] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.1.5.tar.gz]
+[2024-04-06 23:46:42] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.2.0.tar.gz]
+[2024-04-06 23:46:42] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
+[2024-04-06 23:46:42] INFO root fetch - processPackages [PhysioKit2]: Remove: archive file [/home/abi/fetcher/tmp/PhysioKit2-1.8.7.tar.gz]
+[2024-04-06 23:46:42] INFO root fetch - processPackages [PhysioKit2]: Remove: archive file [/home/abi/fetcher/tmp/PhysioKit2-1.8.8.tar.gz]
+[2024-04-06 23:46:42] INFO root fetch - main [MainThread]: End processing [PhysioKit2]: success
+[2024-04-06 23:46:42] INFO root fetch - main [MainThread]: Store serial: [22651376]
