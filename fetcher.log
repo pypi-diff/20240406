@@ -20522,3 +20522,53 @@ EOFError: EOF read where object expected
 [2024-04-06 19:12:31] INFO root fetch - main [MainThread]: End processing [moveread-annotations]: success
 [2024-04-06 19:12:31] INFO root fetch - main [MainThread]: End processing [moveread-annotations]: success
 [2024-04-06 19:12:31] INFO root fetch - main [MainThread]: Store serial: [22649649]
+[2024-04-06 19:14:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649649]
+[2024-04-06 19:14:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 19:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: efootprint
+[2024-04-06 19:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctkdlib
+[2024-04-06 19:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-06 19:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: laia-gen-lib
+[2024-04-06 19:14:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phasegen
+[2024-04-06 19:14:39] INFO root fetch - processPackages [laia-gen-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 19:14:39] WARNING root fetch - processPackages [phasegen]: Skipping, unable to determine old version
+[2024-04-06 19:14:39] INFO root fetch - main [MainThread]: End processing [phasegen] error
+[2024-04-06 19:14:39] INFO root fetch - processPackages [efootprint]: New version: [2.0.0] Old Version: [1.3.2]
+[2024-04-06 19:14:39] INFO root fetch - processPackages [ctkdlib]: New version: [4.1] Old Version: [4.0]
+[2024-04-06 19:14:40] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-06 19:14:40] INFO root fetch - processPackages [efootprint]: Downloading https://files.pythonhosted.org/packages/0a/6a/6586fe2539d84b93c613e249b3b33d567ee227635e3d7b8177c349e6bc7c/efootprint-1.3.2.tar.gz
+[2024-04-06 19:14:40] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/cf/9d/df25741f3199a178d6bebb43c6f39eeaaa924cb41510466057c7e68ad259/laia-gen-lib-0.1.8.tar.gz
+[2024-04-06 19:14:40] INFO root fetch - processPackages [ctkdlib]: Downloading https://files.pythonhosted.org/packages/bb/5c/a331be2da3c755abe134e4353af5571fa57b8dc0ce7c611da9a2e9d0ff89/ctkdlib-4.0.tar.gz
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [ctkdlib]: Timeout reached during download
+[2024-04-06 19:14:40] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [efootprint]: Timeout reached during download
+[2024-04-06 19:14:40] INFO root fetch - processPackages [ctkdlib]: Downloading https://files.pythonhosted.org/packages/03/9f/3a6bc2acf6aaf6a4ebf69b00e5a779ed7c83c14405c4ca1848effaee9fa9/ctkdlib-4.1.tar.gz
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 19:14:40] INFO root fetch - processPackages [efootprint]: Downloading https://files.pythonhosted.org/packages/25/89/848617ce9283bcfd3ae3234222e13375539781381ed4dfd1473f5afe2ba5/efootprint-2.0.0.tar.gz
+[2024-04-06 19:14:40] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/be/61/f1135da258191b7a80992064d66519b24c5cf4c05de8b99ccfa7ad90d9bf/laia-gen-lib-0.1.9.tar.gz
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [ctkdlib]: Timeout reached during download
+[2024-04-06 19:14:40] INFO root fetch - processPackages [ctkdlib]: executing diffoscope
+[2024-04-06 19:14:40] INFO root fetch - processPackages [ctkdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctkdlib-4.0.tar.gz tmp/ctkdlib-4.1.tar.gz --markdown 20240406/c/ctkdlib/4.0-4.1/diff.md --exclude *.pyd
+[2024-04-06 19:14:40] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [efootprint]: Timeout reached during download
+[2024-04-06 19:14:40] INFO root fetch - processPackages [efootprint]: executing diffoscope
+[2024-04-06 19:14:40] INFO root fetch - processPackages [efootprint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/efootprint-1.3.2.tar.gz tmp/efootprint-2.0.0.tar.gz --markdown 20240406/e/efootprint/1.3.2-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [laia-gen-lib]: Timeout reached during download
+[2024-04-06 19:14:40] INFO root fetch - processPackages [laia-gen-lib]: executing diffoscope
+[2024-04-06 19:14:40] INFO root fetch - processPackages [laia-gen-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laia-gen-lib-0.1.8.tar.gz tmp/laia-gen-lib-0.1.9.tar.gz --markdown 20240406/l/laia-gen-lib/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 19:14:40] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 19:14:40] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-06 19:14:40] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240406/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-06 19:14:41] INFO root fetch - processPackages [ctkdlib]: Remove: archive file [/home/abi/fetcher/tmp/ctkdlib-4.0.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - processPackages [ctkdlib]: Remove: archive file [/home/abi/fetcher/tmp/ctkdlib-4.1.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - main [MainThread]: End processing [ctkdlib]: success
+[2024-04-06 19:14:41] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-06 19:14:41] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.8.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.9.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - main [MainThread]: End processing [laia-gen-lib]: success
+[2024-04-06 19:14:41] INFO root fetch - processPackages [efootprint]: Remove: archive file [/home/abi/fetcher/tmp/efootprint-1.3.2.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - processPackages [efootprint]: Remove: archive file [/home/abi/fetcher/tmp/efootprint-2.0.0.tar.gz]
+[2024-04-06 19:14:41] INFO root fetch - main [MainThread]: End processing [efootprint]: success
+[2024-04-06 19:14:41] INFO root fetch - main [MainThread]: Store serial: [22649668]
