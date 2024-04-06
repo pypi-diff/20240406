@@ -17852,3 +17852,50 @@ EOFError: EOF read where object expected
 [2024-04-06 16:36:49] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper-shippy-2.33.3.tar.gz]
 [2024-04-06 16:36:49] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
 [2024-04-06 16:36:49] INFO root fetch - main [MainThread]: Store serial: [22648708]
+[2024-04-06 16:38:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648708]
+[2024-04-06 16:38:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 16:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asifjamali
+[2024-04-06 16:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyprland
+[2024-04-06 16:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioframe
+[2024-04-06 16:38:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smaht-submitr
+[2024-04-06 16:38:58] INFO root fetch - processPackages [asifjamali]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-04-06 16:38:58] INFO root fetch - processPackages [pyprland]: New version: [2.2.1] Old Version: [2.2.0]
+[2024-04-06 16:38:58] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b9] Old Version: [0.7.0.1b82]
+[2024-04-06 16:38:58] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/da/b7/fae420a2622aa14dda6ae17a4ef436ef8afa6994cd4ad3587e3f3b3dd2e2/asifjamali-0.6.1.tar.gz
+[2024-04-06 16:38:58] INFO root fetch - processPackages [bioframe]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-04-06 16:38:58] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/c2/41/64e154b93ea753b5049e7abb11cdac21369032e19f46ed06f1ae89fa142e/pyprland-2.2.0.tar.gz
+[2024-04-06 16:38:58] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 16:38:58] WARNING root fetch - processPackages [pyprland]: Timeout reached during download
+[2024-04-06 16:38:59] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/3e/30/9b9ba674bf361473ce195ed136425b0c4847e2e330edbf6ad12d9789f6c2/smaht_submitr-0.7.0.1b82.tar.gz
+[2024-04-06 16:38:59] INFO root fetch - processPackages [bioframe]: Downloading https://files.pythonhosted.org/packages/dd/6b/16207395953bd38b9c6db78e3275ded126d0d0fa417eca500554f77e465b/bioframe-0.6.3.tar.gz
+[2024-04-06 16:38:59] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 16:38:59] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/c8/a7/8198b01503dfa07ab5f27d96606fb735505d32e13c80151d6850bb9d3b60/asifjamali-0.6.2.tar.gz
+[2024-04-06 16:38:59] INFO root fetch - processPackages [pyprland]: Downloading https://files.pythonhosted.org/packages/52/55/8041d68927dbc16e1342732e30cdf47cc436bd62c787a17221633555c619/pyprland-2.2.1.tar.gz
+[2024-04-06 16:38:59] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ff/84/cead0681f1d3b22d8c2cc55c431321aa00039b758129671d6e752101a732/smaht_submitr-0.7.0.1b9.tar.gz
+[2024-04-06 16:38:59] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 16:38:59] INFO root fetch - processPackages [asifjamali]: executing diffoscope
+[2024-04-06 16:38:59] INFO root fetch - processPackages [asifjamali]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asifjamali-0.6.1.tar.gz tmp/asifjamali-0.6.2.tar.gz --markdown 20240406/a/asifjamali/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2024-04-06 16:38:59] WARNING root fetch - processPackages [bioframe]: Timeout reached during download
+[2024-04-06 16:38:59] WARNING root fetch - processPackages [pyprland]: Timeout reached during download
+[2024-04-06 16:38:59] INFO root fetch - processPackages [pyprland]: executing diffoscope
+[2024-04-06 16:38:59] INFO root fetch - processPackages [pyprland]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyprland-2.2.0.tar.gz tmp/pyprland-2.2.1.tar.gz --markdown 20240406/p/pyprland/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2024-04-06 16:38:59] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 16:38:59] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-06 16:38:59] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b82.tar.gz tmp/smaht_submitr-0.7.0.1b9.tar.gz --markdown 20240406/s/smaht-submitr/0.7.0.1b82-0.7.0.1b9/diff.md --exclude *.pyd
+[2024-04-06 16:38:59] INFO root fetch - processPackages [bioframe]: Downloading https://files.pythonhosted.org/packages/8e/93/30cc9cec6ef06786c7f9d5dc94b771f5eeb558a06ba45bc9d93b1637b16f/bioframe-0.6.4.tar.gz
+[2024-04-06 16:38:59] WARNING root fetch - processPackages [bioframe]: Timeout reached during download
+[2024-04-06 16:38:59] INFO root fetch - processPackages [bioframe]: executing diffoscope
+[2024-04-06 16:38:59] INFO root fetch - processPackages [bioframe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioframe-0.6.3.tar.gz tmp/bioframe-0.6.4.tar.gz --markdown 20240406/b/bioframe/0.6.3-0.6.4/diff.md --exclude *.pyd
+[2024-04-06 16:38:59] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.1.tar.gz]
+[2024-04-06 16:38:59] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.2.tar.gz]
+[2024-04-06 16:38:59] INFO root fetch - main [MainThread]: End processing [asifjamali]: success
+[2024-04-06 16:38:59] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.0.tar.gz]
+[2024-04-06 16:38:59] INFO root fetch - processPackages [pyprland]: Remove: archive file [/home/abi/fetcher/tmp/pyprland-2.2.1.tar.gz]
+[2024-04-06 16:38:59] INFO root fetch - main [MainThread]: End processing [pyprland]: success
+[2024-04-06 16:39:00] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b82.tar.gz]
+[2024-04-06 16:39:00] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
+[2024-04-06 16:39:00] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-06 16:39:00] INFO root fetch - processPackages [bioframe]: Remove: archive file [/home/abi/fetcher/tmp/bioframe-0.6.3.tar.gz]
+[2024-04-06 16:39:00] INFO root fetch - processPackages [bioframe]: Remove: archive file [/home/abi/fetcher/tmp/bioframe-0.6.4.tar.gz]
+[2024-04-06 16:39:00] INFO root fetch - main [MainThread]: End processing [bioframe]: success
+[2024-04-06 16:39:00] INFO root fetch - main [MainThread]: Store serial: [22648717]
