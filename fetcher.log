@@ -15103,3 +15103,28 @@ EOFError: EOF read where object expected
 [2024-04-06 13:38:29] INFO root fetch - processPackages [TravSHACL]: Remove: archive file [/home/abi/fetcher/tmp/TravSHACL-1.7.1.tar.gz]
 [2024-04-06 13:38:29] INFO root fetch - main [MainThread]: End processing [TravSHACL]: success
 [2024-04-06 13:38:29] INFO root fetch - main [MainThread]: Store serial: [22647581]
+[2024-04-06 13:40:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647581]
+[2024-04-06 13:40:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 13:40:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tftui
+[2024-04-06 13:40:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-rabbitmq
+[2024-04-06 13:40:38] INFO root fetch - processPackages [tftui]: New version: [0.9] Old Version: [0.8]
+[2024-04-06 13:40:38] INFO root fetch - processPackages [pulumi-rabbitmq]: New version: [3.4.0a1712401499] Old Version: [3.4.0a1712123475]
+[2024-04-06 13:40:38] INFO root fetch - processPackages [tftui]: Downloading https://files.pythonhosted.org/packages/07/0e/e2c47460cb0215e7aae18d4d4c18cbbe95dac793324cf3a234c6833a5c7c/tftui-0.8.tar.gz
+[2024-04-06 13:40:38] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/2a/c0/9ec286ef62b86752cf4b9ea1be8dae68c3fccc0bf641b0ba2dd656f5241b/pulumi_rabbitmq-3.4.0a1712123475.tar.gz
+[2024-04-06 13:40:38] WARNING root fetch - processPackages [tftui]: Timeout reached during download
+[2024-04-06 13:40:38] WARNING root fetch - processPackages [pulumi-rabbitmq]: Timeout reached during download
+[2024-04-06 13:40:38] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/31/83/ca78d7e30fc4805918f4015343a00b027b9d12d34b831b1b6c7c896d3b46/pulumi_rabbitmq-3.4.0a1712401499.tar.gz
+[2024-04-06 13:40:38] INFO root fetch - processPackages [tftui]: Downloading https://files.pythonhosted.org/packages/fb/f4/6132cfd40b797a6f137e46a9b1c148912acbaf7c522f20c755d1a193ddbb/tftui-0.9.tar.gz
+[2024-04-06 13:40:38] WARNING root fetch - processPackages [pulumi-rabbitmq]: Timeout reached during download
+[2024-04-06 13:40:38] INFO root fetch - processPackages [pulumi-rabbitmq]: executing diffoscope
+[2024-04-06 13:40:38] INFO root fetch - processPackages [pulumi-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rabbitmq-3.4.0a1712123475.tar.gz tmp/pulumi_rabbitmq-3.4.0a1712401499.tar.gz --markdown 20240406/p/pulumi-rabbitmq/3.4.0a1712123475-3.4.0a1712401499/diff.md --exclude *.pyd
+[2024-04-06 13:40:39] WARNING root fetch - processPackages [tftui]: Timeout reached during download
+[2024-04-06 13:40:39] INFO root fetch - processPackages [tftui]: executing diffoscope
+[2024-04-06 13:40:39] INFO root fetch - processPackages [tftui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tftui-0.8.tar.gz tmp/tftui-0.9.tar.gz --markdown 20240406/t/tftui/0.8-0.9/diff.md --exclude *.pyd
+[2024-04-06 13:40:39] INFO root fetch - processPackages [pulumi-rabbitmq]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rabbitmq-3.4.0a1712123475.tar.gz]
+[2024-04-06 13:40:39] INFO root fetch - processPackages [pulumi-rabbitmq]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rabbitmq-3.4.0a1712401499.tar.gz]
+[2024-04-06 13:40:39] INFO root fetch - main [MainThread]: End processing [pulumi-rabbitmq]: success
+[2024-04-06 13:40:39] INFO root fetch - processPackages [tftui]: Remove: archive file [/home/abi/fetcher/tmp/tftui-0.8.tar.gz]
+[2024-04-06 13:40:39] INFO root fetch - processPackages [tftui]: Remove: archive file [/home/abi/fetcher/tmp/tftui-0.9.tar.gz]
+[2024-04-06 13:40:39] INFO root fetch - main [MainThread]: End processing [tftui]: success
+[2024-04-06 13:40:39] INFO root fetch - main [MainThread]: Store serial: [22647588]
