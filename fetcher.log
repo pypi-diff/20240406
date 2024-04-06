@@ -11129,3 +11129,17 @@
 [2024-04-06 08:30:52] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev94.tar.gz]
 [2024-04-06 08:30:52] INFO root fetch - main [MainThread]: End processing [releaserr]: success
 [2024-04-06 08:30:52] INFO root fetch - main [MainThread]: Store serial: [22646084]
+[2024-04-06 08:32:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646084]
+[2024-04-06 08:33:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 08:33:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: so-vits-svc-fork
+[2024-04-06 08:33:01] INFO root fetch - processPackages [so-vits-svc-fork]: New version: [4.1.9] Old Version: [4.1.8]
+[2024-04-06 08:33:01] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/33/16/dbf732889045a03c11e0d67a1c8b05848e9e4efd3856458d2fec67c6d908/so_vits_svc_fork-4.1.8.tar.gz
+[2024-04-06 08:33:01] WARNING root fetch - processPackages [so-vits-svc-fork]: Timeout reached during download
+[2024-04-06 08:33:01] INFO root fetch - processPackages [so-vits-svc-fork]: Downloading https://files.pythonhosted.org/packages/1a/ac/9056791de3f9246fcbd01c2016a1d3eac9a959ac01eeeab32d904c10ddd5/so_vits_svc_fork-4.1.9.tar.gz
+[2024-04-06 08:33:01] WARNING root fetch - processPackages [so-vits-svc-fork]: Timeout reached during download
+[2024-04-06 08:33:01] INFO root fetch - processPackages [so-vits-svc-fork]: executing diffoscope
+[2024-04-06 08:33:01] INFO root fetch - processPackages [so-vits-svc-fork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/so_vits_svc_fork-4.1.8.tar.gz tmp/so_vits_svc_fork-4.1.9.tar.gz --markdown 20240406/s/so-vits-svc-fork/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2024-04-06 08:33:02] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.1.8.tar.gz]
+[2024-04-06 08:33:02] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.1.9.tar.gz]
+[2024-04-06 08:33:02] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
+[2024-04-06 08:33:02] INFO root fetch - main [MainThread]: Store serial: [22646102]
