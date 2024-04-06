@@ -24915,3 +24915,28 @@ EOFError: EOF read where object expected
 [2024-04-06 23:24:57] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.1.0.tar.gz]
 [2024-04-06 23:24:57] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
 [2024-04-06 23:24:57] INFO root fetch - main [MainThread]: Store serial: [22651268]
+[2024-04-06 23:27:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651268]
+[2024-04-06 23:27:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 23:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: legal-citation-parser
+[2024-04-06 23:27:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TokenProbs
+[2024-04-06 23:27:06] INFO root fetch - processPackages [legal-citation-parser]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 23:27:06] INFO root fetch - processPackages [TokenProbs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:27:06] INFO root fetch - processPackages [legal-citation-parser]: Downloading https://files.pythonhosted.org/packages/4e/13/0b634eb61aaa01ec52d37bf50e4b28a766f725297b64f98243ecf9a4dc03/legal_citation_parser-0.1.1.tar.gz
+[2024-04-06 23:27:06] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/f5/3f/552d0f2ca9b5d9b5dee0057724885f844c83896f97bec43eb7c0acfafec1/TokenProbs-0.0.8.tar.gz
+[2024-04-06 23:27:06] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 23:27:06] WARNING root fetch - processPackages [legal-citation-parser]: Timeout reached during download
+[2024-04-06 23:27:06] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/29/ba/735a795841268a89d2be19af5ef66f193d7169a133194e72569ecf328149/TokenProbs-0.0.9.tar.gz
+[2024-04-06 23:27:06] INFO root fetch - processPackages [legal-citation-parser]: Downloading https://files.pythonhosted.org/packages/19/35/d98d4becc479e37e3358035ddde0b1103ecb0bd6dbf2a5a121b9099bc8b4/legal_citation_parser-0.1.2.tar.gz
+[2024-04-06 23:27:06] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 23:27:06] INFO root fetch - processPackages [TokenProbs]: executing diffoscope
+[2024-04-06 23:27:06] INFO root fetch - processPackages [TokenProbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TokenProbs-0.0.8.tar.gz tmp/TokenProbs-0.0.9.tar.gz --markdown 20240406/T/TokenProbs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:27:06] WARNING root fetch - processPackages [legal-citation-parser]: Timeout reached during download
+[2024-04-06 23:27:06] INFO root fetch - processPackages [legal-citation-parser]: executing diffoscope
+[2024-04-06 23:27:06] INFO root fetch - processPackages [legal-citation-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legal_citation_parser-0.1.1.tar.gz tmp/legal_citation_parser-0.1.2.tar.gz --markdown 20240406/l/legal-citation-parser/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 23:27:07] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.8.tar.gz]
+[2024-04-06 23:27:07] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.9.tar.gz]
+[2024-04-06 23:27:07] INFO root fetch - main [MainThread]: End processing [TokenProbs]: success
+[2024-04-06 23:27:07] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.1.tar.gz]
+[2024-04-06 23:27:07] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.2.tar.gz]
+[2024-04-06 23:27:07] INFO root fetch - main [MainThread]: End processing [legal-citation-parser]: success
+[2024-04-06 23:27:07] INFO root fetch - main [MainThread]: Store serial: [22651277]
