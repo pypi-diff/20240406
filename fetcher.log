@@ -18204,3 +18204,61 @@ EOFError: EOF read where object expected
 [2024-04-06 17:00:44] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
 [2024-04-06 17:00:44] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
 [2024-04-06 17:00:44] INFO root fetch - main [MainThread]: Store serial: [22648808]
+[2024-04-06 17:02:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648808]
+[2024-04-06 17:02:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 17:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dydantic
+[2024-04-06 17:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DataRecorder
+[2024-04-06 17:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrofork
+[2024-04-06 17:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asto
+[2024-04-06 17:02:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MEArec
+[2024-04-06 17:02:53] INFO root fetch - processPackages [asto]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 17:02:53] INFO root fetch - processPackages [dydantic]: New version: [0.0.2] Old Version: [0.0.1rc0]
+[2024-04-06 17:02:53] INFO root fetch - processPackages [MEArec]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-04-06 17:02:53] INFO root fetch - processPackages [asto]: Downloading https://files.pythonhosted.org/packages/35/b8/779c040b0779eb58006b5afb0a721d5b2d7556a01b04ae41c7e525f4338f/asto-0.0.8.tar.gz
+[2024-04-06 17:02:53] INFO root fetch - processPackages [pyrofork]: New version: [2.4.0rc1] Old Version: [2.3.9.post2]
+[2024-04-06 17:02:53] INFO root fetch - processPackages [DataRecorder]: New version: [3.4.9] Old Version: [3.4.8]
+[2024-04-06 17:02:53] INFO root fetch - processPackages [dydantic]: Downloading https://files.pythonhosted.org/packages/8d/7b/cba66b01b716ed8e622c4ed3bae59ae37e64f0619a9cef2eabc1016717fb/dydantic-0.0.1rc0.tar.gz
+[2024-04-06 17:02:53] WARNING root fetch - processPackages [asto]: Timeout reached during download
+[2024-04-06 17:02:53] INFO root fetch - processPackages [DataRecorder]: Downloading https://files.pythonhosted.org/packages/3d/8e/602e4086f30c1f02f72f481ac192627c3de051f1e55824e0a982b3c41cef/DataRecorder-3.4.8.tar.gz
+[2024-04-06 17:02:53] INFO root fetch - processPackages [pyrofork]: Downloading https://files.pythonhosted.org/packages/76/4c/a811f786af1f4693948bf3c1ed0f138b9a0cddfccfa812e2a009d2ce8dbc/PyroFork-2.3.9.post2.tar.gz
+[2024-04-06 17:02:53] WARNING root fetch - processPackages [dydantic]: Timeout reached during download
+[2024-04-06 17:02:53] INFO root fetch - processPackages [asto]: Downloading https://files.pythonhosted.org/packages/c5/d5/771091db2f45ff52f0bb30eda5ef677ebee6feaf176b4487819da153a213/asto-0.0.9.tar.gz
+[2024-04-06 17:02:54] INFO root fetch - processPackages [MEArec]: Downloading https://files.pythonhosted.org/packages/72/9f/955f7553fe8f72d945b7067de84b40da667247f3c9c80fe2ec8cd6216746/MEArec-1.9.0.tar.gz
+[2024-04-06 17:02:54] WARNING root fetch - processPackages [pyrofork]: Timeout reached during download
+[2024-04-06 17:02:54] WARNING root fetch - processPackages [asto]: Timeout reached during download
+[2024-04-06 17:02:54] INFO root fetch - processPackages [asto]: executing diffoscope
+[2024-04-06 17:02:54] INFO root fetch - processPackages [asto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asto-0.0.8.tar.gz tmp/asto-0.0.9.tar.gz --markdown 20240406/a/asto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:02:54] WARNING root fetch - processPackages [DataRecorder]: Timeout reached during download
+[2024-04-06 17:02:54] INFO root fetch - processPackages [dydantic]: Downloading https://files.pythonhosted.org/packages/f0/d7/0d34b3166d77eeaee74d99b166ba1a2bfd604a85b34399dafb22253db8fe/dydantic-0.0.2.tar.gz
+[2024-04-06 17:02:54] WARNING root fetch - processPackages [dydantic]: Timeout reached during download
+[2024-04-06 17:02:54] INFO root fetch - processPackages [dydantic]: executing diffoscope
+[2024-04-06 17:02:54] INFO root fetch - processPackages [dydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dydantic-0.0.1rc0.tar.gz tmp/dydantic-0.0.2.tar.gz --markdown 20240406/d/dydantic/0.0.1rc0-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 17:02:54] INFO root fetch - processPackages [pyrofork]: Downloading https://files.pythonhosted.org/packages/e1/ab/1633ebf424a12d38d11ab1dce941cacbc4f3e4873df00c9d742c79852917/pyrofork-2.4.0rc1.tar.gz
+[2024-04-06 17:02:54] INFO root fetch - processPackages [DataRecorder]: Downloading https://files.pythonhosted.org/packages/26/45/b642b205a235ed5bdb549ab9d475b6ffb9f55a5a3bdcbc7b04014136a77e/DataRecorder-3.4.9.tar.gz
+[2024-04-06 17:02:54] WARNING root fetch - processPackages [pyrofork]: Timeout reached during download
+[2024-04-06 17:02:54] INFO root fetch - processPackages [pyrofork]: executing diffoscope
+[2024-04-06 17:02:54] INFO root fetch - processPackages [pyrofork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyroFork-2.3.9.post2.tar.gz tmp/pyrofork-2.4.0rc1.tar.gz --markdown 20240406/p/pyrofork/2.3.9.post2-2.4.0rc1/diff.md --exclude *.pyd
+[2024-04-06 17:02:54] WARNING root fetch - processPackages [DataRecorder]: Timeout reached during download
+[2024-04-06 17:02:54] INFO root fetch - processPackages [DataRecorder]: executing diffoscope
+[2024-04-06 17:02:54] INFO root fetch - processPackages [DataRecorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DataRecorder-3.4.8.tar.gz tmp/DataRecorder-3.4.9.tar.gz --markdown 20240406/D/DataRecorder/3.4.8-3.4.9/diff.md --exclude *.pyd
+[2024-04-06 17:02:54] WARNING root fetch - processPackages [MEArec]: Timeout reached during download
+[2024-04-06 17:02:54] INFO root fetch - processPackages [MEArec]: Downloading https://files.pythonhosted.org/packages/f3/17/ad38e19c56aa40420009e3563e07a45195592920f183bc9e089b95407944/MEArec-1.9.1.tar.gz
+[2024-04-06 17:02:54] INFO root fetch - processPackages [asto]: Remove: archive file [/home/abi/fetcher/tmp/asto-0.0.8.tar.gz]
+[2024-04-06 17:02:54] INFO root fetch - processPackages [asto]: Remove: archive file [/home/abi/fetcher/tmp/asto-0.0.9.tar.gz]
+[2024-04-06 17:02:54] INFO root fetch - main [MainThread]: End processing [asto]: success
+[2024-04-06 17:02:54] INFO root fetch - processPackages [dydantic]: Remove: archive file [/home/abi/fetcher/tmp/dydantic-0.0.1rc0.tar.gz]
+[2024-04-06 17:02:54] INFO root fetch - processPackages [dydantic]: Remove: archive file [/home/abi/fetcher/tmp/dydantic-0.0.2.tar.gz]
+[2024-04-06 17:02:54] INFO root fetch - main [MainThread]: End processing [dydantic]: success
+[2024-04-06 17:02:55] WARNING root fetch - processPackages [MEArec]: Timeout reached during download
+[2024-04-06 17:02:55] INFO root fetch - processPackages [MEArec]: executing diffoscope
+[2024-04-06 17:02:55] INFO root fetch - processPackages [MEArec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MEArec-1.9.0.tar.gz tmp/MEArec-1.9.1.tar.gz --markdown 20240406/M/MEArec/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2024-04-06 17:02:55] INFO root fetch - processPackages [DataRecorder]: Remove: archive file [/home/abi/fetcher/tmp/DataRecorder-3.4.8.tar.gz]
+[2024-04-06 17:02:55] INFO root fetch - processPackages [DataRecorder]: Remove: archive file [/home/abi/fetcher/tmp/DataRecorder-3.4.9.tar.gz]
+[2024-04-06 17:02:55] INFO root fetch - main [MainThread]: End processing [DataRecorder]: success
+[2024-04-06 17:02:58] INFO root fetch - processPackages [MEArec]: Remove: archive file [/home/abi/fetcher/tmp/MEArec-1.9.0.tar.gz]
+[2024-04-06 17:02:58] INFO root fetch - processPackages [MEArec]: Remove: archive file [/home/abi/fetcher/tmp/MEArec-1.9.1.tar.gz]
+[2024-04-06 17:02:58] INFO root fetch - main [MainThread]: End processing [MEArec]: success
+[2024-04-06 17:02:58] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/PyroFork-2.3.9.post2.tar.gz]
+[2024-04-06 17:02:58] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/pyrofork-2.4.0rc1.tar.gz]
+[2024-04-06 17:02:58] INFO root fetch - main [MainThread]: End processing [pyrofork]: success
+[2024-04-06 17:02:58] INFO root fetch - main [MainThread]: Store serial: [22648823]
