@@ -9385,3 +9385,11 @@
 [2024-04-06 06:26:19] INFO root fetch - processPackages [e3lm]: Remove: archive file [/home/abi/fetcher/tmp/e3lm-0.1.9.tar.gz]
 [2024-04-06 06:26:19] INFO root fetch - main [MainThread]: End processing [e3lm]: success
 [2024-04-06 06:26:19] INFO root fetch - main [MainThread]: Store serial: [22645528]
+[2024-04-06 06:28:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645528]
+[2024-04-06 06:28:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 06:28:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CNVoyant
+[2024-04-06 06:28:28] INFO root fetch - processPackages [CNVoyant]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-06 06:28:28] INFO root fetch - processPackages [CNVoyant]: Downloading https://files.pythonhosted.org/packages/e9/15/03c3f73d9813372e3fadf5a739204c71a951aebca78f62203df95b6061ef/CNVoyant-1.1.4.tar.gz
+[2024-04-06 06:28:28] WARNING root fetch - processPackages [CNVoyant]: Skipping package: exceeds size limit 24008093>=10485760
+[2024-04-06 06:28:28] INFO root fetch - main [MainThread]: End processing [CNVoyant] error
+[2024-04-06 06:28:28] INFO root fetch - main [MainThread]: Store serial: [22645531]
