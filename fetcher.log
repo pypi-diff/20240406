@@ -22653,3 +22653,56 @@ EOFError: EOF read where object expected
 [2024-04-06 21:08:19] INFO root fetch - processPackages [regis]: Remove: archive file [/home/abi/fetcher/tmp/regis-0.1.9.tar.gz]
 [2024-04-06 21:08:19] INFO root fetch - main [MainThread]: End processing [regis]: success
 [2024-04-06 21:08:19] INFO root fetch - main [MainThread]: Store serial: [22650350]
+[2024-04-06 21:10:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650350]
+[2024-04-06 21:10:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 21:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epidemik
+[2024-04-06 21:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starrailcard
+[2024-04-06 21:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monopyly
+[2024-04-06 21:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: epidemik
+[2024-04-06 21:10:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyftdi
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 21:10:28] INFO root fetch - processPackages [starrailcard]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-06 21:10:28] INFO root fetch - processPackages [pyftdi]: New version: [0.9.6] Old Version: [0.9.4]
+[2024-04-06 21:10:28] INFO root fetch - processPackages [monopyly]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/ee/d9/f04140c464d3f73af7f4bcc4b7303ded8ae45f9b0abfee27af6bc48ea631/epidemik-0.0.8.tar.gz
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/ee/d9/f04140c464d3f73af7f4bcc4b7303ded8ae45f9b0abfee27af6bc48ea631/epidemik-0.0.8.tar.gz
+[2024-04-06 21:10:28] INFO root fetch - processPackages [starrailcard]: Downloading https://files.pythonhosted.org/packages/5b/17/ba85c4b7498007d87d01349de27e1548e975e28a58c0d307f5bdd28fc3ea/starrailcard-2.1.0.tar.gz
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [pyftdi]: fallback to get urls: [0.9.4]
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 21:10:28] INFO root fetch - processPackages [monopyly]: Downloading https://files.pythonhosted.org/packages/9c/a1/e5bb94617a7764179ad96fb1fa658f5b683189af2a35919ad6316dc1fc3e/monopyly-1.4.4.tar.gz
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [starrailcard]: Timeout reached during download
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [pyftdi]: None
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [pyftdi]: None
+[2024-04-06 21:10:28] INFO root fetch - processPackages [starrailcard]: Downloading https://files.pythonhosted.org/packages/12/a3/45685635af9554ba1a6343add5e71288fbd9d4f4293a2f6d759a9a91402a/starrailcard-2.1.1.tar.gz
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [pyftdi]: unable to get url for both version [0.9.4]
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [pyftdi]: None
+[2024-04-06 21:10:28] INFO root fetch - main [MainThread]: End processing [pyftdi] error
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/ed/19/242bf9aa4d7e93c8f4cf2d31a503b0d82b012aa3824e2ef2e529ea0c291a/epidemik-0.0.9.tar.gz
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/ed/19/242bf9aa4d7e93c8f4cf2d31a503b0d82b012aa3824e2ef2e529ea0c291a/epidemik-0.0.9.tar.gz
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [starrailcard]: Timeout reached during download
+[2024-04-06 21:10:28] INFO root fetch - processPackages [starrailcard]: executing diffoscope
+[2024-04-06 21:10:28] INFO root fetch - processPackages [starrailcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrailcard-2.1.0.tar.gz tmp/starrailcard-2.1.1.tar.gz --markdown 20240406/s/starrailcard/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 21:10:28] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.8.tar.gz tmp/epidemik-0.0.9.tar.gz --markdown 20240406/e/epidemik/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-06 21:10:28] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.8.tar.gz tmp/epidemik-0.0.9.tar.gz --markdown 20240406/e/epidemik/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 21:10:29] WARNING root fetch - processPackages [monopyly]: Timeout reached during download
+[2024-04-06 21:10:29] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.8.tar.gz]
+[2024-04-06 21:10:29] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.9.tar.gz]
+[2024-04-06 21:10:29] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-06 21:10:29] INFO root fetch - processPackages [monopyly]: Downloading https://files.pythonhosted.org/packages/7d/96/0b0a232634a52d6a373d80e2aeda37805578e351c568b07f17eb67798ff0/monopyly-1.4.5-py3-none-any.whl
+[2024-04-06 21:10:29] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-06 21:10:29] INFO root fetch - processPackages [starrailcard]: Remove: archive file [/home/abi/fetcher/tmp/starrailcard-2.1.0.tar.gz]
+[2024-04-06 21:10:29] INFO root fetch - processPackages [starrailcard]: Remove: archive file [/home/abi/fetcher/tmp/starrailcard-2.1.1.tar.gz]
+[2024-04-06 21:10:29] INFO root fetch - main [MainThread]: End processing [starrailcard]: success
+[2024-04-06 21:10:29] WARNING root fetch - processPackages [monopyly]: Timeout reached during download
+[2024-04-06 21:10:29] INFO root fetch - processPackages [monopyly]: executing diffoscope
+[2024-04-06 21:10:29] INFO root fetch - processPackages [monopyly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monopyly-1.4.4.tar.gz tmp/monopyly-1.4.5-py3-none-any.whl.zip --markdown 20240406/m/monopyly/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2024-04-06 21:10:30] INFO root fetch - processPackages [monopyly]: Remove: archive file [/home/abi/fetcher/tmp/monopyly-1.4.4.tar.gz]
+[2024-04-06 21:10:30] INFO root fetch - processPackages [monopyly]: Remove: archive file [/home/abi/fetcher/tmp/monopyly-1.4.5-py3-none-any.whl.zip]
+[2024-04-06 21:10:30] INFO root fetch - main [MainThread]: End processing [monopyly]: success
+[2024-04-06 21:10:30] INFO root fetch - main [MainThread]: Store serial: [22650365]
