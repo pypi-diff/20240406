@@ -11816,3 +11816,63 @@
 [2024-04-06 09:36:19] INFO root fetch - processPackages [boostedblob]: Remove: archive file [/home/abi/fetcher/tmp/boostedblob-0.9.3.tar.gz]
 [2024-04-06 09:36:19] INFO root fetch - main [MainThread]: End processing [boostedblob]: success
 [2024-04-06 09:36:19] INFO root fetch - main [MainThread]: Store serial: [22646474]
+[2024-04-06 09:38:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646474]
+[2024-04-06 09:38:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 09:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythagoras
+[2024-04-06 09:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qibocal
+[2024-04-06 09:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrasp
+[2024-04-06 09:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrasp
+[2024-04-06 09:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrasp
+[2024-04-06 09:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MyLLM
+[2024-04-06 09:38:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: redis-async-client
+[2024-04-06 09:38:28] WARNING root fetch - processPackages [redis-async-client]: Skipping, unable to determine old version
+[2024-04-06 09:38:28] INFO root fetch - main [MainThread]: End processing [redis-async-client] error
+[2024-04-06 09:38:28] WARNING root fetch - processPackages [pythagoras]: Skipping, unable to determine old version
+[2024-04-06 09:38:28] INFO root fetch - main [MainThread]: End processing [pythagoras] error
+[2024-04-06 09:38:28] INFO root fetch - processPackages [qibocal]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 09:38:28] INFO root fetch - processPackages [MyLLM]: New version: [4.8.0] Old Version: [4.7.8]
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: New version: [0.6.0.2] Old Version: [0.6.0.1]
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: New version: [0.6.0.2] Old Version: [0.6.0.1]
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: New version: [0.6.0.2] Old Version: [0.6.0.1]
+[2024-04-06 09:38:28] INFO root fetch - processPackages [qibocal]: Downloading https://files.pythonhosted.org/packages/06/df/212e7ae046e1e8d05c10a3b3bd9130f9ca96d9bdf27a00ed429258c9ec04/qibocal-0.0.7.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/53/e8/3050f832ec9581a9b9ca84a914d5a8c2f0e0fe38c7209f9680a0b474931b/myllm-4.7.8.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/25/92/dc3ccd51ea2ceb090d0dfd747b00f034c4072a8a0ea9de222328dc027523/pyrasp-0.6.0.1.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/25/92/dc3ccd51ea2ceb090d0dfd747b00f034c4072a8a0ea9de222328dc027523/pyrasp-0.6.0.1.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/25/92/dc3ccd51ea2ceb090d0dfd747b00f034c4072a8a0ea9de222328dc027523/pyrasp-0.6.0.1.tar.gz
+[2024-04-06 09:38:28] WARNING root fetch - processPackages [pyrasp]: Timeout reached during download
+[2024-04-06 09:38:28] WARNING root fetch - processPackages [MyLLM]: Timeout reached during download
+[2024-04-06 09:38:28] WARNING root fetch - processPackages [qibocal]: Timeout reached during download
+[2024-04-06 09:38:28] WARNING root fetch - processPackages [pyrasp]: Timeout reached during download
+[2024-04-06 09:38:28] WARNING root fetch - processPackages [pyrasp]: Timeout reached during download
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/43/ba/d71bea491302f38554fc45081630d2fcfa49f1c99d49b14a2bae39909f74/pyrasp-0.6.0.2.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/43/ba/d71bea491302f38554fc45081630d2fcfa49f1c99d49b14a2bae39909f74/pyrasp-0.6.0.2.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [MyLLM]: Downloading https://files.pythonhosted.org/packages/35/68/7139f22e6048fbd5b6eaf2a27f12716c3c32c7cfd0068d431d8a4f6a90c0/myllm-4.8.0.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [pyrasp]: Downloading https://files.pythonhosted.org/packages/43/ba/d71bea491302f38554fc45081630d2fcfa49f1c99d49b14a2bae39909f74/pyrasp-0.6.0.2.tar.gz
+[2024-04-06 09:38:28] INFO root fetch - processPackages [qibocal]: Downloading https://files.pythonhosted.org/packages/c1/41/76d394a59b3c067f7049ca1570957280161dda3a195547e2898f42704885/qibocal-0.0.8.tar.gz
+[2024-04-06 09:38:29] WARNING root fetch - processPackages [pyrasp]: Timeout reached during download
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: executing diffoscope
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrasp-0.6.0.1.tar.gz tmp/pyrasp-0.6.0.2.tar.gz --markdown 20240406/p/pyrasp/0.6.0.1-0.6.0.2/diff.md --exclude *.pyd
+[2024-04-06 09:38:29] WARNING root fetch - processPackages [qibocal]: Timeout reached during download
+[2024-04-06 09:38:29] INFO root fetch - processPackages [qibocal]: executing diffoscope
+[2024-04-06 09:38:29] INFO root fetch - processPackages [qibocal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qibocal-0.0.7.tar.gz tmp/qibocal-0.0.8.tar.gz --markdown 20240406/q/qibocal/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 09:38:29] WARNING root fetch - processPackages [pyrasp]: Timeout reached during download
+[2024-04-06 09:38:29] WARNING root fetch - processPackages [MyLLM]: Timeout reached during download
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: executing diffoscope
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrasp-0.6.0.1.tar.gz tmp/pyrasp-0.6.0.2.tar.gz --markdown 20240406/p/pyrasp/0.6.0.1-0.6.0.2/diff.md --exclude *.pyd
+[2024-04-06 09:38:29] INFO root fetch - processPackages [MyLLM]: executing diffoscope
+[2024-04-06 09:38:29] INFO root fetch - processPackages [MyLLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myllm-4.7.8.tar.gz tmp/myllm-4.8.0.tar.gz --markdown 20240406/M/MyLLM/4.7.8-4.8.0/diff.md --exclude *.pyd
+[2024-04-06 09:38:29] WARNING root fetch - processPackages [pyrasp]: Timeout reached during download
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: executing diffoscope
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrasp-0.6.0.1.tar.gz tmp/pyrasp-0.6.0.2.tar.gz --markdown 20240406/p/pyrasp/0.6.0.1-0.6.0.2/diff.md --exclude *.pyd
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.6.0.1.tar.gz]
+[2024-04-06 09:38:29] INFO root fetch - processPackages [pyrasp]: Remove: archive file [/home/abi/fetcher/tmp/pyrasp-0.6.0.2.tar.gz]
+[2024-04-06 09:38:29] INFO root fetch - main [MainThread]: End processing [pyrasp]: success
+[2024-04-06 09:38:29] INFO root fetch - main [MainThread]: End processing [pyrasp]: success
+[2024-04-06 09:38:29] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.7.8.tar.gz]
+[2024-04-06 09:38:29] INFO root fetch - processPackages [MyLLM]: Remove: archive file [/home/abi/fetcher/tmp/myllm-4.8.0.tar.gz]
+[2024-04-06 09:38:29] INFO root fetch - main [MainThread]: End processing [MyLLM]: success
+[2024-04-06 09:38:29] INFO root fetch - main [MainThread]: End processing [pyrasp]: success
+[2024-04-06 09:38:30] INFO root fetch - processPackages [qibocal]: Remove: archive file [/home/abi/fetcher/tmp/qibocal-0.0.7.tar.gz]
+[2024-04-06 09:38:30] INFO root fetch - processPackages [qibocal]: Remove: archive file [/home/abi/fetcher/tmp/qibocal-0.0.8.tar.gz]
+[2024-04-06 09:38:30] INFO root fetch - main [MainThread]: End processing [qibocal]: success
+[2024-04-06 09:38:30] INFO root fetch - main [MainThread]: Store serial: [22646495]
