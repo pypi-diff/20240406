@@ -9138,3 +9138,42 @@
 [2024-04-06 06:10:33] INFO root fetch - processPackages [python-sat]: Remove: archive file [/home/abi/fetcher/tmp/python-sat-1.8.dev8.tar.gz]
 [2024-04-06 06:10:33] INFO root fetch - main [MainThread]: End processing [python-sat]: success
 [2024-04-06 06:10:33] INFO root fetch - main [MainThread]: Store serial: [22645361]
+[2024-04-06 06:12:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645361]
+[2024-04-06 06:12:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 06:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pybureaucrat
+[2024-04-06 06:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: baml-ffi
+[2024-04-06 06:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tibia.py
+[2024-04-06 06:12:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: acstore
+[2024-04-06 06:12:42] INFO root fetch - processPackages [tibia.py]: New version: [6.2.0] Old Version: [6.1.0]
+[2024-04-06 06:12:42] WARNING root fetch - processPackages [baml-ffi]: Skipping, unable to determine old version
+[2024-04-06 06:12:42] INFO root fetch - main [MainThread]: End processing [baml-ffi] error
+[2024-04-06 06:12:42] INFO root fetch - processPackages [acstore]: New version: [20240406] Old Version: [20240128]
+[2024-04-06 06:12:42] INFO root fetch - processPackages [pybureaucrat]: New version: [1.0.4] Old Version: [1.0.1]
+[2024-04-06 06:12:42] INFO root fetch - processPackages [tibia.py]: Downloading https://files.pythonhosted.org/packages/1f/14/e16fba0e9186ebb854b4a9676b7864988f29018bd5b5190f130ac11ebe3e/tibia.py-6.1.0.tar.gz
+[2024-04-06 06:12:42] WARNING root fetch - processPackages [tibia.py]: Timeout reached during download
+[2024-04-06 06:12:42] INFO root fetch - processPackages [acstore]: Downloading https://files.pythonhosted.org/packages/66/d7/73c6017ea6761e29a79f1a859a43555a5b096005dddf3176eea11d8bf68a/acstore-20240128.tar.gz
+[2024-04-06 06:12:42] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/18/20/8a58ad665d265292014a1220bd199e6078fc4ac9a1214854c464f267f672/pybureaucrat-1.0.1.tar.gz
+[2024-04-06 06:12:43] INFO root fetch - processPackages [tibia.py]: Downloading https://files.pythonhosted.org/packages/b7/93/bdcbb8ba7ff536c0070f5cc2a58191cec2281611fd0e192710fc91e9560f/tibia.py-6.2.0.tar.gz
+[2024-04-06 06:12:43] WARNING root fetch - processPackages [pybureaucrat]: Timeout reached during download
+[2024-04-06 06:12:43] WARNING root fetch - processPackages [tibia.py]: Timeout reached during download
+[2024-04-06 06:12:43] INFO root fetch - processPackages [tibia.py]: executing diffoscope
+[2024-04-06 06:12:43] INFO root fetch - processPackages [tibia.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tibia.py-6.1.0.tar.gz tmp/tibia.py-6.2.0.tar.gz --markdown 20240406/t/tibia.py/6.1.0-6.2.0/diff.md --exclude *.pyd
+[2024-04-06 06:12:43] WARNING root fetch - processPackages [acstore]: Timeout reached during download
+[2024-04-06 06:12:43] INFO root fetch - processPackages [pybureaucrat]: Downloading https://files.pythonhosted.org/packages/8a/dd/497123529b27d805b1b3f2b285696dfe94e3af877d6d51d54b6426432ac0/pybureaucrat-1.0.4.tar.gz
+[2024-04-06 06:12:43] INFO root fetch - processPackages [acstore]: Downloading https://files.pythonhosted.org/packages/f0/11/9c0801a8316d5067d729358db97fc360189ce9819aba957696c19e26eda3/acstore-20240406.tar.gz
+[2024-04-06 06:12:43] WARNING root fetch - processPackages [pybureaucrat]: Timeout reached during download
+[2024-04-06 06:12:43] INFO root fetch - processPackages [pybureaucrat]: executing diffoscope
+[2024-04-06 06:12:43] INFO root fetch - processPackages [pybureaucrat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybureaucrat-1.0.1.tar.gz tmp/pybureaucrat-1.0.4.tar.gz --markdown 20240406/p/pybureaucrat/1.0.1-1.0.4/diff.md --exclude *.pyd
+[2024-04-06 06:12:43] WARNING root fetch - processPackages [acstore]: Timeout reached during download
+[2024-04-06 06:12:43] INFO root fetch - processPackages [acstore]: executing diffoscope
+[2024-04-06 06:12:43] INFO root fetch - processPackages [acstore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acstore-20240128.tar.gz tmp/acstore-20240406.tar.gz --markdown 20240406/a/acstore/20240128-20240406/diff.md --exclude *.pyd
+[2024-04-06 06:12:43] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.1.tar.gz]
+[2024-04-06 06:12:43] INFO root fetch - processPackages [pybureaucrat]: Remove: archive file [/home/abi/fetcher/tmp/pybureaucrat-1.0.4.tar.gz]
+[2024-04-06 06:12:44] INFO root fetch - main [MainThread]: End processing [pybureaucrat]: success
+[2024-04-06 06:12:44] INFO root fetch - processPackages [tibia.py]: Remove: archive file [/home/abi/fetcher/tmp/tibia.py-6.1.0.tar.gz]
+[2024-04-06 06:12:44] INFO root fetch - processPackages [tibia.py]: Remove: archive file [/home/abi/fetcher/tmp/tibia.py-6.2.0.tar.gz]
+[2024-04-06 06:12:44] INFO root fetch - main [MainThread]: End processing [tibia.py]: success
+[2024-04-06 06:12:44] INFO root fetch - processPackages [acstore]: Remove: archive file [/home/abi/fetcher/tmp/acstore-20240128.tar.gz]
+[2024-04-06 06:12:44] INFO root fetch - processPackages [acstore]: Remove: archive file [/home/abi/fetcher/tmp/acstore-20240406.tar.gz]
+[2024-04-06 06:12:44] INFO root fetch - main [MainThread]: End processing [acstore]: success
+[2024-04-06 06:12:44] INFO root fetch - main [MainThread]: Store serial: [22645410]
