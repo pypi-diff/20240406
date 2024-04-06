@@ -16615,3 +16615,42 @@ EOFError: EOF read where object expected
 [2024-04-06 15:25:25] INFO root fetch - processPackages [masonite-orm]: Remove: archive file [/home/abi/fetcher/tmp/masonite-orm-2.9.2.tar.gz]
 [2024-04-06 15:25:25] INFO root fetch - main [MainThread]: End processing [masonite-orm]: success
 [2024-04-06 15:25:25] INFO root fetch - main [MainThread]: Store serial: [22648215]
+[2024-04-06 15:27:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648215]
+[2024-04-06 15:27:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 15:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boxedfactory
+[2024-04-06 15:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: secvision-bindeps-linux-x64
+[2024-04-06 15:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dotcon
+[2024-04-06 15:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hdx-cli-toolkit
+[2024-04-06 15:27:34] INFO root fetch - processPackages [boxedfactory]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 15:27:34] WARNING root fetch - processPackages [secvision-bindeps-linux-x64]: Skipping, unable to determine old version
+[2024-04-06 15:27:34] INFO root fetch - main [MainThread]: End processing [secvision-bindeps-linux-x64] error
+[2024-04-06 15:27:34] INFO root fetch - processPackages [dotcon]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-06 15:27:34] INFO root fetch - processPackages [hdx-cli-toolkit]: New version: [2024.4.1] Old Version: [2024.3.4]
+[2024-04-06 15:27:34] INFO root fetch - processPackages [boxedfactory]: Downloading https://files.pythonhosted.org/packages/2e/3c/74917fe9bf4746dceec97aab9548b9fffa2ba6fdcf12be4bf475c48f6f6c/boxedfactory-0.0.7.tar.gz
+[2024-04-06 15:27:34] WARNING root fetch - processPackages [boxedfactory]: Timeout reached during download
+[2024-04-06 15:27:34] INFO root fetch - processPackages [dotcon]: Downloading https://files.pythonhosted.org/packages/c8/5d/4f98ebc31d06d4b2550ced6e83f344411ba6f02e429b9b6fc709fb31e33a/dotcon-0.2.0.tar.gz
+[2024-04-06 15:27:34] INFO root fetch - processPackages [hdx-cli-toolkit]: Downloading https://files.pythonhosted.org/packages/e2/41/e8cb07ce4058c5228f9572d3f940d3974802571f7a5baac5a905dc036ccf/hdx_cli_toolkit-2024.3.4.tar.gz
+[2024-04-06 15:27:34] INFO root fetch - processPackages [boxedfactory]: Downloading https://files.pythonhosted.org/packages/db/84/654120932bbb70daaf8d11dec99ef25e174c66768fdc8559e2b74616c9d3/boxedfactory-0.0.8.tar.gz
+[2024-04-06 15:27:34] WARNING root fetch - processPackages [dotcon]: Timeout reached during download
+[2024-04-06 15:27:34] WARNING root fetch - processPackages [hdx-cli-toolkit]: Timeout reached during download
+[2024-04-06 15:27:34] WARNING root fetch - processPackages [boxedfactory]: Timeout reached during download
+[2024-04-06 15:27:35] INFO root fetch - processPackages [boxedfactory]: executing diffoscope
+[2024-04-06 15:27:35] INFO root fetch - processPackages [boxedfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxedfactory-0.0.7.tar.gz tmp/boxedfactory-0.0.8.tar.gz --markdown 20240406/b/boxedfactory/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 15:27:35] INFO root fetch - processPackages [dotcon]: Downloading https://files.pythonhosted.org/packages/3e/25/571c2d9467df1aca06764dcd4d6b7a123b328a0b6fead15ee80594002015/dotcon-0.3.0.tar.gz
+[2024-04-06 15:27:35] INFO root fetch - processPackages [hdx-cli-toolkit]: Downloading https://files.pythonhosted.org/packages/a9/44/eb82cf238a415cf526626aed41e6464f9d61f8670950e9aa38ac45db778e/hdx_cli_toolkit-2024.4.1.tar.gz
+[2024-04-06 15:27:35] WARNING root fetch - processPackages [dotcon]: Timeout reached during download
+[2024-04-06 15:27:35] INFO root fetch - processPackages [dotcon]: executing diffoscope
+[2024-04-06 15:27:35] INFO root fetch - processPackages [dotcon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dotcon-0.2.0.tar.gz tmp/dotcon-0.3.0.tar.gz --markdown 20240406/d/dotcon/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-06 15:27:35] WARNING root fetch - processPackages [hdx-cli-toolkit]: Timeout reached during download
+[2024-04-06 15:27:35] INFO root fetch - processPackages [hdx-cli-toolkit]: executing diffoscope
+[2024-04-06 15:27:35] INFO root fetch - processPackages [hdx-cli-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hdx_cli_toolkit-2024.3.4.tar.gz tmp/hdx_cli_toolkit-2024.4.1.tar.gz --markdown 20240406/h/hdx-cli-toolkit/2024.3.4-2024.4.1/diff.md --exclude *.pyd
+[2024-04-06 15:27:35] INFO root fetch - processPackages [boxedfactory]: Remove: archive file [/home/abi/fetcher/tmp/boxedfactory-0.0.7.tar.gz]
+[2024-04-06 15:27:35] INFO root fetch - processPackages [boxedfactory]: Remove: archive file [/home/abi/fetcher/tmp/boxedfactory-0.0.8.tar.gz]
+[2024-04-06 15:27:35] INFO root fetch - main [MainThread]: End processing [boxedfactory]: success
+[2024-04-06 15:27:35] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.2.0.tar.gz]
+[2024-04-06 15:27:35] INFO root fetch - processPackages [dotcon]: Remove: archive file [/home/abi/fetcher/tmp/dotcon-0.3.0.tar.gz]
+[2024-04-06 15:27:35] INFO root fetch - main [MainThread]: End processing [dotcon]: success
+[2024-04-06 15:27:35] INFO root fetch - processPackages [hdx-cli-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/hdx_cli_toolkit-2024.3.4.tar.gz]
+[2024-04-06 15:27:35] INFO root fetch - processPackages [hdx-cli-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/hdx_cli_toolkit-2024.4.1.tar.gz]
+[2024-04-06 15:27:35] INFO root fetch - main [MainThread]: End processing [hdx-cli-toolkit]: success
+[2024-04-06 15:27:35] INFO root fetch - main [MainThread]: Store serial: [22648226]
