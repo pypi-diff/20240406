@@ -11685,3 +11685,17 @@
 [2024-04-06 09:21:13] INFO root fetch - processPackages [PyGObject]: Remove: archive file [/home/abi/fetcher/tmp/pygobject-3.48.2.tar.gz]
 [2024-04-06 09:21:13] INFO root fetch - main [MainThread]: End processing [PyGObject]: success
 [2024-04-06 09:21:13] INFO root fetch - main [MainThread]: Store serial: [22646395]
+[2024-04-06 09:23:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646395]
+[2024-04-06 09:23:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 09:23:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdrf-pipelines
+[2024-04-06 09:23:22] INFO root fetch - processPackages [sdrf-pipelines]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 09:23:22] INFO root fetch - processPackages [sdrf-pipelines]: Downloading https://files.pythonhosted.org/packages/00/b2/c2e58c2f218d173b5523f9a5b43a26ef598cb9344db6d69cba48173e3951/sdrf-pipelines-0.0.8.tar.gz
+[2024-04-06 09:23:23] WARNING root fetch - processPackages [sdrf-pipelines]: Timeout reached during download
+[2024-04-06 09:23:23] INFO root fetch - processPackages [sdrf-pipelines]: Downloading https://files.pythonhosted.org/packages/b6/20/99f0af165aa753aa3edbd1811a440922b7c7f23ab7e049bfb1c08210b9c3/sdrf-pipelines-0.0.9.tar.gz
+[2024-04-06 09:23:24] WARNING root fetch - processPackages [sdrf-pipelines]: Timeout reached during download
+[2024-04-06 09:23:24] INFO root fetch - processPackages [sdrf-pipelines]: executing diffoscope
+[2024-04-06 09:23:24] INFO root fetch - processPackages [sdrf-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdrf-pipelines-0.0.8.tar.gz tmp/sdrf-pipelines-0.0.9.tar.gz --markdown 20240406/s/sdrf-pipelines/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 09:23:24] INFO root fetch - processPackages [sdrf-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/sdrf-pipelines-0.0.8.tar.gz]
+[2024-04-06 09:23:24] INFO root fetch - processPackages [sdrf-pipelines]: Remove: archive file [/home/abi/fetcher/tmp/sdrf-pipelines-0.0.9.tar.gz]
+[2024-04-06 09:23:24] INFO root fetch - main [MainThread]: End processing [sdrf-pipelines]: success
+[2024-04-06 09:23:24] INFO root fetch - main [MainThread]: Store serial: [22646398]
