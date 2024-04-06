@@ -18754,3 +18754,39 @@ EOFError: EOF read where object expected
 [2024-04-06 17:38:09] INFO root fetch - processPackages [metabeaver]: Remove: archive file [/home/abi/fetcher/tmp/metabeaver-0.4.2.tar.gz]
 [2024-04-06 17:38:09] INFO root fetch - main [MainThread]: End processing [metabeaver]: success
 [2024-04-06 17:38:09] INFO root fetch - main [MainThread]: Store serial: [22649066]
+[2024-04-06 17:40:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649066]
+[2024-04-06 17:40:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 17:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprocketship
+[2024-04-06 17:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vomero
+[2024-04-06 17:40:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glycogenius
+[2024-04-06 17:40:18] INFO root fetch - processPackages [vomero]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-06 17:40:18] INFO root fetch - processPackages [sprocketship]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 17:40:18] INFO root fetch - processPackages [glycogenius]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-06 17:40:18] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/4a/04/7c484c3ebcb486d63df55c9b565a680f305b65c0193826f913351ba314d3/sprocketship-0.0.8.tar.gz
+[2024-04-06 17:40:18] INFO root fetch - processPackages [vomero]: Downloading https://files.pythonhosted.org/packages/0f/17/be84b1109f19dd594795580190ac7db3264e7827810b78d0020851fc2884/vomero-0.1.0.tar.gz
+[2024-04-06 17:40:18] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 17:40:18] INFO root fetch - processPackages [glycogenius]: Downloading https://files.pythonhosted.org/packages/e9/3d/971839c46186f8807508de0d064b9bc321de6e9254895fdb02159b67d5d6/glycogenius-1.1.8.tar.gz
+[2024-04-06 17:40:18] WARNING root fetch - processPackages [vomero]: Timeout reached during download
+[2024-04-06 17:40:18] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/3b/1f/ef5adaa427009cf67f6258034539521481c76a9ad94df0f6976077386506/sprocketship-0.0.9.tar.gz
+[2024-04-06 17:40:18] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 17:40:18] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 17:40:18] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.0.8.tar.gz tmp/sprocketship-0.0.9.tar.gz --markdown 20240406/s/sprocketship/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:40:18] INFO root fetch - processPackages [vomero]: Downloading https://files.pythonhosted.org/packages/ea/1d/0f5d2e7fec4a564dad83ef91aea5a12e2f6aef72e38335db79facc3e4a3d/vomero-0.1.2.tar.gz
+[2024-04-06 17:40:18] WARNING root fetch - processPackages [glycogenius]: Timeout reached during download
+[2024-04-06 17:40:19] WARNING root fetch - processPackages [vomero]: Timeout reached during download
+[2024-04-06 17:40:19] INFO root fetch - processPackages [vomero]: executing diffoscope
+[2024-04-06 17:40:19] INFO root fetch - processPackages [vomero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vomero-0.1.0.tar.gz tmp/vomero-0.1.2.tar.gz --markdown 20240406/v/vomero/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 17:40:19] INFO root fetch - processPackages [glycogenius]: Downloading https://files.pythonhosted.org/packages/f9/aa/d8c0817c97d35e2e770ab56ee168ea5838169a51aefc3c031b03c027920f/glycogenius-1.1.9.tar.gz
+[2024-04-06 17:40:19] WARNING root fetch - processPackages [glycogenius]: Timeout reached during download
+[2024-04-06 17:40:19] INFO root fetch - processPackages [glycogenius]: executing diffoscope
+[2024-04-06 17:40:19] INFO root fetch - processPackages [glycogenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glycogenius-1.1.8.tar.gz tmp/glycogenius-1.1.9.tar.gz --markdown 20240406/g/glycogenius/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2024-04-06 17:40:19] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.8.tar.gz]
+[2024-04-06 17:40:19] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.9.tar.gz]
+[2024-04-06 17:40:19] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 17:40:19] INFO root fetch - processPackages [vomero]: Remove: archive file [/home/abi/fetcher/tmp/vomero-0.1.0.tar.gz]
+[2024-04-06 17:40:19] INFO root fetch - processPackages [vomero]: Remove: archive file [/home/abi/fetcher/tmp/vomero-0.1.2.tar.gz]
+[2024-04-06 17:40:19] INFO root fetch - main [MainThread]: End processing [vomero]: success
+[2024-04-06 17:40:19] INFO root fetch - processPackages [glycogenius]: Remove: archive file [/home/abi/fetcher/tmp/glycogenius-1.1.8.tar.gz]
+[2024-04-06 17:40:19] INFO root fetch - processPackages [glycogenius]: Remove: archive file [/home/abi/fetcher/tmp/glycogenius-1.1.9.tar.gz]
+[2024-04-06 17:40:19] INFO root fetch - main [MainThread]: End processing [glycogenius]: success
+[2024-04-06 17:40:19] INFO root fetch - main [MainThread]: Store serial: [22649074]
