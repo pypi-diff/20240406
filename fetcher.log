@@ -15482,3 +15482,39 @@ EOFError: EOF read where object expected
 [2024-04-06 14:04:38] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz]
 [2024-04-06 14:04:38] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
 [2024-04-06 14:04:38] INFO root fetch - main [MainThread]: Store serial: [22647713]
+[2024-04-06 14:06:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647713]
+[2024-04-06 14:06:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 14:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xraygpt
+[2024-04-06 14:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-rke
+[2024-04-06 14:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Lisva81
+[2024-04-06 14:06:47] INFO root fetch - processPackages [xraygpt]: New version: [0.1.1.dev2] Old Version: [0.1.1.dev1]
+[2024-04-06 14:06:47] INFO root fetch - processPackages [Lisva81]: New version: [3.0.0] Old Version: [2.0.0]
+[2024-04-06 14:06:48] INFO root fetch - processPackages [xraygpt]: Downloading https://files.pythonhosted.org/packages/83/d4/e3e259a08e3473b70e86e793f5e2bb25b275324b997a120331757bb15881/xraygpt-0.1.1.dev1.tar.gz
+[2024-04-06 14:06:48] INFO root fetch - processPackages [pulumi-rke]: New version: [3.4.0a1712402957] Old Version: [3.4.0a1711742753]
+[2024-04-06 14:06:48] INFO root fetch - processPackages [Lisva81]: Downloading https://files.pythonhosted.org/packages/76/8a/d5bda27712aeea88c75255ed157d8f199bde26f8f911eeeeb0f8d6950142/Lisva81-2.0.0.tar.gz
+[2024-04-06 14:06:48] WARNING root fetch - processPackages [xraygpt]: Timeout reached during download
+[2024-04-06 14:06:48] WARNING root fetch - processPackages [Lisva81]: Timeout reached during download
+[2024-04-06 14:06:48] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/9b/1d/a179d980f7123d289d436c5fc37eca9e00cc0c5e872a745bf1fed8f2645c/pulumi_rke-3.4.0a1711742753.tar.gz
+[2024-04-06 14:06:48] INFO root fetch - processPackages [xraygpt]: Downloading https://files.pythonhosted.org/packages/04/8e/1fa37cf1d82df027aa1d78297d9f8875f4df467b3dede0d0091c0eeb9dda/xraygpt-0.1.1.dev2.tar.gz
+[2024-04-06 14:06:48] INFO root fetch - processPackages [Lisva81]: Downloading https://files.pythonhosted.org/packages/f6/8e/115478f60dbfe582b550886a9006bdf9aed292f55c1e978e96a06db7187a/Lisva81-3.0.0.tar.gz
+[2024-04-06 14:06:48] WARNING root fetch - processPackages [pulumi-rke]: Timeout reached during download
+[2024-04-06 14:06:48] WARNING root fetch - processPackages [xraygpt]: Timeout reached during download
+[2024-04-06 14:06:48] INFO root fetch - processPackages [xraygpt]: executing diffoscope
+[2024-04-06 14:06:48] INFO root fetch - processPackages [xraygpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xraygpt-0.1.1.dev1.tar.gz tmp/xraygpt-0.1.1.dev2.tar.gz --markdown 20240406/x/xraygpt/0.1.1.dev1-0.1.1.dev2/diff.md --exclude *.pyd
+[2024-04-06 14:06:48] WARNING root fetch - processPackages [Lisva81]: Timeout reached during download
+[2024-04-06 14:06:48] INFO root fetch - processPackages [Lisva81]: executing diffoscope
+[2024-04-06 14:06:48] INFO root fetch - processPackages [Lisva81]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lisva81-2.0.0.tar.gz tmp/Lisva81-3.0.0.tar.gz --markdown 20240406/L/Lisva81/2.0.0-3.0.0/diff.md --exclude *.pyd
+[2024-04-06 14:06:48] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/a7/5a/fff7e4c2508276ca3278f15a7e758b61fa24cb2b0a37bc142aaadd87319c/pulumi_rke-3.4.0a1712402957.tar.gz
+[2024-04-06 14:06:48] WARNING root fetch - processPackages [pulumi-rke]: Timeout reached during download
+[2024-04-06 14:06:48] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2024-04-06 14:06:48] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.4.0a1711742753.tar.gz tmp/pulumi_rke-3.4.0a1712402957.tar.gz --markdown 20240406/p/pulumi-rke/3.4.0a1711742753-3.4.0a1712402957/diff.md --exclude *.pyd
+[2024-04-06 14:06:49] INFO root fetch - processPackages [xraygpt]: Remove: archive file [/home/abi/fetcher/tmp/xraygpt-0.1.1.dev1.tar.gz]
+[2024-04-06 14:06:49] INFO root fetch - processPackages [xraygpt]: Remove: archive file [/home/abi/fetcher/tmp/xraygpt-0.1.1.dev2.tar.gz]
+[2024-04-06 14:06:49] INFO root fetch - main [MainThread]: End processing [xraygpt]: success
+[2024-04-06 14:06:49] INFO root fetch - processPackages [Lisva81]: Remove: archive file [/home/abi/fetcher/tmp/Lisva81-2.0.0.tar.gz]
+[2024-04-06 14:06:49] INFO root fetch - processPackages [Lisva81]: Remove: archive file [/home/abi/fetcher/tmp/Lisva81-3.0.0.tar.gz]
+[2024-04-06 14:06:49] INFO root fetch - main [MainThread]: End processing [Lisva81]: success
+[2024-04-06 14:06:49] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.4.0a1711742753.tar.gz]
+[2024-04-06 14:06:49] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.4.0a1712402957.tar.gz]
+[2024-04-06 14:06:49] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2024-04-06 14:06:49] INFO root fetch - main [MainThread]: Store serial: [22647722]
