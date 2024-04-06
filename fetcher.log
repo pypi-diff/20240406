@@ -17607,3 +17607,50 @@ EOFError: EOF read where object expected
 [2024-04-06 16:23:26] INFO root fetch - processPackages [bowtie-json-schema]: Remove: archive file [/home/abi/fetcher/tmp/bowtie_json_schema-2024.4.2.tar.gz]
 [2024-04-06 16:23:26] INFO root fetch - main [MainThread]: End processing [bowtie-json-schema]: success
 [2024-04-06 16:23:26] INFO root fetch - main [MainThread]: Store serial: [22648630]
+[2024-04-06 16:25:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648630]
+[2024-04-06 16:25:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 16:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: function2widgets
+[2024-04-06 16:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xontrib-cmd-durations
+[2024-04-06 16:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfineflow
+[2024-04-06 16:25:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auth-middleware
+[2024-04-06 16:25:35] INFO root fetch - processPackages [function2widgets]: New version: [0.6.8] Old Version: [0.6.7]
+[2024-04-06 16:25:36] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.6] Old Version: [0.1.4]
+[2024-04-06 16:25:36] INFO root fetch - processPackages [pyfineflow]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-06 16:25:36] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/40/82/7bf6da16f97a74fabfeef8f7ef0c2da3513db9b0175481b583bc39f20eab/function2widgets-0.6.7.tar.gz
+[2024-04-06 16:25:36] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/6e/35/1f50682b43409a2b37e31d8c9e218022e7eb0e2bb1ebfe59d77f1a712396/auth_middleware-0.1.4.tar.gz
+[2024-04-06 16:25:36] INFO root fetch - processPackages [xontrib-cmd-durations]: New version: [0.3.1] Old Version: [0.2.9]
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 16:25:36] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/48/36/a1cea9bf9b9f9ba8900717885136b7aecf3e3e1a4fec6ac8ef9c4b73f412/pyfineflow-1.0.5.tar.gz
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [function2widgets]: Timeout reached during download
+[2024-04-06 16:25:36] INFO root fetch - processPackages [xontrib-cmd-durations]: Downloading https://files.pythonhosted.org/packages/76/55/db9347f7a39bed08fd4860c3450a40bda9e126f1eaceccf7fe44f9219271/xontrib-cmd-durations-0.2.9.tar.gz
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [pyfineflow]: Timeout reached during download
+[2024-04-06 16:25:36] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/f9/00/1bb6f655942d31ac710650fce1afa17b63d01b111b1550fb7b6045316f54/auth_middleware-0.1.6.tar.gz
+[2024-04-06 16:25:36] INFO root fetch - processPackages [function2widgets]: Downloading https://files.pythonhosted.org/packages/8d/1f/9c80cc0aab57113a16bdbcc707f880482de6978e247d641da138c8c8c73d/function2widgets-0.6.8.tar.gz
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [xontrib-cmd-durations]: Timeout reached during download
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 16:25:36] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-06 16:25:36] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.4.tar.gz tmp/auth_middleware-0.1.6.tar.gz --markdown 20240406/a/auth-middleware/0.1.4-0.1.6/diff.md --exclude *.pyd
+[2024-04-06 16:25:36] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/a3/95/569b0af07df0217ddcce9d7abf23c6040c09a77f97fa9fbc9dd0765c7d58/pyfineflow-1.0.6.tar.gz
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [function2widgets]: Timeout reached during download
+[2024-04-06 16:25:36] INFO root fetch - processPackages [function2widgets]: executing diffoscope
+[2024-04-06 16:25:36] INFO root fetch - processPackages [function2widgets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/function2widgets-0.6.7.tar.gz tmp/function2widgets-0.6.8.tar.gz --markdown 20240406/f/function2widgets/0.6.7-0.6.8/diff.md --exclude *.pyd
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [pyfineflow]: Timeout reached during download
+[2024-04-06 16:25:36] INFO root fetch - processPackages [pyfineflow]: executing diffoscope
+[2024-04-06 16:25:36] INFO root fetch - processPackages [pyfineflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfineflow-1.0.5.tar.gz tmp/pyfineflow-1.0.6.tar.gz --markdown 20240406/p/pyfineflow/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2024-04-06 16:25:36] INFO root fetch - processPackages [xontrib-cmd-durations]: Downloading https://files.pythonhosted.org/packages/05/68/39a0b3f269a414cba6eb7f44847c815e4917afb9a9c9305a703317d91b96/xontrib-cmd-durations-0.3.1.tar.gz
+[2024-04-06 16:25:36] WARNING root fetch - processPackages [xontrib-cmd-durations]: Timeout reached during download
+[2024-04-06 16:25:36] INFO root fetch - processPackages [xontrib-cmd-durations]: executing diffoscope
+[2024-04-06 16:25:36] INFO root fetch - processPackages [xontrib-cmd-durations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xontrib-cmd-durations-0.2.9.tar.gz tmp/xontrib-cmd-durations-0.3.1.tar.gz --markdown 20240406/x/xontrib-cmd-durations/0.2.9-0.3.1/diff.md --exclude *.pyd
+[2024-04-06 16:25:37] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.4.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.6.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-06 16:25:37] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.0.5.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.0.6.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - main [MainThread]: End processing [pyfineflow]: success
+[2024-04-06 16:25:37] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.7.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - processPackages [function2widgets]: Remove: archive file [/home/abi/fetcher/tmp/function2widgets-0.6.8.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - main [MainThread]: End processing [function2widgets]: success
+[2024-04-06 16:25:37] INFO root fetch - processPackages [xontrib-cmd-durations]: Remove: archive file [/home/abi/fetcher/tmp/xontrib-cmd-durations-0.2.9.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - processPackages [xontrib-cmd-durations]: Remove: archive file [/home/abi/fetcher/tmp/xontrib-cmd-durations-0.3.1.tar.gz]
+[2024-04-06 16:25:37] INFO root fetch - main [MainThread]: End processing [xontrib-cmd-durations]: success
+[2024-04-06 16:25:37] INFO root fetch - main [MainThread]: Store serial: [22648643]
