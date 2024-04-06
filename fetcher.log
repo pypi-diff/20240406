@@ -17980,3 +17980,33 @@ EOFError: EOF read where object expected
 [2024-04-06 16:45:34] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.4.tar.gz]
 [2024-04-06 16:45:34] INFO root fetch - main [MainThread]: End processing [utrc]: success
 [2024-04-06 16:45:34] INFO root fetch - main [MainThread]: Store serial: [22648745]
+[2024-04-06 16:47:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648745]
+[2024-04-06 16:47:43] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 16:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MolScore
+[2024-04-06 16:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chgksuite
+[2024-04-06 16:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyGz1
+[2024-04-06 16:47:43] INFO root fetch - processPackages [PyGz1]: New version: [0.3.1] Old Version: [0.3]
+[2024-04-06 16:47:43] INFO root fetch - processPackages [chgksuite]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 16:47:43] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/3a/af/9a5a208ae952a34c360bf3a36ba3c299f64d43e6cf097382ceb69fc168c6/PyGz1-0.3.tar.gz
+[2024-04-06 16:47:43] INFO root fetch - processPackages [MolScore]: New version: [1.4.1] Old Version: [1.4]
+[2024-04-06 16:47:43] INFO root fetch - processPackages [chgksuite]: Downloading https://files.pythonhosted.org/packages/08/2b/0f75e642fcf6761c9237515450091e8f2eada4286e45f82cc52053558c7b/chgksuite-0.9.0.tar.gz
+[2024-04-06 16:47:43] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:47:43] WARNING root fetch - processPackages [chgksuite]: Timeout reached during download
+[2024-04-06 16:47:43] INFO root fetch - processPackages [MolScore]: Downloading https://files.pythonhosted.org/packages/67/cc/92306002e14540f3a0c74e5011c2a909bc5b7b208a9da396af00047bc2be/MolScore-1.4.tar.gz
+[2024-04-06 16:47:44] INFO root fetch - processPackages [chgksuite]: Downloading https://files.pythonhosted.org/packages/cd/f6/800bb5f46eb8b4639b4c81f8c7ad31a582abdb353fd822359c239ec699fd/chgksuite-0.9.1.tar.gz
+[2024-04-06 16:47:44] WARNING root fetch - processPackages [MolScore]: Skipping package: exceeds size limit 53257191>=10485760
+[2024-04-06 16:47:44] INFO root fetch - main [MainThread]: End processing [MolScore] error
+[2024-04-06 16:47:44] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/95/a9/a45bf13a28262810712356b1178e58354f5ffa6964124dd48a2eb917f1b0/PyGz1-0.3.1.tar.gz
+[2024-04-06 16:47:44] WARNING root fetch - processPackages [chgksuite]: Timeout reached during download
+[2024-04-06 16:47:44] INFO root fetch - processPackages [chgksuite]: executing diffoscope
+[2024-04-06 16:47:44] INFO root fetch - processPackages [chgksuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chgksuite-0.9.0.tar.gz tmp/chgksuite-0.9.1.tar.gz --markdown 20240406/c/chgksuite/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 16:47:44] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:47:44] INFO root fetch - processPackages [PyGz1]: executing diffoscope
+[2024-04-06 16:47:44] INFO root fetch - processPackages [PyGz1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGz1-0.3.tar.gz tmp/PyGz1-0.3.1.tar.gz --markdown 20240406/P/PyGz1/0.3-0.3.1/diff.md --exclude *.pyd
+[2024-04-06 16:47:44] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.3.tar.gz]
+[2024-04-06 16:47:44] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.3.1.tar.gz]
+[2024-04-06 16:47:44] INFO root fetch - main [MainThread]: End processing [PyGz1]: success
+[2024-04-06 16:47:44] INFO root fetch - processPackages [chgksuite]: Remove: archive file [/home/abi/fetcher/tmp/chgksuite-0.9.0.tar.gz]
+[2024-04-06 16:47:44] INFO root fetch - processPackages [chgksuite]: Remove: archive file [/home/abi/fetcher/tmp/chgksuite-0.9.1.tar.gz]
+[2024-04-06 16:47:44] INFO root fetch - main [MainThread]: End processing [chgksuite]: success
+[2024-04-06 16:47:44] INFO root fetch - main [MainThread]: Store serial: [22648751]
