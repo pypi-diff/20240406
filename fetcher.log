@@ -24887,3 +24887,31 @@ EOFError: EOF read where object expected
 [2024-04-06 23:22:47] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.9.tar.gz]
 [2024-04-06 23:22:47] INFO root fetch - main [MainThread]: End processing [TokenProbs]: success
 [2024-04-06 23:22:47] INFO root fetch - main [MainThread]: Store serial: [22651250]
+[2024-04-06 23:24:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651250]
+[2024-04-06 23:24:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 23:24:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyweatherfr
+[2024-04-06 23:24:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tree-sitter-gstlaunch
+[2024-04-06 23:24:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unicodedata-reader
+[2024-04-06 23:24:56] INFO root fetch - processPackages [unicodedata-reader]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-04-06 23:24:56] INFO root fetch - processPackages [pyweatherfr]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-06 23:24:56] WARNING root fetch - processPackages [tree-sitter-gstlaunch]: Skipping, unable to determine old version
+[2024-04-06 23:24:56] INFO root fetch - main [MainThread]: End processing [tree-sitter-gstlaunch] error
+[2024-04-06 23:24:56] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/25/b6/60ddd6355e17ed681821470c0ab403f70be32a3eb63641300a54e7f45251/unicodedata_reader-1.0.1.tar.gz
+[2024-04-06 23:24:56] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/8a/0e/caff4dfde4aa8629e4296bf66177f70c46718dc1874d5289a20bb75812e4/pyweatherfr-2.0.1.tar.gz
+[2024-04-06 23:24:56] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 23:24:56] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-06 23:24:56] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/4d/01/86d19db16054e2603fcb28d4ba68ef5b25ebdb5b329e7986bca4818eb95c/pyweatherfr-2.0.2.tar.gz
+[2024-04-06 23:24:56] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/15/8e/c4df06333921cec480c79063b568df427f8e8f971429d16e0b828ee36329/unicodedata_reader-1.1.0.tar.gz
+[2024-04-06 23:24:56] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-06 23:24:56] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-06 23:24:56] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-2.0.1.tar.gz tmp/pyweatherfr-2.0.2.tar.gz --markdown 20240406/p/pyweatherfr/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2024-04-06 23:24:56] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 23:24:56] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-06 23:24:56] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata_reader-1.0.1.tar.gz tmp/unicodedata_reader-1.1.0.tar.gz --markdown 20240406/u/unicodedata-reader/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2024-04-06 23:24:57] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.1.tar.gz]
+[2024-04-06 23:24:57] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.2.tar.gz]
+[2024-04-06 23:24:57] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-06 23:24:57] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.0.1.tar.gz]
+[2024-04-06 23:24:57] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.1.0.tar.gz]
+[2024-04-06 23:24:57] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-06 23:24:57] INFO root fetch - main [MainThread]: Store serial: [22651268]
