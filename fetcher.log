@@ -11254,3 +11254,17 @@
 [2024-04-06 08:40:38] INFO root fetch - processPackages [jupyter-iam]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_iam-1.0.0-py3-none-any.whl.zip]
 [2024-04-06 08:40:38] INFO root fetch - main [MainThread]: End processing [jupyter-iam]: success
 [2024-04-06 08:40:38] INFO root fetch - main [MainThread]: Store serial: [22646135]
+[2024-04-06 08:42:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646135]
+[2024-04-06 08:42:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 08:42:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apconfig
+[2024-04-06 08:42:47] INFO root fetch - processPackages [apconfig]: New version: [0.0.105] Old Version: [0.0.104]
+[2024-04-06 08:42:47] INFO root fetch - processPackages [apconfig]: Downloading https://files.pythonhosted.org/packages/c4/28/c45f6d95a37b6afad29fbe889a12d151128d091f9b9b192aaf324d60c122/apconfig-0.0.104.tar.gz
+[2024-04-06 08:42:48] WARNING root fetch - processPackages [apconfig]: Timeout reached during download
+[2024-04-06 08:42:48] INFO root fetch - processPackages [apconfig]: Downloading https://files.pythonhosted.org/packages/50/8d/9e20bedb9ddd075ac6722d649b9b6c2b5c571ddecf0c68120bc71fc650da/apconfig-0.0.105.tar.gz
+[2024-04-06 08:42:48] WARNING root fetch - processPackages [apconfig]: Timeout reached during download
+[2024-04-06 08:42:48] INFO root fetch - processPackages [apconfig]: executing diffoscope
+[2024-04-06 08:42:48] INFO root fetch - processPackages [apconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apconfig-0.0.104.tar.gz tmp/apconfig-0.0.105.tar.gz --markdown 20240406/a/apconfig/0.0.104-0.0.105/diff.md --exclude *.pyd
+[2024-04-06 08:42:48] INFO root fetch - processPackages [apconfig]: Remove: archive file [/home/abi/fetcher/tmp/apconfig-0.0.104.tar.gz]
+[2024-04-06 08:42:48] INFO root fetch - processPackages [apconfig]: Remove: archive file [/home/abi/fetcher/tmp/apconfig-0.0.105.tar.gz]
+[2024-04-06 08:42:48] INFO root fetch - main [MainThread]: End processing [apconfig]: success
+[2024-04-06 08:42:48] INFO root fetch - main [MainThread]: Store serial: [22646138]
