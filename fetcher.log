@@ -16654,3 +16654,17 @@ EOFError: EOF read where object expected
 [2024-04-06 15:27:35] INFO root fetch - processPackages [hdx-cli-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/hdx_cli_toolkit-2024.4.1.tar.gz]
 [2024-04-06 15:27:35] INFO root fetch - main [MainThread]: End processing [hdx-cli-toolkit]: success
 [2024-04-06 15:27:35] INFO root fetch - main [MainThread]: Store serial: [22648226]
+[2024-04-06 15:29:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648226]
+[2024-04-06 15:29:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 15:29:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai-model-base
+[2024-04-06 15:29:44] INFO root fetch - processPackages [ai-model-base]: New version: [0.0.1.dev2] Old Version: [0.0.1.dev1]
+[2024-04-06 15:29:44] INFO root fetch - processPackages [ai-model-base]: Downloading https://files.pythonhosted.org/packages/12/3a/ed863f0bb6f17def5063a357476ac683faac531fdab2ae919cc5de1fea94/ai_model_base-0.0.1.dev1.tar.gz
+[2024-04-06 15:29:44] WARNING root fetch - processPackages [ai-model-base]: Timeout reached during download
+[2024-04-06 15:29:45] INFO root fetch - processPackages [ai-model-base]: Downloading https://files.pythonhosted.org/packages/aa/dd/fe86059a5743e6b7d86eb56066480e9581db67f6577267e9c352c3a90cf8/ai_model_base-0.0.1.dev2.tar.gz
+[2024-04-06 15:29:45] WARNING root fetch - processPackages [ai-model-base]: Timeout reached during download
+[2024-04-06 15:29:45] INFO root fetch - processPackages [ai-model-base]: executing diffoscope
+[2024-04-06 15:29:45] INFO root fetch - processPackages [ai-model-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_model_base-0.0.1.dev1.tar.gz tmp/ai_model_base-0.0.1.dev2.tar.gz --markdown 20240406/a/ai-model-base/0.0.1.dev1-0.0.1.dev2/diff.md --exclude *.pyd
+[2024-04-06 15:29:45] INFO root fetch - processPackages [ai-model-base]: Remove: archive file [/home/abi/fetcher/tmp/ai_model_base-0.0.1.dev1.tar.gz]
+[2024-04-06 15:29:45] INFO root fetch - processPackages [ai-model-base]: Remove: archive file [/home/abi/fetcher/tmp/ai_model_base-0.0.1.dev2.tar.gz]
+[2024-04-06 15:29:45] INFO root fetch - main [MainThread]: End processing [ai-model-base]: success
+[2024-04-06 15:29:45] INFO root fetch - main [MainThread]: Store serial: [22648229]
