@@ -7869,3 +7869,45 @@
 [2024-04-06 04:19:52] ERROR root fetch - processPackages [reqless]: Unable to get metadata: No such project 'reqless'
 [2024-04-06 04:19:52] INFO root fetch - main [MainThread]: End processing [reqless] error
 [2024-04-06 04:19:52] INFO root fetch - main [MainThread]: Store serial: [22644930]
+[2024-04-06 04:21:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644930]
+[2024-04-06 04:22:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 04:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: athina-logger
+[2024-04-06 04:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reqless
+[2024-04-06 04:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: celldega
+[2024-04-06 04:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: renderable
+[2024-04-06 04:22:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cpymake
+[2024-04-06 04:22:00] INFO root fetch - processPackages [cpymake]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 04:22:00] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/d4/13/c7cf1d8b996af1a9263feba26895b3fc30a118a1a999e0f06a280ea10653/cpymake-0.1.1.tar.gz
+[2024-04-06 04:22:00] INFO root fetch - processPackages [celldega]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-04-06 04:22:00] INFO root fetch - processPackages [athina-logger]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-06 04:22:00] WARNING root fetch - processPackages [renderable]: Skipping, unable to determine old version
+[2024-04-06 04:22:00] INFO root fetch - main [MainThread]: End processing [renderable] error
+[2024-04-06 04:22:00] WARNING root fetch - processPackages [reqless]: Skipping, unable to determine old version
+[2024-04-06 04:22:00] INFO root fetch - main [MainThread]: End processing [reqless] error
+[2024-04-06 04:22:00] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:22:00] INFO root fetch - processPackages [celldega]: Downloading https://files.pythonhosted.org/packages/87/bf/6cc3a031a5c21c21dbaa329aeb0002ca692248c1cdaca16c7b083fd046e2/celldega-0.0.0.tar.gz
+[2024-04-06 04:22:00] INFO root fetch - processPackages [athina-logger]: Downloading https://files.pythonhosted.org/packages/fc/92/ea32cda9c424a7805d0b6e7d0d790f8233d470b3799a2e4f5c9d19ace626/athina_logger-1.1.0.tar.gz
+[2024-04-06 04:22:00] WARNING root fetch - processPackages [celldega]: Timeout reached during download
+[2024-04-06 04:22:01] WARNING root fetch - processPackages [athina-logger]: Timeout reached during download
+[2024-04-06 04:22:01] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/7c/f3/564e360f14fdd0e60f8bacb0f991ca2c3d72dfe76dd4846f7c5574dcd87e/cpymake-0.1.2.tar.gz
+[2024-04-06 04:22:01] INFO root fetch - processPackages [celldega]: Downloading https://files.pythonhosted.org/packages/e8/c1/c0bbd441f3368d1cc74983e87ffed9c8f7ca62ee8721cc1153932b4e9f52/celldega-0.1.0.tar.gz
+[2024-04-06 04:22:01] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:22:01] INFO root fetch - processPackages [cpymake]: executing diffoscope
+[2024-04-06 04:22:01] INFO root fetch - processPackages [cpymake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpymake-0.1.1.tar.gz tmp/cpymake-0.1.2.tar.gz --markdown 20240406/c/cpymake/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 04:22:01] INFO root fetch - processPackages [athina-logger]: Downloading https://files.pythonhosted.org/packages/44/51/33d7486ab9cbfc9a6b9d744f484a871e49ae13b93efabf7c4550382f3508/athina_logger-1.2.0.tar.gz
+[2024-04-06 04:22:01] WARNING root fetch - processPackages [celldega]: Timeout reached during download
+[2024-04-06 04:22:01] INFO root fetch - processPackages [celldega]: executing diffoscope
+[2024-04-06 04:22:01] INFO root fetch - processPackages [celldega]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celldega-0.0.0.tar.gz tmp/celldega-0.1.0.tar.gz --markdown 20240406/c/celldega/0.0.0-0.1.0/diff.md --exclude *.pyd
+[2024-04-06 04:22:01] WARNING root fetch - processPackages [athina-logger]: Timeout reached during download
+[2024-04-06 04:22:01] INFO root fetch - processPackages [athina-logger]: executing diffoscope
+[2024-04-06 04:22:01] INFO root fetch - processPackages [athina-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athina_logger-1.1.0.tar.gz tmp/athina_logger-1.2.0.tar.gz --markdown 20240406/a/athina-logger/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2024-04-06 04:22:01] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.1.tar.gz]
+[2024-04-06 04:22:01] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.2.tar.gz]
+[2024-04-06 04:22:01] INFO root fetch - main [MainThread]: End processing [cpymake]: success
+[2024-04-06 04:22:01] INFO root fetch - processPackages [athina-logger]: Remove: archive file [/home/abi/fetcher/tmp/athina_logger-1.1.0.tar.gz]
+[2024-04-06 04:22:01] INFO root fetch - processPackages [athina-logger]: Remove: archive file [/home/abi/fetcher/tmp/athina_logger-1.2.0.tar.gz]
+[2024-04-06 04:22:01] INFO root fetch - main [MainThread]: End processing [athina-logger]: success
+[2024-04-06 04:22:05] INFO root fetch - processPackages [celldega]: Remove: archive file [/home/abi/fetcher/tmp/celldega-0.0.0.tar.gz]
+[2024-04-06 04:22:05] INFO root fetch - processPackages [celldega]: Remove: archive file [/home/abi/fetcher/tmp/celldega-0.1.0.tar.gz]
+[2024-04-06 04:22:05] INFO root fetch - main [MainThread]: End processing [celldega]: success
+[2024-04-06 04:22:05] INFO root fetch - main [MainThread]: Store serial: [22644949]
