@@ -14306,3 +14306,39 @@
 [2024-04-06 13:02:24] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.1.6.tar.gz]
 [2024-04-06 13:02:24] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
 [2024-04-06 13:02:24] INFO root fetch - main [MainThread]: Store serial: [22647358]
+[2024-04-06 13:04:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647358]
+[2024-04-06 13:04:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 13:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-archive
+[2024-04-06 13:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MinecraftMotionTools
+[2024-04-06 13:04:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-civo
+[2024-04-06 13:04:33] INFO root fetch - processPackages [MinecraftMotionTools]: New version: [1.8] Old Version: [1.7.6]
+[2024-04-06 13:04:33] INFO root fetch - processPackages [pulumi-archive]: New version: [0.0.6a1712398919] Old Version: [0.0.5a1711734921]
+[2024-04-06 13:04:33] INFO root fetch - processPackages [pulumi-civo]: New version: [2.4.0a1712399187] Old Version: [2.4.0a1711734994]
+[2024-04-06 13:04:34] INFO root fetch - processPackages [MinecraftMotionTools]: Downloading https://files.pythonhosted.org/packages/a4/9e/f43ea272943c21eef7ed1c3b9b3a30ce1f6963c27c3ba5b75ce65c801575/MinecraftMotionTools-1.7.6.tar.gz
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-archive]: Downloading https://files.pythonhosted.org/packages/32/37/b71d2357c8a65b6e57e552ad8b9ab5367f0725115ed53fbc6e64653ae54d/pulumi_archive-0.0.5a1711734921.tar.gz
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/55/00/12a7dd4866e10cd87d4c5d65e3151bd766001ffe5f4c8ef6e56afb9e51bd/pulumi_civo-2.4.0a1711734994.tar.gz
+[2024-04-06 13:04:34] WARNING root fetch - processPackages [MinecraftMotionTools]: Timeout reached during download
+[2024-04-06 13:04:34] WARNING root fetch - processPackages [pulumi-archive]: Timeout reached during download
+[2024-04-06 13:04:34] WARNING root fetch - processPackages [pulumi-civo]: Timeout reached during download
+[2024-04-06 13:04:34] INFO root fetch - processPackages [MinecraftMotionTools]: Downloading https://files.pythonhosted.org/packages/1d/9f/d992722e02e816c6b9767742e1b0689e026829d99d09c9c42e4cf765a31a/MinecraftMotionTools-1.8.tar.gz
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-archive]: Downloading https://files.pythonhosted.org/packages/90/c4/6e2343957860aad4fdc9d8055aa0f2a8446b022181ad34d32cfbfece4691/pulumi_archive-0.0.6a1712398919.tar.gz
+[2024-04-06 13:04:34] WARNING root fetch - processPackages [MinecraftMotionTools]: Timeout reached during download
+[2024-04-06 13:04:34] INFO root fetch - processPackages [MinecraftMotionTools]: executing diffoscope
+[2024-04-06 13:04:34] INFO root fetch - processPackages [MinecraftMotionTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MinecraftMotionTools-1.7.6.tar.gz tmp/MinecraftMotionTools-1.8.tar.gz --markdown 20240406/M/MinecraftMotionTools/1.7.6-1.8/diff.md --exclude *.pyd
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-civo]: Downloading https://files.pythonhosted.org/packages/46/7d/d1da5013434f42fe01f4666fbb1535822a3619bec78dc70a300bd17e8ec0/pulumi_civo-2.4.0a1712399187.tar.gz
+[2024-04-06 13:04:34] WARNING root fetch - processPackages [pulumi-archive]: Timeout reached during download
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-archive]: executing diffoscope
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-archive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_archive-0.0.5a1711734921.tar.gz tmp/pulumi_archive-0.0.6a1712398919.tar.gz --markdown 20240406/p/pulumi-archive/0.0.5a1711734921-0.0.6a1712398919/diff.md --exclude *.pyd
+[2024-04-06 13:04:34] WARNING root fetch - processPackages [pulumi-civo]: Timeout reached during download
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-civo]: executing diffoscope
+[2024-04-06 13:04:34] INFO root fetch - processPackages [pulumi-civo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_civo-2.4.0a1711734994.tar.gz tmp/pulumi_civo-2.4.0a1712399187.tar.gz --markdown 20240406/p/pulumi-civo/2.4.0a1711734994-2.4.0a1712399187/diff.md --exclude *.pyd
+[2024-04-06 13:04:34] INFO root fetch - processPackages [MinecraftMotionTools]: Remove: archive file [/home/abi/fetcher/tmp/MinecraftMotionTools-1.7.6.tar.gz]
+[2024-04-06 13:04:34] INFO root fetch - processPackages [MinecraftMotionTools]: Remove: archive file [/home/abi/fetcher/tmp/MinecraftMotionTools-1.8.tar.gz]
+[2024-04-06 13:04:34] INFO root fetch - main [MainThread]: End processing [MinecraftMotionTools]: success
+[2024-04-06 13:04:35] INFO root fetch - processPackages [pulumi-archive]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_archive-0.0.5a1711734921.tar.gz]
+[2024-04-06 13:04:35] INFO root fetch - processPackages [pulumi-archive]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_archive-0.0.6a1712398919.tar.gz]
+[2024-04-06 13:04:35] INFO root fetch - main [MainThread]: End processing [pulumi-archive]: success
+[2024-04-06 13:04:35] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1711734994.tar.gz]
+[2024-04-06 13:04:35] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1712399187.tar.gz]
+[2024-04-06 13:04:35] INFO root fetch - main [MainThread]: End processing [pulumi-civo]: success
+[2024-04-06 13:04:35] INFO root fetch - main [MainThread]: Store serial: [22647367]
