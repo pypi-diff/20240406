@@ -12066,3 +12066,42 @@
 [2024-04-06 09:55:50] INFO root fetch - processPackages [sirji-agents]: Remove: archive file [/home/abi/fetcher/tmp/sirji-agents-0.0.9.tar.gz]
 [2024-04-06 09:55:50] INFO root fetch - main [MainThread]: End processing [sirji-agents]: success
 [2024-04-06 09:55:50] INFO root fetch - main [MainThread]: Store serial: [22646553]
+[2024-04-06 09:57:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646553]
+[2024-04-06 09:57:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 09:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: asktable
+[2024-04-06 09:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pandas-plots
+[2024-04-06 09:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: undo-chat
+[2024-04-06 09:57:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: language-remote
+[2024-04-06 09:57:59] WARNING root fetch - processPackages [undo-chat]: Skipping, unable to determine old version
+[2024-04-06 09:57:59] INFO root fetch - main [MainThread]: End processing [undo-chat] error
+[2024-04-06 09:57:59] INFO root fetch - processPackages [language-remote]: New version: [0.0.16] Old Version: [0.0.15]
+[2024-04-06 09:57:59] INFO root fetch - processPackages [asktable]: New version: [0.13.7] Old Version: [0.13.6]
+[2024-04-06 09:57:59] INFO root fetch - processPackages [pandas-plots]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 09:57:59] INFO root fetch - processPackages [asktable]: Downloading https://files.pythonhosted.org/packages/16/93/5e8dd66eab4a38d35e529498a3321edec87f4d2ac09227581c90823c04de/asktable-0.13.6-py3-none-any.whl
+[2024-04-06 09:57:59] INFO root fetch - processPackages [pandas-plots]: Downloading https://files.pythonhosted.org/packages/0e/23/44742dfe0b7affab4998221f52ccdecc16acab2569e36a7a7025dffc756c/pandas-plots-0.9.8.tar.gz
+[2024-04-06 09:57:59] INFO root fetch - processPackages [language-remote]: Downloading https://files.pythonhosted.org/packages/5d/57/383f9ca69655b5d781e0cc72901750ea1bed24f3ef6f48e13d0b69495e51/language-remote-0.0.15.tar.gz
+[2024-04-06 09:58:00] WARNING root fetch - processPackages [asktable]: Timeout reached during download
+[2024-04-06 09:58:00] WARNING root fetch - processPackages [pandas-plots]: Timeout reached during download
+[2024-04-06 09:58:00] WARNING root fetch - processPackages [language-remote]: Timeout reached during download
+[2024-04-06 09:58:00] INFO root fetch - processPackages [pandas-plots]: Downloading https://files.pythonhosted.org/packages/d0/78/b3c51ef28e6ddd2e5b3a38a7dc226c3845e5efe350f0111b42b5d34de8e5/pandas-plots-0.9.9.tar.gz
+[2024-04-06 09:58:00] INFO root fetch - processPackages [asktable]: Downloading https://files.pythonhosted.org/packages/23/62/2636e932634b4703bae1293df8858e147300136f3240a4973bb546ca05c8/asktable-0.13.7-py3-none-any.whl
+[2024-04-06 09:58:00] INFO root fetch - processPackages [language-remote]: Downloading https://files.pythonhosted.org/packages/4f/11/5f79f9c69f532a701acd9e9ed69b63e48af876656b24829eac1f29a88d7a/language-remote-0.0.16.tar.gz
+[2024-04-06 09:58:00] WARNING root fetch - processPackages [pandas-plots]: Timeout reached during download
+[2024-04-06 09:58:00] INFO root fetch - processPackages [pandas-plots]: executing diffoscope
+[2024-04-06 09:58:00] INFO root fetch - processPackages [pandas-plots]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas-plots-0.9.8.tar.gz tmp/pandas-plots-0.9.9.tar.gz --markdown 20240406/p/pandas-plots/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 09:58:00] WARNING root fetch - processPackages [asktable]: Timeout reached during download
+[2024-04-06 09:58:00] INFO root fetch - processPackages [asktable]: executing diffoscope
+[2024-04-06 09:58:00] INFO root fetch - processPackages [asktable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asktable-0.13.6-py3-none-any.whl.zip tmp/asktable-0.13.7-py3-none-any.whl.zip --markdown 20240406/a/asktable/0.13.6-0.13.7/diff.md --exclude *.pyd
+[2024-04-06 09:58:00] WARNING root fetch - processPackages [language-remote]: Timeout reached during download
+[2024-04-06 09:58:00] INFO root fetch - processPackages [language-remote]: executing diffoscope
+[2024-04-06 09:58:00] INFO root fetch - processPackages [language-remote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/language-remote-0.0.15.tar.gz tmp/language-remote-0.0.16.tar.gz --markdown 20240406/l/language-remote/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2024-04-06 09:58:01] INFO root fetch - processPackages [language-remote]: Remove: archive file [/home/abi/fetcher/tmp/language-remote-0.0.15.tar.gz]
+[2024-04-06 09:58:01] INFO root fetch - processPackages [language-remote]: Remove: archive file [/home/abi/fetcher/tmp/language-remote-0.0.16.tar.gz]
+[2024-04-06 09:58:01] INFO root fetch - main [MainThread]: End processing [language-remote]: success
+[2024-04-06 09:58:01] INFO root fetch - processPackages [asktable]: Remove: archive file [/home/abi/fetcher/tmp/asktable-0.13.6-py3-none-any.whl.zip]
+[2024-04-06 09:58:01] INFO root fetch - processPackages [asktable]: Remove: archive file [/home/abi/fetcher/tmp/asktable-0.13.7-py3-none-any.whl.zip]
+[2024-04-06 09:58:01] INFO root fetch - main [MainThread]: End processing [asktable]: success
+[2024-04-06 09:58:01] INFO root fetch - processPackages [pandas-plots]: Remove: archive file [/home/abi/fetcher/tmp/pandas-plots-0.9.8.tar.gz]
+[2024-04-06 09:58:01] INFO root fetch - processPackages [pandas-plots]: Remove: archive file [/home/abi/fetcher/tmp/pandas-plots-0.9.9.tar.gz]
+[2024-04-06 09:58:01] INFO root fetch - main [MainThread]: End processing [pandas-plots]: success
+[2024-04-06 09:58:01] INFO root fetch - main [MainThread]: Store serial: [22646567]
