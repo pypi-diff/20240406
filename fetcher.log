@@ -11220,3 +11220,20 @@
 [2024-04-06 08:35:13] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.7.tar.gz]
 [2024-04-06 08:35:13] INFO root fetch - main [MainThread]: End processing [hgraph]: success
 [2024-04-06 08:35:13] INFO root fetch - main [MainThread]: Store serial: [22646122]
+[2024-04-06 08:37:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646122]
+[2024-04-06 08:37:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 08:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addons-oca-wms
+[2024-04-06 08:37:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pn2utl
+[2024-04-06 08:37:22] INFO root fetch - processPackages [odoo-addons-oca-wms]: New version: [16.0.20240405.0] Old Version: [16.0.20240403.0]
+[2024-04-06 08:37:22] INFO root fetch - processPackages [odoo-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/f9/e2/911bbc4d9027ab241552da137272a59e366737c167d460bae4d4fa3e2a51/odoo_addons_oca_wms-16.0.20240403.0-py3-none-any.whl
+[2024-04-06 08:37:22] WARNING root fetch - processPackages [pn2utl]: Skipping, unable to determine old version
+[2024-04-06 08:37:22] INFO root fetch - main [MainThread]: End processing [pn2utl] error
+[2024-04-06 08:37:22] WARNING root fetch - processPackages [odoo-addons-oca-wms]: Timeout reached during download
+[2024-04-06 08:37:22] INFO root fetch - processPackages [odoo-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/5d/94/0c920185f0751c4b167ae92dbb3ad6465f9cb607d97280222bcfb00aaa0f/odoo_addons_oca_wms-16.0.20240405.0-py3-none-any.whl
+[2024-04-06 08:37:22] WARNING root fetch - processPackages [odoo-addons-oca-wms]: Timeout reached during download
+[2024-04-06 08:37:22] INFO root fetch - processPackages [odoo-addons-oca-wms]: executing diffoscope
+[2024-04-06 08:37:22] INFO root fetch - processPackages [odoo-addons-oca-wms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_wms-16.0.20240403.0-py3-none-any.whl.zip tmp/odoo_addons_oca_wms-16.0.20240405.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addons-oca-wms/16.0.20240403.0-16.0.20240405.0/diff.md --exclude *.pyd
+[2024-04-06 08:37:23] INFO root fetch - processPackages [odoo-addons-oca-wms]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_wms-16.0.20240403.0-py3-none-any.whl.zip]
+[2024-04-06 08:37:23] INFO root fetch - processPackages [odoo-addons-oca-wms]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_wms-16.0.20240405.0-py3-none-any.whl.zip]
+[2024-04-06 08:37:23] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-wms]: success
+[2024-04-06 08:37:23] INFO root fetch - main [MainThread]: Store serial: [22646129]
