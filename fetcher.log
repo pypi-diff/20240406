@@ -20060,3 +20060,127 @@ EOFError: EOF read where object expected
 [2024-04-06 18:50:39] INFO root fetch - processPackages [qtile]: Remove: archive file [/home/abi/fetcher/tmp/qtile-0.9.1.tar.gz]
 [2024-04-06 18:50:39] INFO root fetch - main [MainThread]: End processing [qtile]: success
 [2024-04-06 18:50:39] INFO root fetch - main [MainThread]: Store serial: [22649507]
+[2024-04-06 18:52:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649507]
+[2024-04-06 18:52:48] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-strict-fields
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-intra
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-pgactivity
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-pglock
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-pgtransaction
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qtile-extras
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-pgstats
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: django-pgclone
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sinabs
+[2024-04-06 18:52:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: zetascale
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-strict-fields]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [zetascale]: New version: [2.3.6] Old Version: [2.3.5]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-strict-fields]: Downloading https://files.pythonhosted.org/packages/0b/7e/7f5ebaa740e8b8ace0785bfcc07ef92fe88f7fcd763e18450a31b127b127/django_strict_fields-1.3.0.tar.gz
+[2024-04-06 18:52:48] INFO root fetch - processPackages [qtile-extras]: New version: [0.25.0] Old Version: [0.24.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-pgtransaction]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-pgactivity]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-pgstats]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-intra]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-pglock]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [django-pgclone]: New version: [3.4.1] Old Version: [3.4.0]
+[2024-04-06 18:52:48] INFO root fetch - processPackages [zetascale]: Downloading https://files.pythonhosted.org/packages/d6/dc/113d538d24b35afe949478fc117df09c541a9bbf85dec172243187286277/zetascale-2.3.5.tar.gz
+[2024-04-06 18:52:48] INFO root fetch - processPackages [sinabs]: New version: [2.0.1.dev3] Old Version: [2.0.1.dev2]
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-strict-fields]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [sinabs]: Downloading https://files.pythonhosted.org/packages/f3/90/24c43fccf212b6862e540cfac0468654ec0b0235983996bf1bc88aa722d5/sinabs-2.0.1.dev2.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgclone]: Downloading https://files.pythonhosted.org/packages/d3/88/0ebc7bf41cfa3ead78176ea19d064ccc430701c3077440221c8136f7ac45/django_pgclone-3.4.0.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [qtile-extras]: Downloading https://files.pythonhosted.org/packages/f7/a1/c81936a482e58e9737e198c6815c74c526653c7ea2b86603b961dba307eb/qtile-extras-0.24.0.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgtransaction]: Downloading https://files.pythonhosted.org/packages/71/69/1856242e048ac43cb7b9140af43f42fd0b16c99ca2ac3d6a6540b3a8d7d7/django_pgtransaction-1.3.0.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgstats]: Downloading https://files.pythonhosted.org/packages/dd/71/67c73d420239ed9af605152d17cbcd7a4b8dbd1c961a6da7c566cdf73206/django_pgstats-1.3.0.tar.gz
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [zetascale]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pglock]: Downloading https://files.pythonhosted.org/packages/29/31/5fd64fafe3c646199c8845e91be303e383dd5676a6e606bacd9b4e071ceb/django_pglock-1.5.0.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-strict-fields]: Downloading https://files.pythonhosted.org/packages/87/7d/bb521c9b1701014677d440c9eed7fb01988940e8aa97bbf830d2d80b4acb/django_strict_fields-1.3.1.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-intra]: Downloading https://files.pythonhosted.org/packages/d3/43/a3bf345dc323aeae015606f93027cb0e726e0aa7d268163d514bb5a4a4e5/django-intra-0.1.0.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgactivity]: Downloading https://files.pythonhosted.org/packages/dc/54/9156cb13e2afcc104fc90a6daa7416d63c2e04532c0abfdb636f38482dcb/django_pgactivity-1.4.0.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [zetascale]: Downloading https://files.pythonhosted.org/packages/93/aa/da0871ce18d549f4ec26541c2b9f045923476896574a2363ccf809dbed99/zetascale-2.3.6.tar.gz
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgclone]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-strict-fields]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-strict-fields]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-strict-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_strict_fields-1.3.0.tar.gz tmp/django_strict_fields-1.3.1.tar.gz --markdown 20240406/d/django-strict-fields/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-intra]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgstats]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgtransaction]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pglock]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [qtile-extras]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgactivity]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [zetascale]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [zetascale]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [zetascale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zetascale-2.3.5.tar.gz tmp/zetascale-2.3.6.tar.gz --markdown 20240406/z/zetascale/2.3.5-2.3.6/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgclone]: Downloading https://files.pythonhosted.org/packages/90/bd/3d4a6a4c0226db53dda3f9ffe6bdfe4b362994937cfa35a73e0eac231bbd/django_pgclone-3.4.1.tar.gz
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [sinabs]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-intra]: Downloading https://files.pythonhosted.org/packages/80/a8/dca0c9893c5ef19a161fc2d3a9b460a937768af4d9c0ce4ad737e0aaf65f/django-intra-0.1.1.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgtransaction]: Downloading https://files.pythonhosted.org/packages/6a/78/d9919a083fbc719fdf1df5b5d6b66293e41f239f48ec8f15f0c1236927ac/django_pgtransaction-1.3.1.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgstats]: Downloading https://files.pythonhosted.org/packages/3b/5d/cedbf0466cb025beae61fd52b0121ef4b2170dfcc5f876528675ab0a0705/django_pgstats-1.3.1.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pglock]: Downloading https://files.pythonhosted.org/packages/85/93/df6af2180c901fc0b2f8fa820b7abed6aaa834bddb430a7d3c68f234e97a/django_pglock-1.5.1.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgactivity]: Downloading https://files.pythonhosted.org/packages/97/73/a1e0f2c185b86febd93c5e4f0e83ca1757314e01af77035157a361462abb/django_pgactivity-1.4.1.tar.gz
+[2024-04-06 18:52:49] INFO root fetch - processPackages [qtile-extras]: Downloading https://files.pythonhosted.org/packages/95/bd/1e15ce432bf8a6228d18c0b1519b511410119507ef9280ab30c8913b76dc/qtile-extras-0.25.0.tar.gz
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgstats]: Timeout reached during download
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgclone]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgstats]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgstats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pgstats-1.3.0.tar.gz tmp/django_pgstats-1.3.1.tar.gz --markdown 20240406/d/django-pgstats/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgclone]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgclone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pgclone-3.4.0.tar.gz tmp/django_pgclone-3.4.1.tar.gz --markdown 20240406/d/django-pgclone/3.4.0-3.4.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-intra]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-intra]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-intra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-intra-0.1.0.tar.gz tmp/django-intra-0.1.1.tar.gz --markdown 20240406/d/django-intra/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgtransaction]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgtransaction]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgtransaction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pgtransaction-1.3.0.tar.gz tmp/django_pgtransaction-1.3.1.tar.gz --markdown 20240406/d/django-pgtransaction/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] INFO root fetch - processPackages [sinabs]: Downloading https://files.pythonhosted.org/packages/0b/26/b1ddc3e580951d601b8a58ac0a03f768da73fe957cc9002ae0f90a60c13e/sinabs-2.0.1.dev3.tar.gz
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pglock]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pglock]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pglock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pglock-1.5.0.tar.gz tmp/django_pglock-1.5.1.tar.gz --markdown 20240406/d/django-pglock/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [django-pgactivity]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgactivity]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [django-pgactivity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pgactivity-1.4.0.tar.gz tmp/django_pgactivity-1.4.1.tar.gz --markdown 20240406/d/django-pgactivity/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:49] WARNING root fetch - processPackages [qtile-extras]: Timeout reached during download
+[2024-04-06 18:52:49] INFO root fetch - processPackages [qtile-extras]: executing diffoscope
+[2024-04-06 18:52:49] INFO root fetch - processPackages [qtile-extras]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtile-extras-0.24.0.tar.gz tmp/qtile-extras-0.25.0.tar.gz --markdown 20240406/q/qtile-extras/0.24.0-0.25.0/diff.md --exclude *.pyd
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-strict-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_strict_fields-1.3.0.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-strict-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_strict_fields-1.3.1.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-strict-fields]: Start processing: django-pghistory
+[2024-04-06 18:52:50] INFO root fetch - main [MainThread]: End processing [django-strict-fields]: success
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pghistory]: New version: [3.1.1] Old Version: [3.1.0]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pghistory]: Downloading https://files.pythonhosted.org/packages/c5/72/f09a5e04a9530ad546a0852db2727ab535ad91f0afe1c0d600643322eb00/django_pghistory-3.1.0.tar.gz
+[2024-04-06 18:52:50] WARNING root fetch - processPackages [sinabs]: Timeout reached during download
+[2024-04-06 18:52:50] INFO root fetch - processPackages [sinabs]: executing diffoscope
+[2024-04-06 18:52:50] INFO root fetch - processPackages [sinabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sinabs-2.0.1.dev2.tar.gz tmp/sinabs-2.0.1.dev3.tar.gz --markdown 20240406/s/sinabs/2.0.1.dev2-2.0.1.dev3/diff.md --exclude *.pyd
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.1.0.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.1.1.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - main [MainThread]: End processing [django-intra]: success
+[2024-04-06 18:52:50] WARNING root fetch - processPackages [django-pghistory]: Timeout reached during download
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgstats]: Remove: archive file [/home/abi/fetcher/tmp/django_pgstats-1.3.0.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgstats]: Remove: archive file [/home/abi/fetcher/tmp/django_pgstats-1.3.1.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - main [MainThread]: End processing [django-pgstats]: success
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgclone]: Remove: archive file [/home/abi/fetcher/tmp/django_pgclone-3.4.0.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgclone]: Remove: archive file [/home/abi/fetcher/tmp/django_pgclone-3.4.1.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - main [MainThread]: End processing [django-pgclone]: success
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgtransaction]: Remove: archive file [/home/abi/fetcher/tmp/django_pgtransaction-1.3.0.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgtransaction]: Remove: archive file [/home/abi/fetcher/tmp/django_pgtransaction-1.3.1.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - main [MainThread]: End processing [django-pgtransaction]: success
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pghistory]: Downloading https://files.pythonhosted.org/packages/b3/66/56697caeff68da0ae7283c35b1dd34c231dd0bb69cab9aded05fd28f7b18/django_pghistory-3.1.1.tar.gz
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pglock]: Remove: archive file [/home/abi/fetcher/tmp/django_pglock-1.5.0.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pglock]: Remove: archive file [/home/abi/fetcher/tmp/django_pglock-1.5.1.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - main [MainThread]: End processing [django-pglock]: success
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgactivity]: Remove: archive file [/home/abi/fetcher/tmp/django_pgactivity-1.4.0.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - processPackages [django-pgactivity]: Remove: archive file [/home/abi/fetcher/tmp/django_pgactivity-1.4.1.tar.gz]
+[2024-04-06 18:52:50] INFO root fetch - main [MainThread]: End processing [django-pgactivity]: success
+[2024-04-06 18:52:51] WARNING root fetch - processPackages [django-pghistory]: Timeout reached during download
+[2024-04-06 18:52:51] INFO root fetch - processPackages [django-pghistory]: executing diffoscope
+[2024-04-06 18:52:51] INFO root fetch - processPackages [django-pghistory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pghistory-3.1.0.tar.gz tmp/django_pghistory-3.1.1.tar.gz --markdown 20240406/d/django-pghistory/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2024-04-06 18:52:51] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.3.5.tar.gz]
+[2024-04-06 18:52:51] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.3.6.tar.gz]
+[2024-04-06 18:52:51] INFO root fetch - main [MainThread]: End processing [zetascale]: success
+[2024-04-06 18:52:51] INFO root fetch - processPackages [qtile-extras]: Remove: archive file [/home/abi/fetcher/tmp/qtile-extras-0.24.0.tar.gz]
+[2024-04-06 18:52:51] INFO root fetch - processPackages [qtile-extras]: Remove: archive file [/home/abi/fetcher/tmp/qtile-extras-0.25.0.tar.gz]
+[2024-04-06 18:52:51] INFO root fetch - main [MainThread]: End processing [qtile-extras]: success
+[2024-04-06 18:52:51] INFO root fetch - processPackages [django-pghistory]: Remove: archive file [/home/abi/fetcher/tmp/django_pghistory-3.1.0.tar.gz]
+[2024-04-06 18:52:51] INFO root fetch - processPackages [django-pghistory]: Remove: archive file [/home/abi/fetcher/tmp/django_pghistory-3.1.1.tar.gz]
+[2024-04-06 18:52:51] INFO root fetch - main [MainThread]: End processing [django-pghistory]: success
+[2024-04-06 18:52:52] INFO root fetch - processPackages [sinabs]: Remove: archive file [/home/abi/fetcher/tmp/sinabs-2.0.1.dev2.tar.gz]
+[2024-04-06 18:52:52] INFO root fetch - processPackages [sinabs]: Remove: archive file [/home/abi/fetcher/tmp/sinabs-2.0.1.dev3.tar.gz]
+[2024-04-06 18:52:52] INFO root fetch - main [MainThread]: End processing [sinabs]: success
+[2024-04-06 18:52:52] INFO root fetch - main [MainThread]: Store serial: [22649540]
