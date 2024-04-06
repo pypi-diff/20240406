@@ -15826,3 +15826,28 @@ EOFError: EOF read where object expected
 [2024-04-06 14:31:00] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.1.tar.gz]
 [2024-04-06 14:31:00] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
 [2024-04-06 14:31:00] INFO root fetch - main [MainThread]: Store serial: [22647810]
+[2024-04-06 14:33:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647810]
+[2024-04-06 14:33:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: transdoc
+[2024-04-06 14:33:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydmt
+[2024-04-06 14:33:09] INFO root fetch - processPackages [pydmt]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-04-06 14:33:09] INFO root fetch - processPackages [transdoc]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-06 14:33:09] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/60/b3/2021406892f6e144c4a1b7f4ed6693d9682cebdba242b8aaf150d298180c/pydmt-0.3.5.tar.gz
+[2024-04-06 14:33:09] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:33:09] INFO root fetch - processPackages [transdoc]: Downloading https://files.pythonhosted.org/packages/9d/d8/6eed3476e4c2ce9477fe134f29b41b40324ebd4dd8ff4b8ba02ba1c6a1c3/transdoc-0.1.0.tar.gz
+[2024-04-06 14:33:09] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/e5/58/40f0c8ea02d889b473900a9dc236e71d2a4e442c7646736d7a43a0db1087/pydmt-0.3.6.tar.gz
+[2024-04-06 14:33:10] WARNING root fetch - processPackages [transdoc]: Timeout reached during download
+[2024-04-06 14:33:10] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:33:10] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2024-04-06 14:33:10] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.3.5.tar.gz tmp/pydmt-0.3.6.tar.gz --markdown 20240406/p/pydmt/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2024-04-06 14:33:10] INFO root fetch - processPackages [transdoc]: Downloading https://files.pythonhosted.org/packages/3d/c7/040083ca7480dd5bcf4b06f4423bfe60b8ea9bcd5f2911570f5c5f6f093c/transdoc-0.2.0.tar.gz
+[2024-04-06 14:33:10] WARNING root fetch - processPackages [transdoc]: Timeout reached during download
+[2024-04-06 14:33:10] INFO root fetch - processPackages [transdoc]: executing diffoscope
+[2024-04-06 14:33:10] INFO root fetch - processPackages [transdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transdoc-0.1.0.tar.gz tmp/transdoc-0.2.0.tar.gz --markdown 20240406/t/transdoc/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 14:33:10] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.5.tar.gz]
+[2024-04-06 14:33:10] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.6.tar.gz]
+[2024-04-06 14:33:10] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2024-04-06 14:33:10] INFO root fetch - processPackages [transdoc]: Remove: archive file [/home/abi/fetcher/tmp/transdoc-0.1.0.tar.gz]
+[2024-04-06 14:33:10] INFO root fetch - processPackages [transdoc]: Remove: archive file [/home/abi/fetcher/tmp/transdoc-0.2.0.tar.gz]
+[2024-04-06 14:33:10] INFO root fetch - main [MainThread]: End processing [transdoc]: success
+[2024-04-06 14:33:10] INFO root fetch - main [MainThread]: Store serial: [22647817]
