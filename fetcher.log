@@ -13288,3 +13288,39 @@
 [2024-04-06 11:29:01] INFO root fetch - processPackages [lezargus]: Remove: archive file [/home/abi/fetcher/tmp/lezargus-0.0.4.dev42.tar.gz]
 [2024-04-06 11:29:01] INFO root fetch - main [MainThread]: End processing [lezargus]: success
 [2024-04-06 11:29:01] INFO root fetch - main [MainThread]: Store serial: [22647049]
+[2024-04-06 11:31:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647049]
+[2024-04-06 11:31:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 11:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: just_design_phase
+[2024-04-06 11:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-dbmigrant
+[2024-04-06 11:31:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot_plugin_acm_reminder
+[2024-04-06 11:31:17] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 11:31:17] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/7d/f5/e1e6f21f81f306ebcde6bba08c09cb5dc644f3603c310cafc00ab3de077e/just_design_phase-0.0.8.tar.gz
+[2024-04-06 11:31:17] INFO root fetch - processPackages [flask-dbmigrant]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 11:31:17] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 11:31:17] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:31:17] INFO root fetch - processPackages [flask-dbmigrant]: Downloading https://files.pythonhosted.org/packages/48/99/484dbba4e0f7c8f96a86f171a2165b7bd78ef882ef2e138b7577c7ba9dda/flask_dbmigrant-1.0.0.tar.gz
+[2024-04-06 11:31:17] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/aa/b5/29ee0abf7aa594516a36ed125483f2184a52d792c0c9a50f97903114d895/just_design_phase-0.0.9.tar.gz
+[2024-04-06 11:31:17] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Downloading https://files.pythonhosted.org/packages/fa/ff/54ddce2fbec612851fabc54d70a3dcd09fc9425f02dc347c60ccbbaab97c/nonebot-plugin-acm-reminder-0.1.8.tar.gz
+[2024-04-06 11:31:17] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:31:17] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 11:31:17] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.8.tar.gz tmp/just_design_phase-0.0.9.tar.gz --markdown 20240406/j/just_design_phase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:31:17] WARNING root fetch - processPackages [flask-dbmigrant]: Timeout reached during download
+[2024-04-06 11:31:17] WARNING root fetch - processPackages [nonebot_plugin_acm_reminder]: Timeout reached during download
+[2024-04-06 11:31:17] INFO root fetch - processPackages [flask-dbmigrant]: Downloading https://files.pythonhosted.org/packages/32/d1/0c0e7aad318439e1574ffdc0eb3013599144183bcea257e8180d72037fac/flask_dbmigrant-1.0.1.tar.gz
+[2024-04-06 11:31:17] WARNING root fetch - processPackages [flask-dbmigrant]: Timeout reached during download
+[2024-04-06 11:31:17] INFO root fetch - processPackages [flask-dbmigrant]: executing diffoscope
+[2024-04-06 11:31:17] INFO root fetch - processPackages [flask-dbmigrant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_dbmigrant-1.0.0.tar.gz tmp/flask_dbmigrant-1.0.1.tar.gz --markdown 20240406/f/flask-dbmigrant/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 11:31:17] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Downloading https://files.pythonhosted.org/packages/ba/b1/b7f510f7d6f0f0e713d42f2b794808f1bf3649779381c248698aaf6516cf/nonebot-plugin-acm-reminder-0.1.9.tar.gz
+[2024-04-06 11:31:18] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.8.tar.gz]
+[2024-04-06 11:31:18] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.9.tar.gz]
+[2024-04-06 11:31:18] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 11:31:18] WARNING root fetch - processPackages [nonebot_plugin_acm_reminder]: Timeout reached during download
+[2024-04-06 11:31:18] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: executing diffoscope
+[2024-04-06 11:31:18] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-acm-reminder-0.1.8.tar.gz tmp/nonebot-plugin-acm-reminder-0.1.9.tar.gz --markdown 20240406/n/nonebot_plugin_acm_reminder/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 11:31:18] INFO root fetch - processPackages [flask-dbmigrant]: Remove: archive file [/home/abi/fetcher/tmp/flask_dbmigrant-1.0.0.tar.gz]
+[2024-04-06 11:31:18] INFO root fetch - processPackages [flask-dbmigrant]: Remove: archive file [/home/abi/fetcher/tmp/flask_dbmigrant-1.0.1.tar.gz]
+[2024-04-06 11:31:18] INFO root fetch - main [MainThread]: End processing [flask-dbmigrant]: success
+[2024-04-06 11:31:18] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-acm-reminder-0.1.8.tar.gz]
+[2024-04-06 11:31:18] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-acm-reminder-0.1.9.tar.gz]
+[2024-04-06 11:31:18] INFO root fetch - main [MainThread]: End processing [nonebot_plugin_acm_reminder]: success
+[2024-04-06 11:31:18] INFO root fetch - main [MainThread]: Store serial: [22647058]
