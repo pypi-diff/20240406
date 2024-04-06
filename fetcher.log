@@ -16978,3 +16978,20 @@ EOFError: EOF read where object expected
 [2024-04-06 15:53:58] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.4.6-cp39-cp39-macosx_11_0_x86_64.whl.zip]
 [2024-04-06 15:53:58] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
 [2024-04-06 15:53:58] INFO root fetch - main [MainThread]: Store serial: [22648329]
+[2024-04-06 15:56:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648329]
+[2024-04-06 15:56:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 15:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: solie
+[2024-04-06 15:56:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pcts
+[2024-04-06 15:56:08] WARNING root fetch - processPackages [pcts]: Skipping, unable to determine old version
+[2024-04-06 15:56:08] INFO root fetch - main [MainThread]: End processing [pcts] error
+[2024-04-06 15:56:08] INFO root fetch - processPackages [solie]: New version: [8.5.0] Old Version: [8.4.0]
+[2024-04-06 15:56:08] INFO root fetch - processPackages [solie]: Downloading https://files.pythonhosted.org/packages/bf/bd/b1a040ff9ade09fd8eb5f74a947fef2e5b8461665f83379435b38245c457/solie-8.4.0.tar.gz
+[2024-04-06 15:56:08] WARNING root fetch - processPackages [solie]: Timeout reached during download
+[2024-04-06 15:56:09] INFO root fetch - processPackages [solie]: Downloading https://files.pythonhosted.org/packages/c0/48/102f8df1b2fef10850f65786f6e830ce6b5db32efeaa320433730d27032f/solie-8.5.0.tar.gz
+[2024-04-06 15:56:09] WARNING root fetch - processPackages [solie]: Timeout reached during download
+[2024-04-06 15:56:09] INFO root fetch - processPackages [solie]: executing diffoscope
+[2024-04-06 15:56:09] INFO root fetch - processPackages [solie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solie-8.4.0.tar.gz tmp/solie-8.5.0.tar.gz --markdown 20240406/s/solie/8.4.0-8.5.0/diff.md --exclude *.pyd
+[2024-04-06 15:56:10] INFO root fetch - processPackages [solie]: Remove: archive file [/home/abi/fetcher/tmp/solie-8.4.0.tar.gz]
+[2024-04-06 15:56:10] INFO root fetch - processPackages [solie]: Remove: archive file [/home/abi/fetcher/tmp/solie-8.5.0.tar.gz]
+[2024-04-06 15:56:10] INFO root fetch - main [MainThread]: End processing [solie]: success
+[2024-04-06 15:56:10] INFO root fetch - main [MainThread]: Store serial: [22648341]
