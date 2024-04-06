@@ -2116,3 +2116,55 @@
 [2024-04-06 02:17:53] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
 [2024-04-06 02:17:53] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
 [2024-04-06 02:17:53] INFO root fetch - main [MainThread]: Store serial: [22643286]
+[2024-04-06 02:19:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643286]
+[2024-04-06 02:20:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 02:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NEURON-nightly
+[2024-04-06 02:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-ethereum-node
+[2024-04-06 02:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdklabs.appsync-utils
+[2024-04-06 02:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchao-nightly
+[2024-04-06 02:20:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-aurora-globaldatabase
+[2024-04-06 02:20:01] INFO root fetch - processPackages [torchao-nightly]: New version: [2024.4.5] Old Version: [2024.4.4]
+[2024-04-06 02:20:01] INFO root fetch - processPackages [cdklabs.appsync-utils]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 02:20:01] INFO root fetch - processPackages [NEURON-nightly]: New version: [9.0a1.dev201] Old Version: [9.0a1.dev191]
+[2024-04-06 02:20:01] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 02:20:01] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/d8/1a/417af84315b2d52f6063ccf2072677259777d28fb73cab91e17879faaa26/cdklabs.cdk-ethereum-node-0.0.98.tar.gz
+[2024-04-06 02:20:02] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/d9/a8/2690526242eb89ed6a2ef889256815aa3278c2245a886204d09dd9c334e5/torchao-nightly-2024.4.4.tar.gz
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/c2/b6/9921880127918975163ef796466fd100a8f3a6246436ca4993eafae4915d/cdklabs.appsync-utils-0.0.98.tar.gz
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-04-06 02:20:02] INFO root fetch - processPackages [NEURON-nightly]: Downloading https://files.pythonhosted.org/packages/77/97/ac2913fe36e67bdbb2caeafd54fde6571bec1f948d95e3e9da7362f09ebb/NEURON_nightly-9.0a1.dev191-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [NEURON-nightly]: Skipping package: exceeds size limit 17256681>=10485760
+[2024-04-06 02:20:02] INFO root fetch - main [MainThread]: End processing [NEURON-nightly] error
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [cdklabs.cdk-ethereum-node]: Timeout reached during download
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [torchao-nightly]: Timeout reached during download
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [cdklabs.appsync-utils]: Timeout reached during download
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [cdk-aurora-globaldatabase]: Timeout reached during download
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.appsync-utils]: Downloading https://files.pythonhosted.org/packages/fe/2c/3a8605fe934a0a120041c6190f384b00350c8036420ee8d53ac0b0906f74/cdklabs.appsync-utils-0.0.99.tar.gz
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Downloading https://files.pythonhosted.org/packages/2d/d8/3fd98f927d9988f7c189f488b1829ac7aa7f855bf93f6030e3bed9af9a97/cdklabs.cdk-ethereum-node-0.0.99.tar.gz
+[2024-04-06 02:20:02] INFO root fetch - processPackages [torchao-nightly]: Downloading https://files.pythonhosted.org/packages/f9/90/965a75bec003665eda400b6d0e57bde27ffce1e44b6c43f42ce42212caac/torchao-nightly-2024.4.5.tar.gz
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [cdklabs.appsync-utils]: Timeout reached during download
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.appsync-utils]: executing diffoscope
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.appsync-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.appsync-utils-0.0.98.tar.gz tmp/cdklabs.appsync-utils-0.0.99.tar.gz --markdown 20240406/c/cdklabs.appsync-utils/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [cdklabs.cdk-ethereum-node]: Timeout reached during download
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: executing diffoscope
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz --markdown 20240406/c/cdklabs.cdk-ethereum-node/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [torchao-nightly]: Timeout reached during download
+[2024-04-06 02:20:02] INFO root fetch - processPackages [torchao-nightly]: executing diffoscope
+[2024-04-06 02:20:02] INFO root fetch - processPackages [torchao-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchao-nightly-2024.4.4.tar.gz tmp/torchao-nightly-2024.4.5.tar.gz --markdown 20240406/t/torchao-nightly/2024.4.4-2024.4.5/diff.md --exclude *.pyd
+[2024-04-06 02:20:02] WARNING root fetch - processPackages [cdk-aurora-globaldatabase]: Timeout reached during download
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-04-06 02:20:02] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240406/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2024-04-06 02:20:03] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.98.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - processPackages [cdklabs.appsync-utils]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.appsync-utils-0.0.99.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - main [MainThread]: End processing [cdklabs.appsync-utils]: success
+[2024-04-06 02:20:03] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-04-06 02:20:03] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.98.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - processPackages [cdklabs.cdk-ethereum-node]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-ethereum-node-0.0.99.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-ethereum-node]: success
+[2024-04-06 02:20:03] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.4.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.5.tar.gz]
+[2024-04-06 02:20:03] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
+[2024-04-06 02:20:03] INFO root fetch - main [MainThread]: Store serial: [22643304]
