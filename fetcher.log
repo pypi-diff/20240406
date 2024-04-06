@@ -19811,3 +19811,46 @@ EOFError: EOF read where object expected
 [2024-04-06 18:39:39] INFO root fetch - processPackages [blosc2]: Remove: archive file [/home/abi/fetcher/tmp/blosc2-2.6.1.tar.gz]
 [2024-04-06 18:39:39] INFO root fetch - main [MainThread]: End processing [blosc2]: success
 [2024-04-06 18:39:39] INFO root fetch - main [MainThread]: Store serial: [22649414]
+[2024-04-06 18:41:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649414]
+[2024-04-06 18:41:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fal-client
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CnbcNews
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CnbcNews
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CnbcNews
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CnbcNews
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CnbcNews
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CnbcNews
+[2024-04-06 18:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: faststream
+[2024-04-06 18:41:49] INFO root fetch - processPackages [fal-client]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-06 18:41:49] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-06 18:41:49] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-06 18:41:49] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-06 18:41:49] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-06 18:41:49] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-06 18:41:49] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-06 18:41:49] INFO root fetch - processPackages [faststream]: New version: [0.5.0rc0] Old Version: [0.4.7]
+[2024-04-06 18:41:49] INFO root fetch - processPackages [fal-client]: Downloading https://files.pythonhosted.org/packages/1d/0d/18c67eacba675d802e443986228367e93b478b3b6b5075a91ff7ad7d00e1/fal_client-0.2.0.tar.gz
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [fal-client]: Timeout reached during download
+[2024-04-06 18:41:49] INFO root fetch - processPackages [faststream]: Downloading https://files.pythonhosted.org/packages/b4/59/32bb27f21ab8869ecd67fc8ab8b9d37152c5b698c486d701bd3187268b1a/faststream-0.4.7.tar.gz
+[2024-04-06 18:41:49] INFO root fetch - processPackages [fal-client]: Downloading https://files.pythonhosted.org/packages/79/aa/ae49835a67a0c53c94028951d6eedb315717e6b86f55614b983c8d3ebb9d/fal_client-0.2.1.tar.gz
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [faststream]: Timeout reached during download
+[2024-04-06 18:41:49] WARNING root fetch - processPackages [fal-client]: Timeout reached during download
+[2024-04-06 18:41:49] INFO root fetch - processPackages [fal-client]: executing diffoscope
+[2024-04-06 18:41:49] INFO root fetch - processPackages [fal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fal_client-0.2.0.tar.gz tmp/fal_client-0.2.1.tar.gz --markdown 20240406/f/fal-client/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-06 18:41:49] INFO root fetch - processPackages [faststream]: Downloading https://files.pythonhosted.org/packages/a6/f5/5238d90f03b8f68a9fc68b5f79edd55d719e79aa26da7e7450af5523a58f/faststream-0.5.0rc0.tar.gz
+[2024-04-06 18:41:50] WARNING root fetch - processPackages [faststream]: Timeout reached during download
+[2024-04-06 18:41:50] INFO root fetch - processPackages [faststream]: executing diffoscope
+[2024-04-06 18:41:50] INFO root fetch - processPackages [faststream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faststream-0.4.7.tar.gz tmp/faststream-0.5.0rc0.tar.gz --markdown 20240406/f/faststream/0.4.7-0.5.0rc0/diff.md --exclude *.pyd
+[2024-04-06 18:41:50] INFO root fetch - processPackages [fal-client]: Remove: archive file [/home/abi/fetcher/tmp/fal_client-0.2.0.tar.gz]
+[2024-04-06 18:41:50] INFO root fetch - processPackages [fal-client]: Remove: archive file [/home/abi/fetcher/tmp/fal_client-0.2.1.tar.gz]
+[2024-04-06 18:41:50] INFO root fetch - main [MainThread]: End processing [fal-client]: success
+[2024-04-06 18:41:51] INFO root fetch - processPackages [faststream]: Remove: archive file [/home/abi/fetcher/tmp/faststream-0.4.7.tar.gz]
+[2024-04-06 18:41:51] INFO root fetch - processPackages [faststream]: Remove: archive file [/home/abi/fetcher/tmp/faststream-0.5.0rc0.tar.gz]
+[2024-04-06 18:41:51] INFO root fetch - main [MainThread]: End processing [faststream]: success
+[2024-04-06 18:41:51] INFO root fetch - main [MainThread]: Store serial: [22649438]
