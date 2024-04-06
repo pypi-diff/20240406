@@ -19753,3 +19753,61 @@ EOFError: EOF read where object expected
 [2024-04-06 18:37:24] INFO root fetch - processPackages [datasette-studio]: Remove: archive file [/home/abi/fetcher/tmp/datasette-studio-0.1a3.tar.gz]
 [2024-04-06 18:37:24] INFO root fetch - main [MainThread]: End processing [datasette-studio]: success
 [2024-04-06 18:37:24] INFO root fetch - main [MainThread]: Store serial: [22649379]
+[2024-04-06 18:39:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649379]
+[2024-04-06 18:39:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 18:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flasky-cli
+[2024-04-06 18:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-module-gcp-bigquery
+[2024-04-06 18:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: blosc2
+[2024-04-06 18:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-module-pypi
+[2024-04-06 18:39:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: crate-docs-theme
+[2024-04-06 18:39:33] INFO root fetch - processPackages [xia-module-pypi]: New version: [0.0.5] Old Version: [0.0.3]
+[2024-04-06 18:39:33] INFO root fetch - processPackages [xia-module-gcp-bigquery]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 18:39:33] INFO root fetch - processPackages [blosc2]: New version: [2.6.1] Old Version: [2.6.0]
+[2024-04-06 18:39:33] INFO root fetch - processPackages [xia-module-pypi]: Downloading https://files.pythonhosted.org/packages/0b/04/29488ab93d03865492b8ff0b4b2ea0772f9fec72e70e7fa4cf92c85f07f8/xia-module-pypi-0.0.3.tar.gz
+[2024-04-06 18:39:33] INFO root fetch - processPackages [flasky-cli]: New version: [0.1.9] Old Version: [0.1.7]
+[2024-04-06 18:39:33] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/98/fd/f110854b2e91a2168a8dfb161077dcdce72d6682f74002833aa74ce95af3/xia-module-gcp-bigquery-0.0.4.tar.gz
+[2024-04-06 18:39:33] INFO root fetch - processPackages [crate-docs-theme]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-04-06 18:39:33] INFO root fetch - processPackages [blosc2]: Downloading https://files.pythonhosted.org/packages/26/82/8163b22dfc7d556b4a93d4752ae43ac4ba190d0b96d1431a1e2bca5051c9/blosc2-2.6.0.tar.gz
+[2024-04-06 18:39:33] WARNING root fetch - processPackages [xia-module-pypi]: Timeout reached during download
+[2024-04-06 18:39:33] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 18:39:33] INFO root fetch - processPackages [flasky-cli]: Downloading https://files.pythonhosted.org/packages/d3/21/15706ecc3a5ed467b2839ff5479f608b74da84ceeee706d309f674c4813f/flasky_cli-0.1.7.tar.gz
+[2024-04-06 18:39:34] INFO root fetch - processPackages [crate-docs-theme]: Downloading https://files.pythonhosted.org/packages/6c/9f/eb33f10cf57946abf11bae3bca0be62acb66e1dcee1db3a1a183569375d5/crate-docs-theme-0.9.5.tar.gz
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-pypi]: Downloading https://files.pythonhosted.org/packages/f3/13/c7c58e315c816de5927d2656a69694fb23dc60b1390c6620181393dae16f/xia-module-pypi-0.0.5.tar.gz
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/91/81/931b18c710b44b1f66d58334b2ce47ada48a8b98607d105f9dcb3782c8a1/xia-module-gcp-bigquery-0.0.5.tar.gz
+[2024-04-06 18:39:34] WARNING root fetch - processPackages [xia-module-pypi]: Timeout reached during download
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-pypi]: executing diffoscope
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-pypi-0.0.3.tar.gz tmp/xia-module-pypi-0.0.5.tar.gz --markdown 20240406/x/xia-module-pypi/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 18:39:34] WARNING root fetch - processPackages [flasky-cli]: Timeout reached during download
+[2024-04-06 18:39:34] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-gcp-bigquery]: executing diffoscope
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-gcp-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-gcp-bigquery-0.0.4.tar.gz tmp/xia-module-gcp-bigquery-0.0.5.tar.gz --markdown 20240406/x/xia-module-gcp-bigquery/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 18:39:34] WARNING root fetch - processPackages [crate-docs-theme]: Timeout reached during download
+[2024-04-06 18:39:34] INFO root fetch - processPackages [flasky-cli]: Downloading https://files.pythonhosted.org/packages/79/0b/d4aefae8cb86dc382995a947fdd3060eb0e9c9f49f49325e4a8719aaedcc/flasky_cli-0.1.9.tar.gz
+[2024-04-06 18:39:34] WARNING root fetch - processPackages [flasky-cli]: Timeout reached during download
+[2024-04-06 18:39:34] INFO root fetch - processPackages [flasky-cli]: executing diffoscope
+[2024-04-06 18:39:34] INFO root fetch - processPackages [flasky-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flasky_cli-0.1.7.tar.gz tmp/flasky_cli-0.1.9.tar.gz --markdown 20240406/f/flasky-cli/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 18:39:34] WARNING root fetch - processPackages [blosc2]: Timeout reached during download
+[2024-04-06 18:39:34] INFO root fetch - processPackages [crate-docs-theme]: Downloading https://files.pythonhosted.org/packages/6e/c2/8e89446e5c72f10d30d1b58dfa420e9e08162dc8b8a9553111774fd516a5/crate-docs-theme-0.9.6.tar.gz
+[2024-04-06 18:39:34] INFO root fetch - processPackages [blosc2]: Downloading https://files.pythonhosted.org/packages/87/99/3d9e1b25048a89acf7837267b787dde5883b22072be944f5195f0af960b3/blosc2-2.6.1.tar.gz
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-pypi]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-pypi-0.0.3.tar.gz]
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-pypi]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-pypi-0.0.5.tar.gz]
+[2024-04-06 18:39:34] INFO root fetch - main [MainThread]: End processing [xia-module-pypi]: success
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-bigquery-0.0.4.tar.gz]
+[2024-04-06 18:39:34] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-bigquery-0.0.5.tar.gz]
+[2024-04-06 18:39:34] INFO root fetch - main [MainThread]: End processing [xia-module-gcp-bigquery]: success
+[2024-04-06 18:39:35] INFO root fetch - processPackages [flasky-cli]: Remove: archive file [/home/abi/fetcher/tmp/flasky_cli-0.1.7.tar.gz]
+[2024-04-06 18:39:35] INFO root fetch - processPackages [flasky-cli]: Remove: archive file [/home/abi/fetcher/tmp/flasky_cli-0.1.9.tar.gz]
+[2024-04-06 18:39:35] WARNING root fetch - processPackages [crate-docs-theme]: Timeout reached during download
+[2024-04-06 18:39:35] INFO root fetch - main [MainThread]: End processing [flasky-cli]: success
+[2024-04-06 18:39:35] INFO root fetch - processPackages [crate-docs-theme]: executing diffoscope
+[2024-04-06 18:39:35] INFO root fetch - processPackages [crate-docs-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crate-docs-theme-0.9.5.tar.gz tmp/crate-docs-theme-0.9.6.tar.gz --markdown 20240406/c/crate-docs-theme/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2024-04-06 18:39:35] WARNING root fetch - processPackages [blosc2]: Timeout reached during download
+[2024-04-06 18:39:35] INFO root fetch - processPackages [blosc2]: executing diffoscope
+[2024-04-06 18:39:35] INFO root fetch - processPackages [blosc2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blosc2-2.6.0.tar.gz tmp/blosc2-2.6.1.tar.gz --markdown 20240406/b/blosc2/2.6.0-2.6.1/diff.md --exclude *.pyd
+[2024-04-06 18:39:36] INFO root fetch - processPackages [crate-docs-theme]: Remove: archive file [/home/abi/fetcher/tmp/crate-docs-theme-0.9.5.tar.gz]
+[2024-04-06 18:39:36] INFO root fetch - processPackages [crate-docs-theme]: Remove: archive file [/home/abi/fetcher/tmp/crate-docs-theme-0.9.6.tar.gz]
+[2024-04-06 18:39:36] INFO root fetch - main [MainThread]: End processing [crate-docs-theme]: success
+[2024-04-06 18:39:39] INFO root fetch - processPackages [blosc2]: Remove: archive file [/home/abi/fetcher/tmp/blosc2-2.6.0.tar.gz]
+[2024-04-06 18:39:39] INFO root fetch - processPackages [blosc2]: Remove: archive file [/home/abi/fetcher/tmp/blosc2-2.6.1.tar.gz]
+[2024-04-06 18:39:39] INFO root fetch - main [MainThread]: End processing [blosc2]: success
+[2024-04-06 18:39:39] INFO root fetch - main [MainThread]: Store serial: [22649414]
