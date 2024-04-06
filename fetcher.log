@@ -11433,3 +11433,41 @@
 [2024-04-06 08:56:31] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
 [2024-04-06 08:56:31] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
 [2024-04-06 08:56:31] INFO root fetch - main [MainThread]: Store serial: [22646233]
+[2024-04-06 08:58:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646233]
+[2024-04-06 08:58:40] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 09:00:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646291]
+[2024-04-06 09:00:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 09:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streamlit-nightly
+[2024-04-06 09:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loadimg
+[2024-04-06 09:00:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easy-encryption-tool
+[2024-04-06 09:00:45] INFO root fetch - processPackages [easy-encryption-tool]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-04-06 09:00:45] INFO root fetch - processPackages [loadimg]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-04-06 09:00:45] INFO root fetch - processPackages [easy-encryption-tool]: Downloading https://files.pythonhosted.org/packages/c8/18/01918098f4536f8bca89898b260cf16a9b25faa2559adf95158a7bd74471/easy_encryption_tool-1.1.6-py3-none-any.whl
+[2024-04-06 09:00:45] INFO root fetch - processPackages [streamlit-nightly]: New version: [1.33.1.dev20240405] Old Version: [1.32.3.dev20240403]
+[2024-04-06 09:00:46] WARNING root fetch - processPackages [easy-encryption-tool]: Timeout reached during download
+[2024-04-06 09:00:46] INFO root fetch - processPackages [loadimg]: Downloading https://files.pythonhosted.org/packages/36/b3/eb72b40fc0f3fe78a7911d0a4b4a4b01ffcb57d1a4d9f02c80fe9ed37da9/loadimg-0.0.3.tar.gz
+[2024-04-06 09:00:46] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/af/bc/30fa8087cab4bf51756e5e8ac65c569a8b7994d5d3e2e3af256fb44916a3/streamlit-nightly-1.32.3.dev20240403.tar.gz
+[2024-04-06 09:00:46] INFO root fetch - processPackages [easy-encryption-tool]: Downloading https://files.pythonhosted.org/packages/1f/21/333e5814b5e96ce25250458d005570c673eb9d8a16c66fe5b37b288ee84d/easy_encryption_tool-1.1.7-py3-none-any.whl
+[2024-04-06 09:00:46] WARNING root fetch - processPackages [loadimg]: Timeout reached during download
+[2024-04-06 09:00:46] WARNING root fetch - processPackages [easy-encryption-tool]: Timeout reached during download
+[2024-04-06 09:00:46] INFO root fetch - processPackages [easy-encryption-tool]: executing diffoscope
+[2024-04-06 09:00:46] INFO root fetch - processPackages [easy-encryption-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_encryption_tool-1.1.6-py3-none-any.whl.zip tmp/easy_encryption_tool-1.1.7-py3-none-any.whl.zip --markdown 20240406/e/easy-encryption-tool/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2024-04-06 09:00:46] INFO root fetch - processPackages [loadimg]: Downloading https://files.pythonhosted.org/packages/d6/ad/b115e3358cacd5730f50c9aa3d9619dee8acecb9142ec258568aec8c42c9/loadimg-0.1.0.tar.gz
+[2024-04-06 09:00:46] WARNING root fetch - processPackages [loadimg]: Timeout reached during download
+[2024-04-06 09:00:46] INFO root fetch - processPackages [loadimg]: executing diffoscope
+[2024-04-06 09:00:46] INFO root fetch - processPackages [loadimg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loadimg-0.0.3.tar.gz tmp/loadimg-0.1.0.tar.gz --markdown 20240406/l/loadimg/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2024-04-06 09:00:46] WARNING root fetch - processPackages [streamlit-nightly]: Timeout reached during download
+[2024-04-06 09:00:46] INFO root fetch - processPackages [easy-encryption-tool]: Remove: archive file [/home/abi/fetcher/tmp/easy_encryption_tool-1.1.6-py3-none-any.whl.zip]
+[2024-04-06 09:00:46] INFO root fetch - processPackages [easy-encryption-tool]: Remove: archive file [/home/abi/fetcher/tmp/easy_encryption_tool-1.1.7-py3-none-any.whl.zip]
+[2024-04-06 09:00:46] INFO root fetch - main [MainThread]: End processing [easy-encryption-tool]: success
+[2024-04-06 09:00:46] INFO root fetch - processPackages [streamlit-nightly]: Downloading https://files.pythonhosted.org/packages/d3/b6/32377584c78f1d4f5a8cc7321d22dfbfb644b0e6d72a59731f800e091933/streamlit-nightly-1.33.1.dev20240405.tar.gz
+[2024-04-06 09:00:46] INFO root fetch - processPackages [loadimg]: Remove: archive file [/home/abi/fetcher/tmp/loadimg-0.0.3.tar.gz]
+[2024-04-06 09:00:46] INFO root fetch - processPackages [loadimg]: Remove: archive file [/home/abi/fetcher/tmp/loadimg-0.1.0.tar.gz]
+[2024-04-06 09:00:46] INFO root fetch - main [MainThread]: End processing [loadimg]: success
+[2024-04-06 09:00:48] WARNING root fetch - processPackages [streamlit-nightly]: Timeout reached during download
+[2024-04-06 09:00:48] INFO root fetch - processPackages [streamlit-nightly]: executing diffoscope
+[2024-04-06 09:00:48] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.32.3.dev20240403.tar.gz tmp/streamlit-nightly-1.33.1.dev20240405.tar.gz --markdown 20240406/s/streamlit-nightly/1.32.3.dev20240403-1.33.1.dev20240405/diff.md --exclude *.pyd
+[2024-04-06 09:01:50] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-nightly-1.32.3.dev20240403.tar.gz]
+[2024-04-06 09:01:50] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-nightly-1.33.1.dev20240405.tar.gz]
+[2024-04-06 09:01:50] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
+[2024-04-06 09:01:50] INFO root fetch - main [MainThread]: Store serial: [22646299]
