@@ -12792,3 +12792,28 @@
 [2024-04-06 10:47:46] INFO root fetch - processPackages [redis-async-client]: Remove: archive file [/home/abi/fetcher/tmp/redis_async_client-0.1.3.tar.gz]
 [2024-04-06 10:47:46] INFO root fetch - main [MainThread]: End processing [redis-async-client]: success
 [2024-04-06 10:47:46] INFO root fetch - main [MainThread]: Store serial: [22646829]
+[2024-04-06 10:49:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646829]
+[2024-04-06 10:49:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 10:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: music-dragon
+[2024-04-06 10:49:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antoine
+[2024-04-06 10:49:55] INFO root fetch - processPackages [antoine]: New version: [2.5] Old Version: [2.4]
+[2024-04-06 10:49:55] INFO root fetch - processPackages [antoine]: Downloading https://files.pythonhosted.org/packages/e3/c0/5d0d99cd70e7bdabbd35d75f4ab23d699b7884851a953da6679750930633/antoine-2.4.tar.gz
+[2024-04-06 10:49:55] INFO root fetch - processPackages [music-dragon]: New version: [0.9] Old Version: [0.8]
+[2024-04-06 10:49:55] WARNING root fetch - processPackages [antoine]: Timeout reached during download
+[2024-04-06 10:49:56] INFO root fetch - processPackages [music-dragon]: Downloading https://files.pythonhosted.org/packages/52/99/bbb11d4467a85b72df834fa7b8d3b3ed9052db71155feed4a974bda28d5c/music-dragon-0.8.tar.gz
+[2024-04-06 10:49:56] INFO root fetch - processPackages [antoine]: Downloading https://files.pythonhosted.org/packages/32/28/efdd65779c2b3deb4d9d5e5f4433cfc9850f3cc019eef2ef42a565c67414/antoine-2.5.tar.gz
+[2024-04-06 10:49:56] WARNING root fetch - processPackages [music-dragon]: Timeout reached during download
+[2024-04-06 10:49:56] WARNING root fetch - processPackages [antoine]: Timeout reached during download
+[2024-04-06 10:49:56] INFO root fetch - processPackages [antoine]: executing diffoscope
+[2024-04-06 10:49:56] INFO root fetch - processPackages [antoine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antoine-2.4.tar.gz tmp/antoine-2.5.tar.gz --markdown 20240406/a/antoine/2.4-2.5/diff.md --exclude *.pyd
+[2024-04-06 10:49:56] INFO root fetch - processPackages [music-dragon]: Downloading https://files.pythonhosted.org/packages/d7/33/170f6b5dcfaebeee2fd18329ee355df9777428dd04eec0ab3810935b6922/music-dragon-0.9.tar.gz
+[2024-04-06 10:49:56] WARNING root fetch - processPackages [music-dragon]: Timeout reached during download
+[2024-04-06 10:49:56] INFO root fetch - processPackages [music-dragon]: executing diffoscope
+[2024-04-06 10:49:56] INFO root fetch - processPackages [music-dragon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music-dragon-0.8.tar.gz tmp/music-dragon-0.9.tar.gz --markdown 20240406/m/music-dragon/0.8-0.9/diff.md --exclude *.pyd
+[2024-04-06 10:49:56] INFO root fetch - processPackages [antoine]: Remove: archive file [/home/abi/fetcher/tmp/antoine-2.4.tar.gz]
+[2024-04-06 10:49:56] INFO root fetch - processPackages [antoine]: Remove: archive file [/home/abi/fetcher/tmp/antoine-2.5.tar.gz]
+[2024-04-06 10:49:56] INFO root fetch - main [MainThread]: End processing [antoine]: success
+[2024-04-06 10:49:57] INFO root fetch - processPackages [music-dragon]: Remove: archive file [/home/abi/fetcher/tmp/music-dragon-0.8.tar.gz]
+[2024-04-06 10:49:57] INFO root fetch - processPackages [music-dragon]: Remove: archive file [/home/abi/fetcher/tmp/music-dragon-0.9.tar.gz]
+[2024-04-06 10:49:57] INFO root fetch - main [MainThread]: End processing [music-dragon]: success
+[2024-04-06 10:49:57] INFO root fetch - main [MainThread]: Store serial: [22646834]
