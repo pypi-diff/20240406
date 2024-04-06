@@ -13619,3 +13619,17 @@
 [2024-04-06 11:57:20] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
 [2024-04-06 11:57:20] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
 [2024-04-06 11:57:20] INFO root fetch - main [MainThread]: Store serial: [22647143]
+[2024-04-06 11:59:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647143]
+[2024-04-06 11:59:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 11:59:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-commands2
+[2024-04-06 11:59:29] INFO root fetch - processPackages [django-commands2]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-06 11:59:29] INFO root fetch - processPackages [django-commands2]: Downloading https://files.pythonhosted.org/packages/4a/56/2b5bcae29d39b757bdbe70d08b6d89fbfc3e1a08ba8e0984e6cd9d0363be/django_commands2-0.4.0.tar.gz
+[2024-04-06 11:59:30] WARNING root fetch - processPackages [django-commands2]: Timeout reached during download
+[2024-04-06 11:59:30] INFO root fetch - processPackages [django-commands2]: Downloading https://files.pythonhosted.org/packages/c4/3c/d09b5633ce9278cc81c928402ab946a4cf7e67ca85ecf17a4fc15bed9cf8/django_commands2-0.5.0.tar.gz
+[2024-04-06 11:59:30] WARNING root fetch - processPackages [django-commands2]: Timeout reached during download
+[2024-04-06 11:59:30] INFO root fetch - processPackages [django-commands2]: executing diffoscope
+[2024-04-06 11:59:30] INFO root fetch - processPackages [django-commands2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_commands2-0.4.0.tar.gz tmp/django_commands2-0.5.0.tar.gz --markdown 20240406/d/django-commands2/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-06 11:59:30] INFO root fetch - processPackages [django-commands2]: Remove: archive file [/home/abi/fetcher/tmp/django_commands2-0.4.0.tar.gz]
+[2024-04-06 11:59:30] INFO root fetch - processPackages [django-commands2]: Remove: archive file [/home/abi/fetcher/tmp/django_commands2-0.5.0.tar.gz]
+[2024-04-06 11:59:30] INFO root fetch - main [MainThread]: End processing [django-commands2]: success
+[2024-04-06 11:59:30] INFO root fetch - main [MainThread]: Store serial: [22647146]
