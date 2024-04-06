@@ -10067,3 +10067,72 @@
 [2024-04-06 06:46:40] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-04-06 06:46:40] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-04-06 06:46:40] INFO root fetch - main [MainThread]: Store serial: [22645709]
+[2024-04-06 06:48:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645709]
+[2024-04-06 06:48:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 06:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mhmzx-little-paimon
+[2024-04-06 06:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yosemite-tools
+[2024-04-06 06:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gh-util
+[2024-04-06 06:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tinycio
+[2024-04-06 06:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dargs
+[2024-04-06 06:48:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dspin
+[2024-04-06 06:48:49] INFO root fetch - processPackages [yosemite-tools]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 06:48:49] INFO root fetch - processPackages [tinycio]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-04-06 06:48:49] INFO root fetch - processPackages [mhmzx-little-paimon]: New version: [3.0.14] Old Version: [3.0.13]
+[2024-04-06 06:48:49] INFO root fetch - processPackages [dspin]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-06 06:48:49] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/f3/c7/895bdd6a28dc6d57cc48934a0eaa4ebf58b726bc5d1e9391481180fe9fbe/yosemite-tools-0.0.3.tar.gz
+[2024-04-06 06:48:49] INFO root fetch - processPackages [dargs]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-04-06 06:48:49] INFO root fetch - processPackages [gh-util]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 06:48:49] INFO root fetch - processPackages [tinycio]: Downloading https://files.pythonhosted.org/packages/0d/18/640bd295844dfee8fa9cd6a509de806ef3b520e3a31eccadc59fb2885ca0/tinycio-0.7.0.tar.gz
+[2024-04-06 06:48:49] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 06:48:49] WARNING root fetch - processPackages [tinycio]: Timeout reached during download
+[2024-04-06 06:48:49] INFO root fetch - processPackages [mhmzx-little-paimon]: Downloading https://files.pythonhosted.org/packages/8d/03/e4ec00ea2e21aa543fa3d3510791bf667e9ad4ba2fe4c38c0feb889e6ae8/mhmzx_little_paimon-3.0.13.tar.gz
+[2024-04-06 06:48:49] INFO root fetch - processPackages [dspin]: Downloading https://files.pythonhosted.org/packages/c1/95/7acdab192fba2bcee3227695a5fbde5969fbba3e7aeb09254341d22b3984/dspin-1.0.7.tar.gz
+[2024-04-06 06:48:49] INFO root fetch - processPackages [dargs]: Downloading https://files.pythonhosted.org/packages/3d/2f/8a30545cbeb79248abb1ff2bf93185cb19ddfc82f603214a28890dfca4ec/dargs-0.4.4.tar.gz
+[2024-04-06 06:48:49] INFO root fetch - processPackages [gh-util]: Downloading https://files.pythonhosted.org/packages/12/19/16ad7f3bba41799d3be6c8f35b5b924952b288f4164331df7829d54245ae/gh_util-0.1.8.tar.gz
+[2024-04-06 06:48:49] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/f7/c8/7d24634fe7d22b9c98f2ffe2b38902082cb1f06e856af544fbffac735eb7/yosemite-tools-0.0.4.tar.gz
+[2024-04-06 06:48:49] INFO root fetch - processPackages [tinycio]: Downloading https://files.pythonhosted.org/packages/19/98/5e29316d4bcdb6c90177ac0e0c0fa96d29566a0163e0da9c80a6ad7871f2/tinycio-0.7.1.tar.gz
+[2024-04-06 06:48:49] WARNING root fetch - processPackages [dspin]: Timeout reached during download
+[2024-04-06 06:48:49] WARNING root fetch - processPackages [dargs]: Timeout reached during download
+[2024-04-06 06:48:49] WARNING root fetch - processPackages [mhmzx-little-paimon]: Timeout reached during download
+[2024-04-06 06:48:49] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 06:48:49] INFO root fetch - processPackages [yosemite-tools]: executing diffoscope
+[2024-04-06 06:48:49] INFO root fetch - processPackages [yosemite-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yosemite-tools-0.0.3.tar.gz tmp/yosemite-tools-0.0.4.tar.gz --markdown 20240406/y/yosemite-tools/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 06:48:49] WARNING root fetch - processPackages [tinycio]: Timeout reached during download
+[2024-04-06 06:48:49] INFO root fetch - processPackages [tinycio]: executing diffoscope
+[2024-04-06 06:48:49] INFO root fetch - processPackages [tinycio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinycio-0.7.0.tar.gz tmp/tinycio-0.7.1.tar.gz --markdown 20240406/t/tinycio/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2024-04-06 06:48:49] INFO root fetch - processPackages [dspin]: Downloading https://files.pythonhosted.org/packages/7a/10/7107a1b74135c190a7db75b6f0fd267b5b29621906d05eae37763d670169/dspin-1.0.8.tar.gz
+[2024-04-06 06:48:49] INFO root fetch - processPackages [dargs]: Downloading https://files.pythonhosted.org/packages/c0/1a/8c2c6281cfb90794c9395634c891e1e8e60835e762081d1b917127b36b82/dargs-0.4.5.tar.gz
+[2024-04-06 06:48:50] INFO root fetch - processPackages [mhmzx-little-paimon]: Downloading https://files.pythonhosted.org/packages/33/4f/3e120b739a694813212f4f145c72381c27f76d8ad3d33aeeec4f87e59842/mhmzx_little_paimon-3.0.14.tar.gz
+[2024-04-06 06:48:50] WARNING root fetch - processPackages [dargs]: Timeout reached during download
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dargs]: executing diffoscope
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dargs-0.4.4.tar.gz tmp/dargs-0.4.5.tar.gz --markdown 20240406/d/dargs/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2024-04-06 06:48:50] WARNING root fetch - processPackages [dspin]: Timeout reached during download
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dspin]: executing diffoscope
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dspin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dspin-1.0.7.tar.gz tmp/dspin-1.0.8.tar.gz --markdown 20240406/d/dspin/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2024-04-06 06:48:50] WARNING root fetch - processPackages [mhmzx-little-paimon]: Timeout reached during download
+[2024-04-06 06:48:50] INFO root fetch - processPackages [mhmzx-little-paimon]: executing diffoscope
+[2024-04-06 06:48:50] INFO root fetch - processPackages [mhmzx-little-paimon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mhmzx_little_paimon-3.0.13.tar.gz tmp/mhmzx_little_paimon-3.0.14.tar.gz --markdown 20240406/m/mhmzx-little-paimon/3.0.13-3.0.14/diff.md --exclude *.pyd
+[2024-04-06 06:48:50] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.3.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.4.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - main [MainThread]: End processing [yosemite-tools]: success
+[2024-04-06 06:48:50] INFO root fetch - processPackages [tinycio]: Remove: archive file [/home/abi/fetcher/tmp/tinycio-0.7.0.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - processPackages [tinycio]: Remove: archive file [/home/abi/fetcher/tmp/tinycio-0.7.1.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - main [MainThread]: End processing [tinycio]: success
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dargs]: Remove: archive file [/home/abi/fetcher/tmp/dargs-0.4.4.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dargs]: Remove: archive file [/home/abi/fetcher/tmp/dargs-0.4.5.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - main [MainThread]: End processing [dargs]: success
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dspin]: Remove: archive file [/home/abi/fetcher/tmp/dspin-1.0.7.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - processPackages [dspin]: Remove: archive file [/home/abi/fetcher/tmp/dspin-1.0.8.tar.gz]
+[2024-04-06 06:48:50] INFO root fetch - main [MainThread]: End processing [dspin]: success
+[2024-04-06 06:48:51] WARNING root fetch - processPackages [gh-util]: Timeout reached during download
+[2024-04-06 06:48:51] INFO root fetch - processPackages [gh-util]: Downloading https://files.pythonhosted.org/packages/eb/d4/697bc877cb9ef5b789ecccae7ddd11d7b0c97463359d4f2ee02ac77a8268/gh_util-0.1.9.tar.gz
+[2024-04-06 06:48:51] INFO root fetch - processPackages [mhmzx-little-paimon]: Remove: archive file [/home/abi/fetcher/tmp/mhmzx_little_paimon-3.0.13.tar.gz]
+[2024-04-06 06:48:51] INFO root fetch - processPackages [mhmzx-little-paimon]: Remove: archive file [/home/abi/fetcher/tmp/mhmzx_little_paimon-3.0.14.tar.gz]
+[2024-04-06 06:48:51] INFO root fetch - main [MainThread]: End processing [mhmzx-little-paimon]: success
+[2024-04-06 06:48:53] WARNING root fetch - processPackages [gh-util]: Timeout reached during download
+[2024-04-06 06:48:53] INFO root fetch - processPackages [gh-util]: executing diffoscope
+[2024-04-06 06:48:53] INFO root fetch - processPackages [gh-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gh_util-0.1.8.tar.gz tmp/gh_util-0.1.9.tar.gz --markdown 20240406/g/gh-util/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 06:48:55] INFO root fetch - processPackages [gh-util]: Remove: archive file [/home/abi/fetcher/tmp/gh_util-0.1.8.tar.gz]
+[2024-04-06 06:48:55] INFO root fetch - processPackages [gh-util]: Remove: archive file [/home/abi/fetcher/tmp/gh_util-0.1.9.tar.gz]
+[2024-04-06 06:48:55] INFO root fetch - main [MainThread]: End processing [gh-util]: success
+[2024-04-06 06:48:55] INFO root fetch - main [MainThread]: Store serial: [22645727]
