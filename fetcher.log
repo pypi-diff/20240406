@@ -11791,3 +11791,28 @@
 [2024-04-06 09:34:09] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.4.tar.gz]
 [2024-04-06 09:34:09] INFO root fetch - main [MainThread]: End processing [cefi]: success
 [2024-04-06 09:34:09] INFO root fetch - main [MainThread]: Store serial: [22646468]
+[2024-04-06 09:36:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646468]
+[2024-04-06 09:36:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 09:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boostedblob
+[2024-04-06 09:36:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loadimg
+[2024-04-06 09:36:17] INFO root fetch - processPackages [loadimg]: New version: [0.1.0] Old Version: [0.0.3]
+[2024-04-06 09:36:17] INFO root fetch - processPackages [loadimg]: Downloading https://files.pythonhosted.org/packages/36/b3/eb72b40fc0f3fe78a7911d0a4b4a4b01ffcb57d1a4d9f02c80fe9ed37da9/loadimg-0.0.3.tar.gz
+[2024-04-06 09:36:17] INFO root fetch - processPackages [boostedblob]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-06 09:36:18] WARNING root fetch - processPackages [loadimg]: Timeout reached during download
+[2024-04-06 09:36:18] INFO root fetch - processPackages [boostedblob]: Downloading https://files.pythonhosted.org/packages/dd/41/8ff716acac12494b68c1fabf4ff89aca75b71782948da4d2f81931332f45/boostedblob-0.9.2.tar.gz
+[2024-04-06 09:36:18] INFO root fetch - processPackages [loadimg]: Downloading https://files.pythonhosted.org/packages/d6/ad/b115e3358cacd5730f50c9aa3d9619dee8acecb9142ec258568aec8c42c9/loadimg-0.1.0.tar.gz
+[2024-04-06 09:36:18] WARNING root fetch - processPackages [boostedblob]: Timeout reached during download
+[2024-04-06 09:36:18] WARNING root fetch - processPackages [loadimg]: Timeout reached during download
+[2024-04-06 09:36:18] INFO root fetch - processPackages [loadimg]: executing diffoscope
+[2024-04-06 09:36:18] INFO root fetch - processPackages [loadimg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loadimg-0.0.3.tar.gz tmp/loadimg-0.1.0.tar.gz --markdown 20240406/l/loadimg/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2024-04-06 09:36:18] INFO root fetch - processPackages [boostedblob]: Downloading https://files.pythonhosted.org/packages/59/26/8ebb50f551a54af0a8259bdbbcb46f216912adf5b4f03f4f04012ac00402/boostedblob-0.9.3.tar.gz
+[2024-04-06 09:36:18] WARNING root fetch - processPackages [boostedblob]: Timeout reached during download
+[2024-04-06 09:36:18] INFO root fetch - processPackages [boostedblob]: executing diffoscope
+[2024-04-06 09:36:18] INFO root fetch - processPackages [boostedblob]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boostedblob-0.9.2.tar.gz tmp/boostedblob-0.9.3.tar.gz --markdown 20240406/b/boostedblob/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-06 09:36:18] INFO root fetch - processPackages [loadimg]: Remove: archive file [/home/abi/fetcher/tmp/loadimg-0.0.3.tar.gz]
+[2024-04-06 09:36:18] INFO root fetch - processPackages [loadimg]: Remove: archive file [/home/abi/fetcher/tmp/loadimg-0.1.0.tar.gz]
+[2024-04-06 09:36:18] INFO root fetch - main [MainThread]: End processing [loadimg]: success
+[2024-04-06 09:36:19] INFO root fetch - processPackages [boostedblob]: Remove: archive file [/home/abi/fetcher/tmp/boostedblob-0.9.2.tar.gz]
+[2024-04-06 09:36:19] INFO root fetch - processPackages [boostedblob]: Remove: archive file [/home/abi/fetcher/tmp/boostedblob-0.9.3.tar.gz]
+[2024-04-06 09:36:19] INFO root fetch - main [MainThread]: End processing [boostedblob]: success
+[2024-04-06 09:36:19] INFO root fetch - main [MainThread]: Store serial: [22646474]
