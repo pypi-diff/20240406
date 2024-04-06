@@ -21926,3 +21926,58 @@ EOFError: EOF read where object expected
 [2024-04-06 20:31:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.2.7.tar.gz]
 [2024-04-06 20:31:06] INFO root fetch - main [MainThread]: End processing [moval]: success
 [2024-04-06 20:31:06] INFO root fetch - main [MainThread]: Store serial: [22650131]
+[2024-04-06 20:33:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650131]
+[2024-04-06 20:33:15] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 20:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mystring
+[2024-04-06 20:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nearest-advocate
+[2024-04-06 20:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-framework
+[2024-04-06 20:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keri
+[2024-04-06 20:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: medusa-logger
+[2024-04-06 20:33:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sbmlnetwork
+[2024-04-06 20:33:15] WARNING root fetch - processPackages [sbmlnetwork]: Skipping, unable to determine old version
+[2024-04-06 20:33:15] INFO root fetch - main [MainThread]: End processing [sbmlnetwork] error
+[2024-04-06 20:33:15] INFO root fetch - processPackages [xia-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 20:33:15] INFO root fetch - processPackages [medusa-logger]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-06 20:33:15] INFO root fetch - processPackages [keri]: New version: [1.2.dev0] Old Version: [1.1.9]
+[2024-04-06 20:33:15] INFO root fetch - processPackages [mystring]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-06 20:33:15] INFO root fetch - processPackages [nearest-advocate]: New version: [0.2.0.3] Old Version: [0.2.0.2]
+[2024-04-06 20:33:15] INFO root fetch - processPackages [keri]: Downloading https://files.pythonhosted.org/packages/a7/2f/60b5294f4098b422cb91093be33f1770bd310d911ae3741f04f0b7d828fb/keri-1.1.9.tar.gz
+[2024-04-06 20:33:15] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/4d/ec/8ba56b22e3b523e06aaac69046406b53a851ada9fdfb0c21920204e3ccee/xia-framework-0.0.8.tar.gz
+[2024-04-06 20:33:15] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/88/05/d0d140db04c0b270b7380359ce66dc3b26477e6b13a36cd8ced2e0442041/mystring-0.2.98-py3-none-any.whl
+[2024-04-06 20:33:15] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/2b/76/4fd3aa62a8492e86692194878e7eacca7f88df024b8e95a9b623e5254987/medusa-logger-1.1.0.tar.gz
+[2024-04-06 20:33:15] WARNING root fetch - processPackages [mystring]: Timeout reached during download
+[2024-04-06 20:33:15] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 20:33:15] INFO root fetch - processPackages [nearest-advocate]: Downloading https://files.pythonhosted.org/packages/20/aa/4749599d05038e4942a29e3eefcb7367aa642699ec465d67c8ff8c669052/nearest_advocate-0.2.0.2.tar.gz
+[2024-04-06 20:33:15] WARNING root fetch - processPackages [keri]: Timeout reached during download
+[2024-04-06 20:33:16] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/fa/f7/968c4dde1769f6b1b7f54bedafe67abf4ae2c5ff261eaed5f05032e85e87/mystring-0.2.99-py3-none-any.whl
+[2024-04-06 20:33:16] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 20:33:16] WARNING root fetch - processPackages [nearest-advocate]: Skipping package: exceeds size limit 35361247>=10485760
+[2024-04-06 20:33:16] INFO root fetch - main [MainThread]: End processing [nearest-advocate] error
+[2024-04-06 20:33:16] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/1a/aa/c1278b76a785a1c89cde0fa37b425dbc14d128e5a6542af6978710d87150/xia-framework-0.0.9.tar.gz
+[2024-04-06 20:33:16] INFO root fetch - processPackages [keri]: Downloading https://files.pythonhosted.org/packages/ab/4f/477fea94530cb2004ba28371e14810a3a080cd84dde6ba585ce33da0a609/keri-1.2.dev0.tar.gz
+[2024-04-06 20:33:16] WARNING root fetch - processPackages [mystring]: Timeout reached during download
+[2024-04-06 20:33:16] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2024-04-06 20:33:16] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.2.98-py3-none-any.whl.zip tmp/mystring-0.2.99-py3-none-any.whl.zip --markdown 20240406/m/mystring/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2024-04-06 20:33:16] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 20:33:16] INFO root fetch - processPackages [xia-framework]: executing diffoscope
+[2024-04-06 20:33:16] INFO root fetch - processPackages [xia-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-framework-0.0.8.tar.gz tmp/xia-framework-0.0.9.tar.gz --markdown 20240406/x/xia-framework/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 20:33:16] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/2c/1f/68f321189a4d838baa4f9f5bf22d4fd0775a7aa78cb8be72f87fe4996c80/medusa-logger-1.2.0.tar.gz
+[2024-04-06 20:33:16] WARNING root fetch - processPackages [keri]: Timeout reached during download
+[2024-04-06 20:33:16] INFO root fetch - processPackages [keri]: executing diffoscope
+[2024-04-06 20:33:16] INFO root fetch - processPackages [keri]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keri-1.1.9.tar.gz tmp/keri-1.2.dev0.tar.gz --markdown 20240406/k/keri/1.1.9-1.2.dev0/diff.md --exclude *.pyd
+[2024-04-06 20:33:16] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 20:33:16] INFO root fetch - processPackages [medusa-logger]: executing diffoscope
+[2024-04-06 20:33:16] INFO root fetch - processPackages [medusa-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medusa-logger-1.1.0.tar.gz tmp/medusa-logger-1.2.0.tar.gz --markdown 20240406/m/medusa-logger/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2024-04-06 20:33:16] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.8.tar.gz]
+[2024-04-06 20:33:16] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
+[2024-04-06 20:33:16] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
+[2024-04-06 20:33:16] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.98-py3-none-any.whl.zip]
+[2024-04-06 20:33:16] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.99-py3-none-any.whl.zip]
+[2024-04-06 20:33:16] INFO root fetch - main [MainThread]: End processing [mystring]: success
+[2024-04-06 20:33:16] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.1.0.tar.gz]
+[2024-04-06 20:33:16] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.2.0.tar.gz]
+[2024-04-06 20:33:16] INFO root fetch - main [MainThread]: End processing [medusa-logger]: success
+[2024-04-06 20:33:17] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.1.9.tar.gz]
+[2024-04-06 20:33:17] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.2.dev0.tar.gz]
+[2024-04-06 20:33:17] INFO root fetch - main [MainThread]: End processing [keri]: success
+[2024-04-06 20:33:17] INFO root fetch - main [MainThread]: Store serial: [22650148]
