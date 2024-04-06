@@ -12328,3 +12328,54 @@
 [2024-04-06 10:08:57] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
 [2024-04-06 10:08:57] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
 [2024-04-06 10:08:57] INFO root fetch - main [MainThread]: Store serial: [22646623]
+[2024-04-06 10:11:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646623]
+[2024-04-06 10:11:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 10:11:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythagoras
+[2024-04-06 10:11:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iris-pex-embedded-python
+[2024-04-06 10:11:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: adaptive-scheduler
+[2024-04-06 10:11:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly
+[2024-04-06 10:11:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asaniczka
+[2024-04-06 10:11:06] INFO root fetch - processPackages [pythagoras]: New version: [0.10.45] Old Version: [0.10.44]
+[2024-04-06 10:11:06] INFO root fetch - processPackages [iris-pex-embedded-python]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-06 10:11:06] INFO root fetch - processPackages [asaniczka]: New version: [3.1.0] Old Version: [3.0.3]
+[2024-04-06 10:11:06] INFO root fetch - processPackages [asaniczka]: Downloading https://files.pythonhosted.org/packages/07/f0/d9b2f551fa5991840626c61316ed1c448a43b8bec64a19bf058cbcfdb5d6/asaniczka-3.0.3.tar.gz
+[2024-04-06 10:11:06] INFO root fetch - processPackages [adaptive-scheduler]: New version: [2.6.4] Old Version: [2.6.3]
+[2024-04-06 10:11:06] INFO root fetch - processPackages [iris-pex-embedded-python]: Downloading https://files.pythonhosted.org/packages/0a/1e/871a26044c71126b987a44b3ec89c4b39caccaf6ac0bb646f27aba683927/iris_pex_embedded_python-2.3.8.tar.gz
+[2024-04-06 10:11:06] ERROR root fetch - processPackages [pythagoras]: Unable to fetch info: No such project/version 'pythagoras' 0.10.44
+[2024-04-06 10:11:06] INFO root fetch - main [MainThread]: End processing [pythagoras] error
+[2024-04-06 10:11:06] WARNING root fetch - processPackages [asaniczka]: Timeout reached during download
+[2024-04-06 10:11:06] WARNING root fetch - processPackages [iris-pex-embedded-python]: Timeout reached during download
+[2024-04-06 10:11:06] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240406] Old Version: [2.17.0.dev20240405]
+[2024-04-06 10:11:06] INFO root fetch - processPackages [adaptive-scheduler]: Downloading https://files.pythonhosted.org/packages/ed/1f/d09b60667a585b2619b2944c8795fd02e5fbc0a92ef8bef60e6658390d14/adaptive_scheduler-2.6.3.tar.gz
+[2024-04-06 10:11:06] INFO root fetch - processPackages [asaniczka]: Downloading https://files.pythonhosted.org/packages/a6/cd/9a1e150a6bbb04fbba4599af2cefde70f2fcc71d7bae0f6da93e90f9c177/asaniczka-3.1.0.tar.gz
+[2024-04-06 10:11:06] INFO root fetch - processPackages [iris-pex-embedded-python]: Downloading https://files.pythonhosted.org/packages/1f/d9/ca808faae976325522f21347afcfc5843a9cac222c09edb7a58702c2c50b/iris_pex_embedded_python-2.3.9.tar.gz
+[2024-04-06 10:11:06] WARNING root fetch - processPackages [asaniczka]: Timeout reached during download
+[2024-04-06 10:11:06] WARNING root fetch - processPackages [adaptive-scheduler]: Timeout reached during download
+[2024-04-06 10:11:06] INFO root fetch - processPackages [asaniczka]: executing diffoscope
+[2024-04-06 10:11:06] INFO root fetch - processPackages [asaniczka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asaniczka-3.0.3.tar.gz tmp/asaniczka-3.1.0.tar.gz --markdown 20240406/a/asaniczka/3.0.3-3.1.0/diff.md --exclude *.pyd
+[2024-04-06 10:11:06] WARNING root fetch - processPackages [iris-pex-embedded-python]: Timeout reached during download
+[2024-04-06 10:11:06] INFO root fetch - processPackages [iris-pex-embedded-python]: executing diffoscope
+[2024-04-06 10:11:06] INFO root fetch - processPackages [iris-pex-embedded-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iris_pex_embedded_python-2.3.8.tar.gz tmp/iris_pex_embedded_python-2.3.9.tar.gz --markdown 20240406/i/iris-pex-embedded-python/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2024-04-06 10:11:06] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/e7/1d/70ed7037ec290a31bbdb16f075a8b0012574d3ad92bc6b57029c1e7e63e8/tf_nightly-2.17.0.dev20240405-cp39-cp39-win_amd64.whl
+[2024-04-06 10:11:06] WARNING root fetch - processPackages [tf-nightly]: Timeout reached during download
+[2024-04-06 10:11:06] INFO root fetch - processPackages [adaptive-scheduler]: Downloading https://files.pythonhosted.org/packages/5e/7b/49a3e83cc0e475a41bd7599eaa722932c40eefc2c2b7caaa685416ebebc9/adaptive_scheduler-2.6.4.tar.gz
+[2024-04-06 10:11:06] WARNING root fetch - processPackages [adaptive-scheduler]: Timeout reached during download
+[2024-04-06 10:11:06] INFO root fetch - processPackages [adaptive-scheduler]: executing diffoscope
+[2024-04-06 10:11:06] INFO root fetch - processPackages [adaptive-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adaptive_scheduler-2.6.3.tar.gz tmp/adaptive_scheduler-2.6.4.tar.gz --markdown 20240406/a/adaptive-scheduler/2.6.3-2.6.4/diff.md --exclude *.pyd
+[2024-04-06 10:11:06] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/d1/8c/79bc680a9cfdd0ca03efb906f6be9a54e2e6c5369d753e05acc171ba3fd9/tf_nightly-2.17.0.dev20240406-cp39-cp39-win_amd64.whl
+[2024-04-06 10:11:07] WARNING root fetch - processPackages [tf-nightly]: Timeout reached during download
+[2024-04-06 10:11:07] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-04-06 10:11:07] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240405-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240406-cp39-cp39-win_amd64.whl.zip --markdown 20240406/t/tf-nightly/2.17.0.dev20240405-2.17.0.dev20240406/diff.md --exclude *.pyd
+[2024-04-06 10:11:07] INFO root fetch - processPackages [asaniczka]: Remove: archive file [/home/abi/fetcher/tmp/asaniczka-3.0.3.tar.gz]
+[2024-04-06 10:11:07] INFO root fetch - processPackages [asaniczka]: Remove: archive file [/home/abi/fetcher/tmp/asaniczka-3.1.0.tar.gz]
+[2024-04-06 10:11:07] INFO root fetch - main [MainThread]: End processing [asaniczka]: success
+[2024-04-06 10:11:07] INFO root fetch - processPackages [iris-pex-embedded-python]: Remove: archive file [/home/abi/fetcher/tmp/iris_pex_embedded_python-2.3.8.tar.gz]
+[2024-04-06 10:11:07] INFO root fetch - processPackages [iris-pex-embedded-python]: Remove: archive file [/home/abi/fetcher/tmp/iris_pex_embedded_python-2.3.9.tar.gz]
+[2024-04-06 10:11:07] INFO root fetch - main [MainThread]: End processing [iris-pex-embedded-python]: success
+[2024-04-06 10:11:07] INFO root fetch - processPackages [adaptive-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/adaptive_scheduler-2.6.3.tar.gz]
+[2024-04-06 10:11:07] INFO root fetch - processPackages [adaptive-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/adaptive_scheduler-2.6.4.tar.gz]
+[2024-04-06 10:11:07] INFO root fetch - main [MainThread]: End processing [adaptive-scheduler]: success
+[2024-04-06 10:11:07] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240405-cp39-cp39-win_amd64.whl.zip]
+[2024-04-06 10:11:07] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240406-cp39-cp39-win_amd64.whl.zip]
+[2024-04-06 10:11:07] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-04-06 10:11:07] INFO root fetch - main [MainThread]: Store serial: [22646641]
