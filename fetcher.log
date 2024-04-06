@@ -7936,3 +7936,42 @@
 [2024-04-06 04:24:16] INFO root fetch - processPackages [fgo-api-types]: Remove: archive file [/home/abi/fetcher/tmp/fgo_api_types-2024.4.6.2.22.3.tar.gz]
 [2024-04-06 04:24:16] INFO root fetch - main [MainThread]: End processing [fgo-api-types]: success
 [2024-04-06 04:24:16] INFO root fetch - main [MainThread]: Store serial: [22644955]
+[2024-04-06 04:26:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644955]
+[2024-04-06 04:26:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 04:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cpymake
+[2024-04-06 04:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mocker-db
+[2024-04-06 04:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jupyter-api-client
+[2024-04-06 04:26:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sprocketship
+[2024-04-06 04:26:24] INFO root fetch - processPackages [cpymake]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-06 04:26:24] WARNING root fetch - processPackages [jupyter-api-client]: Skipping, unable to determine old version
+[2024-04-06 04:26:24] INFO root fetch - main [MainThread]: End processing [jupyter-api-client] error
+[2024-04-06 04:26:24] INFO root fetch - processPackages [mocker-db]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 04:26:24] INFO root fetch - processPackages [mocker-db]: Downloading https://files.pythonhosted.org/packages/11/a5/daf1ac595a69ce7c480f15541995e16a6a8b04cb278ff354dd46b5722093/mocker_db-0.0.6.tar.gz
+[2024-04-06 04:26:24] INFO root fetch - processPackages [sprocketship]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 04:26:24] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/28/93/7fe790d402d9afa11629da3862cc79441ab2e80546a6285dc10e8da7d45a/cpymake-0.1.3.tar.gz
+[2024-04-06 04:26:25] WARNING root fetch - processPackages [mocker-db]: Timeout reached during download
+[2024-04-06 04:26:25] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:26:25] INFO root fetch - processPackages [mocker-db]: Downloading https://files.pythonhosted.org/packages/e0/46/2dd3f9c0e66a2e23bb172d82a509b5ad530f591ba177c5bda249ec657965/mocker_db-0.0.7.tar.gz
+[2024-04-06 04:26:25] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/4a/04/7c484c3ebcb486d63df55c9b565a680f305b65c0193826f913351ba314d3/sprocketship-0.0.8.tar.gz
+[2024-04-06 04:26:25] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/1e/4e/5159770e182cc8227714705815292800114f4ebbe33532237b35f354f46f/cpymake-0.1.4.tar.gz
+[2024-04-06 04:26:25] WARNING root fetch - processPackages [mocker-db]: Timeout reached during download
+[2024-04-06 04:26:25] INFO root fetch - processPackages [mocker-db]: executing diffoscope
+[2024-04-06 04:26:25] INFO root fetch - processPackages [mocker-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mocker_db-0.0.6.tar.gz tmp/mocker_db-0.0.7.tar.gz --markdown 20240406/m/mocker-db/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 04:26:25] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 04:26:25] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:26:25] INFO root fetch - processPackages [cpymake]: executing diffoscope
+[2024-04-06 04:26:25] INFO root fetch - processPackages [cpymake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpymake-0.1.3.tar.gz tmp/cpymake-0.1.4.tar.gz --markdown 20240406/c/cpymake/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 04:26:25] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/3b/1f/ef5adaa427009cf67f6258034539521481c76a9ad94df0f6976077386506/sprocketship-0.0.9.tar.gz
+[2024-04-06 04:26:25] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 04:26:25] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 04:26:25] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.0.8.tar.gz tmp/sprocketship-0.0.9.tar.gz --markdown 20240406/s/sprocketship/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 04:26:25] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.0.6.tar.gz]
+[2024-04-06 04:26:25] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.0.7.tar.gz]
+[2024-04-06 04:26:25] INFO root fetch - main [MainThread]: End processing [mocker-db]: success
+[2024-04-06 04:26:26] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.3.tar.gz]
+[2024-04-06 04:26:26] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.4.tar.gz]
+[2024-04-06 04:26:26] INFO root fetch - main [MainThread]: End processing [cpymake]: success
+[2024-04-06 04:26:26] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.8.tar.gz]
+[2024-04-06 04:26:26] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.9.tar.gz]
+[2024-04-06 04:26:26] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 04:26:26] INFO root fetch - main [MainThread]: Store serial: [22644967]
