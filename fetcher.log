@@ -21654,3 +21654,28 @@ EOFError: EOF read where object expected
 [2024-04-06 20:17:58] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-04-06 20:17:58] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-04-06 20:17:58] INFO root fetch - main [MainThread]: Store serial: [22650041]
+[2024-04-06 20:20:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650041]
+[2024-04-06 20:20:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 20:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NNSOM
+[2024-04-06 20:20:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: learning3d
+[2024-04-06 20:20:07] INFO root fetch - processPackages [learning3d]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 20:20:07] INFO root fetch - processPackages [NNSOM]: New version: [1.4.7] Old Version: [1.4.6]
+[2024-04-06 20:20:07] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/2f/18/ae0587589fe0ec6ad1317fe9a9c582115f7266db70f557a48d39f12d8b58/learning3d-0.0.3.tar.gz
+[2024-04-06 20:20:07] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/42/8b/15faebe9a4d3ada327ad5d5117393e40b69c91dc09b9d11a7301f0018367/nnsom-1.4.6.tar.gz
+[2024-04-06 20:20:07] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 20:20:07] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 20:20:07] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/ec/03/0c675542973daeca38ca92e3091986b264a250e6effb96f5a5515cf7878f/learning3d-0.0.4.tar.gz
+[2024-04-06 20:20:07] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/c0/cf/0984379c404e4bc8f3f5f1f284770e75d8e69e5d002611263ef51c1fa48f/nnsom-1.4.7.tar.gz
+[2024-04-06 20:20:07] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 20:20:07] INFO root fetch - processPackages [learning3d]: executing diffoscope
+[2024-04-06 20:20:07] INFO root fetch - processPackages [learning3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning3d-0.0.3.tar.gz tmp/learning3d-0.0.4.tar.gz --markdown 20240406/l/learning3d/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 20:20:07] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 20:20:07] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-06 20:20:07] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.4.6.tar.gz tmp/nnsom-1.4.7.tar.gz --markdown 20240406/N/NNSOM/1.4.6-1.4.7/diff.md --exclude *.pyd
+[2024-04-06 20:20:08] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.6.tar.gz]
+[2024-04-06 20:20:08] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.7.tar.gz]
+[2024-04-06 20:20:08] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-06 20:20:08] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.3.tar.gz]
+[2024-04-06 20:20:08] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.4.tar.gz]
+[2024-04-06 20:20:08] INFO root fetch - main [MainThread]: End processing [learning3d]: success
+[2024-04-06 20:20:08] INFO root fetch - main [MainThread]: Store serial: [22650047]
