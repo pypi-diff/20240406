@@ -19733,3 +19733,9 @@ EOFError: EOF read where object expected
 [2024-04-06 18:33:05] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-06 18:33:05] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-06 18:33:05] INFO root fetch - main [MainThread]: Store serial: [22649371]
+[2024-04-06 18:35:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649371]
+[2024-04-06 18:35:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 18:35:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: medusa-logger
+[2024-04-06 18:35:14] WARNING root fetch - processPackages [medusa-logger]: Skipping, unable to determine old version
+[2024-04-06 18:35:14] INFO root fetch - main [MainThread]: End processing [medusa-logger] error
+[2024-04-06 18:35:14] INFO root fetch - main [MainThread]: Store serial: [22649376]
