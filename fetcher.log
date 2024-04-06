@@ -16774,3 +16774,28 @@ EOFError: EOF read where object expected
 [2024-04-06 15:38:35] INFO root fetch - processPackages [pixeloe]: Remove: archive file [/home/abi/fetcher/tmp/pixeloe-0.0.6.tar.gz]
 [2024-04-06 15:38:35] INFO root fetch - main [MainThread]: End processing [pixeloe]: success
 [2024-04-06 15:38:35] INFO root fetch - main [MainThread]: Store serial: [22648260]
+[2024-04-06 15:40:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648260]
+[2024-04-06 15:40:44] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 15:40:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: All-in-one-chay
+[2024-04-06 15:40:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: policy-sentry
+[2024-04-06 15:40:44] INFO root fetch - processPackages [All-in-one-chay]: New version: [2.4.6] Old Version: [2.4.5]
+[2024-04-06 15:40:44] INFO root fetch - processPackages [policy-sentry]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 15:40:44] INFO root fetch - processPackages [All-in-one-chay]: Downloading https://files.pythonhosted.org/packages/02/01/9b3a0e30763b7e1aa90333befc7ab6d9c0507915fcc764edaf51263d3dfa/All-in-one-chay-2.4.5.tar.gz
+[2024-04-06 15:40:44] INFO root fetch - processPackages [policy-sentry]: Downloading https://files.pythonhosted.org/packages/e6/ac/58bf50d3e2807b44e061ab312d3064c4fcdf28d0df6537357a23c99cc3cf/policy_sentry-0.9.0.tar.gz
+[2024-04-06 15:40:44] WARNING root fetch - processPackages [All-in-one-chay]: Timeout reached during download
+[2024-04-06 15:40:45] WARNING root fetch - processPackages [policy-sentry]: Timeout reached during download
+[2024-04-06 15:40:45] INFO root fetch - processPackages [All-in-one-chay]: Downloading https://files.pythonhosted.org/packages/09/4a/830dc52e60a37b4dedbece72e876ecba9b9e89334ddc31533c5a7524f605/All-in-one-chay-2.4.6.tar.gz
+[2024-04-06 15:40:45] WARNING root fetch - processPackages [All-in-one-chay]: Timeout reached during download
+[2024-04-06 15:40:45] INFO root fetch - processPackages [All-in-one-chay]: executing diffoscope
+[2024-04-06 15:40:45] INFO root fetch - processPackages [All-in-one-chay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/All-in-one-chay-2.4.5.tar.gz tmp/All-in-one-chay-2.4.6.tar.gz --markdown 20240406/A/All-in-one-chay/2.4.5-2.4.6/diff.md --exclude *.pyd
+[2024-04-06 15:40:45] INFO root fetch - processPackages [policy-sentry]: Downloading https://files.pythonhosted.org/packages/ee/7b/2aa24bcd1c15d828f2b8f374e583a012c0a4f2f40f8f19138ca314eaa083/policy_sentry-0.9.1.tar.gz
+[2024-04-06 15:40:45] WARNING root fetch - processPackages [policy-sentry]: Timeout reached during download
+[2024-04-06 15:40:45] INFO root fetch - processPackages [policy-sentry]: executing diffoscope
+[2024-04-06 15:40:45] INFO root fetch - processPackages [policy-sentry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/policy_sentry-0.9.0.tar.gz tmp/policy_sentry-0.9.1.tar.gz --markdown 20240406/p/policy-sentry/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 15:40:45] INFO root fetch - processPackages [All-in-one-chay]: Remove: archive file [/home/abi/fetcher/tmp/All-in-one-chay-2.4.5.tar.gz]
+[2024-04-06 15:40:45] INFO root fetch - processPackages [All-in-one-chay]: Remove: archive file [/home/abi/fetcher/tmp/All-in-one-chay-2.4.6.tar.gz]
+[2024-04-06 15:40:45] INFO root fetch - main [MainThread]: End processing [All-in-one-chay]: success
+[2024-04-06 15:40:56] INFO root fetch - processPackages [policy-sentry]: Remove: archive file [/home/abi/fetcher/tmp/policy_sentry-0.9.0.tar.gz]
+[2024-04-06 15:40:56] INFO root fetch - processPackages [policy-sentry]: Remove: archive file [/home/abi/fetcher/tmp/policy_sentry-0.9.1.tar.gz]
+[2024-04-06 15:40:56] INFO root fetch - main [MainThread]: End processing [policy-sentry]: success
+[2024-04-06 15:40:56] INFO root fetch - main [MainThread]: Store serial: [22648266]
