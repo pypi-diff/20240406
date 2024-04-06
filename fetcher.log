@@ -14050,3 +14050,42 @@
 [2024-04-06 12:42:47] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot-nightly-1.0.0.dev20240405.tar.gz]
 [2024-04-06 12:42:47] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
 [2024-04-06 12:42:47] INFO root fetch - main [MainThread]: Store serial: [22647275]
+[2024-04-06 12:44:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647275]
+[2024-04-06 12:44:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyweatherfr
+[2024-04-06 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xarg-python
+[2024-04-06 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: speedtools
+[2024-04-06 12:44:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: secvision
+[2024-04-06 12:44:56] INFO root fetch - processPackages [xarg-python]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-06 12:44:56] WARNING root fetch - processPackages [secvision]: Skipping, unable to determine old version
+[2024-04-06 12:44:56] INFO root fetch - main [MainThread]: End processing [secvision] error
+[2024-04-06 12:44:56] INFO root fetch - processPackages [speedtools]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 12:44:56] INFO root fetch - processPackages [pyweatherfr]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-06 12:44:57] INFO root fetch - processPackages [xarg-python]: Downloading https://files.pythonhosted.org/packages/58/60/7f25a65b4d5097663e7be02841fa6df6aca5b37c5cfadb98de7b172f000b/xarg-python-1.4.1.tar.gz
+[2024-04-06 12:44:57] INFO root fetch - processPackages [speedtools]: Downloading https://files.pythonhosted.org/packages/d8/2c/b7c63d79f106bd61226b6abc15215148ad3ca24e35c6929335c13c6c9c01/speedtools-0.8.0.tar.gz
+[2024-04-06 12:44:57] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/5d/57/ce2d5d04713eae2b3efe7fe82c7e9c49f82f514326690729bef1199a946f/pyweatherfr-2.0.0.tar.gz
+[2024-04-06 12:44:57] WARNING root fetch - processPackages [xarg-python]: Timeout reached during download
+[2024-04-06 12:44:57] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-06 12:44:57] WARNING root fetch - processPackages [speedtools]: Timeout reached during download
+[2024-04-06 12:44:57] INFO root fetch - processPackages [xarg-python]: Downloading https://files.pythonhosted.org/packages/cf/1e/73df3cfed573d668e402c7f3803dd453e8e69e7c08f30359ebec348d4d44/xarg-python-1.4.2.tar.gz
+[2024-04-06 12:44:57] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/8a/0e/caff4dfde4aa8629e4296bf66177f70c46718dc1874d5289a20bb75812e4/pyweatherfr-2.0.1.tar.gz
+[2024-04-06 12:44:57] WARNING root fetch - processPackages [xarg-python]: Timeout reached during download
+[2024-04-06 12:44:57] INFO root fetch - processPackages [xarg-python]: executing diffoscope
+[2024-04-06 12:44:57] INFO root fetch - processPackages [xarg-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xarg-python-1.4.1.tar.gz tmp/xarg-python-1.4.2.tar.gz --markdown 20240406/x/xarg-python/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2024-04-06 12:44:57] INFO root fetch - processPackages [speedtools]: Downloading https://files.pythonhosted.org/packages/ad/4e/645d6d583c90595729fca70e802ebeb597ab7df7daef6f0cfe5b87262de0/speedtools-0.9.0.tar.gz
+[2024-04-06 12:44:57] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-06 12:44:57] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-06 12:44:57] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-2.0.0.tar.gz tmp/pyweatherfr-2.0.1.tar.gz --markdown 20240406/p/pyweatherfr/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-06 12:44:57] WARNING root fetch - processPackages [speedtools]: Timeout reached during download
+[2024-04-06 12:44:57] INFO root fetch - processPackages [speedtools]: executing diffoscope
+[2024-04-06 12:44:57] INFO root fetch - processPackages [speedtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speedtools-0.8.0.tar.gz tmp/speedtools-0.9.0.tar.gz --markdown 20240406/s/speedtools/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 12:44:58] INFO root fetch - processPackages [xarg-python]: Remove: archive file [/home/abi/fetcher/tmp/xarg-python-1.4.1.tar.gz]
+[2024-04-06 12:44:58] INFO root fetch - processPackages [xarg-python]: Remove: archive file [/home/abi/fetcher/tmp/xarg-python-1.4.2.tar.gz]
+[2024-04-06 12:44:58] INFO root fetch - main [MainThread]: End processing [xarg-python]: success
+[2024-04-06 12:44:58] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.0.tar.gz]
+[2024-04-06 12:44:58] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.1.tar.gz]
+[2024-04-06 12:44:58] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-06 12:44:58] INFO root fetch - processPackages [speedtools]: Remove: archive file [/home/abi/fetcher/tmp/speedtools-0.8.0.tar.gz]
+[2024-04-06 12:44:58] INFO root fetch - processPackages [speedtools]: Remove: archive file [/home/abi/fetcher/tmp/speedtools-0.9.0.tar.gz]
+[2024-04-06 12:44:58] INFO root fetch - main [MainThread]: End processing [speedtools]: success
+[2024-04-06 12:44:58] INFO root fetch - main [MainThread]: Store serial: [22647291]
