@@ -24738,3 +24738,43 @@ EOFError: EOF read where object expected
 [2024-04-06 23:09:45] INFO root fetch - processPackages [evennia]: Remove: archive file [/home/abi/fetcher/tmp/evennia-4.1.1.tar.gz]
 [2024-04-06 23:09:45] INFO root fetch - main [MainThread]: End processing [evennia]: success
 [2024-04-06 23:09:45] INFO root fetch - main [MainThread]: Store serial: [22651198]
+[2024-04-06 23:11:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651198]
+[2024-04-06 23:11:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 23:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redsauce
+[2024-04-06 23:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: legal-citation-parser
+[2024-04-06 23:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vulcan-logger
+[2024-04-06 23:11:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asifjamali
+[2024-04-06 23:11:55] INFO root fetch - processPackages [legal-citation-parser]: New version: [0.1.1] Old Version: [0.1]
+[2024-04-06 23:11:55] INFO root fetch - processPackages [asifjamali]: New version: [0.6.4] Old Version: [0.6.2]
+[2024-04-06 23:11:55] INFO root fetch - processPackages [redsauce]: New version: [0.0.1.12] Old Version: [0.0.1.11]
+[2024-04-06 23:11:55] INFO root fetch - processPackages [vulcan-logger]: New version: [1.3.8] Old Version: [1.3.7]
+[2024-04-06 23:11:55] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/c8/a7/8198b01503dfa07ab5f27d96606fb735505d32e13c80151d6850bb9d3b60/asifjamali-0.6.2.tar.gz
+[2024-04-06 23:11:55] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/20/21/5b715a54d430deb7d94a16025ab035c5c0481a27c228ee24d92c529d2e66/vulcan-logger-1.3.7.tar.gz
+[2024-04-06 23:11:55] INFO root fetch - processPackages [legal-citation-parser]: Downloading https://files.pythonhosted.org/packages/f5/22/793e4b069677c3743b3c838aae6a5c8394ceeffabbc9ef37103d5a4656e7/legal_citation_parser-0.1.tar.gz
+[2024-04-06 23:11:55] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:11:55] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 23:11:55] ERROR root fetch - processPackages [redsauce]: Unable to fetch info: No such project/version 'redsauce' 0.0.1.12
+[2024-04-06 23:11:55] INFO root fetch - main [MainThread]: End processing [redsauce] error
+[2024-04-06 23:11:55] WARNING root fetch - processPackages [legal-citation-parser]: Timeout reached during download
+[2024-04-06 23:11:55] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/9f/35/a225d97a6772f103ec0ecc2da6d731def467557e73214d90b19145298b1d/vulcan-logger-1.3.8.tar.gz
+[2024-04-06 23:11:55] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/b0/97/9ae84c7efb7670453eeb94cfe3f9f34a519add32ba49d67945241c5b07f2/asifjamali-0.6.4.tar.gz
+[2024-04-06 23:11:55] INFO root fetch - processPackages [legal-citation-parser]: Downloading https://files.pythonhosted.org/packages/4e/13/0b634eb61aaa01ec52d37bf50e4b28a766f725297b64f98243ecf9a4dc03/legal_citation_parser-0.1.1.tar.gz
+[2024-04-06 23:11:55] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:11:55] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-06 23:11:55] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.7.tar.gz tmp/vulcan-logger-1.3.8.tar.gz --markdown 20240406/v/vulcan-logger/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2024-04-06 23:11:55] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 23:11:55] INFO root fetch - processPackages [asifjamali]: executing diffoscope
+[2024-04-06 23:11:55] INFO root fetch - processPackages [asifjamali]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asifjamali-0.6.2.tar.gz tmp/asifjamali-0.6.4.tar.gz --markdown 20240406/a/asifjamali/0.6.2-0.6.4/diff.md --exclude *.pyd
+[2024-04-06 23:11:55] WARNING root fetch - processPackages [legal-citation-parser]: Timeout reached during download
+[2024-04-06 23:11:55] INFO root fetch - processPackages [legal-citation-parser]: executing diffoscope
+[2024-04-06 23:11:55] INFO root fetch - processPackages [legal-citation-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/legal_citation_parser-0.1.tar.gz tmp/legal_citation_parser-0.1.1.tar.gz --markdown 20240406/l/legal-citation-parser/0.1-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 23:11:56] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.7.tar.gz]
+[2024-04-06 23:11:56] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.8.tar.gz]
+[2024-04-06 23:11:56] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-06 23:11:56] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.2.tar.gz]
+[2024-04-06 23:11:56] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.4.tar.gz]
+[2024-04-06 23:11:56] INFO root fetch - main [MainThread]: End processing [asifjamali]: success
+[2024-04-06 23:11:56] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.tar.gz]
+[2024-04-06 23:11:56] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.1.tar.gz]
+[2024-04-06 23:11:56] INFO root fetch - main [MainThread]: End processing [legal-citation-parser]: success
+[2024-04-06 23:11:56] INFO root fetch - main [MainThread]: Store serial: [22651210]
