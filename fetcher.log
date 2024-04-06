@@ -18287,3 +18287,28 @@ EOFError: EOF read where object expected
 [2024-04-06 17:05:09] INFO root fetch - processPackages [modbedtools]: Remove: archive file [/home/abi/fetcher/tmp/modbedtools-0.1.6.tar.gz]
 [2024-04-06 17:05:09] INFO root fetch - main [MainThread]: End processing [modbedtools]: success
 [2024-04-06 17:05:09] INFO root fetch - main [MainThread]: Store serial: [22648834]
+[2024-04-06 17:07:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648834]
+[2024-04-06 17:07:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 17:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyeventmanager
+[2024-04-06 17:07:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: premai
+[2024-04-06 17:07:18] INFO root fetch - processPackages [premai]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 17:07:18] INFO root fetch - processPackages [premai]: Downloading https://files.pythonhosted.org/packages/90/02/d89b51bd360f45b6152f4d376a25e60d5c80d337608fe8882ffb2a5aef48/premai-0.3.8.tar.gz
+[2024-04-06 17:07:18] INFO root fetch - processPackages [pyeventmanager]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-04-06 17:07:18] WARNING root fetch - processPackages [premai]: Timeout reached during download
+[2024-04-06 17:07:18] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/99/b9/4c3dc68f17b7dea0bc38298e430cf4feed08ba254e452933cee8559f0bab/pyeventmanager-0.5.1.tar.gz
+[2024-04-06 17:07:18] INFO root fetch - processPackages [premai]: Downloading https://files.pythonhosted.org/packages/d1/d0/af59c2d96c54194570ba5b21d45f1fa947b7767402b22b0218398dd7de22/premai-0.3.9.tar.gz
+[2024-04-06 17:07:18] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-06 17:07:18] WARNING root fetch - processPackages [premai]: Timeout reached during download
+[2024-04-06 17:07:18] INFO root fetch - processPackages [premai]: executing diffoscope
+[2024-04-06 17:07:18] INFO root fetch - processPackages [premai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/premai-0.3.8.tar.gz tmp/premai-0.3.9.tar.gz --markdown 20240406/p/premai/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 17:07:18] INFO root fetch - processPackages [pyeventmanager]: Downloading https://files.pythonhosted.org/packages/2f/d0/ba1b23f2194bc803cafcffe8c5268d7b8a3016af92bd07cb3897e29fbcf3/pyeventmanager-0.5.2.tar.gz
+[2024-04-06 17:07:18] WARNING root fetch - processPackages [pyeventmanager]: Timeout reached during download
+[2024-04-06 17:07:18] INFO root fetch - processPackages [pyeventmanager]: executing diffoscope
+[2024-04-06 17:07:18] INFO root fetch - processPackages [pyeventmanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyeventmanager-0.5.1.tar.gz tmp/pyeventmanager-0.5.2.tar.gz --markdown 20240406/p/pyeventmanager/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2024-04-06 17:07:19] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.1.tar.gz]
+[2024-04-06 17:07:19] INFO root fetch - processPackages [pyeventmanager]: Remove: archive file [/home/abi/fetcher/tmp/pyeventmanager-0.5.2.tar.gz]
+[2024-04-06 17:07:19] INFO root fetch - main [MainThread]: End processing [pyeventmanager]: success
+[2024-04-06 17:07:19] INFO root fetch - processPackages [premai]: Remove: archive file [/home/abi/fetcher/tmp/premai-0.3.8.tar.gz]
+[2024-04-06 17:07:19] INFO root fetch - processPackages [premai]: Remove: archive file [/home/abi/fetcher/tmp/premai-0.3.9.tar.gz]
+[2024-04-06 17:07:19] INFO root fetch - main [MainThread]: End processing [premai]: success
+[2024-04-06 17:07:19] INFO root fetch - main [MainThread]: Store serial: [22648841]
