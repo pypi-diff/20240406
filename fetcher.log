@@ -10136,3 +10136,39 @@
 [2024-04-06 06:48:55] INFO root fetch - processPackages [gh-util]: Remove: archive file [/home/abi/fetcher/tmp/gh_util-0.1.9.tar.gz]
 [2024-04-06 06:48:55] INFO root fetch - main [MainThread]: End processing [gh-util]: success
 [2024-04-06 06:48:55] INFO root fetch - main [MainThread]: Store serial: [22645727]
+[2024-04-06 06:50:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645727]
+[2024-04-06 06:51:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 06:51:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yosemite-tools
+[2024-04-06 06:51:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: awyes
+[2024-04-06 06:51:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-login-email
+[2024-04-06 06:51:03] INFO root fetch - processPackages [awyes]: New version: [14.0.9] Old Version: [14.0.8]
+[2024-04-06 06:51:03] INFO root fetch - processPackages [yosemite-tools]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 06:51:03] INFO root fetch - processPackages [django-login-email]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-06 06:51:03] INFO root fetch - processPackages [awyes]: Downloading https://files.pythonhosted.org/packages/13/e5/11c5322d6785239836e09a128720372b61b279f02a464091fd0fa1037753/awyes-14.0.8.tar.gz
+[2024-04-06 06:51:03] INFO root fetch - processPackages [django-login-email]: Downloading https://files.pythonhosted.org/packages/13/81/223292b1ee799f7cdefc4f057842c5ca14ef10f0cdbcde3cd33cd8c11dbe/django_login_email-0.3.0.tar.gz
+[2024-04-06 06:51:03] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/f7/c8/7d24634fe7d22b9c98f2ffe2b38902082cb1f06e856af544fbffac735eb7/yosemite-tools-0.0.4.tar.gz
+[2024-04-06 06:51:03] WARNING root fetch - processPackages [awyes]: Timeout reached during download
+[2024-04-06 06:51:03] WARNING root fetch - processPackages [django-login-email]: Timeout reached during download
+[2024-04-06 06:51:03] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 06:51:03] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/fc/39/385466f6b9b0be9751723f26b18142125e0f43e7d9aac0d52b0f25de05f8/yosemite-tools-0.0.5.tar.gz
+[2024-04-06 06:51:03] INFO root fetch - processPackages [django-login-email]: Downloading https://files.pythonhosted.org/packages/e9/b7/1413967c7173764bdfc60a5981bda5a689c5e62950310a3abacd3726b056/django_login_email-0.4.0.tar.gz
+[2024-04-06 06:51:03] INFO root fetch - processPackages [awyes]: Downloading https://files.pythonhosted.org/packages/47/fc/ae79258e240f70b2c53c41395c0c65f049c6f7da91a9423463f836cd83ca/awyes-14.0.9.tar.gz
+[2024-04-06 06:51:04] WARNING root fetch - processPackages [django-login-email]: Timeout reached during download
+[2024-04-06 06:51:04] INFO root fetch - processPackages [django-login-email]: executing diffoscope
+[2024-04-06 06:51:04] INFO root fetch - processPackages [django-login-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_login_email-0.3.0.tar.gz tmp/django_login_email-0.4.0.tar.gz --markdown 20240406/d/django-login-email/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2024-04-06 06:51:04] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 06:51:04] INFO root fetch - processPackages [yosemite-tools]: executing diffoscope
+[2024-04-06 06:51:04] INFO root fetch - processPackages [yosemite-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yosemite-tools-0.0.4.tar.gz tmp/yosemite-tools-0.0.5.tar.gz --markdown 20240406/y/yosemite-tools/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 06:51:04] WARNING root fetch - processPackages [awyes]: Timeout reached during download
+[2024-04-06 06:51:04] INFO root fetch - processPackages [awyes]: executing diffoscope
+[2024-04-06 06:51:04] INFO root fetch - processPackages [awyes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/awyes-14.0.8.tar.gz tmp/awyes-14.0.9.tar.gz --markdown 20240406/a/awyes/14.0.8-14.0.9/diff.md --exclude *.pyd
+[2024-04-06 06:51:04] INFO root fetch - processPackages [django-login-email]: Remove: archive file [/home/abi/fetcher/tmp/django_login_email-0.3.0.tar.gz]
+[2024-04-06 06:51:04] INFO root fetch - processPackages [django-login-email]: Remove: archive file [/home/abi/fetcher/tmp/django_login_email-0.4.0.tar.gz]
+[2024-04-06 06:51:04] INFO root fetch - main [MainThread]: End processing [django-login-email]: success
+[2024-04-06 06:51:04] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.4.tar.gz]
+[2024-04-06 06:51:04] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.5.tar.gz]
+[2024-04-06 06:51:04] INFO root fetch - main [MainThread]: End processing [yosemite-tools]: success
+[2024-04-06 06:51:04] INFO root fetch - processPackages [awyes]: Remove: archive file [/home/abi/fetcher/tmp/awyes-14.0.8.tar.gz]
+[2024-04-06 06:51:04] INFO root fetch - processPackages [awyes]: Remove: archive file [/home/abi/fetcher/tmp/awyes-14.0.9.tar.gz]
+[2024-04-06 06:51:04] INFO root fetch - main [MainThread]: End processing [awyes]: success
+[2024-04-06 06:51:04] INFO root fetch - main [MainThread]: Store serial: [22645736]
