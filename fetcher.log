@@ -18126,3 +18126,39 @@ EOFError: EOF read where object expected
 [2024-04-06 16:54:14] INFO root fetch - processPackages [outside-framework]: Remove: archive file [/home/abi/fetcher/tmp/outside-framework-1.4.0.tar.gz]
 [2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [outside-framework]: success
 [2024-04-06 16:54:14] INFO root fetch - main [MainThread]: Store serial: [22648786]
+[2024-04-06 16:56:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648786]
+[2024-04-06 16:56:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 16:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ehdtd-daemon
+[2024-04-06 16:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scalesafe
+[2024-04-06 16:56:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ring-attention-pytorch
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ehdtd-daemon]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-06 16:56:23] INFO root fetch - processPackages [scalesafe]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/60/58/7664155cc4122617502274602962be9fb801d6f1bf90fe20171f68ed211f/ehdtd_daemon-0.1.3.tar.gz
+[2024-04-06 16:56:23] INFO root fetch - processPackages [scalesafe]: Downloading https://files.pythonhosted.org/packages/3f/f9/a0fe36b6f6c2dbeb9a5b9e06100eca78e13dac44a9d5a77a01d442ff56bf/scalesafe-0.0.2.tar.gz
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/75/5b/455ef01edbd7b58148be8ea16aa787011bf6e4bdaf40d5f45ac1d20fe472/ring-attention-pytorch-0.2.8.tar.gz
+[2024-04-06 16:56:23] WARNING root fetch - processPackages [scalesafe]: Timeout reached during download
+[2024-04-06 16:56:23] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-06 16:56:23] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 16:56:23] INFO root fetch - processPackages [scalesafe]: Downloading https://files.pythonhosted.org/packages/3c/9c/314199f7e0b314c9b92be3616a26808845ada533c3942024735b8b93ec1e/scalesafe-0.0.3.tar.gz
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ehdtd-daemon]: Downloading https://files.pythonhosted.org/packages/13/4c/60bf1d2b4e44b41c76f644c0a819cfc40247e76aed95550078acce401d91/ehdtd_daemon-0.1.4.tar.gz
+[2024-04-06 16:56:23] WARNING root fetch - processPackages [scalesafe]: Timeout reached during download
+[2024-04-06 16:56:23] INFO root fetch - processPackages [scalesafe]: executing diffoscope
+[2024-04-06 16:56:23] INFO root fetch - processPackages [scalesafe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalesafe-0.0.2.tar.gz tmp/scalesafe-0.0.3.tar.gz --markdown 20240406/s/scalesafe/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 16:56:23] WARNING root fetch - processPackages [ehdtd-daemon]: Timeout reached during download
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ehdtd-daemon]: executing diffoscope
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ehdtd-daemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ehdtd_daemon-0.1.3.tar.gz tmp/ehdtd_daemon-0.1.4.tar.gz --markdown 20240406/e/ehdtd-daemon/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 16:56:23] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/05/fc/886afee256722f34c1800217422065facfaf81c7431b503529e31ed4fe9f/ring-attention-pytorch-0.2.9.tar.gz
+[2024-04-06 16:56:24] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 16:56:24] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-06 16:56:24] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.2.8.tar.gz tmp/ring-attention-pytorch-0.2.9.tar.gz --markdown 20240406/r/ring-attention-pytorch/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 16:56:24] INFO root fetch - processPackages [scalesafe]: Remove: archive file [/home/abi/fetcher/tmp/scalesafe-0.0.2.tar.gz]
+[2024-04-06 16:56:24] INFO root fetch - processPackages [scalesafe]: Remove: archive file [/home/abi/fetcher/tmp/scalesafe-0.0.3.tar.gz]
+[2024-04-06 16:56:24] INFO root fetch - main [MainThread]: End processing [scalesafe]: success
+[2024-04-06 16:56:24] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.3.tar.gz]
+[2024-04-06 16:56:24] INFO root fetch - processPackages [ehdtd-daemon]: Remove: archive file [/home/abi/fetcher/tmp/ehdtd_daemon-0.1.4.tar.gz]
+[2024-04-06 16:56:24] INFO root fetch - main [MainThread]: End processing [ehdtd-daemon]: success
+[2024-04-06 16:56:24] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.2.8.tar.gz]
+[2024-04-06 16:56:24] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.2.9.tar.gz]
+[2024-04-06 16:56:24] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-06 16:56:24] INFO root fetch - main [MainThread]: Store serial: [22648795]
