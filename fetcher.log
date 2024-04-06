@@ -10527,3 +10527,28 @@
 [2024-04-06 07:28:16] INFO root fetch - processPackages [dragonfly-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-grasshopper-1.9.0.tar.gz]
 [2024-04-06 07:28:16] INFO root fetch - main [MainThread]: End processing [dragonfly-grasshopper]: success
 [2024-04-06 07:28:16] INFO root fetch - main [MainThread]: Store serial: [22645878]
+[2024-04-06 07:30:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645878]
+[2024-04-06 07:30:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 07:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lbt-grasshopper
+[2024-04-06 07:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: facebook-page-scraper
+[2024-04-06 07:30:25] INFO root fetch - processPackages [lbt-grasshopper]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-06 07:30:25] INFO root fetch - processPackages [facebook-page-scraper]: New version: [5.0.4] Old Version: [5.0.3]
+[2024-04-06 07:30:25] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/e2/1e/8114327cf949963eb04ff805430f9b23fc1597b26a35b7642088592decb1/lbt-grasshopper-1.8.4.tar.gz
+[2024-04-06 07:30:25] INFO root fetch - processPackages [facebook-page-scraper]: Downloading https://files.pythonhosted.org/packages/c7/1b/927f5969e113ce648707772f40fa36b7f0acb384874c6a864c6121ced241/facebook_page_scraper-5.0.3.tar.gz
+[2024-04-06 07:30:25] WARNING root fetch - processPackages [lbt-grasshopper]: Timeout reached during download
+[2024-04-06 07:30:26] WARNING root fetch - processPackages [facebook-page-scraper]: Timeout reached during download
+[2024-04-06 07:30:26] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/6c/78/39a2fb4082a82ef9b5b1f006e9a23f3e7330b9417efd00339b8a424a8273/lbt-grasshopper-1.8.5.tar.gz
+[2024-04-06 07:30:26] WARNING root fetch - processPackages [lbt-grasshopper]: Timeout reached during download
+[2024-04-06 07:30:26] INFO root fetch - processPackages [lbt-grasshopper]: executing diffoscope
+[2024-04-06 07:30:26] INFO root fetch - processPackages [lbt-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-grasshopper-1.8.4.tar.gz tmp/lbt-grasshopper-1.8.5.tar.gz --markdown 20240406/l/lbt-grasshopper/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2024-04-06 07:30:26] INFO root fetch - processPackages [facebook-page-scraper]: Downloading https://files.pythonhosted.org/packages/2b/16/80690a353f9d0cdc25f7fce9f68f111a52a2cd06ce6e3b9b465ca8e91bd0/facebook_page_scraper-5.0.4.tar.gz
+[2024-04-06 07:30:26] WARNING root fetch - processPackages [facebook-page-scraper]: Timeout reached during download
+[2024-04-06 07:30:26] INFO root fetch - processPackages [facebook-page-scraper]: executing diffoscope
+[2024-04-06 07:30:26] INFO root fetch - processPackages [facebook-page-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/facebook_page_scraper-5.0.3.tar.gz tmp/facebook_page_scraper-5.0.4.tar.gz --markdown 20240406/f/facebook-page-scraper/5.0.3-5.0.4/diff.md --exclude *.pyd
+[2024-04-06 07:30:26] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.4.tar.gz]
+[2024-04-06 07:30:26] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.5.tar.gz]
+[2024-04-06 07:30:26] INFO root fetch - main [MainThread]: End processing [lbt-grasshopper]: success
+[2024-04-06 07:30:26] INFO root fetch - processPackages [facebook-page-scraper]: Remove: archive file [/home/abi/fetcher/tmp/facebook_page_scraper-5.0.3.tar.gz]
+[2024-04-06 07:30:26] INFO root fetch - processPackages [facebook-page-scraper]: Remove: archive file [/home/abi/fetcher/tmp/facebook_page_scraper-5.0.4.tar.gz]
+[2024-04-06 07:30:26] INFO root fetch - main [MainThread]: End processing [facebook-page-scraper]: success
+[2024-04-06 07:30:26] INFO root fetch - main [MainThread]: Store serial: [22645886]
