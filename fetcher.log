@@ -11738,3 +11738,9 @@
 [2024-04-06 09:25:35] INFO root fetch - processPackages [gdmath]: Remove: archive file [/home/abi/fetcher/tmp/gdmath-1.5.0.tar.gz]
 [2024-04-06 09:25:35] INFO root fetch - main [MainThread]: End processing [gdmath]: success
 [2024-04-06 09:25:35] INFO root fetch - main [MainThread]: Store serial: [22646423]
+[2024-04-06 09:27:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646423]
+[2024-04-06 09:27:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 09:27:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redis-async-client
+[2024-04-06 09:27:43] WARNING root fetch - processPackages [redis-async-client]: Skipping, unable to determine old version
+[2024-04-06 09:27:43] INFO root fetch - main [MainThread]: End processing [redis-async-client] error
+[2024-04-06 09:27:43] INFO root fetch - main [MainThread]: Store serial: [22646451]
