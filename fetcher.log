@@ -14267,3 +14267,28 @@
 [2024-04-06 12:58:04] INFO root fetch - processPackages [django-sync-model]: Remove: archive file [/home/abi/fetcher/tmp/django_sync_model-0.7.0.tar.gz]
 [2024-04-06 12:58:04] INFO root fetch - main [MainThread]: End processing [django-sync-model]: success
 [2024-04-06 12:58:04] INFO root fetch - main [MainThread]: Store serial: [22647346]
+[2024-04-06 13:00:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647346]
+[2024-04-06 13:00:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 13:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flask-dbmigrant
+[2024-04-06 13:00:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nrobo
+[2024-04-06 13:00:13] INFO root fetch - processPackages [flask-dbmigrant]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-06 13:00:13] INFO root fetch - processPackages [flask-dbmigrant]: Downloading https://files.pythonhosted.org/packages/32/d1/0c0e7aad318439e1574ffdc0eb3013599144183bcea257e8180d72037fac/flask_dbmigrant-1.0.1.tar.gz
+[2024-04-06 13:00:13] INFO root fetch - processPackages [nrobo]: New version: [2024.40.1] Old Version: [2024.40.0]
+[2024-04-06 13:00:13] WARNING root fetch - processPackages [flask-dbmigrant]: Timeout reached during download
+[2024-04-06 13:00:13] INFO root fetch - processPackages [flask-dbmigrant]: Downloading https://files.pythonhosted.org/packages/d9/a7/de3071fd170b148a964003c9191c0796939b198d85bf62da2873ff7ea64e/flask_dbmigrant-1.0.2.tar.gz
+[2024-04-06 13:00:13] INFO root fetch - processPackages [nrobo]: Downloading https://files.pythonhosted.org/packages/5f/4e/03d76ed9fa8ed8e5b6d868792a4bdd9cd47503afec1bb02618c964003941/nrobo-2024.40.0.tar.gz
+[2024-04-06 13:00:13] WARNING root fetch - processPackages [flask-dbmigrant]: Timeout reached during download
+[2024-04-06 13:00:13] INFO root fetch - processPackages [flask-dbmigrant]: executing diffoscope
+[2024-04-06 13:00:13] INFO root fetch - processPackages [flask-dbmigrant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_dbmigrant-1.0.1.tar.gz tmp/flask_dbmigrant-1.0.2.tar.gz --markdown 20240406/f/flask-dbmigrant/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-06 13:00:13] WARNING root fetch - processPackages [nrobo]: Timeout reached during download
+[2024-04-06 13:00:14] INFO root fetch - processPackages [nrobo]: Downloading https://files.pythonhosted.org/packages/fe/94/60ddf2edb3e04e0446ac0b73b56d68f009ab8069a89c5490b72d000d5f89/nrobo-2024.40.1.tar.gz
+[2024-04-06 13:00:14] INFO root fetch - processPackages [flask-dbmigrant]: Remove: archive file [/home/abi/fetcher/tmp/flask_dbmigrant-1.0.1.tar.gz]
+[2024-04-06 13:00:14] INFO root fetch - processPackages [flask-dbmigrant]: Remove: archive file [/home/abi/fetcher/tmp/flask_dbmigrant-1.0.2.tar.gz]
+[2024-04-06 13:00:14] INFO root fetch - main [MainThread]: End processing [flask-dbmigrant]: success
+[2024-04-06 13:00:14] WARNING root fetch - processPackages [nrobo]: Timeout reached during download
+[2024-04-06 13:00:14] INFO root fetch - processPackages [nrobo]: executing diffoscope
+[2024-04-06 13:00:14] INFO root fetch - processPackages [nrobo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nrobo-2024.40.0.tar.gz tmp/nrobo-2024.40.1.tar.gz --markdown 20240406/n/nrobo/2024.40.0-2024.40.1/diff.md --exclude *.pyd
+[2024-04-06 13:00:15] INFO root fetch - processPackages [nrobo]: Remove: archive file [/home/abi/fetcher/tmp/nrobo-2024.40.0.tar.gz]
+[2024-04-06 13:00:15] INFO root fetch - processPackages [nrobo]: Remove: archive file [/home/abi/fetcher/tmp/nrobo-2024.40.1.tar.gz]
+[2024-04-06 13:00:15] INFO root fetch - main [MainThread]: End processing [nrobo]: success
+[2024-04-06 13:00:15] INFO root fetch - main [MainThread]: Store serial: [22647352]
