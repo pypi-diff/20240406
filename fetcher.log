@@ -7710,3 +7710,23 @@
 [2024-04-06 04:11:08] INFO root fetch - processPackages [zen-dash]: Remove: archive file [/home/abi/fetcher/tmp/zen_dash-0.6.9.tar.gz]
 [2024-04-06 04:11:08] INFO root fetch - main [MainThread]: End processing [zen-dash]: success
 [2024-04-06 04:11:08] INFO root fetch - main [MainThread]: Store serial: [22644871]
+[2024-04-06 04:13:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644871]
+[2024-04-06 04:13:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 04:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyter-api-client
+[2024-04-06 04:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dawnai
+[2024-04-06 04:13:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tko
+[2024-04-06 04:13:16] WARNING root fetch - processPackages [dawnai]: Skipping, unable to determine old version
+[2024-04-06 04:13:16] INFO root fetch - main [MainThread]: End processing [dawnai] error
+[2024-04-06 04:13:16] INFO root fetch - processPackages [tko]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-06 04:13:16] INFO root fetch - processPackages [tko]: Downloading https://files.pythonhosted.org/packages/bc/fe/ae1213b979e04db2b0edca3a133f77ee09566847225852298f109fef8b3b/tko-0.3.6.tar.gz
+[2024-04-06 04:13:17] WARNING root fetch - processPackages [jupyter-api-client]: Skipping, unable to determine old version
+[2024-04-06 04:13:17] INFO root fetch - main [MainThread]: End processing [jupyter-api-client] error
+[2024-04-06 04:13:17] WARNING root fetch - processPackages [tko]: Timeout reached during download
+[2024-04-06 04:13:17] INFO root fetch - processPackages [tko]: Downloading https://files.pythonhosted.org/packages/de/3e/bb1d8397903e88d728c793e47cbc05cae2a9d4e2ec51fcdaecae10ac5f58/tko-0.3.7.tar.gz
+[2024-04-06 04:13:17] WARNING root fetch - processPackages [tko]: Timeout reached during download
+[2024-04-06 04:13:17] INFO root fetch - processPackages [tko]: executing diffoscope
+[2024-04-06 04:13:17] INFO root fetch - processPackages [tko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tko-0.3.6.tar.gz tmp/tko-0.3.7.tar.gz --markdown 20240406/t/tko/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2024-04-06 04:13:18] INFO root fetch - processPackages [tko]: Remove: archive file [/home/abi/fetcher/tmp/tko-0.3.6.tar.gz]
+[2024-04-06 04:13:18] INFO root fetch - processPackages [tko]: Remove: archive file [/home/abi/fetcher/tmp/tko-0.3.7.tar.gz]
+[2024-04-06 04:13:18] INFO root fetch - main [MainThread]: End processing [tko]: success
+[2024-04-06 04:13:18] INFO root fetch - main [MainThread]: Store serial: [22644884]
