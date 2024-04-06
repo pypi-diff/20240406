@@ -8272,3 +8272,28 @@
 [2024-04-06 04:52:25] INFO root fetch - processPackages [broken-source]: Remove: archive file [/home/abi/fetcher/tmp/broken_source-0.1.2-py3-none-any.whl.zip]
 [2024-04-06 04:52:25] INFO root fetch - main [MainThread]: End processing [broken-source]: success
 [2024-04-06 04:52:25] INFO root fetch - main [MainThread]: Store serial: [22645047]
+[2024-04-06 04:54:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645047]
+[2024-04-06 04:54:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 04:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tred
+[2024-04-06 04:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyvidplayer2
+[2024-04-06 04:54:34] INFO root fetch - processPackages [tred]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-06 04:54:34] INFO root fetch - processPackages [pyvidplayer2]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 04:54:34] INFO root fetch - processPackages [tred]: Downloading https://files.pythonhosted.org/packages/78/77/d681b8d0e590c88faaa71797b99961a88954a35ebd987c136dc75c6d1855/tred-0.0.9.tar.gz
+[2024-04-06 04:54:34] INFO root fetch - processPackages [pyvidplayer2]: Downloading https://files.pythonhosted.org/packages/f4/a3/a287a642bc90636df63e1b3f3de55273b4ddc48dba85fca7fd29ec9290d1/pyvidplayer2-0.9.8.tar.gz
+[2024-04-06 04:54:34] WARNING root fetch - processPackages [tred]: Timeout reached during download
+[2024-04-06 04:54:35] INFO root fetch - processPackages [tred]: Downloading https://files.pythonhosted.org/packages/4e/b7/e1a7116c2d26303eddf0e002c8b0ef33084b5f07c8228691891e6c44d8a4/tred-0.1.0.tar.gz
+[2024-04-06 04:54:35] WARNING root fetch - processPackages [pyvidplayer2]: Timeout reached during download
+[2024-04-06 04:54:35] WARNING root fetch - processPackages [tred]: Timeout reached during download
+[2024-04-06 04:54:35] INFO root fetch - processPackages [tred]: executing diffoscope
+[2024-04-06 04:54:35] INFO root fetch - processPackages [tred]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tred-0.0.9.tar.gz tmp/tred-0.1.0.tar.gz --markdown 20240406/t/tred/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2024-04-06 04:54:35] INFO root fetch - processPackages [pyvidplayer2]: Downloading https://files.pythonhosted.org/packages/1d/ab/f68c6186aca365517866e8e6a45c8d46e7f2a131430661a3c1b9d632e964/pyvidplayer2-0.9.9.tar.gz
+[2024-04-06 04:54:35] WARNING root fetch - processPackages [pyvidplayer2]: Timeout reached during download
+[2024-04-06 04:54:35] INFO root fetch - processPackages [pyvidplayer2]: executing diffoscope
+[2024-04-06 04:54:35] INFO root fetch - processPackages [pyvidplayer2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvidplayer2-0.9.8.tar.gz tmp/pyvidplayer2-0.9.9.tar.gz --markdown 20240406/p/pyvidplayer2/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 04:54:35] INFO root fetch - processPackages [tred]: Remove: archive file [/home/abi/fetcher/tmp/tred-0.0.9.tar.gz]
+[2024-04-06 04:54:35] INFO root fetch - processPackages [tred]: Remove: archive file [/home/abi/fetcher/tmp/tred-0.1.0.tar.gz]
+[2024-04-06 04:54:35] INFO root fetch - main [MainThread]: End processing [tred]: success
+[2024-04-06 04:54:36] INFO root fetch - processPackages [pyvidplayer2]: Remove: archive file [/home/abi/fetcher/tmp/pyvidplayer2-0.9.8.tar.gz]
+[2024-04-06 04:54:36] INFO root fetch - processPackages [pyvidplayer2]: Remove: archive file [/home/abi/fetcher/tmp/pyvidplayer2-0.9.9.tar.gz]
+[2024-04-06 04:54:36] INFO root fetch - main [MainThread]: End processing [pyvidplayer2]: success
+[2024-04-06 04:54:36] INFO root fetch - main [MainThread]: Store serial: [22645053]
