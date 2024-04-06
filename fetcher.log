@@ -7159,3 +7159,83 @@
 [2024-04-06 03:16:38] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-04-06 03:16:38] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-04-06 03:16:38] INFO root fetch - main [MainThread]: Store serial: [22644306]
+[2024-04-06 03:18:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644306]
+[2024-04-06 03:18:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 03:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: botocore-a-la-carte-emr-serverless
+[2024-04-06 03:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: botocore-a-la-carte-mgn
+[2024-04-06 03:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: np-services
+[2024-04-06 03:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: botocore-a-la-carte-cloudfront-keyvaluestore
+[2024-04-06 03:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: botocore-a-la-carte-fms
+[2024-04-06 03:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: abses
+[2024-04-06 03:18:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: moesifapi
+[2024-04-06 03:18:49] INFO root fetch - processPackages [botocore-a-la-carte-emr-serverless]: New version: [1.34.9] Old Version: [1.34.8]
+[2024-04-06 03:18:49] INFO root fetch - processPackages [np-services]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 03:18:49] INFO root fetch - processPackages [abses]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-06 03:18:49] INFO root fetch - processPackages [moesifapi]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-04-06 03:18:49] INFO root fetch - processPackages [botocore-a-la-carte-emr-serverless]: Downloading https://files.pythonhosted.org/packages/d0/6a/11129374116282e60ff521b26709a2044d2d2be79a2d8db43506d5631b12/botocore-a-la-carte-emr-serverless-1.34.8.tar.gz
+[2024-04-06 03:18:49] INFO root fetch - processPackages [botocore-a-la-carte-mgn]: New version: [1.34.9] Old Version: [1.34.8]
+[2024-04-06 03:18:49] INFO root fetch - processPackages [np-services]: Downloading https://files.pythonhosted.org/packages/84/ea/e2c9fa9f279604d3bbe3a9ea1c4a5c8d74703945b63aeb2fa63d134cd299/np_services-0.1.8.tar.gz
+[2024-04-06 03:18:49] INFO root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: New version: [1.34.9] Old Version: [1.34.8]
+[2024-04-06 03:18:49] INFO root fetch - processPackages [botocore-a-la-carte-fms]: New version: [1.34.9] Old Version: [1.34.8]
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-emr-serverless]: Timeout reached during download
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [np-services]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-mgn]: Downloading https://files.pythonhosted.org/packages/f1/44/77f2b64f3ac82aee85011ec7d2b59e217fd06958984577782a922231545e/botocore-a-la-carte-mgn-1.34.8.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/6d/6b/3f4575cf846c7903997edf64687bfcf77697dbd912a9a810a5f292c26e19/abses-0.5.4.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [np-services]: Downloading https://files.pythonhosted.org/packages/42/01/4536fc7214f13ced23502af87e9b291e777b027674d29341527a660e1ef6/np_services-0.1.9.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [moesifapi]: Downloading https://files.pythonhosted.org/packages/7f/00/6cea5eff7cb26f7eac969325e7074b0325b06f9d1a7da4fcbe67eb25d3e3/moesifapi-1.4.3.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: Downloading https://files.pythonhosted.org/packages/2c/af/d6dc6c1ba55b9035ed077e22584d22b5dfba660825f89fa27af3ef2f823d/botocore-a-la-carte-cloudfront-keyvaluestore-1.34.8.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-fms]: Downloading https://files.pythonhosted.org/packages/ec/5d/e49f4b4c47a1c7613074b2fe37f819cafaa06b6d32f9c14dc81118cdcd87/botocore-a-la-carte-fms-1.34.8.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-emr-serverless]: Downloading https://files.pythonhosted.org/packages/81/b5/34988426c3b36dc090fe6849929067d373721cffb368675bb8c526bfa94f/botocore-a-la-carte-emr-serverless-1.34.9.tar.gz
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-mgn]: Timeout reached during download
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [np-services]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [np-services]: executing diffoscope
+[2024-04-06 03:18:50] INFO root fetch - processPackages [np-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_services-0.1.8.tar.gz tmp/np_services-0.1.9.tar.gz --markdown 20240406/n/np-services/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: Timeout reached during download
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [abses]: Timeout reached during download
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-fms]: Timeout reached during download
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-emr-serverless]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-emr-serverless]: executing diffoscope
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-emr-serverless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-emr-serverless-1.34.8.tar.gz tmp/botocore-a-la-carte-emr-serverless-1.34.9.tar.gz --markdown 20240406/b/botocore-a-la-carte-emr-serverless/1.34.8-1.34.9/diff.md --exclude *.pyd
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [moesifapi]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/40/cd/2a4d0258c9ac4bcf1f6983283ff6655f11f70965989e33606dce8cc608c4/abses-0.5.5.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-mgn]: Downloading https://files.pythonhosted.org/packages/a1/ae/be183470930b106a1cf8da1ac5d15d4445e09866b6242603cbca964f1d91/botocore-a-la-carte-mgn-1.34.9.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: Downloading https://files.pythonhosted.org/packages/2a/a7/16673770926ee1ce01d0e2b9a980a8255207a4ddc45e1bc34e886ebf952f/botocore-a-la-carte-cloudfront-keyvaluestore-1.34.9.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-fms]: Downloading https://files.pythonhosted.org/packages/6a/b5/62b6ab5771f8894336df5e370c38bae3d3bc450c0274b57bf5210ce90fe6/botocore-a-la-carte-fms-1.34.9.tar.gz
+[2024-04-06 03:18:50] INFO root fetch - processPackages [moesifapi]: Downloading https://files.pythonhosted.org/packages/e7/42/a888990b9442e87a1744c5f8f59c37188ecb23cf7251cbbb87f8c723ad10/moesifapi-1.4.4.tar.gz
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [abses]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [abses]: executing diffoscope
+[2024-04-06 03:18:50] INFO root fetch - processPackages [abses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abses-0.5.4.tar.gz tmp/abses-0.5.5.tar.gz --markdown 20240406/a/abses/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: executing diffoscope
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-cloudfront-keyvaluestore-1.34.8.tar.gz tmp/botocore-a-la-carte-cloudfront-keyvaluestore-1.34.9.tar.gz --markdown 20240406/b/botocore-a-la-carte-cloudfront-keyvaluestore/1.34.8-1.34.9/diff.md --exclude *.pyd
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-fms]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-fms]: executing diffoscope
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-fms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-fms-1.34.8.tar.gz tmp/botocore-a-la-carte-fms-1.34.9.tar.gz --markdown 20240406/b/botocore-a-la-carte-fms/1.34.8-1.34.9/diff.md --exclude *.pyd
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [moesifapi]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [moesifapi]: executing diffoscope
+[2024-04-06 03:18:50] INFO root fetch - processPackages [moesifapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moesifapi-1.4.3.tar.gz tmp/moesifapi-1.4.4.tar.gz --markdown 20240406/m/moesifapi/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2024-04-06 03:18:50] WARNING root fetch - processPackages [botocore-a-la-carte-mgn]: Timeout reached during download
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-mgn]: executing diffoscope
+[2024-04-06 03:18:50] INFO root fetch - processPackages [botocore-a-la-carte-mgn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-mgn-1.34.8.tar.gz tmp/botocore-a-la-carte-mgn-1.34.9.tar.gz --markdown 20240406/b/botocore-a-la-carte-mgn/1.34.8-1.34.9/diff.md --exclude *.pyd
+[2024-04-06 03:18:51] INFO root fetch - processPackages [np-services]: Remove: archive file [/home/abi/fetcher/tmp/np_services-0.1.8.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - processPackages [np-services]: Remove: archive file [/home/abi/fetcher/tmp/np_services-0.1.9.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [np-services]: success
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-emr-serverless]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-emr-serverless-1.34.8.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-emr-serverless]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-emr-serverless-1.34.9.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-emr-serverless]: success
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-fms]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-fms-1.34.8.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-fms]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-fms-1.34.9.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-fms]: success
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-cloudfront-keyvaluestore-1.34.8.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-cloudfront-keyvaluestore]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-cloudfront-keyvaluestore-1.34.9.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-cloudfront-keyvaluestore]: success
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-mgn]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-mgn-1.34.8.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - processPackages [botocore-a-la-carte-mgn]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-mgn-1.34.9.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-mgn]: success
+[2024-04-06 03:18:51] INFO root fetch - processPackages [moesifapi]: Remove: archive file [/home/abi/fetcher/tmp/moesifapi-1.4.3.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - processPackages [moesifapi]: Remove: archive file [/home/abi/fetcher/tmp/moesifapi-1.4.4.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [moesifapi]: success
+[2024-04-06 03:18:51] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.5.4.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.5.5.tar.gz]
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: End processing [abses]: success
+[2024-04-06 03:18:51] INFO root fetch - main [MainThread]: Store serial: [22644423]
