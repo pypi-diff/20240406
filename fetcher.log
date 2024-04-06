@@ -17427,3 +17427,62 @@ EOFError: EOF read where object expected
 [2024-04-06 16:11:45] INFO root fetch - processPackages [wolta]: Remove: archive file [/home/abi/fetcher/tmp/wolta-0.1.5.tar.gz]
 [2024-04-06 16:11:45] INFO root fetch - main [MainThread]: End processing [wolta]: success
 [2024-04-06 16:11:45] INFO root fetch - main [MainThread]: Store serial: [22648554]
+[2024-04-06 16:13:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648554]
+[2024-04-06 16:13:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prem-utils
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TransformationQA-ZongqianLi
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pynonymizer
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ai-model-base
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ai-model-base]: New version: [0.0.1.dev2] Old Version: [0.0.1.dev1]
+[2024-04-06 16:13:54] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-06 16:13:54] WARNING root fetch - processPackages [TransformationQA-ZongqianLi]: Skipping, unable to determine old version
+[2024-04-06 16:13:54] INFO root fetch - main [MainThread]: End processing [TransformationQA-ZongqianLi] error
+[2024-04-06 16:13:54] INFO root fetch - processPackages [prem-utils]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 16:13:54] INFO root fetch - processPackages [pynonymizer]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ai-model-base]: Downloading https://files.pythonhosted.org/packages/12/3a/ed863f0bb6f17def5063a357476ac683faac531fdab2ae919cc5de1fea94/ai_model_base-0.0.1.dev1.tar.gz
+[2024-04-06 16:13:54] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-06 16:13:54] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-06 16:13:54] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-06 16:13:54] WARNING root fetch - processPackages [ai-model-base]: Timeout reached during download
+[2024-04-06 16:13:54] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 16:13:54] INFO root fetch - processPackages [prem-utils]: Downloading https://files.pythonhosted.org/packages/0b/c2/ef6412c36b4879b14a69ad4cafc10a7cc7f017db696d2d8e7e978238aaa9/prem-utils-0.0.7.tar.gz
+[2024-04-06 16:13:54] INFO root fetch - processPackages [pynonymizer]: Downloading https://files.pythonhosted.org/packages/43/84/c6355da450c222180d690320207952233e45af3c84306fa6cbea61b397aa/pynonymizer-2.1.0.tar.gz
+[2024-04-06 16:13:54] INFO root fetch - processPackages [ai-model-base]: Downloading https://files.pythonhosted.org/packages/aa/dd/fe86059a5743e6b7d86eb56066480e9581db67f6577267e9c352c3a90cf8/ai_model_base-0.0.1.dev2.tar.gz
+[2024-04-06 16:13:54] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 16:13:54] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-06 16:13:54] WARNING root fetch - processPackages [prem-utils]: Timeout reached during download
+[2024-04-06 16:13:54] WARNING root fetch - processPackages [pynonymizer]: Timeout reached during download
+[2024-04-06 16:13:54] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-06 16:13:55] WARNING root fetch - processPackages [ai-model-base]: Timeout reached during download
+[2024-04-06 16:13:55] INFO root fetch - processPackages [ai-model-base]: executing diffoscope
+[2024-04-06 16:13:55] INFO root fetch - processPackages [ai-model-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_model_base-0.0.1.dev1.tar.gz tmp/ai_model_base-0.0.1.dev2.tar.gz --markdown 20240406/a/ai-model-base/0.0.1.dev1-0.0.1.dev2/diff.md --exclude *.pyd
+[2024-04-06 16:13:55] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 16:13:55] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-06 16:13:55] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240406/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-06 16:13:55] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 16:13:55] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-06 16:13:55] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240406/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-06 16:13:55] INFO root fetch - processPackages [pynonymizer]: Downloading https://files.pythonhosted.org/packages/d8/6c/61e9ce5ec1032edab67b443ae708b02a5e07eeb859795f3be1cefea2901a/pynonymizer-2.1.1.tar.gz
+[2024-04-06 16:13:55] INFO root fetch - processPackages [prem-utils]: Downloading https://files.pythonhosted.org/packages/33/0f/fc806fe5db50f59926c6cd92925e6ccc6665f01f20e6ba25faabe2d2211d/prem-utils-0.0.8.tar.gz
+[2024-04-06 16:13:55] WARNING root fetch - processPackages [pynonymizer]: Timeout reached during download
+[2024-04-06 16:13:55] INFO root fetch - processPackages [pynonymizer]: executing diffoscope
+[2024-04-06 16:13:55] INFO root fetch - processPackages [pynonymizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynonymizer-2.1.0.tar.gz tmp/pynonymizer-2.1.1.tar.gz --markdown 20240406/p/pynonymizer/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2024-04-06 16:13:55] WARNING root fetch - processPackages [prem-utils]: Timeout reached during download
+[2024-04-06 16:13:55] INFO root fetch - processPackages [prem-utils]: executing diffoscope
+[2024-04-06 16:13:55] INFO root fetch - processPackages [prem-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prem-utils-0.0.7.tar.gz tmp/prem-utils-0.0.8.tar.gz --markdown 20240406/p/prem-utils/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 16:13:55] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-06 16:13:55] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-06 16:13:55] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-06 16:13:55] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-06 16:13:55] INFO root fetch - processPackages [ai-model-base]: Remove: archive file [/home/abi/fetcher/tmp/ai_model_base-0.0.1.dev1.tar.gz]
+[2024-04-06 16:13:55] INFO root fetch - processPackages [ai-model-base]: Remove: archive file [/home/abi/fetcher/tmp/ai_model_base-0.0.1.dev2.tar.gz]
+[2024-04-06 16:13:55] INFO root fetch - main [MainThread]: End processing [ai-model-base]: success
+[2024-04-06 16:13:55] INFO root fetch - processPackages [pynonymizer]: Remove: archive file [/home/abi/fetcher/tmp/pynonymizer-2.1.0.tar.gz]
+[2024-04-06 16:13:55] INFO root fetch - processPackages [pynonymizer]: Remove: archive file [/home/abi/fetcher/tmp/pynonymizer-2.1.1.tar.gz]
+[2024-04-06 16:13:55] INFO root fetch - main [MainThread]: End processing [pynonymizer]: success
+[2024-04-06 16:13:56] INFO root fetch - processPackages [prem-utils]: Remove: archive file [/home/abi/fetcher/tmp/prem-utils-0.0.7.tar.gz]
+[2024-04-06 16:13:56] INFO root fetch - processPackages [prem-utils]: Remove: archive file [/home/abi/fetcher/tmp/prem-utils-0.0.8.tar.gz]
+[2024-04-06 16:13:56] INFO root fetch - main [MainThread]: End processing [prem-utils]: success
+[2024-04-06 16:13:56] INFO root fetch - main [MainThread]: Store serial: [22648583]
