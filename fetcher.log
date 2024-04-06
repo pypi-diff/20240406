@@ -24870,3 +24870,20 @@ EOFError: EOF read where object expected
 [2024-04-06 23:20:37] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.3-py3-none-any.whl.zip]
 [2024-04-06 23:20:37] INFO root fetch - main [MainThread]: End processing [football-stats-scraper]: success
 [2024-04-06 23:20:37] INFO root fetch - main [MainThread]: Store serial: [22651242]
+[2024-04-06 23:22:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651242]
+[2024-04-06 23:22:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 23:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: srpg-mod
+[2024-04-06 23:22:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TokenProbs
+[2024-04-06 23:22:46] INFO root fetch - processPackages [TokenProbs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:22:46] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/f5/3f/552d0f2ca9b5d9b5dee0057724885f844c83896f97bec43eb7c0acfafec1/TokenProbs-0.0.8.tar.gz
+[2024-04-06 23:22:46] WARNING root fetch - processPackages [srpg-mod]: Skipping, unable to determine old version
+[2024-04-06 23:22:46] INFO root fetch - main [MainThread]: End processing [srpg-mod] error
+[2024-04-06 23:22:46] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 23:22:46] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/29/ba/735a795841268a89d2be19af5ef66f193d7169a133194e72569ecf328149/TokenProbs-0.0.9.tar.gz
+[2024-04-06 23:22:46] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 23:22:46] INFO root fetch - processPackages [TokenProbs]: executing diffoscope
+[2024-04-06 23:22:46] INFO root fetch - processPackages [TokenProbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TokenProbs-0.0.8.tar.gz tmp/TokenProbs-0.0.9.tar.gz --markdown 20240406/T/TokenProbs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:22:47] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.8.tar.gz]
+[2024-04-06 23:22:47] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.9.tar.gz]
+[2024-04-06 23:22:47] INFO root fetch - main [MainThread]: End processing [TokenProbs]: success
+[2024-04-06 23:22:47] INFO root fetch - main [MainThread]: Store serial: [22651250]
