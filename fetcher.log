@@ -15679,3 +15679,34 @@ EOFError: EOF read where object expected
 [2024-04-06 14:17:56] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
 [2024-04-06 14:17:56] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2024-04-06 14:17:56] INFO root fetch - main [MainThread]: Store serial: [22647765]
+[2024-04-06 14:20:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647765]
+[2024-04-06 14:20:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 14:20:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secvision-bindeps-linux-x64
+[2024-04-06 14:20:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: direnumerate
+[2024-04-06 14:20:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: omnibelt
+[2024-04-06 14:20:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-theme-css-loader
+[2024-04-06 14:20:05] INFO root fetch - processPackages [direnumerate]: New version: [3.2rc1] Old Version: [3.1rc4]
+[2024-04-06 14:20:05] WARNING root fetch - processPackages [secvision-bindeps-linux-x64]: Skipping, unable to determine old version
+[2024-04-06 14:20:05] INFO root fetch - main [MainThread]: End processing [secvision-bindeps-linux-x64] error
+[2024-04-06 14:20:05] WARNING root fetch - processPackages [django-theme-css-loader]: Skipping, unable to determine old version
+[2024-04-06 14:20:05] INFO root fetch - main [MainThread]: End processing [django-theme-css-loader] error
+[2024-04-06 14:20:05] INFO root fetch - processPackages [omnibelt]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-04-06 14:20:05] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/14/75/1f225fd9cb36a72282d2e03dfcd0b06738e983a20f6e09e76d05eacdf657/direnumerate-3.1rc4.tar.gz
+[2024-04-06 14:20:06] WARNING root fetch - processPackages [direnumerate]: Timeout reached during download
+[2024-04-06 14:20:06] INFO root fetch - processPackages [omnibelt]: Downloading https://files.pythonhosted.org/packages/7a/26/a68668d687f14260e6e8fbf98586027bb80154bdaa6bbdaf1bfb9123fbac/omnibelt-0.8.3.tar.gz
+[2024-04-06 14:20:06] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/3e/37/f0eaa5cc2e2e69314f15c1aa5ba0c84d834692ab11baeb538b0e3717c183/direnumerate-3.2rc1.tar.gz
+[2024-04-06 14:20:06] WARNING root fetch - processPackages [direnumerate]: Timeout reached during download
+[2024-04-06 14:20:06] WARNING root fetch - processPackages [omnibelt]: Timeout reached during download
+[2024-04-06 14:20:06] INFO root fetch - processPackages [direnumerate]: executing diffoscope
+[2024-04-06 14:20:06] INFO root fetch - processPackages [direnumerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/direnumerate-3.1rc4.tar.gz tmp/direnumerate-3.2rc1.tar.gz --markdown 20240406/d/direnumerate/3.1rc4-3.2rc1/diff.md --exclude *.pyd
+[2024-04-06 14:20:06] INFO root fetch - processPackages [omnibelt]: Downloading https://files.pythonhosted.org/packages/26/df/684821b862c7f9a5c351e1a31e9277f33dd3328d6f8e5801a39147eb7e42/omnibelt-0.8.4.tar.gz
+[2024-04-06 14:20:06] WARNING root fetch - processPackages [omnibelt]: Timeout reached during download
+[2024-04-06 14:20:06] INFO root fetch - processPackages [omnibelt]: executing diffoscope
+[2024-04-06 14:20:06] INFO root fetch - processPackages [omnibelt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnibelt-0.8.3.tar.gz tmp/omnibelt-0.8.4.tar.gz --markdown 20240406/o/omnibelt/0.8.3-0.8.4/diff.md --exclude *.pyd
+[2024-04-06 14:20:06] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.1rc4.tar.gz]
+[2024-04-06 14:20:06] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.2rc1.tar.gz]
+[2024-04-06 14:20:06] INFO root fetch - main [MainThread]: End processing [direnumerate]: success
+[2024-04-06 14:20:07] INFO root fetch - processPackages [omnibelt]: Remove: archive file [/home/abi/fetcher/tmp/omnibelt-0.8.3.tar.gz]
+[2024-04-06 14:20:07] INFO root fetch - processPackages [omnibelt]: Remove: archive file [/home/abi/fetcher/tmp/omnibelt-0.8.4.tar.gz]
+[2024-04-06 14:20:07] INFO root fetch - main [MainThread]: End processing [omnibelt]: success
+[2024-04-06 14:20:07] INFO root fetch - main [MainThread]: Store serial: [22647777]
