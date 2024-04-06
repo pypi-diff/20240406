@@ -20431,3 +20431,17 @@ EOFError: EOF read where object expected
 [2024-04-06 19:03:51] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
 [2024-04-06 19:03:51] INFO root fetch - main [MainThread]: End processing [nestpython]: success
 [2024-04-06 19:03:51] INFO root fetch - main [MainThread]: Store serial: [22649618]
+[2024-04-06 19:05:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649618]
+[2024-04-06 19:06:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 19:06:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: freegenius
+[2024-04-06 19:06:00] INFO root fetch - processPackages [freegenius]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 19:06:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/6f/a0/f28ee0e233993d710b958fb4eca9f4892fdc879db0894cb221c3c672db85/freegenius-0.0.8.tar.gz
+[2024-04-06 19:06:00] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-06 19:06:00] INFO root fetch - processPackages [freegenius]: Downloading https://files.pythonhosted.org/packages/64/a9/f3ae6b148a4bd786790a124582c069ff16ee88fb307a8ebff8181577bb4d/freegenius-0.0.9.tar.gz
+[2024-04-06 19:06:00] WARNING root fetch - processPackages [freegenius]: Timeout reached during download
+[2024-04-06 19:06:00] INFO root fetch - processPackages [freegenius]: executing diffoscope
+[2024-04-06 19:06:00] INFO root fetch - processPackages [freegenius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freegenius-0.0.8.tar.gz tmp/freegenius-0.0.9.tar.gz --markdown 20240406/f/freegenius/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 19:06:01] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.8.tar.gz]
+[2024-04-06 19:06:01] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
+[2024-04-06 19:06:01] INFO root fetch - main [MainThread]: End processing [freegenius]: success
+[2024-04-06 19:06:01] INFO root fetch - main [MainThread]: Store serial: [22649621]
