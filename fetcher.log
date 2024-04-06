@@ -19968,3 +19968,45 @@ EOFError: EOF read where object expected
 [2024-04-06 18:46:13] INFO root fetch - processPackages [earthdata-varinfo]: Remove: archive file [/home/abi/fetcher/tmp/earthdata-varinfo-2.2.1.tar.gz]
 [2024-04-06 18:46:13] INFO root fetch - main [MainThread]: End processing [earthdata-varinfo]: success
 [2024-04-06 18:46:13] INFO root fetch - main [MainThread]: Store serial: [22649471]
+[2024-04-06 18:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649471]
+[2024-04-06 18:48:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 18:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: libsbmlnetwork
+[2024-04-06 18:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datalad
+[2024-04-06 18:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: voila-vuetify-thermodynamics
+[2024-04-06 18:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Mopidy-SevenSegmentDisplay
+[2024-04-06 18:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: wellets-cli
+[2024-04-06 18:48:23] INFO root fetch - processPackages [wellets-cli]: New version: [1.9.3] Old Version: [1.9.2]
+[2024-04-06 18:48:23] INFO root fetch - processPackages [wellets-cli]: Downloading https://files.pythonhosted.org/packages/b9/1d/596afb71e5f997f054c78efabde376506f3870fcee6bcc072ba3dd57b85e/wellets_cli-1.9.2.tar.gz
+[2024-04-06 18:48:23] WARNING root fetch - processPackages [voila-vuetify-thermodynamics]: Skipping, unable to determine old version
+[2024-04-06 18:48:23] INFO root fetch - main [MainThread]: End processing [voila-vuetify-thermodynamics] error
+[2024-04-06 18:48:23] INFO root fetch - processPackages [datalad]: New version: [1.0.0] Old Version: [0.9.3]
+[2024-04-06 18:48:23] WARNING root fetch - processPackages [libsbmlnetwork]: Skipping, unable to determine old version
+[2024-04-06 18:48:23] INFO root fetch - main [MainThread]: End processing [libsbmlnetwork] error
+[2024-04-06 18:48:23] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-06 18:48:23] WARNING root fetch - processPackages [wellets-cli]: Timeout reached during download
+[2024-04-06 18:48:23] INFO root fetch - processPackages [datalad]: Downloading https://files.pythonhosted.org/packages/19/e1/3ce7c39836c0c23d61fe00d66f88bccc659d78c41891db41b1f16902f753/datalad-0.9.3.tar.gz
+[2024-04-06 18:48:23] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/d2/51/9564e08df7174f4807bfc55ee0b606eeb7c8ffcb82ebaf310e79830ec94d/Mopidy-SevenSegmentDisplay-0.7.3.tar.gz
+[2024-04-06 18:48:23] INFO root fetch - processPackages [wellets-cli]: Downloading https://files.pythonhosted.org/packages/ce/b4/e24b0b1c771efe62ec40b91c8ae6f8c88f3d6d41518ae92e79a0dd510e48/wellets_cli-1.9.3.tar.gz
+[2024-04-06 18:48:23] WARNING root fetch - processPackages [wellets-cli]: Timeout reached during download
+[2024-04-06 18:48:23] INFO root fetch - processPackages [wellets-cli]: executing diffoscope
+[2024-04-06 18:48:23] INFO root fetch - processPackages [wellets-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wellets_cli-1.9.2.tar.gz tmp/wellets_cli-1.9.3.tar.gz --markdown 20240406/w/wellets-cli/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2024-04-06 18:48:23] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-06 18:48:24] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Downloading https://files.pythonhosted.org/packages/98/bd/41c3cf8eedef53162e2f7b5a07d5f588057fa7183fd8b9b340ef813171eb/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz
+[2024-04-06 18:48:24] WARNING root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Timeout reached during download
+[2024-04-06 18:48:24] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: executing diffoscope
+[2024-04-06 18:48:24] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy-SevenSegmentDisplay-0.7.3.tar.gz tmp/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz --markdown 20240406/M/Mopidy-SevenSegmentDisplay/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2024-04-06 18:48:24] INFO root fetch - processPackages [wellets-cli]: Remove: archive file [/home/abi/fetcher/tmp/wellets_cli-1.9.2.tar.gz]
+[2024-04-06 18:48:24] INFO root fetch - processPackages [wellets-cli]: Remove: archive file [/home/abi/fetcher/tmp/wellets_cli-1.9.3.tar.gz]
+[2024-04-06 18:48:24] INFO root fetch - main [MainThread]: End processing [wellets-cli]: success
+[2024-04-06 18:48:24] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.3.tar.gz]
+[2024-04-06 18:48:24] INFO root fetch - processPackages [Mopidy-SevenSegmentDisplay]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-SevenSegmentDisplay-0.7.4.tar.gz]
+[2024-04-06 18:48:24] INFO root fetch - main [MainThread]: End processing [Mopidy-SevenSegmentDisplay]: success
+[2024-04-06 18:48:25] WARNING root fetch - processPackages [datalad]: Timeout reached during download
+[2024-04-06 18:48:25] INFO root fetch - processPackages [datalad]: Downloading https://files.pythonhosted.org/packages/ee/51/43be9521b4942bf5db7e218e8802e747b4aa7fd8a7c7be80580a8e63232b/datalad-1.0.0.tar.gz
+[2024-04-06 18:48:25] WARNING root fetch - processPackages [datalad]: Timeout reached during download
+[2024-04-06 18:48:25] INFO root fetch - processPackages [datalad]: executing diffoscope
+[2024-04-06 18:48:25] INFO root fetch - processPackages [datalad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datalad-0.9.3.tar.gz tmp/datalad-1.0.0.tar.gz --markdown 20240406/d/datalad/0.9.3-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 18:48:28] INFO root fetch - processPackages [datalad]: Remove: archive file [/home/abi/fetcher/tmp/datalad-0.9.3.tar.gz]
+[2024-04-06 18:48:28] INFO root fetch - processPackages [datalad]: Remove: archive file [/home/abi/fetcher/tmp/datalad-1.0.0.tar.gz]
+[2024-04-06 18:48:28] INFO root fetch - main [MainThread]: End processing [datalad]: success
+[2024-04-06 18:48:28] INFO root fetch - main [MainThread]: Store serial: [22649490]
