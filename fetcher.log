@@ -12431,3 +12431,50 @@
 [2024-04-06 10:19:42] INFO root fetch - processPackages [BasicLibrary.PY]: Remove: archive file [/home/abi/fetcher/tmp/basiclibrary_py-0.6.9.tar.gz]
 [2024-04-06 10:19:42] INFO root fetch - main [MainThread]: End processing [BasicLibrary.PY]: success
 [2024-04-06 10:19:42] INFO root fetch - main [MainThread]: Store serial: [22646676]
+[2024-04-06 10:21:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646676]
+[2024-04-06 10:21:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 10:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypotage
+[2024-04-06 10:21:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: just_design_phase
+[2024-04-06 10:21:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartboiler
+[2024-04-06 10:21:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asaniczka
+[2024-04-06 10:21:51] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 10:21:51] INFO root fetch - processPackages [asaniczka]: New version: [3.1.1] Old Version: [3.1.0]
+[2024-04-06 10:21:51] INFO root fetch - processPackages [pypotage]: New version: [0.1.0a0] Old Version: [0.0.0a0]
+[2024-04-06 10:21:51] INFO root fetch - processPackages [asaniczka]: Downloading https://files.pythonhosted.org/packages/a6/cd/9a1e150a6bbb04fbba4599af2cefde70f2fcc71d7bae0f6da93e90f9c177/asaniczka-3.1.0.tar.gz
+[2024-04-06 10:21:51] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.6.0] Old Version: [0.0.3.0.0.5.9.4]
+[2024-04-06 10:21:51] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/ce/32/80cede7e36d86732e40cfb99548a5496af8e59da8b0a7efe4d4d131639cb/just_design_phase-0.0.5.tar.gz
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [asaniczka]: Timeout reached during download
+[2024-04-06 10:21:51] INFO root fetch - processPackages [pypotage]: Downloading https://files.pythonhosted.org/packages/57/3c/ff8b1af44ff780022c6d39db400be8f024716e688d2ca3d68deddf6b2dd7/pypotage-0.0.0a0.tar.gz
+[2024-04-06 10:21:51] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/c3/da/02fd749e1e4b607fb7c89921feb869c47353840fe349c0561814c4d03b38/smartboiler-0.0.3.0.0.5.9.4.tar.gz
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 10:21:51] INFO root fetch - processPackages [asaniczka]: Downloading https://files.pythonhosted.org/packages/bb/06/df0c508ee7f627db9f5903e790319afd331164048360f9dffe9ca11ee1c6/asaniczka-3.1.1.tar.gz
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [pypotage]: Timeout reached during download
+[2024-04-06 10:21:51] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/e5/d8/f93749acabe946ca1b88441244d1d14ef4bbce0a2b5ade0e6353cfe977d5/just_design_phase-0.0.6.tar.gz
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [smartboiler]: Timeout reached during download
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [asaniczka]: Timeout reached during download
+[2024-04-06 10:21:51] INFO root fetch - processPackages [asaniczka]: executing diffoscope
+[2024-04-06 10:21:51] INFO root fetch - processPackages [asaniczka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asaniczka-3.1.0.tar.gz tmp/asaniczka-3.1.1.tar.gz --markdown 20240406/a/asaniczka/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 10:21:51] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 10:21:51] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.5.tar.gz tmp/just_design_phase-0.0.6.tar.gz --markdown 20240406/j/just_design_phase/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 10:21:51] INFO root fetch - processPackages [pypotage]: Downloading https://files.pythonhosted.org/packages/30/c2/a31b82a8cb36f458f6974fc09d4909f6cac29d1af9893f375afd3ad26c17/pypotage-0.1.0a0.tar.gz
+[2024-04-06 10:21:51] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/06/2f/a12b103988536de34a667c571cd339861801a5f6b738dd068679180c1f0b/smartboiler-0.0.3.0.0.6.0.tar.gz
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [pypotage]: Timeout reached during download
+[2024-04-06 10:21:51] INFO root fetch - processPackages [pypotage]: executing diffoscope
+[2024-04-06 10:21:51] INFO root fetch - processPackages [pypotage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypotage-0.0.0a0.tar.gz tmp/pypotage-0.1.0a0.tar.gz --markdown 20240406/p/pypotage/0.0.0a0-0.1.0a0/diff.md --exclude *.pyd
+[2024-04-06 10:21:51] WARNING root fetch - processPackages [smartboiler]: Timeout reached during download
+[2024-04-06 10:21:51] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-04-06 10:21:51] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.5.9.4.tar.gz tmp/smartboiler-0.0.3.0.0.6.0.tar.gz --markdown 20240406/s/smartboiler/0.0.3.0.0.5.9.4-0.0.3.0.0.6.0/diff.md --exclude *.pyd
+[2024-04-06 10:21:52] INFO root fetch - processPackages [asaniczka]: Remove: archive file [/home/abi/fetcher/tmp/asaniczka-3.1.0.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - processPackages [asaniczka]: Remove: archive file [/home/abi/fetcher/tmp/asaniczka-3.1.1.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - main [MainThread]: End processing [asaniczka]: success
+[2024-04-06 10:21:52] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.5.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.6.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 10:21:52] INFO root fetch - processPackages [pypotage]: Remove: archive file [/home/abi/fetcher/tmp/pypotage-0.0.0a0.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - processPackages [pypotage]: Remove: archive file [/home/abi/fetcher/tmp/pypotage-0.1.0a0.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - main [MainThread]: End processing [pypotage]: success
+[2024-04-06 10:21:52] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.5.9.4.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.6.0.tar.gz]
+[2024-04-06 10:21:52] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-04-06 10:21:52] INFO root fetch - main [MainThread]: Store serial: [22646688]
