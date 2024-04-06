@@ -22376,3 +22376,39 @@ EOFError: EOF read where object expected
 [2024-04-06 20:52:55] INFO root fetch - processPackages [classixclustering]: Remove: archive file [/home/abi/fetcher/tmp/classixclustering-1.2.5.tar.gz]
 [2024-04-06 20:52:55] INFO root fetch - main [MainThread]: End processing [classixclustering]: success
 [2024-04-06 20:52:55] INFO root fetch - main [MainThread]: Store serial: [22650259]
+[2024-04-06 20:54:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650259]
+[2024-04-06 20:55:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 20:55:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: releaserr
+[2024-04-06 20:55:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-ballisticcalc
+[2024-04-06 20:55:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-ballisticcalc.exts
+[2024-04-06 20:55:03] INFO root fetch - processPackages [releaserr]: New version: [0.1.dev94] Old Version: [0.1.dev128]
+[2024-04-06 20:55:03] INFO root fetch - processPackages [py-ballisticcalc]: New version: [2.0.0b4] Old Version: [2.0.0b3]
+[2024-04-06 20:55:04] INFO root fetch - processPackages [releaserr]: Downloading https://files.pythonhosted.org/packages/6e/46/c46725313693f5735668a443f84cc9c4ecf7ce8d92faeb9ad4e4698c9c16/releaserr-0.1.dev128.tar.gz
+[2024-04-06 20:55:04] INFO root fetch - processPackages [py-ballisticcalc]: Downloading https://files.pythonhosted.org/packages/90/77/3a60ba9faf6a144cacd188a4c981a402202610a070322ba11cb40bb1b32b/py_ballisticcalc-2.0.0b3.tar.gz
+[2024-04-06 20:55:04] INFO root fetch - processPackages [py-ballisticcalc.exts]: New version: [2.0.0b5] Old Version: [2.0.0b4]
+[2024-04-06 20:55:04] WARNING root fetch - processPackages [releaserr]: Timeout reached during download
+[2024-04-06 20:55:04] WARNING root fetch - processPackages [py-ballisticcalc]: Timeout reached during download
+[2024-04-06 20:55:04] INFO root fetch - processPackages [releaserr]: Downloading https://files.pythonhosted.org/packages/7a/26/736d01b0c1fa4abbf6135fbc5d7c506888433b18ec54dd9a7ec8472d992e/releaserr-0.1.dev94.tar.gz
+[2024-04-06 20:55:04] INFO root fetch - processPackages [py-ballisticcalc]: Downloading https://files.pythonhosted.org/packages/10/07/26234d17b20dc0794ca5ed4312d8b40be9608c45f2d80875b3b57fbf0c3b/py_ballisticcalc-2.0.0b4.tar.gz
+[2024-04-06 20:55:04] INFO root fetch - processPackages [py-ballisticcalc.exts]: Downloading https://files.pythonhosted.org/packages/17/11/03d77a04a258c955d4431226675dd3afccec1f1a4e1bfa6aed608e9d1dda/py_ballisticcalc.exts-2.0.0b4.tar.gz
+[2024-04-06 20:55:04] WARNING root fetch - processPackages [releaserr]: Timeout reached during download
+[2024-04-06 20:55:04] INFO root fetch - processPackages [releaserr]: executing diffoscope
+[2024-04-06 20:55:04] INFO root fetch - processPackages [releaserr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/releaserr-0.1.dev128.tar.gz tmp/releaserr-0.1.dev94.tar.gz --markdown 20240406/r/releaserr/0.1.dev128-0.1.dev94/diff.md --exclude *.pyd
+[2024-04-06 20:55:04] WARNING root fetch - processPackages [py-ballisticcalc]: Timeout reached during download
+[2024-04-06 20:55:04] INFO root fetch - processPackages [py-ballisticcalc]: executing diffoscope
+[2024-04-06 20:55:04] INFO root fetch - processPackages [py-ballisticcalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ballisticcalc-2.0.0b3.tar.gz tmp/py_ballisticcalc-2.0.0b4.tar.gz --markdown 20240406/p/py-ballisticcalc/2.0.0b3-2.0.0b4/diff.md --exclude *.pyd
+[2024-04-06 20:55:04] WARNING root fetch - processPackages [py-ballisticcalc.exts]: Timeout reached during download
+[2024-04-06 20:55:04] INFO root fetch - processPackages [py-ballisticcalc.exts]: Downloading https://files.pythonhosted.org/packages/8b/ea/4115ce16c4f7480c7fb4376e9e038abedbfe92846f618b4a26f86c532dfa/py_ballisticcalc.exts-2.0.0b5.tar.gz
+[2024-04-06 20:55:05] WARNING root fetch - processPackages [py-ballisticcalc.exts]: Timeout reached during download
+[2024-04-06 20:55:05] INFO root fetch - processPackages [py-ballisticcalc.exts]: executing diffoscope
+[2024-04-06 20:55:05] INFO root fetch - processPackages [py-ballisticcalc.exts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ballisticcalc.exts-2.0.0b4.tar.gz tmp/py_ballisticcalc.exts-2.0.0b5.tar.gz --markdown 20240406/p/py-ballisticcalc.exts/2.0.0b4-2.0.0b5/diff.md --exclude *.pyd
+[2024-04-06 20:55:05] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev128.tar.gz]
+[2024-04-06 20:55:05] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev94.tar.gz]
+[2024-04-06 20:55:05] INFO root fetch - main [MainThread]: End processing [releaserr]: success
+[2024-04-06 20:55:05] INFO root fetch - processPackages [py-ballisticcalc]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc-2.0.0b3.tar.gz]
+[2024-04-06 20:55:05] INFO root fetch - processPackages [py-ballisticcalc]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc-2.0.0b4.tar.gz]
+[2024-04-06 20:55:05] INFO root fetch - main [MainThread]: End processing [py-ballisticcalc]: success
+[2024-04-06 20:55:05] INFO root fetch - processPackages [py-ballisticcalc.exts]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc.exts-2.0.0b4.tar.gz]
+[2024-04-06 20:55:05] INFO root fetch - processPackages [py-ballisticcalc.exts]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc.exts-2.0.0b5.tar.gz]
+[2024-04-06 20:55:05] INFO root fetch - main [MainThread]: End processing [py-ballisticcalc.exts]: success
+[2024-04-06 20:55:05] INFO root fetch - main [MainThread]: Store serial: [22650267]
