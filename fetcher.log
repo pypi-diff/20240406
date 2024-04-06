@@ -19642,3 +19642,44 @@ EOFError: EOF read where object expected
 [2024-04-06 18:26:34] INFO root fetch - processPackages [symbol-shoestring]: Remove: archive file [/home/abi/fetcher/tmp/symbol_shoestring-0.1.1.tar.gz]
 [2024-04-06 18:26:34] INFO root fetch - main [MainThread]: End processing [symbol-shoestring]: success
 [2024-04-06 18:26:34] INFO root fetch - main [MainThread]: Store serial: [22649348]
+[2024-04-06 18:28:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649348]
+[2024-04-06 18:28:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 18:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Jetski
+[2024-04-06 18:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sphinx-design-elements
+[2024-04-06 18:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grooveshop-django-api
+[2024-04-06 18:28:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: byma
+[2024-04-06 18:28:44] INFO root fetch - processPackages [Jetski]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 18:28:44] INFO root fetch - processPackages [sphinx-design-elements]: New version: [0.3.0] Old Version: [0.2.1]
+[2024-04-06 18:28:44] INFO root fetch - processPackages [grooveshop-django-api]: New version: [0.97.0] Old Version: [0.96.0]
+[2024-04-06 18:28:44] INFO root fetch - processPackages [byma]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 18:28:44] INFO root fetch - processPackages [sphinx-design-elements]: Downloading https://files.pythonhosted.org/packages/24/dd/918669c2f3cb7264c9e715ff42b5bfce812e5af59b0ffed426f897024182/sphinx-design-elements-0.2.1.tar.gz
+[2024-04-06 18:28:44] INFO root fetch - processPackages [Jetski]: Downloading https://files.pythonhosted.org/packages/a8/01/0008cabee3777d5d3b62831dbb6ba17966c57aff85a43e2307a8549493cf/Jetski-0.0.1.tar.gz
+[2024-04-06 18:28:44] INFO root fetch - processPackages [grooveshop-django-api]: Downloading https://files.pythonhosted.org/packages/2c/99/1685abc25906e8b45712de38de984dcc9cdf773ed914663d20ad235dced5/grooveshop_django_api-0.96.0.tar.gz
+[2024-04-06 18:28:44] INFO root fetch - processPackages [byma]: Downloading https://files.pythonhosted.org/packages/11/8e/a8f683be021bf128933f0cfca0bfbfa77580c986cfe4393065b8f9eaa6a4/byma-0.1.1.tar.gz
+[2024-04-06 18:28:44] WARNING root fetch - processPackages [grooveshop-django-api]: Skipping package: exceeds size limit 33745377>=10485760
+[2024-04-06 18:28:44] INFO root fetch - main [MainThread]: End processing [grooveshop-django-api] error
+[2024-04-06 18:28:44] WARNING root fetch - processPackages [Jetski]: Timeout reached during download
+[2024-04-06 18:28:44] WARNING root fetch - processPackages [sphinx-design-elements]: Timeout reached during download
+[2024-04-06 18:28:44] WARNING root fetch - processPackages [byma]: Timeout reached during download
+[2024-04-06 18:28:44] INFO root fetch - processPackages [Jetski]: Downloading https://files.pythonhosted.org/packages/c1/bd/cb564466d1192ea845fef0274fda0ea3f2b926f0447437b22d54c900daed/Jetski-0.0.2.tar.gz
+[2024-04-06 18:28:44] INFO root fetch - processPackages [sphinx-design-elements]: Downloading https://files.pythonhosted.org/packages/4b/04/345e0ae436b11b7b5ee269f7439b68397e595578732f999f9bfc0ddf2bae/sphinx-design-elements-0.3.0.tar.gz
+[2024-04-06 18:28:44] INFO root fetch - processPackages [byma]: Downloading https://files.pythonhosted.org/packages/ec/96/4ad901e89c426865a31a4ec7eaf470e20b0fd5fd6d88716282fb02618eff/byma-0.1.2.tar.gz
+[2024-04-06 18:28:45] WARNING root fetch - processPackages [Jetski]: Timeout reached during download
+[2024-04-06 18:28:45] INFO root fetch - processPackages [Jetski]: executing diffoscope
+[2024-04-06 18:28:45] INFO root fetch - processPackages [Jetski]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Jetski-0.0.1.tar.gz tmp/Jetski-0.0.2.tar.gz --markdown 20240406/J/Jetski/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 18:28:45] WARNING root fetch - processPackages [sphinx-design-elements]: Timeout reached during download
+[2024-04-06 18:28:45] INFO root fetch - processPackages [sphinx-design-elements]: executing diffoscope
+[2024-04-06 18:28:45] INFO root fetch - processPackages [sphinx-design-elements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx-design-elements-0.2.1.tar.gz tmp/sphinx-design-elements-0.3.0.tar.gz --markdown 20240406/s/sphinx-design-elements/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2024-04-06 18:28:45] WARNING root fetch - processPackages [byma]: Timeout reached during download
+[2024-04-06 18:28:45] INFO root fetch - processPackages [byma]: executing diffoscope
+[2024-04-06 18:28:45] INFO root fetch - processPackages [byma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byma-0.1.1.tar.gz tmp/byma-0.1.2.tar.gz --markdown 20240406/b/byma/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 18:28:45] INFO root fetch - processPackages [Jetski]: Remove: archive file [/home/abi/fetcher/tmp/Jetski-0.0.1.tar.gz]
+[2024-04-06 18:28:45] INFO root fetch - processPackages [Jetski]: Remove: archive file [/home/abi/fetcher/tmp/Jetski-0.0.2.tar.gz]
+[2024-04-06 18:28:45] INFO root fetch - main [MainThread]: End processing [Jetski]: success
+[2024-04-06 18:28:45] INFO root fetch - processPackages [sphinx-design-elements]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-design-elements-0.2.1.tar.gz]
+[2024-04-06 18:28:45] INFO root fetch - processPackages [sphinx-design-elements]: Remove: archive file [/home/abi/fetcher/tmp/sphinx-design-elements-0.3.0.tar.gz]
+[2024-04-06 18:28:45] INFO root fetch - main [MainThread]: End processing [sphinx-design-elements]: success
+[2024-04-06 18:28:45] INFO root fetch - processPackages [byma]: Remove: archive file [/home/abi/fetcher/tmp/byma-0.1.1.tar.gz]
+[2024-04-06 18:28:45] INFO root fetch - processPackages [byma]: Remove: archive file [/home/abi/fetcher/tmp/byma-0.1.2.tar.gz]
+[2024-04-06 18:28:45] INFO root fetch - main [MainThread]: End processing [byma]: success
+[2024-04-06 18:28:45] INFO root fetch - main [MainThread]: Store serial: [22649358]
