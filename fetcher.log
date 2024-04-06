@@ -21596,3 +21596,61 @@ EOFError: EOF read where object expected
 [2024-04-06 20:15:45] INFO root fetch - processPackages [cdk-ecr-deployment]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecr-deployment-3.0.9.tar.gz]
 [2024-04-06 20:15:45] INFO root fetch - main [MainThread]: End processing [cdk-ecr-deployment]: success
 [2024-04-06 20:15:45] INFO root fetch - main [MainThread]: Store serial: [22650026]
+[2024-04-06 20:17:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650026]
+[2024-04-06 20:17:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 20:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iderare-pheno
+[2024-04-06 20:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-04-06 20:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: roboquant
+[2024-04-06 20:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-check
+[2024-04-06 20:17:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ntscraper
+[2024-04-06 20:17:54] INFO root fetch - processPackages [iderare-pheno]: New version: [0.3.0] Old Version: [0.1.8]
+[2024-04-06 20:17:54] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 20:17:54] INFO root fetch - processPackages [ntscraper]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 20:17:54] INFO root fetch - processPackages [roboquant]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-06 20:17:54] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/27/fa/278984359d9ed6d39ac52582d402d340edfab95285bf23a08be8d28a6725/iderare-pheno-0.1.8.tar.gz
+[2024-04-06 20:17:54] INFO root fetch - processPackages [discord-check]: New version: [1.0.2] Old Version: [0.0.2]
+[2024-04-06 20:17:54] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-04-06 20:17:54] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 20:17:54] INFO root fetch - processPackages [roboquant]: Downloading https://files.pythonhosted.org/packages/f9/29/e7b4203e625e56f53b45cbd9c7a7af09dbb680565be84bd904311f538e8c/roboquant-0.2.9.tar.gz
+[2024-04-06 20:17:54] INFO root fetch - processPackages [discord-check]: Downloading https://files.pythonhosted.org/packages/e7/b7/6c8dd735e998a59e96b6e69f1aa5dc5225a3244004c23c71bca05ecae64b/discord_check-0.0.2.tar.gz
+[2024-04-06 20:17:54] INFO root fetch - processPackages [ntscraper]: Downloading https://files.pythonhosted.org/packages/9e/cc/17da113ac299c9b3a38cddb65e994ff8d4511c9699bd1b21fee8b7680fa2/ntscraper-0.3.8.tar.gz
+[2024-04-06 20:17:55] WARNING root fetch - processPackages [roboquant]: Timeout reached during download
+[2024-04-06 20:17:55] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/de/7a/c9d7105ac22e8e80ff2a1afcb07aad11833d63a85595aaf483d64fc3a000/iderare-pheno-0.3.0.tar.gz
+[2024-04-06 20:17:55] WARNING root fetch - processPackages [discord-check]: Timeout reached during download
+[2024-04-06 20:17:55] WARNING root fetch - processPackages [ntscraper]: Timeout reached during download
+[2024-04-06 20:17:55] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 20:17:55] INFO root fetch - processPackages [iderare-pheno]: executing diffoscope
+[2024-04-06 20:17:55] INFO root fetch - processPackages [iderare-pheno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iderare-pheno-0.1.8.tar.gz tmp/iderare-pheno-0.3.0.tar.gz --markdown 20240406/i/iderare-pheno/0.1.8-0.3.0/diff.md --exclude *.pyd
+[2024-04-06 20:17:55] INFO root fetch - processPackages [roboquant]: Downloading https://files.pythonhosted.org/packages/c9/13/982327a3a5fd0c0a74ff1204e76c4a142a13a92116eda54b1ff976334b6c/roboquant-0.3.0.tar.gz
+[2024-04-06 20:17:55] INFO root fetch - processPackages [ntscraper]: Downloading https://files.pythonhosted.org/packages/29/c7/3d9e5391ca1f2d73f12a0247c35b1816567b1cffd8cf5643bf005490626b/ntscraper-0.3.9.tar.gz
+[2024-04-06 20:17:55] INFO root fetch - processPackages [discord-check]: Downloading https://files.pythonhosted.org/packages/74/9a/4fae47dfcca0378b8a1179947838a5c603dd98efb62ccd9a598cd1315201/discord_check-1.0.2.tar.gz
+[2024-04-06 20:17:55] WARNING root fetch - processPackages [roboquant]: Timeout reached during download
+[2024-04-06 20:17:55] INFO root fetch - processPackages [roboquant]: executing diffoscope
+[2024-04-06 20:17:55] INFO root fetch - processPackages [roboquant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboquant-0.2.9.tar.gz tmp/roboquant-0.3.0.tar.gz --markdown 20240406/r/roboquant/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2024-04-06 20:17:55] WARNING root fetch - processPackages [ntscraper]: Timeout reached during download
+[2024-04-06 20:17:55] INFO root fetch - processPackages [ntscraper]: executing diffoscope
+[2024-04-06 20:17:55] INFO root fetch - processPackages [ntscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntscraper-0.3.8.tar.gz tmp/ntscraper-0.3.9.tar.gz --markdown 20240406/n/ntscraper/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 20:17:55] WARNING root fetch - processPackages [discord-check]: Timeout reached during download
+[2024-04-06 20:17:55] INFO root fetch - processPackages [discord-check]: executing diffoscope
+[2024-04-06 20:17:55] INFO root fetch - processPackages [discord-check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord_check-0.0.2.tar.gz tmp/discord_check-1.0.2.tar.gz --markdown 20240406/d/discord-check/0.0.2-1.0.2/diff.md --exclude *.pyd
+[2024-04-06 20:17:55] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.1.8.tar.gz]
+[2024-04-06 20:17:55] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.3.0.tar.gz]
+[2024-04-06 20:17:55] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
+[2024-04-06 20:17:55] INFO root fetch - processPackages [discord-check]: Remove: archive file [/home/abi/fetcher/tmp/discord_check-0.0.2.tar.gz]
+[2024-04-06 20:17:55] INFO root fetch - processPackages [discord-check]: Remove: archive file [/home/abi/fetcher/tmp/discord_check-1.0.2.tar.gz]
+[2024-04-06 20:17:55] INFO root fetch - main [MainThread]: End processing [discord-check]: success
+[2024-04-06 20:17:56] INFO root fetch - processPackages [ntscraper]: Remove: archive file [/home/abi/fetcher/tmp/ntscraper-0.3.8.tar.gz]
+[2024-04-06 20:17:56] INFO root fetch - processPackages [ntscraper]: Remove: archive file [/home/abi/fetcher/tmp/ntscraper-0.3.9.tar.gz]
+[2024-04-06 20:17:56] INFO root fetch - main [MainThread]: End processing [ntscraper]: success
+[2024-04-06 20:17:56] WARNING root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Timeout reached during download
+[2024-04-06 20:17:56] INFO root fetch - processPackages [roboquant]: Remove: archive file [/home/abi/fetcher/tmp/roboquant-0.2.9.tar.gz]
+[2024-04-06 20:17:56] INFO root fetch - processPackages [roboquant]: Remove: archive file [/home/abi/fetcher/tmp/roboquant-0.3.0.tar.gz]
+[2024-04-06 20:17:56] INFO root fetch - main [MainThread]: End processing [roboquant]: success
+[2024-04-06 20:17:56] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-04-06 20:17:56] WARNING root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Timeout reached during download
+[2024-04-06 20:17:56] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-04-06 20:17:56] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240406/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 20:17:58] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-04-06 20:17:58] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-04-06 20:17:58] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-04-06 20:17:58] INFO root fetch - main [MainThread]: Store serial: [22650041]
