@@ -12005,3 +12005,9 @@
 [2024-04-06 09:49:22] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl.zip]
 [2024-04-06 09:49:22] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
 [2024-04-06 09:49:22] INFO root fetch - main [MainThread]: Store serial: [22646537]
+[2024-04-06 09:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646537]
+[2024-04-06 09:51:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 09:51:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythagoras
+[2024-04-06 09:51:30] WARNING root fetch - processPackages [pythagoras]: Skipping, unable to determine old version
+[2024-04-06 09:51:30] INFO root fetch - main [MainThread]: End processing [pythagoras] error
+[2024-04-06 09:51:30] INFO root fetch - main [MainThread]: Store serial: [22646539]
