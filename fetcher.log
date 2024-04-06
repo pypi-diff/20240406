@@ -8514,3 +8514,39 @@
 [2024-04-06 05:10:01] INFO root fetch - processPackages [lezargus]: Remove: archive file [/home/abi/fetcher/tmp/lezargus-0.0.4.dev42.tar.gz]
 [2024-04-06 05:10:01] INFO root fetch - main [MainThread]: End processing [lezargus]: success
 [2024-04-06 05:10:01] INFO root fetch - main [MainThread]: Store serial: [22645138]
+[2024-04-06 05:12:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645138]
+[2024-04-06 05:12:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 05:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: handrightbeta
+[2024-04-06 05:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sprocketship
+[2024-04-06 05:12:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-base-phone
+[2024-04-06 05:12:19] INFO root fetch - processPackages [handrightbeta]: New version: [8.6.0] Old Version: [8.5.1]
+[2024-04-06 05:12:19] INFO root fetch - processPackages [sprocketship]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 05:12:19] INFO root fetch - processPackages [handrightbeta]: Downloading https://files.pythonhosted.org/packages/52/cf/59963618ac0299a82f1e5dda9e3888f8aff97152bd01f4e15260c0e86d5b/handrightbeta-8.5.1.tar.gz
+[2024-04-06 05:12:19] INFO root fetch - processPackages [odoo-addon-base-phone]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.3]
+[2024-04-06 05:12:19] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/4a/04/7c484c3ebcb486d63df55c9b565a680f305b65c0193826f913351ba314d3/sprocketship-0.0.8.tar.gz
+[2024-04-06 05:12:19] WARNING root fetch - processPackages [handrightbeta]: Timeout reached during download
+[2024-04-06 05:12:19] INFO root fetch - processPackages [odoo-addon-base-phone]: Downloading https://files.pythonhosted.org/packages/35/b0/4c846bf37a24a07f5cee12850ea900f47336d7acdd0a28aae94bdca48ce1/odoo_addon_base_phone-17.0.1.0.0.3-py3-none-any.whl
+[2024-04-06 05:12:19] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 05:12:19] INFO root fetch - processPackages [handrightbeta]: Downloading https://files.pythonhosted.org/packages/07/14/5cdef94089e96e44a9752efaf10d22294287a9692100776cba0c60fe9b7f/handrightbeta-8.6.0.tar.gz
+[2024-04-06 05:12:19] WARNING root fetch - processPackages [odoo-addon-base-phone]: Timeout reached during download
+[2024-04-06 05:12:19] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/3b/1f/ef5adaa427009cf67f6258034539521481c76a9ad94df0f6976077386506/sprocketship-0.0.9.tar.gz
+[2024-04-06 05:12:19] WARNING root fetch - processPackages [handrightbeta]: Timeout reached during download
+[2024-04-06 05:12:19] INFO root fetch - processPackages [handrightbeta]: executing diffoscope
+[2024-04-06 05:12:19] INFO root fetch - processPackages [handrightbeta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/handrightbeta-8.5.1.tar.gz tmp/handrightbeta-8.6.0.tar.gz --markdown 20240406/h/handrightbeta/8.5.1-8.6.0/diff.md --exclude *.pyd
+[2024-04-06 05:12:19] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 05:12:19] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 05:12:19] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.0.8.tar.gz tmp/sprocketship-0.0.9.tar.gz --markdown 20240406/s/sprocketship/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 05:12:19] INFO root fetch - processPackages [odoo-addon-base-phone]: Downloading https://files.pythonhosted.org/packages/15/4b/23f5d6a4226adbdd0de69fe86a207a23f76ebe8c42fc2570ff10edd39f19/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-06 05:12:20] WARNING root fetch - processPackages [odoo-addon-base-phone]: Timeout reached during download
+[2024-04-06 05:12:20] INFO root fetch - processPackages [odoo-addon-base-phone]: executing diffoscope
+[2024-04-06 05:12:20] INFO root fetch - processPackages [odoo-addon-base-phone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_base_phone-17.0.1.0.0.3-py3-none-any.whl.zip tmp/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-base-phone/17.0.1.0.0.3-17.0.1.0.0.4/diff.md --exclude *.pyd
+[2024-04-06 05:12:20] INFO root fetch - processPackages [handrightbeta]: Remove: archive file [/home/abi/fetcher/tmp/handrightbeta-8.5.1.tar.gz]
+[2024-04-06 05:12:20] INFO root fetch - processPackages [handrightbeta]: Remove: archive file [/home/abi/fetcher/tmp/handrightbeta-8.6.0.tar.gz]
+[2024-04-06 05:12:20] INFO root fetch - main [MainThread]: End processing [handrightbeta]: success
+[2024-04-06 05:12:20] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.8.tar.gz]
+[2024-04-06 05:12:20] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.9.tar.gz]
+[2024-04-06 05:12:20] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 05:12:20] INFO root fetch - processPackages [odoo-addon-base-phone]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_phone-17.0.1.0.0.3-py3-none-any.whl.zip]
+[2024-04-06 05:12:20] INFO root fetch - processPackages [odoo-addon-base-phone]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-06 05:12:20] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-phone]: success
+[2024-04-06 05:12:20] INFO root fetch - main [MainThread]: Store serial: [22645146]
