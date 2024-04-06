@@ -13805,3 +13805,28 @@
 [2024-04-06 12:10:26] INFO root fetch - processPackages [microservices-common]: Remove: archive file [/home/abi/fetcher/tmp/microservices_common-1.0.2.tar.gz]
 [2024-04-06 12:10:26] INFO root fetch - main [MainThread]: End processing [microservices-common]: success
 [2024-04-06 12:10:26] INFO root fetch - main [MainThread]: Store serial: [22647188]
+[2024-04-06 12:12:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647188]
+[2024-04-06 12:12:34] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-keras-nightly
+[2024-04-06 12:12:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libyang
+[2024-04-06 12:12:34] INFO root fetch - processPackages [libyang]: New version: [3.0.0] Old Version: [2.8.4]
+[2024-04-06 12:12:34] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024040609] Old Version: [2.17.0.dev2024040409]
+[2024-04-06 12:12:35] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/cb/07/26b08643608b9b1168f824b8e75f3d7c8f22786f64e7ca742248a734909e/tf_keras-nightly-2.17.0.dev2024040409.tar.gz
+[2024-04-06 12:12:35] INFO root fetch - processPackages [libyang]: Downloading https://files.pythonhosted.org/packages/5d/9f/b763b56c2fa23be2d37c0aee5cd0dfa7f96413809a2054b7efe8fdc5f4e9/libyang-2.8.4.tar.gz
+[2024-04-06 12:12:35] WARNING root fetch - processPackages [libyang]: Timeout reached during download
+[2024-04-06 12:12:35] INFO root fetch - processPackages [libyang]: Downloading https://files.pythonhosted.org/packages/11/4e/ec1b7f539840fd7dbb7e69f59536a1d29e527e848fabf857272a44b657a6/libyang-3.0.0.tar.gz
+[2024-04-06 12:12:35] WARNING root fetch - processPackages [tf-keras-nightly]: Timeout reached during download
+[2024-04-06 12:12:35] WARNING root fetch - processPackages [libyang]: Timeout reached during download
+[2024-04-06 12:12:35] INFO root fetch - processPackages [libyang]: executing diffoscope
+[2024-04-06 12:12:35] INFO root fetch - processPackages [libyang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libyang-2.8.4.tar.gz tmp/libyang-3.0.0.tar.gz --markdown 20240406/l/libyang/2.8.4-3.0.0/diff.md --exclude *.pyd
+[2024-04-06 12:12:35] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/52/5c/0da95ae2f020f18662a405364ecbf6063f94386002c7d19903e50473dfb2/tf_keras-nightly-2.17.0.dev2024040609.tar.gz
+[2024-04-06 12:12:35] WARNING root fetch - processPackages [tf-keras-nightly]: Timeout reached during download
+[2024-04-06 12:12:35] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-04-06 12:12:35] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras-nightly-2.17.0.dev2024040409.tar.gz tmp/tf_keras-nightly-2.17.0.dev2024040609.tar.gz --markdown 20240406/t/tf-keras-nightly/2.17.0.dev2024040409-2.17.0.dev2024040609/diff.md --exclude *.pyd
+[2024-04-06 12:12:36] INFO root fetch - processPackages [libyang]: Remove: archive file [/home/abi/fetcher/tmp/libyang-2.8.4.tar.gz]
+[2024-04-06 12:12:36] INFO root fetch - processPackages [libyang]: Remove: archive file [/home/abi/fetcher/tmp/libyang-3.0.0.tar.gz]
+[2024-04-06 12:12:36] INFO root fetch - main [MainThread]: End processing [libyang]: success
+[2024-04-06 12:12:38] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024040409.tar.gz]
+[2024-04-06 12:12:38] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras-nightly-2.17.0.dev2024040609.tar.gz]
+[2024-04-06 12:12:38] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-04-06 12:12:38] INFO root fetch - main [MainThread]: Store serial: [22647193]
