@@ -20784,3 +20784,23 @@ EOFError: EOF read where object expected
 [2024-04-06 19:32:05] WARNING root fetch - processPackages [SMsfan]: Skipping, unable to determine old version
 [2024-04-06 19:32:05] INFO root fetch - main [MainThread]: End processing [SMsfan] error
 [2024-04-06 19:32:05] INFO root fetch - main [MainThread]: Store serial: [22649739]
+[2024-04-06 19:34:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649739]
+[2024-04-06 19:34:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 19:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: file-iter
+[2024-04-06 19:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lingoqa-dataset
+[2024-04-06 19:34:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: networkinfotranslator
+[2024-04-06 19:34:14] WARNING root fetch - processPackages [file-iter]: Skipping, unable to determine old version
+[2024-04-06 19:34:14] WARNING root fetch - processPackages [lingoqa-dataset]: Skipping, unable to determine old version
+[2024-04-06 19:34:14] INFO root fetch - main [MainThread]: End processing [file-iter] error
+[2024-04-06 19:34:14] INFO root fetch - main [MainThread]: End processing [lingoqa-dataset] error
+[2024-04-06 19:34:14] INFO root fetch - processPackages [networkinfotranslator]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 19:34:14] INFO root fetch - processPackages [networkinfotranslator]: Downloading https://files.pythonhosted.org/packages/f6/91/9b6e0195eddc39e21cd8cf349f1b0d53faf6cc5c2b8871a67a5597fea7bf/networkinfotranslator-0.0.7-py3-none-any.whl
+[2024-04-06 19:34:14] WARNING root fetch - processPackages [networkinfotranslator]: Timeout reached during download
+[2024-04-06 19:34:14] INFO root fetch - processPackages [networkinfotranslator]: Downloading https://files.pythonhosted.org/packages/f8/65/06bf6cb06c862e77b23a21bfa2bd4f27cf9d4396c92ecc222d30884a96fa/networkinfotranslator-0.0.8-py3-none-any.whl
+[2024-04-06 19:34:14] WARNING root fetch - processPackages [networkinfotranslator]: Timeout reached during download
+[2024-04-06 19:34:14] INFO root fetch - processPackages [networkinfotranslator]: executing diffoscope
+[2024-04-06 19:34:14] INFO root fetch - processPackages [networkinfotranslator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/networkinfotranslator-0.0.7-py3-none-any.whl.zip tmp/networkinfotranslator-0.0.8-py3-none-any.whl.zip --markdown 20240406/n/networkinfotranslator/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 19:34:15] INFO root fetch - processPackages [networkinfotranslator]: Remove: archive file [/home/abi/fetcher/tmp/networkinfotranslator-0.0.7-py3-none-any.whl.zip]
+[2024-04-06 19:34:15] INFO root fetch - processPackages [networkinfotranslator]: Remove: archive file [/home/abi/fetcher/tmp/networkinfotranslator-0.0.8-py3-none-any.whl.zip]
+[2024-04-06 19:34:15] INFO root fetch - main [MainThread]: End processing [networkinfotranslator]: success
+[2024-04-06 19:34:15] INFO root fetch - main [MainThread]: Store serial: [22649751]
