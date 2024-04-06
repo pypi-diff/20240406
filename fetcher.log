@@ -8730,3 +8730,39 @@
 [2024-04-06 05:28:13] INFO root fetch - processPackages [dgenerate]: Remove: archive file [/home/abi/fetcher/tmp/dgenerate-3.2.0.tar.gz]
 [2024-04-06 05:28:13] INFO root fetch - main [MainThread]: End processing [dgenerate]: success
 [2024-04-06 05:28:13] INFO root fetch - main [MainThread]: Store serial: [22645247]
+[2024-04-06 05:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645247]
+[2024-04-06 05:30:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 05:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pluggy-sdk
+[2024-04-06 05:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nlp-nightly
+[2024-04-06 05:30:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-chikari-economy
+[2024-04-06 05:30:22] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024040503] Old Version: [0.9.0.dev2024040403]
+[2024-04-06 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/86/1a/b88b08ec9d84bb99c9377f8781f2171f6e1518cc413e37687e33b1638dcb/keras-nlp-nightly-0.9.0.dev2024040403.tar.gz
+[2024-04-06 05:30:23] INFO root fetch - processPackages [pluggy-sdk]: New version: [1.0.0.post1] Old Version: [1.0.0]
+[2024-04-06 05:30:23] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 05:30:23] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Downloading https://files.pythonhosted.org/packages/d6/58/a0b13d91580400826d22f448993feb77ee49840f1948bce16f043c08d630/nonebot_plugin_chikari_economy-0.0.4.tar.gz
+[2024-04-06 05:30:23] WARNING root fetch - processPackages [keras-nlp-nightly]: Timeout reached during download
+[2024-04-06 05:30:23] INFO root fetch - processPackages [pluggy-sdk]: Downloading https://files.pythonhosted.org/packages/bc/df/e2f248f119850b38846c1bd92c43e0c46f717ff096eb8a0743cf2bf959c8/pluggy-sdk-1.0.0.tar.gz
+[2024-04-06 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/71/ce/6fefd67a980a3c778f22bf18da10b880a810c4450916a454126681f34e41/keras-nlp-nightly-0.9.0.dev2024040503.tar.gz
+[2024-04-06 05:30:23] WARNING root fetch - processPackages [nonebot-plugin-chikari-economy]: Timeout reached during download
+[2024-04-06 05:30:23] WARNING root fetch - processPackages [pluggy-sdk]: Timeout reached during download
+[2024-04-06 05:30:23] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Downloading https://files.pythonhosted.org/packages/60/fc/14e83fc939ca544afd73ce34e17391979ff41cbe8676bd7087e5cab48740/nonebot_plugin_chikari_economy-0.0.5.tar.gz
+[2024-04-06 05:30:23] WARNING root fetch - processPackages [keras-nlp-nightly]: Timeout reached during download
+[2024-04-06 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-04-06 05:30:23] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040403.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024040503.tar.gz --markdown 20240406/k/keras-nlp-nightly/0.9.0.dev2024040403-0.9.0.dev2024040503/diff.md --exclude *.pyd
+[2024-04-06 05:30:23] INFO root fetch - processPackages [pluggy-sdk]: Downloading https://files.pythonhosted.org/packages/e5/6e/fdbf69b03df2bce169c8ab21bcef8ff6ccd0d6cce405cdd917344767d3ac/pluggy-sdk-1.0.0.post1.tar.gz
+[2024-04-06 05:30:23] WARNING root fetch - processPackages [nonebot-plugin-chikari-economy]: Timeout reached during download
+[2024-04-06 05:30:23] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: executing diffoscope
+[2024-04-06 05:30:23] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_chikari_economy-0.0.4.tar.gz tmp/nonebot_plugin_chikari_economy-0.0.5.tar.gz --markdown 20240406/n/nonebot-plugin-chikari-economy/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 05:30:23] WARNING root fetch - processPackages [pluggy-sdk]: Timeout reached during download
+[2024-04-06 05:30:23] INFO root fetch - processPackages [pluggy-sdk]: executing diffoscope
+[2024-04-06 05:30:23] INFO root fetch - processPackages [pluggy-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluggy-sdk-1.0.0.tar.gz tmp/pluggy-sdk-1.0.0.post1.tar.gz --markdown 20240406/p/pluggy-sdk/1.0.0-1.0.0.post1/diff.md --exclude *.pyd
+[2024-04-06 05:30:24] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_economy-0.0.4.tar.gz]
+[2024-04-06 05:30:24] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_economy-0.0.5.tar.gz]
+[2024-04-06 05:30:24] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chikari-economy]: success
+[2024-04-06 05:30:24] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040403.tar.gz]
+[2024-04-06 05:30:24] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040503.tar.gz]
+[2024-04-06 05:30:24] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-04-06 05:30:25] INFO root fetch - processPackages [pluggy-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pluggy-sdk-1.0.0.tar.gz]
+[2024-04-06 05:30:25] INFO root fetch - processPackages [pluggy-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pluggy-sdk-1.0.0.post1.tar.gz]
+[2024-04-06 05:30:25] INFO root fetch - main [MainThread]: End processing [pluggy-sdk]: success
+[2024-04-06 05:30:25] INFO root fetch - main [MainThread]: Store serial: [22645256]
