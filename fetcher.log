@@ -14774,3 +14774,61 @@
 [2024-04-06 13:20:57] INFO root fetch - processPackages [pulumi-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz]
 [2024-04-06 13:20:57] INFO root fetch - main [MainThread]: End processing [pulumi-digitalocean]: success
 [2024-04-06 13:20:57] INFO root fetch - main [MainThread]: Store serial: [22647492]
+[2024-04-06 13:23:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647492]
+[2024-04-06 13:23:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 13:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: modal-client
+[2024-04-06 13:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-ns1
+[2024-04-06 13:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AnyPathLib
+[2024-04-06 13:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-null
+[2024-04-06 13:23:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fleece-network
+[2024-04-06 13:23:06] INFO root fetch - processPackages [fleece-network]: New version: [0.2.0rc1] Old Version: [0.2.0rc0]
+[2024-04-06 13:23:06] INFO root fetch - processPackages [pulumi-null]: New version: [0.0.4a1712400287] Old Version: [0.0.4a1711779440]
+[2024-04-06 13:23:06] INFO root fetch - processPackages [AnyPathLib]: New version: [0.1] Old Version: [0.0.1]
+[2024-04-06 13:23:06] INFO root fetch - processPackages [pulumi-ns1]: New version: [3.3.0a1712400246] Old Version: [3.3.0a1712219894]
+[2024-04-06 13:23:06] INFO root fetch - processPackages [modal-client]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-06 13:23:06] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/d0/c2/c05a679647fc54f88ed4f2453aec5ec1ea866c5ddaf1d85b52981f84c662/modal_client-0.62.8-py3-none-any.whl
+[2024-04-06 13:23:06] INFO root fetch - processPackages [pulumi-ns1]: Downloading https://files.pythonhosted.org/packages/5d/91/f3fb7a7a262385d580dac35c471381da69d3585c92fb399a55d8f5fc3ada/pulumi_ns1-3.3.0a1712219894.tar.gz
+[2024-04-06 13:23:06] INFO root fetch - processPackages [fleece-network]: Downloading https://files.pythonhosted.org/packages/92/bf/2d0a8e11b6526ffb98f5f36b95c34cfa942f486c0b0183794006a29ccb98/fleece_network-0.2.0rc0.tar.gz
+[2024-04-06 13:23:06] INFO root fetch - processPackages [pulumi-null]: Downloading https://files.pythonhosted.org/packages/99/07/046b7003bab591481b2f822f6daf28cd6809e0e9a4a44807230d1d5a86e1/pulumi_null-0.0.4a1711779440.tar.gz
+[2024-04-06 13:23:06] INFO root fetch - processPackages [AnyPathLib]: Downloading https://files.pythonhosted.org/packages/07/bd/35ed697a2f18f362d7c6fce52d454759ba237618aa870d3ad3f7689c244d/AnyPathLib-0.0.1-py3-none-any.whl
+[2024-04-06 13:23:06] WARNING root fetch - processPackages [modal-client]: Timeout reached during download
+[2024-04-06 13:23:06] WARNING root fetch - processPackages [pulumi-ns1]: Timeout reached during download
+[2024-04-06 13:23:06] WARNING root fetch - processPackages [AnyPathLib]: Timeout reached during download
+[2024-04-06 13:23:06] WARNING root fetch - processPackages [fleece-network]: Timeout reached during download
+[2024-04-06 13:23:06] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/08/2d/ba9d3e39c32f579d689b9f619a197109b7086b3f8e0764e5eed9501a303e/modal_client-0.62.9-py3-none-any.whl
+[2024-04-06 13:23:06] WARNING root fetch - processPackages [pulumi-null]: Timeout reached during download
+[2024-04-06 13:23:06] INFO root fetch - processPackages [pulumi-ns1]: Downloading https://files.pythonhosted.org/packages/ff/f7/2bcf08b244fba3741c44b4e84f62b2dfa23dbcbde0e191c0d295d6c25bb4/pulumi_ns1-3.3.0a1712400246.tar.gz
+[2024-04-06 13:23:06] INFO root fetch - processPackages [fleece-network]: Downloading https://files.pythonhosted.org/packages/33/10/910823a536e0de987e7027fde525148d9c5378482917d733645ef4a4efec/fleece_network-0.2.0rc1.tar.gz
+[2024-04-06 13:23:06] INFO root fetch - processPackages [AnyPathLib]: Downloading https://files.pythonhosted.org/packages/02/2e/f4b56377dc6e53e6211b2343a09d51adc08725bbd1bb5b9e80d107e43a6d/AnyPathLib-0.1-py3-none-any.whl
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-null]: Downloading https://files.pythonhosted.org/packages/21/4e/fa21fcbb6d395cfd841e3112f10fd0151635916f709cad35a585962ae840/pulumi_null-0.0.4a1712400287.tar.gz
+[2024-04-06 13:23:07] WARNING root fetch - processPackages [modal-client]: Timeout reached during download
+[2024-04-06 13:23:07] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-04-06 13:23:07] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.8-py3-none-any.whl.zip tmp/modal_client-0.62.9-py3-none-any.whl.zip --markdown 20240406/m/modal-client/0.62.8-0.62.9/diff.md --exclude *.pyd
+[2024-04-06 13:23:07] WARNING root fetch - processPackages [pulumi-ns1]: Timeout reached during download
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-ns1]: executing diffoscope
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-ns1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ns1-3.3.0a1712219894.tar.gz tmp/pulumi_ns1-3.3.0a1712400246.tar.gz --markdown 20240406/p/pulumi-ns1/3.3.0a1712219894-3.3.0a1712400246/diff.md --exclude *.pyd
+[2024-04-06 13:23:07] WARNING root fetch - processPackages [AnyPathLib]: Timeout reached during download
+[2024-04-06 13:23:07] INFO root fetch - processPackages [AnyPathLib]: executing diffoscope
+[2024-04-06 13:23:07] INFO root fetch - processPackages [AnyPathLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AnyPathLib-0.0.1-py3-none-any.whl.zip tmp/AnyPathLib-0.1-py3-none-any.whl.zip --markdown 20240406/A/AnyPathLib/0.0.1-0.1/diff.md --exclude *.pyd
+[2024-04-06 13:23:07] WARNING root fetch - processPackages [pulumi-null]: Timeout reached during download
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-null]: executing diffoscope
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-null]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_null-0.0.4a1711779440.tar.gz tmp/pulumi_null-0.0.4a1712400287.tar.gz --markdown 20240406/p/pulumi-null/0.0.4a1711779440-0.0.4a1712400287/diff.md --exclude *.pyd
+[2024-04-06 13:23:07] WARNING root fetch - processPackages [fleece-network]: Timeout reached during download
+[2024-04-06 13:23:07] INFO root fetch - processPackages [fleece-network]: executing diffoscope
+[2024-04-06 13:23:07] INFO root fetch - processPackages [fleece-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleece_network-0.2.0rc0.tar.gz tmp/fleece_network-0.2.0rc1.tar.gz --markdown 20240406/f/fleece-network/0.2.0rc0-0.2.0rc1/diff.md --exclude *.pyd
+[2024-04-06 13:23:07] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.8-py3-none-any.whl.zip]
+[2024-04-06 13:23:07] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.9-py3-none-any.whl.zip]
+[2024-04-06 13:23:07] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-04-06 13:23:07] INFO root fetch - processPackages [AnyPathLib]: Remove: archive file [/home/abi/fetcher/tmp/AnyPathLib-0.0.1-py3-none-any.whl.zip]
+[2024-04-06 13:23:07] INFO root fetch - processPackages [AnyPathLib]: Remove: archive file [/home/abi/fetcher/tmp/AnyPathLib-0.1-py3-none-any.whl.zip]
+[2024-04-06 13:23:07] INFO root fetch - main [MainThread]: End processing [AnyPathLib]: success
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-null]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_null-0.0.4a1711779440.tar.gz]
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-null]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_null-0.0.4a1712400287.tar.gz]
+[2024-04-06 13:23:07] INFO root fetch - main [MainThread]: End processing [pulumi-null]: success
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-ns1]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ns1-3.3.0a1712219894.tar.gz]
+[2024-04-06 13:23:07] INFO root fetch - processPackages [pulumi-ns1]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ns1-3.3.0a1712400246.tar.gz]
+[2024-04-06 13:23:07] INFO root fetch - main [MainThread]: End processing [pulumi-ns1]: success
+[2024-04-06 13:23:07] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.0rc0.tar.gz]
+[2024-04-06 13:23:07] INFO root fetch - processPackages [fleece-network]: Remove: archive file [/home/abi/fetcher/tmp/fleece_network-0.2.0rc1.tar.gz]
+[2024-04-06 13:23:07] INFO root fetch - main [MainThread]: End processing [fleece-network]: success
+[2024-04-06 13:23:07] INFO root fetch - main [MainThread]: Store serial: [22647505]
