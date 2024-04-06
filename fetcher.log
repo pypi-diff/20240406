@@ -23705,3 +23705,44 @@ EOFError: EOF read where object expected
 [2024-04-06 22:07:43] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern-greek-inflexion-2.0.1.tar.gz]
 [2024-04-06 22:07:43] INFO root fetch - main [MainThread]: End processing [modern-greek-inflexion]: success
 [2024-04-06 22:07:43] INFO root fetch - main [MainThread]: Store serial: [22650700]
+[2024-04-06 22:09:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650700]
+[2024-04-06 22:09:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 22:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprocketship
+[2024-04-06 22:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aim-ui
+[2024-04-06 22:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim
+[2024-04-06 22:09:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: junkie
+[2024-04-06 22:09:52] INFO root fetch - processPackages [sprocketship]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 22:09:52] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-04-06 22:09:52] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/a2/b9/cfc993ddba991738337815d9480edcc2fcd4ecba9e2190eb23410db2020f/sprocketship-0.1.1.tar.gz
+[2024-04-06 22:09:52] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-04-06 22:09:52] INFO root fetch - processPackages [junkie]: New version: [3.0.1] Old Version: [3.0.0.dev4]
+[2024-04-06 22:09:52] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-04-06 22:09:52] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-04-06 22:09:52] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 22:09:52] INFO root fetch - processPackages [junkie]: Downloading https://files.pythonhosted.org/packages/38/c8/cdba19754fcbe63817f2a23d300dafba61d73d3ed5bde47b86cbf0f34922/junkie-3.0.0.dev4.tar.gz
+[2024-04-06 22:09:52] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/4f/98/06e448db2195bc92ad82df747001fa95a4d3b671d3f77162d3db9156a03d/sprocketship-0.1.2.tar.gz
+[2024-04-06 22:09:52] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-04-06 22:09:52] WARNING root fetch - processPackages [junkie]: Timeout reached during download
+[2024-04-06 22:09:52] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 22:09:52] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 22:09:52] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.1.1.tar.gz tmp/sprocketship-0.1.2.tar.gz --markdown 20240406/s/sprocketship/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 22:09:53] INFO root fetch - processPackages [junkie]: Downloading https://files.pythonhosted.org/packages/e4/36/470a493c3f918fbf37a28964072951a5bafba59aeef5630a50fa6229a0ba/junkie-3.0.1.tar.gz
+[2024-04-06 22:09:53] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-04-06 22:09:53] WARNING root fetch - processPackages [junkie]: Timeout reached during download
+[2024-04-06 22:09:53] INFO root fetch - processPackages [junkie]: executing diffoscope
+[2024-04-06 22:09:53] INFO root fetch - processPackages [junkie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/junkie-3.0.0.dev4.tar.gz tmp/junkie-3.0.1.tar.gz --markdown 20240406/j/junkie/3.0.0.dev4-3.0.1/diff.md --exclude *.pyd
+[2024-04-06 22:09:53] WARNING root fetch - processPackages [aim]: Timeout reached during download
+[2024-04-06 22:09:53] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.1.tar.gz]
+[2024-04-06 22:09:53] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.2.tar.gz]
+[2024-04-06 22:09:53] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 22:09:53] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-04-06 22:09:53] INFO root fetch - processPackages [junkie]: Remove: archive file [/home/abi/fetcher/tmp/junkie-3.0.0.dev4.tar.gz]
+[2024-04-06 22:09:53] INFO root fetch - processPackages [junkie]: Remove: archive file [/home/abi/fetcher/tmp/junkie-3.0.1.tar.gz]
+[2024-04-06 22:09:53] INFO root fetch - main [MainThread]: End processing [junkie]: success
+[2024-04-06 22:09:53] WARNING root fetch - processPackages [aim]: Timeout reached during download
+[2024-04-06 22:09:53] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-04-06 22:09:53] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240406/a/aim/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2024-04-06 22:09:58] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-04-06 22:09:58] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-04-06 22:09:58] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-04-06 22:09:58] INFO root fetch - main [MainThread]: Store serial: [22650713]
