@@ -9177,3 +9177,28 @@
 [2024-04-06 06:12:44] INFO root fetch - processPackages [acstore]: Remove: archive file [/home/abi/fetcher/tmp/acstore-20240406.tar.gz]
 [2024-04-06 06:12:44] INFO root fetch - main [MainThread]: End processing [acstore]: success
 [2024-04-06 06:12:44] INFO root fetch - main [MainThread]: Store serial: [22645410]
+[2024-04-06 06:14:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645410]
+[2024-04-06 06:14:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 06:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyter-kernels
+[2024-04-06 06:14:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: istari
+[2024-04-06 06:14:52] INFO root fetch - processPackages [istari]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 06:14:52] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/b8/f5/0e681b333ecd60e7af09b04892fe26149d80555f5dab304af501eb9143be/istari-0.0.5.tar.gz
+[2024-04-06 06:14:52] INFO root fetch - processPackages [jupyter-kernels]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-04-06 06:14:52] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-06 06:14:52] INFO root fetch - processPackages [jupyter-kernels]: Downloading https://files.pythonhosted.org/packages/25/68/1c56fbd056f0233578a911bbe1529781e84e89f6d0ddef824f63826e00a8/jupyter_kernels-1.0.4-py3-none-any.whl
+[2024-04-06 06:14:52] INFO root fetch - processPackages [istari]: Downloading https://files.pythonhosted.org/packages/8a/a4/bb8cb0c0c52cc7c14467a3eacabcea90d1cf4dd097fd714f7546e53b9db6/istari-0.0.6.tar.gz
+[2024-04-06 06:14:53] WARNING root fetch - processPackages [istari]: Timeout reached during download
+[2024-04-06 06:14:53] INFO root fetch - processPackages [istari]: executing diffoscope
+[2024-04-06 06:14:53] INFO root fetch - processPackages [istari]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/istari-0.0.5.tar.gz tmp/istari-0.0.6.tar.gz --markdown 20240406/i/istari/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 06:14:53] WARNING root fetch - processPackages [jupyter-kernels]: Timeout reached during download
+[2024-04-06 06:14:53] INFO root fetch - processPackages [jupyter-kernels]: Downloading https://files.pythonhosted.org/packages/dc/ef/05e9235572961d513dbef452443455281b1376a81b6f995d014333b4f752/jupyter_kernels-1.0.5-py3-none-any.whl
+[2024-04-06 06:14:53] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.5.tar.gz]
+[2024-04-06 06:14:53] INFO root fetch - processPackages [istari]: Remove: archive file [/home/abi/fetcher/tmp/istari-0.0.6.tar.gz]
+[2024-04-06 06:14:53] INFO root fetch - main [MainThread]: End processing [istari]: success
+[2024-04-06 06:14:53] WARNING root fetch - processPackages [jupyter-kernels]: Timeout reached during download
+[2024-04-06 06:14:53] INFO root fetch - processPackages [jupyter-kernels]: executing diffoscope
+[2024-04-06 06:14:53] INFO root fetch - processPackages [jupyter-kernels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_kernels-1.0.4-py3-none-any.whl.zip tmp/jupyter_kernels-1.0.5-py3-none-any.whl.zip --markdown 20240406/j/jupyter-kernels/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2024-04-06 06:15:30] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.4-py3-none-any.whl.zip]
+[2024-04-06 06:15:30] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.5-py3-none-any.whl.zip]
+[2024-04-06 06:15:30] INFO root fetch - main [MainThread]: End processing [jupyter-kernels]: success
+[2024-04-06 06:15:30] INFO root fetch - main [MainThread]: Store serial: [22645450]
