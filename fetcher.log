@@ -20775,3 +20775,12 @@ EOFError: EOF read where object expected
 [2024-04-06 19:29:56] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.1.1.tar.gz]
 [2024-04-06 19:29:56] INFO root fetch - main [MainThread]: End processing [django-intra]: success
 [2024-04-06 19:29:56] INFO root fetch - main [MainThread]: Store serial: [22649731]
+[2024-04-06 19:32:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649731]
+[2024-04-06 19:32:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 19:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SMsfan
+[2024-04-06 19:32:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phasegen
+[2024-04-06 19:32:05] WARNING root fetch - processPackages [phasegen]: Skipping, unable to determine old version
+[2024-04-06 19:32:05] INFO root fetch - main [MainThread]: End processing [phasegen] error
+[2024-04-06 19:32:05] WARNING root fetch - processPackages [SMsfan]: Skipping, unable to determine old version
+[2024-04-06 19:32:05] INFO root fetch - main [MainThread]: End processing [SMsfan] error
+[2024-04-06 19:32:05] INFO root fetch - main [MainThread]: Store serial: [22649739]
