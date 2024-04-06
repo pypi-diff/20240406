@@ -9202,3 +9202,17 @@
 [2024-04-06 06:15:30] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.5-py3-none-any.whl.zip]
 [2024-04-06 06:15:30] INFO root fetch - main [MainThread]: End processing [jupyter-kernels]: success
 [2024-04-06 06:15:30] INFO root fetch - main [MainThread]: Store serial: [22645450]
+[2024-04-06 06:17:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645450]
+[2024-04-06 06:17:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 06:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yt-fts
+[2024-04-06 06:17:39] INFO root fetch - processPackages [yt-fts]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 06:17:39] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/a4/72/e5ed8aed67daafdeeaee77ce84706e7b284c03900bebc8b4c9a5418c9100/yt-fts-0.1.8.tar.gz
+[2024-04-06 06:17:39] WARNING root fetch - processPackages [yt-fts]: Timeout reached during download
+[2024-04-06 06:17:39] INFO root fetch - processPackages [yt-fts]: Downloading https://files.pythonhosted.org/packages/07/27/81af49bf3228838a5be25585fd9eafb45419bd52a1bd7d47660f8fd3f1e6/yt-fts-0.1.9.tar.gz
+[2024-04-06 06:17:39] WARNING root fetch - processPackages [yt-fts]: Timeout reached during download
+[2024-04-06 06:17:39] INFO root fetch - processPackages [yt-fts]: executing diffoscope
+[2024-04-06 06:17:39] INFO root fetch - processPackages [yt-fts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yt-fts-0.1.8.tar.gz tmp/yt-fts-0.1.9.tar.gz --markdown 20240406/y/yt-fts/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 06:17:40] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.8.tar.gz]
+[2024-04-06 06:17:40] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.9.tar.gz]
+[2024-04-06 06:17:40] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
+[2024-04-06 06:17:40] INFO root fetch - main [MainThread]: Store serial: [22645480]
