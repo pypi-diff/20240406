@@ -17735,3 +17735,53 @@ EOFError: EOF read where object expected
 [2024-04-06 16:29:57] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.2.9.tar.gz]
 [2024-04-06 16:29:57] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
 [2024-04-06 16:29:57] INFO root fetch - main [MainThread]: Store serial: [22648672]
+[2024-04-06 16:32:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648672]
+[2024-04-06 16:32:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 16:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: filetrack
+[2024-04-06 16:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: causy
+[2024-04-06 16:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fastapi-pagination
+[2024-04-06 16:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitlabform
+[2024-04-06 16:32:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dash-dataflow-components
+[2024-04-06 16:32:06] WARNING root fetch - processPackages [filetrack]: Skipping, unable to determine old version
+[2024-04-06 16:32:06] INFO root fetch - main [MainThread]: End processing [filetrack] error
+[2024-04-06 16:32:06] INFO root fetch - processPackages [fastapi-pagination]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-04-06 16:32:06] INFO root fetch - processPackages [causy]: New version: [0.0.9] Old Version: [0.0.35]
+[2024-04-06 16:32:06] INFO root fetch - processPackages [gitlabform]: New version: [3.9.3] Old Version: [3.9.2]
+[2024-04-06 16:32:06] INFO root fetch - processPackages [dash-dataflow-components]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 16:32:07] INFO root fetch - processPackages [causy]: Downloading https://files.pythonhosted.org/packages/4e/b9/55bef41c78951da627dd45fd9864871eb46987f5eded4f72e3c0f1f93691/causy-0.0.35.tar.gz
+[2024-04-06 16:32:07] INFO root fetch - processPackages [fastapi-pagination]: Downloading https://files.pythonhosted.org/packages/54/38/52db6bdf19417602084dfda74d5caf2af9752242fa29fcc26a8c8d55668c/fastapi-pagination-0.9.2.tar.gz
+[2024-04-06 16:32:07] INFO root fetch - processPackages [gitlabform]: Downloading https://files.pythonhosted.org/packages/b9/3d/05b56101c44420b0974500a17bca3ba2d63ca035abe51aeb0a6de23af008/gitlabform-3.9.2.tar.gz
+[2024-04-06 16:32:07] INFO root fetch - processPackages [dash-dataflow-components]: Downloading https://files.pythonhosted.org/packages/c3/5a/187ee2c4c3411c19d484648ebb3869e6d8f45b186f5c69d0e8491826ba1c/dash_dataflow_components-0.0.7.tar.gz
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [fastapi-pagination]: Timeout reached during download
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [causy]: Timeout reached during download
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [gitlabform]: Timeout reached during download
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [dash-dataflow-components]: Timeout reached during download
+[2024-04-06 16:32:07] INFO root fetch - processPackages [causy]: Downloading https://files.pythonhosted.org/packages/4f/4e/4fb75a3453060792028693135119c0f7ec6bb867aad54e55174d73e7e50d/causy-0.0.9.tar.gz
+[2024-04-06 16:32:07] INFO root fetch - processPackages [gitlabform]: Downloading https://files.pythonhosted.org/packages/ca/a9/50c540712cd74c56cdd43cd08dee2fd6e8f708ff574498bec97d7ab8c210/gitlabform-3.9.3.tar.gz
+[2024-04-06 16:32:07] INFO root fetch - processPackages [fastapi-pagination]: Downloading https://files.pythonhosted.org/packages/ae/72/c53269908968568bb661a08b6faf00ce7b8219af0f9541920ed5bcd83724/fastapi-pagination-0.9.3.tar.gz
+[2024-04-06 16:32:07] INFO root fetch - processPackages [dash-dataflow-components]: Downloading https://files.pythonhosted.org/packages/27/41/807472d8f5fded2af3c19eedc0a0254e1a0b911260e8d72ffec00be6e7da/dash_dataflow_components-0.0.8.tar.gz
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [causy]: Timeout reached during download
+[2024-04-06 16:32:07] INFO root fetch - processPackages [causy]: executing diffoscope
+[2024-04-06 16:32:07] INFO root fetch - processPackages [causy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causy-0.0.35.tar.gz tmp/causy-0.0.9.tar.gz --markdown 20240406/c/causy/0.0.35-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [fastapi-pagination]: Timeout reached during download
+[2024-04-06 16:32:07] INFO root fetch - processPackages [fastapi-pagination]: executing diffoscope
+[2024-04-06 16:32:07] INFO root fetch - processPackages [fastapi-pagination]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-pagination-0.9.2.tar.gz tmp/fastapi-pagination-0.9.3.tar.gz --markdown 20240406/f/fastapi-pagination/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [gitlabform]: Timeout reached during download
+[2024-04-06 16:32:07] INFO root fetch - processPackages [gitlabform]: executing diffoscope
+[2024-04-06 16:32:07] INFO root fetch - processPackages [gitlabform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitlabform-3.9.2.tar.gz tmp/gitlabform-3.9.3.tar.gz --markdown 20240406/g/gitlabform/3.9.2-3.9.3/diff.md --exclude *.pyd
+[2024-04-06 16:32:07] WARNING root fetch - processPackages [dash-dataflow-components]: Timeout reached during download
+[2024-04-06 16:32:07] INFO root fetch - processPackages [dash-dataflow-components]: executing diffoscope
+[2024-04-06 16:32:07] INFO root fetch - processPackages [dash-dataflow-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_dataflow_components-0.0.7.tar.gz tmp/dash_dataflow_components-0.0.8.tar.gz --markdown 20240406/d/dash-dataflow-components/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 16:32:08] INFO root fetch - processPackages [causy]: Remove: archive file [/home/abi/fetcher/tmp/causy-0.0.35.tar.gz]
+[2024-04-06 16:32:08] INFO root fetch - processPackages [causy]: Remove: archive file [/home/abi/fetcher/tmp/causy-0.0.9.tar.gz]
+[2024-04-06 16:32:08] INFO root fetch - main [MainThread]: End processing [causy]: success
+[2024-04-06 16:32:08] INFO root fetch - processPackages [fastapi-pagination]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-pagination-0.9.2.tar.gz]
+[2024-04-06 16:32:08] INFO root fetch - processPackages [fastapi-pagination]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-pagination-0.9.3.tar.gz]
+[2024-04-06 16:32:08] INFO root fetch - main [MainThread]: End processing [fastapi-pagination]: success
+[2024-04-06 16:32:08] INFO root fetch - processPackages [gitlabform]: Remove: archive file [/home/abi/fetcher/tmp/gitlabform-3.9.2.tar.gz]
+[2024-04-06 16:32:08] INFO root fetch - processPackages [gitlabform]: Remove: archive file [/home/abi/fetcher/tmp/gitlabform-3.9.3.tar.gz]
+[2024-04-06 16:32:08] INFO root fetch - main [MainThread]: End processing [gitlabform]: success
+[2024-04-06 16:32:29] INFO root fetch - processPackages [dash-dataflow-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_dataflow_components-0.0.7.tar.gz]
+[2024-04-06 16:32:29] INFO root fetch - processPackages [dash-dataflow-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_dataflow_components-0.0.8.tar.gz]
+[2024-04-06 16:32:29] INFO root fetch - main [MainThread]: End processing [dash-dataflow-components]: success
+[2024-04-06 16:32:29] INFO root fetch - main [MainThread]: Store serial: [22648686]
