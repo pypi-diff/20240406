@@ -12036,3 +12036,33 @@
 [2024-04-06 09:53:40] INFO root fetch - processPackages [smallgraphlib]: Remove: archive file [/home/abi/fetcher/tmp/smallgraphlib-0.9.0.tar.gz]
 [2024-04-06 09:53:40] INFO root fetch - main [MainThread]: End processing [smallgraphlib]: success
 [2024-04-06 09:53:40] INFO root fetch - main [MainThread]: Store serial: [22646545]
+[2024-04-06 09:55:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646545]
+[2024-04-06 09:55:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 09:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cohort-creator
+[2024-04-06 09:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sirji-agents
+[2024-04-06 09:55:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unifyai
+[2024-04-06 09:55:49] INFO root fetch - processPackages [unifyai]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-04-06 09:55:49] INFO root fetch - processPackages [sirji-agents]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 09:55:49] INFO root fetch - processPackages [unifyai]: Downloading https://files.pythonhosted.org/packages/fd/75/81dee955b1a3a769b6b6a047f8f858c1bd1c6320fd507f86b1b26b72b837/unifyai-0.4.0.tar.gz
+[2024-04-06 09:55:49] INFO root fetch - processPackages [cohort-creator]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-06 09:55:50] WARNING root fetch - processPackages [unifyai]: Timeout reached during download
+[2024-04-06 09:55:50] INFO root fetch - processPackages [sirji-agents]: Downloading https://files.pythonhosted.org/packages/b3/5f/e94cc45ff6ae73814ab9c995ecb3f23935035430ed12404c6869f3101639/sirji-agents-0.0.8.tar.gz
+[2024-04-06 09:55:50] INFO root fetch - processPackages [unifyai]: Downloading https://files.pythonhosted.org/packages/68/18/9b4c5b9b7b2ba727ce90a4e447f0356aaa25823af433b829763594372746/unifyai-0.5.0.tar.gz
+[2024-04-06 09:55:50] INFO root fetch - processPackages [cohort-creator]: Downloading https://files.pythonhosted.org/packages/b4/1b/3e5a3ab3438470ff8f8d1b181afd8eab4cecf1fbac28b6f9cadfb8d6353e/cohort_creator-0.2.0.tar.gz
+[2024-04-06 09:55:50] WARNING root fetch - processPackages [sirji-agents]: Timeout reached during download
+[2024-04-06 09:55:50] WARNING root fetch - processPackages [unifyai]: Timeout reached during download
+[2024-04-06 09:55:50] INFO root fetch - processPackages [unifyai]: executing diffoscope
+[2024-04-06 09:55:50] INFO root fetch - processPackages [unifyai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unifyai-0.4.0.tar.gz tmp/unifyai-0.5.0.tar.gz --markdown 20240406/u/unifyai/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2024-04-06 09:55:50] INFO root fetch - processPackages [sirji-agents]: Downloading https://files.pythonhosted.org/packages/2d/21/2f8f58a9460b37b13e4747c65a5e850216adf0cab4b50990fb72115eb4dd/sirji-agents-0.0.9.tar.gz
+[2024-04-06 09:55:50] WARNING root fetch - processPackages [cohort-creator]: Skipping package: exceeds size limit 15207627>=10485760
+[2024-04-06 09:55:50] INFO root fetch - main [MainThread]: End processing [cohort-creator] error
+[2024-04-06 09:55:50] WARNING root fetch - processPackages [sirji-agents]: Timeout reached during download
+[2024-04-06 09:55:50] INFO root fetch - processPackages [sirji-agents]: executing diffoscope
+[2024-04-06 09:55:50] INFO root fetch - processPackages [sirji-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sirji-agents-0.0.8.tar.gz tmp/sirji-agents-0.0.9.tar.gz --markdown 20240406/s/sirji-agents/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 09:55:50] INFO root fetch - processPackages [unifyai]: Remove: archive file [/home/abi/fetcher/tmp/unifyai-0.4.0.tar.gz]
+[2024-04-06 09:55:50] INFO root fetch - processPackages [unifyai]: Remove: archive file [/home/abi/fetcher/tmp/unifyai-0.5.0.tar.gz]
+[2024-04-06 09:55:50] INFO root fetch - main [MainThread]: End processing [unifyai]: success
+[2024-04-06 09:55:50] INFO root fetch - processPackages [sirji-agents]: Remove: archive file [/home/abi/fetcher/tmp/sirji-agents-0.0.8.tar.gz]
+[2024-04-06 09:55:50] INFO root fetch - processPackages [sirji-agents]: Remove: archive file [/home/abi/fetcher/tmp/sirji-agents-0.0.9.tar.gz]
+[2024-04-06 09:55:50] INFO root fetch - main [MainThread]: End processing [sirji-agents]: success
+[2024-04-06 09:55:50] INFO root fetch - main [MainThread]: Store serial: [22646553]
