@@ -20946,3 +20946,49 @@ EOFError: EOF read where object expected
 [2024-04-06 19:42:50] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.3.tar.gz]
 [2024-04-06 19:42:50] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
 [2024-04-06 19:42:50] INFO root fetch - main [MainThread]: Store serial: [22649828]
+[2024-04-06 19:44:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649828]
+[2024-04-06 19:44:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 19:47:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649828]
+[2024-04-06 19:47:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 19:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moval
+[2024-04-06 19:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xl2roefact
+[2024-04-06 19:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spiffe
+[2024-04-06 19:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-master
+[2024-04-06 19:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lingoqa-dataset
+[2024-04-06 19:47:05] WARNING root fetch - processPackages [lingoqa-dataset]: Skipping, unable to determine old version
+[2024-04-06 19:47:05] INFO root fetch - main [MainThread]: End processing [lingoqa-dataset] error
+[2024-04-06 19:47:05] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20240405.6.48.900258] Old Version: [20240405.21.30.363358]
+[2024-04-06 19:47:05] INFO root fetch - processPackages [moval]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-06 19:47:05] INFO root fetch - processPackages [spiffe]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 19:47:05] INFO root fetch - processPackages [xl2roefact]: New version: [0.5.4] Old Version: [0.5.3rc1]
+[2024-04-06 19:47:05] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/46/3a/3caa7fcc3926f6bf2d935ddcc0e806e99feb7430778b02c4a4a781fa2ba5/certora-cli-alpha-master-20240405.21.30.363358.tar.gz
+[2024-04-06 19:47:05] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 14478013>=10485760
+[2024-04-06 19:47:05] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2024-04-06 19:47:05] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/29/eb/e18ee2ec17a40ed8b0164a528278dc7f8c7dd6216f26b43e2ab1491137df/moval-0.2.6.tar.gz
+[2024-04-06 19:47:05] INFO root fetch - processPackages [spiffe]: Downloading https://files.pythonhosted.org/packages/4d/8b/5ed1bec820f650abfde80debd19e6afb5bda9b573983034df277472f0bca/spiffe-0.1.1.tar.gz
+[2024-04-06 19:47:05] INFO root fetch - processPackages [xl2roefact]: Downloading https://files.pythonhosted.org/packages/bf/8e/136721057d0443d54b98eea9a36b040a073ef30f99f667b484b30164c9e4/xl2roefact-0.5.3rc1.tar.gz
+[2024-04-06 19:47:05] WARNING root fetch - processPackages [moval]: Timeout reached during download
+[2024-04-06 19:47:05] WARNING root fetch - processPackages [spiffe]: Timeout reached during download
+[2024-04-06 19:47:05] WARNING root fetch - processPackages [xl2roefact]: Timeout reached during download
+[2024-04-06 19:47:05] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/99/04/ebdefd68bc29baa6fef495b2db8ec3569036036148f3954c58625f88df8c/moval-0.2.7.tar.gz
+[2024-04-06 19:47:05] INFO root fetch - processPackages [spiffe]: Downloading https://files.pythonhosted.org/packages/4a/34/5f2394c06fa9793154dd572f4c1b94bb8cd4f35f8dbf6a889920728be873/spiffe-0.1.2.tar.gz
+[2024-04-06 19:47:06] WARNING root fetch - processPackages [spiffe]: Timeout reached during download
+[2024-04-06 19:47:06] WARNING root fetch - processPackages [moval]: Timeout reached during download
+[2024-04-06 19:47:06] INFO root fetch - processPackages [spiffe]: executing diffoscope
+[2024-04-06 19:47:06] INFO root fetch - processPackages [spiffe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiffe-0.1.1.tar.gz tmp/spiffe-0.1.2.tar.gz --markdown 20240406/s/spiffe/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 19:47:06] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-04-06 19:47:06] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.2.6.tar.gz tmp/moval-0.2.7.tar.gz --markdown 20240406/m/moval/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2024-04-06 19:47:06] INFO root fetch - processPackages [xl2roefact]: Downloading https://files.pythonhosted.org/packages/26/58/72caed19b7fe52282fd1ad6f68485171ca2cea57dad60ccd0851dc9e2571/xl2roefact-0.5.4.tar.gz
+[2024-04-06 19:47:06] WARNING root fetch - processPackages [xl2roefact]: Timeout reached during download
+[2024-04-06 19:47:06] INFO root fetch - processPackages [xl2roefact]: executing diffoscope
+[2024-04-06 19:47:06] INFO root fetch - processPackages [xl2roefact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xl2roefact-0.5.3rc1.tar.gz tmp/xl2roefact-0.5.4.tar.gz --markdown 20240406/x/xl2roefact/0.5.3rc1-0.5.4/diff.md --exclude *.pyd
+[2024-04-06 19:47:06] INFO root fetch - processPackages [spiffe]: Remove: archive file [/home/abi/fetcher/tmp/spiffe-0.1.1.tar.gz]
+[2024-04-06 19:47:06] INFO root fetch - processPackages [spiffe]: Remove: archive file [/home/abi/fetcher/tmp/spiffe-0.1.2.tar.gz]
+[2024-04-06 19:47:06] INFO root fetch - main [MainThread]: End processing [spiffe]: success
+[2024-04-06 19:47:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.2.6.tar.gz]
+[2024-04-06 19:47:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.2.7.tar.gz]
+[2024-04-06 19:47:06] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-04-06 19:47:06] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.5.3rc1.tar.gz]
+[2024-04-06 19:47:06] INFO root fetch - processPackages [xl2roefact]: Remove: archive file [/home/abi/fetcher/tmp/xl2roefact-0.5.4.tar.gz]
+[2024-04-06 19:47:06] INFO root fetch - main [MainThread]: End processing [xl2roefact]: success
+[2024-04-06 19:47:06] INFO root fetch - main [MainThread]: Store serial: [22649845]
