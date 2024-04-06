@@ -11307,3 +11307,9 @@
 [2024-04-06 08:45:26] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.7-py3-none-any.whl.zip]
 [2024-04-06 08:45:26] INFO root fetch - main [MainThread]: End processing [jupyter-kernels]: success
 [2024-04-06 08:45:26] INFO root fetch - main [MainThread]: Store serial: [22646151]
+[2024-04-06 08:47:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646151]
+[2024-04-06 08:47:34] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 08:47:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secvision-proxysupport-linux-x64
+[2024-04-06 08:47:34] WARNING root fetch - processPackages [secvision-proxysupport-linux-x64]: Skipping, unable to determine old version
+[2024-04-06 08:47:34] INFO root fetch - main [MainThread]: End processing [secvision-proxysupport-linux-x64] error
+[2024-04-06 08:47:34] INFO root fetch - main [MainThread]: Store serial: [22646155]
