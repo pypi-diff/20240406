@@ -15794,3 +15794,17 @@ EOFError: EOF read where object expected
 [2024-04-06 14:26:41] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.6.tar.gz]
 [2024-04-06 14:26:41] INFO root fetch - main [MainThread]: End processing [pydmt]: success
 [2024-04-06 14:26:41] INFO root fetch - main [MainThread]: Store serial: [22647801]
+[2024-04-06 14:28:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647801]
+[2024-04-06 14:28:50] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 14:28:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: direnumerate
+[2024-04-06 14:28:50] INFO root fetch - processPackages [direnumerate]: New version: [3.2rc2] Old Version: [3.2rc1]
+[2024-04-06 14:28:50] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/3e/37/f0eaa5cc2e2e69314f15c1aa5ba0c84d834692ab11baeb538b0e3717c183/direnumerate-3.2rc1.tar.gz
+[2024-04-06 14:28:50] WARNING root fetch - processPackages [direnumerate]: Timeout reached during download
+[2024-04-06 14:28:50] INFO root fetch - processPackages [direnumerate]: Downloading https://files.pythonhosted.org/packages/1d/fd/9b041cd9dcb1381a97555bd15f029a8638efb8be61bac57eb5fd011c1634/direnumerate-3.2rc2.tar.gz
+[2024-04-06 14:28:50] WARNING root fetch - processPackages [direnumerate]: Timeout reached during download
+[2024-04-06 14:28:50] INFO root fetch - processPackages [direnumerate]: executing diffoscope
+[2024-04-06 14:28:50] INFO root fetch - processPackages [direnumerate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/direnumerate-3.2rc1.tar.gz tmp/direnumerate-3.2rc2.tar.gz --markdown 20240406/d/direnumerate/3.2rc1-3.2rc2/diff.md --exclude *.pyd
+[2024-04-06 14:28:51] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.2rc1.tar.gz]
+[2024-04-06 14:28:51] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.2rc2.tar.gz]
+[2024-04-06 14:28:51] INFO root fetch - main [MainThread]: End processing [direnumerate]: success
+[2024-04-06 14:28:51] INFO root fetch - main [MainThread]: Store serial: [22647805]
