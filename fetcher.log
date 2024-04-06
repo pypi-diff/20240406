@@ -10373,3 +10373,28 @@
 [2024-04-06 07:06:20] INFO root fetch - processPackages [load-atoms]: Remove: archive file [/home/abi/fetcher/tmp/load-atoms-0.2.9.tar.gz]
 [2024-04-06 07:06:20] INFO root fetch - main [MainThread]: End processing [load-atoms]: success
 [2024-04-06 07:06:20] INFO root fetch - main [MainThread]: Store serial: [22645813]
+[2024-04-06 07:08:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645813]
+[2024-04-06 07:08:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 07:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: expr-codegen
+[2024-04-06 07:08:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seacrowd
+[2024-04-06 07:08:29] INFO root fetch - processPackages [expr-codegen]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-04-06 07:08:29] INFO root fetch - processPackages [seacrowd]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 07:08:29] INFO root fetch - processPackages [expr-codegen]: Downloading https://files.pythonhosted.org/packages/79/59/afae9be5c7ff09ae1909b7c8a6595f7586034d2c51ee43603013c5498d28/expr_codegen-0.6.0.tar.gz
+[2024-04-06 07:08:29] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/21/18/646a4448e85ecdd9129518bc41b78c3bc5857b5e1c5ef927139d3d16a1fe/seacrowd-0.0.1.tar.gz
+[2024-04-06 07:08:29] WARNING root fetch - processPackages [expr-codegen]: Timeout reached during download
+[2024-04-06 07:08:29] WARNING root fetch - processPackages [seacrowd]: Timeout reached during download
+[2024-04-06 07:08:30] INFO root fetch - processPackages [expr-codegen]: Downloading https://files.pythonhosted.org/packages/43/57/b0433d48cf62111de636c9e349176a1f3cd488f478d6daa537643c7db114/expr_codegen-0.6.1.tar.gz
+[2024-04-06 07:08:30] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/b6/79/09364be8d0ffae4d4bb5bdbc755f4b46078957703c7425bc21ff9e331939/seacrowd-0.0.2.tar.gz
+[2024-04-06 07:08:30] WARNING root fetch - processPackages [expr-codegen]: Timeout reached during download
+[2024-04-06 07:08:30] INFO root fetch - processPackages [expr-codegen]: executing diffoscope
+[2024-04-06 07:08:30] INFO root fetch - processPackages [expr-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/expr_codegen-0.6.0.tar.gz tmp/expr_codegen-0.6.1.tar.gz --markdown 20240406/e/expr-codegen/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2024-04-06 07:08:30] WARNING root fetch - processPackages [seacrowd]: Timeout reached during download
+[2024-04-06 07:08:30] INFO root fetch - processPackages [seacrowd]: executing diffoscope
+[2024-04-06 07:08:30] INFO root fetch - processPackages [seacrowd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seacrowd-0.0.1.tar.gz tmp/seacrowd-0.0.2.tar.gz --markdown 20240406/s/seacrowd/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 07:08:30] INFO root fetch - processPackages [expr-codegen]: Remove: archive file [/home/abi/fetcher/tmp/expr_codegen-0.6.0.tar.gz]
+[2024-04-06 07:08:30] INFO root fetch - processPackages [expr-codegen]: Remove: archive file [/home/abi/fetcher/tmp/expr_codegen-0.6.1.tar.gz]
+[2024-04-06 07:08:30] INFO root fetch - main [MainThread]: End processing [expr-codegen]: success
+[2024-04-06 07:08:32] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.1.tar.gz]
+[2024-04-06 07:08:32] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.2.tar.gz]
+[2024-04-06 07:08:32] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
+[2024-04-06 07:08:32] INFO root fetch - main [MainThread]: Store serial: [22645818]
