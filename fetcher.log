@@ -23050,3 +23050,28 @@ EOFError: EOF read where object expected
 [2024-04-06 21:30:16] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio-sdk-5.0.3.tar.gz]
 [2024-04-06 21:30:16] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
 [2024-04-06 21:30:16] INFO root fetch - main [MainThread]: Store serial: [22650492]
+[2024-04-06 21:32:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650492]
+[2024-04-06 21:32:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 21:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ffconverter
+[2024-04-06 21:32:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TokenProbs
+[2024-04-06 21:32:24] INFO root fetch - processPackages [TokenProbs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 21:32:24] INFO root fetch - processPackages [ffconverter]: New version: [2.4.0] Old Version: [2.3.2]
+[2024-04-06 21:32:24] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/f5/3f/552d0f2ca9b5d9b5dee0057724885f844c83896f97bec43eb7c0acfafec1/TokenProbs-0.0.8.tar.gz
+[2024-04-06 21:32:24] INFO root fetch - processPackages [ffconverter]: Downloading https://files.pythonhosted.org/packages/32/e4/d13910db06370fc1710e4b831131c62cf49f3d7bbce950de86431ca809b1/ffconverter-2.3.2.tar.gz
+[2024-04-06 21:32:25] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 21:32:25] WARNING root fetch - processPackages [ffconverter]: Timeout reached during download
+[2024-04-06 21:32:25] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/29/ba/735a795841268a89d2be19af5ef66f193d7169a133194e72569ecf328149/TokenProbs-0.0.9.tar.gz
+[2024-04-06 21:32:25] INFO root fetch - processPackages [ffconverter]: Downloading https://files.pythonhosted.org/packages/b8/70/733ac73841746c50717062c9b15be34a73bc209c0bedd8bf56cfe65deea8/ffconverter-2.4.0.tar.gz
+[2024-04-06 21:32:25] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 21:32:25] INFO root fetch - processPackages [TokenProbs]: executing diffoscope
+[2024-04-06 21:32:25] INFO root fetch - processPackages [TokenProbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TokenProbs-0.0.8.tar.gz tmp/TokenProbs-0.0.9.tar.gz --markdown 20240406/T/TokenProbs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 21:32:25] WARNING root fetch - processPackages [ffconverter]: Timeout reached during download
+[2024-04-06 21:32:25] INFO root fetch - processPackages [ffconverter]: executing diffoscope
+[2024-04-06 21:32:25] INFO root fetch - processPackages [ffconverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffconverter-2.3.2.tar.gz tmp/ffconverter-2.4.0.tar.gz --markdown 20240406/f/ffconverter/2.3.2-2.4.0/diff.md --exclude *.pyd
+[2024-04-06 21:32:25] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.8.tar.gz]
+[2024-04-06 21:32:25] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.9.tar.gz]
+[2024-04-06 21:32:25] INFO root fetch - main [MainThread]: End processing [TokenProbs]: success
+[2024-04-06 21:32:26] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.3.2.tar.gz]
+[2024-04-06 21:32:26] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.4.0.tar.gz]
+[2024-04-06 21:32:26] INFO root fetch - main [MainThread]: End processing [ffconverter]: success
+[2024-04-06 21:32:26] INFO root fetch - main [MainThread]: Store serial: [22650497]
