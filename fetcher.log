@@ -2036,3 +2036,83 @@
 [2024-04-06 02:15:42] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
 [2024-04-06 02:15:42] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
 [2024-04-06 02:15:42] INFO root fetch - main [MainThread]: Store serial: [22643266]
+[2024-04-06 02:17:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643266]
+[2024-04-06 02:17:50] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 02:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-04-06 02:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mystring
+[2024-04-06 02:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hatch-rest-api
+[2024-04-06 02:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-gitlab-runner
+[2024-04-06 02:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-04-06 02:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-budibase
+[2024-04-06 02:17:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: seam
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-04-06 02:17:51] INFO root fetch - processPackages [hatch-rest-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-04-06 02:17:51] INFO root fetch - processPackages [mystring]: New version: [0.2.99] Old Version: [0.2.98]
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-04-06 02:17:51] INFO root fetch - processPackages [seam]: New version: [0.1.0] Old Version: [0.0]
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-budibase]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 02:17:51] INFO root fetch - processPackages [hatch-rest-api]: Downloading https://files.pythonhosted.org/packages/53/e1/22f10781461d3819d6151025bff76a7f8a8d1e7d4d05e05819b8c7d16f69/hatch_rest_api-1.8.0.tar.gz
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-04-06 02:17:51] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/88/05/d0d140db04c0b270b7380359ce66dc3b26477e6b13a36cd8ced2e0442041/mystring-0.2.98-py3-none-any.whl
+[2024-04-06 02:17:51] INFO root fetch - processPackages [seam]: Downloading https://files.pythonhosted.org/packages/77/85/440454699f0175f9c72d18465653bb28ed36404e13a74239c08e1abaabcf/seam-0.0.tar.gz
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Timeout reached during download
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [cdk-gitlab-runner]: Timeout reached during download
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [mystring]: Timeout reached during download
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Timeout reached during download
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [seam]: Timeout reached during download
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/4f/0a/01c6428b0ea2e78dd2dd9e10aba3ba8252b6cd0992b5a90ea9ba90983551/cdk-budibase-0.0.98.tar.gz
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Timeout reached during download
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240406/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/diff.md --exclude *.pyd
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [cdk-gitlab-runner]: Timeout reached during download
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240406/c/cdk-gitlab-runner/2.2.98-2.2.99/diff.md --exclude *.pyd
+[2024-04-06 02:17:51] INFO root fetch - processPackages [mystring]: Downloading https://files.pythonhosted.org/packages/fa/f7/968c4dde1769f6b1b7f54bedafe67abf4ae2c5ff261eaed5f05032e85e87/mystring-0.2.99-py3-none-any.whl
+[2024-04-06 02:17:51] WARNING root fetch - processPackages [cdk-budibase]: Timeout reached during download
+[2024-04-06 02:17:51] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-04-06 02:17:51] INFO root fetch - processPackages [seam]: Downloading https://files.pythonhosted.org/packages/f4/1e/65f264870a4faab914b4f873070332a79f14b359453b7e530d50f7dbfd4f/seam-0.1.0.tar.gz
+[2024-04-06 02:17:52] WARNING root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Timeout reached during download
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-04-06 02:17:52] WARNING root fetch - processPackages [hatch-rest-api]: Timeout reached during download
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240406/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2024-04-06 02:17:52] WARNING root fetch - processPackages [seam]: Timeout reached during download
+[2024-04-06 02:17:52] INFO root fetch - processPackages [seam]: executing diffoscope
+[2024-04-06 02:17:52] INFO root fetch - processPackages [seam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seam-0.0.tar.gz tmp/seam-0.1.0.tar.gz --markdown 20240406/s/seam/0.0-0.1.0/diff.md --exclude *.pyd
+[2024-04-06 02:17:52] WARNING root fetch - processPackages [mystring]: Timeout reached during download
+[2024-04-06 02:17:52] INFO root fetch - processPackages [mystring]: executing diffoscope
+[2024-04-06 02:17:52] INFO root fetch - processPackages [mystring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mystring-0.2.98-py3-none-any.whl.zip tmp/mystring-0.2.99-py3-none-any.whl.zip --markdown 20240406/m/mystring/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-budibase]: Downloading https://files.pythonhosted.org/packages/3d/b1/10d1c8f0601959fd0771f3dc7b94b15e702b81729d74397e80ca3dd66c88/cdk-budibase-0.0.99.tar.gz
+[2024-04-06 02:17:52] INFO root fetch - processPackages [hatch-rest-api]: Downloading https://files.pythonhosted.org/packages/77/ab/7fffc2e61b25b4af9a272b49c1a99de6cb59dbb098dc0befa9e22e17e0f7/hatch_rest_api-1.9.0.tar.gz
+[2024-04-06 02:17:52] WARNING root fetch - processPackages [hatch-rest-api]: Timeout reached during download
+[2024-04-06 02:17:52] INFO root fetch - processPackages [hatch-rest-api]: executing diffoscope
+[2024-04-06 02:17:52] INFO root fetch - processPackages [hatch-rest-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch_rest_api-1.8.0.tar.gz tmp/hatch_rest_api-1.9.0.tar.gz --markdown 20240406/h/hatch-rest-api/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2024-04-06 02:17:52] WARNING root fetch - processPackages [cdk-budibase]: Timeout reached during download
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-budibase]: executing diffoscope
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-budibase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-budibase-0.0.98.tar.gz tmp/cdk-budibase-0.0.99.tar.gz --markdown 20240406/c/cdk-budibase/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-04-06 02:17:52] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.98-py3-none-any.whl.zip]
+[2024-04-06 02:17:52] INFO root fetch - processPackages [mystring]: Remove: archive file [/home/abi/fetcher/tmp/mystring-0.2.99-py3-none-any.whl.zip]
+[2024-04-06 02:17:52] INFO root fetch - main [MainThread]: End processing [mystring]: success
+[2024-04-06 02:17:52] INFO root fetch - processPackages [seam]: Remove: archive file [/home/abi/fetcher/tmp/seam-0.0.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - processPackages [seam]: Remove: archive file [/home/abi/fetcher/tmp/seam-0.1.0.tar.gz]
+[2024-04-06 02:17:52] INFO root fetch - main [MainThread]: End processing [seam]: success
+[2024-04-06 02:17:53] INFO root fetch - processPackages [hatch-rest-api]: Remove: archive file [/home/abi/fetcher/tmp/hatch_rest_api-1.8.0.tar.gz]
+[2024-04-06 02:17:53] INFO root fetch - processPackages [hatch-rest-api]: Remove: archive file [/home/abi/fetcher/tmp/hatch_rest_api-1.9.0.tar.gz]
+[2024-04-06 02:17:53] INFO root fetch - main [MainThread]: End processing [hatch-rest-api]: success
+[2024-04-06 02:17:53] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.98.tar.gz]
+[2024-04-06 02:17:53] INFO root fetch - processPackages [cdk-budibase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-budibase-0.0.99.tar.gz]
+[2024-04-06 02:17:53] INFO root fetch - main [MainThread]: End processing [cdk-budibase]: success
+[2024-04-06 02:17:53] INFO root fetch - main [MainThread]: Store serial: [22643286]
