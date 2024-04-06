@@ -1791,3 +1791,39 @@
 [2024-04-06 02:06:55] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-04-06 02:06:55] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
 [2024-04-06 02:06:55] INFO root fetch - main [MainThread]: Store serial: [22643194]
+[2024-04-06 02:08:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643194]
+[2024-04-06 02:09:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 02:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: naludaq
+[2024-04-06 02:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: landborn
+[2024-04-06 02:09:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-common
+[2024-04-06 02:09:04] INFO root fetch - processPackages [landborn]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-06 02:09:04] INFO root fetch - processPackages [landborn]: Downloading https://files.pythonhosted.org/packages/22/4f/3b55c827ea20b9cbd3dbb9875f705df21cebdd0bc294e702a7824a3bb367/landborn-0.2.2.tar.gz
+[2024-04-06 02:09:04] INFO root fetch - processPackages [naludaq]: New version: [0.26.0] Old Version: [0.25.1]
+[2024-04-06 02:09:04] WARNING root fetch - processPackages [landborn]: Timeout reached during download
+[2024-04-06 02:09:04] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-06 02:09:04] INFO root fetch - processPackages [landborn]: Downloading https://files.pythonhosted.org/packages/35/0f/582d405a61ea04360d23aa53d738ffa09129c136068ce10227a4aae18059/landborn-0.2.3.tar.gz
+[2024-04-06 02:09:04] INFO root fetch - processPackages [naludaq]: Downloading https://files.pythonhosted.org/packages/64/60/622ce7b5503a8e5c36d9ef781b620a9ae99fdcf9a55506431b3a39ec3df1/naludaq-0.25.1.tar.gz
+[2024-04-06 02:09:04] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-04-06 02:09:04] WARNING root fetch - processPackages [landborn]: Timeout reached during download
+[2024-04-06 02:09:04] INFO root fetch - processPackages [landborn]: executing diffoscope
+[2024-04-06 02:09:04] INFO root fetch - processPackages [landborn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landborn-0.2.2.tar.gz tmp/landborn-0.2.3.tar.gz --markdown 20240406/l/landborn/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2024-04-06 02:09:04] WARNING root fetch - processPackages [cdk-common]: Timeout reached during download
+[2024-04-06 02:09:04] WARNING root fetch - processPackages [naludaq]: Timeout reached during download
+[2024-04-06 02:09:04] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-04-06 02:09:05] INFO root fetch - processPackages [naludaq]: Downloading https://files.pythonhosted.org/packages/46/5a/605487b66b2201d431df68e65f95fd15f8ce63452a1002c42ff1a5026142/naludaq-0.26.0.tar.gz
+[2024-04-06 02:09:05] WARNING root fetch - processPackages [naludaq]: Timeout reached during download
+[2024-04-06 02:09:05] INFO root fetch - processPackages [naludaq]: executing diffoscope
+[2024-04-06 02:09:05] INFO root fetch - processPackages [naludaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naludaq-0.25.1.tar.gz tmp/naludaq-0.26.0.tar.gz --markdown 20240406/n/naludaq/0.25.1-0.26.0/diff.md --exclude *.pyd
+[2024-04-06 02:09:05] WARNING root fetch - processPackages [cdk-common]: Timeout reached during download
+[2024-04-06 02:09:05] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-04-06 02:09:05] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240406/c/cdk-common/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2024-04-06 02:09:05] INFO root fetch - processPackages [landborn]: Remove: archive file [/home/abi/fetcher/tmp/landborn-0.2.2.tar.gz]
+[2024-04-06 02:09:05] INFO root fetch - processPackages [landborn]: Remove: archive file [/home/abi/fetcher/tmp/landborn-0.2.3.tar.gz]
+[2024-04-06 02:09:05] INFO root fetch - main [MainThread]: End processing [landborn]: success
+[2024-04-06 02:09:05] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-04-06 02:09:05] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-04-06 02:09:05] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-04-06 02:09:06] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.25.1.tar.gz]
+[2024-04-06 02:09:06] INFO root fetch - processPackages [naludaq]: Remove: archive file [/home/abi/fetcher/tmp/naludaq-0.26.0.tar.gz]
+[2024-04-06 02:09:06] INFO root fetch - main [MainThread]: End processing [naludaq]: success
+[2024-04-06 02:09:06] INFO root fetch - main [MainThread]: Store serial: [22643203]
