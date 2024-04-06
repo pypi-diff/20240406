@@ -19367,3 +19367,39 @@ EOFError: EOF read where object expected
 [2024-04-06 18:11:16] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
 [2024-04-06 18:11:16] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
 [2024-04-06 18:11:16] INFO root fetch - main [MainThread]: Store serial: [22649254]
+[2024-04-06 18:13:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649254]
+[2024-04-06 18:13:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 18:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protolint-bin-test
+[2024-04-06 18:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ObjectToString
+[2024-04-06 18:13:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-steam-api
+[2024-04-06 18:13:25] INFO root fetch - processPackages [protolint-bin-test]: New version: [0.49.4.post4] Old Version: [0.49.4.post3]
+[2024-04-06 18:13:25] INFO root fetch - processPackages [ObjectToString]: New version: [0.2.66] Old Version: [0.2.65]
+[2024-04-06 18:13:25] INFO root fetch - processPackages [python-steam-api]: New version: [2.0] Old Version: [1.2.2]
+[2024-04-06 18:13:25] INFO root fetch - processPackages [protolint-bin-test]: Downloading https://files.pythonhosted.org/packages/74/ef/db5120a818ff47e80dc76c200a07ba133da8a9df2366bc823555e9ad53a3/protolint_bin_test-0.49.4.post3-py2.py3-none-linux_armv7l.whl
+[2024-04-06 18:13:25] INFO root fetch - processPackages [ObjectToString]: Downloading https://files.pythonhosted.org/packages/52/42/e5ac62a10c51a63896003cbf3812da81db4c6fe77ededc0a48b14850cc66/ObjectToString-0.2.65.tar.gz
+[2024-04-06 18:13:25] INFO root fetch - processPackages [python-steam-api]: Downloading https://files.pythonhosted.org/packages/96/b0/b8eca9715ccef72108077c0ae65918731fefb1f538d731f001ce9d62f0ac/python-steam-api-1.2.2.tar.gz
+[2024-04-06 18:13:26] WARNING root fetch - processPackages [python-steam-api]: Timeout reached during download
+[2024-04-06 18:13:26] INFO root fetch - processPackages [python-steam-api]: Downloading https://files.pythonhosted.org/packages/80/3e/fe9a61f649fc463e970bb1c9a4d2f0899af9734b5d6b4e65796389f43cb7/python-steam-api-2.0.tar.gz
+[2024-04-06 18:13:26] WARNING root fetch - processPackages [ObjectToString]: Timeout reached during download
+[2024-04-06 18:13:26] WARNING root fetch - processPackages [protolint-bin-test]: Timeout reached during download
+[2024-04-06 18:13:26] WARNING root fetch - processPackages [python-steam-api]: Timeout reached during download
+[2024-04-06 18:13:26] INFO root fetch - processPackages [python-steam-api]: executing diffoscope
+[2024-04-06 18:13:26] INFO root fetch - processPackages [python-steam-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-steam-api-1.2.2.tar.gz tmp/python-steam-api-2.0.tar.gz --markdown 20240406/p/python-steam-api/1.2.2-2.0/diff.md --exclude *.pyd
+[2024-04-06 18:13:26] INFO root fetch - processPackages [ObjectToString]: Downloading https://files.pythonhosted.org/packages/ad/fa/6fedfdde731d6152ace63e1c5be50da9082dd12474abd9b6453acdc9ae6b/ObjectToString-0.2.66.tar.gz
+[2024-04-06 18:13:26] INFO root fetch - processPackages [protolint-bin-test]: Downloading https://files.pythonhosted.org/packages/c6/a3/d746b1f0bfa6a07af0a58dca387fd4961aa577fe209bc4d6b57dd5fec0d9/protolint_bin_test-0.49.4.post4-py2.py3-none-linux_armv7l.whl
+[2024-04-06 18:13:26] WARNING root fetch - processPackages [ObjectToString]: Timeout reached during download
+[2024-04-06 18:13:26] INFO root fetch - processPackages [ObjectToString]: executing diffoscope
+[2024-04-06 18:13:26] INFO root fetch - processPackages [ObjectToString]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ObjectToString-0.2.65.tar.gz tmp/ObjectToString-0.2.66.tar.gz --markdown 20240406/O/ObjectToString/0.2.65-0.2.66/diff.md --exclude *.pyd
+[2024-04-06 18:13:26] WARNING root fetch - processPackages [protolint-bin-test]: Timeout reached during download
+[2024-04-06 18:13:26] INFO root fetch - processPackages [protolint-bin-test]: executing diffoscope
+[2024-04-06 18:13:26] INFO root fetch - processPackages [protolint-bin-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protolint_bin_test-0.49.4.post3-py2.py3-none-linux_armv7l.whl.zip tmp/protolint_bin_test-0.49.4.post4-py2.py3-none-linux_armv7l.whl.zip --markdown 20240406/p/protolint-bin-test/0.49.4.post3-0.49.4.post4/diff.md --exclude *.pyd
+[2024-04-06 18:13:27] INFO root fetch - processPackages [python-steam-api]: Remove: archive file [/home/abi/fetcher/tmp/python-steam-api-1.2.2.tar.gz]
+[2024-04-06 18:13:27] INFO root fetch - processPackages [python-steam-api]: Remove: archive file [/home/abi/fetcher/tmp/python-steam-api-2.0.tar.gz]
+[2024-04-06 18:13:27] INFO root fetch - main [MainThread]: End processing [python-steam-api]: success
+[2024-04-06 18:13:27] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.65.tar.gz]
+[2024-04-06 18:13:27] INFO root fetch - processPackages [ObjectToString]: Remove: archive file [/home/abi/fetcher/tmp/ObjectToString-0.2.66.tar.gz]
+[2024-04-06 18:13:27] INFO root fetch - main [MainThread]: End processing [ObjectToString]: success
+[2024-04-06 18:13:28] INFO root fetch - processPackages [protolint-bin-test]: Remove: archive file [/home/abi/fetcher/tmp/protolint_bin_test-0.49.4.post3-py2.py3-none-linux_armv7l.whl.zip]
+[2024-04-06 18:13:28] INFO root fetch - processPackages [protolint-bin-test]: Remove: archive file [/home/abi/fetcher/tmp/protolint_bin_test-0.49.4.post4-py2.py3-none-linux_armv7l.whl.zip]
+[2024-04-06 18:13:28] INFO root fetch - main [MainThread]: End processing [protolint-bin-test]: success
+[2024-04-06 18:13:28] INFO root fetch - main [MainThread]: Store serial: [22649266]
