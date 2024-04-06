@@ -18052,3 +18052,77 @@ EOFError: EOF read where object expected
 [2024-04-06 16:52:03] WARNING root fetch - processPackages [VideoOpinionMining]: Skipping, unable to determine old version
 [2024-04-06 16:52:03] INFO root fetch - main [MainThread]: End processing [VideoOpinionMining] error
 [2024-04-06 16:52:03] INFO root fetch - main [MainThread]: Store serial: [22648764]
+[2024-04-06 16:54:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648764]
+[2024-04-06 16:54:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 16:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: outside-framework
+[2024-04-06 16:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyweatherfr
+[2024-04-06 16:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyGz1
+[2024-04-06 16:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CnbcNews
+[2024-04-06 16:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CnbcNews
+[2024-04-06 16:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CnbcNews
+[2024-04-06 16:54:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: CnbcNews
+[2024-04-06 16:54:12] INFO root fetch - processPackages [PyGz1]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-06 16:54:12] INFO root fetch - processPackages [pyweatherfr]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-06 16:54:12] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/95/a9/a45bf13a28262810712356b1178e58354f5ffa6964124dd48a2eb917f1b0/PyGz1-0.3.1.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: New version: [1.0] Old Version: [0.3]
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: New version: [1.0] Old Version: [0.3]
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: New version: [1.0] Old Version: [0.3]
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: New version: [1.0] Old Version: [0.3]
+[2024-04-06 16:54:13] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/5d/57/ce2d5d04713eae2b3efe7fe82c7e9c49f82f514326690729bef1199a946f/pyweatherfr-2.0.0.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [outside-framework]: New version: [1.4.0] Old Version: [1.3.3]
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/47/eb/af250c573b0ea6e0c716e4b29d83bf59ac6d5033861ad9b7812413bbdad6/CnbcNews-0.3.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [pyweatherfr]: Downloading https://files.pythonhosted.org/packages/8a/0e/caff4dfde4aa8629e4296bf66177f70c46718dc1874d5289a20bb75812e4/pyweatherfr-2.0.1.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/47/eb/af250c573b0ea6e0c716e4b29d83bf59ac6d5033861ad9b7812413bbdad6/CnbcNews-0.3.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/2c/86/804b875df237d823c6cad855867c400f4837196fb8d89389947f1a759d17/PyGz1-0.3.2.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/47/eb/af250c573b0ea6e0c716e4b29d83bf59ac6d5033861ad9b7812413bbdad6/CnbcNews-0.3.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [outside-framework]: Downloading https://files.pythonhosted.org/packages/d6/30/dc048028ff36926729fdcaa69d333f545808e5d119d614fdfc150b80ef06/outside-framework-1.3.3.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/47/eb/af250c573b0ea6e0c716e4b29d83bf59ac6d5033861ad9b7812413bbdad6/CnbcNews-0.3.tar.gz
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [pyweatherfr]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [pyweatherfr]: executing diffoscope
+[2024-04-06 16:54:13] INFO root fetch - processPackages [pyweatherfr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyweatherfr-2.0.0.tar.gz tmp/pyweatherfr-2.0.1.tar.gz --markdown 20240406/p/pyweatherfr/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [PyGz1]: executing diffoscope
+[2024-04-06 16:54:13] INFO root fetch - processPackages [PyGz1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGz1-0.3.1.tar.gz tmp/PyGz1-0.3.2.tar.gz --markdown 20240406/P/PyGz1/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [outside-framework]: Timeout reached during download
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/ae/7b/399a4149429b3ca0e42874f846892f91263ed825c22deb7a7f413e610ce9/CnbcNews-1.0.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/ae/7b/399a4149429b3ca0e42874f846892f91263ed825c22deb7a7f413e610ce9/CnbcNews-1.0.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/ae/7b/399a4149429b3ca0e42874f846892f91263ed825c22deb7a7f413e610ce9/CnbcNews-1.0.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/ae/7b/399a4149429b3ca0e42874f846892f91263ed825c22deb7a7f413e610ce9/CnbcNews-1.0.tar.gz
+[2024-04-06 16:54:13] INFO root fetch - processPackages [outside-framework]: Downloading https://files.pythonhosted.org/packages/d6/84/676b3b448697c7c689b5712eef7247afe2261135bbe00a1366e2215f95d7/outside-framework-1.4.0.tar.gz
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-0.3.tar.gz tmp/CnbcNews-1.0.tar.gz --markdown 20240406/C/CnbcNews/0.3-1.0/diff.md --exclude *.pyd
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-0.3.tar.gz tmp/CnbcNews-1.0.tar.gz --markdown 20240406/C/CnbcNews/0.3-1.0/diff.md --exclude *.pyd
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-0.3.tar.gz tmp/CnbcNews-1.0.tar.gz --markdown 20240406/C/CnbcNews/0.3-1.0/diff.md --exclude *.pyd
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 16:54:13] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-0.3.tar.gz tmp/CnbcNews-1.0.tar.gz --markdown 20240406/C/CnbcNews/0.3-1.0/diff.md --exclude *.pyd
+[2024-04-06 16:54:13] WARNING root fetch - processPackages [outside-framework]: Timeout reached during download
+[2024-04-06 16:54:13] INFO root fetch - processPackages [outside-framework]: executing diffoscope
+[2024-04-06 16:54:13] INFO root fetch - processPackages [outside-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outside-framework-1.3.3.tar.gz tmp/outside-framework-1.4.0.tar.gz --markdown 20240406/o/outside-framework/1.3.3-1.4.0/diff.md --exclude *.pyd
+[2024-04-06 16:54:14] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.3.1.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.3.2.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [PyGz1]: success
+[2024-04-06 16:54:14] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.0.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - processPackages [pyweatherfr]: Remove: archive file [/home/abi/fetcher/tmp/pyweatherfr-2.0.1.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [pyweatherfr]: success
+[2024-04-06 16:54:14] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-0.3.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-1.0.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 16:54:14] INFO root fetch - processPackages [outside-framework]: Remove: archive file [/home/abi/fetcher/tmp/outside-framework-1.3.3.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - processPackages [outside-framework]: Remove: archive file [/home/abi/fetcher/tmp/outside-framework-1.4.0.tar.gz]
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: End processing [outside-framework]: success
+[2024-04-06 16:54:14] INFO root fetch - main [MainThread]: Store serial: [22648786]
