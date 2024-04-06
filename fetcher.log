@@ -25444,3 +25444,20 @@ EOFError: EOF read where object expected
 [2024-04-06 23:57:34] INFO root fetch - processPackages [boilersaas]: Remove: archive file [/home/abi/fetcher/tmp/boilersaas-0.6.5.tar.gz]
 [2024-04-06 23:57:34] INFO root fetch - main [MainThread]: End processing [boilersaas]: success
 [2024-04-06 23:57:34] INFO root fetch - main [MainThread]: Store serial: [22651418]
+[2024-04-06 23:59:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651418]
+[2024-04-06 23:59:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 23:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nexus-cat
+[2024-04-06 23:59:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asifjamali
+[2024-04-06 23:59:43] INFO root fetch - processPackages [asifjamali]: New version: [0.6.6] Old Version: [0.6.4]
+[2024-04-06 23:59:43] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/b0/97/9ae84c7efb7670453eeb94cfe3f9f34a519add32ba49d67945241c5b07f2/asifjamali-0.6.4.tar.gz
+[2024-04-06 23:59:43] WARNING root fetch - processPackages [nexus-cat]: Skipping, unable to determine old version
+[2024-04-06 23:59:43] INFO root fetch - main [MainThread]: End processing [nexus-cat] error
+[2024-04-06 23:59:44] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 23:59:44] INFO root fetch - processPackages [asifjamali]: Downloading https://files.pythonhosted.org/packages/f3/9e/de38c5e559085d702c3ae1cb001fdb1a214e24392c6212bdb8b0874d074a/asifjamali-0.6.6.tar.gz
+[2024-04-06 23:59:44] WARNING root fetch - processPackages [asifjamali]: Timeout reached during download
+[2024-04-06 23:59:44] INFO root fetch - processPackages [asifjamali]: executing diffoscope
+[2024-04-06 23:59:44] INFO root fetch - processPackages [asifjamali]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asifjamali-0.6.4.tar.gz tmp/asifjamali-0.6.6.tar.gz --markdown 20240406/a/asifjamali/0.6.4-0.6.6/diff.md --exclude *.pyd
+[2024-04-06 23:59:44] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.4.tar.gz]
+[2024-04-06 23:59:44] INFO root fetch - processPackages [asifjamali]: Remove: archive file [/home/abi/fetcher/tmp/asifjamali-0.6.6.tar.gz]
+[2024-04-06 23:59:44] INFO root fetch - main [MainThread]: End processing [asifjamali]: success
+[2024-04-06 23:59:44] INFO root fetch - main [MainThread]: Store serial: [22651426]
