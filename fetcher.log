@@ -24321,3 +24321,39 @@ EOFError: EOF read where object expected
 [2024-04-06 22:50:06] INFO root fetch - processPackages [mlipy]: Remove: archive file [/home/abi/fetcher/tmp/mlipy-0.1.9.tar.gz]
 [2024-04-06 22:50:06] INFO root fetch - main [MainThread]: End processing [mlipy]: success
 [2024-04-06 22:50:06] INFO root fetch - main [MainThread]: Store serial: [22651019]
+[2024-04-06 22:52:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651019]
+[2024-04-06 22:52:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 22:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redsauce
+[2024-04-06 22:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unitsnet-py
+[2024-04-06 22:52:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wwpdb.utils.db
+[2024-04-06 22:52:16] INFO root fetch - processPackages [redsauce]: New version: [0.0.1.11] Old Version: [0.0.1.1]
+[2024-04-06 22:52:16] INFO root fetch - processPackages [redsauce]: Downloading https://files.pythonhosted.org/packages/0d/d3/1ea72a43d2f1493c92c3c89b9c185455e48450fd25e1d9db73a221f12072/redsauce-0.0.1.1.tar.gz
+[2024-04-06 22:52:16] INFO root fetch - processPackages [unitsnet-py]: New version: [0.1.94] Old Version: [0.1.93]
+[2024-04-06 22:52:16] INFO root fetch - processPackages [wwpdb.utils.db]: New version: [0.31] Old Version: [0.30]
+[2024-04-06 22:52:16] WARNING root fetch - processPackages [redsauce]: Timeout reached during download
+[2024-04-06 22:52:16] INFO root fetch - processPackages [wwpdb.utils.db]: Downloading https://files.pythonhosted.org/packages/64/f5/c34d6ec18100a4dd48723dd7dd08e43c1eeba50e2c5d6ea78b79f8bd1e89/wwpdb.utils.db-0.30.tar.gz
+[2024-04-06 22:52:16] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/b2/a7/531e9e6ee38c7d758ca897c8760a891c71bab0a4a19bb6e5cd13a1ac012d/unitsnet-py-0.1.93.tar.gz
+[2024-04-06 22:52:16] INFO root fetch - processPackages [redsauce]: Downloading https://files.pythonhosted.org/packages/69/a8/3f2fd4686e2343ff696414fe8ad62d62a36287c1539c700fea184717ddcd/redsauce-0.0.1.11.tar.gz
+[2024-04-06 22:52:16] WARNING root fetch - processPackages [redsauce]: Timeout reached during download
+[2024-04-06 22:52:16] INFO root fetch - processPackages [redsauce]: executing diffoscope
+[2024-04-06 22:52:16] INFO root fetch - processPackages [redsauce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redsauce-0.0.1.1.tar.gz tmp/redsauce-0.0.1.11.tar.gz --markdown 20240406/r/redsauce/0.0.1.1-0.0.1.11/diff.md --exclude *.pyd
+[2024-04-06 22:52:16] WARNING root fetch - processPackages [wwpdb.utils.db]: Timeout reached during download
+[2024-04-06 22:52:16] WARNING root fetch - processPackages [unitsnet-py]: Timeout reached during download
+[2024-04-06 22:52:17] INFO root fetch - processPackages [wwpdb.utils.db]: Downloading https://files.pythonhosted.org/packages/ba/37/667f348c6886edfc5b968de4d6c7f5f0f67f0a869f546ac6bc45b6845ee5/wwpdb.utils.db-0.31.tar.gz
+[2024-04-06 22:52:17] INFO root fetch - processPackages [unitsnet-py]: Downloading https://files.pythonhosted.org/packages/92/80/2f8a731110e6cc4ddf07c3ad998b19756bea59e9dbf9e55dbf0830b584e1/unitsnet-py-0.1.94.tar.gz
+[2024-04-06 22:52:17] WARNING root fetch - processPackages [unitsnet-py]: Timeout reached during download
+[2024-04-06 22:52:17] INFO root fetch - processPackages [unitsnet-py]: executing diffoscope
+[2024-04-06 22:52:17] INFO root fetch - processPackages [unitsnet-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitsnet-py-0.1.93.tar.gz tmp/unitsnet-py-0.1.94.tar.gz --markdown 20240406/u/unitsnet-py/0.1.93-0.1.94/diff.md --exclude *.pyd
+[2024-04-06 22:52:17] INFO root fetch - processPackages [redsauce]: Remove: archive file [/home/abi/fetcher/tmp/redsauce-0.0.1.1.tar.gz]
+[2024-04-06 22:52:17] INFO root fetch - processPackages [redsauce]: Remove: archive file [/home/abi/fetcher/tmp/redsauce-0.0.1.11.tar.gz]
+[2024-04-06 22:52:17] INFO root fetch - main [MainThread]: End processing [redsauce]: success
+[2024-04-06 22:52:17] WARNING root fetch - processPackages [wwpdb.utils.db]: Timeout reached during download
+[2024-04-06 22:52:17] INFO root fetch - processPackages [wwpdb.utils.db]: executing diffoscope
+[2024-04-06 22:52:17] INFO root fetch - processPackages [wwpdb.utils.db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.db-0.30.tar.gz tmp/wwpdb.utils.db-0.31.tar.gz --markdown 20240406/w/wwpdb.utils.db/0.30-0.31/diff.md --exclude *.pyd
+[2024-04-06 22:52:18] INFO root fetch - processPackages [wwpdb.utils.db]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.db-0.30.tar.gz]
+[2024-04-06 22:52:18] INFO root fetch - processPackages [wwpdb.utils.db]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.db-0.31.tar.gz]
+[2024-04-06 22:52:18] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.db]: success
+[2024-04-06 22:52:18] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.93.tar.gz]
+[2024-04-06 22:52:18] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.94.tar.gz]
+[2024-04-06 22:52:18] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
+[2024-04-06 22:52:18] INFO root fetch - main [MainThread]: Store serial: [22651024]
