@@ -11562,3 +11562,50 @@
 [2024-04-06 09:08:26] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
 [2024-04-06 09:08:26] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
 [2024-04-06 09:08:26] INFO root fetch - main [MainThread]: Store serial: [22646331]
+[2024-04-06 09:10:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646331]
+[2024-04-06 09:10:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 09:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyln-testing
+[2024-04-06 09:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyln-proto
+[2024-04-06 09:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyln-grpc-proto
+[2024-04-06 09:10:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyln-client
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-testing]: New version: [24.2.1] Old Version: [24.2]
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-client]: New version: [24.2.1] Old Version: [24.2]
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-grpc-proto]: New version: [24.2.1] Old Version: [24.2]
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-proto]: New version: [24.2.1] Old Version: [24.2]
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-testing]: Downloading https://files.pythonhosted.org/packages/43/3e/bc97a7c2b35e1e818925dc2e89524c0821e993ab8deb66fe5ffe4726142c/pyln_testing-24.2.tar.gz
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-client]: Downloading https://files.pythonhosted.org/packages/6a/68/a93ac9fb2260b14aff2e22f67e61635f7dc0842924f308db7114bb969d83/pyln_client-24.2.tar.gz
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-grpc-proto]: Downloading https://files.pythonhosted.org/packages/bf/a5/619517fc4cde029441f76c00a2385e7d1def5d19fcf83042a6b3ee45c31f/pyln_grpc_proto-24.2.tar.gz
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-proto]: Downloading https://files.pythonhosted.org/packages/6f/f8/8e29d253d9d3923ddb1048d64d13ddb986042376abe27aaa4424197a307e/pyln_proto-24.2.tar.gz
+[2024-04-06 09:10:35] WARNING root fetch - processPackages [pyln-testing]: Timeout reached during download
+[2024-04-06 09:10:35] WARNING root fetch - processPackages [pyln-client]: Timeout reached during download
+[2024-04-06 09:10:35] WARNING root fetch - processPackages [pyln-grpc-proto]: Timeout reached during download
+[2024-04-06 09:10:35] WARNING root fetch - processPackages [pyln-proto]: Timeout reached during download
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-testing]: Downloading https://files.pythonhosted.org/packages/0b/8c/10b98a3313d4ad62e816288f4828068499874766ea714044f4b3f0c32157/pyln_testing-24.2.1.tar.gz
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-client]: Downloading https://files.pythonhosted.org/packages/f4/8e/50436b6231e35dbddbb229f341f28d43e50a6c1496a7802fb543ebb135a5/pyln_client-24.2.1.tar.gz
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-proto]: Downloading https://files.pythonhosted.org/packages/af/b4/8ee71d498834013ef541044a0afabd42126d06c0c7442e2d73254262faee/pyln_proto-24.2.1.tar.gz
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-grpc-proto]: Downloading https://files.pythonhosted.org/packages/95/72/bf4a9862106586c27e81d6368edeb999b45ccca1c2ede8da4bb936d4ee00/pyln_grpc_proto-24.2.1.tar.gz
+[2024-04-06 09:10:35] WARNING root fetch - processPackages [pyln-testing]: Timeout reached during download
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-testing]: executing diffoscope
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-testing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyln_testing-24.2.tar.gz tmp/pyln_testing-24.2.1.tar.gz --markdown 20240406/p/pyln-testing/24.2-24.2.1/diff.md --exclude *.pyd
+[2024-04-06 09:10:35] WARNING root fetch - processPackages [pyln-client]: Timeout reached during download
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-client]: executing diffoscope
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyln_client-24.2.tar.gz tmp/pyln_client-24.2.1.tar.gz --markdown 20240406/p/pyln-client/24.2-24.2.1/diff.md --exclude *.pyd
+[2024-04-06 09:10:35] WARNING root fetch - processPackages [pyln-proto]: Timeout reached during download
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-proto]: executing diffoscope
+[2024-04-06 09:10:35] INFO root fetch - processPackages [pyln-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyln_proto-24.2.tar.gz tmp/pyln_proto-24.2.1.tar.gz --markdown 20240406/p/pyln-proto/24.2-24.2.1/diff.md --exclude *.pyd
+[2024-04-06 09:10:36] WARNING root fetch - processPackages [pyln-grpc-proto]: Timeout reached during download
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-grpc-proto]: executing diffoscope
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-grpc-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyln_grpc_proto-24.2.tar.gz tmp/pyln_grpc_proto-24.2.1.tar.gz --markdown 20240406/p/pyln-grpc-proto/24.2-24.2.1/diff.md --exclude *.pyd
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-client]: Remove: archive file [/home/abi/fetcher/tmp/pyln_client-24.2.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-client]: Remove: archive file [/home/abi/fetcher/tmp/pyln_client-24.2.1.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - main [MainThread]: End processing [pyln-client]: success
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-proto]: Remove: archive file [/home/abi/fetcher/tmp/pyln_proto-24.2.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-proto]: Remove: archive file [/home/abi/fetcher/tmp/pyln_proto-24.2.1.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - main [MainThread]: End processing [pyln-proto]: success
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-testing]: Remove: archive file [/home/abi/fetcher/tmp/pyln_testing-24.2.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-testing]: Remove: archive file [/home/abi/fetcher/tmp/pyln_testing-24.2.1.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - main [MainThread]: End processing [pyln-testing]: success
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/pyln_grpc_proto-24.2.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/pyln_grpc_proto-24.2.1.tar.gz]
+[2024-04-06 09:10:36] INFO root fetch - main [MainThread]: End processing [pyln-grpc-proto]: success
+[2024-04-06 09:10:36] INFO root fetch - main [MainThread]: Store serial: [22646345]
