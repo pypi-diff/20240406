@@ -19162,3 +19162,33 @@ EOFError: EOF read where object expected
 [2024-04-06 18:00:18] INFO root fetch - processPackages [ssh2_parse_key]: Remove: archive file [/home/abi/fetcher/tmp/ssh2_parse_key-0.8.0.tar.gz]
 [2024-04-06 18:00:18] INFO root fetch - main [MainThread]: End processing [ssh2_parse_key]: success
 [2024-04-06 18:00:18] INFO root fetch - main [MainThread]: Store serial: [22649188]
+[2024-04-06 18:02:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649188]
+[2024-04-06 18:02:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 18:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythondatautil
+[2024-04-06 18:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sae-vis
+[2024-04-06 18:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monailabel
+[2024-04-06 18:02:27] INFO root fetch - processPackages [sae-vis]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-06 18:02:27] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/6c/97/e073ae29a75007d347074ce7a5e42f50726b41652a31f176e30c7346254d/sae-vis-0.2.6.tar.gz
+[2024-04-06 18:02:27] INFO root fetch - processPackages [pythondatautil]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-06 18:02:27] INFO root fetch - processPackages [monailabel]: New version: [0.8.2rc2] Old Version: [0.8.2rc1]
+[2024-04-06 18:02:28] WARNING root fetch - processPackages [sae-vis]: Timeout reached during download
+[2024-04-06 18:02:28] INFO root fetch - processPackages [pythondatautil]: Downloading https://files.pythonhosted.org/packages/2e/48/5bd0cb0011a32cb3ce75fed53e70534c61ab52d87b1b4fe2693c5f5c7025/pythondatautil-0.0.16.tar.gz
+[2024-04-06 18:02:28] INFO root fetch - processPackages [monailabel]: Downloading https://files.pythonhosted.org/packages/92/10/77a5d0e33106662ebe17c2c4e59bab89785574ecadad6e8e16b18071fbf9/monailabel-0.8.2rc1-202404022106-py3-none-any.whl
+[2024-04-06 18:02:28] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/2b/ec/fc0a2053d4f312b8c5b0abb5260bc2a821564fb37704e4fbb48812c1feb8/sae-vis-0.2.7.tar.gz
+[2024-04-06 18:02:28] WARNING root fetch - processPackages [monailabel]: Skipping package: exceeds size limit 11945713>=10485760
+[2024-04-06 18:02:28] INFO root fetch - main [MainThread]: End processing [monailabel] error
+[2024-04-06 18:02:28] WARNING root fetch - processPackages [pythondatautil]: Timeout reached during download
+[2024-04-06 18:02:28] WARNING root fetch - processPackages [sae-vis]: Timeout reached during download
+[2024-04-06 18:02:28] INFO root fetch - processPackages [sae-vis]: executing diffoscope
+[2024-04-06 18:02:28] INFO root fetch - processPackages [sae-vis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae-vis-0.2.6.tar.gz tmp/sae-vis-0.2.7.tar.gz --markdown 20240406/s/sae-vis/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2024-04-06 18:02:28] INFO root fetch - processPackages [pythondatautil]: Downloading https://files.pythonhosted.org/packages/9c/50/5e9585b4d81656ca05e116010a925645081224cfaae2e9a01e1e17ebd9ab/pythondatautil-0.0.17.tar.gz
+[2024-04-06 18:02:28] WARNING root fetch - processPackages [pythondatautil]: Timeout reached during download
+[2024-04-06 18:02:28] INFO root fetch - processPackages [pythondatautil]: executing diffoscope
+[2024-04-06 18:02:28] INFO root fetch - processPackages [pythondatautil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythondatautil-0.0.16.tar.gz tmp/pythondatautil-0.0.17.tar.gz --markdown 20240406/p/pythondatautil/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2024-04-06 18:02:28] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.6.tar.gz]
+[2024-04-06 18:02:28] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.7.tar.gz]
+[2024-04-06 18:02:28] INFO root fetch - main [MainThread]: End processing [sae-vis]: success
+[2024-04-06 18:02:29] INFO root fetch - processPackages [pythondatautil]: Remove: archive file [/home/abi/fetcher/tmp/pythondatautil-0.0.16.tar.gz]
+[2024-04-06 18:02:29] INFO root fetch - processPackages [pythondatautil]: Remove: archive file [/home/abi/fetcher/tmp/pythondatautil-0.0.17.tar.gz]
+[2024-04-06 18:02:29] INFO root fetch - main [MainThread]: End processing [pythondatautil]: success
+[2024-04-06 18:02:29] INFO root fetch - main [MainThread]: Store serial: [22649197]
