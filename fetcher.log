@@ -10865,3 +10865,36 @@
 [2024-04-06 08:06:58] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
 [2024-04-06 08:06:58] INFO root fetch - main [MainThread]: End processing [leads]: success
 [2024-04-06 08:06:58] INFO root fetch - main [MainThread]: Store serial: [22645975]
+[2024-04-06 08:09:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645975]
+[2024-04-06 08:09:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 08:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythagoras
+[2024-04-06 08:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorflow-federated
+[2024-04-06 08:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyg-nightly
+[2024-04-06 08:09:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dicom-validator
+[2024-04-06 08:09:07] INFO root fetch - processPackages [dicom-validator]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-06 08:09:07] WARNING root fetch - processPackages [pythagoras]: Skipping, unable to determine old version
+[2024-04-06 08:09:07] INFO root fetch - main [MainThread]: End processing [pythagoras] error
+[2024-04-06 08:09:07] INFO root fetch - processPackages [tensorflow-federated]: New version: [0.9.0] Old Version: [0.75.0]
+[2024-04-06 08:09:07] INFO root fetch - processPackages [pyg-nightly]: New version: [2.6.0.dev20240406] Old Version: [2.6.0.dev20240405]
+[2024-04-06 08:09:07] INFO root fetch - processPackages [tensorflow-federated]: Downloading https://files.pythonhosted.org/packages/6e/01/62588501e3c348499fd885c3be16e3565f324e5abc33d0a6fa67a07a3053/tensorflow_federated-0.75.0-py3-none-manylinux_2_31_x86_64.whl
+[2024-04-06 08:09:07] INFO root fetch - processPackages [dicom-validator]: Downloading https://files.pythonhosted.org/packages/cb/06/9415c463b968407155c35a821966918cdb76914e7572c51f85bf8e983495/dicom-validator-0.5.0.tar.gz
+[2024-04-06 08:09:07] WARNING root fetch - processPackages [tensorflow-federated]: Skipping package: exceeds size limit 70635723>=10485760
+[2024-04-06 08:09:07] INFO root fetch - main [MainThread]: End processing [tensorflow-federated] error
+[2024-04-06 08:09:07] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/25/10/ddf6876ce4fb1aec18b5173f313acacdf74ea5bb3e6318ab9d703939d62e/pyg_nightly-2.6.0.dev20240405.tar.gz
+[2024-04-06 08:09:07] WARNING root fetch - processPackages [dicom-validator]: Timeout reached during download
+[2024-04-06 08:09:07] WARNING root fetch - processPackages [pyg-nightly]: Timeout reached during download
+[2024-04-06 08:09:07] INFO root fetch - processPackages [dicom-validator]: Downloading https://files.pythonhosted.org/packages/8f/5f/086e3b07c59b8bde1f7ee517e2f86c2c565ce0e4cf2b0dddda57ae4341e0/dicom-validator-0.5.1.tar.gz
+[2024-04-06 08:09:07] INFO root fetch - processPackages [pyg-nightly]: Downloading https://files.pythonhosted.org/packages/80/e0/ff9bcb47689cb01f08890859a79a466dd892e285370377c2d764090533b6/pyg_nightly-2.6.0.dev20240406.tar.gz
+[2024-04-06 08:09:08] WARNING root fetch - processPackages [dicom-validator]: Timeout reached during download
+[2024-04-06 08:09:08] INFO root fetch - processPackages [dicom-validator]: executing diffoscope
+[2024-04-06 08:09:08] INFO root fetch - processPackages [dicom-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dicom-validator-0.5.0.tar.gz tmp/dicom-validator-0.5.1.tar.gz --markdown 20240406/d/dicom-validator/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-06 08:09:08] WARNING root fetch - processPackages [pyg-nightly]: Timeout reached during download
+[2024-04-06 08:09:08] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2024-04-06 08:09:08] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg_nightly-2.6.0.dev20240405.tar.gz tmp/pyg_nightly-2.6.0.dev20240406.tar.gz --markdown 20240406/p/pyg-nightly/2.6.0.dev20240405-2.6.0.dev20240406/diff.md --exclude *.pyd
+[2024-04-06 08:09:08] INFO root fetch - processPackages [dicom-validator]: Remove: archive file [/home/abi/fetcher/tmp/dicom-validator-0.5.0.tar.gz]
+[2024-04-06 08:09:08] INFO root fetch - processPackages [dicom-validator]: Remove: archive file [/home/abi/fetcher/tmp/dicom-validator-0.5.1.tar.gz]
+[2024-04-06 08:09:08] INFO root fetch - main [MainThread]: End processing [dicom-validator]: success
+[2024-04-06 08:09:10] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240405.tar.gz]
+[2024-04-06 08:09:10] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240406.tar.gz]
+[2024-04-06 08:09:10] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2024-04-06 08:09:10] INFO root fetch - main [MainThread]: Store serial: [22645986]
