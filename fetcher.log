@@ -23438,3 +23438,50 @@ EOFError: EOF read where object expected
 [2024-04-06 21:52:25] INFO root fetch - processPackages [python-semantic-release]: Remove: archive file [/home/abi/fetcher/tmp/python-semantic-release-9.4.1.tar.gz]
 [2024-04-06 21:52:25] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
 [2024-04-06 21:52:25] INFO root fetch - main [MainThread]: Store serial: [22650613]
+[2024-04-06 21:54:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650613]
+[2024-04-06 21:54:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiosteampy
+[2024-04-06 21:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PygameToolsBox
+[2024-04-06 21:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kcli
+[2024-04-06 21:54:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yuag
+[2024-04-06 21:54:34] INFO root fetch - processPackages [PygameToolsBox]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-06 21:54:34] INFO root fetch - processPackages [yuag]: New version: [0.0.64] Old Version: [0.0.63]
+[2024-04-06 21:54:34] INFO root fetch - processPackages [aiosteampy]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-04-06 21:54:34] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/cb/39/f32aac4590fa2dc46ec18a49d2800171c7322a65f3b22523dde79d21bf2f/PygameToolsBox-1.0.6.tar.gz
+[2024-04-06 21:54:34] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/d0/72/a0e6d2d35d8dccdfc3d96fc7b45e77fba1268d251fd8bab3c69b53f8f5d3/yuag-0.0.63.tar.gz
+[2024-04-06 21:54:35] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-06 21:54:35] INFO root fetch - processPackages [aiosteampy]: Downloading https://files.pythonhosted.org/packages/1b/a6/06f9e9c102dd2d11c52e32ec9c2703184a682e91534e0802bca9609045e6/aiosteampy-0.4.0.tar.gz
+[2024-04-06 21:54:35] WARNING root fetch - processPackages [yuag]: Timeout reached during download
+[2024-04-06 21:54:35] INFO root fetch - processPackages [kcli]: New version: [99.0.202404061952] Old Version: [99.0.202404051038]
+[2024-04-06 21:54:35] WARNING root fetch - processPackages [aiosteampy]: Timeout reached during download
+[2024-04-06 21:54:35] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/d1/a4/fd947818410e05a3db54d9c6525f0306d07eee9d13ce6edc3399e3252ad5/PygameToolsBox-1.0.7.tar.gz
+[2024-04-06 21:54:35] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/5f/40/4fd5248ad2f52c4b04477aaa5e85763d0586fc9693fad1e554ba6fab0899/yuag-0.0.64.tar.gz
+[2024-04-06 21:54:35] INFO root fetch - processPackages [aiosteampy]: Downloading https://files.pythonhosted.org/packages/88/30/673f40da7b1d6d2e570270b41ac55bd735d2d1f70c04a4816fed5af94b94/aiosteampy-0.4.1.tar.gz
+[2024-04-06 21:54:35] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-06 21:54:35] INFO root fetch - processPackages [PygameToolsBox]: executing diffoscope
+[2024-04-06 21:54:35] INFO root fetch - processPackages [PygameToolsBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PygameToolsBox-1.0.6.tar.gz tmp/PygameToolsBox-1.0.7.tar.gz --markdown 20240406/P/PygameToolsBox/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2024-04-06 21:54:35] WARNING root fetch - processPackages [yuag]: Timeout reached during download
+[2024-04-06 21:54:35] INFO root fetch - processPackages [yuag]: executing diffoscope
+[2024-04-06 21:54:35] INFO root fetch - processPackages [yuag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuag-0.0.63.tar.gz tmp/yuag-0.0.64.tar.gz --markdown 20240406/y/yuag/0.0.63-0.0.64/diff.md --exclude *.pyd
+[2024-04-06 21:54:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/88/ea/cf86997b9b3d39867c4dbae8388e8e902fe59419a07c3dbba533227b52f9/kcli-99.0.202404051038.tar.gz
+[2024-04-06 21:54:35] WARNING root fetch - processPackages [aiosteampy]: Timeout reached during download
+[2024-04-06 21:54:35] INFO root fetch - processPackages [aiosteampy]: executing diffoscope
+[2024-04-06 21:54:35] INFO root fetch - processPackages [aiosteampy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiosteampy-0.4.0.tar.gz tmp/aiosteampy-0.4.1.tar.gz --markdown 20240406/a/aiosteampy/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2024-04-06 21:54:35] WARNING root fetch - processPackages [kcli]: Timeout reached during download
+[2024-04-06 21:54:36] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/49/f5/ae77eee27d898bd88a235ebbc4fe65ef2b2fe24afd32c78f680f17bbd709/kcli-99.0.202404061952.tar.gz
+[2024-04-06 21:54:36] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.6.tar.gz]
+[2024-04-06 21:54:36] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.7.tar.gz]
+[2024-04-06 21:54:36] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
+[2024-04-06 21:54:36] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.63.tar.gz]
+[2024-04-06 21:54:36] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.64.tar.gz]
+[2024-04-06 21:54:36] INFO root fetch - main [MainThread]: End processing [yuag]: success
+[2024-04-06 21:54:36] WARNING root fetch - processPackages [kcli]: Timeout reached during download
+[2024-04-06 21:54:36] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2024-04-06 21:54:36] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202404051038.tar.gz tmp/kcli-99.0.202404061952.tar.gz --markdown 20240406/k/kcli/99.0.202404051038-99.0.202404061952/diff.md --exclude *.pyd
+[2024-04-06 21:54:36] INFO root fetch - processPackages [aiosteampy]: Remove: archive file [/home/abi/fetcher/tmp/aiosteampy-0.4.0.tar.gz]
+[2024-04-06 21:54:36] INFO root fetch - processPackages [aiosteampy]: Remove: archive file [/home/abi/fetcher/tmp/aiosteampy-0.4.1.tar.gz]
+[2024-04-06 21:54:36] INFO root fetch - main [MainThread]: End processing [aiosteampy]: success
+[2024-04-06 21:54:38] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202404051038.tar.gz]
+[2024-04-06 21:54:38] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202404061952.tar.gz]
+[2024-04-06 21:54:38] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2024-04-06 21:54:38] INFO root fetch - main [MainThread]: Store serial: [22650625]
