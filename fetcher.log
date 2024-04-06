@@ -13885,3 +13885,17 @@
 [2024-04-06 12:21:12] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.1.9.tar.gz]
 [2024-04-06 12:21:12] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
 [2024-04-06 12:21:12] INFO root fetch - main [MainThread]: Store serial: [22647205]
+[2024-04-06 12:23:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647205]
+[2024-04-06 12:23:21] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 12:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kkpyui
+[2024-04-06 12:23:21] INFO root fetch - processPackages [kkpyui]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-06 12:23:21] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/2f/72/7f37c9071384c52da0ce987ae47d1b7cc0518f058349895ed4c081bb4bcd/kkpyui-0.9.4.tar.gz
+[2024-04-06 12:23:21] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 12:23:21] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/fc/9a/f1edfb0fcbcd4f8acd8bd78fe9455405427448ed3d2f2c36e987ac03a04d/kkpyui-0.9.5.tar.gz
+[2024-04-06 12:23:21] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 12:23:21] INFO root fetch - processPackages [kkpyui]: executing diffoscope
+[2024-04-06 12:23:21] INFO root fetch - processPackages [kkpyui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyui-0.9.4.tar.gz tmp/kkpyui-0.9.5.tar.gz --markdown 20240406/k/kkpyui/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2024-04-06 12:23:22] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.4.tar.gz]
+[2024-04-06 12:23:22] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.5.tar.gz]
+[2024-04-06 12:23:22] INFO root fetch - main [MainThread]: End processing [kkpyui]: success
+[2024-04-06 12:23:22] INFO root fetch - main [MainThread]: Store serial: [22647208]
