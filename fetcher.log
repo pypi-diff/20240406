@@ -2669,3 +2669,28 @@
 [2024-04-06 02:48:20] INFO root fetch - processPackages [aios-sdk]: Remove: archive file [/home/abi/fetcher/tmp/aios_sdk-0.1.5.tar.gz]
 [2024-04-06 02:48:20] INFO root fetch - main [MainThread]: End processing [aios-sdk]: success
 [2024-04-06 02:48:20] INFO root fetch - main [MainThread]: Store serial: [22643470]
+[2024-04-06 02:50:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643470]
+[2024-04-06 02:50:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 02:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kayalab
+[2024-04-06 02:50:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pypomes-core
+[2024-04-06 02:50:29] INFO root fetch - processPackages [kayalab]: New version: [0.7.9] Old Version: [0.7.7]
+[2024-04-06 02:50:29] INFO root fetch - processPackages [pypomes-core]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-04-06 02:50:29] INFO root fetch - processPackages [kayalab]: Downloading https://files.pythonhosted.org/packages/68/63/0a29e7525b1f3462acb2531260d984867651bdccb876b75329d58bfa520d/kayalab-0.7.7.tar.gz
+[2024-04-06 02:50:29] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/98/25/f5fcf5ee54390c442cdac8dd5c24d811b55d3635f3dfe79b7f423c138bbb/pypomes_core-0.7.3.tar.gz
+[2024-04-06 02:50:29] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-06 02:50:29] INFO root fetch - processPackages [pypomes-core]: Downloading https://files.pythonhosted.org/packages/75/b7/6a9e30d3f6dbdc9f0e2c3538c6d6bc993a296afbfec6394365628e3bd32f/pypomes_core-0.7.4.tar.gz
+[2024-04-06 02:50:30] WARNING root fetch - processPackages [pypomes-core]: Timeout reached during download
+[2024-04-06 02:50:30] INFO root fetch - processPackages [pypomes-core]: executing diffoscope
+[2024-04-06 02:50:30] INFO root fetch - processPackages [pypomes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_core-0.7.3.tar.gz tmp/pypomes_core-0.7.4.tar.gz --markdown 20240406/p/pypomes-core/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2024-04-06 02:50:30] WARNING root fetch - processPackages [kayalab]: Timeout reached during download
+[2024-04-06 02:50:30] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.3.tar.gz]
+[2024-04-06 02:50:30] INFO root fetch - processPackages [pypomes-core]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_core-0.7.4.tar.gz]
+[2024-04-06 02:50:30] INFO root fetch - main [MainThread]: End processing [pypomes-core]: success
+[2024-04-06 02:50:30] INFO root fetch - processPackages [kayalab]: Downloading https://files.pythonhosted.org/packages/48/39/39e758163c554700194cf72c42f0290287f1336d791be5766d519f7b266c/kayalab-0.7.9.tar.gz
+[2024-04-06 02:50:33] WARNING root fetch - processPackages [kayalab]: Timeout reached during download
+[2024-04-06 02:50:33] INFO root fetch - processPackages [kayalab]: executing diffoscope
+[2024-04-06 02:50:33] INFO root fetch - processPackages [kayalab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kayalab-0.7.7.tar.gz tmp/kayalab-0.7.9.tar.gz --markdown 20240406/k/kayalab/0.7.7-0.7.9/diff.md --exclude *.pyd
+[2024-04-06 02:50:36] INFO root fetch - processPackages [kayalab]: Remove: archive file [/home/abi/fetcher/tmp/kayalab-0.7.7.tar.gz]
+[2024-04-06 02:50:36] INFO root fetch - processPackages [kayalab]: Remove: archive file [/home/abi/fetcher/tmp/kayalab-0.7.9.tar.gz]
+[2024-04-06 02:50:36] INFO root fetch - main [MainThread]: End processing [kayalab]: success
+[2024-04-06 02:50:36] INFO root fetch - main [MainThread]: Store serial: [22643476]
