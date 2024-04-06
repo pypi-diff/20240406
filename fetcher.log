@@ -12514,3 +12514,39 @@
 [2024-04-06 10:24:02] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
 [2024-04-06 10:24:02] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
 [2024-04-06 10:24:02] INFO root fetch - main [MainThread]: Store serial: [22646697]
+[2024-04-06 10:26:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646697]
+[2024-04-06 10:26:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: just_design_phase
+[2024-04-06 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ruleopt
+[2024-04-06 10:26:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langmem
+[2024-04-06 10:26:11] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 10:26:11] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/d6/22/df0f4222a249970163b3371926a27bb24e7b321b49cc59c6124a780ce9e5/just_design_phase-0.0.7.tar.gz
+[2024-04-06 10:26:11] INFO root fetch - processPackages [langmem]: New version: [0.0.2] Old Version: [0.0.1rc9]
+[2024-04-06 10:26:11] INFO root fetch - processPackages [ruleopt]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-06 10:26:11] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 10:26:11] INFO root fetch - processPackages [langmem]: Downloading https://files.pythonhosted.org/packages/89/39/4eda77738709b684aa8936cef7976e4d4a318bd911d6e106f4d898536745/langmem-0.0.1rc9.tar.gz
+[2024-04-06 10:26:11] INFO root fetch - processPackages [ruleopt]: Downloading https://files.pythonhosted.org/packages/8f/39/3c6e7740896a27bc4d74a368f5241237fe3df87b915772db8018f2178a75/ruleopt-0.1.2-cp39-cp39-win_amd64.whl
+[2024-04-06 10:26:11] WARNING root fetch - processPackages [langmem]: Timeout reached during download
+[2024-04-06 10:26:11] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/7d/f5/e1e6f21f81f306ebcde6bba08c09cb5dc644f3603c310cafc00ab3de077e/just_design_phase-0.0.8.tar.gz
+[2024-04-06 10:26:11] WARNING root fetch - processPackages [ruleopt]: Timeout reached during download
+[2024-04-06 10:26:11] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 10:26:11] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 10:26:11] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.7.tar.gz tmp/just_design_phase-0.0.8.tar.gz --markdown 20240406/j/just_design_phase/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 10:26:11] INFO root fetch - processPackages [langmem]: Downloading https://files.pythonhosted.org/packages/12/76/7977adb14b46b6cc7e3ec29898ad6896cd61555332af5302a6e8e2f9f3f5/langmem-0.0.2.tar.gz
+[2024-04-06 10:26:11] INFO root fetch - processPackages [ruleopt]: Downloading https://files.pythonhosted.org/packages/be/e2/6091cf79b81f39f78c083fbe2669c265ff1cd7edf76cb1e9122772c06ea4/ruleopt-0.1.3-cp39-cp39-macosx_11_0_arm64.whl
+[2024-04-06 10:26:11] WARNING root fetch - processPackages [langmem]: Timeout reached during download
+[2024-04-06 10:26:11] INFO root fetch - processPackages [langmem]: executing diffoscope
+[2024-04-06 10:26:11] INFO root fetch - processPackages [langmem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langmem-0.0.1rc9.tar.gz tmp/langmem-0.0.2.tar.gz --markdown 20240406/l/langmem/0.0.1rc9-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 10:26:11] WARNING root fetch - processPackages [ruleopt]: Timeout reached during download
+[2024-04-06 10:26:11] INFO root fetch - processPackages [ruleopt]: executing diffoscope
+[2024-04-06 10:26:11] INFO root fetch - processPackages [ruleopt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ruleopt-0.1.2-cp39-cp39-win_amd64.whl.zip tmp/ruleopt-0.1.3-cp39-cp39-macosx_11_0_arm64.whl.zip --markdown 20240406/r/ruleopt/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-06 10:26:12] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.7.tar.gz]
+[2024-04-06 10:26:12] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.8.tar.gz]
+[2024-04-06 10:26:12] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 10:26:12] INFO root fetch - processPackages [langmem]: Remove: archive file [/home/abi/fetcher/tmp/langmem-0.0.1rc9.tar.gz]
+[2024-04-06 10:26:12] INFO root fetch - processPackages [langmem]: Remove: archive file [/home/abi/fetcher/tmp/langmem-0.0.2.tar.gz]
+[2024-04-06 10:26:12] INFO root fetch - main [MainThread]: End processing [langmem]: success
+[2024-04-06 10:26:13] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.2-cp39-cp39-win_amd64.whl.zip]
+[2024-04-06 10:26:13] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.3-cp39-cp39-macosx_11_0_arm64.whl.zip]
+[2024-04-06 10:26:13] INFO root fetch - main [MainThread]: End processing [ruleopt]: success
+[2024-04-06 10:26:13] INFO root fetch - main [MainThread]: Store serial: [22646712]
