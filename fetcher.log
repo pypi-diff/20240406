@@ -16211,3 +16211,20 @@ EOFError: EOF read where object expected
 [2024-04-06 14:57:08] INFO root fetch - processPackages [prodimopy]: Remove: archive file [/home/abi/fetcher/tmp/prodimopy-2.3.tar.gz]
 [2024-04-06 14:57:08] INFO root fetch - main [MainThread]: End processing [prodimopy]: success
 [2024-04-06 14:57:08] INFO root fetch - main [MainThread]: Store serial: [22647945]
+[2024-04-06 14:59:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647945]
+[2024-04-06 14:59:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 14:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-purchase-backorder
+[2024-04-06 14:59:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: t-object
+[2024-04-06 14:59:17] INFO root fetch - processPackages [t-object]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-06 14:59:17] INFO root fetch - processPackages [t-object]: Downloading https://files.pythonhosted.org/packages/06/74/4a26b2564fbaa8f4a4c7f9bb864e610688bdb004c2c1807d67b02a97e2d1/t_object-0.1.5.tar.gz
+[2024-04-06 14:59:17] WARNING root fetch - processPackages [odoo-addon-purchase-backorder]: Skipping, unable to determine old version
+[2024-04-06 14:59:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-backorder] error
+[2024-04-06 14:59:17] WARNING root fetch - processPackages [t-object]: Timeout reached during download
+[2024-04-06 14:59:17] INFO root fetch - processPackages [t-object]: Downloading https://files.pythonhosted.org/packages/67/7c/e25cf9db81693415f2a89f90339e1b6419a6e223c65c56ada8eeb9764843/t_object-0.1.6.tar.gz
+[2024-04-06 14:59:17] WARNING root fetch - processPackages [t-object]: Timeout reached during download
+[2024-04-06 14:59:17] INFO root fetch - processPackages [t-object]: executing diffoscope
+[2024-04-06 14:59:17] INFO root fetch - processPackages [t-object]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t_object-0.1.5.tar.gz tmp/t_object-0.1.6.tar.gz --markdown 20240406/t/t-object/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-06 14:59:18] INFO root fetch - processPackages [t-object]: Remove: archive file [/home/abi/fetcher/tmp/t_object-0.1.5.tar.gz]
+[2024-04-06 14:59:18] INFO root fetch - processPackages [t-object]: Remove: archive file [/home/abi/fetcher/tmp/t_object-0.1.6.tar.gz]
+[2024-04-06 14:59:18] INFO root fetch - main [MainThread]: End processing [t-object]: success
+[2024-04-06 14:59:18] INFO root fetch - main [MainThread]: Store serial: [22647962]
