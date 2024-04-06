@@ -16685,3 +16685,39 @@ EOFError: EOF read where object expected
 [2024-04-06 15:31:56] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.2.tar.gz]
 [2024-04-06 15:31:56] INFO root fetch - main [MainThread]: End processing [simple-background-remover]: success
 [2024-04-06 15:31:56] INFO root fetch - main [MainThread]: Store serial: [22648236]
+[2024-04-06 15:34:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648236]
+[2024-04-06 15:34:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 15:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spice-rack
+[2024-04-06 15:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tunit
+[2024-04-06 15:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: afeng-py-tools
+[2024-04-06 15:34:05] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 15:34:05] INFO root fetch - processPackages [spice-rack]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-06 15:34:05] INFO root fetch - processPackages [tunit]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-06 15:34:06] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-06 15:34:06] INFO root fetch - processPackages [spice-rack]: Downloading https://files.pythonhosted.org/packages/a9/39/e7f39c18050527a737854312efd045f8f20e54785ab15241f31dea9da7af/spice_rack-0.5.0.tar.gz
+[2024-04-06 15:34:06] INFO root fetch - processPackages [tunit]: Downloading https://files.pythonhosted.org/packages/3a/f0/67b43ec306b5ff714612eacd647a87143e0d724287876bc84822f21c47f2/tunit-1.7.0.tar.gz
+[2024-04-06 15:34:06] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 15:34:06] WARNING root fetch - processPackages [tunit]: Timeout reached during download
+[2024-04-06 15:34:06] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-06 15:34:06] WARNING root fetch - processPackages [spice-rack]: Timeout reached during download
+[2024-04-06 15:34:06] INFO root fetch - processPackages [tunit]: Downloading https://files.pythonhosted.org/packages/ea/c3/70a07f0b15b35ef59200a3baf841879a0ddf3dd3dee49cd79254e28ea9ff/tunit-1.7.1.tar.gz
+[2024-04-06 15:34:06] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 15:34:06] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-06 15:34:06] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240406/a/afeng-py-tools/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 15:34:06] WARNING root fetch - processPackages [tunit]: Timeout reached during download
+[2024-04-06 15:34:06] INFO root fetch - processPackages [tunit]: executing diffoscope
+[2024-04-06 15:34:06] INFO root fetch - processPackages [tunit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tunit-1.7.0.tar.gz tmp/tunit-1.7.1.tar.gz --markdown 20240406/t/tunit/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2024-04-06 15:34:06] INFO root fetch - processPackages [spice-rack]: Downloading https://files.pythonhosted.org/packages/c2/c0/150166917645888425425f685c88ae9ddfdd29bda90cd16ae1320d29931d/spice_rack-0.5.1.tar.gz
+[2024-04-06 15:34:06] WARNING root fetch - processPackages [spice-rack]: Timeout reached during download
+[2024-04-06 15:34:06] INFO root fetch - processPackages [spice-rack]: executing diffoscope
+[2024-04-06 15:34:06] INFO root fetch - processPackages [spice-rack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spice_rack-0.5.0.tar.gz tmp/spice_rack-0.5.1.tar.gz --markdown 20240406/s/spice-rack/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-06 15:34:07] INFO root fetch - processPackages [tunit]: Remove: archive file [/home/abi/fetcher/tmp/tunit-1.7.0.tar.gz]
+[2024-04-06 15:34:07] INFO root fetch - processPackages [tunit]: Remove: archive file [/home/abi/fetcher/tmp/tunit-1.7.1.tar.gz]
+[2024-04-06 15:34:07] INFO root fetch - main [MainThread]: End processing [tunit]: success
+[2024-04-06 15:34:07] INFO root fetch - processPackages [spice-rack]: Remove: archive file [/home/abi/fetcher/tmp/spice_rack-0.5.0.tar.gz]
+[2024-04-06 15:34:07] INFO root fetch - processPackages [spice-rack]: Remove: archive file [/home/abi/fetcher/tmp/spice_rack-0.5.1.tar.gz]
+[2024-04-06 15:34:07] INFO root fetch - main [MainThread]: End processing [spice-rack]: success
+[2024-04-06 15:34:07] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-06 15:34:07] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-06 15:34:07] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-06 15:34:07] INFO root fetch - main [MainThread]: Store serial: [22648245]
