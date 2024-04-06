@@ -15898,3 +15898,33 @@ EOFError: EOF read where object expected
 [2024-04-06 14:35:21] INFO root fetch - processPackages [gcloud-aio-auth]: Remove: archive file [/home/abi/fetcher/tmp/gcloud_aio_auth-5.3.1.tar.gz]
 [2024-04-06 14:35:21] INFO root fetch - main [MainThread]: End processing [gcloud-aio-auth]: success
 [2024-04-06 14:35:21] INFO root fetch - main [MainThread]: Store serial: [22647829]
+[2024-04-06 14:37:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647829]
+[2024-04-06 14:37:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 14:37:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tensorcircuit-nightly
+[2024-04-06 14:37:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-esimd
+[2024-04-06 14:37:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pydmt
+[2024-04-06 14:37:30] INFO root fetch - processPackages [pydmt]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-04-06 14:37:30] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230608] Old Version: [0.9.1.dev20230607]
+[2024-04-06 14:37:30] INFO root fetch - processPackages [bigdl-core-xe-esimd]: New version: [2.5.0b20240406] Old Version: [2.5.0b20240405]
+[2024-04-06 14:37:30] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/e5/58/40f0c8ea02d889b473900a9dc236e71d2a4e442c7646736d7a43a0db1087/pydmt-0.3.6.tar.gz
+[2024-04-06 14:37:30] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/79/2a/50740b6f8b7e1d0c4223c72c789f41baca7a4e77f32e8f52bd91e7ebff20/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz
+[2024-04-06 14:37:30] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:37:30] INFO root fetch - processPackages [bigdl-core-xe-esimd]: Downloading https://files.pythonhosted.org/packages/44/de/889489f338aa36cc3da36c84b6d75833c077e8e6b87a6074aab32a938007/bigdl_core_xe_esimd-2.5.0b20240405-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-06 14:37:30] WARNING root fetch - processPackages [bigdl-core-xe-esimd]: Skipping package: exceeds size limit 61865774>=10485760
+[2024-04-06 14:37:30] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd] error
+[2024-04-06 14:37:30] WARNING root fetch - processPackages [tensorcircuit-nightly]: Timeout reached during download
+[2024-04-06 14:37:30] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/e6/76/e99816ed28f4eee54685b6b8d4669e14fef42eaf834a25021ee1ed1a6a21/pydmt-0.3.7.tar.gz
+[2024-04-06 14:37:30] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/2f/cc/671276320457670987d1eb503de15ee19924e63c7ec9c99b14c240d5aa18/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz
+[2024-04-06 14:37:30] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:37:30] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2024-04-06 14:37:30] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.3.6.tar.gz tmp/pydmt-0.3.7.tar.gz --markdown 20240406/p/pydmt/0.3.6-0.3.7/diff.md --exclude *.pyd
+[2024-04-06 14:37:30] WARNING root fetch - processPackages [tensorcircuit-nightly]: Timeout reached during download
+[2024-04-06 14:37:30] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2024-04-06 14:37:30] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz --markdown 20240406/t/tensorcircuit-nightly/0.9.1.dev20230607-0.9.1.dev20230608/diff.md --exclude *.pyd
+[2024-04-06 14:37:31] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.6.tar.gz]
+[2024-04-06 14:37:31] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.7.tar.gz]
+[2024-04-06 14:37:31] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2024-04-06 14:37:31] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz]
+[2024-04-06 14:37:31] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
+[2024-04-06 14:37:31] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2024-04-06 14:37:31] INFO root fetch - main [MainThread]: Store serial: [22647838]
