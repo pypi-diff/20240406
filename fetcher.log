@@ -10898,3 +10898,28 @@
 [2024-04-06 08:09:10] INFO root fetch - processPackages [pyg-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyg_nightly-2.6.0.dev20240406.tar.gz]
 [2024-04-06 08:09:10] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2024-04-06 08:09:10] INFO root fetch - main [MainThread]: Store serial: [22645986]
+[2024-04-06 08:11:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645986]
+[2024-04-06 08:11:18] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 08:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: novelai-python
+[2024-04-06 08:11:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: score-eval
+[2024-04-06 08:11:18] INFO root fetch - processPackages [score-eval]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 08:11:18] INFO root fetch - processPackages [novelai-python]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-06 08:11:19] INFO root fetch - processPackages [score-eval]: Downloading https://files.pythonhosted.org/packages/46/29/3d68ba7b45ccfea142a5ddb1eef3fd681a05f07f2d465b64b90925b107fd/score-eval-0.0.2.tar.gz
+[2024-04-06 08:11:19] INFO root fetch - processPackages [novelai-python]: Downloading https://files.pythonhosted.org/packages/b9/a9/055ac91eb4815bc6100a5bde4bd90309b5243c5df358ce5789d4797f56d3/novelai_python-0.4.5.tar.gz
+[2024-04-06 08:11:19] WARNING root fetch - processPackages [score-eval]: Timeout reached during download
+[2024-04-06 08:11:19] WARNING root fetch - processPackages [novelai-python]: Timeout reached during download
+[2024-04-06 08:11:19] INFO root fetch - processPackages [novelai-python]: Downloading https://files.pythonhosted.org/packages/95/bf/c37f82f322f7a2eadaa20c3108371ceb697f9d9ab53aa2dc2e27abc43f6b/novelai_python-0.4.6.tar.gz
+[2024-04-06 08:11:19] INFO root fetch - processPackages [score-eval]: Downloading https://files.pythonhosted.org/packages/86/36/077221e6754f45d512504dfc2b7f09e60112770245afadbf8f813ee85c21/score_eval-0.0.3.tar.gz
+[2024-04-06 08:11:19] WARNING root fetch - processPackages [novelai-python]: Timeout reached during download
+[2024-04-06 08:11:19] INFO root fetch - processPackages [novelai-python]: executing diffoscope
+[2024-04-06 08:11:19] INFO root fetch - processPackages [novelai-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelai_python-0.4.5.tar.gz tmp/novelai_python-0.4.6.tar.gz --markdown 20240406/n/novelai-python/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2024-04-06 08:11:20] WARNING root fetch - processPackages [score-eval]: Timeout reached during download
+[2024-04-06 08:11:20] INFO root fetch - processPackages [score-eval]: executing diffoscope
+[2024-04-06 08:11:20] INFO root fetch - processPackages [score-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/score-eval-0.0.2.tar.gz tmp/score_eval-0.0.3.tar.gz --markdown 20240406/s/score-eval/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 08:11:20] INFO root fetch - processPackages [novelai-python]: Remove: archive file [/home/abi/fetcher/tmp/novelai_python-0.4.5.tar.gz]
+[2024-04-06 08:11:20] INFO root fetch - processPackages [novelai-python]: Remove: archive file [/home/abi/fetcher/tmp/novelai_python-0.4.6.tar.gz]
+[2024-04-06 08:11:20] INFO root fetch - main [MainThread]: End processing [novelai-python]: success
+[2024-04-06 08:11:20] INFO root fetch - processPackages [score-eval]: Remove: archive file [/home/abi/fetcher/tmp/score-eval-0.0.2.tar.gz]
+[2024-04-06 08:11:20] INFO root fetch - processPackages [score-eval]: Remove: archive file [/home/abi/fetcher/tmp/score_eval-0.0.3.tar.gz]
+[2024-04-06 08:11:20] INFO root fetch - main [MainThread]: End processing [score-eval]: success
+[2024-04-06 08:11:20] INFO root fetch - main [MainThread]: Store serial: [22645992]
