@@ -13596,3 +13596,26 @@
 [2024-04-06 11:55:11] INFO root fetch - processPackages [time-lapse]: Remove: archive file [/home/abi/fetcher/tmp/time_lapse-7.0.tar.gz]
 [2024-04-06 11:55:11] INFO root fetch - main [MainThread]: End processing [time-lapse]: success
 [2024-04-06 11:55:11] INFO root fetch - main [MainThread]: Store serial: [22647137]
+[2024-04-06 11:57:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647137]
+[2024-04-06 11:57:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 11:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: just_design_phase
+[2024-04-06 11:57:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: just_design_phase
+[2024-04-06 11:57:19] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 11:57:19] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/7d/f5/e1e6f21f81f306ebcde6bba08c09cb5dc644f3603c310cafc00ab3de077e/just_design_phase-0.0.8.tar.gz
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/7d/f5/e1e6f21f81f306ebcde6bba08c09cb5dc644f3603c310cafc00ab3de077e/just_design_phase-0.0.8.tar.gz
+[2024-04-06 11:57:20] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:57:20] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/aa/b5/29ee0abf7aa594516a36ed125483f2184a52d792c0c9a50f97903114d895/just_design_phase-0.0.9.tar.gz
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/aa/b5/29ee0abf7aa594516a36ed125483f2184a52d792c0c9a50f97903114d895/just_design_phase-0.0.9.tar.gz
+[2024-04-06 11:57:20] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.8.tar.gz tmp/just_design_phase-0.0.9.tar.gz --markdown 20240406/j/just_design_phase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:57:20] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.8.tar.gz tmp/just_design_phase-0.0.9.tar.gz --markdown 20240406/j/just_design_phase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.8.tar.gz]
+[2024-04-06 11:57:20] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.9.tar.gz]
+[2024-04-06 11:57:20] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 11:57:20] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 11:57:20] INFO root fetch - main [MainThread]: Store serial: [22647143]
