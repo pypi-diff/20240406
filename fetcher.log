@@ -13961,3 +13961,28 @@
 [2024-04-06 12:36:15] INFO root fetch - processPackages [sparrow-python]: Remove: archive file [/home/abi/fetcher/tmp/sparrow_python-0.2.0.tar.gz]
 [2024-04-06 12:36:15] INFO root fetch - main [MainThread]: End processing [sparrow-python]: success
 [2024-04-06 12:36:15] INFO root fetch - main [MainThread]: Store serial: [22647248]
+[2024-04-06 12:38:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647248]
+[2024-04-06 12:38:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 12:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: just_design_phase
+[2024-04-06 12:38:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: riscv-config
+[2024-04-06 12:38:24] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 12:38:24] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/7d/f5/e1e6f21f81f306ebcde6bba08c09cb5dc644f3603c310cafc00ab3de077e/just_design_phase-0.0.8.tar.gz
+[2024-04-06 12:38:24] INFO root fetch - processPackages [riscv-config]: New version: [3.9.2] Old Version: [3.9.1]
+[2024-04-06 12:38:24] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 12:38:24] INFO root fetch - processPackages [riscv-config]: Downloading https://files.pythonhosted.org/packages/e1/6c/39d5d244e2bd72c43c490f9dcd8ea7b85babfb92d79c8769e49cd24e11a1/riscv_config-3.9.1.tar.gz
+[2024-04-06 12:38:24] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/aa/b5/29ee0abf7aa594516a36ed125483f2184a52d792c0c9a50f97903114d895/just_design_phase-0.0.9.tar.gz
+[2024-04-06 12:38:24] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 12:38:24] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 12:38:24] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.8.tar.gz tmp/just_design_phase-0.0.9.tar.gz --markdown 20240406/j/just_design_phase/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 12:38:25] WARNING root fetch - processPackages [riscv-config]: Timeout reached during download
+[2024-04-06 12:38:25] INFO root fetch - processPackages [riscv-config]: Downloading https://files.pythonhosted.org/packages/4e/21/69dfa0800dec15ca58e95135f0d2095bc55088d27d24d5399b4d31a37246/riscv_config-3.9.2.tar.gz
+[2024-04-06 12:38:25] WARNING root fetch - processPackages [riscv-config]: Timeout reached during download
+[2024-04-06 12:38:25] INFO root fetch - processPackages [riscv-config]: executing diffoscope
+[2024-04-06 12:38:25] INFO root fetch - processPackages [riscv-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/riscv_config-3.9.1.tar.gz tmp/riscv_config-3.9.2.tar.gz --markdown 20240406/r/riscv-config/3.9.1-3.9.2/diff.md --exclude *.pyd
+[2024-04-06 12:38:25] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.8.tar.gz]
+[2024-04-06 12:38:25] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.9.tar.gz]
+[2024-04-06 12:38:25] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 12:38:26] INFO root fetch - processPackages [riscv-config]: Remove: archive file [/home/abi/fetcher/tmp/riscv_config-3.9.1.tar.gz]
+[2024-04-06 12:38:26] INFO root fetch - processPackages [riscv-config]: Remove: archive file [/home/abi/fetcher/tmp/riscv_config-3.9.2.tar.gz]
+[2024-04-06 12:38:26] INFO root fetch - main [MainThread]: End processing [riscv-config]: success
+[2024-04-06 12:38:26] INFO root fetch - main [MainThread]: Store serial: [22647254]
