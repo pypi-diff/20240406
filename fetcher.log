@@ -11523,3 +11523,17 @@
 [2024-04-06 09:04:05] INFO root fetch - processPackages [tf-models-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip]
 [2024-04-06 09:04:05] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
 [2024-04-06 09:04:05] INFO root fetch - main [MainThread]: Store serial: [22646324]
+[2024-04-06 09:06:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646324]
+[2024-04-06 09:06:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 09:06:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glhf
+[2024-04-06 09:06:14] INFO root fetch - processPackages [glhf]: New version: [0.0a1] Old Version: [0.0.1.dev5]
+[2024-04-06 09:06:15] INFO root fetch - processPackages [glhf]: Downloading https://files.pythonhosted.org/packages/4c/d4/9622ba133a8d309fb2a9265614b8f5ff011b49189aff7347f6a445a16a03/glhf-0.0.1.dev5.tar.gz
+[2024-04-06 09:06:15] WARNING root fetch - processPackages [glhf]: Timeout reached during download
+[2024-04-06 09:06:15] INFO root fetch - processPackages [glhf]: Downloading https://files.pythonhosted.org/packages/52/0d/b03aa3bdf043944e057062bfa29d7fbf0a16ff1b0ee8e5a7a2f60fe49b76/glhf-0.0a1.tar.gz
+[2024-04-06 09:06:15] WARNING root fetch - processPackages [glhf]: Timeout reached during download
+[2024-04-06 09:06:15] INFO root fetch - processPackages [glhf]: executing diffoscope
+[2024-04-06 09:06:15] INFO root fetch - processPackages [glhf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glhf-0.0.1.dev5.tar.gz tmp/glhf-0.0a1.tar.gz --markdown 20240406/g/glhf/0.0.1.dev5-0.0a1/diff.md --exclude *.pyd
+[2024-04-06 09:06:16] INFO root fetch - processPackages [glhf]: Remove: archive file [/home/abi/fetcher/tmp/glhf-0.0.1.dev5.tar.gz]
+[2024-04-06 09:06:16] INFO root fetch - processPackages [glhf]: Remove: archive file [/home/abi/fetcher/tmp/glhf-0.0a1.tar.gz]
+[2024-04-06 09:06:16] INFO root fetch - main [MainThread]: End processing [glhf]: success
+[2024-04-06 09:06:16] INFO root fetch - main [MainThread]: Store serial: [22646327]
