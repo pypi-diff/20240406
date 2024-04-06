@@ -22448,3 +22448,28 @@ EOFError: EOF read where object expected
 [2024-04-06 20:57:16] INFO root fetch - processPackages [pointpp]: Remove: archive file [/home/abi/fetcher/tmp/pointpp-0.2.1.tar.gz]
 [2024-04-06 20:57:16] INFO root fetch - main [MainThread]: End processing [pointpp]: success
 [2024-04-06 20:57:16] INFO root fetch - main [MainThread]: Store serial: [22650286]
+[2024-04-06 20:59:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650286]
+[2024-04-06 20:59:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 20:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: starrailcard
+[2024-04-06 20:59:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: diskinfo
+[2024-04-06 20:59:24] INFO root fetch - processPackages [starrailcard]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-06 20:59:24] INFO root fetch - processPackages [diskinfo]: New version: [3.1.1] Old Version: [3.1.0]
+[2024-04-06 20:59:24] INFO root fetch - processPackages [starrailcard]: Downloading https://files.pythonhosted.org/packages/5b/17/ba85c4b7498007d87d01349de27e1548e975e28a58c0d307f5bdd28fc3ea/starrailcard-2.1.0.tar.gz
+[2024-04-06 20:59:24] INFO root fetch - processPackages [diskinfo]: Downloading https://files.pythonhosted.org/packages/6c/88/97abf7dc0ffa20432b8ce1c9eb22e4b4357c939ea804090881e3e1623240/diskinfo-3.1.0.tar.gz
+[2024-04-06 20:59:25] WARNING root fetch - processPackages [starrailcard]: Timeout reached during download
+[2024-04-06 20:59:25] WARNING root fetch - processPackages [diskinfo]: Timeout reached during download
+[2024-04-06 20:59:25] INFO root fetch - processPackages [starrailcard]: Downloading https://files.pythonhosted.org/packages/12/a3/45685635af9554ba1a6343add5e71288fbd9d4f4293a2f6d759a9a91402a/starrailcard-2.1.1.tar.gz
+[2024-04-06 20:59:25] INFO root fetch - processPackages [diskinfo]: Downloading https://files.pythonhosted.org/packages/54/b9/5855efe6424fc4373060c75c3d1f12b4bc06981726ec5b977815e8ba6b6c/diskinfo-3.1.1.tar.gz
+[2024-04-06 20:59:25] WARNING root fetch - processPackages [starrailcard]: Timeout reached during download
+[2024-04-06 20:59:25] INFO root fetch - processPackages [starrailcard]: executing diffoscope
+[2024-04-06 20:59:25] INFO root fetch - processPackages [starrailcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrailcard-2.1.0.tar.gz tmp/starrailcard-2.1.1.tar.gz --markdown 20240406/s/starrailcard/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2024-04-06 20:59:25] WARNING root fetch - processPackages [diskinfo]: Timeout reached during download
+[2024-04-06 20:59:25] INFO root fetch - processPackages [diskinfo]: executing diffoscope
+[2024-04-06 20:59:25] INFO root fetch - processPackages [diskinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diskinfo-3.1.0.tar.gz tmp/diskinfo-3.1.1.tar.gz --markdown 20240406/d/diskinfo/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2024-04-06 20:59:26] INFO root fetch - processPackages [starrailcard]: Remove: archive file [/home/abi/fetcher/tmp/starrailcard-2.1.0.tar.gz]
+[2024-04-06 20:59:26] INFO root fetch - processPackages [starrailcard]: Remove: archive file [/home/abi/fetcher/tmp/starrailcard-2.1.1.tar.gz]
+[2024-04-06 20:59:26] INFO root fetch - main [MainThread]: End processing [starrailcard]: success
+[2024-04-06 20:59:26] INFO root fetch - processPackages [diskinfo]: Remove: archive file [/home/abi/fetcher/tmp/diskinfo-3.1.0.tar.gz]
+[2024-04-06 20:59:26] INFO root fetch - processPackages [diskinfo]: Remove: archive file [/home/abi/fetcher/tmp/diskinfo-3.1.1.tar.gz]
+[2024-04-06 20:59:26] INFO root fetch - main [MainThread]: End processing [diskinfo]: success
+[2024-04-06 20:59:26] INFO root fetch - main [MainThread]: Store serial: [22650294]
