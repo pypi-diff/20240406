@@ -15376,3 +15376,28 @@ EOFError: EOF read where object expected
 [2024-04-06 13:55:55] INFO root fetch - processPackages [abberior-sted]: Remove: archive file [/home/abi/fetcher/tmp/abberior-sted-0.0.2.tar.gz]
 [2024-04-06 13:55:55] INFO root fetch - main [MainThread]: End processing [abberior-sted]: success
 [2024-04-06 13:55:55] INFO root fetch - main [MainThread]: Store serial: [22647675]
+[2024-04-06 13:57:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647675]
+[2024-04-06 13:58:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 13:58:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xraygpt
+[2024-04-06 13:58:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Rryyz
+[2024-04-06 13:58:04] INFO root fetch - processPackages [xraygpt]: New version: [0.1.1.dev1] Old Version: [0.1.1.dev0]
+[2024-04-06 13:58:04] INFO root fetch - processPackages [Rryyz]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 13:58:04] INFO root fetch - processPackages [xraygpt]: Downloading https://files.pythonhosted.org/packages/b6/4f/e086c6ab876e8e19ee3a247334417d2395c3bebdfee9f355763b1dba2e60/xraygpt-0.1.1.dev0.tar.gz
+[2024-04-06 13:58:04] INFO root fetch - processPackages [Rryyz]: Downloading https://files.pythonhosted.org/packages/ca/78/79fe514c33c8fd2c5b722ecd42a699ecbf6405f7b8dd870df14037afc89c/Rryyz-0.0.1.tar.gz
+[2024-04-06 13:58:04] WARNING root fetch - processPackages [xraygpt]: Timeout reached during download
+[2024-04-06 13:58:04] WARNING root fetch - processPackages [Rryyz]: Timeout reached during download
+[2024-04-06 13:58:04] INFO root fetch - processPackages [xraygpt]: Downloading https://files.pythonhosted.org/packages/83/d4/e3e259a08e3473b70e86e793f5e2bb25b275324b997a120331757bb15881/xraygpt-0.1.1.dev1.tar.gz
+[2024-04-06 13:58:04] INFO root fetch - processPackages [Rryyz]: Downloading https://files.pythonhosted.org/packages/2e/38/b599bf7d9b96625e35c22e5725373c408680512e69129e64a168c961fc30/Rryyz-0.0.2.tar.gz
+[2024-04-06 13:58:04] WARNING root fetch - processPackages [xraygpt]: Timeout reached during download
+[2024-04-06 13:58:04] INFO root fetch - processPackages [xraygpt]: executing diffoscope
+[2024-04-06 13:58:04] INFO root fetch - processPackages [xraygpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xraygpt-0.1.1.dev0.tar.gz tmp/xraygpt-0.1.1.dev1.tar.gz --markdown 20240406/x/xraygpt/0.1.1.dev0-0.1.1.dev1/diff.md --exclude *.pyd
+[2024-04-06 13:58:04] WARNING root fetch - processPackages [Rryyz]: Timeout reached during download
+[2024-04-06 13:58:04] INFO root fetch - processPackages [Rryyz]: executing diffoscope
+[2024-04-06 13:58:04] INFO root fetch - processPackages [Rryyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Rryyz-0.0.1.tar.gz tmp/Rryyz-0.0.2.tar.gz --markdown 20240406/R/Rryyz/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 13:58:05] INFO root fetch - processPackages [Rryyz]: Remove: archive file [/home/abi/fetcher/tmp/Rryyz-0.0.1.tar.gz]
+[2024-04-06 13:58:05] INFO root fetch - processPackages [Rryyz]: Remove: archive file [/home/abi/fetcher/tmp/Rryyz-0.0.2.tar.gz]
+[2024-04-06 13:58:05] INFO root fetch - main [MainThread]: End processing [Rryyz]: success
+[2024-04-06 13:58:05] INFO root fetch - processPackages [xraygpt]: Remove: archive file [/home/abi/fetcher/tmp/xraygpt-0.1.1.dev0.tar.gz]
+[2024-04-06 13:58:05] INFO root fetch - processPackages [xraygpt]: Remove: archive file [/home/abi/fetcher/tmp/xraygpt-0.1.1.dev1.tar.gz]
+[2024-04-06 13:58:05] INFO root fetch - main [MainThread]: End processing [xraygpt]: success
+[2024-04-06 13:58:05] INFO root fetch - main [MainThread]: Store serial: [22647682]
