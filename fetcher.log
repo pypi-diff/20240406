@@ -9982,3 +9982,53 @@
 [2024-04-06 06:39:19] INFO root fetch - processPackages [aws-cdk.cli-lib-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.cli-lib-alpha-2.99.1a0.tar.gz]
 [2024-04-06 06:39:19] INFO root fetch - main [MainThread]: End processing [aws-cdk.cli-lib-alpha]: success
 [2024-04-06 06:39:19] INFO root fetch - main [MainThread]: Store serial: [22645683]
+[2024-04-06 06:41:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645683]
+[2024-04-06 06:41:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 06:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-04-06 06:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-dragonfly
+[2024-04-06 06:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yosemite-tools
+[2024-04-06 06:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-login-email
+[2024-04-06 06:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: deps-manager
+[2024-04-06 06:41:29] INFO root fetch - processPackages [django-login-email]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-04-06 06:41:29] INFO root fetch - processPackages [yosemite-tools]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [deps-manager]: Skipping, unable to determine old version
+[2024-04-06 06:41:29] INFO root fetch - main [MainThread]: End processing [deps-manager] error
+[2024-04-06 06:41:29] INFO root fetch - processPackages [lbt-dragonfly]: New version: [0.9.99] Old Version: [0.9.98]
+[2024-04-06 06:41:29] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 06:41:29] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/be/ae/7267dfd241a0641f3fbadea4128db5ffa29609911cadb5fc4840656bb44a/lbt-dragonfly-0.9.98.tar.gz
+[2024-04-06 06:41:29] INFO root fetch - processPackages [django-login-email]: Downloading https://files.pythonhosted.org/packages/23/90/323c07c4bbfebacdc6c7c77cb524a8e38a96299d52e91a73e323879dc9e4/django_login_email-0.2.0.tar.gz
+[2024-04-06 06:41:29] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/d7/86/175994637311b6ee4ec70e8e677379299bb1d5d1daa1d270c1886a1fde86/yosemite-tools-0.0.2.tar.gz
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [lbt-dragonfly]: Timeout reached during download
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [django-login-email]: Timeout reached during download
+[2024-04-06 06:41:29] INFO root fetch - processPackages [lbt-dragonfly]: Downloading https://files.pythonhosted.org/packages/b4/08/0ca46e9f7eef7b2cce7f0c6110106c42aa35a79bd88110559177f64d733a/lbt-dragonfly-0.9.99.tar.gz
+[2024-04-06 06:41:29] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-06 06:41:29] INFO root fetch - processPackages [django-login-email]: Downloading https://files.pythonhosted.org/packages/13/81/223292b1ee799f7cdefc4f057842c5ca14ef10f0cdbcde3cd33cd8c11dbe/django_login_email-0.3.0.tar.gz
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [lbt-dragonfly]: Timeout reached during download
+[2024-04-06 06:41:29] INFO root fetch - processPackages [lbt-dragonfly]: executing diffoscope
+[2024-04-06 06:41:29] INFO root fetch - processPackages [lbt-dragonfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-dragonfly-0.9.98.tar.gz tmp/lbt-dragonfly-0.9.99.tar.gz --markdown 20240406/l/lbt-dragonfly/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 06:41:29] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/f3/c7/895bdd6a28dc6d57cc48934a0eaa4ebf58b726bc5d1e9391481180fe9fbe/yosemite-tools-0.0.3.tar.gz
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [django-login-email]: Timeout reached during download
+[2024-04-06 06:41:29] INFO root fetch - processPackages [django-login-email]: executing diffoscope
+[2024-04-06 06:41:29] INFO root fetch - processPackages [django-login-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_login_email-0.2.0.tar.gz tmp/django_login_email-0.3.0.tar.gz --markdown 20240406/d/django-login-email/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 06:41:29] INFO root fetch - processPackages [yosemite-tools]: executing diffoscope
+[2024-04-06 06:41:29] INFO root fetch - processPackages [yosemite-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yosemite-tools-0.0.2.tar.gz tmp/yosemite-tools-0.0.3.tar.gz --markdown 20240406/y/yosemite-tools/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 06:41:29] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-06 06:41:29] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 06:41:29] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-06 06:41:29] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240406/a/afeng-py-tools/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 06:41:30] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.98.tar.gz]
+[2024-04-06 06:41:30] INFO root fetch - processPackages [lbt-dragonfly]: Remove: archive file [/home/abi/fetcher/tmp/lbt-dragonfly-0.9.99.tar.gz]
+[2024-04-06 06:41:30] INFO root fetch - main [MainThread]: End processing [lbt-dragonfly]: success
+[2024-04-06 06:41:30] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.2.tar.gz]
+[2024-04-06 06:41:30] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.3.tar.gz]
+[2024-04-06 06:41:30] INFO root fetch - main [MainThread]: End processing [yosemite-tools]: success
+[2024-04-06 06:41:30] INFO root fetch - processPackages [django-login-email]: Remove: archive file [/home/abi/fetcher/tmp/django_login_email-0.2.0.tar.gz]
+[2024-04-06 06:41:30] INFO root fetch - processPackages [django-login-email]: Remove: archive file [/home/abi/fetcher/tmp/django_login_email-0.3.0.tar.gz]
+[2024-04-06 06:41:30] INFO root fetch - main [MainThread]: End processing [django-login-email]: success
+[2024-04-06 06:41:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-06 06:41:31] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-06 06:41:31] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-06 06:41:31] INFO root fetch - main [MainThread]: Store serial: [22645702]
