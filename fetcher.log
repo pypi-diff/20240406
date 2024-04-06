@@ -23935,3 +23935,28 @@ EOFError: EOF read where object expected
 [2024-04-06 22:20:52] INFO root fetch - processPackages [avtomat-aws]: Remove: archive file [/home/abi/fetcher/tmp/avtomat_aws-0.1.1.tar.gz]
 [2024-04-06 22:20:52] INFO root fetch - main [MainThread]: End processing [avtomat-aws]: success
 [2024-04-06 22:20:52] INFO root fetch - main [MainThread]: Store serial: [22650823]
+[2024-04-06 22:22:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650823]
+[2024-04-06 22:23:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 22:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langmem
+[2024-04-06 22:23:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deadcode
+[2024-04-06 22:23:02] INFO root fetch - processPackages [langmem]: New version: [0.0.2] Old Version: [0.0.1rc9]
+[2024-04-06 22:23:02] INFO root fetch - processPackages [langmem]: Downloading https://files.pythonhosted.org/packages/89/39/4eda77738709b684aa8936cef7976e4d4a318bd911d6e106f4d898536745/langmem-0.0.1rc9.tar.gz
+[2024-04-06 22:23:02] INFO root fetch - processPackages [deadcode]: New version: [2.3.0] Old Version: [2.2.2]
+[2024-04-06 22:23:02] WARNING root fetch - processPackages [langmem]: Timeout reached during download
+[2024-04-06 22:23:02] INFO root fetch - processPackages [langmem]: Downloading https://files.pythonhosted.org/packages/12/76/7977adb14b46b6cc7e3ec29898ad6896cd61555332af5302a6e8e2f9f3f5/langmem-0.0.2.tar.gz
+[2024-04-06 22:23:02] INFO root fetch - processPackages [deadcode]: Downloading https://files.pythonhosted.org/packages/df/48/314026a72a41ab15acc67517f826a81d20ee7a81eef84ad1ca12a073c775/deadcode-2.2.2.tar.gz
+[2024-04-06 22:23:02] WARNING root fetch - processPackages [langmem]: Timeout reached during download
+[2024-04-06 22:23:02] INFO root fetch - processPackages [langmem]: executing diffoscope
+[2024-04-06 22:23:02] INFO root fetch - processPackages [langmem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langmem-0.0.1rc9.tar.gz tmp/langmem-0.0.2.tar.gz --markdown 20240406/l/langmem/0.0.1rc9-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 22:23:02] WARNING root fetch - processPackages [deadcode]: Timeout reached during download
+[2024-04-06 22:23:03] INFO root fetch - processPackages [deadcode]: Downloading https://files.pythonhosted.org/packages/6d/8a/63c0f4c7a7485e47ab2b514e85fdfbf7c693beddc250eea1a6313e47491f/deadcode-2.3.0.tar.gz
+[2024-04-06 22:23:03] INFO root fetch - processPackages [langmem]: Remove: archive file [/home/abi/fetcher/tmp/langmem-0.0.1rc9.tar.gz]
+[2024-04-06 22:23:03] INFO root fetch - processPackages [langmem]: Remove: archive file [/home/abi/fetcher/tmp/langmem-0.0.2.tar.gz]
+[2024-04-06 22:23:03] INFO root fetch - main [MainThread]: End processing [langmem]: success
+[2024-04-06 22:23:03] WARNING root fetch - processPackages [deadcode]: Timeout reached during download
+[2024-04-06 22:23:03] INFO root fetch - processPackages [deadcode]: executing diffoscope
+[2024-04-06 22:23:03] INFO root fetch - processPackages [deadcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deadcode-2.2.2.tar.gz tmp/deadcode-2.3.0.tar.gz --markdown 20240406/d/deadcode/2.2.2-2.3.0/diff.md --exclude *.pyd
+[2024-04-06 22:23:04] INFO root fetch - processPackages [deadcode]: Remove: archive file [/home/abi/fetcher/tmp/deadcode-2.2.2.tar.gz]
+[2024-04-06 22:23:04] INFO root fetch - processPackages [deadcode]: Remove: archive file [/home/abi/fetcher/tmp/deadcode-2.3.0.tar.gz]
+[2024-04-06 22:23:04] INFO root fetch - main [MainThread]: End processing [deadcode]: success
+[2024-04-06 22:23:04] INFO root fetch - main [MainThread]: Store serial: [22650830]
