@@ -11377,3 +11377,34 @@
 [2024-04-06 08:52:08] INFO root fetch - processPackages [actionlint-py]: Remove: archive file [/home/abi/fetcher/tmp/actionlint_py-1.6.27.13.tar.gz]
 [2024-04-06 08:52:08] INFO root fetch - main [MainThread]: End processing [actionlint-py]: success
 [2024-04-06 08:52:08] INFO root fetch - main [MainThread]: Store serial: [22646191]
+[2024-04-06 08:54:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646191]
+[2024-04-06 08:54:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 08:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: divyesh-utils
+[2024-04-06 08:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: db-analytics-tools
+[2024-04-06 08:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fjcli
+[2024-04-06 08:54:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: llm-quantkit
+[2024-04-06 08:54:17] INFO root fetch - processPackages [db-analytics-tools]: New version: [0.1.4.9] Old Version: [0.1.4.8]
+[2024-04-06 08:54:17] WARNING root fetch - processPackages [divyesh-utils]: Skipping, unable to determine old version
+[2024-04-06 08:54:17] INFO root fetch - main [MainThread]: End processing [divyesh-utils] error
+[2024-04-06 08:54:17] WARNING root fetch - processPackages [fjcli]: Skipping, unable to determine old version
+[2024-04-06 08:54:17] INFO root fetch - main [MainThread]: End processing [fjcli] error
+[2024-04-06 08:54:17] INFO root fetch - processPackages [llm-quantkit]: New version: [0.24] Old Version: [0.23]
+[2024-04-06 08:54:17] INFO root fetch - processPackages [db-analytics-tools]: Downloading https://files.pythonhosted.org/packages/69/02/69c6da03385784baf4c4dac46575f8c007fb3cfec8a6bea15af63da2eb1f/db_analytics_tools-0.1.4.8.tar.gz
+[2024-04-06 08:54:18] INFO root fetch - processPackages [llm-quantkit]: Downloading https://files.pythonhosted.org/packages/52/c9/c918ad08a8a51ef744838ca10aa7c65bf9d8530c3d56775b5ccc9a1c0c78/llm-quantkit-0.23.tar.gz
+[2024-04-06 08:54:18] WARNING root fetch - processPackages [db-analytics-tools]: Timeout reached during download
+[2024-04-06 08:54:18] WARNING root fetch - processPackages [llm-quantkit]: Timeout reached during download
+[2024-04-06 08:54:18] INFO root fetch - processPackages [db-analytics-tools]: Downloading https://files.pythonhosted.org/packages/6d/dc/c29989172cd8a4b8957d11a9a47e535ccc0c7a477a28748eb06cfae4b91b/db_analytics_tools-0.1.4.9.tar.gz
+[2024-04-06 08:54:18] INFO root fetch - processPackages [llm-quantkit]: Downloading https://files.pythonhosted.org/packages/60/e3/4dd0a5ae051bf5e942f3185fa3c20afd8a59dc9bc6d4fb4533b3f5df4f62/llm-quantkit-0.24.tar.gz
+[2024-04-06 08:54:18] WARNING root fetch - processPackages [llm-quantkit]: Timeout reached during download
+[2024-04-06 08:54:18] INFO root fetch - processPackages [llm-quantkit]: executing diffoscope
+[2024-04-06 08:54:18] INFO root fetch - processPackages [llm-quantkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm-quantkit-0.23.tar.gz tmp/llm-quantkit-0.24.tar.gz --markdown 20240406/l/llm-quantkit/0.23-0.24/diff.md --exclude *.pyd
+[2024-04-06 08:54:18] WARNING root fetch - processPackages [db-analytics-tools]: Timeout reached during download
+[2024-04-06 08:54:18] INFO root fetch - processPackages [db-analytics-tools]: executing diffoscope
+[2024-04-06 08:54:18] INFO root fetch - processPackages [db-analytics-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/db_analytics_tools-0.1.4.8.tar.gz tmp/db_analytics_tools-0.1.4.9.tar.gz --markdown 20240406/d/db-analytics-tools/0.1.4.8-0.1.4.9/diff.md --exclude *.pyd
+[2024-04-06 08:54:19] INFO root fetch - processPackages [llm-quantkit]: Remove: archive file [/home/abi/fetcher/tmp/llm-quantkit-0.23.tar.gz]
+[2024-04-06 08:54:19] INFO root fetch - processPackages [llm-quantkit]: Remove: archive file [/home/abi/fetcher/tmp/llm-quantkit-0.24.tar.gz]
+[2024-04-06 08:54:19] INFO root fetch - main [MainThread]: End processing [llm-quantkit]: success
+[2024-04-06 08:54:19] INFO root fetch - processPackages [db-analytics-tools]: Remove: archive file [/home/abi/fetcher/tmp/db_analytics_tools-0.1.4.8.tar.gz]
+[2024-04-06 08:54:19] INFO root fetch - processPackages [db-analytics-tools]: Remove: archive file [/home/abi/fetcher/tmp/db_analytics_tools-0.1.4.9.tar.gz]
+[2024-04-06 08:54:19] INFO root fetch - main [MainThread]: End processing [db-analytics-tools]: success
+[2024-04-06 08:54:19] INFO root fetch - main [MainThread]: Store serial: [22646207]
