@@ -21981,3 +21981,28 @@ EOFError: EOF read where object expected
 [2024-04-06 20:33:17] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.2.dev0.tar.gz]
 [2024-04-06 20:33:17] INFO root fetch - main [MainThread]: End processing [keri]: success
 [2024-04-06 20:33:17] INFO root fetch - main [MainThread]: Store serial: [22650148]
+[2024-04-06 20:35:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650148]
+[2024-04-06 20:35:26] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 20:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyComplexHeatmap
+[2024-04-06 20:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-04-06 20:35:26] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240405.248] Old Version: [0.44.20240319.246]
+[2024-04-06 20:35:26] INFO root fetch - processPackages [PyComplexHeatmap]: New version: [1.7.0] Old Version: [1.6.9]
+[2024-04-06 20:35:26] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/a3/64/13956e1364cb60d24171f276349eadd95f6609b66c7feed8a1cec28b805a/pkscreener-0.44.20240319.246.tar.gz
+[2024-04-06 20:35:26] WARNING root fetch - processPackages [pkscreener]: Timeout reached during download
+[2024-04-06 20:35:27] INFO root fetch - processPackages [PyComplexHeatmap]: Downloading https://files.pythonhosted.org/packages/ce/6f/9e1231bf99e94b65bba7b668e4440cb959afec5b3f82979ec2022e891370/PyComplexHeatmap-1.6.9.tar.gz
+[2024-04-06 20:35:27] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/5c/0d/ceb9da6e3e73601f4c9d68fcc3079bcd79bb9feb3f7cd21868df17e6120b/pkscreener-0.44.20240405.248.tar.gz
+[2024-04-06 20:35:27] WARNING root fetch - processPackages [pkscreener]: Timeout reached during download
+[2024-04-06 20:35:27] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-04-06 20:35:27] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240319.246.tar.gz tmp/pkscreener-0.44.20240405.248.tar.gz --markdown 20240406/p/pkscreener/0.44.20240319.246-0.44.20240405.248/diff.md --exclude *.pyd
+[2024-04-06 20:35:27] WARNING root fetch - processPackages [PyComplexHeatmap]: Timeout reached during download
+[2024-04-06 20:35:27] INFO root fetch - processPackages [PyComplexHeatmap]: Downloading https://files.pythonhosted.org/packages/59/53/3bd7e9f472c760c2907177d1601b8ab79652c65e83a9d083d7c6fb606ceb/PyComplexHeatmap-1.7.0.tar.gz
+[2024-04-06 20:35:28] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240319.246.tar.gz]
+[2024-04-06 20:35:28] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240405.248.tar.gz]
+[2024-04-06 20:35:28] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-04-06 20:35:29] WARNING root fetch - processPackages [PyComplexHeatmap]: Timeout reached during download
+[2024-04-06 20:35:29] INFO root fetch - processPackages [PyComplexHeatmap]: executing diffoscope
+[2024-04-06 20:35:29] INFO root fetch - processPackages [PyComplexHeatmap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyComplexHeatmap-1.6.9.tar.gz tmp/PyComplexHeatmap-1.7.0.tar.gz --markdown 20240406/P/PyComplexHeatmap/1.6.9-1.7.0/diff.md --exclude *.pyd
+[2024-04-06 20:35:31] INFO root fetch - processPackages [PyComplexHeatmap]: Remove: archive file [/home/abi/fetcher/tmp/PyComplexHeatmap-1.6.9.tar.gz]
+[2024-04-06 20:35:31] INFO root fetch - processPackages [PyComplexHeatmap]: Remove: archive file [/home/abi/fetcher/tmp/PyComplexHeatmap-1.7.0.tar.gz]
+[2024-04-06 20:35:31] INFO root fetch - main [MainThread]: End processing [PyComplexHeatmap]: success
+[2024-04-06 20:35:31] INFO root fetch - main [MainThread]: Store serial: [22650154]
