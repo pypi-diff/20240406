@@ -12895,3 +12895,17 @@
 [2024-04-06 11:00:43] WARNING root fetch - processPackages [timetree-exporter]: Skipping, unable to determine old version
 [2024-04-06 11:00:43] INFO root fetch - main [MainThread]: End processing [timetree-exporter] error
 [2024-04-06 11:00:43] INFO root fetch - main [MainThread]: Store serial: [22646940]
+[2024-04-06 11:02:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646940]
+[2024-04-06 11:02:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 11:02:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adbclone
+[2024-04-06 11:02:51] INFO root fetch - processPackages [adbclone]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 11:02:51] INFO root fetch - processPackages [adbclone]: Downloading https://files.pythonhosted.org/packages/f2/a5/080d56ec8a9a293e1a4d1b198fb718c7c87a48f17d6f77b76e94790f7781/adbclone-0.0.3.tar.gz
+[2024-04-06 11:02:52] WARNING root fetch - processPackages [adbclone]: Timeout reached during download
+[2024-04-06 11:02:52] INFO root fetch - processPackages [adbclone]: Downloading https://files.pythonhosted.org/packages/a7/d6/043806b0700eeb87b64ac7d61892be656bf94173a655ae9f6c3fff00ab42/adbclone-0.0.4.tar.gz
+[2024-04-06 11:02:52] WARNING root fetch - processPackages [adbclone]: Timeout reached during download
+[2024-04-06 11:02:52] INFO root fetch - processPackages [adbclone]: executing diffoscope
+[2024-04-06 11:02:52] INFO root fetch - processPackages [adbclone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adbclone-0.0.3.tar.gz tmp/adbclone-0.0.4.tar.gz --markdown 20240406/a/adbclone/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 11:02:53] INFO root fetch - processPackages [adbclone]: Remove: archive file [/home/abi/fetcher/tmp/adbclone-0.0.3.tar.gz]
+[2024-04-06 11:02:53] INFO root fetch - processPackages [adbclone]: Remove: archive file [/home/abi/fetcher/tmp/adbclone-0.0.4.tar.gz]
+[2024-04-06 11:02:53] INFO root fetch - main [MainThread]: End processing [adbclone]: success
+[2024-04-06 11:02:53] INFO root fetch - main [MainThread]: Store serial: [22646943]
