@@ -12256,3 +12256,61 @@
 [2024-04-06 10:04:34] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240405.tar.gz]
 [2024-04-06 10:04:34] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-04-06 10:04:34] INFO root fetch - main [MainThread]: Store serial: [22646605]
+[2024-04-06 10:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646605]
+[2024-04-06 10:06:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 10:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redis-async-client
+[2024-04-06 10:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: archey4
+[2024-04-06 10:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iris-pex-embedded-python
+[2024-04-06 10:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: galileo-core
+[2024-04-06 10:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyglove
+[2024-04-06 10:06:43] INFO root fetch - processPackages [redis-async-client]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 10:06:43] INFO root fetch - processPackages [galileo-core]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-06 10:06:44] INFO root fetch - processPackages [redis-async-client]: Downloading https://files.pythonhosted.org/packages/0b/d9/5b3a55c23c77ff28c664986d293239b9a7fcefbcecaf4255e279cda47acc/redis_async_client-0.1.1.tar.gz
+[2024-04-06 10:06:44] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/04/cc/1c6523221753c516a655a862a887dec514099626b9c70c3491b3270449d5/galileo_core-0.3.1.tar.gz
+[2024-04-06 10:06:44] INFO root fetch - processPackages [archey4]: New version: [4.9.0] Old Version: [4.8.1]
+[2024-04-06 10:06:44] INFO root fetch - processPackages [iris-pex-embedded-python]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [redis-async-client]: Timeout reached during download
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-06 10:06:44] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/b4/4e/93fdc5523aba172698b0f2270c1ef5d170b63db1b820fef4d4b4f975e4c0/galileo_core-0.4.0.tar.gz
+[2024-04-06 10:06:44] INFO root fetch - processPackages [archey4]: Downloading https://files.pythonhosted.org/packages/ff/06/b880a120f53b58faae48486cd4e15b32248613e1f1b8264b3a4563fb916c/archey4-4.8.1.tar.gz
+[2024-04-06 10:06:44] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240406] Old Version: [0.4.5.dev20240405]
+[2024-04-06 10:06:44] INFO root fetch - processPackages [redis-async-client]: Downloading https://files.pythonhosted.org/packages/01/79/d85c52d0a94bd2c4d37ab0569bc69d2d2981c4d88e3d7fb64e92d3952a8b/redis_async_client-0.1.2.tar.gz
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-06 10:06:44] INFO root fetch - processPackages [galileo-core]: executing diffoscope
+[2024-04-06 10:06:44] INFO root fetch - processPackages [galileo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galileo_core-0.3.1.tar.gz tmp/galileo_core-0.4.0.tar.gz --markdown 20240406/g/galileo-core/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [redis-async-client]: Timeout reached during download
+[2024-04-06 10:06:44] INFO root fetch - processPackages [redis-async-client]: executing diffoscope
+[2024-04-06 10:06:44] INFO root fetch - processPackages [redis-async-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redis_async_client-0.1.1.tar.gz tmp/redis_async_client-0.1.2.tar.gz --markdown 20240406/r/redis-async-client/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 10:06:44] INFO root fetch - processPackages [iris-pex-embedded-python]: Downloading https://files.pythonhosted.org/packages/0a/1e/871a26044c71126b987a44b3ec89c4b39caccaf6ac0bb646f27aba683927/iris_pex_embedded_python-2.3.8.tar.gz
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [archey4]: Timeout reached during download
+[2024-04-06 10:06:44] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/31/df/77d5867b5f63e89e1b10578384d31594e5f690d2a853824f26f561665f55/pyglove-0.4.5.dev20240405.tar.gz
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [iris-pex-embedded-python]: Timeout reached during download
+[2024-04-06 10:06:44] INFO root fetch - processPackages [archey4]: Downloading https://files.pythonhosted.org/packages/84/90/3c1194637b1566a0d07201c544335940e8b0b407e3518485ab82df8b80d6/archey4-4.9.0.tar.gz
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [pyglove]: Timeout reached during download
+[2024-04-06 10:06:44] INFO root fetch - processPackages [iris-pex-embedded-python]: Downloading https://files.pythonhosted.org/packages/1f/d9/ca808faae976325522f21347afcfc5843a9cac222c09edb7a58702c2c50b/iris_pex_embedded_python-2.3.9.tar.gz
+[2024-04-06 10:06:44] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/b8/97/193cc38c9516a30ab3eedc7834c42802a1f0345ca8942472991df0c6da92/pyglove-0.4.5.dev20240406.tar.gz
+[2024-04-06 10:06:44] WARNING root fetch - processPackages [archey4]: Timeout reached during download
+[2024-04-06 10:06:44] INFO root fetch - processPackages [archey4]: executing diffoscope
+[2024-04-06 10:06:44] INFO root fetch - processPackages [archey4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archey4-4.8.1.tar.gz tmp/archey4-4.9.0.tar.gz --markdown 20240406/a/archey4/4.8.1-4.9.0/diff.md --exclude *.pyd
+[2024-04-06 10:06:44] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.3.1.tar.gz]
+[2024-04-06 10:06:44] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.4.0.tar.gz]
+[2024-04-06 10:06:44] INFO root fetch - main [MainThread]: End processing [galileo-core]: success
+[2024-04-06 10:06:45] WARNING root fetch - processPackages [iris-pex-embedded-python]: Timeout reached during download
+[2024-04-06 10:06:45] INFO root fetch - processPackages [iris-pex-embedded-python]: executing diffoscope
+[2024-04-06 10:06:45] INFO root fetch - processPackages [iris-pex-embedded-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iris_pex_embedded_python-2.3.8.tar.gz tmp/iris_pex_embedded_python-2.3.9.tar.gz --markdown 20240406/i/iris-pex-embedded-python/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2024-04-06 10:06:45] INFO root fetch - processPackages [redis-async-client]: Remove: archive file [/home/abi/fetcher/tmp/redis_async_client-0.1.1.tar.gz]
+[2024-04-06 10:06:45] INFO root fetch - processPackages [redis-async-client]: Remove: archive file [/home/abi/fetcher/tmp/redis_async_client-0.1.2.tar.gz]
+[2024-04-06 10:06:45] INFO root fetch - main [MainThread]: End processing [redis-async-client]: success
+[2024-04-06 10:06:45] INFO root fetch - processPackages [archey4]: Remove: archive file [/home/abi/fetcher/tmp/archey4-4.8.1.tar.gz]
+[2024-04-06 10:06:45] INFO root fetch - processPackages [archey4]: Remove: archive file [/home/abi/fetcher/tmp/archey4-4.9.0.tar.gz]
+[2024-04-06 10:06:45] INFO root fetch - main [MainThread]: End processing [archey4]: success
+[2024-04-06 10:06:45] INFO root fetch - processPackages [iris-pex-embedded-python]: Remove: archive file [/home/abi/fetcher/tmp/iris_pex_embedded_python-2.3.8.tar.gz]
+[2024-04-06 10:06:45] INFO root fetch - processPackages [iris-pex-embedded-python]: Remove: archive file [/home/abi/fetcher/tmp/iris_pex_embedded_python-2.3.9.tar.gz]
+[2024-04-06 10:06:45] INFO root fetch - main [MainThread]: End processing [iris-pex-embedded-python]: success
+[2024-04-06 10:06:45] WARNING root fetch - processPackages [pyglove]: Timeout reached during download
+[2024-04-06 10:06:45] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-04-06 10:06:45] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240405.tar.gz tmp/pyglove-0.4.5.dev20240406.tar.gz --markdown 20240406/p/pyglove/0.4.5.dev20240405-0.4.5.dev20240406/diff.md --exclude *.pyd
+[2024-04-06 10:06:46] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240405.tar.gz]
+[2024-04-06 10:06:46] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240406.tar.gz]
+[2024-04-06 10:06:46] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-04-06 10:06:46] INFO root fetch - main [MainThread]: Store serial: [22646619]
