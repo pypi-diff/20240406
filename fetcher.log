@@ -9465,3 +9465,105 @@
 [2024-04-06 06:32:49] INFO root fetch - processPackages [twikit]: Remove: archive file [/home/abi/fetcher/tmp/twikit-1.4.4.tar.gz]
 [2024-04-06 06:32:49] INFO root fetch - main [MainThread]: End processing [twikit]: success
 [2024-04-06 06:32:49] INFO root fetch - main [MainThread]: Store serial: [22645544]
+[2024-04-06 06:34:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645544]
+[2024-04-06 06:34:58] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipxu
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swpclib
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: InvokeAI
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-cdk.app-staging-synthesizer-alpha
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aws-cdk.aws-amplify-alpha
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aws-cdk.aws-appconfig-alpha
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aws-cdk.aws-apprunner-alpha
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: aws-cdk.aws-cloud9-alpha
+[2024-04-06 06:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aws-cdk.aws-codestar-alpha
+[2024-04-06 06:34:58] INFO root fetch - processPackages [pipxu]: New version: [1.8] Old Version: [1.7]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [swpclib]: New version: [4.2.0] Old Version: [4.1.3]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: New version: [2.99.1a0] Old Version: [2.99.0a0]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-amplify-alpha]: New version: [2.99.1a0] Old Version: [2.99.0a0]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [InvokeAI]: New version: [4.0.4] Old Version: [4.0.3]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: New version: [2.99.1a0] Old Version: [2.99.0a0]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: New version: [2.99.1a0] Old Version: [2.99.0a0]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-codestar-alpha]: New version: [2.99.1a0] Old Version: [2.99.0a0]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: New version: [2.99.1a0] Old Version: [2.99.0a0]
+[2024-04-06 06:34:58] INFO root fetch - processPackages [pipxu]: Downloading https://files.pythonhosted.org/packages/35/ba/92214a40692f4bbb31e97faf3e7f50f5f688ba6ad05e0a94899d19a00f57/pipxu-1.7.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/74/d9/129e86afddeeee85d975b3abea2e1c15ac91633b670db377b9c6f1ff5f66/swpclib-4.1.3.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-amplify-alpha]: Downloading https://files.pythonhosted.org/packages/ad/1a/30a2056824b868f279496701a1664ab4251b309c346650490416903e50c7/aws-cdk.aws-amplify-alpha-2.99.0a0.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: Downloading https://files.pythonhosted.org/packages/0e/73/d58bb33071c3d282e7ee67d17dc33765b846cbcf4f066965f80a43aafda6/aws-cdk.aws-appconfig-alpha-2.99.0a0.tar.gz
+[2024-04-06 06:34:58] WARNING root fetch - processPackages [pipxu]: Timeout reached during download
+[2024-04-06 06:34:58] WARNING root fetch - processPackages [swpclib]: Timeout reached during download
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: Downloading https://files.pythonhosted.org/packages/45/64/781b3b8d16d34f87b5c0de619bb07bd68ac1b73cbd1600bdc24d0106e7be/aws-cdk.aws-apprunner-alpha-2.99.0a0.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: Downloading https://files.pythonhosted.org/packages/d0/20/c533a3e1d9d786de501c4d964135164a29bde61c644ae32ab6a1d8f76e92/aws-cdk.app-staging-synthesizer-alpha-2.99.0a0.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-codestar-alpha]: Downloading https://files.pythonhosted.org/packages/2c/81/62db08d9801842c0ffcd31e3d8c337283c01124f2ea80f8ee704fe10cf94/aws-cdk.aws-codestar-alpha-2.99.0a0.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [InvokeAI]: Downloading https://files.pythonhosted.org/packages/2c/52/d5abf73c597d85030321a24cc9d19ffc459bd17af84b94fcebfa137d5c05/InvokeAI-4.0.3.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: Downloading https://files.pythonhosted.org/packages/a3/d2/1ff317653be8119f7097efaafa8c718b0a9d37d65bfbf05e4041be648509/aws-cdk.aws-cloud9-alpha-2.99.0a0.tar.gz
+[2024-04-06 06:34:58] WARNING root fetch - processPackages [aws-cdk.aws-amplify-alpha]: Timeout reached during download
+[2024-04-06 06:34:58] WARNING root fetch - processPackages [aws-cdk.aws-codestar-alpha]: Timeout reached during download
+[2024-04-06 06:34:58] INFO root fetch - processPackages [pipxu]: Downloading https://files.pythonhosted.org/packages/cc/eb/3ab46d9459683b712238c934e0771e68d18f501630f0c699727047a9291f/pipxu-1.8.tar.gz
+[2024-04-06 06:34:58] INFO root fetch - processPackages [swpclib]: Downloading https://files.pythonhosted.org/packages/fb/5d/7ff52c6332955d4d730efed8f5da47683528fb1aa3f906e6ea76df2fcbd4/swpclib-4.2.0.tar.gz
+[2024-04-06 06:34:58] WARNING root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: Timeout reached during download
+[2024-04-06 06:34:58] WARNING root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: Timeout reached during download
+[2024-04-06 06:34:58] WARNING root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [pipxu]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [pipxu]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [pipxu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipxu-1.7.tar.gz tmp/pipxu-1.8.tar.gz --markdown 20240406/p/pipxu/1.7-1.8/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [InvokeAI]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-amplify-alpha]: Downloading https://files.pythonhosted.org/packages/35/e6/4a57d449724379370414bc7fd8635c401f524db31485e21d616f9148b081/aws-cdk.aws-amplify-alpha-2.99.1a0.tar.gz
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-codestar-alpha]: Downloading https://files.pythonhosted.org/packages/31/74/a074e666246f8751d38e4d918cf138205dd78a2386ff16e9347feff7c139/aws-cdk.aws-codestar-alpha-2.99.1a0.tar.gz
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [swpclib]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [swpclib]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [swpclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swpclib-4.1.3.tar.gz tmp/swpclib-4.2.0.tar.gz --markdown 20240406/s/swpclib/4.1.3-4.2.0/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: Downloading https://files.pythonhosted.org/packages/cc/a1/d021f747f1bde9ff2f6c242755368477fea1405f4582f2ec1dc2b2dbfd5d/aws-cdk.aws-appconfig-alpha-2.99.1a0.tar.gz
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: Downloading https://files.pythonhosted.org/packages/d1/bf/4e9efb14e7ceae6d4393a9929e8099397ee3774bc44085927a3232500598/aws-cdk.aws-cloud9-alpha-2.99.1a0.tar.gz
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: Downloading https://files.pythonhosted.org/packages/9a/88/1e3404a5d4633cc5e59457e4792181e47968321e4968c54dc6c8aa5e9452/aws-cdk.aws-apprunner-alpha-2.99.1a0.tar.gz
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [aws-cdk.aws-amplify-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-amplify-alpha]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-amplify-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.aws-amplify-alpha-2.99.0a0.tar.gz tmp/aws-cdk.aws-amplify-alpha-2.99.1a0.tar.gz --markdown 20240406/a/aws-cdk.aws-amplify-alpha/2.99.0a0-2.99.1a0/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] INFO root fetch - processPackages [InvokeAI]: Downloading https://files.pythonhosted.org/packages/e7/24/f59daa55309aff03258b959cf1cdc0852f8d0f1ab86d41d24e09eea3b24e/InvokeAI-4.0.4.tar.gz
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: Downloading https://files.pythonhosted.org/packages/a8/f8/0affea5aa7fbafcc5e98ec4bf5b9a045b3e6ac405c90e89f539684697733/aws-cdk.app-staging-synthesizer-alpha-2.99.1a0.tar.gz
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [aws-cdk.aws-codestar-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-codestar-alpha]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-codestar-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.aws-codestar-alpha-2.99.0a0.tar.gz tmp/aws-cdk.aws-codestar-alpha-2.99.1a0.tar.gz --markdown 20240406/a/aws-cdk.aws-codestar-alpha/2.99.0a0-2.99.1a0/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.aws-apprunner-alpha-2.99.0a0.tar.gz tmp/aws-cdk.aws-apprunner-alpha-2.99.1a0.tar.gz --markdown 20240406/a/aws-cdk.aws-apprunner-alpha/2.99.0a0-2.99.1a0/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.aws-cloud9-alpha-2.99.0a0.tar.gz tmp/aws-cdk.aws-cloud9-alpha-2.99.1a0.tar.gz --markdown 20240406/a/aws-cdk.aws-cloud9-alpha/2.99.0a0-2.99.1a0/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.aws-appconfig-alpha-2.99.0a0.tar.gz tmp/aws-cdk.aws-appconfig-alpha-2.99.1a0.tar.gz --markdown 20240406/a/aws-cdk.aws-appconfig-alpha/2.99.0a0-2.99.1a0/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-cdk.app-staging-synthesizer-alpha-2.99.0a0.tar.gz tmp/aws-cdk.app-staging-synthesizer-alpha-2.99.1a0.tar.gz --markdown 20240406/a/aws-cdk.app-staging-synthesizer-alpha/2.99.0a0-2.99.1a0/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] WARNING root fetch - processPackages [InvokeAI]: Timeout reached during download
+[2024-04-06 06:34:59] INFO root fetch - processPackages [InvokeAI]: executing diffoscope
+[2024-04-06 06:34:59] INFO root fetch - processPackages [InvokeAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/InvokeAI-4.0.3.tar.gz tmp/InvokeAI-4.0.4.tar.gz --markdown 20240406/I/InvokeAI/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2024-04-06 06:34:59] INFO root fetch - processPackages [pipxu]: Remove: archive file [/home/abi/fetcher/tmp/pipxu-1.7.tar.gz]
+[2024-04-06 06:34:59] INFO root fetch - processPackages [pipxu]: Remove: archive file [/home/abi/fetcher/tmp/pipxu-1.8.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [pipxu]: success
+[2024-04-06 06:35:00] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.1.3.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - processPackages [swpclib]: Remove: archive file [/home/abi/fetcher/tmp/swpclib-4.2.0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [swpclib]: success
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-amplify-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-amplify-alpha-2.99.0a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-amplify-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-amplify-alpha-2.99.1a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [aws-cdk.aws-amplify-alpha]: success
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-cloud9-alpha-2.99.0a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-cloud9-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-cloud9-alpha-2.99.1a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [aws-cdk.aws-cloud9-alpha]: success
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-apprunner-alpha-2.99.0a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-apprunner-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-apprunner-alpha-2.99.1a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [aws-cdk.aws-apprunner-alpha]: success
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-appconfig-alpha-2.99.0a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-appconfig-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-appconfig-alpha-2.99.1a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [aws-cdk.aws-appconfig-alpha]: success
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.app-staging-synthesizer-alpha-2.99.0a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.app-staging-synthesizer-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.app-staging-synthesizer-alpha-2.99.1a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [aws-cdk.app-staging-synthesizer-alpha]: success
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-codestar-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-codestar-alpha-2.99.0a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - processPackages [aws-cdk.aws-codestar-alpha]: Remove: archive file [/home/abi/fetcher/tmp/aws-cdk.aws-codestar-alpha-2.99.1a0.tar.gz]
+[2024-04-06 06:35:00] INFO root fetch - main [MainThread]: End processing [aws-cdk.aws-codestar-alpha]: success
+[2024-04-06 06:35:25] INFO root fetch - processPackages [InvokeAI]: Remove: archive file [/home/abi/fetcher/tmp/InvokeAI-4.0.3.tar.gz]
+[2024-04-06 06:35:25] INFO root fetch - processPackages [InvokeAI]: Remove: archive file [/home/abi/fetcher/tmp/InvokeAI-4.0.4.tar.gz]
+[2024-04-06 06:35:25] INFO root fetch - main [MainThread]: End processing [InvokeAI]: success
+[2024-04-06 06:35:25] INFO root fetch - main [MainThread]: Store serial: [22645566]
