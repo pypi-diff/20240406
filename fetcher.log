@@ -20572,3 +20572,28 @@ EOFError: EOF read where object expected
 [2024-04-06 19:14:41] INFO root fetch - processPackages [efootprint]: Remove: archive file [/home/abi/fetcher/tmp/efootprint-2.0.0.tar.gz]
 [2024-04-06 19:14:41] INFO root fetch - main [MainThread]: End processing [efootprint]: success
 [2024-04-06 19:14:41] INFO root fetch - main [MainThread]: Store serial: [22649668]
+[2024-04-06 19:16:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649668]
+[2024-04-06 19:16:50] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 19:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-aoi
+[2024-04-06 19:16:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CnbcNews
+[2024-04-06 19:16:50] INFO root fetch - processPackages [open-aoi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 19:16:50] INFO root fetch - processPackages [CnbcNews]: New version: [1.9] Old Version: [1.8]
+[2024-04-06 19:16:50] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-06 19:16:50] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/39/92/5a8109f1d792fe8915f4f2d5b2bb929d0ad00666630488a5a10df57291c5/CnbcNews-1.8.tar.gz
+[2024-04-06 19:16:50] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-06 19:16:50] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 19:16:51] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/c7/99/cf4929644403d9c9360aafe67a933b2666395e1ba0e55a27936027051885/CnbcNews-1.9.tar.gz
+[2024-04-06 19:16:51] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/2e/0c/2869daa3fcce6ef21522f04169cfdef7edf737a59d03f86a95b6594d19b3/open_aoi-0.0.9.tar.gz
+[2024-04-06 19:16:51] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 19:16:51] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-06 19:16:51] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 19:16:51] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-1.8.tar.gz tmp/CnbcNews-1.9.tar.gz --markdown 20240406/C/CnbcNews/1.8-1.9/diff.md --exclude *.pyd
+[2024-04-06 19:16:51] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-06 19:16:51] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.8.tar.gz tmp/open_aoi-0.0.9.tar.gz --markdown 20240406/o/open-aoi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 19:16:51] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-1.8.tar.gz]
+[2024-04-06 19:16:51] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-1.9.tar.gz]
+[2024-04-06 19:16:51] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 19:16:51] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-06 19:16:51] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.9.tar.gz]
+[2024-04-06 19:16:51] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-06 19:16:51] INFO root fetch - main [MainThread]: Store serial: [22649678]
