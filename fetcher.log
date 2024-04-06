@@ -17899,3 +17899,50 @@ EOFError: EOF read where object expected
 [2024-04-06 16:39:00] INFO root fetch - processPackages [bioframe]: Remove: archive file [/home/abi/fetcher/tmp/bioframe-0.6.4.tar.gz]
 [2024-04-06 16:39:00] INFO root fetch - main [MainThread]: End processing [bioframe]: success
 [2024-04-06 16:39:00] INFO root fetch - main [MainThread]: Store serial: [22648717]
+[2024-04-06 16:41:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648717]
+[2024-04-06 16:41:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 16:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-04-06 16:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-lookup-property
+[2024-04-06 16:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chgksuite
+[2024-04-06 16:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-navigation-bar
+[2024-04-06 16:41:09] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b9] Old Version: [0.7.0.1b84]
+[2024-04-06 16:41:09] INFO root fetch - processPackages [django-lookup-property]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 16:41:09] INFO root fetch - processPackages [streamlit-navigation-bar]: New version: [3.1.0] Old Version: [3.0.3]
+[2024-04-06 16:41:09] INFO root fetch - processPackages [chgksuite]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 16:41:09] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/85/59/682ea0326f1ffb7d0173a29d5c35be11b71b87a63f19f537459a8f9960b6/smaht_submitr-0.7.0.1b84.tar.gz
+[2024-04-06 16:41:10] INFO root fetch - processPackages [django-lookup-property]: Downloading https://files.pythonhosted.org/packages/b2/fd/622417618aab470b877f462b6f6538bca66899c0e0a6bf4f14c20b81eae4/django_lookup_property-0.1.1.tar.gz
+[2024-04-06 16:41:10] INFO root fetch - processPackages [streamlit-navigation-bar]: Downloading https://files.pythonhosted.org/packages/57/69/8368abf55bbd1ef8fad9a27c7f58689b13b6cfffd8bdd889859ce3b70eae/streamlit-navigation-bar-3.0.3.tar.gz
+[2024-04-06 16:41:10] INFO root fetch - processPackages [chgksuite]: Downloading https://files.pythonhosted.org/packages/08/2b/0f75e642fcf6761c9237515450091e8f2eada4286e45f82cc52053558c7b/chgksuite-0.9.0.tar.gz
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [django-lookup-property]: Timeout reached during download
+[2024-04-06 16:41:10] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ff/84/cead0681f1d3b22d8c2cc55c431321aa00039b758129671d6e752101a732/smaht_submitr-0.7.0.1b9.tar.gz
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [chgksuite]: Timeout reached during download
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [streamlit-navigation-bar]: Timeout reached during download
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 16:41:10] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-06 16:41:10] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b84.tar.gz tmp/smaht_submitr-0.7.0.1b9.tar.gz --markdown 20240406/s/smaht-submitr/0.7.0.1b84-0.7.0.1b9/diff.md --exclude *.pyd
+[2024-04-06 16:41:10] INFO root fetch - processPackages [django-lookup-property]: Downloading https://files.pythonhosted.org/packages/6e/bb/b09542cfbd2d534d88beb1fc03334d453f708fd22c0cf54c450b5c164885/django_lookup_property-0.1.2.tar.gz
+[2024-04-06 16:41:10] INFO root fetch - processPackages [chgksuite]: Downloading https://files.pythonhosted.org/packages/cd/f6/800bb5f46eb8b4639b4c81f8c7ad31a582abdb353fd822359c239ec699fd/chgksuite-0.9.1.tar.gz
+[2024-04-06 16:41:10] INFO root fetch - processPackages [streamlit-navigation-bar]: Downloading https://files.pythonhosted.org/packages/8e/cc/2d4cb718df2d2e3dd008cc40731249c75949c1be9f4165601a0544ee9096/streamlit-navigation-bar-3.1.0.tar.gz
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [django-lookup-property]: Timeout reached during download
+[2024-04-06 16:41:10] INFO root fetch - processPackages [django-lookup-property]: executing diffoscope
+[2024-04-06 16:41:10] INFO root fetch - processPackages [django-lookup-property]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_lookup_property-0.1.1.tar.gz tmp/django_lookup_property-0.1.2.tar.gz --markdown 20240406/d/django-lookup-property/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [chgksuite]: Timeout reached during download
+[2024-04-06 16:41:10] INFO root fetch - processPackages [chgksuite]: executing diffoscope
+[2024-04-06 16:41:10] INFO root fetch - processPackages [chgksuite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chgksuite-0.9.0.tar.gz tmp/chgksuite-0.9.1.tar.gz --markdown 20240406/c/chgksuite/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 16:41:10] WARNING root fetch - processPackages [streamlit-navigation-bar]: Timeout reached during download
+[2024-04-06 16:41:10] INFO root fetch - processPackages [streamlit-navigation-bar]: executing diffoscope
+[2024-04-06 16:41:10] INFO root fetch - processPackages [streamlit-navigation-bar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-navigation-bar-3.0.3.tar.gz tmp/streamlit-navigation-bar-3.1.0.tar.gz --markdown 20240406/s/streamlit-navigation-bar/3.0.3-3.1.0/diff.md --exclude *.pyd
+[2024-04-06 16:41:11] INFO root fetch - processPackages [chgksuite]: Remove: archive file [/home/abi/fetcher/tmp/chgksuite-0.9.0.tar.gz]
+[2024-04-06 16:41:11] INFO root fetch - processPackages [chgksuite]: Remove: archive file [/home/abi/fetcher/tmp/chgksuite-0.9.1.tar.gz]
+[2024-04-06 16:41:11] INFO root fetch - main [MainThread]: End processing [chgksuite]: success
+[2024-04-06 16:41:11] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b84.tar.gz]
+[2024-04-06 16:41:11] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
+[2024-04-06 16:41:11] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-06 16:41:11] INFO root fetch - processPackages [django-lookup-property]: Remove: archive file [/home/abi/fetcher/tmp/django_lookup_property-0.1.1.tar.gz]
+[2024-04-06 16:41:11] INFO root fetch - processPackages [django-lookup-property]: Remove: archive file [/home/abi/fetcher/tmp/django_lookup_property-0.1.2.tar.gz]
+[2024-04-06 16:41:11] INFO root fetch - main [MainThread]: End processing [django-lookup-property]: success
+[2024-04-06 16:41:13] INFO root fetch - processPackages [streamlit-navigation-bar]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-navigation-bar-3.0.3.tar.gz]
+[2024-04-06 16:41:13] INFO root fetch - processPackages [streamlit-navigation-bar]: Remove: archive file [/home/abi/fetcher/tmp/streamlit-navigation-bar-3.1.0.tar.gz]
+[2024-04-06 16:41:13] INFO root fetch - main [MainThread]: End processing [streamlit-navigation-bar]: success
+[2024-04-06 16:41:13] INFO root fetch - main [MainThread]: Store serial: [22648729]
