@@ -7590,3 +7590,9 @@
 [2024-04-06 03:59:49] INFO root fetch - processPackages [Lisva81]: Remove: archive file [/home/abi/fetcher/tmp/Lisva81-2.0.0.tar.gz]
 [2024-04-06 03:59:49] INFO root fetch - main [MainThread]: End processing [Lisva81]: success
 [2024-04-06 03:59:49] INFO root fetch - main [MainThread]: Store serial: [22644837]
+[2024-04-06 04:01:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644837]
+[2024-04-06 04:01:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 04:01:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-background-remover
+[2024-04-06 04:01:59] WARNING root fetch - processPackages [simple-background-remover]: Skipping, unable to determine old version
+[2024-04-06 04:01:59] INFO root fetch - main [MainThread]: End processing [simple-background-remover] error
+[2024-04-06 04:01:59] INFO root fetch - main [MainThread]: Store serial: [22644842]
