@@ -19098,3 +19098,39 @@ EOFError: EOF read where object expected
 [2024-04-06 17:55:58] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.0.tar.gz]
 [2024-04-06 17:55:58] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
 [2024-04-06 17:55:58] INFO root fetch - main [MainThread]: Store serial: [22649168]
+[2024-04-06 17:58:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649168]
+[2024-04-06 17:58:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 17:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: obzerveai
+[2024-04-06 17:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrepositories
+[2024-04-06 17:58:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lib-pcg-algopy
+[2024-04-06 17:58:07] INFO root fetch - processPackages [obzerveai]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-06 17:58:07] INFO root fetch - processPackages [pyrepositories]: New version: [2.1.1] Old Version: [2.1.0]
+[2024-04-06 17:58:07] INFO root fetch - processPackages [lib-pcg-algopy]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-04-06 17:58:07] INFO root fetch - processPackages [obzerveai]: Downloading https://files.pythonhosted.org/packages/ae/01/8b6cddde151ca52e2d1003452625afa297aeafe61d4667d86fa7dc5920b9/obzerveai-0.0.2.tar.gz
+[2024-04-06 17:58:07] INFO root fetch - processPackages [pyrepositories]: Downloading https://files.pythonhosted.org/packages/85/07/7d98a34d777ecb8f8e0f1a65f1aefccd38531870712b57c58ac442c5560d/pyrepositories-2.1.0.tar.gz
+[2024-04-06 17:58:07] INFO root fetch - processPackages [lib-pcg-algopy]: Downloading https://files.pythonhosted.org/packages/a5/b6/2b50db133653e9d078eec3a96d52d64a99a62a6f5510647bcfd7f877cc9f/lib_pcg_algopy-0.1.0.tar.gz
+[2024-04-06 17:58:07] WARNING root fetch - processPackages [lib-pcg-algopy]: Timeout reached during download
+[2024-04-06 17:58:07] WARNING root fetch - processPackages [obzerveai]: Timeout reached during download
+[2024-04-06 17:58:07] WARNING root fetch - processPackages [pyrepositories]: Timeout reached during download
+[2024-04-06 17:58:07] INFO root fetch - processPackages [lib-pcg-algopy]: Downloading https://files.pythonhosted.org/packages/ed/72/c979be4ce87f301d83b6ebd6d0837e5b0c23c8edf02a5339408a39c54201/lib_pcg_algopy-0.2.0.tar.gz
+[2024-04-06 17:58:07] INFO root fetch - processPackages [obzerveai]: Downloading https://files.pythonhosted.org/packages/e1/d8/42c0209cc49e8d34d05e23e9f81ff724a7da82be1661eb591f5022fda880/obzerveai-0.0.4.tar.gz
+[2024-04-06 17:58:07] INFO root fetch - processPackages [pyrepositories]: Downloading https://files.pythonhosted.org/packages/5f/3e/9813deaa2db385571db91b36c9cb3227ea674716e5dcee3e7b5d89bb8a24/pyrepositories-2.1.1.tar.gz
+[2024-04-06 17:58:07] WARNING root fetch - processPackages [lib-pcg-algopy]: Timeout reached during download
+[2024-04-06 17:58:07] INFO root fetch - processPackages [lib-pcg-algopy]: executing diffoscope
+[2024-04-06 17:58:07] INFO root fetch - processPackages [lib-pcg-algopy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_pcg_algopy-0.1.0.tar.gz tmp/lib_pcg_algopy-0.2.0.tar.gz --markdown 20240406/l/lib-pcg-algopy/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 17:58:07] WARNING root fetch - processPackages [obzerveai]: Timeout reached during download
+[2024-04-06 17:58:07] INFO root fetch - processPackages [obzerveai]: executing diffoscope
+[2024-04-06 17:58:07] INFO root fetch - processPackages [obzerveai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obzerveai-0.0.2.tar.gz tmp/obzerveai-0.0.4.tar.gz --markdown 20240406/o/obzerveai/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 17:58:07] WARNING root fetch - processPackages [pyrepositories]: Timeout reached during download
+[2024-04-06 17:58:07] INFO root fetch - processPackages [pyrepositories]: executing diffoscope
+[2024-04-06 17:58:07] INFO root fetch - processPackages [pyrepositories]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrepositories-2.1.0.tar.gz tmp/pyrepositories-2.1.1.tar.gz --markdown 20240406/p/pyrepositories/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2024-04-06 17:58:08] INFO root fetch - processPackages [lib-pcg-algopy]: Remove: archive file [/home/abi/fetcher/tmp/lib_pcg_algopy-0.1.0.tar.gz]
+[2024-04-06 17:58:08] INFO root fetch - processPackages [lib-pcg-algopy]: Remove: archive file [/home/abi/fetcher/tmp/lib_pcg_algopy-0.2.0.tar.gz]
+[2024-04-06 17:58:08] INFO root fetch - main [MainThread]: End processing [lib-pcg-algopy]: success
+[2024-04-06 17:58:08] INFO root fetch - processPackages [pyrepositories]: Remove: archive file [/home/abi/fetcher/tmp/pyrepositories-2.1.0.tar.gz]
+[2024-04-06 17:58:08] INFO root fetch - processPackages [pyrepositories]: Remove: archive file [/home/abi/fetcher/tmp/pyrepositories-2.1.1.tar.gz]
+[2024-04-06 17:58:08] INFO root fetch - main [MainThread]: End processing [pyrepositories]: success
+[2024-04-06 17:58:08] INFO root fetch - processPackages [obzerveai]: Remove: archive file [/home/abi/fetcher/tmp/obzerveai-0.0.2.tar.gz]
+[2024-04-06 17:58:08] INFO root fetch - processPackages [obzerveai]: Remove: archive file [/home/abi/fetcher/tmp/obzerveai-0.0.4.tar.gz]
+[2024-04-06 17:58:08] INFO root fetch - main [MainThread]: End processing [obzerveai]: success
+[2024-04-06 17:58:08] INFO root fetch - main [MainThread]: Store serial: [22649177]
