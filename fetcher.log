@@ -12550,3 +12550,17 @@
 [2024-04-06 10:26:13] INFO root fetch - processPackages [ruleopt]: Remove: archive file [/home/abi/fetcher/tmp/ruleopt-0.1.3-cp39-cp39-macosx_11_0_arm64.whl.zip]
 [2024-04-06 10:26:13] INFO root fetch - main [MainThread]: End processing [ruleopt]: success
 [2024-04-06 10:26:13] INFO root fetch - main [MainThread]: Store serial: [22646712]
+[2024-04-06 10:28:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646712]
+[2024-04-06 10:28:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 10:28:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AllanTools
+[2024-04-06 10:28:22] INFO root fetch - processPackages [AllanTools]: New version: [2024.4] Old Version: [2019.9]
+[2024-04-06 10:28:22] INFO root fetch - processPackages [AllanTools]: Downloading https://files.pythonhosted.org/packages/b9/63/3a998237dde66b844a5f3d0d90f62dcfde668ed5f0fc8257c7d57023f8b4/AllanTools-2019.9.tar.gz
+[2024-04-06 10:28:22] WARNING root fetch - processPackages [AllanTools]: Timeout reached during download
+[2024-04-06 10:28:22] INFO root fetch - processPackages [AllanTools]: Downloading https://files.pythonhosted.org/packages/51/5d/165c2bcffe947650d3c9d310491bc900c706efde745d5fbb420ec354402e/AllanTools-2024.4-py2.py3-none-any.whl
+[2024-04-06 10:28:22] WARNING root fetch - processPackages [AllanTools]: Timeout reached during download
+[2024-04-06 10:28:22] INFO root fetch - processPackages [AllanTools]: executing diffoscope
+[2024-04-06 10:28:22] INFO root fetch - processPackages [AllanTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AllanTools-2019.9.tar.gz tmp/AllanTools-2024.4-py2.py3-none-any.whl.zip --markdown 20240406/A/AllanTools/2019.9-2024.4/diff.md --exclude *.pyd
+[2024-04-06 10:28:23] INFO root fetch - processPackages [AllanTools]: Remove: archive file [/home/abi/fetcher/tmp/AllanTools-2019.9.tar.gz]
+[2024-04-06 10:28:23] INFO root fetch - processPackages [AllanTools]: Remove: archive file [/home/abi/fetcher/tmp/AllanTools-2024.4-py2.py3-none-any.whl.zip]
+[2024-04-06 10:28:23] INFO root fetch - main [MainThread]: End processing [AllanTools]: success
+[2024-04-06 10:28:23] INFO root fetch - main [MainThread]: Store serial: [22646718]
