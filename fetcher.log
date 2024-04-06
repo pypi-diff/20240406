@@ -15323,3 +15323,28 @@ EOFError: EOF read where object expected
 [2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-vsphere]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_vsphere-4.9.2.tar.gz]
 [2024-04-06 13:51:33] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
 [2024-04-06 13:51:33] INFO root fetch - main [MainThread]: Store serial: [22647659]
+[2024-04-06 13:53:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647659]
+[2024-04-06 13:53:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 13:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-aiven
+[2024-04-06 13:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-115
+[2024-04-06 13:53:42] INFO root fetch - processPackages [python-115]: New version: [0.0.5.9] Old Version: [0.0.5.8]
+[2024-04-06 13:53:42] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/e1/eb/f9ff1c69706e42ab4cc4b5b295c2929abbcbc4b370c64c4ae5ee1a395cee/python_115-0.0.5.8.tar.gz
+[2024-04-06 13:53:42] INFO root fetch - processPackages [pulumi-aiven]: New version: [6.9.0a1704274395] Old Version: [6.9.0a1704258951]
+[2024-04-06 13:53:42] WARNING root fetch - processPackages [python-115]: Timeout reached during download
+[2024-04-06 13:53:42] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/89/fb/adacc179c277b4328f00f1483cac3f1c2227c33318802c8f88e0ee8e93c3/pulumi_aiven-6.9.0a1704258951.tar.gz
+[2024-04-06 13:53:42] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/7a/dd/a1ee0fbd1fcefd8f5a141be5fd9a2a075c22f5ff1754fddb76fd2c090769/python_115-0.0.5.9.tar.gz
+[2024-04-06 13:53:42] WARNING root fetch - processPackages [python-115]: Timeout reached during download
+[2024-04-06 13:53:42] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-06 13:53:42] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.5.8.tar.gz tmp/python_115-0.0.5.9.tar.gz --markdown 20240406/p/python-115/0.0.5.8-0.0.5.9/diff.md --exclude *.pyd
+[2024-04-06 13:53:43] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.5.8.tar.gz]
+[2024-04-06 13:53:43] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.5.9.tar.gz]
+[2024-04-06 13:53:43] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-06 13:53:43] WARNING root fetch - processPackages [pulumi-aiven]: Timeout reached during download
+[2024-04-06 13:53:43] INFO root fetch - processPackages [pulumi-aiven]: Downloading https://files.pythonhosted.org/packages/58/4d/df63cee14469cb3bb5ff7e2a4af56d19adf0cd17ce9192b84188dc240736/pulumi_aiven-6.9.0a1704274395.tar.gz
+[2024-04-06 13:53:43] WARNING root fetch - processPackages [pulumi-aiven]: Timeout reached during download
+[2024-04-06 13:53:43] INFO root fetch - processPackages [pulumi-aiven]: executing diffoscope
+[2024-04-06 13:53:43] INFO root fetch - processPackages [pulumi-aiven]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_aiven-6.9.0a1704258951.tar.gz tmp/pulumi_aiven-6.9.0a1704274395.tar.gz --markdown 20240406/p/pulumi-aiven/6.9.0a1704258951-6.9.0a1704274395/diff.md --exclude *.pyd
+[2024-04-06 13:53:45] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704258951.tar.gz]
+[2024-04-06 13:53:45] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704274395.tar.gz]
+[2024-04-06 13:53:45] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
+[2024-04-06 13:53:45] INFO root fetch - main [MainThread]: Store serial: [22647666]
