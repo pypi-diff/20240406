@@ -8097,3 +8097,50 @@
 [2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [paddle-billing-python-sdk]: success
 [2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
 [2024-04-06 04:37:10] INFO root fetch - main [MainThread]: Store serial: [22645006]
+[2024-04-06 04:39:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645006]
+[2024-04-06 04:39:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-account-asset-management
+[2024-04-06 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mocker-db
+[2024-04-06 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-account-check-deposit
+[2024-04-06 04:39:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ffmpegcv
+[2024-04-06 04:39:20] INFO root fetch - processPackages [mocker-db]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 04:39:20] INFO root fetch - processPackages [mocker-db]: Downloading https://files.pythonhosted.org/packages/e0/46/2dd3f9c0e66a2e23bb172d82a509b5ad530f591ba177c5bda249ec657965/mocker_db-0.0.7.tar.gz
+[2024-04-06 04:39:20] INFO root fetch - processPackages [odoo12-addon-account-check-deposit]: New version: [12.0.2.0.1.99.dev8] Old Version: [12.0.2.0.1.99.dev7]
+[2024-04-06 04:39:20] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: New version: [12.0.3.2.0.99.dev8] Old Version: [12.0.3.2.0.99.dev7]
+[2024-04-06 04:39:20] INFO root fetch - processPackages [ffmpegcv]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 04:39:20] WARNING root fetch - processPackages [mocker-db]: Timeout reached during download
+[2024-04-06 04:39:20] INFO root fetch - processPackages [odoo12-addon-account-check-deposit]: Downloading https://files.pythonhosted.org/packages/d8/7c/2642dda77a7e90e311452ec72935500b1940e957e822dddb94074dc62598/odoo12_addon_account_check_deposit-12.0.2.0.1.99.dev7-py3-none-any.whl
+[2024-04-06 04:39:20] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Downloading https://files.pythonhosted.org/packages/41/a4/c5bdfac82e182cf5701bea4ea41ebd743d8ce8125070fd475a0dfcf5f190/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev7-py3-none-any.whl
+[2024-04-06 04:39:20] INFO root fetch - processPackages [ffmpegcv]: Downloading https://files.pythonhosted.org/packages/36/ea/fe81bbe890e45a521f93a5d85df66db12aab579d7cd1d7f498b67869a354/ffmpegcv-0.3.8.tar.gz
+[2024-04-06 04:39:20] INFO root fetch - processPackages [mocker-db]: Downloading https://files.pythonhosted.org/packages/43/b3/99f3b5b22f030173cc25be7a395e0cf51687f8fc4c5dd20be0d2c718a6ce/mocker_db-0.0.8.tar.gz
+[2024-04-06 04:39:20] WARNING root fetch - processPackages [ffmpegcv]: Timeout reached during download
+[2024-04-06 04:39:20] WARNING root fetch - processPackages [mocker-db]: Timeout reached during download
+[2024-04-06 04:39:20] INFO root fetch - processPackages [mocker-db]: executing diffoscope
+[2024-04-06 04:39:20] INFO root fetch - processPackages [mocker-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mocker_db-0.0.7.tar.gz tmp/mocker_db-0.0.8.tar.gz --markdown 20240406/m/mocker-db/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 04:39:20] WARNING root fetch - processPackages [odoo12-addon-account-check-deposit]: Timeout reached during download
+[2024-04-06 04:39:20] WARNING root fetch - processPackages [odoo12-addon-account-asset-management]: Timeout reached during download
+[2024-04-06 04:39:20] INFO root fetch - processPackages [ffmpegcv]: Downloading https://files.pythonhosted.org/packages/26/97/1268a6b1c4a0a4dc57d19dd5e4df5659c6265773047de0584472e14ee704/ffmpegcv-0.3.9.tar.gz
+[2024-04-06 04:39:20] WARNING root fetch - processPackages [ffmpegcv]: Timeout reached during download
+[2024-04-06 04:39:20] INFO root fetch - processPackages [ffmpegcv]: executing diffoscope
+[2024-04-06 04:39:20] INFO root fetch - processPackages [ffmpegcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffmpegcv-0.3.8.tar.gz tmp/ffmpegcv-0.3.9.tar.gz --markdown 20240406/f/ffmpegcv/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 04:39:20] INFO root fetch - processPackages [odoo12-addon-account-check-deposit]: Downloading https://files.pythonhosted.org/packages/46/2e/79901509c670b6614bece3b5c0f21e4822a1c0d319cc04ee7ecb51530a50/odoo12_addon_account_check_deposit-12.0.2.0.1.99.dev8-py3-none-any.whl
+[2024-04-06 04:39:20] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Downloading https://files.pythonhosted.org/packages/3e/70/a503610346750505020b13a0fec585f06f7d9afb81fa4fc211f61228d229/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev8-py3-none-any.whl
+[2024-04-06 04:39:21] WARNING root fetch - processPackages [odoo12-addon-account-asset-management]: Timeout reached during download
+[2024-04-06 04:39:21] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: executing diffoscope
+[2024-04-06 04:39:21] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev8-py3-none-any.whl.zip --markdown 20240406/o/odoo12-addon-account-asset-management/12.0.3.2.0.99.dev7-12.0.3.2.0.99.dev8/diff.md --exclude *.pyd
+[2024-04-06 04:39:21] WARNING root fetch - processPackages [odoo12-addon-account-check-deposit]: Timeout reached during download
+[2024-04-06 04:39:21] INFO root fetch - processPackages [odoo12-addon-account-check-deposit]: executing diffoscope
+[2024-04-06 04:39:21] INFO root fetch - processPackages [odoo12-addon-account-check-deposit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_check_deposit-12.0.2.0.1.99.dev7-py3-none-any.whl.zip tmp/odoo12_addon_account_check_deposit-12.0.2.0.1.99.dev8-py3-none-any.whl.zip --markdown 20240406/o/odoo12-addon-account-check-deposit/12.0.2.0.1.99.dev7-12.0.2.0.1.99.dev8/diff.md --exclude *.pyd
+[2024-04-06 04:39:21] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.0.7.tar.gz]
+[2024-04-06 04:39:21] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.0.8.tar.gz]
+[2024-04-06 04:39:21] INFO root fetch - main [MainThread]: End processing [mocker-db]: success
+[2024-04-06 04:39:21] INFO root fetch - processPackages [ffmpegcv]: Remove: archive file [/home/abi/fetcher/tmp/ffmpegcv-0.3.8.tar.gz]
+[2024-04-06 04:39:21] INFO root fetch - processPackages [ffmpegcv]: Remove: archive file [/home/abi/fetcher/tmp/ffmpegcv-0.3.9.tar.gz]
+[2024-04-06 04:39:21] INFO root fetch - main [MainThread]: End processing [ffmpegcv]: success
+[2024-04-06 04:39:21] INFO root fetch - processPackages [odoo12-addon-account-check-deposit]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_check_deposit-12.0.2.0.1.99.dev7-py3-none-any.whl.zip]
+[2024-04-06 04:39:21] INFO root fetch - processPackages [odoo12-addon-account-check-deposit]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_check_deposit-12.0.2.0.1.99.dev8-py3-none-any.whl.zip]
+[2024-04-06 04:39:21] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-check-deposit]: success
+[2024-04-06 04:39:22] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev7-py3-none-any.whl.zip]
+[2024-04-06 04:39:22] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev8-py3-none-any.whl.zip]
+[2024-04-06 04:39:22] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-asset-management]: success
+[2024-04-06 04:39:22] INFO root fetch - main [MainThread]: Store serial: [22645016]
