@@ -11074,3 +11074,17 @@
 [2024-04-06 08:26:32] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.1.4.tar.gz]
 [2024-04-06 08:26:32] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
 [2024-04-06 08:26:32] INFO root fetch - main [MainThread]: Store serial: [22646068]
+[2024-04-06 08:28:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646068]
+[2024-04-06 08:28:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 08:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: primula
+[2024-04-06 08:28:40] INFO root fetch - processPackages [primula]: New version: [0.3] Old Version: [0.2]
+[2024-04-06 08:28:40] INFO root fetch - processPackages [primula]: Downloading https://files.pythonhosted.org/packages/a4/f5/79d0e0ce5d5cb48d6c1e4c0567b8572641783b5db1f87c3012f2e43b704f/primula-0.2.tar.gz
+[2024-04-06 08:28:40] WARNING root fetch - processPackages [primula]: Timeout reached during download
+[2024-04-06 08:28:41] INFO root fetch - processPackages [primula]: Downloading https://files.pythonhosted.org/packages/ae/e4/b804d0ec5539a3ee08c7236f3bd48db4f9b152b45bc8ca481a66d285d437/primula-0.3.tar.gz
+[2024-04-06 08:28:41] WARNING root fetch - processPackages [primula]: Timeout reached during download
+[2024-04-06 08:28:41] INFO root fetch - processPackages [primula]: executing diffoscope
+[2024-04-06 08:28:41] INFO root fetch - processPackages [primula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/primula-0.2.tar.gz tmp/primula-0.3.tar.gz --markdown 20240406/p/primula/0.2-0.3/diff.md --exclude *.pyd
+[2024-04-06 08:28:41] INFO root fetch - processPackages [primula]: Remove: archive file [/home/abi/fetcher/tmp/primula-0.2.tar.gz]
+[2024-04-06 08:28:41] INFO root fetch - processPackages [primula]: Remove: archive file [/home/abi/fetcher/tmp/primula-0.3.tar.gz]
+[2024-04-06 08:28:41] INFO root fetch - main [MainThread]: End processing [primula]: success
+[2024-04-06 08:28:41] INFO root fetch - main [MainThread]: Store serial: [22646071]
