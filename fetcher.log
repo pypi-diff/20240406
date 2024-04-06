@@ -23810,3 +23810,31 @@ EOFError: EOF read where object expected
 [2024-04-06 22:14:18] INFO root fetch - processPackages [strawberry-django-auth]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_django_auth-0.376.6.tar.gz]
 [2024-04-06 22:14:18] INFO root fetch - main [MainThread]: End processing [strawberry-django-auth]: success
 [2024-04-06 22:14:18] INFO root fetch - main [MainThread]: Store serial: [22650749]
+[2024-04-06 22:16:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650749]
+[2024-04-06 22:16:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 22:16:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-04-06 22:16:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nstreamai
+[2024-04-06 22:16:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libsbmlnetwork
+[2024-04-06 22:16:27] WARNING root fetch - processPackages [nstreamai]: Skipping, unable to determine old version
+[2024-04-06 22:16:27] INFO root fetch - main [MainThread]: End processing [nstreamai] error
+[2024-04-06 22:16:28] INFO root fetch - processPackages [libsbmlnetwork]: New version: [0.0.17] Old Version: [0.0.16]
+[2024-04-06 22:16:28] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-04-06 22:16:28] INFO root fetch - processPackages [libsbmlnetwork]: Downloading https://files.pythonhosted.org/packages/1f/71/22a921fc43581e1f02189522014389d8f81fe808c868a886b5b289de559b/libsbmlnetwork-0.0.16-py3-none-win_amd64.whl
+[2024-04-06 22:16:28] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-04-06 22:16:28] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 22:16:28] WARNING root fetch - processPackages [libsbmlnetwork]: Timeout reached during download
+[2024-04-06 22:16:28] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-04-06 22:16:28] INFO root fetch - processPackages [libsbmlnetwork]: Downloading https://files.pythonhosted.org/packages/c2/3b/b54a1e113691e2c1bdf73a8303c1a117b8662fbd40990f7fdebfe0099a1d/libsbmlnetwork-0.0.17-py3-none-macosx_14_0_arm64.whl
+[2024-04-06 22:16:28] WARNING root fetch - processPackages [spanishconjugator]: Timeout reached during download
+[2024-04-06 22:16:28] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-04-06 22:16:28] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240406/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2024-04-06 22:16:29] WARNING root fetch - processPackages [libsbmlnetwork]: Timeout reached during download
+[2024-04-06 22:16:29] INFO root fetch - processPackages [libsbmlnetwork]: executing diffoscope
+[2024-04-06 22:16:29] INFO root fetch - processPackages [libsbmlnetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsbmlnetwork-0.0.16-py3-none-win_amd64.whl.zip tmp/libsbmlnetwork-0.0.17-py3-none-macosx_14_0_arm64.whl.zip --markdown 20240406/l/libsbmlnetwork/0.0.16-0.0.17/diff.md --exclude *.pyd
+[2024-04-06 22:16:29] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-04-06 22:16:29] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-04-06 22:16:29] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-04-06 22:16:30] INFO root fetch - processPackages [libsbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/libsbmlnetwork-0.0.16-py3-none-win_amd64.whl.zip]
+[2024-04-06 22:16:30] INFO root fetch - processPackages [libsbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/libsbmlnetwork-0.0.17-py3-none-macosx_14_0_arm64.whl.zip]
+[2024-04-06 22:16:30] INFO root fetch - main [MainThread]: End processing [libsbmlnetwork]: success
+[2024-04-06 22:16:30] INFO root fetch - main [MainThread]: Store serial: [22650774]
