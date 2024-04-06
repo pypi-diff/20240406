@@ -23646,3 +23646,20 @@ EOFError: EOF read where object expected
 [2024-04-06 22:01:11] INFO root fetch - processPackages [monsgrams]: Remove: archive file [/home/abi/fetcher/tmp/monsgrams-1.2.tar.gz]
 [2024-04-06 22:01:11] INFO root fetch - main [MainThread]: End processing [monsgrams]: success
 [2024-04-06 22:01:11] INFO root fetch - main [MainThread]: Store serial: [22650679]
+[2024-04-06 22:03:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650679]
+[2024-04-06 22:03:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 22:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: key2pane
+[2024-04-06 22:03:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sunpy-sphinx-theme
+[2024-04-06 22:03:20] INFO root fetch - processPackages [sunpy-sphinx-theme]: New version: [2.0.8rc1] Old Version: [2.0.7]
+[2024-04-06 22:03:20] WARNING root fetch - processPackages [key2pane]: Skipping, unable to determine old version
+[2024-04-06 22:03:20] INFO root fetch - main [MainThread]: End processing [key2pane] error
+[2024-04-06 22:03:20] INFO root fetch - processPackages [sunpy-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/85/3a/3dc8fd2d84ed0e4658902cc9a11d4a0fea8bfbe9979cb90e987504020364/sunpy-sphinx-theme-2.0.7.tar.gz
+[2024-04-06 22:03:20] WARNING root fetch - processPackages [sunpy-sphinx-theme]: Timeout reached during download
+[2024-04-06 22:03:20] INFO root fetch - processPackages [sunpy-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/5f/c5/217c44e14c8e61b2d993a139f31e57a4ec941b7230657ea2c505079ed638/sunpy-sphinx-theme-2.0.8rc1.tar.gz
+[2024-04-06 22:03:21] WARNING root fetch - processPackages [sunpy-sphinx-theme]: Timeout reached during download
+[2024-04-06 22:03:21] INFO root fetch - processPackages [sunpy-sphinx-theme]: executing diffoscope
+[2024-04-06 22:03:21] INFO root fetch - processPackages [sunpy-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunpy-sphinx-theme-2.0.7.tar.gz tmp/sunpy-sphinx-theme-2.0.8rc1.tar.gz --markdown 20240406/s/sunpy-sphinx-theme/2.0.7-2.0.8rc1/diff.md --exclude *.pyd
+[2024-04-06 22:03:21] INFO root fetch - processPackages [sunpy-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-sphinx-theme-2.0.7.tar.gz]
+[2024-04-06 22:03:21] INFO root fetch - processPackages [sunpy-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-sphinx-theme-2.0.8rc1.tar.gz]
+[2024-04-06 22:03:21] INFO root fetch - main [MainThread]: End processing [sunpy-sphinx-theme]: success
+[2024-04-06 22:03:21] INFO root fetch - main [MainThread]: Store serial: [22650685]
