@@ -16799,3 +16799,83 @@ EOFError: EOF read where object expected
 [2024-04-06 15:40:56] INFO root fetch - processPackages [policy-sentry]: Remove: archive file [/home/abi/fetcher/tmp/policy_sentry-0.9.1.tar.gz]
 [2024-04-06 15:40:56] INFO root fetch - main [MainThread]: End processing [policy-sentry]: success
 [2024-04-06 15:40:56] INFO root fetch - main [MainThread]: Store serial: [22648266]
+[2024-04-06 15:43:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648266]
+[2024-04-06 15:43:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 15:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pixeloe
+[2024-04-06 15:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: assemblyline-service-client
+[2024-04-06 15:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: assemblyline-service-server
+[2024-04-06 15:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: assemblyline-ui
+[2024-04-06 15:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: assemblyline-v4-service
+[2024-04-06 15:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: assemblyline
+[2024-04-06 15:43:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: assemblyline-core
+[2024-04-06 15:43:05] INFO root fetch - processPackages [pixeloe]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-06 15:43:05] INFO root fetch - processPackages [assemblyline-core]: New version: [4.5.1.dev8] Old Version: [4.5.1.dev7]
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline]: New version: [4.5.1.dev8] Old Version: [4.5.1.dev7]
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-client]: New version: [4.5.1.dev8] Old Version: [4.5.1.dev7]
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-server]: New version: [4.5.1.dev8] Old Version: [4.5.1.dev7]
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-v4-service]: New version: [4.5.1.dev8] Old Version: [4.5.1.dev7]
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-ui]: New version: [4.5.1.dev8] Old Version: [4.5.1.dev7]
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-client]: Downloading https://files.pythonhosted.org/packages/0c/cc/b712a6bbfb0d6b9abdf4ca2eb031483fcf9976bb429f1d53c2a3023e6a0d/assemblyline_service_client-4.5.1.dev7-py3-none-any.whl
+[2024-04-06 15:43:06] INFO root fetch - processPackages [pixeloe]: Downloading https://files.pythonhosted.org/packages/11/97/bba3c3cecdf775a2af74a892b93d2a3c4e1f72b4199e501a729b2d3530cb/pixeloe-0.0.4.tar.gz
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-core]: Downloading https://files.pythonhosted.org/packages/a6/2e/d1f4676a5bff896a8a015c5013a51d7dc725b48db2fa950c5afe74ed9119/assemblyline-core-4.5.1.dev7.tar.gz
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline]: Downloading https://files.pythonhosted.org/packages/d4/c1/e1011b57f693c05b8b1cce52badc752649f683b889e4c039638078139162/assemblyline-4.5.1.dev7.tar.gz
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/bb/b1/ba5d26dc724fc127cef4b46a6d15690366d9b61ac3928cc5ca0b045e171a/assemblyline_v4_service-4.5.1.dev7-py3-none-any.whl
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-ui]: Downloading https://files.pythonhosted.org/packages/b0/eb/d078649b53118abb1b0125d8b6f1b3534087c5a7c49aa49b3ba0ff09376d/assemblyline_ui-4.5.1.dev7-py3-none-any.whl
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-server]: Downloading https://files.pythonhosted.org/packages/6c/c5/511e6040f3325df3b10950b105db8310bcf65559c4e0f1449fa966b83911/assemblyline_service_server-4.5.1.dev7-py3-none-any.whl
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-service-client]: Timeout reached during download
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [pixeloe]: Timeout reached during download
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-ui]: Timeout reached during download
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-core]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-client]: Downloading https://files.pythonhosted.org/packages/59/71/cb920f39a4f44f6d0d617f6b633858c8b04ddedd257f91b6e1a0a7023ba9/assemblyline_service_client-4.5.1.dev8-py3-none-any.whl
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-v4-service]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [pixeloe]: Downloading https://files.pythonhosted.org/packages/04/68/cd75c2f959f8591f11da5c41d077a1ce9208667472ce16a350c8d24eaa6b/pixeloe-0.0.6.tar.gz
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline]: Timeout reached during download
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-service-server]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline]: Downloading https://files.pythonhosted.org/packages/92/cd/0b991267ceb5722669d38f323e88364824cd252f0e1d8c5124aa39408e0c/assemblyline-4.5.1.dev8.tar.gz
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-service-client]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-client]: executing diffoscope
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_client-4.5.1.dev7-py3-none-any.whl.zip tmp/assemblyline_service_client-4.5.1.dev8-py3-none-any.whl.zip --markdown 20240406/a/assemblyline-service-client/4.5.1.dev7-4.5.1.dev8/diff.md --exclude *.pyd
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [pixeloe]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [pixeloe]: executing diffoscope
+[2024-04-06 15:43:06] INFO root fetch - processPackages [pixeloe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixeloe-0.0.4.tar.gz tmp/pixeloe-0.0.6.tar.gz --markdown 20240406/p/pixeloe/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-server]: Downloading https://files.pythonhosted.org/packages/18/6d/a7e92379ea8dd048967faba2bb7ece271e410c0dfd02905b2224edae0278/assemblyline_service_server-4.5.1.dev8-py3-none-any.whl
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-ui]: Downloading https://files.pythonhosted.org/packages/ae/51/d8a13e31f9181b4a2a9d1c34568c101b743defd9b288570bca394b1bb6fb/assemblyline_ui-4.5.1.dev8-py3-none-any.whl
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-core]: Downloading https://files.pythonhosted.org/packages/2c/8a/65f2f1337e168bc5e0acc14d0fd060b67ef1e28407ddc8bc8a018e900359/assemblyline-core-4.5.1.dev8.tar.gz
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-v4-service]: Downloading https://files.pythonhosted.org/packages/ee/7f/7e346588968347a5044e0dec407aaaab78548d3d11c0178c639b24b475b1/assemblyline_v4_service-4.5.1.dev8-py3-none-any.whl
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-service-server]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-server]: executing diffoscope
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_service_server-4.5.1.dev7-py3-none-any.whl.zip tmp/assemblyline_service_server-4.5.1.dev8-py3-none-any.whl.zip --markdown 20240406/a/assemblyline-service-server/4.5.1.dev7-4.5.1.dev8/diff.md --exclude *.pyd
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline]: Timeout reached during download
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-ui]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline]: executing diffoscope
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-4.5.1.dev7.tar.gz tmp/assemblyline-4.5.1.dev8.tar.gz --markdown 20240406/a/assemblyline/4.5.1.dev7-4.5.1.dev8/diff.md --exclude *.pyd
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-ui]: executing diffoscope
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_ui-4.5.1.dev7-py3-none-any.whl.zip tmp/assemblyline_ui-4.5.1.dev8-py3-none-any.whl.zip --markdown 20240406/a/assemblyline-ui/4.5.1.dev7-4.5.1.dev8/diff.md --exclude *.pyd
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-core]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-core]: executing diffoscope
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline-core-4.5.1.dev7.tar.gz tmp/assemblyline-core-4.5.1.dev8.tar.gz --markdown 20240406/a/assemblyline-core/4.5.1.dev7-4.5.1.dev8/diff.md --exclude *.pyd
+[2024-04-06 15:43:06] WARNING root fetch - processPackages [assemblyline-v4-service]: Timeout reached during download
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-v4-service]: executing diffoscope
+[2024-04-06 15:43:06] INFO root fetch - processPackages [assemblyline-v4-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/assemblyline_v4_service-4.5.1.dev7-py3-none-any.whl.zip tmp/assemblyline_v4_service-4.5.1.dev8-py3-none-any.whl.zip --markdown 20240406/a/assemblyline-v4-service/4.5.1.dev7-4.5.1.dev8/diff.md --exclude *.pyd
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_client-4.5.1.dev7-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-service-client]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_client-4.5.1.dev8-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - main [MainThread]: End processing [assemblyline-service-client]: success
+[2024-04-06 15:43:07] INFO root fetch - processPackages [pixeloe]: Remove: archive file [/home/abi/fetcher/tmp/pixeloe-0.0.4.tar.gz]
+[2024-04-06 15:43:07] INFO root fetch - processPackages [pixeloe]: Remove: archive file [/home/abi/fetcher/tmp/pixeloe-0.0.6.tar.gz]
+[2024-04-06 15:43:07] INFO root fetch - main [MainThread]: End processing [pixeloe]: success
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-service-server]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_server-4.5.1.dev7-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-service-server]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_service_server-4.5.1.dev8-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - main [MainThread]: End processing [assemblyline-service-server]: success
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-v4-service]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_v4_service-4.5.1.dev7-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-v4-service]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_v4_service-4.5.1.dev8-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - main [MainThread]: End processing [assemblyline-v4-service]: success
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-core]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-core-4.5.1.dev7.tar.gz]
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-core]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-core-4.5.1.dev8.tar.gz]
+[2024-04-06 15:43:07] INFO root fetch - main [MainThread]: End processing [assemblyline-core]: success
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-ui]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_ui-4.5.1.dev7-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - processPackages [assemblyline-ui]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline_ui-4.5.1.dev8-py3-none-any.whl.zip]
+[2024-04-06 15:43:07] INFO root fetch - main [MainThread]: End processing [assemblyline-ui]: success
+[2024-04-06 15:43:08] INFO root fetch - processPackages [assemblyline]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-4.5.1.dev7.tar.gz]
+[2024-04-06 15:43:08] INFO root fetch - processPackages [assemblyline]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-4.5.1.dev8.tar.gz]
+[2024-04-06 15:43:08] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
+[2024-04-06 15:43:08] INFO root fetch - main [MainThread]: Store serial: [22648280]
