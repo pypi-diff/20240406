@@ -13922,3 +13922,11 @@
 [2024-04-06 12:27:41] INFO root fetch - processPackages [hagrid]: Remove: archive file [/home/abi/fetcher/tmp/hagrid-0.3.99.tar.gz]
 [2024-04-06 12:27:41] INFO root fetch - main [MainThread]: End processing [hagrid]: success
 [2024-04-06 12:27:41] INFO root fetch - main [MainThread]: Store serial: [22647222]
+[2024-04-06 12:29:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647222]
+[2024-04-06 12:29:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 12:31:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647225]
+[2024-04-06 12:31:55] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 12:31:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chessview
+[2024-04-06 12:31:55] WARNING root fetch - processPackages [chessview]: Skipping, unable to determine old version
+[2024-04-06 12:31:55] INFO root fetch - main [MainThread]: End processing [chessview] error
+[2024-04-06 12:31:55] INFO root fetch - main [MainThread]: Store serial: [22647237]
