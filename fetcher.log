@@ -8592,3 +8592,28 @@
 [2024-04-06 05:16:43] INFO root fetch - processPackages [cdktf-cdktf-provider-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-pagerduty-9.0.3.tar.gz]
 [2024-04-06 05:16:43] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-pagerduty]: success
 [2024-04-06 05:16:43] INFO root fetch - main [MainThread]: Store serial: [22645197]
+[2024-04-06 05:18:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645197]
+[2024-04-06 05:18:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 05:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: br-army-knife
+[2024-04-06 05:18:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scores
+[2024-04-06 05:18:52] INFO root fetch - processPackages [scores]: New version: [0.5] Old Version: [0.4]
+[2024-04-06 05:18:52] INFO root fetch - processPackages [br-army-knife]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 05:18:52] INFO root fetch - processPackages [scores]: Downloading https://files.pythonhosted.org/packages/3e/6a/ca70db953261a3e7d783eb66701ab6a9dcee2e51b15ea4c3195cea1445f7/scores-0.4.tar.gz
+[2024-04-06 05:18:52] INFO root fetch - processPackages [br-army-knife]: Downloading https://files.pythonhosted.org/packages/8f/69/c593fd84ab32514f861efd75c48aa104a52847cd7dec70b07b33f54b6680/br_army_knife-0.0.3.tar.gz
+[2024-04-06 05:18:52] WARNING root fetch - processPackages [scores]: Timeout reached during download
+[2024-04-06 05:18:52] WARNING root fetch - processPackages [br-army-knife]: Timeout reached during download
+[2024-04-06 05:18:52] INFO root fetch - processPackages [scores]: Downloading https://files.pythonhosted.org/packages/99/e4/60dcdff719e0aff6061827e416ed83b965d6aaaf9541463d99025980928b/scores-0.5.tar.gz
+[2024-04-06 05:18:52] INFO root fetch - processPackages [br-army-knife]: Downloading https://files.pythonhosted.org/packages/f4/89/434ceb4e0b9e39f150ce52eeeefea8dcec4952ee71ae1dcfe3d08d1f7bb8/br_army_knife-0.0.4.tar.gz
+[2024-04-06 05:18:52] WARNING root fetch - processPackages [scores]: Timeout reached during download
+[2024-04-06 05:18:52] INFO root fetch - processPackages [scores]: executing diffoscope
+[2024-04-06 05:18:52] INFO root fetch - processPackages [scores]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scores-0.4.tar.gz tmp/scores-0.5.tar.gz --markdown 20240406/s/scores/0.4-0.5/diff.md --exclude *.pyd
+[2024-04-06 05:18:52] WARNING root fetch - processPackages [br-army-knife]: Timeout reached during download
+[2024-04-06 05:18:52] INFO root fetch - processPackages [br-army-knife]: executing diffoscope
+[2024-04-06 05:18:52] INFO root fetch - processPackages [br-army-knife]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/br_army_knife-0.0.3.tar.gz tmp/br_army_knife-0.0.4.tar.gz --markdown 20240406/b/br-army-knife/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 05:18:53] INFO root fetch - processPackages [br-army-knife]: Remove: archive file [/home/abi/fetcher/tmp/br_army_knife-0.0.3.tar.gz]
+[2024-04-06 05:18:53] INFO root fetch - processPackages [br-army-knife]: Remove: archive file [/home/abi/fetcher/tmp/br_army_knife-0.0.4.tar.gz]
+[2024-04-06 05:18:53] INFO root fetch - main [MainThread]: End processing [br-army-knife]: success
+[2024-04-06 05:18:53] INFO root fetch - processPackages [scores]: Remove: archive file [/home/abi/fetcher/tmp/scores-0.4.tar.gz]
+[2024-04-06 05:18:53] INFO root fetch - processPackages [scores]: Remove: archive file [/home/abi/fetcher/tmp/scores-0.5.tar.gz]
+[2024-04-06 05:18:53] INFO root fetch - main [MainThread]: End processing [scores]: success
+[2024-04-06 05:18:53] INFO root fetch - main [MainThread]: Store serial: [22645221]
