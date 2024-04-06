@@ -8186,3 +8186,39 @@
 [2024-04-06 04:45:52] INFO root fetch - processPackages [casbin-async-redis-adapter]: Remove: archive file [/home/abi/fetcher/tmp/casbin_async_redis_adapter-1.2.0.tar.gz]
 [2024-04-06 04:45:52] INFO root fetch - main [MainThread]: End processing [casbin-async-redis-adapter]: success
 [2024-04-06 04:45:52] INFO root fetch - main [MainThread]: Store serial: [22645025]
+[2024-04-06 04:47:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645025]
+[2024-04-06 04:48:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 04:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RelaDB
+[2024-04-06 04:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NNSOM
+[2024-04-06 04:48:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zetascale
+[2024-04-06 04:48:01] INFO root fetch - processPackages [NNSOM]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-04-06 04:48:01] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/e2/2e/5f46c89eafb8e5b21ddd9602f11e067ab69938cbd13f9fed4070374f4249/nnsom-1.4.4.tar.gz
+[2024-04-06 04:48:01] INFO root fetch - processPackages [RelaDB]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 04:48:01] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 04:48:01] INFO root fetch - processPackages [zetascale]: New version: [2.3.6] Old Version: [2.3.1]
+[2024-04-06 04:48:01] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/88/32/85b501d7d0f373cdaf7982ad83f94926de4896b2b71a3e7fa5a3cf57a4f3/RelaDB-1.0.0.tar.gz
+[2024-04-06 04:48:02] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-06 04:48:02] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/f3/cc/bb65ab9e25036038a7768aca1b9af229cd74c76baca5a8fa3f6d7e8b3485/nnsom-1.4.5.tar.gz
+[2024-04-06 04:48:02] INFO root fetch - processPackages [zetascale]: Downloading https://files.pythonhosted.org/packages/da/ac/334126ea39ef5084e57d9b5aeb54ada729f8ee0e3465f64f5a36d31a9cc2/zetascale-2.3.1.tar.gz
+[2024-04-06 04:48:02] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 04:48:02] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-06 04:48:02] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.4.4.tar.gz tmp/nnsom-1.4.5.tar.gz --markdown 20240406/N/NNSOM/1.4.4-1.4.5/diff.md --exclude *.pyd
+[2024-04-06 04:48:02] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/89/64/6c3ccc566e2bd92b2a02a52deed91811bef1c6a14ddcbc13b3390fda3ba4/RelaDB-1.0.1.tar.gz
+[2024-04-06 04:48:02] WARNING root fetch - processPackages [zetascale]: Timeout reached during download
+[2024-04-06 04:48:02] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-06 04:48:02] INFO root fetch - processPackages [RelaDB]: executing diffoscope
+[2024-04-06 04:48:02] INFO root fetch - processPackages [RelaDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RelaDB-1.0.0.tar.gz tmp/RelaDB-1.0.1.tar.gz --markdown 20240406/R/RelaDB/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 04:48:02] INFO root fetch - processPackages [zetascale]: Downloading https://files.pythonhosted.org/packages/93/aa/da0871ce18d549f4ec26541c2b9f045923476896574a2363ccf809dbed99/zetascale-2.3.6.tar.gz
+[2024-04-06 04:48:02] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-1.0.0.tar.gz]
+[2024-04-06 04:48:02] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-1.0.1.tar.gz]
+[2024-04-06 04:48:02] INFO root fetch - main [MainThread]: End processing [RelaDB]: success
+[2024-04-06 04:48:02] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.4.tar.gz]
+[2024-04-06 04:48:02] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.5.tar.gz]
+[2024-04-06 04:48:02] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-06 04:48:02] WARNING root fetch - processPackages [zetascale]: Timeout reached during download
+[2024-04-06 04:48:02] INFO root fetch - processPackages [zetascale]: executing diffoscope
+[2024-04-06 04:48:02] INFO root fetch - processPackages [zetascale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zetascale-2.3.1.tar.gz tmp/zetascale-2.3.6.tar.gz --markdown 20240406/z/zetascale/2.3.1-2.3.6/diff.md --exclude *.pyd
+[2024-04-06 04:48:04] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.3.1.tar.gz]
+[2024-04-06 04:48:04] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.3.6.tar.gz]
+[2024-04-06 04:48:04] INFO root fetch - main [MainThread]: End processing [zetascale]: success
+[2024-04-06 04:48:04] INFO root fetch - main [MainThread]: Store serial: [22645033]
