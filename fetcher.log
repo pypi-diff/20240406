@@ -11896,3 +11896,17 @@
 [2024-04-06 09:42:50] WARNING root fetch - processPackages [just_design_phase]: Skipping, unable to determine old version
 [2024-04-06 09:42:50] INFO root fetch - main [MainThread]: End processing [just_design_phase] error
 [2024-04-06 09:42:50] INFO root fetch - main [MainThread]: Store serial: [22646503]
+[2024-04-06 09:44:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646503]
+[2024-04-06 09:44:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 09:44:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: just_design_phase
+[2024-04-06 09:44:58] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 09:44:59] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/1a/3f/e6f7d2d3c55b0c736a553756bd67e472bd2f5aa801497dc16680ea476d54/just_design_phase-0.0.1.tar.gz
+[2024-04-06 09:44:59] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 09:44:59] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/f9/7a/4e61128f0584053fb5622c8e096172f49b1b24990166c8e4a134488b0fcd/just_design_phase-0.0.2.tar.gz
+[2024-04-06 09:44:59] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 09:44:59] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 09:44:59] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.1.tar.gz tmp/just_design_phase-0.0.2.tar.gz --markdown 20240406/j/just_design_phase/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 09:44:59] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.1.tar.gz]
+[2024-04-06 09:44:59] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.2.tar.gz]
+[2024-04-06 09:44:59] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 09:44:59] INFO root fetch - main [MainThread]: Store serial: [22646506]
