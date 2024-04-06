@@ -20658,3 +20658,20 @@ EOFError: EOF read where object expected
 [2024-04-06 19:21:12] INFO root fetch - processPackages [beaupy]: Remove: archive file [/home/abi/fetcher/tmp/beaupy-3.8.2.tar.gz]
 [2024-04-06 19:21:12] INFO root fetch - main [MainThread]: End processing [beaupy]: success
 [2024-04-06 19:21:12] INFO root fetch - main [MainThread]: Store serial: [22649693]
+[2024-04-06 19:23:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649693]
+[2024-04-06 19:23:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 19:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matpot.py
+[2024-04-06 19:23:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: repelsec
+[2024-04-06 19:23:21] WARNING root fetch - processPackages [matpot.py]: Skipping, unable to determine old version
+[2024-04-06 19:23:21] INFO root fetch - main [MainThread]: End processing [matpot.py] error
+[2024-04-06 19:23:21] INFO root fetch - processPackages [repelsec]: New version: [0.3] Old Version: [0.2]
+[2024-04-06 19:23:21] INFO root fetch - processPackages [repelsec]: Downloading https://files.pythonhosted.org/packages/8f/9e/c27dd1a6af124454c370ac43dfbc9764d41b80e28222efa8e7180389c25d/repelsec-0.2.tar.gz
+[2024-04-06 19:23:21] WARNING root fetch - processPackages [repelsec]: Timeout reached during download
+[2024-04-06 19:23:21] INFO root fetch - processPackages [repelsec]: Downloading https://files.pythonhosted.org/packages/01/66/d3e0f95d6845716ce449643cbbbb0b34ed85df33bdfd2cff1cd47ce47e0a/repelsec-0.3.tar.gz
+[2024-04-06 19:23:21] WARNING root fetch - processPackages [repelsec]: Timeout reached during download
+[2024-04-06 19:23:21] INFO root fetch - processPackages [repelsec]: executing diffoscope
+[2024-04-06 19:23:21] INFO root fetch - processPackages [repelsec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/repelsec-0.2.tar.gz tmp/repelsec-0.3.tar.gz --markdown 20240406/r/repelsec/0.2-0.3/diff.md --exclude *.pyd
+[2024-04-06 19:23:22] INFO root fetch - processPackages [repelsec]: Remove: archive file [/home/abi/fetcher/tmp/repelsec-0.2.tar.gz]
+[2024-04-06 19:23:22] INFO root fetch - processPackages [repelsec]: Remove: archive file [/home/abi/fetcher/tmp/repelsec-0.3.tar.gz]
+[2024-04-06 19:23:22] INFO root fetch - main [MainThread]: End processing [repelsec]: success
+[2024-04-06 19:23:22] INFO root fetch - main [MainThread]: Store serial: [22649698]
