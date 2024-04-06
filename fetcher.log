@@ -15265,3 +15265,61 @@ EOFError: EOF read where object expected
 [2024-04-06 13:49:22] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.14.0rc1.tar.gz]
 [2024-04-06 13:49:22] INFO root fetch - main [MainThread]: End processing [koalix-crm]: success
 [2024-04-06 13:49:22] INFO root fetch - main [MainThread]: Store serial: [22647644]
+[2024-04-06 13:51:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647644]
+[2024-04-06 13:51:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-tailscale
+[2024-04-06 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: offat
+[2024-04-06 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-spotinst
+[2024-04-06 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-vsphere
+[2024-04-06 13:51:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-wavefront
+[2024-04-06 13:51:31] INFO root fetch - processPackages [offat]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-wavefront]: New version: [3.2.0a1712403270] Old Version: [3.2.0a1711743598]
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-tailscale]: New version: [0.9.1a1656330156] Old Version: [0.9.0]
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-spotinst]: New version: [3.9.0a1633346805] Old Version: [3.9.0]
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-vsphere]: New version: [4.9.2] Old Version: [4.9.1]
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/e0/9f/6d2c1a705d6b6019bea4cba0aa49eceea4eb2d84cfdcb18f45db81e06fb5/pulumi_spotinst-3.9.0.tar.gz
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/c0/4d/f6bb75f5f7e5154f0d9117ae7bba3a6389e3403b9a60eda7947e030c85a6/pulumi_wavefront-3.2.0a1711743598.tar.gz
+[2024-04-06 13:51:31] INFO root fetch - processPackages [offat]: Downloading https://files.pythonhosted.org/packages/7a/8a/186d4303fe4ed80a39c94cd995979b6af16d3226ae8a9b40c897067d21ca/offat-0.8.1.tar.gz
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-tailscale]: Downloading https://files.pythonhosted.org/packages/af/fc/1aa615a8e44d21b520ec05aa57ea2ee6f62de762047b4ad8ccec73544ac3/pulumi_tailscale-0.9.0.tar.gz
+[2024-04-06 13:51:31] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/2c/b7/9b9215ee833910abd7a86275fdf600ed12fb1777b5fed56078b15cabaa70/pulumi_vsphere-4.9.1.tar.gz
+[2024-04-06 13:51:31] WARNING root fetch - processPackages [pulumi-spotinst]: Timeout reached during download
+[2024-04-06 13:51:31] WARNING root fetch - processPackages [offat]: Timeout reached during download
+[2024-04-06 13:51:31] WARNING root fetch - processPackages [pulumi-tailscale]: Timeout reached during download
+[2024-04-06 13:51:31] WARNING root fetch - processPackages [pulumi-wavefront]: Timeout reached during download
+[2024-04-06 13:51:32] WARNING root fetch - processPackages [pulumi-vsphere]: Timeout reached during download
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-spotinst]: Downloading https://files.pythonhosted.org/packages/b4/06/83d6eb3763a877d39e3d2a09063ba3fd6542fa6a214e6c3d5240414d041d/pulumi_spotinst-3.9.0a1633346805.tar.gz
+[2024-04-06 13:51:32] INFO root fetch - processPackages [offat]: Downloading https://files.pythonhosted.org/packages/5d/29/13d2a960511451e0087e1c60aef1e2847bfdd400fac4e4e1e188669bfe2e/offat-0.9.0.tar.gz
+[2024-04-06 13:51:32] WARNING root fetch - processPackages [pulumi-spotinst]: Timeout reached during download
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-spotinst]: executing diffoscope
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-spotinst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_spotinst-3.9.0.tar.gz tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz --markdown 20240406/p/pulumi-spotinst/3.9.0-3.9.0a1633346805/diff.md --exclude *.pyd
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-tailscale]: Downloading https://files.pythonhosted.org/packages/a3/d6/938674a37f5324fe6d787b4f3efbeeebc5d750fd8c8c25fb2198b11e6a4d/pulumi_tailscale-0.9.1a1656330156.tar.gz
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-vsphere]: Downloading https://files.pythonhosted.org/packages/11/0f/d6e12dc0f0f87ffbedada279d30f59cf591dde549b68503412913fd87d8b/pulumi_vsphere-4.9.2.tar.gz
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-wavefront]: Downloading https://files.pythonhosted.org/packages/33/ab/06266d5de572cc3e85e8457408078af9e8c8d953557319454714c7c96128/pulumi_wavefront-3.2.0a1712403270.tar.gz
+[2024-04-06 13:51:32] WARNING root fetch - processPackages [offat]: Timeout reached during download
+[2024-04-06 13:51:32] INFO root fetch - processPackages [offat]: executing diffoscope
+[2024-04-06 13:51:32] INFO root fetch - processPackages [offat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/offat-0.8.1.tar.gz tmp/offat-0.9.0.tar.gz --markdown 20240406/o/offat/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 13:51:32] WARNING root fetch - processPackages [pulumi-tailscale]: Timeout reached during download
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-tailscale]: executing diffoscope
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-tailscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tailscale-0.9.0.tar.gz tmp/pulumi_tailscale-0.9.1a1656330156.tar.gz --markdown 20240406/p/pulumi-tailscale/0.9.0-0.9.1a1656330156/diff.md --exclude *.pyd
+[2024-04-06 13:51:32] WARNING root fetch - processPackages [pulumi-vsphere]: Timeout reached during download
+[2024-04-06 13:51:32] WARNING root fetch - processPackages [pulumi-wavefront]: Timeout reached during download
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-vsphere]: executing diffoscope
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-vsphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_vsphere-4.9.1.tar.gz tmp/pulumi_vsphere-4.9.2.tar.gz --markdown 20240406/p/pulumi-vsphere/4.9.1-4.9.2/diff.md --exclude *.pyd
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-wavefront]: executing diffoscope
+[2024-04-06 13:51:32] INFO root fetch - processPackages [pulumi-wavefront]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_wavefront-3.2.0a1711743598.tar.gz tmp/pulumi_wavefront-3.2.0a1712403270.tar.gz --markdown 20240406/p/pulumi-wavefront/3.2.0a1711743598-3.2.0a1712403270/diff.md --exclude *.pyd
+[2024-04-06 13:51:32] INFO root fetch - processPackages [offat]: Remove: archive file [/home/abi/fetcher/tmp/offat-0.8.1.tar.gz]
+[2024-04-06 13:51:32] INFO root fetch - processPackages [offat]: Remove: archive file [/home/abi/fetcher/tmp/offat-0.9.0.tar.gz]
+[2024-04-06 13:51:32] INFO root fetch - main [MainThread]: End processing [offat]: success
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-tailscale]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tailscale-0.9.0.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-tailscale]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tailscale-0.9.1a1656330156.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - main [MainThread]: End processing [pulumi-tailscale]: success
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-spotinst]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_spotinst-3.9.0a1633346805.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-wavefront]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_wavefront-3.2.0a1711743598.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-wavefront]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_wavefront-3.2.0a1712403270.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - main [MainThread]: End processing [pulumi-wavefront]: success
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-vsphere]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_vsphere-4.9.1.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - processPackages [pulumi-vsphere]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_vsphere-4.9.2.tar.gz]
+[2024-04-06 13:51:33] INFO root fetch - main [MainThread]: End processing [pulumi-vsphere]: success
+[2024-04-06 13:51:33] INFO root fetch - main [MainThread]: Store serial: [22647659]
