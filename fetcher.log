@@ -2473,3 +2473,72 @@
 [2024-04-06 02:39:19] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.2.tar.gz]
 [2024-04-06 02:39:19] INFO root fetch - main [MainThread]: End processing [ipython-openai]: success
 [2024-04-06 02:39:19] INFO root fetch - main [MainThread]: Store serial: [22643414]
+[2024-04-06 02:41:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643414]
+[2024-04-06 02:41:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 02:41:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dragonfly-energy
+[2024-04-06 02:41:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pytest-broadcaster
+[2024-04-06 02:41:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dragonfly-radiance
+[2024-04-06 02:41:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scores
+[2024-04-06 02:41:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dragonfly-uwg
+[2024-04-06 02:41:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BayesABTest
+[2024-04-06 02:41:27] INFO root fetch - processPackages [dragonfly-radiance]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 02:41:27] INFO root fetch - processPackages [pytest-broadcaster]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-04-06 02:41:27] INFO root fetch - processPackages [dragonfly-energy]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-04-06 02:41:27] INFO root fetch - processPackages [scores]: New version: [0.5] Old Version: [0.4]
+[2024-04-06 02:41:27] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/20/4e/115840f938ee254b23bd515351ba786228441464717f8557431f914e75f4/dragonfly-energy-1.9.8.tar.gz
+[2024-04-06 02:41:27] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a2/41/805cddd3de27bfc114d3b54bbf0a558b1d450bb0bc346c8bbfc9f9e1ca04/dragonfly-radiance-0.3.8.tar.gz
+[2024-04-06 02:41:27] INFO root fetch - processPackages [BayesABTest]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 02:41:27] INFO root fetch - processPackages [dragonfly-uwg]: New version: [0.5.99] Old Version: [0.5.98]
+[2024-04-06 02:41:27] INFO root fetch - processPackages [pytest-broadcaster]: Downloading https://files.pythonhosted.org/packages/a0/5c/bfe8e58c30f1bb2caf963b68dbdfb82f8f850bc218e66d7c5f370982cef4/pytest_broadcaster-0.6.0.tar.gz
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [dragonfly-radiance]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/a6/3c/7afbd082f170d8d51ed57abdf8bb67058ca404ede70f9d982fd95c8bb807/dragonfly-uwg-0.5.98.tar.gz
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [dragonfly-energy]: Timeout reached during download
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [pytest-broadcaster]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-radiance]: Downloading https://files.pythonhosted.org/packages/a9/93/8933c5c67b8d336f624b3e7f9cb128678c38867dac08b6bb30a824b7cb3d/dragonfly-radiance-0.3.9.tar.gz
+[2024-04-06 02:41:28] INFO root fetch - processPackages [scores]: Downloading https://files.pythonhosted.org/packages/3e/6a/ca70db953261a3e7d783eb66701ab6a9dcee2e51b15ea4c3195cea1445f7/scores-0.4.tar.gz
+[2024-04-06 02:41:28] INFO root fetch - processPackages [BayesABTest]: Downloading https://files.pythonhosted.org/packages/a4/07/ef08f103513849efc8aff1c7b836119dfbe3cc1f67f47595ab3ed42f1117/BayesABTest-1.0.8.tar.gz
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-energy]: Downloading https://files.pythonhosted.org/packages/09/b6/c12f13159c5beb3b855a32f792faef162ad37358d2e0d3311cbd68a969db/dragonfly-energy-1.9.9.tar.gz
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [dragonfly-radiance]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-radiance]: executing diffoscope
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-radiance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-radiance-0.3.8.tar.gz tmp/dragonfly-radiance-0.3.9.tar.gz --markdown 20240406/d/dragonfly-radiance/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [BayesABTest]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [pytest-broadcaster]: Downloading https://files.pythonhosted.org/packages/25/02/3908accaae215dfb0ec9d90bba09eb5488e5489b28c2ed6826bd4ff71503/pytest_broadcaster-0.7.0.tar.gz
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [dragonfly-uwg]: Timeout reached during download
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [dragonfly-energy]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-energy]: executing diffoscope
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-energy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-energy-1.9.8.tar.gz tmp/dragonfly-energy-1.9.9.tar.gz --markdown 20240406/d/dragonfly-energy/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-uwg]: Downloading https://files.pythonhosted.org/packages/55/b3/3f9a36d82b87f343d4e196e93a8cf3e838b9c80b0849f927d4f3505355af/dragonfly-uwg-0.5.99.tar.gz
+[2024-04-06 02:41:28] INFO root fetch - processPackages [BayesABTest]: Downloading https://files.pythonhosted.org/packages/99/dc/b2226b17a48d086a7ea531dfac70f5c3219d90a7809175a1512366257b32/BayesABTest-1.0.9.tar.gz
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [pytest-broadcaster]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [pytest-broadcaster]: executing diffoscope
+[2024-04-06 02:41:28] INFO root fetch - processPackages [pytest-broadcaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest_broadcaster-0.6.0.tar.gz tmp/pytest_broadcaster-0.7.0.tar.gz --markdown 20240406/p/pytest-broadcaster/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [scores]: Timeout reached during download
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [BayesABTest]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [BayesABTest]: executing diffoscope
+[2024-04-06 02:41:28] INFO root fetch - processPackages [BayesABTest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BayesABTest-1.0.8.tar.gz tmp/BayesABTest-1.0.9.tar.gz --markdown 20240406/B/BayesABTest/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [dragonfly-uwg]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-uwg]: executing diffoscope
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-uwg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-uwg-0.5.98.tar.gz tmp/dragonfly-uwg-0.5.99.tar.gz --markdown 20240406/d/dragonfly-uwg/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2024-04-06 02:41:28] INFO root fetch - processPackages [scores]: Downloading https://files.pythonhosted.org/packages/99/e4/60dcdff719e0aff6061827e416ed83b965d6aaaf9541463d99025980928b/scores-0.5.tar.gz
+[2024-04-06 02:41:28] WARNING root fetch - processPackages [scores]: Timeout reached during download
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.8.tar.gz]
+[2024-04-06 02:41:28] INFO root fetch - processPackages [scores]: executing diffoscope
+[2024-04-06 02:41:28] INFO root fetch - processPackages [scores]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scores-0.4.tar.gz tmp/scores-0.5.tar.gz --markdown 20240406/s/scores/0.4-0.5/diff.md --exclude *.pyd
+[2024-04-06 02:41:28] INFO root fetch - processPackages [dragonfly-radiance]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-radiance-0.3.9.tar.gz]
+[2024-04-06 02:41:28] INFO root fetch - main [MainThread]: End processing [dragonfly-radiance]: success
+[2024-04-06 02:41:29] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.8.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - processPackages [dragonfly-energy]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-energy-1.9.9.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - main [MainThread]: End processing [dragonfly-energy]: success
+[2024-04-06 02:41:29] INFO root fetch - processPackages [BayesABTest]: Remove: archive file [/home/abi/fetcher/tmp/BayesABTest-1.0.8.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - processPackages [BayesABTest]: Remove: archive file [/home/abi/fetcher/tmp/BayesABTest-1.0.9.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - main [MainThread]: End processing [BayesABTest]: success
+[2024-04-06 02:41:29] INFO root fetch - processPackages [pytest-broadcaster]: Remove: archive file [/home/abi/fetcher/tmp/pytest_broadcaster-0.6.0.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - processPackages [pytest-broadcaster]: Remove: archive file [/home/abi/fetcher/tmp/pytest_broadcaster-0.7.0.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - main [MainThread]: End processing [pytest-broadcaster]: success
+[2024-04-06 02:41:29] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.98.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - processPackages [dragonfly-uwg]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-uwg-0.5.99.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - main [MainThread]: End processing [dragonfly-uwg]: success
+[2024-04-06 02:41:29] INFO root fetch - processPackages [scores]: Remove: archive file [/home/abi/fetcher/tmp/scores-0.4.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - processPackages [scores]: Remove: archive file [/home/abi/fetcher/tmp/scores-0.5.tar.gz]
+[2024-04-06 02:41:29] INFO root fetch - main [MainThread]: End processing [scores]: success
+[2024-04-06 02:41:29] INFO root fetch - main [MainThread]: Store serial: [22643433]
