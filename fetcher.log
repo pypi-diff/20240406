@@ -19028,3 +19028,56 @@ EOFError: EOF read where object expected
 [2024-04-06 17:51:37] INFO root fetch - processPackages [fredquery]: Remove: archive file [/home/abi/fetcher/tmp/fredquery-0.0.51.tar.gz]
 [2024-04-06 17:51:37] INFO root fetch - main [MainThread]: End processing [fredquery]: success
 [2024-04-06 17:51:37] INFO root fetch - main [MainThread]: Store serial: [22649138]
+[2024-04-06 17:53:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649138]
+[2024-04-06 17:53:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 17:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-aoi
+[2024-04-06 17:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: liah
+[2024-04-06 17:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-115
+[2024-04-06 17:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: beeflow-ajax
+[2024-04-06 17:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: palworld_admin
+[2024-04-06 17:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: oakrocklib
+[2024-04-06 17:53:46] INFO root fetch - processPackages [beeflow-ajax]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 17:53:46] INFO root fetch - processPackages [open-aoi]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 17:53:46] INFO root fetch - processPackages [python-115]: New version: [0.0.5.9.1] Old Version: [0.0.5.9]
+[2024-04-06 17:53:46] INFO root fetch - processPackages [beeflow-ajax]: Downloading https://files.pythonhosted.org/packages/d0/10/f5e038b995a81a68150066a13933a45eb4b7e7072768601471cfebee8aad/beeflow-ajax-1.0.8.tar.gz
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [liah]: Skipping, unable to determine old version
+[2024-04-06 17:53:46] INFO root fetch - main [MainThread]: End processing [liah] error
+[2024-04-06 17:53:46] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/06/f1/d005d579f0f548a3a2286da34c6fa60fdb78ef458d448f298499e3d1327c/open_aoi-0.0.7.tar.gz
+[2024-04-06 17:53:46] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/7a/dd/a1ee0fbd1fcefd8f5a141be5fd9a2a075c22f5ff1754fddb76fd2c090769/python_115-0.0.5.9.tar.gz
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [oakrocklib]: Skipping, unable to determine old version
+[2024-04-06 17:53:46] INFO root fetch - main [MainThread]: End processing [oakrocklib] error
+[2024-04-06 17:53:46] INFO root fetch - processPackages [palworld_admin]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [beeflow-ajax]: Timeout reached during download
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [python-115]: Timeout reached during download
+[2024-04-06 17:53:46] INFO root fetch - processPackages [palworld_admin]: Downloading https://files.pythonhosted.org/packages/ab/cf/e80a364ea8bcd959d0e75c0f7c7bb0b7bc9fd2ed5d2893a01d10ab9edb84/palworld_admin-0.9.8.tar.gz
+[2024-04-06 17:53:46] INFO root fetch - processPackages [beeflow-ajax]: Downloading https://files.pythonhosted.org/packages/dd/57/7061d2ad9089d0df0152a410f6b62148719da4ddbd07d843be395642227c/beeflow-ajax-1.0.9.tar.gz
+[2024-04-06 17:53:46] INFO root fetch - processPackages [open-aoi]: Downloading https://files.pythonhosted.org/packages/d2/cb/dd19e4630fb354010db3e6215502966625550ff7a5acbdbcedf536a6cd4d/open_aoi-0.0.8.tar.gz
+[2024-04-06 17:53:46] INFO root fetch - processPackages [python-115]: Downloading https://files.pythonhosted.org/packages/4f/17/45f783c564068859bc58ee52b7c6cf08433ae38e1d7d37289d50ad1f851e/python_115-0.0.5.9.1.tar.gz
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [beeflow-ajax]: Timeout reached during download
+[2024-04-06 17:53:46] INFO root fetch - processPackages [beeflow-ajax]: executing diffoscope
+[2024-04-06 17:53:46] INFO root fetch - processPackages [beeflow-ajax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beeflow-ajax-1.0.8.tar.gz tmp/beeflow-ajax-1.0.9.tar.gz --markdown 20240406/b/beeflow-ajax/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [python-115]: Timeout reached during download
+[2024-04-06 17:53:46] INFO root fetch - processPackages [python-115]: executing diffoscope
+[2024-04-06 17:53:46] INFO root fetch - processPackages [python-115]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_115-0.0.5.9.tar.gz tmp/python_115-0.0.5.9.1.tar.gz --markdown 20240406/p/python-115/0.0.5.9-0.0.5.9.1/diff.md --exclude *.pyd
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [palworld_admin]: Timeout reached during download
+[2024-04-06 17:53:46] WARNING root fetch - processPackages [open-aoi]: Timeout reached during download
+[2024-04-06 17:53:46] INFO root fetch - processPackages [open-aoi]: executing diffoscope
+[2024-04-06 17:53:46] INFO root fetch - processPackages [open-aoi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/open_aoi-0.0.7.tar.gz tmp/open_aoi-0.0.8.tar.gz --markdown 20240406/o/open-aoi/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 17:53:46] INFO root fetch - processPackages [palworld_admin]: Downloading https://files.pythonhosted.org/packages/28/40/9b8e815430a13a702589802b28e9f0baa6a3ad1f495182d371eae5272666/palworld_admin-0.9.9.tar.gz
+[2024-04-06 17:53:47] INFO root fetch - processPackages [beeflow-ajax]: Remove: archive file [/home/abi/fetcher/tmp/beeflow-ajax-1.0.8.tar.gz]
+[2024-04-06 17:53:47] INFO root fetch - processPackages [beeflow-ajax]: Remove: archive file [/home/abi/fetcher/tmp/beeflow-ajax-1.0.9.tar.gz]
+[2024-04-06 17:53:47] INFO root fetch - main [MainThread]: End processing [beeflow-ajax]: success
+[2024-04-06 17:53:47] WARNING root fetch - processPackages [palworld_admin]: Timeout reached during download
+[2024-04-06 17:53:47] INFO root fetch - processPackages [palworld_admin]: executing diffoscope
+[2024-04-06 17:53:47] INFO root fetch - processPackages [palworld_admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/palworld_admin-0.9.8.tar.gz tmp/palworld_admin-0.9.9.tar.gz --markdown 20240406/p/palworld_admin/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 17:53:47] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.7.tar.gz]
+[2024-04-06 17:53:47] INFO root fetch - processPackages [open-aoi]: Remove: archive file [/home/abi/fetcher/tmp/open_aoi-0.0.8.tar.gz]
+[2024-04-06 17:53:47] INFO root fetch - main [MainThread]: End processing [open-aoi]: success
+[2024-04-06 17:53:47] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.5.9.tar.gz]
+[2024-04-06 17:53:47] INFO root fetch - processPackages [python-115]: Remove: archive file [/home/abi/fetcher/tmp/python_115-0.0.5.9.1.tar.gz]
+[2024-04-06 17:53:47] INFO root fetch - main [MainThread]: End processing [python-115]: success
+[2024-04-06 17:53:48] INFO root fetch - processPackages [palworld_admin]: Remove: archive file [/home/abi/fetcher/tmp/palworld_admin-0.9.8.tar.gz]
+[2024-04-06 17:53:48] INFO root fetch - processPackages [palworld_admin]: Remove: archive file [/home/abi/fetcher/tmp/palworld_admin-0.9.9.tar.gz]
+[2024-04-06 17:53:48] INFO root fetch - main [MainThread]: End processing [palworld_admin]: success
+[2024-04-06 17:53:48] INFO root fetch - main [MainThread]: Store serial: [22649160]
