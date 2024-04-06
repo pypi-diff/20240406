@@ -16303,3 +16303,15 @@ EOFError: EOF read where object expected
 [2024-04-06 15:05:55] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.5.0.tar.gz]
 [2024-04-06 15:05:55] INFO root fetch - main [MainThread]: End processing [hhd]: success
 [2024-04-06 15:05:55] INFO root fetch - main [MainThread]: Store serial: [22648020]
+[2024-04-06 15:07:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648020]
+[2024-04-06 15:08:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 15:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simple-background-remover
+[2024-04-06 15:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fiscal-frenzy
+[2024-04-06 15:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shellgpt-tr
+[2024-04-06 15:08:04] WARNING root fetch - processPackages [simple-background-remover]: Skipping, unable to determine old version
+[2024-04-06 15:08:04] INFO root fetch - main [MainThread]: End processing [simple-background-remover] error
+[2024-04-06 15:08:04] WARNING root fetch - processPackages [fiscal-frenzy]: Skipping, unable to determine old version
+[2024-04-06 15:08:04] INFO root fetch - main [MainThread]: End processing [fiscal-frenzy] error
+[2024-04-06 15:08:04] WARNING root fetch - processPackages [shellgpt-tr]: Skipping, unable to determine old version
+[2024-04-06 15:08:04] INFO root fetch - main [MainThread]: End processing [shellgpt-tr] error
+[2024-04-06 15:08:04] INFO root fetch - main [MainThread]: Store serial: [22648054]
