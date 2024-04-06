@@ -9265,3 +9265,72 @@
 [2024-04-06 06:21:57] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.9.tar.gz]
 [2024-04-06 06:21:57] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
 [2024-04-06 06:21:57] INFO root fetch - main [MainThread]: Store serial: [22645491]
+[2024-04-06 06:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645491]
+[2024-04-06 06:24:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 06:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-it-fatturapa-out
+[2024-04-06 06:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-it-fatturapa-in
+[2024-04-06 06:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-it-fatturapa-import-zip
+[2024-04-06 06:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-l10n-it-fatturapa
+[2024-04-06 06:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addons-oca-l10n-italy
+[2024-04-06 06:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BotsOnRails
+[2024-04-06 06:24:05] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: New version: [16.0.20240405.0] Old Version: [16.0.20240112.1]
+[2024-04-06 06:24:05] INFO root fetch - processPackages [BotsOnRails]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-04-06 06:24:05] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: New version: [16.0.1.0.6.3] Old Version: [16.0.1.0.6]
+[2024-04-06 06:24:05] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: New version: [16.0.1.0.2.8] Old Version: [16.0.1.0.2.5]
+[2024-04-06 06:24:05] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: New version: [16.0.1.0.9] Old Version: [16.0.1.0.8.4]
+[2024-04-06 06:24:05] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: New version: [16.0.1.0.6.7] Old Version: [16.0.1.0.6.5]
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Downloading https://files.pythonhosted.org/packages/59/29/9419e72e0b11a1430ca62ddcbfbd20d311bff132c9c2e90abb857f6c0221/odoo_addons_oca_l10n_italy-16.0.20240112.1-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Downloading https://files.pythonhosted.org/packages/cd/cd/ce8de1c3909a06eaadcfa842cc25e8f69ff3145d85266e8a8898bf8c9ef3/odoo_addon_l10n_it_fatturapa-16.0.1.0.6-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: Downloading https://files.pythonhosted.org/packages/c8/06/c520316d90f2f70a9a2c0dbe1045b6167d143f422c3d3e30f17df10aa6d7/odoo_addon_l10n_it_fatturapa_import_zip-16.0.1.0.2.5-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/cd/27/d0d0dc1d320f971989100c3561957aa4d4bf1d768dd75728d424df94cd33/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.8.4-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Downloading https://files.pythonhosted.org/packages/35/b9/ed3196259d916fdc7b6b8f5001efd5ae6950ed292c2f80fdbb5af59d85c5/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.6.5-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [BotsOnRails]: Downloading https://files.pythonhosted.org/packages/da/79/e7d43caeeb28e3ff48fe9750eea7ddaff84aab98756797acae15e1b1323e/botsonrails-0.1.0.tar.gz
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: Timeout reached during download
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Timeout reached during download
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addons-oca-l10n-italy]: Timeout reached during download
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Timeout reached during download
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [BotsOnRails]: Timeout reached during download
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Downloading https://files.pythonhosted.org/packages/03/b9/64e6eb98d85ca41d15f8bfb5a530b8d7cffbfaadaed2180c3ca2da622d80/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.6.7-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Downloading https://files.pythonhosted.org/packages/4f/fd/225de5885cd111a195bdd791c02e4b35bb16246d9953cbf8d6e2062027d0/odoo_addons_oca_l10n_italy-16.0.20240405.0-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: Downloading https://files.pythonhosted.org/packages/22/61/e1c38eee54c28555744b09225ce7b12c58a4ae989d77bcd3cf462a6bc8ca/odoo_addon_l10n_it_fatturapa_import_zip-16.0.1.0.2.8-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Downloading https://files.pythonhosted.org/packages/09/ab/f53a9e4404578dc6b3fb0f807f4a9449a79fa29ba7e6211775b4c7ac5354/odoo_addon_l10n_it_fatturapa-16.0.1.0.6.3-py3-none-any.whl
+[2024-04-06 06:24:06] INFO root fetch - processPackages [BotsOnRails]: Downloading https://files.pythonhosted.org/packages/02/5c/c427b5622cfc150f505653158a3a2ed4232168d70f17aa51c01dd9feddd8/botsonrails-0.1.2.tar.gz
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Timeout reached during download
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Timeout reached during download
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: executing diffoscope
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.6.5-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.6.7-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-l10n-it-fatturapa-in/16.0.1.0.6.5-16.0.1.0.6.7/diff.md --exclude *.pyd
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: Timeout reached during download
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: executing diffoscope
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa_import_zip-16.0.1.0.2.5-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa_import_zip-16.0.1.0.2.8-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-l10n-it-fatturapa-import-zip/16.0.1.0.2.5-16.0.1.0.2.8/diff.md --exclude *.pyd
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addons-oca-l10n-italy]: Timeout reached during download
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: executing diffoscope
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_l10n_italy-16.0.20240112.1-py3-none-any.whl.zip tmp/odoo_addons_oca_l10n_italy-16.0.20240405.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addons-oca-l10n-italy/16.0.20240112.1-16.0.20240405.0/diff.md --exclude *.pyd
+[2024-04-06 06:24:06] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Timeout reached during download
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: executing diffoscope
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa-16.0.1.0.6-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa-16.0.1.0.6.3-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-l10n-it-fatturapa/16.0.1.0.6-16.0.1.0.6.3/diff.md --exclude *.pyd
+[2024-04-06 06:24:06] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/ad/83/f0a0c9d811882d654cdae124f8b48300045daf19fece98499ce419030b08/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.9-py3-none-any.whl
+[2024-04-06 06:24:07] WARNING root fetch - processPackages [BotsOnRails]: Timeout reached during download
+[2024-04-06 06:24:07] INFO root fetch - processPackages [BotsOnRails]: executing diffoscope
+[2024-04-06 06:24:07] INFO root fetch - processPackages [BotsOnRails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botsonrails-0.1.0.tar.gz tmp/botsonrails-0.1.2.tar.gz --markdown 20240406/B/BotsOnRails/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 06:24:07] WARNING root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Timeout reached during download
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: executing diffoscope
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.8.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.9-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-l10n-it-fatturapa-out/16.0.1.0.8.4-16.0.1.0.9/diff.md --exclude *.pyd
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_l10n_italy-16.0.20240112.1-py3-none-any.whl.zip]
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addons-oca-l10n-italy]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_l10n_italy-16.0.20240405.0-py3-none-any.whl.zip]
+[2024-04-06 06:24:07] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-l10n-italy]: success
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_import_zip-16.0.1.0.2.5-py3-none-any.whl.zip]
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-import-zip]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_import_zip-16.0.1.0.2.8-py3-none-any.whl.zip]
+[2024-04-06 06:24:07] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-import-zip]: success
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.6.5-py3-none-any.whl.zip]
+[2024-04-06 06:24:07] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-in]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_in-16.0.1.0.6.7-py3-none-any.whl.zip]
+[2024-04-06 06:24:07] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-in]: success
+[2024-04-06 06:24:08] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.8.4-py3-none-any.whl.zip]
+[2024-04-06 06:24:08] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa-out]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa_out-16.0.1.0.9-py3-none-any.whl.zip]
+[2024-04-06 06:24:08] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa-out]: success
+[2024-04-06 06:24:08] INFO root fetch - processPackages [BotsOnRails]: Remove: archive file [/home/abi/fetcher/tmp/botsonrails-0.1.0.tar.gz]
+[2024-04-06 06:24:08] INFO root fetch - processPackages [BotsOnRails]: Remove: archive file [/home/abi/fetcher/tmp/botsonrails-0.1.2.tar.gz]
+[2024-04-06 06:24:08] INFO root fetch - main [MainThread]: End processing [BotsOnRails]: success
+[2024-04-06 06:24:09] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa-16.0.1.0.6-py3-none-any.whl.zip]
+[2024-04-06 06:24:09] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa-16.0.1.0.6.3-py3-none-any.whl.zip]
+[2024-04-06 06:24:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa]: success
+[2024-04-06 06:24:09] INFO root fetch - main [MainThread]: Store serial: [22645504]
