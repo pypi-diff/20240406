@@ -23330,3 +23330,50 @@ EOFError: EOF read where object expected
 [2024-04-06 21:47:59] INFO root fetch - processPackages [qbraid]: Remove: archive file [/home/abi/fetcher/tmp/qbraid-0.6.0.dev20240405150331.tar.gz]
 [2024-04-06 21:47:59] INFO root fetch - main [MainThread]: End processing [qbraid]: success
 [2024-04-06 21:47:59] INFO root fetch - main [MainThread]: Store serial: [22650583]
+[2024-04-06 21:50:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650583]
+[2024-04-06 21:50:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fhempy
+[2024-04-06 21:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-06 21:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tira
+[2024-04-06 21:50:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rustyrs
+[2024-04-06 21:50:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.11a1712430472] Old Version: [0.0.11a1712367286]
+[2024-04-06 21:50:08] INFO root fetch - processPackages [tira]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 21:50:08] INFO root fetch - processPackages [rustyrs]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-06 21:50:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/57/01/c33af93befdfde96f90d54ed520d20f8249a9b6d087aa8b48431a76259fa/pulumi_kubernetes_the_hard_way-0.0.11a1712367286.tar.gz
+[2024-04-06 21:50:08] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/4b/d0/2e61e71a65015785af087e247c1a0fb86643b1a1315e058857f4c30e93d1/tira-0.0.98.tar.gz
+[2024-04-06 21:50:08] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-06 21:50:08] WARNING root fetch - processPackages [tira]: Timeout reached during download
+[2024-04-06 21:50:08] WARNING root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Timeout reached during download
+[2024-04-06 21:50:08] INFO root fetch - processPackages [rustyrs]: Downloading https://files.pythonhosted.org/packages/b8/5a/1f0bfb0b2fa72a4d0bd2b214d93d43605a3c7a9ea900db0697cb51c80e63/rustyrs-0.3.2-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-06 21:50:08] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/2d/31/b9af5a5b67ff777b2c9209808c8e4e18c7fd17c6348a13651170d8884d62/tira-0.0.99.tar.gz
+[2024-04-06 21:50:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/4f/9a/375abb7f5ae11ed91585c1b9eaeb3337afe199d6394cc8d1abf3a8040195/pulumi_kubernetes_the_hard_way-0.0.11a1712430472.tar.gz
+[2024-04-06 21:50:08] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2024-04-06 21:50:08] WARNING root fetch - processPackages [tira]: Timeout reached during download
+[2024-04-06 21:50:08] INFO root fetch - processPackages [tira]: executing diffoscope
+[2024-04-06 21:50:08] INFO root fetch - processPackages [tira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tira-0.0.98.tar.gz tmp/tira-0.0.99.tar.gz --markdown 20240406/t/tira/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 21:50:08] WARNING root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Timeout reached during download
+[2024-04-06 21:50:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-06 21:50:08] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712367286.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712430472.tar.gz --markdown 20240406/p/pulumi-kubernetes-the-hard-way/0.0.11a1712367286-0.0.11a1712430472/diff.md --exclude *.pyd
+[2024-04-06 21:50:08] WARNING root fetch - processPackages [rustyrs]: Timeout reached during download
+[2024-04-06 21:50:09] INFO root fetch - processPackages [rustyrs]: Downloading https://files.pythonhosted.org/packages/1f/0e/b04a9a4c4e32434f15c423989a55ba55fe750d24e556cbc833650f6d152d/rustyrs-0.3.3-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-06 21:50:09] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.98.tar.gz]
+[2024-04-06 21:50:09] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.99.tar.gz]
+[2024-04-06 21:50:09] INFO root fetch - main [MainThread]: End processing [tira]: success
+[2024-04-06 21:50:09] WARNING root fetch - processPackages [rustyrs]: Timeout reached during download
+[2024-04-06 21:50:09] INFO root fetch - processPackages [rustyrs]: executing diffoscope
+[2024-04-06 21:50:09] INFO root fetch - processPackages [rustyrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustyrs-0.3.2-cp311-cp311-manylinux_2_28_x86_64.whl.zip tmp/rustyrs-0.3.3-cp311-cp311-manylinux_2_28_x86_64.whl.zip --markdown 20240406/r/rustyrs/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-06 21:50:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712367286.tar.gz]
+[2024-04-06 21:50:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712430472.tar.gz]
+[2024-04-06 21:50:09] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-06 21:50:11] WARNING root fetch - processPackages [fhempy]: Timeout reached during download
+[2024-04-06 21:50:11] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2024-04-06 21:50:11] INFO root fetch - processPackages [rustyrs]: Remove: archive file [/home/abi/fetcher/tmp/rustyrs-0.3.2-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-06 21:50:11] INFO root fetch - processPackages [rustyrs]: Remove: archive file [/home/abi/fetcher/tmp/rustyrs-0.3.3-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-06 21:50:11] INFO root fetch - main [MainThread]: End processing [rustyrs]: success
+[2024-04-06 21:50:12] WARNING root fetch - processPackages [fhempy]: Timeout reached during download
+[2024-04-06 21:50:12] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2024-04-06 21:50:12] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20240406/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2024-04-06 21:50:13] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.98.tar.gz]
+[2024-04-06 21:50:13] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
+[2024-04-06 21:50:13] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2024-04-06 21:50:13] INFO root fetch - main [MainThread]: Store serial: [22650595]
