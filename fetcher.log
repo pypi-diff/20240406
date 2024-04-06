@@ -14342,3 +14342,97 @@
 [2024-04-06 13:04:35] INFO root fetch - processPackages [pulumi-civo]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_civo-2.4.0a1712399187.tar.gz]
 [2024-04-06 13:04:35] INFO root fetch - main [MainThread]: End processing [pulumi-civo]: success
 [2024-04-06 13:04:35] INFO root fetch - main [MainThread]: Store serial: [22647367]
+[2024-04-06 13:06:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647367]
+[2024-04-06 13:06:43] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-dnsimple
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textual
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-fastly
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-artifactory
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-azuread
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SkvalpOpt
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-github
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-cloudinit
+[2024-04-06 13:06:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: moto
+[2024-04-06 13:06:43] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 13:06:43] INFO root fetch - processPackages [pulumi-github]: New version: [6.3.0a1711735204] Old Version: [6.3.0a1711604575]
+[2024-04-06 13:06:43] INFO root fetch - processPackages [pulumi-dnsimple]: New version: [3.5.0a1712399413] Old Version: [3.5.0a1711735017]
+[2024-04-06 13:06:43] INFO root fetch - processPackages [pulumi-cloudinit]: New version: [1.5.0a1712399322] Old Version: [1.5.0a1711734973]
+[2024-04-06 13:06:43] INFO root fetch - processPackages [pulumi-artifactory]: New version: [6.5.0a1712399406] Old Version: [6.5.0a1712239605]
+[2024-04-06 13:06:43] WARNING root fetch - processPackages [SkvalpOpt]: Skipping, unable to determine old version
+[2024-04-06 13:06:43] INFO root fetch - main [MainThread]: End processing [SkvalpOpt] error
+[2024-04-06 13:06:43] INFO root fetch - processPackages [pulumi-fastly]: New version: [8.6.0a1712399555] Old Version: [8.6.0a1711735248]
+[2024-04-06 13:06:43] INFO root fetch - processPackages [pulumi-azuread]: New version: [5.9.0a1637590268] Old Version: [5.9.0]
+[2024-04-06 13:06:43] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/c1/24/02559b562a34b670ea5f1e8a6cf932a4859b0f0c97c664e07adf33357b89/pulumi_dnsimple-3.5.0a1711735017.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/95/7c/420ddad1740c4a51f8c6be5a4e8efb5cde88b5f8d4eae4c7cc0353c537c5/pulumi_github-6.3.0a1711604575.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/73/33/6208be78662db09740f130a454ea9b76983e90955254e693821219989504/pulumi_artifactory-6.5.0a1712239605.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [moto]: New version: [5.0.5.dev9] Old Version: [5.0.5.dev8]
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/7c/0d/852dca03f63ec4fb0f21cfc60bbf99672eff9f0375d4cf25a10e0cd94b0d/pulumi_cloudinit-1.5.0a1711734973.tar.gz
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [textual]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/05/5b/bcc923d0697829dede9b14b002e6b3c4d1b5ec45fb2b49259f85011b7897/pulumi_fastly-8.6.0a1711735248.tar.gz
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-dnsimple]: Timeout reached during download
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-github]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-azuread]: Downloading https://files.pythonhosted.org/packages/f4/f7/ac3012c15949ee976d13803f93ece9979adca66c4e8ad22f982d9ef2bd26/pulumi_azuread-5.9.0.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-cloudinit]: Timeout reached during download
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-fastly]: Timeout reached during download
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-artifactory]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/ed/46/2a9361da84c96246dd0cc47567b9cdc7059baf5a4a390c4c1f43decbed34/moto-5.0.5.dev8.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-dnsimple]: Downloading https://files.pythonhosted.org/packages/08/f3/89d10a474c2183e7fa6c5cc0a1412092489d41026dc5f89c4e94e0c9ccec/pulumi_dnsimple-3.5.0a1712399413.tar.gz
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-dnsimple]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-dnsimple]: executing diffoscope
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-dnsimple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_dnsimple-3.5.0a1711735017.tar.gz tmp/pulumi_dnsimple-3.5.0a1712399413.tar.gz --markdown 20240406/p/pulumi-dnsimple/3.5.0a1711735017-3.5.0a1712399413/diff.md --exclude *.pyd
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/e4/9d/273b4116f0695fa9389acc41ba948e4a520050176b61c2ace0c3dbff70b8/pulumi_github-6.3.0a1711735204.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-cloudinit]: Downloading https://files.pythonhosted.org/packages/83/9b/684637242901b85daa49806d4e9fa5db68e610f2c1abe881841ab920e00d/pulumi_cloudinit-1.5.0a1712399322.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/a6/1a/29f95fd14af4f6a53416debb7e6dfc1f63c488bd2bb4cfe3cb291dbbf9c1/pulumi_artifactory-6.5.0a1712399406.tar.gz
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/a9/77/f0b3b438dac5fe0996f1690dc908fc6cb73ca67b28012bc241f711aafe42/pulumi_fastly-8.6.0a1712399555.tar.gz
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [textual]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [textual]: executing diffoscope
+[2024-04-06 13:06:44] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20240406/t/textual/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-cloudinit]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-cloudinit]: executing diffoscope
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-cloudinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudinit-1.5.0a1711734973.tar.gz tmp/pulumi_cloudinit-1.5.0a1712399322.tar.gz --markdown 20240406/p/pulumi-cloudinit/1.5.0a1711734973-1.5.0a1712399322/diff.md --exclude *.pyd
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-fastly]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-8.6.0a1711735248.tar.gz tmp/pulumi_fastly-8.6.0a1712399555.tar.gz --markdown 20240406/p/pulumi-fastly/8.6.0a1711735248-8.6.0a1712399555/diff.md --exclude *.pyd
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-github]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-github]: executing diffoscope
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_github-6.3.0a1711604575.tar.gz tmp/pulumi_github-6.3.0a1711735204.tar.gz --markdown 20240406/p/pulumi-github/6.3.0a1711604575-6.3.0a1711735204/diff.md --exclude *.pyd
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-artifactory]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-artifactory]: executing diffoscope
+[2024-04-06 13:06:44] INFO root fetch - processPackages [pulumi-artifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_artifactory-6.5.0a1712239605.tar.gz tmp/pulumi_artifactory-6.5.0a1712399406.tar.gz --markdown 20240406/p/pulumi-artifactory/6.5.0a1712239605-6.5.0a1712399406/diff.md --exclude *.pyd
+[2024-04-06 13:06:44] WARNING root fetch - processPackages [pulumi-azuread]: Timeout reached during download
+[2024-04-06 13:06:44] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/08/c1/f93b75265b5128856f763bdb046a348f3952cca0dc9de2e9c1268050b7ba/moto-5.0.5.dev9.tar.gz
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-azuread]: Downloading https://files.pythonhosted.org/packages/80/14/c6fa237dd848e602cd45db3de0b2cd017ce8857a3e21b8e9a3802d60ebbb/pulumi_azuread-5.9.0a1637590268.tar.gz
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-dnsimple]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_dnsimple-3.5.0a1711735017.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-dnsimple]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_dnsimple-3.5.0a1712399413.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - main [MainThread]: End processing [pulumi-dnsimple]: success
+[2024-04-06 13:06:45] WARNING root fetch - processPackages [pulumi-azuread]: Timeout reached during download
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-azuread]: executing diffoscope
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-azuread]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azuread-5.9.0.tar.gz tmp/pulumi_azuread-5.9.0a1637590268.tar.gz --markdown 20240406/p/pulumi-azuread/5.9.0-5.9.0a1637590268/diff.md --exclude *.pyd
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-cloudinit]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudinit-1.5.0a1711734973.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-cloudinit]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudinit-1.5.0a1712399322.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - main [MainThread]: End processing [pulumi-cloudinit]: success
+[2024-04-06 13:06:45] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.0.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1711604575.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1711735204.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.6.0a1711735248.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.6.0a1712399555.tar.gz]
+[2024-04-06 13:06:45] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2024-04-06 13:06:46] INFO root fetch - processPackages [pulumi-azuread]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuread-5.9.0.tar.gz]
+[2024-04-06 13:06:46] INFO root fetch - processPackages [pulumi-azuread]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuread-5.9.0a1637590268.tar.gz]
+[2024-04-06 13:06:46] INFO root fetch - main [MainThread]: End processing [pulumi-azuread]: success
+[2024-04-06 13:06:46] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 13:06:46] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-06 13:06:46] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.5.dev8.tar.gz tmp/moto-5.0.5.dev9.tar.gz --markdown 20240406/m/moto/5.0.5.dev8-5.0.5.dev9/diff.md --exclude *.pyd
+[2024-04-06 13:06:47] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.5.0a1712239605.tar.gz]
+[2024-04-06 13:06:47] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.5.0a1712399406.tar.gz]
+[2024-04-06 13:06:47] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
+[2024-04-06 13:06:58] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev8.tar.gz]
+[2024-04-06 13:06:58] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
+[2024-04-06 13:06:58] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-06 13:06:58] INFO root fetch - main [MainThread]: Store serial: [22647392]
