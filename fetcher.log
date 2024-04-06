@@ -15042,3 +15042,33 @@ EOFError: EOF read where object expected
 [2024-04-06 13:31:56] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz]
 [2024-04-06 13:31:56] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
 [2024-04-06 13:31:56] INFO root fetch - main [MainThread]: Store serial: [22647557]
+[2024-04-06 13:34:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647557]
+[2024-04-06 13:34:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 13:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-opsgenie
+[2024-04-06 13:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe
+[2024-04-06 13:34:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-datadog
+[2024-04-06 13:34:05] INFO root fetch - processPackages [bigdl-core-xe]: New version: [2.5.0b20240406] Old Version: [2.5.0b20240405]
+[2024-04-06 13:34:05] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2024-04-06 13:34:05] INFO root fetch - processPackages [pulumi-opsgenie]: New version: [1.4.0a1712400910] Old Version: [1.4.0a1711740009]
+[2024-04-06 13:34:05] INFO root fetch - processPackages [bigdl-core-xe]: Downloading https://files.pythonhosted.org/packages/67/69/77504bb4f30ea19f79aa41364a44062737e77644fe23f77bcc3470f1203e/bigdl_core_xe-2.5.0b20240405-cp39-cp39-manylinux2010_x86_64.whl
+[2024-04-06 13:34:05] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/d8/b5/8991a5e2174de51c32d71e18a0d3eb5ac2f6bb5fe9f15ca8f908cee6e214/pulumi_datadog-4.9.0a1650908051.tar.gz
+[2024-04-06 13:34:05] INFO root fetch - processPackages [pulumi-opsgenie]: Downloading https://files.pythonhosted.org/packages/ae/1e/265e14a5570be1131047c10a88ecd7a830ca13240c5c98c4bc797f051d05/pulumi_opsgenie-1.4.0a1711740009.tar.gz
+[2024-04-06 13:34:05] WARNING root fetch - processPackages [bigdl-core-xe]: Skipping package: exceeds size limit 95050173>=10485760
+[2024-04-06 13:34:05] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe] error
+[2024-04-06 13:34:05] WARNING root fetch - processPackages [pulumi-opsgenie]: Timeout reached during download
+[2024-04-06 13:34:06] WARNING root fetch - processPackages [pulumi-datadog]: Timeout reached during download
+[2024-04-06 13:34:06] INFO root fetch - processPackages [pulumi-opsgenie]: Downloading https://files.pythonhosted.org/packages/0c/b0/d77a788c9d283d9e48e02c4ef7640da63954b44b8e1f5660ab7ca6a53b63/pulumi_opsgenie-1.4.0a1712400910.tar.gz
+[2024-04-06 13:34:06] WARNING root fetch - processPackages [pulumi-opsgenie]: Timeout reached during download
+[2024-04-06 13:34:06] INFO root fetch - processPackages [pulumi-opsgenie]: executing diffoscope
+[2024-04-06 13:34:06] INFO root fetch - processPackages [pulumi-opsgenie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_opsgenie-1.4.0a1711740009.tar.gz tmp/pulumi_opsgenie-1.4.0a1712400910.tar.gz --markdown 20240406/p/pulumi-opsgenie/1.4.0a1711740009-1.4.0a1712400910/diff.md --exclude *.pyd
+[2024-04-06 13:34:06] INFO root fetch - processPackages [pulumi-datadog]: Downloading https://files.pythonhosted.org/packages/de/b3/aee4697d07beb69799f35031c032637a1c998c8ba8a18ace02fb30a3011f/pulumi_datadog-4.9.0a1653604828.tar.gz
+[2024-04-06 13:34:06] WARNING root fetch - processPackages [pulumi-datadog]: Timeout reached during download
+[2024-04-06 13:34:06] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2024-04-06 13:34:06] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20240406/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/diff.md --exclude *.pyd
+[2024-04-06 13:34:07] INFO root fetch - processPackages [pulumi-opsgenie]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_opsgenie-1.4.0a1711740009.tar.gz]
+[2024-04-06 13:34:07] INFO root fetch - processPackages [pulumi-opsgenie]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_opsgenie-1.4.0a1712400910.tar.gz]
+[2024-04-06 13:34:07] INFO root fetch - main [MainThread]: End processing [pulumi-opsgenie]: success
+[2024-04-06 13:34:09] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1650908051.tar.gz]
+[2024-04-06 13:34:09] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1653604828.tar.gz]
+[2024-04-06 13:34:09] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2024-04-06 13:34:09] INFO root fetch - main [MainThread]: Store serial: [22647570]
