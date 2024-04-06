@@ -8550,3 +8550,28 @@
 [2024-04-06 05:12:20] INFO root fetch - processPackages [odoo-addon-base-phone]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_base_phone-17.0.1.0.0.4-py3-none-any.whl.zip]
 [2024-04-06 05:12:20] INFO root fetch - main [MainThread]: End processing [odoo-addon-base-phone]: success
 [2024-04-06 05:12:20] INFO root fetch - main [MainThread]: Store serial: [22645146]
+[2024-04-06 05:14:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645146]
+[2024-04-06 05:14:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 05:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swcgeom
+[2024-04-06 05:14:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tinycio
+[2024-04-06 05:14:29] INFO root fetch - processPackages [tinycio]: New version: [0.7.0] Old Version: [0.6.3]
+[2024-04-06 05:14:29] INFO root fetch - processPackages [tinycio]: Downloading https://files.pythonhosted.org/packages/1b/5c/670388fbe7aa397a1788978faecf4fcd1cbcb70920266e98ab8a868ac477/tinycio-0.6.3.tar.gz
+[2024-04-06 05:14:29] INFO root fetch - processPackages [swcgeom]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 05:14:29] WARNING root fetch - processPackages [tinycio]: Timeout reached during download
+[2024-04-06 05:14:29] INFO root fetch - processPackages [tinycio]: Downloading https://files.pythonhosted.org/packages/0d/18/640bd295844dfee8fa9cd6a509de806ef3b520e3a31eccadc59fb2885ca0/tinycio-0.7.0.tar.gz
+[2024-04-06 05:14:29] INFO root fetch - processPackages [swcgeom]: Downloading https://files.pythonhosted.org/packages/69/50/47107683c2c6e33f33d0a5032f48bad016082b8c536b1ea65edcbd2fa614/swcgeom-0.8.0.tar.gz
+[2024-04-06 05:14:29] WARNING root fetch - processPackages [tinycio]: Timeout reached during download
+[2024-04-06 05:14:29] INFO root fetch - processPackages [tinycio]: executing diffoscope
+[2024-04-06 05:14:29] INFO root fetch - processPackages [tinycio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinycio-0.6.3.tar.gz tmp/tinycio-0.7.0.tar.gz --markdown 20240406/t/tinycio/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2024-04-06 05:14:29] WARNING root fetch - processPackages [swcgeom]: Timeout reached during download
+[2024-04-06 05:14:29] INFO root fetch - processPackages [swcgeom]: Downloading https://files.pythonhosted.org/packages/5e/01/21fad200bc76a70b07900952e197e18fc7fc55cf10ce14e4985e47a9c76a/swcgeom-0.9.0.tar.gz
+[2024-04-06 05:14:30] WARNING root fetch - processPackages [swcgeom]: Timeout reached during download
+[2024-04-06 05:14:30] INFO root fetch - processPackages [swcgeom]: executing diffoscope
+[2024-04-06 05:14:30] INFO root fetch - processPackages [swcgeom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swcgeom-0.8.0.tar.gz tmp/swcgeom-0.9.0.tar.gz --markdown 20240406/s/swcgeom/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 05:14:30] INFO root fetch - processPackages [tinycio]: Remove: archive file [/home/abi/fetcher/tmp/tinycio-0.6.3.tar.gz]
+[2024-04-06 05:14:30] INFO root fetch - processPackages [tinycio]: Remove: archive file [/home/abi/fetcher/tmp/tinycio-0.7.0.tar.gz]
+[2024-04-06 05:14:30] INFO root fetch - main [MainThread]: End processing [tinycio]: success
+[2024-04-06 05:14:31] INFO root fetch - processPackages [swcgeom]: Remove: archive file [/home/abi/fetcher/tmp/swcgeom-0.8.0.tar.gz]
+[2024-04-06 05:14:31] INFO root fetch - processPackages [swcgeom]: Remove: archive file [/home/abi/fetcher/tmp/swcgeom-0.9.0.tar.gz]
+[2024-04-06 05:14:31] INFO root fetch - main [MainThread]: End processing [swcgeom]: success
+[2024-04-06 05:14:31] INFO root fetch - main [MainThread]: Store serial: [22645152]
