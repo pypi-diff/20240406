@@ -18190,3 +18190,17 @@ EOFError: EOF read where object expected
 [2024-04-06 16:58:34] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra_forked_by_stone-w4tch3r-0.3.2.tar.gz]
 [2024-04-06 16:58:34] INFO root fetch - main [MainThread]: End processing [pyinfra-forked-by-stone-w4tch3r]: success
 [2024-04-06 16:58:34] INFO root fetch - main [MainThread]: Store serial: [22648805]
+[2024-04-06 17:00:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648805]
+[2024-04-06 17:00:43] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 17:00:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-04-06 17:00:43] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b9] Old Version: [0.7.0.1b85]
+[2024-04-06 17:00:43] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/de/93/d2d8c21f7fd2a3a3109f71bc6aa032bda187647653e6ae2c9fc0ccfa8991/smaht_submitr-0.7.0.1b85.tar.gz
+[2024-04-06 17:00:43] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 17:00:43] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ff/84/cead0681f1d3b22d8c2cc55c431321aa00039b758129671d6e752101a732/smaht_submitr-0.7.0.1b9.tar.gz
+[2024-04-06 17:00:43] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 17:00:43] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-06 17:00:43] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b85.tar.gz tmp/smaht_submitr-0.7.0.1b9.tar.gz --markdown 20240406/s/smaht-submitr/0.7.0.1b85-0.7.0.1b9/diff.md --exclude *.pyd
+[2024-04-06 17:00:44] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b85.tar.gz]
+[2024-04-06 17:00:44] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
+[2024-04-06 17:00:44] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-06 17:00:44] INFO root fetch - main [MainThread]: Store serial: [22648808]
