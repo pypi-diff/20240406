@@ -1699,3 +1699,50 @@
 [2024-04-06 02:02:33] INFO root fetch - processPackages [listmonk]: Remove: archive file [/home/abi/fetcher/tmp/listmonk-0.1.8.tar.gz]
 [2024-04-06 02:02:33] INFO root fetch - main [MainThread]: End processing [listmonk]: success
 [2024-04-06 02:02:33] INFO root fetch - main [MainThread]: Store serial: [22643165]
+[2024-04-06 02:04:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643165]
+[2024-04-06 02:04:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 02:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nlp
+[2024-04-06 02:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mct-nightly
+[2024-04-06 02:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnxscript
+[2024-04-06 02:04:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ts-soup
+[2024-04-06 02:04:42] INFO root fetch - processPackages [ts-soup]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 02:04:42] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240405] Old Version: [0.1.0.dev20240404]
+[2024-04-06 02:04:42] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/3e/18/3346497bb0f2c279dd2e63592e70600be9afa2a9cb77b816c86dc44a3893/ts-soup-0.0.5.tar.gz
+[2024-04-06 02:04:42] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/b3/a9/4092933da6d92b3c8e82ba5f4426c950dd0d27e579d8140e85b70ccbe1b2/onnxscript-0.1.0.dev20240404.tar.gz
+[2024-04-06 02:04:42] INFO root fetch - processPackages [keras-nlp]: New version: [0.9.0.dev1] Old Version: [0.9.0.dev0]
+[2024-04-06 02:04:42] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240406.415] Old Version: [2.0.0.20240405.428]
+[2024-04-06 02:04:42] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/da/02/094668e394a2c69fb856f694682efc18ab6e6479bff321e074fb696e5a01/mct-nightly-2.0.0.20240405.428.tar.gz
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [ts-soup]: Timeout reached during download
+[2024-04-06 02:04:42] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/93/f2/5fe0d5dfce0894e97385a85385a0501f13c9301a7598488712c966fc2cfe/keras-nlp-0.9.0.dev0.tar.gz
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [onnxscript]: Timeout reached during download
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [mct-nightly]: Timeout reached during download
+[2024-04-06 02:04:42] INFO root fetch - processPackages [ts-soup]: Downloading https://files.pythonhosted.org/packages/db/e0/f2aa576943cd85c13ddaedc1fc9c064ddad459c8f464568331c0fadcb98c/ts-soup-0.0.6.tar.gz
+[2024-04-06 02:04:42] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/97/f6/04f3af179817b7e6a55cf02a0f7219f514227db8504d4924b1b3f05fb71f/onnxscript-0.1.0.dev20240405.tar.gz
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [keras-nlp]: Timeout reached during download
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [ts-soup]: Timeout reached during download
+[2024-04-06 02:04:42] INFO root fetch - processPackages [ts-soup]: executing diffoscope
+[2024-04-06 02:04:42] INFO root fetch - processPackages [ts-soup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ts-soup-0.0.5.tar.gz tmp/ts-soup-0.0.6.tar.gz --markdown 20240406/t/ts-soup/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 02:04:42] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/20/00/103b399ede16d38170a6d52df1229713fc48fbc488a0801319b434c5991c/mct-nightly-2.0.0.20240406.415.tar.gz
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [onnxscript]: Timeout reached during download
+[2024-04-06 02:04:42] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-04-06 02:04:42] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240404.tar.gz tmp/onnxscript-0.1.0.dev20240405.tar.gz --markdown 20240406/o/onnxscript/0.1.0.dev20240404-0.1.0.dev20240405/diff.md --exclude *.pyd
+[2024-04-06 02:04:42] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/f9/00/b88bde904c78f4f208e0fcbeeb26e4cf248da70c6d8ad95ce84ed3df6741/keras-nlp-0.9.0.dev1.tar.gz
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [keras-nlp]: Timeout reached during download
+[2024-04-06 02:04:42] INFO root fetch - processPackages [keras-nlp]: executing diffoscope
+[2024-04-06 02:04:42] INFO root fetch - processPackages [keras-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-0.9.0.dev0.tar.gz tmp/keras-nlp-0.9.0.dev1.tar.gz --markdown 20240406/k/keras-nlp/0.9.0.dev0-0.9.0.dev1/diff.md --exclude *.pyd
+[2024-04-06 02:04:42] WARNING root fetch - processPackages [mct-nightly]: Timeout reached during download
+[2024-04-06 02:04:42] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-04-06 02:04:42] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240405.428.tar.gz tmp/mct-nightly-2.0.0.20240406.415.tar.gz --markdown 20240406/m/mct-nightly/2.0.0.20240405.428-2.0.0.20240406.415/diff.md --exclude *.pyd
+[2024-04-06 02:04:43] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts-soup-0.0.5.tar.gz]
+[2024-04-06 02:04:43] INFO root fetch - processPackages [ts-soup]: Remove: archive file [/home/abi/fetcher/tmp/ts-soup-0.0.6.tar.gz]
+[2024-04-06 02:04:43] INFO root fetch - main [MainThread]: End processing [ts-soup]: success
+[2024-04-06 02:04:43] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240404.tar.gz]
+[2024-04-06 02:04:43] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240405.tar.gz]
+[2024-04-06 02:04:43] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-04-06 02:04:44] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.0.dev0.tar.gz]
+[2024-04-06 02:04:44] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.0.dev1.tar.gz]
+[2024-04-06 02:04:44] INFO root fetch - main [MainThread]: End processing [keras-nlp]: success
+[2024-04-06 02:04:45] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240405.428.tar.gz]
+[2024-04-06 02:04:45] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240406.415.tar.gz]
+[2024-04-06 02:04:45] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-04-06 02:04:45] INFO root fetch - main [MainThread]: Store serial: [22643179]
