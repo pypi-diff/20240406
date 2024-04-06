@@ -15445,3 +15445,40 @@ EOFError: EOF read where object expected
 [2024-04-06 14:02:20] INFO root fetch - processPackages [codist]: Remove: archive file [/home/abi/fetcher/tmp/codist-0.1.2.tar.gz]
 [2024-04-06 14:02:20] INFO root fetch - main [MainThread]: End processing [codist]: success
 [2024-04-06 14:02:20] INFO root fetch - main [MainThread]: Store serial: [22647701]
+[2024-04-06 14:04:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647701]
+[2024-04-06 14:04:29] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 14:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sybil-engine
+[2024-04-06 14:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-alicloud
+[2024-04-06 14:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LughaatNLP
+[2024-04-06 14:04:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sybil-engine
+[2024-04-06 14:04:29] WARNING root fetch - processPackages [LughaatNLP]: Skipping, unable to determine old version
+[2024-04-06 14:04:29] INFO root fetch - main [MainThread]: End processing [LughaatNLP] error
+[2024-04-06 14:04:29] INFO root fetch - processPackages [sybil-engine]: New version: [6.6.1] Old Version: [6.6.0]
+[2024-04-06 14:04:29] INFO root fetch - processPackages [sybil-engine]: New version: [6.6.1] Old Version: [6.6.0]
+[2024-04-06 14:04:29] INFO root fetch - processPackages [pulumi-alicloud]: New version: [3.9.0a1637592974] Old Version: [3.9.0a1635778307]
+[2024-04-06 14:04:29] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/51/44/2ddf701938a801979e107eb45223e1796acd99dc3dbd89e8d631fa0166bf/sybil_engine-6.6.0.tar.gz
+[2024-04-06 14:04:29] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/be/79/da6d86e1953fc7bde0762279ac850d45fe8ad91ff27a3c837009ede717a4/pulumi_alicloud-3.9.0a1635778307.tar.gz
+[2024-04-06 14:04:29] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/51/44/2ddf701938a801979e107eb45223e1796acd99dc3dbd89e8d631fa0166bf/sybil_engine-6.6.0.tar.gz
+[2024-04-06 14:04:29] WARNING root fetch - processPackages [sybil-engine]: Timeout reached during download
+[2024-04-06 14:04:29] WARNING root fetch - processPackages [sybil-engine]: Timeout reached during download
+[2024-04-06 14:04:30] WARNING root fetch - processPackages [pulumi-alicloud]: Timeout reached during download
+[2024-04-06 14:04:30] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/c6/0a/72cdc2726c88ad5b24a8919fd9a6fccbfd40ca87a069cfffb9818ee8db24/sybil_engine-6.6.1.tar.gz
+[2024-04-06 14:04:30] INFO root fetch - processPackages [sybil-engine]: Downloading https://files.pythonhosted.org/packages/c6/0a/72cdc2726c88ad5b24a8919fd9a6fccbfd40ca87a069cfffb9818ee8db24/sybil_engine-6.6.1.tar.gz
+[2024-04-06 14:04:30] INFO root fetch - processPackages [pulumi-alicloud]: Downloading https://files.pythonhosted.org/packages/7a/b5/f47603b555625f7ec29ec6dcdc2cf74fe00dc52cba5fad75ddd65d3bd99e/pulumi_alicloud-3.9.0a1637592974.tar.gz
+[2024-04-06 14:04:30] WARNING root fetch - processPackages [sybil-engine]: Timeout reached during download
+[2024-04-06 14:04:30] INFO root fetch - processPackages [sybil-engine]: executing diffoscope
+[2024-04-06 14:04:30] INFO root fetch - processPackages [sybil-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sybil_engine-6.6.0.tar.gz tmp/sybil_engine-6.6.1.tar.gz --markdown 20240406/s/sybil-engine/6.6.0-6.6.1/diff.md --exclude *.pyd
+[2024-04-06 14:04:30] WARNING root fetch - processPackages [sybil-engine]: Timeout reached during download
+[2024-04-06 14:04:30] INFO root fetch - processPackages [sybil-engine]: executing diffoscope
+[2024-04-06 14:04:30] INFO root fetch - processPackages [sybil-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sybil_engine-6.6.0.tar.gz tmp/sybil_engine-6.6.1.tar.gz --markdown 20240406/s/sybil-engine/6.6.0-6.6.1/diff.md --exclude *.pyd
+[2024-04-06 14:04:30] WARNING root fetch - processPackages [pulumi-alicloud]: Timeout reached during download
+[2024-04-06 14:04:30] INFO root fetch - processPackages [pulumi-alicloud]: executing diffoscope
+[2024-04-06 14:04:30] INFO root fetch - processPackages [pulumi-alicloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz --markdown 20240406/p/pulumi-alicloud/3.9.0a1635778307-3.9.0a1637592974/diff.md --exclude *.pyd
+[2024-04-06 14:04:31] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-6.6.0.tar.gz]
+[2024-04-06 14:04:31] INFO root fetch - processPackages [sybil-engine]: Remove: archive file [/home/abi/fetcher/tmp/sybil_engine-6.6.1.tar.gz]
+[2024-04-06 14:04:31] INFO root fetch - main [MainThread]: End processing [sybil-engine]: success
+[2024-04-06 14:04:31] INFO root fetch - main [MainThread]: End processing [sybil-engine]: success
+[2024-04-06 14:04:38] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz]
+[2024-04-06 14:04:38] INFO root fetch - processPackages [pulumi-alicloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz]
+[2024-04-06 14:04:38] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
+[2024-04-06 14:04:38] INFO root fetch - main [MainThread]: Store serial: [22647713]
