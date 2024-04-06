@@ -18262,3 +18262,28 @@ EOFError: EOF read where object expected
 [2024-04-06 17:02:58] INFO root fetch - processPackages [pyrofork]: Remove: archive file [/home/abi/fetcher/tmp/pyrofork-2.4.0rc1.tar.gz]
 [2024-04-06 17:02:58] INFO root fetch - main [MainThread]: End processing [pyrofork]: success
 [2024-04-06 17:02:58] INFO root fetch - main [MainThread]: Store serial: [22648823]
+[2024-04-06 17:05:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648823]
+[2024-04-06 17:05:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 17:05:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clementine
+[2024-04-06 17:05:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modbedtools
+[2024-04-06 17:05:08] INFO root fetch - processPackages [clementine]: New version: [2024.4.6] Old Version: [2023.8.24]
+[2024-04-06 17:05:08] INFO root fetch - processPackages [modbedtools]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-06 17:05:08] INFO root fetch - processPackages [clementine]: Downloading https://files.pythonhosted.org/packages/e0/97/8a1adb7bd50d2d59f34663eaac46ce0099daebe031b4351025d64fafbeba/clementine-2023.8.24.tar.gz
+[2024-04-06 17:05:08] INFO root fetch - processPackages [modbedtools]: Downloading https://files.pythonhosted.org/packages/13/0e/9fa2e6ae13dcee076e99782a2edd08bb990a336729ceee7388b44d11e99d/modbedtools-0.1.5.tar.gz
+[2024-04-06 17:05:08] WARNING root fetch - processPackages [clementine]: Timeout reached during download
+[2024-04-06 17:05:08] WARNING root fetch - processPackages [modbedtools]: Timeout reached during download
+[2024-04-06 17:05:08] INFO root fetch - processPackages [clementine]: Downloading https://files.pythonhosted.org/packages/10/99/d90c6ec57be1ca2752e826df6e9224689fbda6948bb5ecce0726f269efeb/clementine-2024.4.6.tar.gz
+[2024-04-06 17:05:08] INFO root fetch - processPackages [modbedtools]: Downloading https://files.pythonhosted.org/packages/c9/ac/93b8505486a3cc2170c96e178bffbaf5974cb6802f56da25b899c9bf73b5/modbedtools-0.1.6.tar.gz
+[2024-04-06 17:05:08] WARNING root fetch - processPackages [clementine]: Timeout reached during download
+[2024-04-06 17:05:08] INFO root fetch - processPackages [clementine]: executing diffoscope
+[2024-04-06 17:05:08] INFO root fetch - processPackages [clementine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clementine-2023.8.24.tar.gz tmp/clementine-2024.4.6.tar.gz --markdown 20240406/c/clementine/2023.8.24-2024.4.6/diff.md --exclude *.pyd
+[2024-04-06 17:05:08] WARNING root fetch - processPackages [modbedtools]: Timeout reached during download
+[2024-04-06 17:05:08] INFO root fetch - processPackages [modbedtools]: executing diffoscope
+[2024-04-06 17:05:08] INFO root fetch - processPackages [modbedtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modbedtools-0.1.5.tar.gz tmp/modbedtools-0.1.6.tar.gz --markdown 20240406/m/modbedtools/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-06 17:05:09] INFO root fetch - processPackages [clementine]: Remove: archive file [/home/abi/fetcher/tmp/clementine-2023.8.24.tar.gz]
+[2024-04-06 17:05:09] INFO root fetch - processPackages [clementine]: Remove: archive file [/home/abi/fetcher/tmp/clementine-2024.4.6.tar.gz]
+[2024-04-06 17:05:09] INFO root fetch - main [MainThread]: End processing [clementine]: success
+[2024-04-06 17:05:09] INFO root fetch - processPackages [modbedtools]: Remove: archive file [/home/abi/fetcher/tmp/modbedtools-0.1.5.tar.gz]
+[2024-04-06 17:05:09] INFO root fetch - processPackages [modbedtools]: Remove: archive file [/home/abi/fetcher/tmp/modbedtools-0.1.6.tar.gz]
+[2024-04-06 17:05:09] INFO root fetch - main [MainThread]: End processing [modbedtools]: success
+[2024-04-06 17:05:09] INFO root fetch - main [MainThread]: Store serial: [22648834]
