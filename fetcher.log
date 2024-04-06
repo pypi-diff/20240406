@@ -21679,3 +21679,39 @@ EOFError: EOF read where object expected
 [2024-04-06 20:20:08] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.4.tar.gz]
 [2024-04-06 20:20:08] INFO root fetch - main [MainThread]: End processing [learning3d]: success
 [2024-04-06 20:20:08] INFO root fetch - main [MainThread]: Store serial: [22650047]
+[2024-04-06 20:22:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650047]
+[2024-04-06 20:22:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 20:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smaht-submitr
+[2024-04-06 20:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: superagent-py
+[2024-04-06 20:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dstool
+[2024-04-06 20:22:17] INFO root fetch - processPackages [dstool]: New version: [0.1.0a0] Old Version: [0.1.0]
+[2024-04-06 20:22:17] INFO root fetch - processPackages [superagent-py]: New version: [0.2.26] Old Version: [0.2.25]
+[2024-04-06 20:22:17] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b9] Old Version: [0.7.0.1b87]
+[2024-04-06 20:22:17] INFO root fetch - processPackages [dstool]: Downloading https://files.pythonhosted.org/packages/e7/bb/a3f115f7c485a70d674c10105b173e06a88e0f7c8697fcd626d8998ecac2/dstool-0.1.0.tar.gz
+[2024-04-06 20:22:17] INFO root fetch - processPackages [superagent-py]: Downloading https://files.pythonhosted.org/packages/e9/77/f63125d9666fc2c8f3f4638d7aacf37fab69a93f29c2fb62946f9df839e8/superagent_py-0.2.25.tar.gz
+[2024-04-06 20:22:17] WARNING root fetch - processPackages [dstool]: Timeout reached during download
+[2024-04-06 20:22:17] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/08/3c/6dc657f5d38380cc0755c253b80da62be12a2bce7da1dd51b54b8d9ff54d/smaht_submitr-0.7.0.1b87.tar.gz
+[2024-04-06 20:22:17] WARNING root fetch - processPackages [superagent-py]: Timeout reached during download
+[2024-04-06 20:22:17] INFO root fetch - processPackages [dstool]: Downloading https://files.pythonhosted.org/packages/b5/43/5f196c08e0de28b13f07dd483760b94a5226c4fab7e0bec8420b9d36323b/dstool-0.1.0a0.tar.gz
+[2024-04-06 20:22:17] INFO root fetch - processPackages [superagent-py]: Downloading https://files.pythonhosted.org/packages/ee/59/4aeb1a44b0c94105731870e3e76d856337f60d07f1abbd0c40951920a181/superagent_py-0.2.26.tar.gz
+[2024-04-06 20:22:17] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 20:22:17] WARNING root fetch - processPackages [dstool]: Timeout reached during download
+[2024-04-06 20:22:17] INFO root fetch - processPackages [dstool]: executing diffoscope
+[2024-04-06 20:22:17] INFO root fetch - processPackages [dstool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dstool-0.1.0.tar.gz tmp/dstool-0.1.0a0.tar.gz --markdown 20240406/d/dstool/0.1.0-0.1.0a0/diff.md --exclude *.pyd
+[2024-04-06 20:22:17] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ff/84/cead0681f1d3b22d8c2cc55c431321aa00039b758129671d6e752101a732/smaht_submitr-0.7.0.1b9.tar.gz
+[2024-04-06 20:22:17] WARNING root fetch - processPackages [superagent-py]: Timeout reached during download
+[2024-04-06 20:22:17] INFO root fetch - processPackages [superagent-py]: executing diffoscope
+[2024-04-06 20:22:17] INFO root fetch - processPackages [superagent-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/superagent_py-0.2.25.tar.gz tmp/superagent_py-0.2.26.tar.gz --markdown 20240406/s/superagent-py/0.2.25-0.2.26/diff.md --exclude *.pyd
+[2024-04-06 20:22:18] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 20:22:18] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-06 20:22:18] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b87.tar.gz tmp/smaht_submitr-0.7.0.1b9.tar.gz --markdown 20240406/s/smaht-submitr/0.7.0.1b87-0.7.0.1b9/diff.md --exclude *.pyd
+[2024-04-06 20:22:18] INFO root fetch - processPackages [dstool]: Remove: archive file [/home/abi/fetcher/tmp/dstool-0.1.0.tar.gz]
+[2024-04-06 20:22:18] INFO root fetch - processPackages [dstool]: Remove: archive file [/home/abi/fetcher/tmp/dstool-0.1.0a0.tar.gz]
+[2024-04-06 20:22:18] INFO root fetch - main [MainThread]: End processing [dstool]: success
+[2024-04-06 20:22:18] INFO root fetch - processPackages [superagent-py]: Remove: archive file [/home/abi/fetcher/tmp/superagent_py-0.2.25.tar.gz]
+[2024-04-06 20:22:18] INFO root fetch - processPackages [superagent-py]: Remove: archive file [/home/abi/fetcher/tmp/superagent_py-0.2.26.tar.gz]
+[2024-04-06 20:22:18] INFO root fetch - main [MainThread]: End processing [superagent-py]: success
+[2024-04-06 20:22:18] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b87.tar.gz]
+[2024-04-06 20:22:18] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
+[2024-04-06 20:22:18] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-06 20:22:18] INFO root fetch - main [MainThread]: Store serial: [22650056]
