@@ -18826,3 +18826,64 @@ EOFError: EOF read where object expected
 [2024-04-06 17:42:30] INFO root fetch - processPackages [jailbreakbench]: Remove: archive file [/home/abi/fetcher/tmp/jailbreakbench-0.1.3.tar.gz]
 [2024-04-06 17:42:30] INFO root fetch - main [MainThread]: End processing [jailbreakbench]: success
 [2024-04-06 17:42:30] INFO root fetch - main [MainThread]: Store serial: [22649083]
+[2024-04-06 17:44:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649083]
+[2024-04-06 17:44:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 17:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-module
+[2024-04-06 17:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deforce
+[2024-04-06 17:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: treat-sim
+[2024-04-06 17:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-module-application-gh
+[2024-04-06 17:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oakrock-nester
+[2024-04-06 17:44:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-module-gcp-bigquery
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-application-gh]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-gcp-bigquery]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 17:44:39] INFO root fetch - processPackages [treat-sim]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module]: Downloading https://files.pythonhosted.org/packages/55/8c/b5f4d9073926cf6d461ebe83b5a802ed97126d43bfbbca28029b97104fa5/xia-module-0.0.8.tar.gz
+[2024-04-06 17:44:39] INFO root fetch - processPackages [deforce]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [oakrock-nester]: Skipping, unable to determine old version
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-application-gh]: Downloading https://files.pythonhosted.org/packages/cc/23/dd5816b679fbc8591fdcc508f442747888c7fc58ec2349a22b5831a02ed8/xia-module-application-gh-0.0.1.tar.gz
+[2024-04-06 17:44:39] INFO root fetch - main [MainThread]: End processing [oakrock-nester] error
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/8c/aa/e042295e673eb5dfa35876a16610a2936d9a1eca9b3e2df04f5c4ff4e072/xia-module-gcp-bigquery-0.0.3.tar.gz
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [xia-module]: Timeout reached during download
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [xia-module-application-gh]: Timeout reached during download
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 17:44:39] INFO root fetch - processPackages [treat-sim]: Downloading https://files.pythonhosted.org/packages/a0/82/16b33207e4b8aa97d391c7f80de66cc884a3f0d5c445c2a333928c14ed8b/treat-sim-1.0.0.tar.gz
+[2024-04-06 17:44:39] INFO root fetch - processPackages [deforce]: Downloading https://files.pythonhosted.org/packages/69/cb/6d6b00ac27c069e042525f6becf20961f6beda87ae559cc236ccf09b9d48/deforce-0.1.0.tar.gz
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module]: Downloading https://files.pythonhosted.org/packages/62/2e/9848dd19a26406a4e1509ed0dbde4c7c9f4fdd697d2f2a66097c57597ee5/xia-module-0.0.9.tar.gz
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/98/fd/f110854b2e91a2168a8dfb161077dcdce72d6682f74002833aa74ce95af3/xia-module-gcp-bigquery-0.0.4.tar.gz
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-application-gh]: Downloading https://files.pythonhosted.org/packages/0e/17/9a5881c5a6c642179c4ed188747a0f343b089358a48f29a1bac6097b80c9/xia-module-application-gh-0.0.2.tar.gz
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [xia-module]: Timeout reached during download
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module]: executing diffoscope
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-0.0.8.tar.gz tmp/xia-module-0.0.9.tar.gz --markdown 20240406/x/xia-module/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [treat-sim]: Timeout reached during download
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [deforce]: Timeout reached during download
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-gcp-bigquery]: executing diffoscope
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-gcp-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-gcp-bigquery-0.0.3.tar.gz tmp/xia-module-gcp-bigquery-0.0.4.tar.gz --markdown 20240406/x/xia-module-gcp-bigquery/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 17:44:39] WARNING root fetch - processPackages [xia-module-application-gh]: Timeout reached during download
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-application-gh]: executing diffoscope
+[2024-04-06 17:44:39] INFO root fetch - processPackages [xia-module-application-gh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-application-gh-0.0.1.tar.gz tmp/xia-module-application-gh-0.0.2.tar.gz --markdown 20240406/x/xia-module-application-gh/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 17:44:40] INFO root fetch - processPackages [treat-sim]: Downloading https://files.pythonhosted.org/packages/01/b7/1063f0aabfbb18f95e1361a3e2b2346e53a560cfe715d5171979194534ab/treat-sim-1.1.0.tar.gz
+[2024-04-06 17:44:40] INFO root fetch - processPackages [deforce]: Downloading https://files.pythonhosted.org/packages/3f/98/5e1ecc2d47440f1ed07e051070b766e819ec8d44a75eab330c4303737311/deforce-1.0.0.tar.gz
+[2024-04-06 17:44:40] WARNING root fetch - processPackages [treat-sim]: Timeout reached during download
+[2024-04-06 17:44:40] INFO root fetch - processPackages [treat-sim]: executing diffoscope
+[2024-04-06 17:44:40] INFO root fetch - processPackages [treat-sim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/treat-sim-1.0.0.tar.gz tmp/treat-sim-1.1.0.tar.gz --markdown 20240406/t/treat-sim/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2024-04-06 17:44:40] WARNING root fetch - processPackages [deforce]: Timeout reached during download
+[2024-04-06 17:44:40] INFO root fetch - processPackages [deforce]: executing diffoscope
+[2024-04-06 17:44:40] INFO root fetch - processPackages [deforce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deforce-0.1.0.tar.gz tmp/deforce-1.0.0.tar.gz --markdown 20240406/d/deforce/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 17:44:40] INFO root fetch - processPackages [xia-module-application-gh]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-application-gh-0.0.1.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - processPackages [xia-module-application-gh]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-application-gh-0.0.2.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - main [MainThread]: End processing [xia-module-application-gh]: success
+[2024-04-06 17:44:40] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-bigquery-0.0.3.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-bigquery-0.0.4.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - main [MainThread]: End processing [xia-module-gcp-bigquery]: success
+[2024-04-06 17:44:40] INFO root fetch - processPackages [xia-module]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-0.0.8.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - processPackages [xia-module]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-0.0.9.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - main [MainThread]: End processing [xia-module]: success
+[2024-04-06 17:44:40] INFO root fetch - processPackages [treat-sim]: Remove: archive file [/home/abi/fetcher/tmp/treat-sim-1.0.0.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - processPackages [treat-sim]: Remove: archive file [/home/abi/fetcher/tmp/treat-sim-1.1.0.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - main [MainThread]: End processing [treat-sim]: success
+[2024-04-06 17:44:40] INFO root fetch - processPackages [deforce]: Remove: archive file [/home/abi/fetcher/tmp/deforce-0.1.0.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - processPackages [deforce]: Remove: archive file [/home/abi/fetcher/tmp/deforce-1.0.0.tar.gz]
+[2024-04-06 17:44:40] INFO root fetch - main [MainThread]: End processing [deforce]: success
+[2024-04-06 17:44:40] INFO root fetch - main [MainThread]: Store serial: [22649102]
