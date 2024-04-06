@@ -19275,3 +19275,42 @@ EOFError: EOF read where object expected
 [2024-04-06 18:06:51] INFO root fetch - processPackages [geoglows]: Remove: archive file [/home/abi/fetcher/tmp/geoglows-1.0.0rc1.tar.gz]
 [2024-04-06 18:06:51] INFO root fetch - main [MainThread]: End processing [geoglows]: success
 [2024-04-06 18:06:51] INFO root fetch - main [MainThread]: Store serial: [22649221]
+[2024-04-06 18:08:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649221]
+[2024-04-06 18:09:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 18:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-framework
+[2024-04-06 18:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: obzerveai
+[2024-04-06 18:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: protolint-bin-test
+[2024-04-06 18:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyindrav2h
+[2024-04-06 18:09:00] INFO root fetch - processPackages [xia-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 18:09:00] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/4d/ec/8ba56b22e3b523e06aaac69046406b53a851ada9fdfb0c21920204e3ccee/xia-framework-0.0.8.tar.gz
+[2024-04-06 18:09:00] INFO root fetch - processPackages [obzerveai]: New version: [0.0.5] Old Version: [0.0.2]
+[2024-04-06 18:09:00] INFO root fetch - processPackages [pyindrav2h]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 18:09:00] WARNING root fetch - processPackages [protolint-bin-test]: Skipping, unable to determine old version
+[2024-04-06 18:09:00] INFO root fetch - main [MainThread]: End processing [protolint-bin-test] error
+[2024-04-06 18:09:00] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 18:09:00] INFO root fetch - processPackages [obzerveai]: Downloading https://files.pythonhosted.org/packages/ae/01/8b6cddde151ca52e2d1003452625afa297aeafe61d4667d86fa7dc5920b9/obzerveai-0.0.2.tar.gz
+[2024-04-06 18:09:00] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/1a/aa/c1278b76a785a1c89cde0fa37b425dbc14d128e5a6542af6978710d87150/xia-framework-0.0.9.tar.gz
+[2024-04-06 18:09:01] INFO root fetch - processPackages [pyindrav2h]: Downloading https://files.pythonhosted.org/packages/68/75/10cba31766f888e2dd03a2238ddca532f28758753693f436325ae27af5b5/pyindrav2h-0.0.2.tar.gz
+[2024-04-06 18:09:01] WARNING root fetch - processPackages [obzerveai]: Timeout reached during download
+[2024-04-06 18:09:01] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 18:09:01] INFO root fetch - processPackages [xia-framework]: executing diffoscope
+[2024-04-06 18:09:01] INFO root fetch - processPackages [xia-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-framework-0.0.8.tar.gz tmp/xia-framework-0.0.9.tar.gz --markdown 20240406/x/xia-framework/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 18:09:01] WARNING root fetch - processPackages [pyindrav2h]: Timeout reached during download
+[2024-04-06 18:09:01] INFO root fetch - processPackages [obzerveai]: Downloading https://files.pythonhosted.org/packages/dd/aa/3b5befd776e5ee413bcf06b20dfc13ac52dc038747a64a10d3eebafa9ffa/obzerveai-0.0.5.tar.gz
+[2024-04-06 18:09:01] WARNING root fetch - processPackages [obzerveai]: Timeout reached during download
+[2024-04-06 18:09:01] INFO root fetch - processPackages [obzerveai]: executing diffoscope
+[2024-04-06 18:09:01] INFO root fetch - processPackages [obzerveai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obzerveai-0.0.2.tar.gz tmp/obzerveai-0.0.5.tar.gz --markdown 20240406/o/obzerveai/0.0.2-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 18:09:01] INFO root fetch - processPackages [pyindrav2h]: Downloading https://files.pythonhosted.org/packages/30/59/752fadac9d79357e20da0c0ea8462309843dfbdfc0b36667bac13f2ec598/pyindrav2h-0.0.3.tar.gz
+[2024-04-06 18:09:01] WARNING root fetch - processPackages [pyindrav2h]: Timeout reached during download
+[2024-04-06 18:09:01] INFO root fetch - processPackages [pyindrav2h]: executing diffoscope
+[2024-04-06 18:09:01] INFO root fetch - processPackages [pyindrav2h]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyindrav2h-0.0.2.tar.gz tmp/pyindrav2h-0.0.3.tar.gz --markdown 20240406/p/pyindrav2h/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 18:09:01] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.8.tar.gz]
+[2024-04-06 18:09:01] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
+[2024-04-06 18:09:01] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
+[2024-04-06 18:09:01] INFO root fetch - processPackages [obzerveai]: Remove: archive file [/home/abi/fetcher/tmp/obzerveai-0.0.2.tar.gz]
+[2024-04-06 18:09:01] INFO root fetch - processPackages [obzerveai]: Remove: archive file [/home/abi/fetcher/tmp/obzerveai-0.0.5.tar.gz]
+[2024-04-06 18:09:01] INFO root fetch - main [MainThread]: End processing [obzerveai]: success
+[2024-04-06 18:09:02] INFO root fetch - processPackages [pyindrav2h]: Remove: archive file [/home/abi/fetcher/tmp/pyindrav2h-0.0.2.tar.gz]
+[2024-04-06 18:09:02] INFO root fetch - processPackages [pyindrav2h]: Remove: archive file [/home/abi/fetcher/tmp/pyindrav2h-0.0.3.tar.gz]
+[2024-04-06 18:09:02] INFO root fetch - main [MainThread]: End processing [pyindrav2h]: success
+[2024-04-06 18:09:02] INFO root fetch - main [MainThread]: Store serial: [22649234]
