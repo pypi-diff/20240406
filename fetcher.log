@@ -24229,3 +24229,28 @@ EOFError: EOF read where object expected
 [2024-04-06 22:43:30] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.7.tar.gz]
 [2024-04-06 22:43:30] INFO root fetch - main [MainThread]: End processing [pysysq]: success
 [2024-04-06 22:43:30] INFO root fetch - main [MainThread]: Store serial: [22650930]
+[2024-04-06 22:45:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650930]
+[2024-04-06 22:45:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 22:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: latch
+[2024-04-06 22:45:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deltachat2
+[2024-04-06 22:45:41] INFO root fetch - processPackages [latch]: New version: [2.9.6] Old Version: [2.9.5]
+[2024-04-06 22:45:41] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/79/f7/1912dae713dbd539910745289141bab27e2ec23827c1f7112accaf98bdda/latch-2.9.5.tar.gz
+[2024-04-06 22:45:41] INFO root fetch - processPackages [deltachat2]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-04-06 22:45:41] WARNING root fetch - processPackages [latch]: Timeout reached during download
+[2024-04-06 22:45:41] INFO root fetch - processPackages [latch]: Downloading https://files.pythonhosted.org/packages/5e/5a/e91171b6eca0ba929f7259719a3d389fd86242408d94dbf266925a9f4d21/latch-2.9.6.tar.gz
+[2024-04-06 22:45:41] INFO root fetch - processPackages [deltachat2]: Downloading https://files.pythonhosted.org/packages/6f/b6/8fc936a1827749fdbd78a80edb0f26bb7317ef52205d4ab4c44a0f59e16a/deltachat2-0.3.0.tar.gz
+[2024-04-06 22:45:41] WARNING root fetch - processPackages [latch]: Timeout reached during download
+[2024-04-06 22:45:41] INFO root fetch - processPackages [latch]: executing diffoscope
+[2024-04-06 22:45:41] INFO root fetch - processPackages [latch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/latch-2.9.5.tar.gz tmp/latch-2.9.6.tar.gz --markdown 20240406/l/latch/2.9.5-2.9.6/diff.md --exclude *.pyd
+[2024-04-06 22:45:41] WARNING root fetch - processPackages [deltachat2]: Timeout reached during download
+[2024-04-06 22:45:41] INFO root fetch - processPackages [deltachat2]: Downloading https://files.pythonhosted.org/packages/08/8d/5399f431d7833ce3faf093723d9e55e7500b1cf2a9b6ef3b52d4dfbecf46/deltachat2-0.4.0.tar.gz
+[2024-04-06 22:45:42] WARNING root fetch - processPackages [deltachat2]: Timeout reached during download
+[2024-04-06 22:45:42] INFO root fetch - processPackages [deltachat2]: executing diffoscope
+[2024-04-06 22:45:42] INFO root fetch - processPackages [deltachat2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltachat2-0.3.0.tar.gz tmp/deltachat2-0.4.0.tar.gz --markdown 20240406/d/deltachat2/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2024-04-06 22:45:43] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.5.tar.gz]
+[2024-04-06 22:45:43] INFO root fetch - processPackages [latch]: Remove: archive file [/home/abi/fetcher/tmp/latch-2.9.6.tar.gz]
+[2024-04-06 22:45:43] INFO root fetch - main [MainThread]: End processing [latch]: success
+[2024-04-06 22:45:43] INFO root fetch - processPackages [deltachat2]: Remove: archive file [/home/abi/fetcher/tmp/deltachat2-0.3.0.tar.gz]
+[2024-04-06 22:45:43] INFO root fetch - processPackages [deltachat2]: Remove: archive file [/home/abi/fetcher/tmp/deltachat2-0.4.0.tar.gz]
+[2024-04-06 22:45:43] INFO root fetch - main [MainThread]: End processing [deltachat2]: success
+[2024-04-06 22:45:43] INFO root fetch - main [MainThread]: Store serial: [22650935]
