@@ -2168,3 +2168,55 @@
 [2024-04-06 02:20:03] INFO root fetch - processPackages [torchao-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchao-nightly-2024.4.5.tar.gz]
 [2024-04-06 02:20:03] INFO root fetch - main [MainThread]: End processing [torchao-nightly]: success
 [2024-04-06 02:20:03] INFO root fetch - main [MainThread]: Store serial: [22643304]
+[2024-04-06 02:22:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643304]
+[2024-04-06 02:22:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 02:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-aws-plugin
+[2024-04-06 02:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrummd
+[2024-04-06 02:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-cr-constructs
+[2024-04-06 02:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-tweet-queue
+[2024-04-06 02:22:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: air-sdk-python
+[2024-04-06 02:22:12] INFO root fetch - processPackages [air-sdk-python]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 02:22:12] INFO root fetch - processPackages [scrummd]: New version: [0.0.8] Old Version: [0.0.5]
+[2024-04-06 02:22:12] INFO root fetch - processPackages [cdk-cr-constructs]: New version: [2.1.419] Old Version: [2.1.418]
+[2024-04-06 02:22:12] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-04-06 02:22:12] INFO root fetch - processPackages [air-sdk-python]: Downloading https://files.pythonhosted.org/packages/e6/7e/5025c35c624204d38d96724d6aab30af89667c1276120666cdb5711d6d67/air-sdk-python-0.9.0.tar.gz
+[2024-04-06 02:22:12] INFO root fetch - processPackages [poetry-aws-plugin]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 02:22:12] INFO root fetch - processPackages [scrummd]: Downloading https://files.pythonhosted.org/packages/63/33/c2bdbb2224f22f7a418ebb792ca43769f756214abb36116e90a3bd6fbb86/scrummd-0.0.5.tar.gz
+[2024-04-06 02:22:12] INFO root fetch - processPackages [cdk-cr-constructs]: Downloading https://files.pythonhosted.org/packages/37/3c/6ae9c5b5cd0a96e2cd3806874f44cda3b60cd11d46165647693947888737/cdk-cr-constructs-2.1.418.tar.gz
+[2024-04-06 02:22:12] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/f2/a9/33fbe548cea174e015412108a563be3bbbdacbb6982d1ef6bf71d4abb509/cdk-tweet-queue-2.0.98.tar.gz
+[2024-04-06 02:22:12] INFO root fetch - processPackages [poetry-aws-plugin]: Downloading https://files.pythonhosted.org/packages/66/bf/2d1bfc2957deed6b50fcd146269fd5040ad0d75c24a0a07a8b78454d8ca3/poetry_aws_plugin-0.1.4.tar.gz
+[2024-04-06 02:22:12] WARNING root fetch - processPackages [cdk-cr-constructs]: Skipping package: exceeds size limit 15079463>=10485760
+[2024-04-06 02:22:12] INFO root fetch - main [MainThread]: End processing [cdk-cr-constructs] error
+[2024-04-06 02:22:12] WARNING root fetch - processPackages [poetry-aws-plugin]: Timeout reached during download
+[2024-04-06 02:22:12] WARNING root fetch - processPackages [scrummd]: Timeout reached during download
+[2024-04-06 02:22:12] WARNING root fetch - processPackages [cdk-tweet-queue]: Timeout reached during download
+[2024-04-06 02:22:13] INFO root fetch - processPackages [poetry-aws-plugin]: Downloading https://files.pythonhosted.org/packages/fb/b8/f57f437d5d42b3f44fd0625986d272febad9dff1058c6f4498097786f7f1/poetry_aws_plugin-0.1.5.tar.gz
+[2024-04-06 02:22:13] INFO root fetch - processPackages [scrummd]: Downloading https://files.pythonhosted.org/packages/ab/bc/ad646c14af8c5a1a51459edb6cd29af47c96b89061172252a3bd63c22b8a/scrummd-0.0.8.tar.gz
+[2024-04-06 02:22:13] WARNING root fetch - processPackages [poetry-aws-plugin]: Timeout reached during download
+[2024-04-06 02:22:13] INFO root fetch - processPackages [poetry-aws-plugin]: executing diffoscope
+[2024-04-06 02:22:13] INFO root fetch - processPackages [poetry-aws-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_aws_plugin-0.1.4.tar.gz tmp/poetry_aws_plugin-0.1.5.tar.gz --markdown 20240406/p/poetry-aws-plugin/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-06 02:22:13] INFO root fetch - processPackages [cdk-tweet-queue]: Downloading https://files.pythonhosted.org/packages/b9/df/ffba41b66fc7796cb2c763da82c2012cc28d0708e1dcb7775c98d3d9e491/cdk-tweet-queue-2.0.99.tar.gz
+[2024-04-06 02:22:13] WARNING root fetch - processPackages [air-sdk-python]: Timeout reached during download
+[2024-04-06 02:22:13] WARNING root fetch - processPackages [scrummd]: Timeout reached during download
+[2024-04-06 02:22:13] INFO root fetch - processPackages [scrummd]: executing diffoscope
+[2024-04-06 02:22:13] INFO root fetch - processPackages [scrummd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrummd-0.0.5.tar.gz tmp/scrummd-0.0.8.tar.gz --markdown 20240406/s/scrummd/0.0.5-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 02:22:13] WARNING root fetch - processPackages [cdk-tweet-queue]: Timeout reached during download
+[2024-04-06 02:22:13] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2024-04-06 02:22:13] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20240406/c/cdk-tweet-queue/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2024-04-06 02:22:13] INFO root fetch - processPackages [air-sdk-python]: Downloading https://files.pythonhosted.org/packages/c8/bc/3a6f4f24fc59dd5729c85aa82d63b1395ca97704eb7368fe064c5f911f24/air-sdk-python-0.9.1.tar.gz
+[2024-04-06 02:22:13] WARNING root fetch - processPackages [air-sdk-python]: Timeout reached during download
+[2024-04-06 02:22:13] INFO root fetch - processPackages [air-sdk-python]: executing diffoscope
+[2024-04-06 02:22:13] INFO root fetch - processPackages [air-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/air-sdk-python-0.9.0.tar.gz tmp/air-sdk-python-0.9.1.tar.gz --markdown 20240406/a/air-sdk-python/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 02:22:13] INFO root fetch - processPackages [poetry-aws-plugin]: Remove: archive file [/home/abi/fetcher/tmp/poetry_aws_plugin-0.1.4.tar.gz]
+[2024-04-06 02:22:13] INFO root fetch - processPackages [poetry-aws-plugin]: Remove: archive file [/home/abi/fetcher/tmp/poetry_aws_plugin-0.1.5.tar.gz]
+[2024-04-06 02:22:13] INFO root fetch - main [MainThread]: End processing [poetry-aws-plugin]: success
+[2024-04-06 02:22:13] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.98.tar.gz]
+[2024-04-06 02:22:13] INFO root fetch - processPackages [cdk-tweet-queue]: Remove: archive file [/home/abi/fetcher/tmp/cdk-tweet-queue-2.0.99.tar.gz]
+[2024-04-06 02:22:13] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
+[2024-04-06 02:22:13] INFO root fetch - processPackages [air-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/air-sdk-python-0.9.0.tar.gz]
+[2024-04-06 02:22:13] INFO root fetch - processPackages [air-sdk-python]: Remove: archive file [/home/abi/fetcher/tmp/air-sdk-python-0.9.1.tar.gz]
+[2024-04-06 02:22:13] INFO root fetch - main [MainThread]: End processing [air-sdk-python]: success
+[2024-04-06 02:22:14] INFO root fetch - processPackages [scrummd]: Remove: archive file [/home/abi/fetcher/tmp/scrummd-0.0.5.tar.gz]
+[2024-04-06 02:22:14] INFO root fetch - processPackages [scrummd]: Remove: archive file [/home/abi/fetcher/tmp/scrummd-0.0.8.tar.gz]
+[2024-04-06 02:22:14] INFO root fetch - main [MainThread]: End processing [scrummd]: success
+[2024-04-06 02:22:14] INFO root fetch - main [MainThread]: Store serial: [22643322]
