@@ -13150,3 +13150,42 @@
 [2024-04-06 11:20:10] INFO root fetch - processPackages [zonefile-parser]: Remove: archive file [/home/abi/fetcher/tmp/zonefile_parser-0.1.9.tar.gz]
 [2024-04-06 11:20:10] INFO root fetch - main [MainThread]: End processing [zonefile-parser]: success
 [2024-04-06 11:20:10] INFO root fetch - main [MainThread]: Store serial: [22647006]
+[2024-04-06 11:22:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647006]
+[2024-04-06 11:22:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 11:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: smartboiler
+[2024-04-06 11:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nodoc
+[2024-04-06 11:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docindex
+[2024-04-06 11:22:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ofdcomparer
+[2024-04-06 11:22:19] INFO root fetch - processPackages [nodoc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 11:22:19] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.6.0] Old Version: [0.0.3.0.0.5.9.4]
+[2024-04-06 11:22:19] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/4c/d1/8b9aa7fc6079375d39e4c528d339a014438130e763c7270344c15002a321/nodoc-1.0.8.tar.gz
+[2024-04-06 11:22:19] INFO root fetch - processPackages [ofdcomparer]: New version: [1.5.38] Old Version: [1.5.37]
+[2024-04-06 11:22:19] WARNING root fetch - processPackages [docindex]: Skipping, unable to determine old version
+[2024-04-06 11:22:19] INFO root fetch - main [MainThread]: End processing [docindex] error
+[2024-04-06 11:22:19] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/c3/da/02fd749e1e4b607fb7c89921feb869c47353840fe349c0561814c4d03b38/smartboiler-0.0.3.0.0.5.9.4.tar.gz
+[2024-04-06 11:22:19] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:22:19] WARNING root fetch - processPackages [smartboiler]: Timeout reached during download
+[2024-04-06 11:22:19] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/c3/01/365275f65437bdcd49fb8054d4dd45304b5a0f8ee40ef9cdaf3d0fa5ad12/nodoc-1.0.9.tar.gz
+[2024-04-06 11:22:19] INFO root fetch - processPackages [ofdcomparer]: Downloading https://files.pythonhosted.org/packages/03/9e/45c2a5d4dec5b74e8b3be9713e73bc6553c3c96a4464ad4e8c02f867af6e/ofdcomparer-1.5.37.tar.gz
+[2024-04-06 11:22:19] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/06/2f/a12b103988536de34a667c571cd339861801a5f6b738dd068679180c1f0b/smartboiler-0.0.3.0.0.6.0.tar.gz
+[2024-04-06 11:22:19] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:22:19] INFO root fetch - processPackages [nodoc]: executing diffoscope
+[2024-04-06 11:22:19] INFO root fetch - processPackages [nodoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodoc-1.0.8.tar.gz tmp/nodoc-1.0.9.tar.gz --markdown 20240406/n/nodoc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:22:19] WARNING root fetch - processPackages [ofdcomparer]: Timeout reached during download
+[2024-04-06 11:22:19] WARNING root fetch - processPackages [smartboiler]: Timeout reached during download
+[2024-04-06 11:22:19] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-04-06 11:22:19] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.5.9.4.tar.gz tmp/smartboiler-0.0.3.0.0.6.0.tar.gz --markdown 20240406/s/smartboiler/0.0.3.0.0.5.9.4-0.0.3.0.0.6.0/diff.md --exclude *.pyd
+[2024-04-06 11:22:19] INFO root fetch - processPackages [ofdcomparer]: Downloading https://files.pythonhosted.org/packages/f7/52/03af716847e60c61643bf24e93aae4ab0f086aa3973bfac276457cecae2f/ofdcomparer-1.5.38.tar.gz
+[2024-04-06 11:22:20] WARNING root fetch - processPackages [ofdcomparer]: Timeout reached during download
+[2024-04-06 11:22:20] INFO root fetch - processPackages [ofdcomparer]: executing diffoscope
+[2024-04-06 11:22:20] INFO root fetch - processPackages [ofdcomparer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofdcomparer-1.5.37.tar.gz tmp/ofdcomparer-1.5.38.tar.gz --markdown 20240406/o/ofdcomparer/1.5.37-1.5.38/diff.md --exclude *.pyd
+[2024-04-06 11:22:20] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.8.tar.gz]
+[2024-04-06 11:22:20] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.9.tar.gz]
+[2024-04-06 11:22:20] INFO root fetch - main [MainThread]: End processing [nodoc]: success
+[2024-04-06 11:22:20] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.5.9.4.tar.gz]
+[2024-04-06 11:22:20] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.6.0.tar.gz]
+[2024-04-06 11:22:20] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-04-06 11:22:20] INFO root fetch - processPackages [ofdcomparer]: Remove: archive file [/home/abi/fetcher/tmp/ofdcomparer-1.5.37.tar.gz]
+[2024-04-06 11:22:20] INFO root fetch - processPackages [ofdcomparer]: Remove: archive file [/home/abi/fetcher/tmp/ofdcomparer-1.5.38.tar.gz]
+[2024-04-06 11:22:20] INFO root fetch - main [MainThread]: End processing [ofdcomparer]: success
+[2024-04-06 11:22:20] INFO root fetch - main [MainThread]: Store serial: [22647019]
