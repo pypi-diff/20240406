@@ -7635,3 +7635,20 @@
 [2024-04-06 04:06:22] INFO root fetch - processPackages [youtube-dl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/youtube_dl_nightly-2024.4.6-py2.py3-none-any.whl.zip]
 [2024-04-06 04:06:22] INFO root fetch - main [MainThread]: End processing [youtube-dl-nightly]: success
 [2024-04-06 04:06:22] INFO root fetch - main [MainThread]: Store serial: [22644850]
+[2024-04-06 04:08:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644850]
+[2024-04-06 04:08:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 04:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zmapg
+[2024-04-06 04:08:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adrf
+[2024-04-06 04:08:30] WARNING root fetch - processPackages [zmapg]: Skipping, unable to determine old version
+[2024-04-06 04:08:30] INFO root fetch - main [MainThread]: End processing [zmapg] error
+[2024-04-06 04:08:30] INFO root fetch - processPackages [adrf]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-06 04:08:30] INFO root fetch - processPackages [adrf]: Downloading https://files.pythonhosted.org/packages/c0/a5/56b1116327f7a62dd97864a7ae3e04fc0553d3750cc3fe1b74d5d36b6f8e/adrf-0.1.5.tar.gz
+[2024-04-06 04:08:31] WARNING root fetch - processPackages [adrf]: Timeout reached during download
+[2024-04-06 04:08:31] INFO root fetch - processPackages [adrf]: Downloading https://files.pythonhosted.org/packages/1a/82/0185c26d23f4e68c2f50b990051969ff88f0a4df98a017cc3e84748206a6/adrf-0.1.6-py3-none-any.whl
+[2024-04-06 04:08:31] WARNING root fetch - processPackages [adrf]: Timeout reached during download
+[2024-04-06 04:08:31] INFO root fetch - processPackages [adrf]: executing diffoscope
+[2024-04-06 04:08:31] INFO root fetch - processPackages [adrf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adrf-0.1.5.tar.gz tmp/adrf-0.1.6-py3-none-any.whl.zip --markdown 20240406/a/adrf/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-06 04:08:32] INFO root fetch - processPackages [adrf]: Remove: archive file [/home/abi/fetcher/tmp/adrf-0.1.5.tar.gz]
+[2024-04-06 04:08:32] INFO root fetch - processPackages [adrf]: Remove: archive file [/home/abi/fetcher/tmp/adrf-0.1.6-py3-none-any.whl.zip]
+[2024-04-06 04:08:32] INFO root fetch - main [MainThread]: End processing [adrf]: success
+[2024-04-06 04:08:32] INFO root fetch - main [MainThread]: Store serial: [22644855]
