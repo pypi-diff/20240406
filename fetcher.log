@@ -21715,3 +21715,86 @@ EOFError: EOF read where object expected
 [2024-04-06 20:22:18] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
 [2024-04-06 20:22:18] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
 [2024-04-06 20:22:18] INFO root fetch - main [MainThread]: Store serial: [22650056]
+[2024-04-06 20:24:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650056]
+[2024-04-06 20:24:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-ballisticcalc
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: reddit2text
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libsbmlnetwork
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: epidemik
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-ballisticcalc.exts
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EMGFlow
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ophyd-devices
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pysteve
+[2024-04-06 20:24:27] INFO root fetch - processPackages [EMGFlow]: New version: [1.0.0] Old Version: [0.0.1]
+[2024-04-06 20:24:27] INFO root fetch - processPackages [reddit2text]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 20:24:27] INFO root fetch - processPackages [py-ballisticcalc]: New version: [2.0.0b4] Old Version: [2.0.0b3]
+[2024-04-06 20:24:27] INFO root fetch - processPackages [libsbmlnetwork]: New version: [0.0.16] Old Version: [0.0.15]
+[2024-04-06 20:24:27] INFO root fetch - processPackages [EMGFlow]: Downloading https://files.pythonhosted.org/packages/82/62/6e93f7dc6ffd573a25183b291fd4333a557ac7d0a89a8582c16e5b8630d4/emgflow-0.0.1.tar.gz
+[2024-04-06 20:24:27] WARNING root fetch - processPackages [epidemik]: Skipping, unable to determine old version
+[2024-04-06 20:24:27] INFO root fetch - main [MainThread]: End processing [epidemik] error
+[2024-04-06 20:24:27] INFO root fetch - processPackages [py-ballisticcalc.exts]: New version: [2.0.0b4] Old Version: [2.0.0b3]
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ophyd-devices]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-04-06 20:24:27] INFO root fetch - processPackages [pysteve]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 20:24:27] WARNING root fetch - processPackages [EMGFlow]: Timeout reached during download
+[2024-04-06 20:24:27] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/7d/ef/75e378a9f8bd8e58a105519650763747a003aa76c3897221ff16ce9a2f1b/reddit2text-0.0.1.tar.gz
+[2024-04-06 20:24:27] INFO root fetch - processPackages [py-ballisticcalc]: Downloading https://files.pythonhosted.org/packages/90/77/3a60ba9faf6a144cacd188a4c981a402202610a070322ba11cb40bb1b32b/py_ballisticcalc-2.0.0b3.tar.gz
+[2024-04-06 20:24:27] INFO root fetch - processPackages [libsbmlnetwork]: Downloading https://files.pythonhosted.org/packages/7a/44/1308500a368954a2402a0cf169e6ccab972f865009f20534f4ce23465105/libsbmlnetwork-0.0.15-py3-none-macosx_14_0_arm64.whl
+[2024-04-06 20:24:27] INFO root fetch - processPackages [ophyd-devices]: Downloading https://files.pythonhosted.org/packages/2b/09/1e0a1fc236c9ce64bbf92f29458f9e672c21b97c776e5c9f5d5ae6e23d72/ophyd_devices-0.9.1.tar.gz
+[2024-04-06 20:24:28] INFO root fetch - processPackages [EMGFlow]: Downloading https://files.pythonhosted.org/packages/d6/1c/9408800364473e60da7c1746d330af74598a7635e82d447e60be59f0f924/emgflow-1.0.0.tar.gz
+[2024-04-06 20:24:28] INFO root fetch - processPackages [py-ballisticcalc.exts]: Downloading https://files.pythonhosted.org/packages/74/fc/a81a0c4ec60da04ef24c3f0073c96f6dde73282656988b81938fc940a320/py_ballisticcalc.exts-2.0.0b3.tar.gz
+[2024-04-06 20:24:28] INFO root fetch - processPackages [pysteve]: Downloading https://files.pythonhosted.org/packages/6f/7a/571ca573eedbe1e7c69eb7bde737ba7e2a660c8081e43eefb7931e918e3f/pysteve-0.0.8.tar.gz
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [EMGFlow]: Timeout reached during download
+[2024-04-06 20:24:28] INFO root fetch - processPackages [EMGFlow]: executing diffoscope
+[2024-04-06 20:24:28] INFO root fetch - processPackages [EMGFlow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emgflow-0.0.1.tar.gz tmp/emgflow-1.0.0.tar.gz --markdown 20240406/E/EMGFlow/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [py-ballisticcalc]: Timeout reached during download
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [pysteve]: Timeout reached during download
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [ophyd-devices]: Timeout reached during download
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [py-ballisticcalc.exts]: Timeout reached during download
+[2024-04-06 20:24:28] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/3d/e7/59760b0d3ea3cebacd5ed4f528a112c99114febb5bbcab29d2194295fd9b/reddit2text-0.0.2.tar.gz
+[2024-04-06 20:24:28] INFO root fetch - processPackages [py-ballisticcalc]: Downloading https://files.pythonhosted.org/packages/10/07/26234d17b20dc0794ca5ed4312d8b40be9608c45f2d80875b3b57fbf0c3b/py_ballisticcalc-2.0.0b4.tar.gz
+[2024-04-06 20:24:28] INFO root fetch - processPackages [ophyd-devices]: Downloading https://files.pythonhosted.org/packages/55/4e/d641ca498a4fba59915a76536e150eb26c82206c4314ac039e51ef8aeae8/ophyd_devices-0.9.2.tar.gz
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [libsbmlnetwork]: Timeout reached during download
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 20:24:28] INFO root fetch - processPackages [reddit2text]: executing diffoscope
+[2024-04-06 20:24:28] INFO root fetch - processPackages [reddit2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit2text-0.0.1.tar.gz tmp/reddit2text-0.0.2.tar.gz --markdown 20240406/r/reddit2text/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 20:24:28] INFO root fetch - processPackages [pysteve]: Downloading https://files.pythonhosted.org/packages/c0/36/a879bd18b5836d305472dea03823f05fc2acf4abd39485cf905bacddb55a/pysteve-0.0.9.tar.gz
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [py-ballisticcalc]: Timeout reached during download
+[2024-04-06 20:24:28] INFO root fetch - processPackages [py-ballisticcalc]: executing diffoscope
+[2024-04-06 20:24:28] INFO root fetch - processPackages [py-ballisticcalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ballisticcalc-2.0.0b3.tar.gz tmp/py_ballisticcalc-2.0.0b4.tar.gz --markdown 20240406/p/py-ballisticcalc/2.0.0b3-2.0.0b4/diff.md --exclude *.pyd
+[2024-04-06 20:24:28] INFO root fetch - processPackages [py-ballisticcalc.exts]: Downloading https://files.pythonhosted.org/packages/17/11/03d77a04a258c955d4431226675dd3afccec1f1a4e1bfa6aed608e9d1dda/py_ballisticcalc.exts-2.0.0b4.tar.gz
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [pysteve]: Timeout reached during download
+[2024-04-06 20:24:28] INFO root fetch - processPackages [pysteve]: executing diffoscope
+[2024-04-06 20:24:28] INFO root fetch - processPackages [pysteve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysteve-0.0.8.tar.gz tmp/pysteve-0.0.9.tar.gz --markdown 20240406/p/pysteve/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 20:24:28] INFO root fetch - processPackages [libsbmlnetwork]: Downloading https://files.pythonhosted.org/packages/63/b6/f84b2f16ca055a452bd653392eb025e55c30faeac1d6419f96affb1ce45d/libsbmlnetwork-0.0.16-py3-none-macosx_14_0_arm64.whl
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [ophyd-devices]: Timeout reached during download
+[2024-04-06 20:24:28] INFO root fetch - processPackages [ophyd-devices]: executing diffoscope
+[2024-04-06 20:24:28] INFO root fetch - processPackages [ophyd-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ophyd_devices-0.9.1.tar.gz tmp/ophyd_devices-0.9.2.tar.gz --markdown 20240406/o/ophyd-devices/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2024-04-06 20:24:28] WARNING root fetch - processPackages [py-ballisticcalc.exts]: Timeout reached during download
+[2024-04-06 20:24:28] INFO root fetch - processPackages [py-ballisticcalc.exts]: executing diffoscope
+[2024-04-06 20:24:28] INFO root fetch - processPackages [py-ballisticcalc.exts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ballisticcalc.exts-2.0.0b3.tar.gz tmp/py_ballisticcalc.exts-2.0.0b4.tar.gz --markdown 20240406/p/py-ballisticcalc.exts/2.0.0b3-2.0.0b4/diff.md --exclude *.pyd
+[2024-04-06 20:24:28] INFO root fetch - processPackages [EMGFlow]: Remove: archive file [/home/abi/fetcher/tmp/emgflow-0.0.1.tar.gz]
+[2024-04-06 20:24:28] INFO root fetch - processPackages [EMGFlow]: Remove: archive file [/home/abi/fetcher/tmp/emgflow-1.0.0.tar.gz]
+[2024-04-06 20:24:28] INFO root fetch - main [MainThread]: End processing [EMGFlow]: success
+[2024-04-06 20:24:29] WARNING root fetch - processPackages [libsbmlnetwork]: Timeout reached during download
+[2024-04-06 20:24:29] INFO root fetch - processPackages [libsbmlnetwork]: executing diffoscope
+[2024-04-06 20:24:29] INFO root fetch - processPackages [libsbmlnetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libsbmlnetwork-0.0.15-py3-none-macosx_14_0_arm64.whl.zip tmp/libsbmlnetwork-0.0.16-py3-none-macosx_14_0_arm64.whl.zip --markdown 20240406/l/libsbmlnetwork/0.0.15-0.0.16/diff.md --exclude *.pyd
+[2024-04-06 20:24:29] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.1.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.2.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - main [MainThread]: End processing [reddit2text]: success
+[2024-04-06 20:24:29] INFO root fetch - processPackages [pysteve]: Remove: archive file [/home/abi/fetcher/tmp/pysteve-0.0.8.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - processPackages [pysteve]: Remove: archive file [/home/abi/fetcher/tmp/pysteve-0.0.9.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - main [MainThread]: End processing [pysteve]: success
+[2024-04-06 20:24:29] INFO root fetch - processPackages [py-ballisticcalc]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc-2.0.0b3.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - processPackages [py-ballisticcalc]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc-2.0.0b4.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - main [MainThread]: End processing [py-ballisticcalc]: success
+[2024-04-06 20:24:29] INFO root fetch - processPackages [ophyd-devices]: Remove: archive file [/home/abi/fetcher/tmp/ophyd_devices-0.9.1.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - processPackages [ophyd-devices]: Remove: archive file [/home/abi/fetcher/tmp/ophyd_devices-0.9.2.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - main [MainThread]: End processing [ophyd-devices]: success
+[2024-04-06 20:24:29] INFO root fetch - processPackages [py-ballisticcalc.exts]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc.exts-2.0.0b3.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - processPackages [py-ballisticcalc.exts]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc.exts-2.0.0b4.tar.gz]
+[2024-04-06 20:24:29] INFO root fetch - main [MainThread]: End processing [py-ballisticcalc.exts]: success
+[2024-04-06 20:24:35] INFO root fetch - processPackages [libsbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/libsbmlnetwork-0.0.15-py3-none-macosx_14_0_arm64.whl.zip]
+[2024-04-06 20:24:35] INFO root fetch - processPackages [libsbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/libsbmlnetwork-0.0.16-py3-none-macosx_14_0_arm64.whl.zip]
+[2024-04-06 20:24:35] INFO root fetch - main [MainThread]: End processing [libsbmlnetwork]: success
+[2024-04-06 20:24:35] INFO root fetch - main [MainThread]: Store serial: [22650083]
