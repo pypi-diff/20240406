@@ -8484,3 +8484,33 @@
 [2024-04-06 05:07:36] INFO root fetch - processPackages [br-army-knife]: Remove: archive file [/home/abi/fetcher/tmp/br_army_knife-0.0.3.tar.gz]
 [2024-04-06 05:07:36] INFO root fetch - main [MainThread]: End processing [br-army-knife]: success
 [2024-04-06 05:07:36] INFO root fetch - main [MainThread]: Store serial: [22645129]
+[2024-04-06 05:09:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645129]
+[2024-04-06 05:09:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 05:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lezargus
+[2024-04-06 05:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: RelaDB
+[2024-04-06 05:09:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NVRChannel
+[2024-04-06 05:09:44] INFO root fetch - processPackages [lezargus]: New version: [0.0.4.dev42] Old Version: [0.0.4]
+[2024-04-06 05:09:44] INFO root fetch - processPackages [NVRChannel]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 05:09:44] INFO root fetch - processPackages [RelaDB]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-06 05:09:45] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/b9/5b/6f18329c087585d7e71dddc6ee425d51d7faacec970363b2ab5640826be6/RelaDB-1.0.2.tar.gz
+[2024-04-06 05:09:45] INFO root fetch - processPackages [lezargus]: Downloading https://files.pythonhosted.org/packages/47/a0/a2ba10fcc0a21e1bf938fd106649bde480de4f8b211abe9f02bbcbe73061/lezargus-0.0.4.tar.gz
+[2024-04-06 05:09:45] INFO root fetch - processPackages [NVRChannel]: Downloading https://files.pythonhosted.org/packages/98/ea/5c3ab99113e405b975107c07843af354f9200811b9bfac6a6900fe4d3720/NVRChannel-0.1.4.tar.gz
+[2024-04-06 05:09:45] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-06 05:09:45] WARNING root fetch - processPackages [NVRChannel]: Skipping package: exceeds size limit 12286133>=10485760
+[2024-04-06 05:09:45] INFO root fetch - main [MainThread]: End processing [NVRChannel] error
+[2024-04-06 05:09:45] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/bd/0b/60bfee445027884d9e96d066206a596162de3f44c2efdfe76e99dc361e9e/RelaDB-1.0.3.tar.gz
+[2024-04-06 05:09:45] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-06 05:09:45] INFO root fetch - processPackages [RelaDB]: executing diffoscope
+[2024-04-06 05:09:45] INFO root fetch - processPackages [RelaDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RelaDB-1.0.2.tar.gz tmp/RelaDB-1.0.3.tar.gz --markdown 20240406/R/RelaDB/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-06 05:09:46] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-1.0.2.tar.gz]
+[2024-04-06 05:09:46] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-1.0.3.tar.gz]
+[2024-04-06 05:09:46] INFO root fetch - main [MainThread]: End processing [RelaDB]: success
+[2024-04-06 05:09:47] WARNING root fetch - processPackages [lezargus]: Timeout reached during download
+[2024-04-06 05:09:48] INFO root fetch - processPackages [lezargus]: Downloading https://files.pythonhosted.org/packages/f5/4d/5c3e920902a7422be6615f62d323c05bc77907d88b1597491eab5a5a85ce/lezargus-0.0.4.dev42.tar.gz
+[2024-04-06 05:09:48] WARNING root fetch - processPackages [lezargus]: Timeout reached during download
+[2024-04-06 05:09:48] INFO root fetch - processPackages [lezargus]: executing diffoscope
+[2024-04-06 05:09:48] INFO root fetch - processPackages [lezargus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lezargus-0.0.4.tar.gz tmp/lezargus-0.0.4.dev42.tar.gz --markdown 20240406/l/lezargus/0.0.4-0.0.4.dev42/diff.md --exclude *.pyd
+[2024-04-06 05:10:01] INFO root fetch - processPackages [lezargus]: Remove: archive file [/home/abi/fetcher/tmp/lezargus-0.0.4.tar.gz]
+[2024-04-06 05:10:01] INFO root fetch - processPackages [lezargus]: Remove: archive file [/home/abi/fetcher/tmp/lezargus-0.0.4.dev42.tar.gz]
+[2024-04-06 05:10:01] INFO root fetch - main [MainThread]: End processing [lezargus]: success
+[2024-04-06 05:10:01] INFO root fetch - main [MainThread]: Store serial: [22645138]
