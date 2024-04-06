@@ -16289,3 +16289,17 @@ EOFError: EOF read where object expected
 [2024-04-06 15:03:45] INFO root fetch - processPackages [deptry]: Remove: archive file [/home/abi/fetcher/tmp/deptry-0.9.0.tar.gz]
 [2024-04-06 15:03:45] INFO root fetch - main [MainThread]: End processing [deptry]: success
 [2024-04-06 15:03:45] INFO root fetch - main [MainThread]: Store serial: [22648005]
+[2024-04-06 15:05:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648005]
+[2024-04-06 15:05:53] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 15:05:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hhd
+[2024-04-06 15:05:54] INFO root fetch - processPackages [hhd]: New version: [2.5.0] Old Version: [2.4.2]
+[2024-04-06 15:05:54] INFO root fetch - processPackages [hhd]: Downloading https://files.pythonhosted.org/packages/65/26/ad4ba14076ce296f8eed26647c26bc03a9be30ab84b4880a130a2388acea/hhd-2.4.2.tar.gz
+[2024-04-06 15:05:54] WARNING root fetch - processPackages [hhd]: Timeout reached during download
+[2024-04-06 15:05:54] INFO root fetch - processPackages [hhd]: Downloading https://files.pythonhosted.org/packages/15/ee/9fbfdabe19d0edb8895ff8cbb6bef7c3dd4e56133d66ee49a26123f7f787/hhd-2.5.0.tar.gz
+[2024-04-06 15:05:54] WARNING root fetch - processPackages [hhd]: Timeout reached during download
+[2024-04-06 15:05:54] INFO root fetch - processPackages [hhd]: executing diffoscope
+[2024-04-06 15:05:54] INFO root fetch - processPackages [hhd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hhd-2.4.2.tar.gz tmp/hhd-2.5.0.tar.gz --markdown 20240406/h/hhd/2.4.2-2.5.0/diff.md --exclude *.pyd
+[2024-04-06 15:05:55] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.4.2.tar.gz]
+[2024-04-06 15:05:55] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.5.0.tar.gz]
+[2024-04-06 15:05:55] INFO root fetch - main [MainThread]: End processing [hhd]: success
+[2024-04-06 15:05:55] INFO root fetch - main [MainThread]: Store serial: [22648020]
