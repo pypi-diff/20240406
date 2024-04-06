@@ -7562,3 +7562,11 @@
 [2024-04-06 03:53:19] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/ABSQL-0.5.2.tar.gz]
 [2024-04-06 03:53:19] INFO root fetch - main [MainThread]: End processing [ABSQL]: success
 [2024-04-06 03:53:19] INFO root fetch - main [MainThread]: Store serial: [22644818]
+[2024-04-06 03:55:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644818]
+[2024-04-06 03:55:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 03:55:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rollnw
+[2024-04-06 03:55:28] INFO root fetch - processPackages [rollnw]: New version: [0.9.dev0] Old Version: [0.8.dev0]
+[2024-04-06 03:55:28] INFO root fetch - processPackages [rollnw]: Downloading https://files.pythonhosted.org/packages/9a/a8/893f5e80c099abd8d03a09da95325e7159a521131b00b712e04d19d521e4/rollnw-0.8.dev0.tar.gz
+[2024-04-06 03:55:29] WARNING root fetch - processPackages [rollnw]: Skipping package: exceeds size limit 26393268>=10485760
+[2024-04-06 03:55:29] INFO root fetch - main [MainThread]: End processing [rollnw] error
+[2024-04-06 03:55:29] INFO root fetch - main [MainThread]: Store serial: [22644822]
