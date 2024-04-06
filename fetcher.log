@@ -21499,3 +21499,53 @@ EOFError: EOF read where object expected
 [2024-04-06 20:11:13] INFO root fetch - processPackages [dvcx]: Remove: archive file [/home/abi/fetcher/tmp/dvcx-0.72.2.tar.gz]
 [2024-04-06 20:11:13] INFO root fetch - main [MainThread]: End processing [dvcx]: success
 [2024-04-06 20:11:13] INFO root fetch - main [MainThread]: Store serial: [22649999]
+[2024-04-06 20:13:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649999]
+[2024-04-06 20:13:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 20:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: learning3d
+[2024-04-06 20:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CnbcNews
+[2024-04-06 20:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PathMePy-Gustoon
+[2024-04-06 20:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moto
+[2024-04-06 20:13:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: voila-vuetify-thermodynamics
+[2024-04-06 20:13:22] INFO root fetch - processPackages [learning3d]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 20:13:22] INFO root fetch - processPackages [CnbcNews]: New version: [2.22] Old Version: [2.21]
+[2024-04-06 20:13:22] INFO root fetch - processPackages [PathMePy-Gustoon]: New version: [0.2.1] Old Version: [0.2]
+[2024-04-06 20:13:22] WARNING root fetch - processPackages [voila-vuetify-thermodynamics]: Skipping, unable to determine old version
+[2024-04-06 20:13:22] INFO root fetch - main [MainThread]: End processing [voila-vuetify-thermodynamics] error
+[2024-04-06 20:13:22] INFO root fetch - processPackages [moto]: New version: [5.0.5.dev9] Old Version: [5.0.5.dev8]
+[2024-04-06 20:13:22] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/01/11/ecfb75080f9e08869bf58234902f4e745eb5e4e7dd2606f938f17aad382e/learning3d-0.0.2.tar.gz
+[2024-04-06 20:13:22] INFO root fetch - processPackages [PathMePy-Gustoon]: Downloading https://files.pythonhosted.org/packages/e8/31/09ad3bbb93d8c8e243bbdc55fc07c6e1059980bd9d0ba5f5c95511b0a8dd/PathMePy-Gustoon-0.2.tar.gz
+[2024-04-06 20:13:22] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/ed/46/2a9361da84c96246dd0cc47567b9cdc7059baf5a4a390c4c1f43decbed34/moto-5.0.5.dev8.tar.gz
+[2024-04-06 20:13:22] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/33/09/4fd4b88b0082b6d8c032aa502b1b9926a31279ed2ba7d1d580039ff7f847/CnbcNews-2.21.tar.gz
+[2024-04-06 20:13:22] WARNING root fetch - processPackages [PathMePy-Gustoon]: Timeout reached during download
+[2024-04-06 20:13:22] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 20:13:22] INFO root fetch - processPackages [PathMePy-Gustoon]: Downloading https://files.pythonhosted.org/packages/8a/e8/4059c700395b11d8d829e520e4bffc2134f68d2a42ae3004f058e3f7c0bc/PathMePy-Gustoon-0.2.1.tar.gz
+[2024-04-06 20:13:22] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/64/3a/a20bf34946779e091fe8a095bb4d7c4b4f0c15c194239b29e555b61bd1c7/CnbcNews-2.22.tar.gz
+[2024-04-06 20:13:22] WARNING root fetch - processPackages [PathMePy-Gustoon]: Timeout reached during download
+[2024-04-06 20:13:22] INFO root fetch - processPackages [PathMePy-Gustoon]: executing diffoscope
+[2024-04-06 20:13:22] INFO root fetch - processPackages [PathMePy-Gustoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PathMePy-Gustoon-0.2.tar.gz tmp/PathMePy-Gustoon-0.2.1.tar.gz --markdown 20240406/P/PathMePy-Gustoon/0.2-0.2.1/diff.md --exclude *.pyd
+[2024-04-06 20:13:22] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 20:13:22] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 20:13:22] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 20:13:22] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 20:13:22] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-2.21.tar.gz tmp/CnbcNews-2.22.tar.gz --markdown 20240406/C/CnbcNews/2.21-2.22/diff.md --exclude *.pyd
+[2024-04-06 20:13:22] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/2f/18/ae0587589fe0ec6ad1317fe9a9c582115f7266db70f557a48d39f12d8b58/learning3d-0.0.3.tar.gz
+[2024-04-06 20:13:22] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/08/c1/f93b75265b5128856f763bdb046a348f3952cca0dc9de2e9c1268050b7ba/moto-5.0.5.dev9.tar.gz
+[2024-04-06 20:13:23] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 20:13:23] INFO root fetch - processPackages [learning3d]: executing diffoscope
+[2024-04-06 20:13:23] INFO root fetch - processPackages [learning3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning3d-0.0.2.tar.gz tmp/learning3d-0.0.3.tar.gz --markdown 20240406/l/learning3d/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 20:13:23] INFO root fetch - processPackages [PathMePy-Gustoon]: Remove: archive file [/home/abi/fetcher/tmp/PathMePy-Gustoon-0.2.tar.gz]
+[2024-04-06 20:13:23] INFO root fetch - processPackages [PathMePy-Gustoon]: Remove: archive file [/home/abi/fetcher/tmp/PathMePy-Gustoon-0.2.1.tar.gz]
+[2024-04-06 20:13:23] INFO root fetch - main [MainThread]: End processing [PathMePy-Gustoon]: success
+[2024-04-06 20:13:23] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 20:13:23] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-06 20:13:23] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.5.dev8.tar.gz tmp/moto-5.0.5.dev9.tar.gz --markdown 20240406/m/moto/5.0.5.dev8-5.0.5.dev9/diff.md --exclude *.pyd
+[2024-04-06 20:13:23] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-2.21.tar.gz]
+[2024-04-06 20:13:23] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-2.22.tar.gz]
+[2024-04-06 20:13:23] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 20:13:24] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.2.tar.gz]
+[2024-04-06 20:13:24] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.3.tar.gz]
+[2024-04-06 20:13:24] INFO root fetch - main [MainThread]: End processing [learning3d]: success
+[2024-04-06 20:13:34] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev8.tar.gz]
+[2024-04-06 20:13:34] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
+[2024-04-06 20:13:34] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-06 20:13:34] INFO root fetch - main [MainThread]: Store serial: [22650014]
