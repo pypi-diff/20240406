@@ -19739,3 +19739,17 @@ EOFError: EOF read where object expected
 [2024-04-06 18:35:14] WARNING root fetch - processPackages [medusa-logger]: Skipping, unable to determine old version
 [2024-04-06 18:35:14] INFO root fetch - main [MainThread]: End processing [medusa-logger] error
 [2024-04-06 18:35:14] INFO root fetch - main [MainThread]: Store serial: [22649376]
+[2024-04-06 18:37:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649376]
+[2024-04-06 18:37:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 18:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datasette-studio
+[2024-04-06 18:37:23] INFO root fetch - processPackages [datasette-studio]: New version: [0.1a3] Old Version: [0.1a2]
+[2024-04-06 18:37:23] INFO root fetch - processPackages [datasette-studio]: Downloading https://files.pythonhosted.org/packages/bb/c9/54e1c82decbf7bd33020946633a987a31455bcf5eaece893e53b3bec2a1d/datasette-studio-0.1a2.tar.gz
+[2024-04-06 18:37:24] WARNING root fetch - processPackages [datasette-studio]: Timeout reached during download
+[2024-04-06 18:37:24] INFO root fetch - processPackages [datasette-studio]: Downloading https://files.pythonhosted.org/packages/f4/fa/6c6b9a2cd2abd1263a6918784b2b9de22135e02c5c8bd519f544b20a6f97/datasette-studio-0.1a3.tar.gz
+[2024-04-06 18:37:24] WARNING root fetch - processPackages [datasette-studio]: Timeout reached during download
+[2024-04-06 18:37:24] INFO root fetch - processPackages [datasette-studio]: executing diffoscope
+[2024-04-06 18:37:24] INFO root fetch - processPackages [datasette-studio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette-studio-0.1a2.tar.gz tmp/datasette-studio-0.1a3.tar.gz --markdown 20240406/d/datasette-studio/0.1a2-0.1a3/diff.md --exclude *.pyd
+[2024-04-06 18:37:24] INFO root fetch - processPackages [datasette-studio]: Remove: archive file [/home/abi/fetcher/tmp/datasette-studio-0.1a2.tar.gz]
+[2024-04-06 18:37:24] INFO root fetch - processPackages [datasette-studio]: Remove: archive file [/home/abi/fetcher/tmp/datasette-studio-0.1a3.tar.gz]
+[2024-04-06 18:37:24] INFO root fetch - main [MainThread]: End processing [datasette-studio]: success
+[2024-04-06 18:37:24] INFO root fetch - main [MainThread]: Store serial: [22649379]
