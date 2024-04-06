@@ -8929,3 +8929,28 @@
 [2024-04-06 05:43:22] INFO root fetch - processPackages [pycommons]: Remove: archive file [/home/abi/fetcher/tmp/pycommons-0.8.9.tar.gz]
 [2024-04-06 05:43:22] INFO root fetch - main [MainThread]: End processing [pycommons]: success
 [2024-04-06 05:43:22] INFO root fetch - main [MainThread]: Store serial: [22645301]
+[2024-04-06 05:45:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645301]
+[2024-04-06 05:45:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 05:45:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akello
+[2024-04-06 05:45:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter-iam
+[2024-04-06 05:45:30] INFO root fetch - processPackages [akello]: New version: [0.0.21] Old Version: [0.0.20]
+[2024-04-06 05:45:30] INFO root fetch - processPackages [jupyter-iam]: New version: [1.0.0] Old Version: [0.2.1]
+[2024-04-06 05:45:31] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/69/5b/3e76d7ac0ef828d71a3e8d37854695bdd7a8c6615e08f7ceb5f754aa32b2/akello-0.0.20.tar.gz
+[2024-04-06 05:45:31] INFO root fetch - processPackages [jupyter-iam]: Downloading https://files.pythonhosted.org/packages/7e/84/86fc7760fd19875bb1eadf4bd08096b40ea220ea851591c4fa3cc20a6c7b/jupyter_iam-0.2.1-py3-none-any.whl
+[2024-04-06 05:45:31] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-06 05:45:31] INFO root fetch - processPackages [akello]: Downloading https://files.pythonhosted.org/packages/d6/69/b1ec793d350fd2bc38337bfe7ea709c726c1a055dbd53f2ce6de4886ceb9/akello-0.0.21.tar.gz
+[2024-04-06 05:45:31] WARNING root fetch - processPackages [akello]: Timeout reached during download
+[2024-04-06 05:45:31] INFO root fetch - processPackages [akello]: executing diffoscope
+[2024-04-06 05:45:31] INFO root fetch - processPackages [akello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akello-0.0.20.tar.gz tmp/akello-0.0.21.tar.gz --markdown 20240406/a/akello/0.0.20-0.0.21/diff.md --exclude *.pyd
+[2024-04-06 05:45:32] WARNING root fetch - processPackages [jupyter-iam]: Timeout reached during download
+[2024-04-06 05:45:32] INFO root fetch - processPackages [jupyter-iam]: Downloading https://files.pythonhosted.org/packages/49/c9/c90cd86a8ca52a1ccb63f3efe0ee887d34e3e144bb14755af1f8a98e977c/jupyter_iam-1.0.0-py3-none-any.whl
+[2024-04-06 05:45:32] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.20.tar.gz]
+[2024-04-06 05:45:32] INFO root fetch - processPackages [akello]: Remove: archive file [/home/abi/fetcher/tmp/akello-0.0.21.tar.gz]
+[2024-04-06 05:45:32] INFO root fetch - main [MainThread]: End processing [akello]: success
+[2024-04-06 05:45:32] WARNING root fetch - processPackages [jupyter-iam]: Timeout reached during download
+[2024-04-06 05:45:32] INFO root fetch - processPackages [jupyter-iam]: executing diffoscope
+[2024-04-06 05:45:32] INFO root fetch - processPackages [jupyter-iam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_iam-0.2.1-py3-none-any.whl.zip tmp/jupyter_iam-1.0.0-py3-none-any.whl.zip --markdown 20240406/j/jupyter-iam/0.2.1-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 05:46:38] INFO root fetch - processPackages [jupyter-iam]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_iam-0.2.1-py3-none-any.whl.zip]
+[2024-04-06 05:46:38] INFO root fetch - processPackages [jupyter-iam]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_iam-1.0.0-py3-none-any.whl.zip]
+[2024-04-06 05:46:38] INFO root fetch - main [MainThread]: End processing [jupyter-iam]: success
+[2024-04-06 05:46:38] INFO root fetch - main [MainThread]: Store serial: [22645307]
