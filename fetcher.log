@@ -23485,3 +23485,72 @@ EOFError: EOF read where object expected
 [2024-04-06 21:54:38] INFO root fetch - processPackages [kcli]: Remove: archive file [/home/abi/fetcher/tmp/kcli-99.0.202404061952.tar.gz]
 [2024-04-06 21:54:38] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2024-04-06 21:54:38] INFO root fetch - main [MainThread]: Store serial: [22650625]
+[2024-04-06 21:56:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650625]
+[2024-04-06 21:56:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 21:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gnss-visualizer
+[2024-04-06 21:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hakowan
+[2024-04-06 21:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unicodedata-reader
+[2024-04-06 21:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfish
+[2024-04-06 21:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: download-tiktok-no-watermark
+[2024-04-06 21:56:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rustyrs
+[2024-04-06 21:56:47] INFO root fetch - processPackages [rustyrs]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-06 21:56:47] INFO root fetch - processPackages [download-tiktok-no-watermark]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-04-06 21:56:47] INFO root fetch - processPackages [unicodedata-reader]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 21:56:47] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/cd/05/6cb9ecd5ccaaad4e3ed6c79043c5f20e2a4e2ad5ffc62e2fad2790074216/download_tiktok_no_watermark-0.2.5.tar.gz
+[2024-04-06 21:56:47] INFO root fetch - processPackages [gnss-visualizer]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 21:56:47] INFO root fetch - processPackages [rustyrs]: Downloading https://files.pythonhosted.org/packages/b8/5a/1f0bfb0b2fa72a4d0bd2b214d93d43605a3c7a9ea900db0697cb51c80e63/rustyrs-0.3.2-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-06 21:56:47] INFO root fetch - processPackages [kfish]: New version: [99.0.202404061955] Old Version: [99.0.202404051041]
+[2024-04-06 21:56:47] INFO root fetch - processPackages [hakowan]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-06 21:56:47] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/24/d9/a8ed04dd5eeda3661b18f75139acd1f136405578e6de94b652c8704aeb80/unicodedata_reader-1.0.0.tar.gz
+[2024-04-06 21:56:47] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:56:47] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 21:56:47] WARNING root fetch - processPackages [rustyrs]: Timeout reached during download
+[2024-04-06 21:56:47] INFO root fetch - processPackages [gnss-visualizer]: Downloading https://files.pythonhosted.org/packages/a4/ca/59890ea0aa2c535b646f15945d0fc08328921a43756a96c5237fc00a76aa/gnss_visualizer-0.0.6.tar.gz
+[2024-04-06 21:56:48] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/1e/02/f8409a53a0eaf6ec3d9bb5fa4ed719e3e0e83df026acd1e6a3546b38aa14/kfish-99.0.202404051041-py3-none-any.whl
+[2024-04-06 21:56:48] INFO root fetch - processPackages [hakowan]: Downloading https://files.pythonhosted.org/packages/de/2d/90f06c39fb8a94643232b8ce76c07f792d0de5787b6e6f4ab886a4f41644/hakowan-0.3.2-py3-none-any.whl
+[2024-04-06 21:56:48] INFO root fetch - processPackages [rustyrs]: Downloading https://files.pythonhosted.org/packages/1f/0e/b04a9a4c4e32434f15c423989a55ba55fe750d24e556cbc833650f6d152d/rustyrs-0.3.3-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-04-06 21:56:48] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/8a/7d/fef366bd9ab8024e4235dcbd8029b8d62b7765515d0ca8fa409fb8a0011d/download_tiktok_no_watermark-0.2.6.tar.gz
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [kfish]: Timeout reached during download
+[2024-04-06 21:56:48] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/25/b6/60ddd6355e17ed681821470c0ab403f70be32a3eb63641300a54e7f45251/unicodedata_reader-1.0.1.tar.gz
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:56:48] INFO root fetch - processPackages [download-tiktok-no-watermark]: executing diffoscope
+[2024-04-06 21:56:48] INFO root fetch - processPackages [download-tiktok-no-watermark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/download_tiktok_no_watermark-0.2.5.tar.gz tmp/download_tiktok_no_watermark-0.2.6.tar.gz --markdown 20240406/d/download-tiktok-no-watermark/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [gnss-visualizer]: Timeout reached during download
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [rustyrs]: Timeout reached during download
+[2024-04-06 21:56:48] INFO root fetch - processPackages [rustyrs]: executing diffoscope
+[2024-04-06 21:56:48] INFO root fetch - processPackages [rustyrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rustyrs-0.3.2-cp311-cp311-manylinux_2_28_x86_64.whl.zip tmp/rustyrs-0.3.3-cp311-cp311-manylinux_2_28_x86_64.whl.zip --markdown 20240406/r/rustyrs/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [hakowan]: Timeout reached during download
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 21:56:48] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-06 21:56:48] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata_reader-1.0.0.tar.gz tmp/unicodedata_reader-1.0.1.tar.gz --markdown 20240406/u/unicodedata-reader/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 21:56:48] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/e7/a0/e7d9917db83ff24018f8644c1a0153974c29ecdc28f7799b0d1163402b05/kfish-99.0.202404061955-py3-none-any.whl
+[2024-04-06 21:56:48] INFO root fetch - processPackages [gnss-visualizer]: Downloading https://files.pythonhosted.org/packages/5b/e0/9726c961fa4b0712d8be3abf856e71a7b0d6c3d71e94831a1e6ed81f98fa/gnss_visualizer-0.0.7.tar.gz
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [kfish]: Timeout reached during download
+[2024-04-06 21:56:48] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2024-04-06 21:56:48] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202404051041-py3-none-any.whl.zip tmp/kfish-99.0.202404061955-py3-none-any.whl.zip --markdown 20240406/k/kfish/99.0.202404051041-99.0.202404061955/diff.md --exclude *.pyd
+[2024-04-06 21:56:48] INFO root fetch - processPackages [hakowan]: Downloading https://files.pythonhosted.org/packages/b8/5a/4a0109a3a51b1188046d1aebef515144ed351d232da737666f63a6f36fb1/hakowan-0.3.3-py3-none-any.whl
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [gnss-visualizer]: Timeout reached during download
+[2024-04-06 21:56:48] INFO root fetch - processPackages [gnss-visualizer]: executing diffoscope
+[2024-04-06 21:56:48] INFO root fetch - processPackages [gnss-visualizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnss_visualizer-0.0.6.tar.gz tmp/gnss_visualizer-0.0.7.tar.gz --markdown 20240406/g/gnss-visualizer/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 21:56:48] WARNING root fetch - processPackages [hakowan]: Timeout reached during download
+[2024-04-06 21:56:48] INFO root fetch - processPackages [hakowan]: executing diffoscope
+[2024-04-06 21:56:48] INFO root fetch - processPackages [hakowan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hakowan-0.3.2-py3-none-any.whl.zip tmp/hakowan-0.3.3-py3-none-any.whl.zip --markdown 20240406/h/hakowan/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-06 21:56:48] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.5.tar.gz]
+[2024-04-06 21:56:48] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.6.tar.gz]
+[2024-04-06 21:56:48] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark]: success
+[2024-04-06 21:56:48] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.0.0.tar.gz]
+[2024-04-06 21:56:48] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-1.0.1.tar.gz]
+[2024-04-06 21:56:48] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-06 21:56:49] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202404051041-py3-none-any.whl.zip]
+[2024-04-06 21:56:49] INFO root fetch - processPackages [kfish]: Remove: archive file [/home/abi/fetcher/tmp/kfish-99.0.202404061955-py3-none-any.whl.zip]
+[2024-04-06 21:56:49] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2024-04-06 21:56:49] INFO root fetch - processPackages [gnss-visualizer]: Remove: archive file [/home/abi/fetcher/tmp/gnss_visualizer-0.0.6.tar.gz]
+[2024-04-06 21:56:49] INFO root fetch - processPackages [gnss-visualizer]: Remove: archive file [/home/abi/fetcher/tmp/gnss_visualizer-0.0.7.tar.gz]
+[2024-04-06 21:56:49] INFO root fetch - main [MainThread]: End processing [gnss-visualizer]: success
+[2024-04-06 21:56:49] INFO root fetch - processPackages [hakowan]: Remove: archive file [/home/abi/fetcher/tmp/hakowan-0.3.2-py3-none-any.whl.zip]
+[2024-04-06 21:56:49] INFO root fetch - processPackages [hakowan]: Remove: archive file [/home/abi/fetcher/tmp/hakowan-0.3.3-py3-none-any.whl.zip]
+[2024-04-06 21:56:49] INFO root fetch - main [MainThread]: End processing [hakowan]: success
+[2024-04-06 21:56:50] INFO root fetch - processPackages [rustyrs]: Remove: archive file [/home/abi/fetcher/tmp/rustyrs-0.3.2-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-06 21:56:50] INFO root fetch - processPackages [rustyrs]: Remove: archive file [/home/abi/fetcher/tmp/rustyrs-0.3.3-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-04-06 21:56:50] INFO root fetch - main [MainThread]: End processing [rustyrs]: success
+[2024-04-06 21:56:50] INFO root fetch - main [MainThread]: Store serial: [22650640]
