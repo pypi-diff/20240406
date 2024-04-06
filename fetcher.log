@@ -7255,3 +7255,53 @@
 [2024-04-06 03:23:08] INFO root fetch - processPackages [HGQ]: Remove: archive file [/home/abi/fetcher/tmp/HGQ-0.2.0rc1.tar.gz]
 [2024-04-06 03:23:08] INFO root fetch - main [MainThread]: End processing [HGQ]: success
 [2024-04-06 03:23:08] INFO root fetch - main [MainThread]: Store serial: [22644553]
+[2024-04-06 03:25:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644553]
+[2024-04-06 03:25:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 03:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datamana
+[2024-04-06 03:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dfelf
+[2024-04-06 03:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onediff
+[2024-04-06 03:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: marimo
+[2024-04-06 03:25:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onediffx
+[2024-04-06 03:25:16] INFO root fetch - processPackages [onediffx]: New version: [0.13.0.dev202404050124] Old Version: [0.13.0.dev202404040125]
+[2024-04-06 03:25:16] INFO root fetch - processPackages [onediff]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 03:25:17] WARNING root fetch - processPackages [datamana]: Skipping, unable to determine old version
+[2024-04-06 03:25:17] INFO root fetch - main [MainThread]: End processing [datamana] error
+[2024-04-06 03:25:17] INFO root fetch - processPackages [dfelf]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/b5/b9/374ebf1306993c83fd9b2b7bc584983456da7a4dda0cd79e923e85476450/onediff-0.8.0-py3-none-any.whl
+[2024-04-06 03:25:17] INFO root fetch - processPackages [marimo]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 03:25:17] WARNING root fetch - processPackages [onediff]: Timeout reached during download
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/42/09/d68464ca54fbc5303b459f3a76f95edaa0cfba16461e0175dc52977c0e9a/onediffx-0.13.0.dev202404040125.tar.gz
+[2024-04-06 03:25:17] INFO root fetch - processPackages [dfelf]: Downloading https://files.pythonhosted.org/packages/5b/04/a1878edd450f0648ed2b1bd5550dab77d5950dbdc4d75b439f5e04373cbd/dfelf-0.1.8-py3-none-any.whl
+[2024-04-06 03:25:17] WARNING root fetch - processPackages [onediffx]: Timeout reached during download
+[2024-04-06 03:25:17] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/e8/66/92dde37e6bbf554b0d525e5e5e9c7a75055291d604fa709929fb08eb8492/marimo-0.3.8.tar.gz
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/ef/35/e11ef77b4ecbfca20f6a6f4e859e3366285f109bbe200a8a82c62b8db14d/onediff-0.9.0-py3-none-any.whl
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/a3/41/1136e93a64218f479269f4166006d178acda5fe1350895fd71c9cfb21eaf/onediffx-0.13.0.dev202404050124.tar.gz
+[2024-04-06 03:25:17] WARNING root fetch - processPackages [onediff]: Timeout reached during download
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-0.8.0-py3-none-any.whl.zip tmp/onediff-0.9.0-py3-none-any.whl.zip --markdown 20240406/o/onediff/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 03:25:17] WARNING root fetch - processPackages [onediffx]: Timeout reached during download
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-04-06 03:25:17] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-0.13.0.dev202404040125.tar.gz tmp/onediffx-0.13.0.dev202404050124.tar.gz --markdown 20240406/o/onediffx/0.13.0.dev202404040125-0.13.0.dev202404050124/diff.md --exclude *.pyd
+[2024-04-06 03:25:18] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-0.8.0-py3-none-any.whl.zip]
+[2024-04-06 03:25:18] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-0.9.0-py3-none-any.whl.zip]
+[2024-04-06 03:25:18] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-04-06 03:25:18] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404040125.tar.gz]
+[2024-04-06 03:25:18] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-0.13.0.dev202404050124.tar.gz]
+[2024-04-06 03:25:18] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-04-06 03:25:18] WARNING root fetch - processPackages [marimo]: Timeout reached during download
+[2024-04-06 03:25:18] INFO root fetch - processPackages [marimo]: Downloading https://files.pythonhosted.org/packages/d1/3e/cd8ef9f6faa59843ce698c7b1cc4eef8af5f2abcf674fd8b5b58f9ccbe89/marimo-0.3.9.tar.gz
+[2024-04-06 03:25:18] WARNING root fetch - processPackages [dfelf]: Timeout reached during download
+[2024-04-06 03:25:19] INFO root fetch - processPackages [dfelf]: Downloading https://files.pythonhosted.org/packages/ff/3c/9fc2b6ff9c78d7bf547b303234b63f114ceddb95509f3ca55e97baa7d9be/dfelf-0.1.9-py3-none-any.whl
+[2024-04-06 03:25:19] WARNING root fetch - processPackages [marimo]: Timeout reached during download
+[2024-04-06 03:25:19] INFO root fetch - processPackages [marimo]: executing diffoscope
+[2024-04-06 03:25:19] INFO root fetch - processPackages [marimo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marimo-0.3.8.tar.gz tmp/marimo-0.3.9.tar.gz --markdown 20240406/m/marimo/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 03:25:21] WARNING root fetch - processPackages [dfelf]: Timeout reached during download
+[2024-04-06 03:25:21] INFO root fetch - processPackages [dfelf]: executing diffoscope
+[2024-04-06 03:25:21] INFO root fetch - processPackages [dfelf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dfelf-0.1.8-py3-none-any.whl.zip tmp/dfelf-0.1.9-py3-none-any.whl.zip --markdown 20240406/d/dfelf/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 03:25:22] INFO root fetch - processPackages [dfelf]: Remove: archive file [/home/abi/fetcher/tmp/dfelf-0.1.8-py3-none-any.whl.zip]
+[2024-04-06 03:25:22] INFO root fetch - processPackages [dfelf]: Remove: archive file [/home/abi/fetcher/tmp/dfelf-0.1.9-py3-none-any.whl.zip]
+[2024-04-06 03:25:22] INFO root fetch - main [MainThread]: End processing [dfelf]: success
+[2024-04-06 03:27:05] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.3.8.tar.gz]
+[2024-04-06 03:27:05] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.3.9.tar.gz]
+[2024-04-06 03:27:05] INFO root fetch - main [MainThread]: End processing [marimo]: success
+[2024-04-06 03:27:05] INFO root fetch - main [MainThread]: Store serial: [22644633]
