@@ -20445,3 +20445,20 @@ EOFError: EOF read where object expected
 [2024-04-06 19:06:01] INFO root fetch - processPackages [freegenius]: Remove: archive file [/home/abi/fetcher/tmp/freegenius-0.0.9.tar.gz]
 [2024-04-06 19:06:01] INFO root fetch - main [MainThread]: End processing [freegenius]: success
 [2024-04-06 19:06:01] INFO root fetch - main [MainThread]: Store serial: [22649621]
+[2024-04-06 19:08:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649621]
+[2024-04-06 19:08:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 19:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sdss-hal
+[2024-04-06 19:08:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: JethroNatividad-fbchat
+[2024-04-06 19:08:10] INFO root fetch - processPackages [sdss-hal]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-04-06 19:08:10] WARNING root fetch - processPackages [JethroNatividad-fbchat]: Skipping, unable to determine old version
+[2024-04-06 19:08:10] INFO root fetch - main [MainThread]: End processing [JethroNatividad-fbchat] error
+[2024-04-06 19:08:10] INFO root fetch - processPackages [sdss-hal]: Downloading https://files.pythonhosted.org/packages/70/8f/4e15f5a9f4feb333dae74ad5cd0e1ef864508b9cee5c5582488bd1b608b8/sdss_hal-1.1.4.tar.gz
+[2024-04-06 19:08:10] WARNING root fetch - processPackages [sdss-hal]: Timeout reached during download
+[2024-04-06 19:08:10] INFO root fetch - processPackages [sdss-hal]: Downloading https://files.pythonhosted.org/packages/7c/58/fd0d3c1a90631e649cbab5037a988911fcf804a42ae98a1063838f8652d7/sdss_hal-1.1.5.tar.gz
+[2024-04-06 19:08:11] WARNING root fetch - processPackages [sdss-hal]: Timeout reached during download
+[2024-04-06 19:08:11] INFO root fetch - processPackages [sdss-hal]: executing diffoscope
+[2024-04-06 19:08:11] INFO root fetch - processPackages [sdss-hal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sdss_hal-1.1.4.tar.gz tmp/sdss_hal-1.1.5.tar.gz --markdown 20240406/s/sdss-hal/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2024-04-06 19:08:11] INFO root fetch - processPackages [sdss-hal]: Remove: archive file [/home/abi/fetcher/tmp/sdss_hal-1.1.4.tar.gz]
+[2024-04-06 19:08:11] INFO root fetch - processPackages [sdss-hal]: Remove: archive file [/home/abi/fetcher/tmp/sdss_hal-1.1.5.tar.gz]
+[2024-04-06 19:08:11] INFO root fetch - main [MainThread]: End processing [sdss-hal]: success
+[2024-04-06 19:08:11] INFO root fetch - main [MainThread]: Store serial: [22649629]
