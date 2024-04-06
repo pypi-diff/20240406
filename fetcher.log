@@ -10420,3 +10420,28 @@
 [2024-04-06 07:14:56] WARNING root fetch - processPackages [django-layui29]: Skipping, unable to determine old version
 [2024-04-06 07:14:56] INFO root fetch - main [MainThread]: End processing [django-layui29] error
 [2024-04-06 07:14:56] INFO root fetch - main [MainThread]: Store serial: [22645824]
+[2024-04-06 07:17:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645824]
+[2024-04-06 07:17:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 07:17:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jupyter-kernels
+[2024-04-06 07:17:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-project-task-description-template
+[2024-04-06 07:17:05] INFO root fetch - processPackages [jupyter-kernels]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-06 07:17:05] INFO root fetch - processPackages [jupyter-kernels]: Downloading https://files.pythonhosted.org/packages/dc/ef/05e9235572961d513dbef452443455281b1376a81b6f995d014333b4f752/jupyter_kernels-1.0.5-py3-none-any.whl
+[2024-04-06 07:17:05] INFO root fetch - processPackages [odoo14-addon-project-task-description-template]: New version: [14.0.1.0.1.dev3] Old Version: [14.0.1.0.1.dev1]
+[2024-04-06 07:17:05] WARNING root fetch - processPackages [jupyter-kernels]: Timeout reached during download
+[2024-04-06 07:17:05] INFO root fetch - processPackages [odoo14-addon-project-task-description-template]: Downloading https://files.pythonhosted.org/packages/eb/1e/bf9d32c57347d56a93c6f804ff34a808f4fb430dc4f0482645bb1c53681e/odoo14_addon_project_task_description_template-14.0.1.0.1.dev1-py3-none-any.whl
+[2024-04-06 07:17:05] WARNING root fetch - processPackages [odoo14-addon-project-task-description-template]: Timeout reached during download
+[2024-04-06 07:17:05] INFO root fetch - processPackages [jupyter-kernels]: Downloading https://files.pythonhosted.org/packages/23/ac/30798230953c595c4564144e91e00df1273ef188846e0e7e8069f73461f9/jupyter_kernels-1.0.6-py3-none-any.whl
+[2024-04-06 07:17:05] INFO root fetch - processPackages [odoo14-addon-project-task-description-template]: Downloading https://files.pythonhosted.org/packages/1b/6b/45013b2558873d2d2f2088d56d048e2287c229c915a50cf26d50730d358f/odoo14_addon_project_task_description_template-14.0.1.0.1.dev3-py3-none-any.whl
+[2024-04-06 07:17:06] WARNING root fetch - processPackages [odoo14-addon-project-task-description-template]: Timeout reached during download
+[2024-04-06 07:17:06] INFO root fetch - processPackages [odoo14-addon-project-task-description-template]: executing diffoscope
+[2024-04-06 07:17:06] INFO root fetch - processPackages [odoo14-addon-project-task-description-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_project_task_description_template-14.0.1.0.1.dev1-py3-none-any.whl.zip tmp/odoo14_addon_project_task_description_template-14.0.1.0.1.dev3-py3-none-any.whl.zip --markdown 20240406/o/odoo14-addon-project-task-description-template/14.0.1.0.1.dev1-14.0.1.0.1.dev3/diff.md --exclude *.pyd
+[2024-04-06 07:17:06] WARNING root fetch - processPackages [jupyter-kernels]: Timeout reached during download
+[2024-04-06 07:17:06] INFO root fetch - processPackages [jupyter-kernels]: executing diffoscope
+[2024-04-06 07:17:06] INFO root fetch - processPackages [jupyter-kernels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_kernels-1.0.5-py3-none-any.whl.zip tmp/jupyter_kernels-1.0.6-py3-none-any.whl.zip --markdown 20240406/j/jupyter-kernels/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2024-04-06 07:17:06] INFO root fetch - processPackages [odoo14-addon-project-task-description-template]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_project_task_description_template-14.0.1.0.1.dev1-py3-none-any.whl.zip]
+[2024-04-06 07:17:06] INFO root fetch - processPackages [odoo14-addon-project-task-description-template]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_project_task_description_template-14.0.1.0.1.dev3-py3-none-any.whl.zip]
+[2024-04-06 07:17:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-project-task-description-template]: success
+[2024-04-06 07:17:32] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.5-py3-none-any.whl.zip]
+[2024-04-06 07:17:32] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.6-py3-none-any.whl.zip]
+[2024-04-06 07:17:32] INFO root fetch - main [MainThread]: End processing [jupyter-kernels]: success
+[2024-04-06 07:17:32] INFO root fetch - main [MainThread]: Store serial: [22645830]
