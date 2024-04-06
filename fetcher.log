@@ -18580,3 +18580,41 @@ EOFError: EOF read where object expected
 [2024-04-06 17:27:23] INFO root fetch - processPackages [sqlalchemy-dlock]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-dlock-0.6.1.tar.gz]
 [2024-04-06 17:27:23] INFO root fetch - main [MainThread]: End processing [sqlalchemy-dlock]: success
 [2024-04-06 17:27:23] INFO root fetch - main [MainThread]: Store serial: [22649006]
+[2024-04-06 17:29:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649006]
+[2024-04-06 17:29:31] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 17:31:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649006]
+[2024-04-06 17:31:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 17:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: artiruno
+[2024-04-06 17:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-framework
+[2024-04-06 17:31:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ring-attention-pytorch
+[2024-04-06 17:31:37] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 17:31:37] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/75/5b/455ef01edbd7b58148be8ea16aa787011bf6e4bdaf40d5f45ac1d20fe472/ring-attention-pytorch-0.2.8.tar.gz
+[2024-04-06 17:31:37] INFO root fetch - processPackages [xia-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 17:31:37] INFO root fetch - processPackages [artiruno]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-06 17:31:37] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 17:31:37] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/4d/ec/8ba56b22e3b523e06aaac69046406b53a851ada9fdfb0c21920204e3ccee/xia-framework-0.0.8.tar.gz
+[2024-04-06 17:31:37] INFO root fetch - processPackages [artiruno]: Downloading https://files.pythonhosted.org/packages/94/a2/84180e3f64ffb8eea20f103f33f1686ffa778b1ce9420a2eaf36acd04dfa/artiruno-0.4.2.tar.gz
+[2024-04-06 17:31:37] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/05/fc/886afee256722f34c1800217422065facfaf81c7431b503529e31ed4fe9f/ring-attention-pytorch-0.2.9.tar.gz
+[2024-04-06 17:31:38] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 17:31:38] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-06 17:31:38] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.2.8.tar.gz tmp/ring-attention-pytorch-0.2.9.tar.gz --markdown 20240406/r/ring-attention-pytorch/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 17:31:38] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 17:31:38] WARNING root fetch - processPackages [artiruno]: Timeout reached during download
+[2024-04-06 17:31:38] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/1a/aa/c1278b76a785a1c89cde0fa37b425dbc14d128e5a6542af6978710d87150/xia-framework-0.0.9.tar.gz
+[2024-04-06 17:31:38] INFO root fetch - processPackages [artiruno]: Downloading https://files.pythonhosted.org/packages/ea/0f/4f59f8c0f4f5acfce5173931ed66fc20a4706067c43f1afa9652e776b5f3/artiruno-0.4.3.tar.gz
+[2024-04-06 17:31:38] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 17:31:38] INFO root fetch - processPackages [xia-framework]: executing diffoscope
+[2024-04-06 17:31:38] INFO root fetch - processPackages [xia-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-framework-0.0.8.tar.gz tmp/xia-framework-0.0.9.tar.gz --markdown 20240406/x/xia-framework/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:31:38] WARNING root fetch - processPackages [artiruno]: Timeout reached during download
+[2024-04-06 17:31:38] INFO root fetch - processPackages [artiruno]: executing diffoscope
+[2024-04-06 17:31:38] INFO root fetch - processPackages [artiruno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/artiruno-0.4.2.tar.gz tmp/artiruno-0.4.3.tar.gz --markdown 20240406/a/artiruno/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2024-04-06 17:31:38] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.2.8.tar.gz]
+[2024-04-06 17:31:38] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.2.9.tar.gz]
+[2024-04-06 17:31:38] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-06 17:31:38] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.8.tar.gz]
+[2024-04-06 17:31:38] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
+[2024-04-06 17:31:38] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
+[2024-04-06 17:31:38] INFO root fetch - processPackages [artiruno]: Remove: archive file [/home/abi/fetcher/tmp/artiruno-0.4.2.tar.gz]
+[2024-04-06 17:31:38] INFO root fetch - processPackages [artiruno]: Remove: archive file [/home/abi/fetcher/tmp/artiruno-0.4.3.tar.gz]
+[2024-04-06 17:31:38] INFO root fetch - main [MainThread]: End processing [artiruno]: success
+[2024-04-06 17:31:38] INFO root fetch - main [MainThread]: Store serial: [22649014]
