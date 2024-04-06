@@ -2719,3 +2719,28 @@
 [2024-04-06 02:52:47] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
 [2024-04-06 02:52:47] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2024-04-06 02:52:47] INFO root fetch - main [MainThread]: Store serial: [22643483]
+[2024-04-06 02:54:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643483]
+[2024-04-06 02:54:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azure-monitor-opentelemetry-exporter
+[2024-04-06 02:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frid
+[2024-04-06 02:54:55] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: New version: [1.0.0b9] Old Version: [1.0.0b8]
+[2024-04-06 02:54:55] INFO root fetch - processPackages [frid]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 02:54:55] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Downloading https://files.pythonhosted.org/packages/83/8f/8ef839805feec9b607ef71d1d825bc8321fda8938059af0e6bf75d63500d/azure-monitor-opentelemetry-exporter-1.0.0b8.zip
+[2024-04-06 02:54:55] INFO root fetch - processPackages [frid]: Downloading https://files.pythonhosted.org/packages/7e/28/c88374b9000ef483300f0d86a87f65586d3a037d28be40ff729435325870/frid-0.0.4.tar.gz
+[2024-04-06 02:54:56] WARNING root fetch - processPackages [frid]: Timeout reached during download
+[2024-04-06 02:54:56] WARNING root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Timeout reached during download
+[2024-04-06 02:54:56] INFO root fetch - processPackages [frid]: Downloading https://files.pythonhosted.org/packages/04/cf/1533833b108e849e3a5c643979701b82d1853064429d8cf47f5487b8dfca/frid-0.0.5.tar.gz
+[2024-04-06 02:54:56] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Downloading https://files.pythonhosted.org/packages/63/6d/d871334d91ecfa8207453d25c119b0c56890110047598066aed73eed3565/azure-monitor-opentelemetry-exporter-1.0.0b9.zip
+[2024-04-06 02:54:56] WARNING root fetch - processPackages [frid]: Timeout reached during download
+[2024-04-06 02:54:56] INFO root fetch - processPackages [frid]: executing diffoscope
+[2024-04-06 02:54:56] INFO root fetch - processPackages [frid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frid-0.0.4.tar.gz tmp/frid-0.0.5.tar.gz --markdown 20240406/f/frid/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 02:54:56] WARNING root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Timeout reached during download
+[2024-04-06 02:54:56] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: executing diffoscope
+[2024-04-06 02:54:56] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure-monitor-opentelemetry-exporter-1.0.0b8.zip tmp/azure-monitor-opentelemetry-exporter-1.0.0b9.zip --markdown 20240406/a/azure-monitor-opentelemetry-exporter/1.0.0b8-1.0.0b9/diff.md --exclude *.pyd
+[2024-04-06 02:54:57] INFO root fetch - processPackages [frid]: Remove: archive file [/home/abi/fetcher/tmp/frid-0.0.4.tar.gz]
+[2024-04-06 02:54:57] INFO root fetch - processPackages [frid]: Remove: archive file [/home/abi/fetcher/tmp/frid-0.0.5.tar.gz]
+[2024-04-06 02:54:57] INFO root fetch - main [MainThread]: End processing [frid]: success
+[2024-04-06 02:54:57] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Remove: archive file [/home/abi/fetcher/tmp/azure-monitor-opentelemetry-exporter-1.0.0b8.zip]
+[2024-04-06 02:54:57] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Remove: archive file [/home/abi/fetcher/tmp/azure-monitor-opentelemetry-exporter-1.0.0b9.zip]
+[2024-04-06 02:54:57] INFO root fetch - main [MainThread]: End processing [azure-monitor-opentelemetry-exporter]: success
+[2024-04-06 02:54:57] INFO root fetch - main [MainThread]: Store serial: [22643490]
