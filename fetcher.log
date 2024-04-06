@@ -21048,3 +21048,76 @@ EOFError: EOF read where object expected
 [2024-04-06 19:51:27] INFO root fetch - processPackages [weight-training-tracker]: Remove: archive file [/home/abi/fetcher/tmp/weight_training_tracker-0.9.0.tar.gz]
 [2024-04-06 19:51:27] INFO root fetch - main [MainThread]: End processing [weight-training-tracker]: success
 [2024-04-06 19:51:27] INFO root fetch - main [MainThread]: Store serial: [22649863]
+[2024-04-06 19:53:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649863]
+[2024-04-06 19:53:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scalifiai-client
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epimodel-sensitivity
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: arma_server_tools
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smaht-submitr
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dektools
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: medusa-logger
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: medusa-logger
+[2024-04-06 19:53:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tasks-loader
+[2024-04-06 19:53:36] INFO root fetch - processPackages [scalifiai-client]: New version: [1.3.0a6] Old Version: [1.3.0a5]
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-06 19:53:36] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b9] Old Version: [0.7.0.1b86]
+[2024-04-06 19:53:36] INFO root fetch - processPackages [arma_server_tools]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 19:53:36] INFO root fetch - processPackages [dektools]: New version: [0.1.9] Old Version: [0.1.75]
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [epimodel-sensitivity]: Skipping, unable to determine old version
+[2024-04-06 19:53:36] INFO root fetch - main [MainThread]: End processing [epimodel-sensitivity] error
+[2024-04-06 19:53:36] INFO root fetch - processPackages [scalifiai-client]: Downloading https://files.pythonhosted.org/packages/38/6b/bdb1b22f85a4ff832b3efa2175bf37d72264e0b3e415ece44efefb8c64b3/scalifiai-client-1.3.0a5.tar.gz
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [tasks-loader]: Skipping, unable to determine old version
+[2024-04-06 19:53:36] INFO root fetch - main [MainThread]: End processing [tasks-loader] error
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/eb/bb/94308975806bdf0b43e141b8e085ee17c99d82164b1f2d93062521689b47/medusa-logger-1.0.5.tar.gz
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/eb/bb/94308975806bdf0b43e141b8e085ee17c99d82164b1f2d93062521689b47/medusa-logger-1.0.5.tar.gz
+[2024-04-06 19:53:36] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/c1/e5/8a05cd06efc5cb5f351648a9591b5fc2a598923e09145085a1f9326ceb93/smaht_submitr-0.7.0.1b86.tar.gz
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [arma_server_tools]: Downloading https://files.pythonhosted.org/packages/ed/c9/0b2113d8564801b2c5191fc39347c0b76cf35bf3235d0514b2a684917db3/arma_server_tools-0.1.4.tar.gz
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [scalifiai-client]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/4c/6b/02f6c2d2bc54990eb1b2acc17177cc30aa6c61a3850d2e83a50af5f71a20/dektools-0.1.75.tar.gz
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/8e/5f/beaf4a177fd23d8807e074a30ad9cedd82a6076c875243d2565782645299/medusa-logger-1.0.6.tar.gz
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/8e/5f/beaf4a177fd23d8807e074a30ad9cedd82a6076c875243d2565782645299/medusa-logger-1.0.6.tar.gz
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [arma_server_tools]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ff/84/cead0681f1d3b22d8c2cc55c431321aa00039b758129671d6e752101a732/smaht_submitr-0.7.0.1b9.tar.gz
+[2024-04-06 19:53:36] INFO root fetch - processPackages [scalifiai-client]: Downloading https://files.pythonhosted.org/packages/3d/a4/5cf91c5a2bb32895522533bae331cce268ef05a985acc8bc81def31ac886/scalifiai-client-1.3.0a6.tar.gz
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: executing diffoscope
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medusa-logger-1.0.5.tar.gz tmp/medusa-logger-1.0.6.tar.gz --markdown 20240406/m/medusa-logger/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: executing diffoscope
+[2024-04-06 19:53:36] INFO root fetch - processPackages [medusa-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medusa-logger-1.0.5.tar.gz tmp/medusa-logger-1.0.6.tar.gz --markdown 20240406/m/medusa-logger/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [scalifiai-client]: Timeout reached during download
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-06 19:53:36] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b86.tar.gz tmp/smaht_submitr-0.7.0.1b9.tar.gz --markdown 20240406/s/smaht-submitr/0.7.0.1b86-0.7.0.1b9/diff.md --exclude *.pyd
+[2024-04-06 19:53:36] INFO root fetch - processPackages [scalifiai-client]: executing diffoscope
+[2024-04-06 19:53:36] INFO root fetch - processPackages [scalifiai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalifiai-client-1.3.0a5.tar.gz tmp/scalifiai-client-1.3.0a6.tar.gz --markdown 20240406/s/scalifiai-client/1.3.0a5-1.3.0a6/diff.md --exclude *.pyd
+[2024-04-06 19:53:36] INFO root fetch - processPackages [arma_server_tools]: Downloading https://files.pythonhosted.org/packages/54/eb/5bc55b54a306d56d02c4dbaa3cbf94c5e5c0bb06e16264ea64cda9cdfaaf/arma_server_tools-0.1.5.tar.gz
+[2024-04-06 19:53:36] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/68/56/90836602efe1f93ffb0ab3da68807fa41e85e124836bcc0c3cc2d1b2c539/dektools-0.1.9-py3-none-any.whl
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [arma_server_tools]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [arma_server_tools]: executing diffoscope
+[2024-04-06 19:53:36] INFO root fetch - processPackages [arma_server_tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arma_server_tools-0.1.4.tar.gz tmp/arma_server_tools-0.1.5.tar.gz --markdown 20240406/a/arma_server_tools/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-06 19:53:36] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-06 19:53:36] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-04-06 19:53:36] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.75.tar.gz tmp/dektools-0.1.9-py3-none-any.whl.zip --markdown 20240406/d/dektools/0.1.75-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 19:53:37] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.0.5.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.0.6.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - main [MainThread]: End processing [medusa-logger]: success
+[2024-04-06 19:53:37] INFO root fetch - main [MainThread]: End processing [medusa-logger]: success
+[2024-04-06 19:53:37] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.75.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
+[2024-04-06 19:53:37] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-04-06 19:53:37] INFO root fetch - processPackages [arma_server_tools]: Remove: archive file [/home/abi/fetcher/tmp/arma_server_tools-0.1.4.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - processPackages [arma_server_tools]: Remove: archive file [/home/abi/fetcher/tmp/arma_server_tools-0.1.5.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - main [MainThread]: End processing [arma_server_tools]: success
+[2024-04-06 19:53:37] INFO root fetch - processPackages [scalifiai-client]: Remove: archive file [/home/abi/fetcher/tmp/scalifiai-client-1.3.0a5.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - processPackages [scalifiai-client]: Remove: archive file [/home/abi/fetcher/tmp/scalifiai-client-1.3.0a6.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - main [MainThread]: End processing [scalifiai-client]: success
+[2024-04-06 19:53:37] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b86.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
+[2024-04-06 19:53:37] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-06 19:53:37] INFO root fetch - main [MainThread]: Store serial: [22649891]
