@@ -25324,3 +25324,9 @@ EOFError: EOF read where object expected
 [2024-04-06 23:48:53] INFO root fetch - processPackages [linuxnet-iptables]: Remove: archive file [/home/abi/fetcher/tmp/linuxnet-iptables-7.0.3.tar.gz]
 [2024-04-06 23:48:53] INFO root fetch - main [MainThread]: End processing [linuxnet-iptables]: success
 [2024-04-06 23:48:53] INFO root fetch - main [MainThread]: Store serial: [22651382]
+[2024-04-06 23:50:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651382]
+[2024-04-06 23:51:03] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 23:51:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: RepMan
+[2024-04-06 23:51:03] WARNING root fetch - processPackages [RepMan]: Skipping, unable to determine old version
+[2024-04-06 23:51:03] INFO root fetch - main [MainThread]: End processing [RepMan] error
+[2024-04-06 23:51:03] INFO root fetch - main [MainThread]: Store serial: [22651385]
