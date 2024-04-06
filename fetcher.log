@@ -15738,3 +15738,42 @@ EOFError: EOF read where object expected
 [2024-04-06 14:22:17] INFO root fetch - processPackages [algotik-tse]: Remove: archive file [/home/abi/fetcher/tmp/algotik_tse-0.3.9.tar.gz]
 [2024-04-06 14:22:17] INFO root fetch - main [MainThread]: End processing [algotik-tse]: success
 [2024-04-06 14:22:17] INFO root fetch - main [MainThread]: Store serial: [22647785]
+[2024-04-06 14:24:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647785]
+[2024-04-06 14:24:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 14:24:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skytemple-files
+[2024-04-06 14:24:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: maildeck
+[2024-04-06 14:24:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: octomy-common
+[2024-04-06 14:24:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auth-middleware
+[2024-04-06 14:24:26] WARNING root fetch - processPackages [maildeck]: Skipping, unable to determine old version
+[2024-04-06 14:24:26] INFO root fetch - main [MainThread]: End processing [maildeck] error
+[2024-04-06 14:24:26] INFO root fetch - processPackages [octomy-common]: New version: [2.0.0] Old Version: [1.0.9]
+[2024-04-06 14:24:26] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/d3/82/29bf0bc1695f9655aea09edb99429fabbcbad2cc853e208fe7598d559817/octomy-common-1.0.9.tar.gz
+[2024-04-06 14:24:26] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 14:24:26] INFO root fetch - processPackages [skytemple-files]: New version: [1.6.6] Old Version: [1.6.5]
+[2024-04-06 14:24:26] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 14:24:26] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/cf/e6/5a7edf5ce851b7d9d729d4010d8f3ada0e18a1167e87de73594ac62501d7/auth_middleware-0.1.1.tar.gz
+[2024-04-06 14:24:26] INFO root fetch - processPackages [skytemple-files]: Downloading https://files.pythonhosted.org/packages/cf/35/ea56774a7c92e83308e70d85dfd11435bee8bf59afd6fe184a46b2682ee1/skytemple_files-1.6.5-py3-none-any.whl
+[2024-04-06 14:24:26] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/eb/dd/88b072353284ce6314aae91d68f21360402212eb6e92b2016efd86fb3f5c/octomy-common-2.0.0.tar.gz
+[2024-04-06 14:24:26] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 14:24:26] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 14:24:26] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-06 14:24:26] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-1.0.9.tar.gz tmp/octomy-common-2.0.0.tar.gz --markdown 20240406/o/octomy-common/1.0.9-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 14:24:27] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/71/b1/25ac46fc3359480788df9daa16c04b1487ed5af4cf44c722b07ad6048c6d/auth_middleware-0.1.2.tar.gz
+[2024-04-06 14:24:27] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 14:24:27] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-06 14:24:27] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.1.tar.gz tmp/auth_middleware-0.1.2.tar.gz --markdown 20240406/a/auth-middleware/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 14:24:27] WARNING root fetch - processPackages [skytemple-files]: Timeout reached during download
+[2024-04-06 14:24:27] INFO root fetch - processPackages [skytemple-files]: Downloading https://files.pythonhosted.org/packages/d8/ac/d5095ea6b0a97ee08a2fa0ec95a68ca3da86e09cffaaa1e17dfaa427c8ff/skytemple_files-1.6.6-py3-none-any.whl
+[2024-04-06 14:24:27] WARNING root fetch - processPackages [skytemple-files]: Timeout reached during download
+[2024-04-06 14:24:27] INFO root fetch - processPackages [skytemple-files]: executing diffoscope
+[2024-04-06 14:24:27] INFO root fetch - processPackages [skytemple-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skytemple_files-1.6.5-py3-none-any.whl.zip tmp/skytemple_files-1.6.6-py3-none-any.whl.zip --markdown 20240406/s/skytemple-files/1.6.5-1.6.6/diff.md --exclude *.pyd
+[2024-04-06 14:24:27] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-1.0.9.tar.gz]
+[2024-04-06 14:24:27] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.0.tar.gz]
+[2024-04-06 14:24:27] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-06 14:24:27] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.1.tar.gz]
+[2024-04-06 14:24:27] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.2.tar.gz]
+[2024-04-06 14:24:27] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-06 14:24:31] INFO root fetch - processPackages [skytemple-files]: Remove: archive file [/home/abi/fetcher/tmp/skytemple_files-1.6.5-py3-none-any.whl.zip]
+[2024-04-06 14:24:31] INFO root fetch - processPackages [skytemple-files]: Remove: archive file [/home/abi/fetcher/tmp/skytemple_files-1.6.6-py3-none-any.whl.zip]
+[2024-04-06 14:24:31] INFO root fetch - main [MainThread]: End processing [skytemple-files]: success
+[2024-04-06 14:24:31] INFO root fetch - main [MainThread]: Store serial: [22647795]
