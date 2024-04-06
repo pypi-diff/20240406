@@ -7652,3 +7652,61 @@
 [2024-04-06 04:08:32] INFO root fetch - processPackages [adrf]: Remove: archive file [/home/abi/fetcher/tmp/adrf-0.1.6-py3-none-any.whl.zip]
 [2024-04-06 04:08:32] INFO root fetch - main [MainThread]: End processing [adrf]: success
 [2024-04-06 04:08:32] INFO root fetch - main [MainThread]: Store serial: [22644855]
+[2024-04-06 04:10:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644855]
+[2024-04-06 04:10:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 04:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: adrf
+[2024-04-06 04:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aio-clients
+[2024-04-06 04:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cpymake
+[2024-04-06 04:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zen-dash
+[2024-04-06 04:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sleap-io
+[2024-04-06 04:10:41] INFO root fetch - processPackages [adrf]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-06 04:10:41] INFO root fetch - processPackages [adrf]: Downloading https://files.pythonhosted.org/packages/c0/a5/56b1116327f7a62dd97864a7ae3e04fc0553d3750cc3fe1b74d5d36b6f8e/adrf-0.1.5.tar.gz
+[2024-04-06 04:10:41] INFO root fetch - processPackages [aio-clients]: New version: [2.0.0b0] Old Version: [2.0.0]
+[2024-04-06 04:10:41] INFO root fetch - processPackages [sleap-io]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 04:10:41] INFO root fetch - processPackages [cpymake]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 04:10:41] INFO root fetch - processPackages [zen-dash]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-06 04:10:41] WARNING root fetch - processPackages [adrf]: Timeout reached during download
+[2024-04-06 04:10:41] INFO root fetch - processPackages [adrf]: Downloading https://files.pythonhosted.org/packages/1a/82/0185c26d23f4e68c2f50b990051969ff88f0a4df98a017cc3e84748206a6/adrf-0.1.6-py3-none-any.whl
+[2024-04-06 04:10:41] INFO root fetch - processPackages [aio-clients]: Downloading https://files.pythonhosted.org/packages/b9/bc/8535b3318a1563aa23d20e746a6027853ead6f4c751f0abd1189c2c5e287/aio_clients-2.0.0.tar.gz
+[2024-04-06 04:10:41] INFO root fetch - processPackages [sleap-io]: Downloading https://files.pythonhosted.org/packages/1b/53/b7f9a46c9e8abcaffcff0ae2046a4fc60583f9bfe4b7b6dba4a2d6b40a79/sleap_io-0.0.8-py3-none-any.whl
+[2024-04-06 04:10:41] INFO root fetch - processPackages [zen-dash]: Downloading https://files.pythonhosted.org/packages/32/ad/3ddf45fab9ad1945675fe533031fa6a6db92c519959fa3621ccfd01487fc/zen_dash-0.6.8.tar.gz
+[2024-04-06 04:10:41] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/f4/8f/0a2f05c1c09e44be58f50fa6f83b58e451a9c4784358b8a4170b501585b3/cpymake-0.1.0.tar.gz
+[2024-04-06 04:10:41] WARNING root fetch - processPackages [adrf]: Timeout reached during download
+[2024-04-06 04:10:41] INFO root fetch - processPackages [adrf]: executing diffoscope
+[2024-04-06 04:10:41] INFO root fetch - processPackages [adrf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adrf-0.1.5.tar.gz tmp/adrf-0.1.6-py3-none-any.whl.zip --markdown 20240406/a/adrf/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-06 04:10:41] WARNING root fetch - processPackages [aio-clients]: Timeout reached during download
+[2024-04-06 04:10:42] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:10:42] WARNING root fetch - processPackages [sleap-io]: Timeout reached during download
+[2024-04-06 04:10:42] INFO root fetch - processPackages [aio-clients]: Downloading https://files.pythonhosted.org/packages/70/b5/6bb7256d16b32aff7151614252f54591ecf31ca4d2b5a28a5967dc81cff7/aio_clients-2.0.0b0.tar.gz
+[2024-04-06 04:10:42] INFO root fetch - processPackages [cpymake]: Downloading https://files.pythonhosted.org/packages/d4/13/c7cf1d8b996af1a9263feba26895b3fc30a118a1a999e0f06a280ea10653/cpymake-0.1.1.tar.gz
+[2024-04-06 04:10:42] WARNING root fetch - processPackages [zen-dash]: Timeout reached during download
+[2024-04-06 04:10:42] INFO root fetch - processPackages [sleap-io]: Downloading https://files.pythonhosted.org/packages/52/d5/8c0045002f538dab5280e46cf863cd622afab20f3ab9bca978575018fa38/sleap_io-0.0.9-py3-none-any.whl
+[2024-04-06 04:10:42] WARNING root fetch - processPackages [cpymake]: Timeout reached during download
+[2024-04-06 04:10:42] INFO root fetch - processPackages [cpymake]: executing diffoscope
+[2024-04-06 04:10:42] INFO root fetch - processPackages [cpymake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpymake-0.1.0.tar.gz tmp/cpymake-0.1.1.tar.gz --markdown 20240406/c/cpymake/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 04:10:42] WARNING root fetch - processPackages [aio-clients]: Timeout reached during download
+[2024-04-06 04:10:42] INFO root fetch - processPackages [aio-clients]: executing diffoscope
+[2024-04-06 04:10:42] INFO root fetch - processPackages [aio-clients]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aio_clients-2.0.0.tar.gz tmp/aio_clients-2.0.0b0.tar.gz --markdown 20240406/a/aio-clients/2.0.0-2.0.0b0/diff.md --exclude *.pyd
+[2024-04-06 04:10:42] WARNING root fetch - processPackages [sleap-io]: Timeout reached during download
+[2024-04-06 04:10:42] INFO root fetch - processPackages [sleap-io]: executing diffoscope
+[2024-04-06 04:10:42] INFO root fetch - processPackages [sleap-io]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleap_io-0.0.8-py3-none-any.whl.zip tmp/sleap_io-0.0.9-py3-none-any.whl.zip --markdown 20240406/s/sleap-io/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 04:10:42] INFO root fetch - processPackages [adrf]: Remove: archive file [/home/abi/fetcher/tmp/adrf-0.1.5.tar.gz]
+[2024-04-06 04:10:42] INFO root fetch - processPackages [adrf]: Remove: archive file [/home/abi/fetcher/tmp/adrf-0.1.6-py3-none-any.whl.zip]
+[2024-04-06 04:10:42] INFO root fetch - main [MainThread]: End processing [adrf]: success
+[2024-04-06 04:10:42] INFO root fetch - processPackages [zen-dash]: Downloading https://files.pythonhosted.org/packages/88/0c/114eaeb4813b36b96c403736a945532de73335855b80ab0614573f5ff9d2/zen_dash-0.6.9.tar.gz
+[2024-04-06 04:10:42] WARNING root fetch - processPackages [zen-dash]: Timeout reached during download
+[2024-04-06 04:10:42] INFO root fetch - processPackages [zen-dash]: executing diffoscope
+[2024-04-06 04:10:42] INFO root fetch - processPackages [zen-dash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zen_dash-0.6.8.tar.gz tmp/zen_dash-0.6.9.tar.gz --markdown 20240406/z/zen-dash/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2024-04-06 04:10:43] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.0.tar.gz]
+[2024-04-06 04:10:43] INFO root fetch - processPackages [cpymake]: Remove: archive file [/home/abi/fetcher/tmp/cpymake-0.1.1.tar.gz]
+[2024-04-06 04:10:43] INFO root fetch - main [MainThread]: End processing [cpymake]: success
+[2024-04-06 04:10:43] INFO root fetch - processPackages [aio-clients]: Remove: archive file [/home/abi/fetcher/tmp/aio_clients-2.0.0.tar.gz]
+[2024-04-06 04:10:43] INFO root fetch - processPackages [aio-clients]: Remove: archive file [/home/abi/fetcher/tmp/aio_clients-2.0.0b0.tar.gz]
+[2024-04-06 04:10:43] INFO root fetch - main [MainThread]: End processing [aio-clients]: success
+[2024-04-06 04:10:43] INFO root fetch - processPackages [sleap-io]: Remove: archive file [/home/abi/fetcher/tmp/sleap_io-0.0.8-py3-none-any.whl.zip]
+[2024-04-06 04:10:43] INFO root fetch - processPackages [sleap-io]: Remove: archive file [/home/abi/fetcher/tmp/sleap_io-0.0.9-py3-none-any.whl.zip]
+[2024-04-06 04:10:43] INFO root fetch - main [MainThread]: End processing [sleap-io]: success
+[2024-04-06 04:11:08] INFO root fetch - processPackages [zen-dash]: Remove: archive file [/home/abi/fetcher/tmp/zen_dash-0.6.8.tar.gz]
+[2024-04-06 04:11:08] INFO root fetch - processPackages [zen-dash]: Remove: archive file [/home/abi/fetcher/tmp/zen_dash-0.6.9.tar.gz]
+[2024-04-06 04:11:08] INFO root fetch - main [MainThread]: End processing [zen-dash]: success
+[2024-04-06 04:11:08] INFO root fetch - main [MainThread]: Store serial: [22644871]
