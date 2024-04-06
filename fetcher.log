@@ -14504,3 +14504,88 @@
 [2024-04-06 13:09:19] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
 [2024-04-06 13:09:19] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-06 13:09:19] INFO root fetch - main [MainThread]: Store serial: [22647416]
+[2024-04-06 13:11:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647416]
+[2024-04-06 13:11:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-azuredevops
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-minio
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-kafka
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plugp100
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: space-collector
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-confluentcloud
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-gitlab
+[2024-04-06 13:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-http
+[2024-04-06 13:11:29] INFO root fetch - processPackages [space-collector]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 13:11:29] INFO root fetch - processPackages [plugp100]: New version: [5.0.0.dev4] Old Version: [5.0.0.dev3]
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-gitlab]: New version: [6.9.0a1708340471] Old Version: [6.9.0a1708063247]
+[2024-04-06 13:11:29] INFO root fetch - processPackages [space-collector]: Downloading https://files.pythonhosted.org/packages/b5/f7/c18d6015ebd6ccaed2739b2717d75eef269ce808970fa85672e489370f7e/space_collector-0.0.8.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/9b/5a/fda776655a86adee758e0cdecbb85ee3e40ac093638cf77789609e9a82d9/plugp100-5.0.0.dev3.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-http]: New version: [0.0.4a1712399582] Old Version: [0.0.4a1711778059]
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-azuredevops]: New version: [3.1.0a1712399297] Old Version: [3.1.0a1711735015]
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-minio]: New version: [0.9.1a1682440158] Old Version: [0.9.1a1681933919]
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-kafka]: New version: [3.8.0a1712399632] Old Version: [3.8.0a1712078841]
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [space-collector]: Skipping package: exceeds size limit 19105904>=10485760
+[2024-04-06 13:11:29] INFO root fetch - main [MainThread]: End processing [space-collector] error
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/58/07/ab2778876b4db96da370ecc6d084f38b132c7d1e47cda0350b3de396d7e4/pulumi_gitlab-6.9.0a1708063247.tar.gz
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-minio]: Downloading https://files.pythonhosted.org/packages/ff/08/d2cadf5bfe93247a9689d335d5a90c90c3437bae7996f31d22e6a1e18bc8/pulumi_minio-0.9.1a1681933919.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-http]: Downloading https://files.pythonhosted.org/packages/62/2b/ccb0e16c9eb97bb24f25bb6bbaf3f082c76e11eb40157d96a2ea19f047fb/pulumi_http-0.0.4a1711778059.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ee/5c/83ab7b1cf2467d8b22165c469862d15e131885dbf277da0d1bb686af03fe/pulumi_confluentcloud-1.9.0.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-kafka]: Downloading https://files.pythonhosted.org/packages/db/97/50ddb128a9a579a2c7dc56b43a54897fbb27910cb524bc1b1fcb3c306956/pulumi_kafka-3.8.0a1712078841.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-azuredevops]: Downloading https://files.pythonhosted.org/packages/9b/7d/dc1bf4095a354a6ca7a099a2020d6ef0a3bc2bc6882fc842509aafb781dd/pulumi_azuredevops-3.1.0a1711735015.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/39/7e/1eab33b8a3194bfeb5f28e6dd3edcf53eb49a0fa7b437194f85090e74f32/plugp100-5.0.0.dev4.tar.gz
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-http]: Timeout reached during download
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-confluentcloud]: Timeout reached during download
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-gitlab]: Timeout reached during download
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-kafka]: Timeout reached during download
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 13:11:29] INFO root fetch - processPackages [plugp100]: executing diffoscope
+[2024-04-06 13:11:29] INFO root fetch - processPackages [plugp100]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugp100-5.0.0.dev3.tar.gz tmp/plugp100-5.0.0.dev4.tar.gz --markdown 20240406/p/plugp100/5.0.0.dev3-5.0.0.dev4/diff.md --exclude *.pyd
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-minio]: Timeout reached during download
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-azuredevops]: Timeout reached during download
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-http]: Downloading https://files.pythonhosted.org/packages/73/19/26aa981a618e0ad82d1a990c9a3e9f72d41eb5307af2dad2e1c188394f13/pulumi_http-0.0.4a1712399582.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-kafka]: Downloading https://files.pythonhosted.org/packages/3b/f1/2ae41898d88b8601b981eb37edef896352d62bb846bdb322c70f8823c256/pulumi_kafka-3.8.0a1712399632.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-confluentcloud]: Downloading https://files.pythonhosted.org/packages/ec/f6/4c3900e97797a3f84c4c58458a6334035e702bd96d9ed3ec48d8e6e20f4e/pulumi_confluentcloud-1.9.0a1675887560.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-minio]: Downloading https://files.pythonhosted.org/packages/15/55/586e40a427bb324461e4077406c21f75ad5bd1d406ec365a59f65e7790bd/pulumi_minio-0.9.1a1682440158.tar.gz
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-http]: Timeout reached during download
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-http]: executing diffoscope
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-http]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_http-0.0.4a1711778059.tar.gz tmp/pulumi_http-0.0.4a1712399582.tar.gz --markdown 20240406/p/pulumi-http/0.0.4a1711778059-0.0.4a1712399582/diff.md --exclude *.pyd
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-gitlab]: Downloading https://files.pythonhosted.org/packages/ec/de/e27b5fc2f3f3a7a5f878850b1b8d0f82d5624c70b642a39146c756ea3d5c/pulumi_gitlab-6.9.0a1708340471.tar.gz
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-azuredevops]: Downloading https://files.pythonhosted.org/packages/c8/1f/0e84c24d8e95fb298eaccc164f11c8a535e8ff1affb31502904b2fe709c0/pulumi_azuredevops-3.1.0a1712399297.tar.gz
+[2024-04-06 13:11:29] WARNING root fetch - processPackages [pulumi-kafka]: Timeout reached during download
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-kafka]: executing diffoscope
+[2024-04-06 13:11:29] INFO root fetch - processPackages [pulumi-kafka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kafka-3.8.0a1712078841.tar.gz tmp/pulumi_kafka-3.8.0a1712399632.tar.gz --markdown 20240406/p/pulumi-kafka/3.8.0a1712078841-3.8.0a1712399632/diff.md --exclude *.pyd
+[2024-04-06 13:11:30] WARNING root fetch - processPackages [pulumi-confluentcloud]: Timeout reached during download
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20240406/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2024-04-06 13:11:30] WARNING root fetch - processPackages [pulumi-azuredevops]: Timeout reached during download
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-azuredevops]: executing diffoscope
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-azuredevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azuredevops-3.1.0a1711735015.tar.gz tmp/pulumi_azuredevops-3.1.0a1712399297.tar.gz --markdown 20240406/p/pulumi-azuredevops/3.1.0a1711735015-3.1.0a1712399297/diff.md --exclude *.pyd
+[2024-04-06 13:11:30] WARNING root fetch - processPackages [pulumi-minio]: Timeout reached during download
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-minio]: executing diffoscope
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-minio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_minio-0.9.1a1681933919.tar.gz tmp/pulumi_minio-0.9.1a1682440158.tar.gz --markdown 20240406/p/pulumi-minio/0.9.1a1681933919-0.9.1a1682440158/diff.md --exclude *.pyd
+[2024-04-06 13:11:30] WARNING root fetch - processPackages [pulumi-gitlab]: Timeout reached during download
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-gitlab]: executing diffoscope
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gitlab-6.9.0a1708063247.tar.gz tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz --markdown 20240406/p/pulumi-gitlab/6.9.0a1708063247-6.9.0a1708340471/diff.md --exclude *.pyd
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-http]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_http-0.0.4a1711778059.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-http]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_http-0.0.4a1712399582.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - main [MainThread]: End processing [pulumi-http]: success
+[2024-04-06 13:11:30] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev3.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev4.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - main [MainThread]: End processing [plugp100]: success
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-kafka]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kafka-3.8.0a1712078841.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-kafka]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kafka-3.8.0a1712399632.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - main [MainThread]: End processing [pulumi-kafka]: success
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-minio]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_minio-0.9.1a1681933919.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-minio]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_minio-0.9.1a1682440158.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - main [MainThread]: End processing [pulumi-minio]: success
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - processPackages [pulumi-confluentcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz]
+[2024-04-06 13:11:30] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2024-04-06 13:11:31] INFO root fetch - processPackages [pulumi-azuredevops]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuredevops-3.1.0a1711735015.tar.gz]
+[2024-04-06 13:11:31] INFO root fetch - processPackages [pulumi-azuredevops]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuredevops-3.1.0a1712399297.tar.gz]
+[2024-04-06 13:11:31] INFO root fetch - main [MainThread]: End processing [pulumi-azuredevops]: success
+[2024-04-06 13:11:31] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708063247.tar.gz]
+[2024-04-06 13:11:31] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz]
+[2024-04-06 13:11:31] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
+[2024-04-06 13:11:31] INFO root fetch - main [MainThread]: Store serial: [22647439]
