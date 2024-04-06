@@ -19081,3 +19081,20 @@ EOFError: EOF read where object expected
 [2024-04-06 17:53:48] INFO root fetch - processPackages [palworld_admin]: Remove: archive file [/home/abi/fetcher/tmp/palworld_admin-0.9.9.tar.gz]
 [2024-04-06 17:53:48] INFO root fetch - main [MainThread]: End processing [palworld_admin]: success
 [2024-04-06 17:53:48] INFO root fetch - main [MainThread]: Store serial: [22649160]
+[2024-04-06 17:55:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649160]
+[2024-04-06 17:55:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 17:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprocketship
+[2024-04-06 17:55:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kindle2pdf
+[2024-04-06 17:55:57] INFO root fetch - processPackages [sprocketship]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-04-06 17:55:57] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/3b/1f/ef5adaa427009cf67f6258034539521481c76a9ad94df0f6976077386506/sprocketship-0.0.9.tar.gz
+[2024-04-06 17:55:57] WARNING root fetch - processPackages [kindle2pdf]: Skipping, unable to determine old version
+[2024-04-06 17:55:57] INFO root fetch - main [MainThread]: End processing [kindle2pdf] error
+[2024-04-06 17:55:57] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 17:55:57] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/66/3c/702d57e028413ec74683f0e7b8ec1e8cb6a44fe5b50245f2e479d1d4ceee/sprocketship-0.1.0.tar.gz
+[2024-04-06 17:55:57] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 17:55:57] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 17:55:57] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.0.9.tar.gz tmp/sprocketship-0.1.0.tar.gz --markdown 20240406/s/sprocketship/0.0.9-0.1.0/diff.md --exclude *.pyd
+[2024-04-06 17:55:58] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.9.tar.gz]
+[2024-04-06 17:55:58] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.1.0.tar.gz]
+[2024-04-06 17:55:58] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 17:55:58] INFO root fetch - main [MainThread]: Store serial: [22649168]
