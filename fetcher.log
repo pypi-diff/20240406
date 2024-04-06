@@ -13744,3 +13744,28 @@
 [2024-04-06 12:06:04] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
 [2024-04-06 12:06:04] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2024-04-06 12:06:04] INFO root fetch - main [MainThread]: Store serial: [22647175]
+[2024-04-06 12:08:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647175]
+[2024-04-06 12:08:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 12:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: praklib
+[2024-04-06 12:08:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spikeinterface
+[2024-04-06 12:08:13] INFO root fetch - processPackages [praklib]: New version: [0.1.4] Old Version: [0.1.369]
+[2024-04-06 12:08:13] INFO root fetch - processPackages [praklib]: Downloading https://files.pythonhosted.org/packages/a8/5d/f8ab1346d576641e506e8e579e74d7497e78dd682258b527598eb2270ebd/praklib-0.1.369.tar.gz
+[2024-04-06 12:08:13] INFO root fetch - processPackages [spikeinterface]: New version: [0.99.1] Old Version: [0.99.0]
+[2024-04-06 12:08:13] WARNING root fetch - processPackages [praklib]: Timeout reached during download
+[2024-04-06 12:08:13] INFO root fetch - processPackages [spikeinterface]: Downloading https://files.pythonhosted.org/packages/51/41/fbe1aeccb9c16ce80d51e59ecc21fd98ebbe267eafb0ca05506c452247ba/spikeinterface-0.99.0.tar.gz
+[2024-04-06 12:08:13] INFO root fetch - processPackages [praklib]: Downloading https://files.pythonhosted.org/packages/9f/cd/7e7fe84ae2183c5f89bcc521d6796ab68537218b9b670e2d8e176ec6e007/praklib-0.1.4.tar.gz
+[2024-04-06 12:08:13] WARNING root fetch - processPackages [praklib]: Timeout reached during download
+[2024-04-06 12:08:13] INFO root fetch - processPackages [praklib]: executing diffoscope
+[2024-04-06 12:08:13] INFO root fetch - processPackages [praklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/praklib-0.1.369.tar.gz tmp/praklib-0.1.4.tar.gz --markdown 20240406/p/praklib/0.1.369-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 12:08:14] WARNING root fetch - processPackages [spikeinterface]: Timeout reached during download
+[2024-04-06 12:08:14] INFO root fetch - processPackages [spikeinterface]: Downloading https://files.pythonhosted.org/packages/46/0c/646225d58eae1937200722e2569a254b28e2ae21817cdd8dc0e8b1ef7181/spikeinterface-0.99.1.tar.gz
+[2024-04-06 12:08:14] INFO root fetch - processPackages [praklib]: Remove: archive file [/home/abi/fetcher/tmp/praklib-0.1.369.tar.gz]
+[2024-04-06 12:08:14] INFO root fetch - processPackages [praklib]: Remove: archive file [/home/abi/fetcher/tmp/praklib-0.1.4.tar.gz]
+[2024-04-06 12:08:14] INFO root fetch - main [MainThread]: End processing [praklib]: success
+[2024-04-06 12:08:14] WARNING root fetch - processPackages [spikeinterface]: Timeout reached during download
+[2024-04-06 12:08:14] INFO root fetch - processPackages [spikeinterface]: executing diffoscope
+[2024-04-06 12:08:14] INFO root fetch - processPackages [spikeinterface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spikeinterface-0.99.0.tar.gz tmp/spikeinterface-0.99.1.tar.gz --markdown 20240406/s/spikeinterface/0.99.0-0.99.1/diff.md --exclude *.pyd
+[2024-04-06 12:08:16] INFO root fetch - processPackages [spikeinterface]: Remove: archive file [/home/abi/fetcher/tmp/spikeinterface-0.99.0.tar.gz]
+[2024-04-06 12:08:16] INFO root fetch - processPackages [spikeinterface]: Remove: archive file [/home/abi/fetcher/tmp/spikeinterface-0.99.1.tar.gz]
+[2024-04-06 12:08:16] INFO root fetch - main [MainThread]: End processing [spikeinterface]: success
+[2024-04-06 12:08:16] INFO root fetch - main [MainThread]: Store serial: [22647181]
