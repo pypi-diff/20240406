@@ -24138,3 +24138,9 @@ EOFError: EOF read where object expected
 [2024-04-06 22:33:59] INFO root fetch - processPackages [copyparty]: Remove: archive file [/home/abi/fetcher/tmp/copyparty-1.9.9.tar.gz]
 [2024-04-06 22:33:59] INFO root fetch - main [MainThread]: End processing [copyparty]: success
 [2024-04-06 22:33:59] INFO root fetch - main [MainThread]: Store serial: [22650888]
+[2024-04-06 22:36:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650888]
+[2024-04-06 22:36:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 22:36:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: winpwnage
+[2024-04-06 22:36:09] WARNING root fetch - processPackages [winpwnage]: Skipping, unable to determine old version
+[2024-04-06 22:36:09] INFO root fetch - main [MainThread]: End processing [winpwnage] error
+[2024-04-06 22:36:09] INFO root fetch - main [MainThread]: Store serial: [22650896]
