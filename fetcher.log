@@ -15808,3 +15808,21 @@ EOFError: EOF read where object expected
 [2024-04-06 14:28:51] INFO root fetch - processPackages [direnumerate]: Remove: archive file [/home/abi/fetcher/tmp/direnumerate-3.2rc2.tar.gz]
 [2024-04-06 14:28:51] INFO root fetch - main [MainThread]: End processing [direnumerate]: success
 [2024-04-06 14:28:51] INFO root fetch - main [MainThread]: Store serial: [22647805]
+[2024-04-06 14:30:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647805]
+[2024-04-06 14:30:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 14:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-theme-css-loader
+[2024-04-06 14:30:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: octomy-common
+[2024-04-06 14:30:59] INFO root fetch - processPackages [django-theme-css-loader]: New version: [1.0.0] Old Version: [0.1.0]
+[2024-04-06 14:30:59] INFO root fetch - processPackages [octomy-common]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-06 14:30:59] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/eb/dd/88b072353284ce6314aae91d68f21360402212eb6e92b2016efd86fb3f5c/octomy-common-2.0.0.tar.gz
+[2024-04-06 14:30:59] ERROR root fetch - processPackages [django-theme-css-loader]: Unable to fetch info: No such project/version 'django-theme-css-loader' 0.1.0
+[2024-04-06 14:30:59] INFO root fetch - main [MainThread]: End processing [django-theme-css-loader] error
+[2024-04-06 14:30:59] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 14:31:00] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/16/b3/5e402bbf4c65626af7ae6cf863111c7cb38da1b309e576d7ddf841802e1c/octomy-common-2.0.1.tar.gz
+[2024-04-06 14:31:00] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 14:31:00] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-06 14:31:00] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.0.tar.gz tmp/octomy-common-2.0.1.tar.gz --markdown 20240406/o/octomy-common/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-06 14:31:00] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.0.tar.gz]
+[2024-04-06 14:31:00] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.1.tar.gz]
+[2024-04-06 14:31:00] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-06 14:31:00] INFO root fetch - main [MainThread]: Store serial: [22647810]
