@@ -10707,3 +10707,17 @@
 [2024-04-06 07:51:51] INFO root fetch - processPackages [napatrackmater]: Remove: archive file [/home/abi/fetcher/tmp/napatrackmater-5.0.9.tar.gz]
 [2024-04-06 07:51:51] INFO root fetch - main [MainThread]: End processing [napatrackmater]: success
 [2024-04-06 07:51:51] INFO root fetch - main [MainThread]: Store serial: [22645931]
+[2024-04-06 07:53:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645931]
+[2024-04-06 07:54:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 07:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cronken
+[2024-04-06 07:54:00] INFO root fetch - processPackages [cronken]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-06 07:54:00] INFO root fetch - processPackages [cronken]: Downloading https://files.pythonhosted.org/packages/6a/58/0758663c88af8e2d179a73cf92a56edb7fade829e568c864bc1a98a46b27/cronken-0.1.6.tar.gz
+[2024-04-06 07:54:01] WARNING root fetch - processPackages [cronken]: Timeout reached during download
+[2024-04-06 07:54:01] INFO root fetch - processPackages [cronken]: Downloading https://files.pythonhosted.org/packages/d9/e2/2e7d2c8fdc3a569f478d71f0a5a92d6e340774ac758cf40a1396819d2ede/cronken-0.1.7.tar.gz
+[2024-04-06 07:54:01] WARNING root fetch - processPackages [cronken]: Timeout reached during download
+[2024-04-06 07:54:01] INFO root fetch - processPackages [cronken]: executing diffoscope
+[2024-04-06 07:54:01] INFO root fetch - processPackages [cronken]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cronken-0.1.6.tar.gz tmp/cronken-0.1.7.tar.gz --markdown 20240406/c/cronken/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-06 07:54:01] INFO root fetch - processPackages [cronken]: Remove: archive file [/home/abi/fetcher/tmp/cronken-0.1.6.tar.gz]
+[2024-04-06 07:54:01] INFO root fetch - processPackages [cronken]: Remove: archive file [/home/abi/fetcher/tmp/cronken-0.1.7.tar.gz]
+[2024-04-06 07:54:01] INFO root fetch - main [MainThread]: End processing [cronken]: success
+[2024-04-06 07:54:01] INFO root fetch - main [MainThread]: Store serial: [22645934]
