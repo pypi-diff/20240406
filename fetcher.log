@@ -9004,3 +9004,24 @@
 [2024-04-06 05:50:58] INFO root fetch - processPackages [cryosieve]: Remove: archive file [/home/abi/fetcher/tmp/cryosieve-1.2.5.tar.gz]
 [2024-04-06 05:50:58] INFO root fetch - main [MainThread]: End processing [cryosieve]: success
 [2024-04-06 05:50:58] INFO root fetch - main [MainThread]: Store serial: [22645319]
+[2024-04-06 05:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645319]
+[2024-04-06 05:53:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 05:55:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645319]
+[2024-04-06 05:55:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 05:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CNVoyant
+[2024-04-06 05:55:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipython-openai
+[2024-04-06 05:55:13] INFO root fetch - processPackages [ipython-openai]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 05:55:13] INFO root fetch - processPackages [CNVoyant]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-04-06 05:55:13] INFO root fetch - processPackages [ipython-openai]: Downloading https://files.pythonhosted.org/packages/2a/f7/0ec1c9f9567c19b498b4e433594005f08bd2c43a8c48c84df56e3d6f7740/ipython_openai-0.0.3.tar.gz
+[2024-04-06 05:55:13] WARNING root fetch - processPackages [ipython-openai]: Timeout reached during download
+[2024-04-06 05:55:13] INFO root fetch - processPackages [CNVoyant]: Downloading https://files.pythonhosted.org/packages/d4/04/3ef9b6da1ef92446209acb09a07bf28c31c1c01de4a5edc57126ada958a1/CNVoyant-1.1.3.tar.gz
+[2024-04-06 05:55:13] INFO root fetch - processPackages [ipython-openai]: Downloading https://files.pythonhosted.org/packages/ab/2c/dcb0483aef6c570f0388201fe59659d2f10a5decbfdc63d72bda9247bb44/ipython_openai-0.0.4.tar.gz
+[2024-04-06 05:55:13] WARNING root fetch - processPackages [CNVoyant]: Skipping package: exceeds size limit 24006536>=10485760
+[2024-04-06 05:55:13] INFO root fetch - main [MainThread]: End processing [CNVoyant] error
+[2024-04-06 05:55:13] WARNING root fetch - processPackages [ipython-openai]: Timeout reached during download
+[2024-04-06 05:55:13] INFO root fetch - processPackages [ipython-openai]: executing diffoscope
+[2024-04-06 05:55:13] INFO root fetch - processPackages [ipython-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipython_openai-0.0.3.tar.gz tmp/ipython_openai-0.0.4.tar.gz --markdown 20240406/i/ipython-openai/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 05:55:14] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.3.tar.gz]
+[2024-04-06 05:55:14] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.4.tar.gz]
+[2024-04-06 05:55:14] INFO root fetch - main [MainThread]: End processing [ipython-openai]: success
+[2024-04-06 05:55:14] INFO root fetch - main [MainThread]: Store serial: [22645326]
