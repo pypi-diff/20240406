@@ -13930,3 +13930,20 @@
 [2024-04-06 12:31:55] WARNING root fetch - processPackages [chessview]: Skipping, unable to determine old version
 [2024-04-06 12:31:55] INFO root fetch - main [MainThread]: End processing [chessview] error
 [2024-04-06 12:31:55] INFO root fetch - main [MainThread]: Store serial: [22647237]
+[2024-04-06 12:33:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647237]
+[2024-04-06 12:34:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 12:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-espresso
+[2024-04-06 12:34:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Flask-Alchemist
+[2024-04-06 12:34:04] INFO root fetch - processPackages [Flask-Alchemist]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 12:34:04] ERROR root fetch - processPackages [python-espresso]: Unable to get metadata: No such project 'python-espresso'
+[2024-04-06 12:34:04] INFO root fetch - main [MainThread]: End processing [python-espresso] error
+[2024-04-06 12:34:04] INFO root fetch - processPackages [Flask-Alchemist]: Downloading https://files.pythonhosted.org/packages/87/08/a62d09bf830d2e6ada46d0f12666d1a509080ac9cb6511d7c3b87df52cfa/flask_alchemist-1.0.0.tar.gz
+[2024-04-06 12:34:04] WARNING root fetch - processPackages [Flask-Alchemist]: Timeout reached during download
+[2024-04-06 12:34:04] INFO root fetch - processPackages [Flask-Alchemist]: Downloading https://files.pythonhosted.org/packages/21/c0/6978ba10cbac6b51670e7e2218d88c988d74940c7b0c686bb68d698e2c0b/flask_alchemist-1.0.1.tar.gz
+[2024-04-06 12:34:04] WARNING root fetch - processPackages [Flask-Alchemist]: Timeout reached during download
+[2024-04-06 12:34:04] INFO root fetch - processPackages [Flask-Alchemist]: executing diffoscope
+[2024-04-06 12:34:04] INFO root fetch - processPackages [Flask-Alchemist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_alchemist-1.0.0.tar.gz tmp/flask_alchemist-1.0.1.tar.gz --markdown 20240406/F/Flask-Alchemist/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 12:34:05] INFO root fetch - processPackages [Flask-Alchemist]: Remove: archive file [/home/abi/fetcher/tmp/flask_alchemist-1.0.0.tar.gz]
+[2024-04-06 12:34:05] INFO root fetch - processPackages [Flask-Alchemist]: Remove: archive file [/home/abi/fetcher/tmp/flask_alchemist-1.0.1.tar.gz]
+[2024-04-06 12:34:05] INFO root fetch - main [MainThread]: End processing [Flask-Alchemist]: success
+[2024-04-06 12:34:05] INFO root fetch - main [MainThread]: Store serial: [22647245]
