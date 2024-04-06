@@ -13468,3 +13468,28 @@
 [2024-04-06 11:44:20] INFO root fetch - processPackages [mlx-image]: Remove: archive file [/home/abi/fetcher/tmp/mlx_image-0.1.7.tar.gz]
 [2024-04-06 11:44:20] INFO root fetch - main [MainThread]: End processing [mlx-image]: success
 [2024-04-06 11:44:20] INFO root fetch - main [MainThread]: Store serial: [22647102]
+[2024-04-06 11:46:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647102]
+[2024-04-06 11:46:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 11:46:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plover-french-extended-stenotype
+[2024-04-06 11:46:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DeepTorchBlocks
+[2024-04-06 11:46:29] INFO root fetch - processPackages [DeepTorchBlocks]: New version: [0.0.1a0] Old Version: [0.0.1]
+[2024-04-06 11:46:29] INFO root fetch - processPackages [plover-french-extended-stenotype]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 11:46:29] INFO root fetch - processPackages [plover-french-extended-stenotype]: Downloading https://files.pythonhosted.org/packages/bc/8f/036c36b942039aa93f2cd5a47740f7d78cf1c57fb7f3b9ef47d34dd35714/plover-french-extended-stenotype-0.1.4.tar.gz
+[2024-04-06 11:46:29] INFO root fetch - processPackages [DeepTorchBlocks]: Downloading https://files.pythonhosted.org/packages/d1/e2/4bcc527160b1fc75f4f4f15552899efd098e81bcdb1a67ae2277e546f852/DeepTorchBlocks-0.0.1.tar.gz
+[2024-04-06 11:46:29] WARNING root fetch - processPackages [plover-french-extended-stenotype]: Timeout reached during download
+[2024-04-06 11:46:29] WARNING root fetch - processPackages [DeepTorchBlocks]: Timeout reached during download
+[2024-04-06 11:46:29] INFO root fetch - processPackages [plover-french-extended-stenotype]: Downloading https://files.pythonhosted.org/packages/f5/cd/447d3e71e91d3728f8946cb3df34bf1070886e21ac774265a930c5e8b859/plover-french-extended-stenotype-0.1.5.tar.gz
+[2024-04-06 11:46:29] INFO root fetch - processPackages [DeepTorchBlocks]: Downloading https://files.pythonhosted.org/packages/08/91/54909c4d76268c1885619a2a1332f3f2dc547661475c9f90874aa096ad01/DeepTorchBlocks-0.0.1a0.tar.gz
+[2024-04-06 11:46:29] WARNING root fetch - processPackages [plover-french-extended-stenotype]: Timeout reached during download
+[2024-04-06 11:46:29] INFO root fetch - processPackages [plover-french-extended-stenotype]: executing diffoscope
+[2024-04-06 11:46:29] INFO root fetch - processPackages [plover-french-extended-stenotype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plover-french-extended-stenotype-0.1.4.tar.gz tmp/plover-french-extended-stenotype-0.1.5.tar.gz --markdown 20240406/p/plover-french-extended-stenotype/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-06 11:46:29] WARNING root fetch - processPackages [DeepTorchBlocks]: Timeout reached during download
+[2024-04-06 11:46:29] INFO root fetch - processPackages [DeepTorchBlocks]: executing diffoscope
+[2024-04-06 11:46:29] INFO root fetch - processPackages [DeepTorchBlocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DeepTorchBlocks-0.0.1.tar.gz tmp/DeepTorchBlocks-0.0.1a0.tar.gz --markdown 20240406/D/DeepTorchBlocks/0.0.1-0.0.1a0/diff.md --exclude *.pyd
+[2024-04-06 11:46:30] INFO root fetch - processPackages [plover-french-extended-stenotype]: Remove: archive file [/home/abi/fetcher/tmp/plover-french-extended-stenotype-0.1.4.tar.gz]
+[2024-04-06 11:46:30] INFO root fetch - processPackages [plover-french-extended-stenotype]: Remove: archive file [/home/abi/fetcher/tmp/plover-french-extended-stenotype-0.1.5.tar.gz]
+[2024-04-06 11:46:30] INFO root fetch - main [MainThread]: End processing [plover-french-extended-stenotype]: success
+[2024-04-06 11:46:30] INFO root fetch - processPackages [DeepTorchBlocks]: Remove: archive file [/home/abi/fetcher/tmp/DeepTorchBlocks-0.0.1.tar.gz]
+[2024-04-06 11:46:30] INFO root fetch - processPackages [DeepTorchBlocks]: Remove: archive file [/home/abi/fetcher/tmp/DeepTorchBlocks-0.0.1a0.tar.gz]
+[2024-04-06 11:46:30] INFO root fetch - main [MainThread]: End processing [DeepTorchBlocks]: success
+[2024-04-06 11:46:30] INFO root fetch - main [MainThread]: Store serial: [22647108]
