@@ -12379,3 +12379,24 @@
 [2024-04-06 10:11:07] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240406-cp39-cp39-win_amd64.whl.zip]
 [2024-04-06 10:11:07] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
 [2024-04-06 10:11:07] INFO root fetch - main [MainThread]: Store serial: [22646641]
+[2024-04-06 10:13:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646641]
+[2024-04-06 10:13:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 10:15:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646641]
+[2024-04-06 10:15:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 10:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: garminconnect
+[2024-04-06 10:15:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lalsuite
+[2024-04-06 10:15:21] INFO root fetch - processPackages [garminconnect]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 10:15:21] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2024-04-06 10:15:21] INFO root fetch - processPackages [garminconnect]: Downloading https://files.pythonhosted.org/packages/3a/61/012c7620687d2b620d03dceeb2d305e7c15d240e14f1af0da903a8e3c4da/garminconnect-0.2.8.tar.gz
+[2024-04-06 10:15:21] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-06 10:15:21] WARNING root fetch - processPackages [garminconnect]: Timeout reached during download
+[2024-04-06 10:15:22] INFO root fetch - processPackages [garminconnect]: Downloading https://files.pythonhosted.org/packages/6e/b5/7b40c5fd9890103fdaf57db1f0d2a0f95c00ec98e4ae7b739a16ee5c7420/garminconnect-0.2.9.tar.gz
+[2024-04-06 10:15:22] WARNING root fetch - processPackages [garminconnect]: Timeout reached during download
+[2024-04-06 10:15:22] INFO root fetch - processPackages [garminconnect]: executing diffoscope
+[2024-04-06 10:15:22] INFO root fetch - processPackages [garminconnect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garminconnect-0.2.8.tar.gz tmp/garminconnect-0.2.9.tar.gz --markdown 20240406/g/garminconnect/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 10:15:22] INFO root fetch - processPackages [garminconnect]: Remove: archive file [/home/abi/fetcher/tmp/garminconnect-0.2.8.tar.gz]
+[2024-04-06 10:15:22] INFO root fetch - processPackages [garminconnect]: Remove: archive file [/home/abi/fetcher/tmp/garminconnect-0.2.9.tar.gz]
+[2024-04-06 10:15:22] INFO root fetch - main [MainThread]: End processing [garminconnect]: success
+[2024-04-06 10:15:23] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2024-04-06 10:15:23] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2024-04-06 10:15:23] INFO root fetch - main [MainThread]: Store serial: [22646656]
