@@ -11055,3 +11055,22 @@
 [2024-04-06 08:22:17] INFO root fetch - processPackages [ak-gpapi]: Remove: archive file [/home/abi/fetcher/tmp/ak-gpapi-3.0.3.tar.gz]
 [2024-04-06 08:22:17] INFO root fetch - main [MainThread]: End processing [ak-gpapi]: success
 [2024-04-06 08:22:17] INFO root fetch - main [MainThread]: Store serial: [22646051]
+[2024-04-06 08:24:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646051]
+[2024-04-06 08:24:25] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 08:26:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646051]
+[2024-04-06 08:26:30] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 08:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: download-tiktok-no-watermark
+[2024-04-06 08:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modgeosys-graph-algorithms
+[2024-04-06 08:26:31] INFO root fetch - processPackages [modgeosys-graph-algorithms]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-06 08:26:31] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/0c/e4/633d0766bf735b3a6c2aa4264d8218123c07391f9e5e15063fab48f7bc38/modgeosys_graph_algorithms-0.1.3.tar.gz
+[2024-04-06 08:26:31] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Skipping, unable to determine old version
+[2024-04-06 08:26:31] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark] error
+[2024-04-06 08:26:31] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-06 08:26:31] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Downloading https://files.pythonhosted.org/packages/01/14/1217f2da93e57c9898c9e883cfc17122aa18c2680626d3394e2be49e276a/modgeosys_graph_algorithms-0.1.4.tar.gz
+[2024-04-06 08:26:31] WARNING root fetch - processPackages [modgeosys-graph-algorithms]: Timeout reached during download
+[2024-04-06 08:26:31] INFO root fetch - processPackages [modgeosys-graph-algorithms]: executing diffoscope
+[2024-04-06 08:26:31] INFO root fetch - processPackages [modgeosys-graph-algorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modgeosys_graph_algorithms-0.1.3.tar.gz tmp/modgeosys_graph_algorithms-0.1.4.tar.gz --markdown 20240406/m/modgeosys-graph-algorithms/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 08:26:32] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.1.3.tar.gz]
+[2024-04-06 08:26:32] INFO root fetch - processPackages [modgeosys-graph-algorithms]: Remove: archive file [/home/abi/fetcher/tmp/modgeosys_graph_algorithms-0.1.4.tar.gz]
+[2024-04-06 08:26:32] INFO root fetch - main [MainThread]: End processing [modgeosys-graph-algorithms]: success
+[2024-04-06 08:26:32] INFO root fetch - main [MainThread]: Store serial: [22646068]
