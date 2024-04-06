@@ -12400,3 +12400,20 @@
 [2024-04-06 10:15:23] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
 [2024-04-06 10:15:23] INFO root fetch - main [MainThread]: End processing [lalsuite] error
 [2024-04-06 10:15:23] INFO root fetch - main [MainThread]: Store serial: [22646656]
+[2024-04-06 10:17:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646656]
+[2024-04-06 10:17:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 10:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iris-pex-embedded-python
+[2024-04-06 10:17:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PencilSketch
+[2024-04-06 10:17:31] INFO root fetch - processPackages [iris-pex-embedded-python]: New version: [2.3.9] Old Version: [2.3.8]
+[2024-04-06 10:17:31] INFO root fetch - processPackages [iris-pex-embedded-python]: Downloading https://files.pythonhosted.org/packages/0a/1e/871a26044c71126b987a44b3ec89c4b39caccaf6ac0bb646f27aba683927/iris_pex_embedded_python-2.3.8.tar.gz
+[2024-04-06 10:17:31] WARNING root fetch - processPackages [PencilSketch]: Skipping, unable to determine old version
+[2024-04-06 10:17:31] INFO root fetch - main [MainThread]: End processing [PencilSketch] error
+[2024-04-06 10:17:31] WARNING root fetch - processPackages [iris-pex-embedded-python]: Timeout reached during download
+[2024-04-06 10:17:31] INFO root fetch - processPackages [iris-pex-embedded-python]: Downloading https://files.pythonhosted.org/packages/1f/d9/ca808faae976325522f21347afcfc5843a9cac222c09edb7a58702c2c50b/iris_pex_embedded_python-2.3.9.tar.gz
+[2024-04-06 10:17:31] WARNING root fetch - processPackages [iris-pex-embedded-python]: Timeout reached during download
+[2024-04-06 10:17:31] INFO root fetch - processPackages [iris-pex-embedded-python]: executing diffoscope
+[2024-04-06 10:17:31] INFO root fetch - processPackages [iris-pex-embedded-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iris_pex_embedded_python-2.3.8.tar.gz tmp/iris_pex_embedded_python-2.3.9.tar.gz --markdown 20240406/i/iris-pex-embedded-python/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2024-04-06 10:17:32] INFO root fetch - processPackages [iris-pex-embedded-python]: Remove: archive file [/home/abi/fetcher/tmp/iris_pex_embedded_python-2.3.8.tar.gz]
+[2024-04-06 10:17:32] INFO root fetch - processPackages [iris-pex-embedded-python]: Remove: archive file [/home/abi/fetcher/tmp/iris_pex_embedded_python-2.3.9.tar.gz]
+[2024-04-06 10:17:32] INFO root fetch - main [MainThread]: End processing [iris-pex-embedded-python]: success
+[2024-04-06 10:17:32] INFO root fetch - main [MainThread]: Store serial: [22646673]
