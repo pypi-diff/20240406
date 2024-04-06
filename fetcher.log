@@ -15618,3 +15618,28 @@ EOFError: EOF read where object expected
 [2024-04-06 14:13:20] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.1.tar.gz]
 [2024-04-06 14:13:20] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
 [2024-04-06 14:13:20] INFO root fetch - main [MainThread]: Store serial: [22647748]
+[2024-04-06 14:15:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647748]
+[2024-04-06 14:15:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 14:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: diambra-engine
+[2024-04-06 14:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-26
+[2024-04-06 14:15:29] INFO root fetch - processPackages [diambra-engine]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-04-06 14:15:29] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.9.0] Old Version: [2.8.1]
+[2024-04-06 14:15:29] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/1b/f2/e17f4b851ef1add1681bbbbed53642471ce9c6daf26c84deaccd03cea899/diambra-engine-2.2.1.tar.gz
+[2024-04-06 14:15:29] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/57/27/c7dc7b7a6ca589c8557e2fcdfa03d98cabb52552fd18df535b3e675f7dc0/cdk8s-plus-26-2.8.1.tar.gz
+[2024-04-06 14:15:29] WARNING root fetch - processPackages [diambra-engine]: Timeout reached during download
+[2024-04-06 14:15:29] WARNING root fetch - processPackages [cdk8s-plus-26]: Timeout reached during download
+[2024-04-06 14:15:29] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/a5/4e/54c3ba5e8dbad5825180a2d1cfe6dc4850c5f682da9a4c3cf75f72214445/diambra-engine-2.2.2.tar.gz
+[2024-04-06 14:15:29] WARNING root fetch - processPackages [diambra-engine]: Timeout reached during download
+[2024-04-06 14:15:29] INFO root fetch - processPackages [diambra-engine]: executing diffoscope
+[2024-04-06 14:15:29] INFO root fetch - processPackages [diambra-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diambra-engine-2.2.1.tar.gz tmp/diambra-engine-2.2.2.tar.gz --markdown 20240406/d/diambra-engine/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2024-04-06 14:15:29] INFO root fetch - processPackages [cdk8s-plus-26]: Downloading https://files.pythonhosted.org/packages/f9/b5/db2ea94d29c01b146fcfb2e07a32393e9961c1c1f5a9a2bc2232af84a4dd/cdk8s-plus-26-2.9.0.tar.gz
+[2024-04-06 14:15:30] WARNING root fetch - processPackages [cdk8s-plus-26]: Timeout reached during download
+[2024-04-06 14:15:30] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2024-04-06 14:15:30] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.8.1.tar.gz tmp/cdk8s-plus-26-2.9.0.tar.gz --markdown 20240406/c/cdk8s-plus-26/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2024-04-06 14:15:30] INFO root fetch - processPackages [diambra-engine]: Remove: archive file [/home/abi/fetcher/tmp/diambra-engine-2.2.1.tar.gz]
+[2024-04-06 14:15:30] INFO root fetch - processPackages [diambra-engine]: Remove: archive file [/home/abi/fetcher/tmp/diambra-engine-2.2.2.tar.gz]
+[2024-04-06 14:15:30] INFO root fetch - main [MainThread]: End processing [diambra-engine]: success
+[2024-04-06 14:15:31] INFO root fetch - processPackages [cdk8s-plus-26]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-26-2.8.1.tar.gz]
+[2024-04-06 14:15:31] INFO root fetch - processPackages [cdk8s-plus-26]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-plus-26-2.9.0.tar.gz]
+[2024-04-06 14:15:31] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2024-04-06 14:15:31] INFO root fetch - main [MainThread]: Store serial: [22647754]
