@@ -23122,3 +23122,42 @@ EOFError: EOF read where object expected
 [2024-04-06 21:34:36] INFO root fetch - processPackages [cfnresponse]: Remove: archive file [/home/abi/fetcher/tmp/cfnresponse-1.1.3.tar.gz]
 [2024-04-06 21:34:36] INFO root fetch - main [MainThread]: End processing [cfnresponse]: success
 [2024-04-06 21:34:36] INFO root fetch - main [MainThread]: Store serial: [22650510]
+[2024-04-06 21:36:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650510]
+[2024-04-06 21:36:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agt-server
+[2024-04-06 21:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: learning3d
+[2024-04-06 21:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: utrc
+[2024-04-06 21:36:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: download-tiktok-no-watermark
+[2024-04-06 21:36:45] INFO root fetch - processPackages [utrc]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 21:36:45] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Skipping, unable to determine old version
+[2024-04-06 21:36:45] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark] error
+[2024-04-06 21:36:45] INFO root fetch - processPackages [learning3d]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 21:36:45] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/15/90/7ec74d32f6f70f9c23191f98c3652a2a37a3952faa57543f8a051d538303/utrc-0.0.3.tar.gz
+[2024-04-06 21:36:45] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/da/01/66b4c8d0166e0f7124deaa752ec3fd4e27e7f10e8930ac1446b6f79dc7d8/learning3d-0.0.6.tar.gz
+[2024-04-06 21:36:45] INFO root fetch - processPackages [agt-server]: New version: [1.2.6] Old Version: [1.2.5]
+[2024-04-06 21:36:46] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/10/f3/d29f3c58bdb66e845db394eb5d2dab95c5acbd53e545d48f769f2fe31a14/agt_server-1.2.5.tar.gz
+[2024-04-06 21:36:46] WARNING root fetch - processPackages [utrc]: Timeout reached during download
+[2024-04-06 21:36:46] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 21:36:46] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/98/67/18bb692e7db0a445bf909f051852957d74ddd534c7cfb432470fc0900998/utrc-0.0.4.tar.gz
+[2024-04-06 21:36:46] WARNING root fetch - processPackages [agt-server]: Timeout reached during download
+[2024-04-06 21:36:46] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/37/f5/6d8b1e07852c3e4633cd8cc44ea6059ad82f9339247054793a82e9e553ea/learning3d-0.0.7.tar.gz
+[2024-04-06 21:36:46] WARNING root fetch - processPackages [utrc]: Timeout reached during download
+[2024-04-06 21:36:46] INFO root fetch - processPackages [utrc]: executing diffoscope
+[2024-04-06 21:36:46] INFO root fetch - processPackages [utrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utrc-0.0.3.tar.gz tmp/utrc-0.0.4.tar.gz --markdown 20240406/u/utrc/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 21:36:46] INFO root fetch - processPackages [agt-server]: Downloading https://files.pythonhosted.org/packages/f4/c2/2cf7487c0308adb6c44449727b871fef0d3efa7d0b81bb4167ca94758cc5/agt_server-1.2.6.tar.gz
+[2024-04-06 21:36:46] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 21:36:46] INFO root fetch - processPackages [learning3d]: executing diffoscope
+[2024-04-06 21:36:46] INFO root fetch - processPackages [learning3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning3d-0.0.6.tar.gz tmp/learning3d-0.0.7.tar.gz --markdown 20240406/l/learning3d/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 21:36:46] WARNING root fetch - processPackages [agt-server]: Timeout reached during download
+[2024-04-06 21:36:46] INFO root fetch - processPackages [agt-server]: executing diffoscope
+[2024-04-06 21:36:46] INFO root fetch - processPackages [agt-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agt_server-1.2.5.tar.gz tmp/agt_server-1.2.6.tar.gz --markdown 20240406/a/agt-server/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2024-04-06 21:36:46] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.3.tar.gz]
+[2024-04-06 21:36:46] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.4.tar.gz]
+[2024-04-06 21:36:46] INFO root fetch - main [MainThread]: End processing [utrc]: success
+[2024-04-06 21:36:47] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.6.tar.gz]
+[2024-04-06 21:36:47] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.7.tar.gz]
+[2024-04-06 21:36:47] INFO root fetch - main [MainThread]: End processing [learning3d]: success
+[2024-04-06 21:36:48] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.5.tar.gz]
+[2024-04-06 21:36:48] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.6.tar.gz]
+[2024-04-06 21:36:48] INFO root fetch - main [MainThread]: End processing [agt-server]: success
+[2024-04-06 21:36:48] INFO root fetch - main [MainThread]: Store serial: [22650520]
