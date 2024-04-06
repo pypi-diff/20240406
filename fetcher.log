@@ -15128,3 +15128,9 @@ EOFError: EOF read where object expected
 [2024-04-06 13:40:39] INFO root fetch - processPackages [tftui]: Remove: archive file [/home/abi/fetcher/tmp/tftui-0.9.tar.gz]
 [2024-04-06 13:40:39] INFO root fetch - main [MainThread]: End processing [tftui]: success
 [2024-04-06 13:40:39] INFO root fetch - main [MainThread]: Store serial: [22647588]
+[2024-04-06 13:42:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647588]
+[2024-04-06 13:42:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 13:42:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: LughaatNLP
+[2024-04-06 13:42:48] WARNING root fetch - processPackages [LughaatNLP]: Skipping, unable to determine old version
+[2024-04-06 13:42:48] INFO root fetch - main [MainThread]: End processing [LughaatNLP] error
+[2024-04-06 13:42:48] INFO root fetch - main [MainThread]: Store serial: [22647593]
