@@ -21443,3 +21443,59 @@ EOFError: EOF read where object expected
 [2024-04-06 20:09:02] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-0.2.0.tar.gz]
 [2024-04-06 20:09:02] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
 [2024-04-06 20:09:02] INFO root fetch - main [MainThread]: Store serial: [22649982]
+[2024-04-06 20:11:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649982]
+[2024-04-06 20:11:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dvcx
+[2024-04-06 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CnbcNews
+[2024-04-06 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CnbcNews
+[2024-04-06 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyscreeps-arena
+[2024-04-06 20:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unicodedata-reader
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: New version: [2.2] Old Version: [2.1]
+[2024-04-06 20:11:11] INFO root fetch - processPackages [unicodedata-reader]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: New version: [2.2] Old Version: [2.1]
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/cf/9d/4d74e2efa505ddfae139838bec2007c3d4e8b781425e15e9cbaed60f243b/CnbcNews-2.1.tar.gz
+[2024-04-06 20:11:11] INFO root fetch - processPackages [pyscreeps-arena]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 20:11:11] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/92/2d/bbbea9c49019588ce73a0924843d36dbf22b82e92a25dd57946a06944f1a/unicodedata-reader-0.1.7.tar.gz
+[2024-04-06 20:11:11] INFO root fetch - processPackages [dvcx]: New version: [0.72.2] Old Version: [0.72.1]
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/cf/9d/4d74e2efa505ddfae139838bec2007c3d4e8b781425e15e9cbaed60f243b/CnbcNews-2.1.tar.gz
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 20:11:11] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/c5/b1/8292299cae71977950db03b9fd25232d4405091d7ed0590a568571f371fe/pyscreeps-arena-0.1.8.tar.gz
+[2024-04-06 20:11:11] INFO root fetch - processPackages [dvcx]: Downloading https://files.pythonhosted.org/packages/51/f2/b81d5eafba0fd790828a464ab9df4e052345ffdc8dcd08f5e7c0dd5a5547/dvcx-0.72.1.tar.gz
+[2024-04-06 20:11:11] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/b3/5d/734ed64c27aa0f2dc6ed80fec9fe103a29ae25f1a94b3dbfbc459798c4f1/unicodedata_reader-0.2.0.tar.gz
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/a5/7b/79b318a35ef75938bf5b655a916db856acd148a73959df5163289308f561/CnbcNews-2.2.tar.gz
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/a5/7b/79b318a35ef75938bf5b655a916db856acd148a73959df5163289308f561/CnbcNews-2.2.tar.gz
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [dvcx]: Timeout reached during download
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 20:11:11] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-06 20:11:11] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata-reader-0.1.7.tar.gz tmp/unicodedata_reader-0.2.0.tar.gz --markdown 20240406/u/unicodedata-reader/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [pyscreeps-arena]: Timeout reached during download
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-2.1.tar.gz tmp/CnbcNews-2.2.tar.gz --markdown 20240406/C/CnbcNews/2.1-2.2/diff.md --exclude *.pyd
+[2024-04-06 20:11:11] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 20:11:11] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-2.1.tar.gz tmp/CnbcNews-2.2.tar.gz --markdown 20240406/C/CnbcNews/2.1-2.2/diff.md --exclude *.pyd
+[2024-04-06 20:11:12] INFO root fetch - processPackages [dvcx]: Downloading https://files.pythonhosted.org/packages/f1/aa/a3759afcf5bd62b05cb1a487a380446497aa20477ecd6ee5a73a84981ecf/dvcx-0.72.2.tar.gz
+[2024-04-06 20:11:12] INFO root fetch - processPackages [pyscreeps-arena]: Downloading https://files.pythonhosted.org/packages/8d/64/60d19e221d5c72437543c5f504c88d32093797848354c0dd1c4da297ceca/pyscreeps-arena-0.1.9.tar.gz
+[2024-04-06 20:11:12] WARNING root fetch - processPackages [dvcx]: Timeout reached during download
+[2024-04-06 20:11:12] INFO root fetch - processPackages [dvcx]: executing diffoscope
+[2024-04-06 20:11:12] INFO root fetch - processPackages [dvcx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvcx-0.72.1.tar.gz tmp/dvcx-0.72.2.tar.gz --markdown 20240406/d/dvcx/0.72.1-0.72.2/diff.md --exclude *.pyd
+[2024-04-06 20:11:12] WARNING root fetch - processPackages [pyscreeps-arena]: Timeout reached during download
+[2024-04-06 20:11:12] INFO root fetch - processPackages [pyscreeps-arena]: executing diffoscope
+[2024-04-06 20:11:12] INFO root fetch - processPackages [pyscreeps-arena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscreeps-arena-0.1.8.tar.gz tmp/pyscreeps-arena-0.1.9.tar.gz --markdown 20240406/p/pyscreeps-arena/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 20:11:12] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-2.1.tar.gz]
+[2024-04-06 20:11:12] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-2.2.tar.gz]
+[2024-04-06 20:11:12] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 20:11:12] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata-reader-0.1.7.tar.gz]
+[2024-04-06 20:11:12] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-0.2.0.tar.gz]
+[2024-04-06 20:11:12] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-06 20:11:12] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 20:11:12] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.8.tar.gz]
+[2024-04-06 20:11:12] INFO root fetch - processPackages [pyscreeps-arena]: Remove: archive file [/home/abi/fetcher/tmp/pyscreeps-arena-0.1.9.tar.gz]
+[2024-04-06 20:11:12] INFO root fetch - main [MainThread]: End processing [pyscreeps-arena]: success
+[2024-04-06 20:11:13] INFO root fetch - processPackages [dvcx]: Remove: archive file [/home/abi/fetcher/tmp/dvcx-0.72.1.tar.gz]
+[2024-04-06 20:11:13] INFO root fetch - processPackages [dvcx]: Remove: archive file [/home/abi/fetcher/tmp/dvcx-0.72.2.tar.gz]
+[2024-04-06 20:11:13] INFO root fetch - main [MainThread]: End processing [dvcx]: success
+[2024-04-06 20:11:13] INFO root fetch - main [MainThread]: Store serial: [22649999]
