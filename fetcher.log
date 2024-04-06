@@ -15401,3 +15401,47 @@ EOFError: EOF read where object expected
 [2024-04-06 13:58:05] INFO root fetch - processPackages [xraygpt]: Remove: archive file [/home/abi/fetcher/tmp/xraygpt-0.1.1.dev1.tar.gz]
 [2024-04-06 13:58:05] INFO root fetch - main [MainThread]: End processing [xraygpt]: success
 [2024-04-06 13:58:05] INFO root fetch - main [MainThread]: Store serial: [22647682]
+[2024-04-06 14:00:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647682]
+[2024-04-06 14:00:13] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 14:02:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647684]
+[2024-04-06 14:02:19] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 14:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secvision-proxysupport-linux-x64
+[2024-04-06 14:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: progress-table
+[2024-04-06 14:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xraygpt
+[2024-04-06 14:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gg-resource-wizard
+[2024-04-06 14:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: codist
+[2024-04-06 14:02:19] INFO root fetch - processPackages [xraygpt]: New version: [0.1.1.dev1] Old Version: [0.1.1.dev0]
+[2024-04-06 14:02:19] WARNING root fetch - processPackages [secvision-proxysupport-linux-x64]: Skipping, unable to determine old version
+[2024-04-06 14:02:19] INFO root fetch - main [MainThread]: End processing [secvision-proxysupport-linux-x64] error
+[2024-04-06 14:02:19] INFO root fetch - processPackages [progress-table]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-06 14:02:19] INFO root fetch - processPackages [xraygpt]: Downloading https://files.pythonhosted.org/packages/b6/4f/e086c6ab876e8e19ee3a247334417d2395c3bebdfee9f355763b1dba2e60/xraygpt-0.1.1.dev0.tar.gz
+[2024-04-06 14:02:19] WARNING root fetch - processPackages [gg-resource-wizard]: Skipping, unable to determine old version
+[2024-04-06 14:02:19] INFO root fetch - main [MainThread]: End processing [gg-resource-wizard] error
+[2024-04-06 14:02:19] INFO root fetch - processPackages [codist]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 14:02:19] INFO root fetch - processPackages [progress-table]: Downloading https://files.pythonhosted.org/packages/7a/5d/f3b335934de22cc6e8743fb2b719802bf477c524ba5b3fd478783d51a51c/progress-table-1.3.0.tar.gz
+[2024-04-06 14:02:19] WARNING root fetch - processPackages [xraygpt]: Timeout reached during download
+[2024-04-06 14:02:19] INFO root fetch - processPackages [codist]: Downloading https://files.pythonhosted.org/packages/9d/c5/cf4f884e8ddbc7a6e17e452567a717697090e54bc82ecb6118147341f567/codist-0.1.1.tar.gz
+[2024-04-06 14:02:19] INFO root fetch - processPackages [xraygpt]: Downloading https://files.pythonhosted.org/packages/83/d4/e3e259a08e3473b70e86e793f5e2bb25b275324b997a120331757bb15881/xraygpt-0.1.1.dev1.tar.gz
+[2024-04-06 14:02:19] WARNING root fetch - processPackages [progress-table]: Timeout reached during download
+[2024-04-06 14:02:20] WARNING root fetch - processPackages [xraygpt]: Timeout reached during download
+[2024-04-06 14:02:20] INFO root fetch - processPackages [xraygpt]: executing diffoscope
+[2024-04-06 14:02:20] INFO root fetch - processPackages [xraygpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xraygpt-0.1.1.dev0.tar.gz tmp/xraygpt-0.1.1.dev1.tar.gz --markdown 20240406/x/xraygpt/0.1.1.dev0-0.1.1.dev1/diff.md --exclude *.pyd
+[2024-04-06 14:02:20] WARNING root fetch - processPackages [codist]: Timeout reached during download
+[2024-04-06 14:02:20] INFO root fetch - processPackages [progress-table]: Downloading https://files.pythonhosted.org/packages/b8/a0/b946feaa96bac16b1f1c1115a51329197e46db2547bcae2263c46f45d7db/progress-table-1.3.1.tar.gz
+[2024-04-06 14:02:20] INFO root fetch - processPackages [codist]: Downloading https://files.pythonhosted.org/packages/4a/d1/074b6594a96ec202af95b096c9daef8fcdddba85b63bbd28ba760161176c/codist-0.1.2.tar.gz
+[2024-04-06 14:02:20] WARNING root fetch - processPackages [progress-table]: Timeout reached during download
+[2024-04-06 14:02:20] INFO root fetch - processPackages [progress-table]: executing diffoscope
+[2024-04-06 14:02:20] INFO root fetch - processPackages [progress-table]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/progress-table-1.3.0.tar.gz tmp/progress-table-1.3.1.tar.gz --markdown 20240406/p/progress-table/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2024-04-06 14:02:20] WARNING root fetch - processPackages [codist]: Timeout reached during download
+[2024-04-06 14:02:20] INFO root fetch - processPackages [codist]: executing diffoscope
+[2024-04-06 14:02:20] INFO root fetch - processPackages [codist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codist-0.1.1.tar.gz tmp/codist-0.1.2.tar.gz --markdown 20240406/c/codist/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 14:02:20] INFO root fetch - processPackages [xraygpt]: Remove: archive file [/home/abi/fetcher/tmp/xraygpt-0.1.1.dev0.tar.gz]
+[2024-04-06 14:02:20] INFO root fetch - processPackages [xraygpt]: Remove: archive file [/home/abi/fetcher/tmp/xraygpt-0.1.1.dev1.tar.gz]
+[2024-04-06 14:02:20] INFO root fetch - main [MainThread]: End processing [xraygpt]: success
+[2024-04-06 14:02:20] INFO root fetch - processPackages [progress-table]: Remove: archive file [/home/abi/fetcher/tmp/progress-table-1.3.0.tar.gz]
+[2024-04-06 14:02:20] INFO root fetch - processPackages [progress-table]: Remove: archive file [/home/abi/fetcher/tmp/progress-table-1.3.1.tar.gz]
+[2024-04-06 14:02:20] INFO root fetch - main [MainThread]: End processing [progress-table]: success
+[2024-04-06 14:02:20] INFO root fetch - processPackages [codist]: Remove: archive file [/home/abi/fetcher/tmp/codist-0.1.1.tar.gz]
+[2024-04-06 14:02:20] INFO root fetch - processPackages [codist]: Remove: archive file [/home/abi/fetcher/tmp/codist-0.1.2.tar.gz]
+[2024-04-06 14:02:20] INFO root fetch - main [MainThread]: End processing [codist]: success
+[2024-04-06 14:02:20] INFO root fetch - main [MainThread]: Store serial: [22647701]
