@@ -17486,3 +17486,50 @@ EOFError: EOF read where object expected
 [2024-04-06 16:13:56] INFO root fetch - processPackages [prem-utils]: Remove: archive file [/home/abi/fetcher/tmp/prem-utils-0.0.8.tar.gz]
 [2024-04-06 16:13:56] INFO root fetch - main [MainThread]: End processing [prem-utils]: success
 [2024-04-06 16:13:56] INFO root fetch - main [MainThread]: Store serial: [22648583]
+[2024-04-06 16:16:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648583]
+[2024-04-06 16:16:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ai-model-base
+[2024-04-06 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auth-middleware
+[2024-04-06 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: etrc
+[2024-04-06 16:16:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qupython
+[2024-04-06 16:16:04] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-06 16:16:04] INFO root fetch - processPackages [ai-model-base]: New version: [0.0.1.dev3] Old Version: [0.0.1.dev2]
+[2024-04-06 16:16:04] INFO root fetch - processPackages [etrc]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 16:16:04] INFO root fetch - processPackages [qupython]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-04-06 16:16:04] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/3a/93/733a6cc76c7ae2ada272f73d4ccca070b92c08ec1603504e5bcab01e7c3e/auth_middleware-0.1.3.tar.gz
+[2024-04-06 16:16:04] INFO root fetch - processPackages [ai-model-base]: Downloading https://files.pythonhosted.org/packages/aa/dd/fe86059a5743e6b7d86eb56066480e9581db67f6577267e9c352c3a90cf8/ai_model_base-0.0.1.dev2.tar.gz
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [ai-model-base]: Timeout reached during download
+[2024-04-06 16:16:05] INFO root fetch - processPackages [qupython]: Downloading https://files.pythonhosted.org/packages/ad/b3/b0b366ce055382410c9c9b693e5dd86e9e087dc354060c565aaa8e38a73b/qupython-0.0.1.tar.gz
+[2024-04-06 16:16:05] INFO root fetch - processPackages [etrc]: Downloading https://files.pythonhosted.org/packages/3e/d8/54c8d53559b3d73dca07a4bd165692b6a4c406e3affb0a94d2b6d18b2935/etrc-0.0.8.tar.gz
+[2024-04-06 16:16:05] INFO root fetch - processPackages [ai-model-base]: Downloading https://files.pythonhosted.org/packages/b4/60/c3adb58dad833301a365f2a35a6dbec88edfc733be98fae024ddbd89fa0c/ai_model_base-0.0.1.dev3.tar.gz
+[2024-04-06 16:16:05] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/6e/35/1f50682b43409a2b37e31d8c9e218022e7eb0e2bb1ebfe59d77f1a712396/auth_middleware-0.1.4.tar.gz
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [qupython]: Timeout reached during download
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [etrc]: Timeout reached during download
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [ai-model-base]: Timeout reached during download
+[2024-04-06 16:16:05] INFO root fetch - processPackages [ai-model-base]: executing diffoscope
+[2024-04-06 16:16:05] INFO root fetch - processPackages [ai-model-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_model_base-0.0.1.dev2.tar.gz tmp/ai_model_base-0.0.1.dev3.tar.gz --markdown 20240406/a/ai-model-base/0.0.1.dev2-0.0.1.dev3/diff.md --exclude *.pyd
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 16:16:05] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-06 16:16:05] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.3.tar.gz tmp/auth_middleware-0.1.4.tar.gz --markdown 20240406/a/auth-middleware/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 16:16:05] INFO root fetch - processPackages [qupython]: Downloading https://files.pythonhosted.org/packages/6e/51/24b7fe22478861234a46c4c29fafb978577ffe1d47b8f2c02ac58ba6b718/qupython-0.1.0.tar.gz
+[2024-04-06 16:16:05] INFO root fetch - processPackages [etrc]: Downloading https://files.pythonhosted.org/packages/d5/83/0539ff753ac74be3b9dd276365fd4061b16211d7c5dbd77193f92b242d12/etrc-0.0.9.tar.gz
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [qupython]: Timeout reached during download
+[2024-04-06 16:16:05] INFO root fetch - processPackages [qupython]: executing diffoscope
+[2024-04-06 16:16:05] INFO root fetch - processPackages [qupython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qupython-0.0.1.tar.gz tmp/qupython-0.1.0.tar.gz --markdown 20240406/q/qupython/0.0.1-0.1.0/diff.md --exclude *.pyd
+[2024-04-06 16:16:05] WARNING root fetch - processPackages [etrc]: Timeout reached during download
+[2024-04-06 16:16:05] INFO root fetch - processPackages [etrc]: executing diffoscope
+[2024-04-06 16:16:05] INFO root fetch - processPackages [etrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etrc-0.0.8.tar.gz tmp/etrc-0.0.9.tar.gz --markdown 20240406/e/etrc/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 16:16:05] INFO root fetch - processPackages [ai-model-base]: Remove: archive file [/home/abi/fetcher/tmp/ai_model_base-0.0.1.dev2.tar.gz]
+[2024-04-06 16:16:05] INFO root fetch - processPackages [ai-model-base]: Remove: archive file [/home/abi/fetcher/tmp/ai_model_base-0.0.1.dev3.tar.gz]
+[2024-04-06 16:16:05] INFO root fetch - main [MainThread]: End processing [ai-model-base]: success
+[2024-04-06 16:16:06] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.3.tar.gz]
+[2024-04-06 16:16:06] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.4.tar.gz]
+[2024-04-06 16:16:06] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-06 16:16:06] INFO root fetch - processPackages [qupython]: Remove: archive file [/home/abi/fetcher/tmp/qupython-0.0.1.tar.gz]
+[2024-04-06 16:16:06] INFO root fetch - processPackages [qupython]: Remove: archive file [/home/abi/fetcher/tmp/qupython-0.1.0.tar.gz]
+[2024-04-06 16:16:06] INFO root fetch - main [MainThread]: End processing [qupython]: success
+[2024-04-06 16:16:06] INFO root fetch - processPackages [etrc]: Remove: archive file [/home/abi/fetcher/tmp/etrc-0.0.8.tar.gz]
+[2024-04-06 16:16:06] INFO root fetch - processPackages [etrc]: Remove: archive file [/home/abi/fetcher/tmp/etrc-0.0.9.tar.gz]
+[2024-04-06 16:16:06] INFO root fetch - main [MainThread]: End processing [etrc]: success
+[2024-04-06 16:16:06] INFO root fetch - main [MainThread]: Store serial: [22648599]
