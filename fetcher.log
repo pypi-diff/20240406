@@ -12845,3 +12845,31 @@
 [2024-04-06 10:52:07] INFO root fetch - processPackages [vpo]: Remove: archive file [/home/abi/fetcher/tmp/vpo-2.0.tar.gz]
 [2024-04-06 10:52:07] INFO root fetch - main [MainThread]: End processing [vpo]: success
 [2024-04-06 10:52:07] INFO root fetch - main [MainThread]: Store serial: [22646842]
+[2024-04-06 10:54:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646842]
+[2024-04-06 10:54:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 10:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-unravel
+[2024-04-06 10:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quarkstudio
+[2024-04-06 10:54:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-packages
+[2024-04-06 10:54:16] WARNING root fetch - processPackages [django-unravel]: Skipping, unable to determine old version
+[2024-04-06 10:54:16] INFO root fetch - processPackages [quarkstudio]: New version: [6.6.2.15] Old Version: [6.6.2.14]
+[2024-04-06 10:54:16] INFO root fetch - main [MainThread]: End processing [django-unravel] error
+[2024-04-06 10:54:16] INFO root fetch - processPackages [aws-packages]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 10:54:17] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/88/f5/8666a2c94439d1fbdbb256e538049a719cc38b5220ad5d0c490beda7e066/quarkstudio-6.6.2.14-cp312-none-win_amd64.whl
+[2024-04-06 10:54:17] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/3b/28/e22145933f135d5264e4ead3a2e8abffa7dd618c0eb95ea8b7000699315c/aws_packages-0.0.5.tar.gz
+[2024-04-06 10:54:17] WARNING root fetch - processPackages [quarkstudio]: Timeout reached during download
+[2024-04-06 10:54:17] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 10:54:17] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/b1/fe/c7ea6837c87117372ad631e44ae114b8dfb8ec7b42d245340920593096f1/quarkstudio-6.6.2.15-cp312-none-win_amd64.whl
+[2024-04-06 10:54:17] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/7f/aa/8a8aec2991cb6af58757918e1fd3ac733765efcdb0c33189f858b23833d2/aws_packages-0.0.6-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl
+[2024-04-06 10:54:17] WARNING root fetch - processPackages [quarkstudio]: Timeout reached during download
+[2024-04-06 10:54:17] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2024-04-06 10:54:17] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.6.2.14-cp312-none-win_amd64.whl.zip tmp/quarkstudio-6.6.2.15-cp312-none-win_amd64.whl.zip --markdown 20240406/q/quarkstudio/6.6.2.14-6.6.2.15/diff.md --exclude *.pyd
+[2024-04-06 10:54:18] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.2.14-cp312-none-win_amd64.whl.zip]
+[2024-04-06 10:54:18] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.2.15-cp312-none-win_amd64.whl.zip]
+[2024-04-06 10:54:18] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
+[2024-04-06 10:54:18] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 10:54:18] INFO root fetch - processPackages [aws-packages]: executing diffoscope
+[2024-04-06 10:54:18] INFO root fetch - processPackages [aws-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_packages-0.0.5.tar.gz tmp/aws_packages-0.0.6-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl.zip --markdown 20240406/a/aws-packages/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 10:54:19] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.5.tar.gz]
+[2024-04-06 10:54:19] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.6-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl.zip]
+[2024-04-06 10:54:19] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
+[2024-04-06 10:54:19] INFO root fetch - main [MainThread]: Store serial: [22646893]
