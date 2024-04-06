@@ -10398,3 +10398,17 @@
 [2024-04-06 07:08:32] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.2.tar.gz]
 [2024-04-06 07:08:32] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
 [2024-04-06 07:08:32] INFO root fetch - main [MainThread]: Store serial: [22645818]
+[2024-04-06 07:10:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645818]
+[2024-04-06 07:10:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 07:10:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stochvolmodels
+[2024-04-06 07:10:41] INFO root fetch - processPackages [stochvolmodels]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 07:10:41] INFO root fetch - processPackages [stochvolmodels]: Downloading https://files.pythonhosted.org/packages/4f/77/3d75382966d3ede3872781cdd95d2e1ff7786d95a65028d53b427747bf10/stochvolmodels-1.0.8.tar.gz
+[2024-04-06 07:10:41] WARNING root fetch - processPackages [stochvolmodels]: Timeout reached during download
+[2024-04-06 07:10:41] INFO root fetch - processPackages [stochvolmodels]: Downloading https://files.pythonhosted.org/packages/09/67/1d529fa8573d83296ac7b4152763e1dd947fa26675ed429050a176d0272c/stochvolmodels-1.0.9.tar.gz
+[2024-04-06 07:10:42] WARNING root fetch - processPackages [stochvolmodels]: Timeout reached during download
+[2024-04-06 07:10:42] INFO root fetch - processPackages [stochvolmodels]: executing diffoscope
+[2024-04-06 07:10:42] INFO root fetch - processPackages [stochvolmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stochvolmodels-1.0.8.tar.gz tmp/stochvolmodels-1.0.9.tar.gz --markdown 20240406/s/stochvolmodels/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 07:10:42] INFO root fetch - processPackages [stochvolmodels]: Remove: archive file [/home/abi/fetcher/tmp/stochvolmodels-1.0.8.tar.gz]
+[2024-04-06 07:10:42] INFO root fetch - processPackages [stochvolmodels]: Remove: archive file [/home/abi/fetcher/tmp/stochvolmodels-1.0.9.tar.gz]
+[2024-04-06 07:10:42] INFO root fetch - main [MainThread]: End processing [stochvolmodels]: success
+[2024-04-06 07:10:42] INFO root fetch - main [MainThread]: Store serial: [22645821]
