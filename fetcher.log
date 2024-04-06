@@ -10552,3 +10552,30 @@
 [2024-04-06 07:30:26] INFO root fetch - processPackages [facebook-page-scraper]: Remove: archive file [/home/abi/fetcher/tmp/facebook_page_scraper-5.0.4.tar.gz]
 [2024-04-06 07:30:26] INFO root fetch - main [MainThread]: End processing [facebook-page-scraper]: success
 [2024-04-06 07:30:26] INFO root fetch - main [MainThread]: Store serial: [22645886]
+[2024-04-06 07:32:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645886]
+[2024-04-06 07:32:35] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 07:34:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645887]
+[2024-04-06 07:34:40] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 07:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-layui29
+[2024-04-06 07:34:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deps-manager
+[2024-04-06 07:34:41] INFO root fetch - processPackages [deps-manager]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 07:34:41] INFO root fetch - processPackages [django-layui29]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 07:34:41] INFO root fetch - processPackages [django-layui29]: Downloading https://files.pythonhosted.org/packages/2d/31/a460cb8d745ecf0ca90f5a53b6b081c329d86b234af979f1b30eba1c80b7/django_layui29-0.1.0.tar.gz
+[2024-04-06 07:34:41] INFO root fetch - processPackages [deps-manager]: Downloading https://files.pythonhosted.org/packages/38/bc/87003c969dd8d2313f0c07c89cfd647792b99b8c57b93679535ffea9f963/deps-manager-1.0.0.tar.gz
+[2024-04-06 07:34:41] WARNING root fetch - processPackages [django-layui29]: Timeout reached during download
+[2024-04-06 07:34:41] WARNING root fetch - processPackages [deps-manager]: Timeout reached during download
+[2024-04-06 07:34:41] INFO root fetch - processPackages [django-layui29]: Downloading https://files.pythonhosted.org/packages/51/49/2386a5c0415ede42228a7f788ac027c6c59829b46aeca7222fd709330fa4/django_layui29-0.1.1.tar.gz
+[2024-04-06 07:34:41] INFO root fetch - processPackages [deps-manager]: Downloading https://files.pythonhosted.org/packages/bd/37/376e46087e6ad6daed9fc9055c8f97e92c84ab21a7f50e071986d9881242/deps-manager-1.0.1.tar.gz
+[2024-04-06 07:34:41] WARNING root fetch - processPackages [django-layui29]: Timeout reached during download
+[2024-04-06 07:34:41] INFO root fetch - processPackages [django-layui29]: executing diffoscope
+[2024-04-06 07:34:41] INFO root fetch - processPackages [django-layui29]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_layui29-0.1.0.tar.gz tmp/django_layui29-0.1.1.tar.gz --markdown 20240406/d/django-layui29/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 07:34:41] WARNING root fetch - processPackages [deps-manager]: Timeout reached during download
+[2024-04-06 07:34:41] INFO root fetch - processPackages [deps-manager]: executing diffoscope
+[2024-04-06 07:34:41] INFO root fetch - processPackages [deps-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deps-manager-1.0.0.tar.gz tmp/deps-manager-1.0.1.tar.gz --markdown 20240406/d/deps-manager/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 07:34:42] INFO root fetch - processPackages [django-layui29]: Remove: archive file [/home/abi/fetcher/tmp/django_layui29-0.1.0.tar.gz]
+[2024-04-06 07:34:42] INFO root fetch - processPackages [django-layui29]: Remove: archive file [/home/abi/fetcher/tmp/django_layui29-0.1.1.tar.gz]
+[2024-04-06 07:34:42] INFO root fetch - main [MainThread]: End processing [django-layui29]: success
+[2024-04-06 07:34:42] INFO root fetch - processPackages [deps-manager]: Remove: archive file [/home/abi/fetcher/tmp/deps-manager-1.0.0.tar.gz]
+[2024-04-06 07:34:42] INFO root fetch - processPackages [deps-manager]: Remove: archive file [/home/abi/fetcher/tmp/deps-manager-1.0.1.tar.gz]
+[2024-04-06 07:34:42] INFO root fetch - main [MainThread]: End processing [deps-manager]: success
+[2024-04-06 07:34:42] INFO root fetch - main [MainThread]: Store serial: [22645898]
