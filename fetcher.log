@@ -22762,3 +22762,61 @@ EOFError: EOF read where object expected
 [2024-04-06 21:17:00] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.9.tar.gz]
 [2024-04-06 21:17:00] INFO root fetch - main [MainThread]: End processing [TokenProbs]: success
 [2024-04-06 21:17:00] INFO root fetch - main [MainThread]: Store serial: [22650383]
+[2024-04-06 21:19:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650383]
+[2024-04-06 21:19:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 21:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-06 21:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2024-04-06 21:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cvpack
+[2024-04-06 21:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: st_workflow
+[2024-04-06 21:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: afeng-py-tools
+[2024-04-06 21:19:09] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 21:19:09] INFO root fetch - processPackages [moto]: New version: [5.0.5.dev9] Old Version: [5.0.5.dev8]
+[2024-04-06 21:19:09] INFO root fetch - processPackages [cvpack]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 21:19:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.11a1712430472] Old Version: [0.0.11a1712367286]
+[2024-04-06 21:19:09] INFO root fetch - processPackages [st_workflow]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-06 21:19:09] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-06 21:19:09] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/ed/46/2a9361da84c96246dd0cc47567b9cdc7059baf5a4a390c4c1f43decbed34/moto-5.0.5.dev8.tar.gz
+[2024-04-06 21:19:09] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 21:19:09] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/57/01/c33af93befdfde96f90d54ed520d20f8249a9b6d087aa8b48431a76259fa/pulumi_kubernetes_the_hard_way-0.0.11a1712367286.tar.gz
+[2024-04-06 21:19:09] INFO root fetch - processPackages [cvpack]: Downloading https://files.pythonhosted.org/packages/3d/82/586e66b4af70e7eafba7c44d061186eda0ed9affdc97939d36f21d1f1d4e/cvpack-0.8.0.tar.gz
+[2024-04-06 21:19:09] INFO root fetch - processPackages [st_workflow]: Downloading https://files.pythonhosted.org/packages/f2/ed/8f2530c02d12bf92d453141173e09d4dbab6efd72dcfa62e3631626c2245/st_workflow-0.2.2.tar.gz
+[2024-04-06 21:19:09] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-06 21:19:09] WARNING root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Timeout reached during download
+[2024-04-06 21:19:09] WARNING root fetch - processPackages [st_workflow]: Timeout reached during download
+[2024-04-06 21:19:09] WARNING root fetch - processPackages [cvpack]: Timeout reached during download
+[2024-04-06 21:19:09] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 21:19:09] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-06 21:19:09] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240406/a/afeng-py-tools/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 21:19:10] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 21:19:10] INFO root fetch - processPackages [st_workflow]: Downloading https://files.pythonhosted.org/packages/1f/ea/9771593719084fbf071a8bb4575f73b27cc59d46d4791d88e20f19926a8a/st_workflow-0.2.3.tar.gz
+[2024-04-06 21:19:10] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/4f/9a/375abb7f5ae11ed91585c1b9eaeb3337afe199d6394cc8d1abf3a8040195/pulumi_kubernetes_the_hard_way-0.0.11a1712430472.tar.gz
+[2024-04-06 21:19:10] INFO root fetch - processPackages [cvpack]: Downloading https://files.pythonhosted.org/packages/b3/b6/e0a2f05664151c11546c2492463ba904d92eb2ccc0c9d568c86eb6c02f59/cvpack-0.9.0.tar.gz
+[2024-04-06 21:19:10] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/08/c1/f93b75265b5128856f763bdb046a348f3952cca0dc9de2e9c1268050b7ba/moto-5.0.5.dev9.tar.gz
+[2024-04-06 21:19:10] WARNING root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Timeout reached during download
+[2024-04-06 21:19:10] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-06 21:19:10] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712367286.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712430472.tar.gz --markdown 20240406/p/pulumi-kubernetes-the-hard-way/0.0.11a1712367286-0.0.11a1712430472/diff.md --exclude *.pyd
+[2024-04-06 21:19:10] WARNING root fetch - processPackages [st_workflow]: Timeout reached during download
+[2024-04-06 21:19:10] INFO root fetch - processPackages [st_workflow]: executing diffoscope
+[2024-04-06 21:19:10] INFO root fetch - processPackages [st_workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/st_workflow-0.2.2.tar.gz tmp/st_workflow-0.2.3.tar.gz --markdown 20240406/s/st_workflow/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2024-04-06 21:19:10] WARNING root fetch - processPackages [cvpack]: Timeout reached during download
+[2024-04-06 21:19:10] INFO root fetch - processPackages [cvpack]: executing diffoscope
+[2024-04-06 21:19:10] INFO root fetch - processPackages [cvpack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvpack-0.8.0.tar.gz tmp/cvpack-0.9.0.tar.gz --markdown 20240406/c/cvpack/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 21:19:10] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 21:19:10] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-06 21:19:10] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.5.dev8.tar.gz tmp/moto-5.0.5.dev9.tar.gz --markdown 20240406/m/moto/5.0.5.dev8-5.0.5.dev9/diff.md --exclude *.pyd
+[2024-04-06 21:19:10] INFO root fetch - processPackages [st_workflow]: Remove: archive file [/home/abi/fetcher/tmp/st_workflow-0.2.2.tar.gz]
+[2024-04-06 21:19:10] INFO root fetch - processPackages [st_workflow]: Remove: archive file [/home/abi/fetcher/tmp/st_workflow-0.2.3.tar.gz]
+[2024-04-06 21:19:10] INFO root fetch - main [MainThread]: End processing [st_workflow]: success
+[2024-04-06 21:19:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712367286.tar.gz]
+[2024-04-06 21:19:11] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712430472.tar.gz]
+[2024-04-06 21:19:11] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-06 21:19:11] INFO root fetch - processPackages [cvpack]: Remove: archive file [/home/abi/fetcher/tmp/cvpack-0.8.0.tar.gz]
+[2024-04-06 21:19:11] INFO root fetch - processPackages [cvpack]: Remove: archive file [/home/abi/fetcher/tmp/cvpack-0.9.0.tar.gz]
+[2024-04-06 21:19:11] INFO root fetch - main [MainThread]: End processing [cvpack]: success
+[2024-04-06 21:19:11] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-06 21:19:11] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-06 21:19:11] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-06 21:19:22] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev8.tar.gz]
+[2024-04-06 21:19:22] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
+[2024-04-06 21:19:22] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-06 21:19:22] INFO root fetch - main [MainThread]: Store serial: [22650398]
