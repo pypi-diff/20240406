@@ -7531,3 +7531,17 @@
 [2024-04-06 03:49:00] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.1.dev0.tar.gz]
 [2024-04-06 03:49:00] INFO root fetch - main [MainThread]: End processing [keras-nlp]: success
 [2024-04-06 03:49:00] INFO root fetch - main [MainThread]: Store serial: [22644810]
+[2024-04-06 03:51:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644810]
+[2024-04-06 03:51:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 03:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ABSQL
+[2024-04-06 03:51:09] INFO root fetch - processPackages [ABSQL]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-06 03:51:09] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/98/9f/bee8214e456118bfad6930589ed57899f975b4002cfdb8de8e2cb59e4f5a/ABSQL-0.5.0.tar.gz
+[2024-04-06 03:51:09] WARNING root fetch - processPackages [ABSQL]: Timeout reached during download
+[2024-04-06 03:51:09] INFO root fetch - processPackages [ABSQL]: Downloading https://files.pythonhosted.org/packages/27/46/f0cdd830e7dbbd88aac1a332224e8bac0629fa36f6e92a5ef9051787997f/ABSQL-0.5.1.tar.gz
+[2024-04-06 03:51:09] WARNING root fetch - processPackages [ABSQL]: Timeout reached during download
+[2024-04-06 03:51:09] INFO root fetch - processPackages [ABSQL]: executing diffoscope
+[2024-04-06 03:51:09] INFO root fetch - processPackages [ABSQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ABSQL-0.5.0.tar.gz tmp/ABSQL-0.5.1.tar.gz --markdown 20240406/A/ABSQL/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-06 03:51:10] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/ABSQL-0.5.0.tar.gz]
+[2024-04-06 03:51:10] INFO root fetch - processPackages [ABSQL]: Remove: archive file [/home/abi/fetcher/tmp/ABSQL-0.5.1.tar.gz]
+[2024-04-06 03:51:10] INFO root fetch - main [MainThread]: End processing [ABSQL]: success
+[2024-04-06 03:51:10] INFO root fetch - main [MainThread]: Store serial: [22644810]
