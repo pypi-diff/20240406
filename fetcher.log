@@ -23554,3 +23554,39 @@ EOFError: EOF read where object expected
 [2024-04-06 21:56:50] INFO root fetch - processPackages [rustyrs]: Remove: archive file [/home/abi/fetcher/tmp/rustyrs-0.3.3-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
 [2024-04-06 21:56:50] INFO root fetch - main [MainThread]: End processing [rustyrs]: success
 [2024-04-06 21:56:50] INFO root fetch - main [MainThread]: Store serial: [22650640]
+[2024-04-06 21:58:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650640]
+[2024-04-06 21:58:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 21:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-ballisticcalc
+[2024-04-06 21:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vulcan-logger
+[2024-04-06 21:58:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: download-tiktok-no-watermark
+[2024-04-06 21:58:59] INFO root fetch - processPackages [download-tiktok-no-watermark]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-06 21:58:59] INFO root fetch - processPackages [vulcan-logger]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-04-06 21:58:59] INFO root fetch - processPackages [py-ballisticcalc]: New version: [2.0.0b5] Old Version: [2.0.0b4]
+[2024-04-06 21:59:00] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/8a/7d/fef366bd9ab8024e4235dcbd8029b8d62b7765515d0ca8fa409fb8a0011d/download_tiktok_no_watermark-0.2.6.tar.gz
+[2024-04-06 21:59:00] INFO root fetch - processPackages [py-ballisticcalc]: Downloading https://files.pythonhosted.org/packages/10/07/26234d17b20dc0794ca5ed4312d8b40be9608c45f2d80875b3b57fbf0c3b/py_ballisticcalc-2.0.0b4.tar.gz
+[2024-04-06 21:59:00] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:59:00] WARNING root fetch - processPackages [py-ballisticcalc]: Timeout reached during download
+[2024-04-06 21:59:00] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/6c/43/823d760ff902bfca00b9f54ff91b050d92f37688a5003e228ade0e6d0e3d/vulcan-logger-1.3.4.tar.gz
+[2024-04-06 21:59:00] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 21:59:00] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/df/17/b72dc0f2bf532461e03088205c07d7a0de79c50594199dc52919472ee6a6/download_tiktok_no_watermark-0.2.7.tar.gz
+[2024-04-06 21:59:00] INFO root fetch - processPackages [py-ballisticcalc]: Downloading https://files.pythonhosted.org/packages/98/10/8b39088678c4c3cf0a9e82e67ecf3fe173744010d1600332ff4d38b90106/py_ballisticcalc-2.0.0b5.tar.gz
+[2024-04-06 21:59:00] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:59:00] INFO root fetch - processPackages [download-tiktok-no-watermark]: executing diffoscope
+[2024-04-06 21:59:00] INFO root fetch - processPackages [download-tiktok-no-watermark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/download_tiktok_no_watermark-0.2.6.tar.gz tmp/download_tiktok_no_watermark-0.2.7.tar.gz --markdown 20240406/d/download-tiktok-no-watermark/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2024-04-06 21:59:00] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/43/59/67d9425dcb6d2943307e89f66dcf92517a3e7a7ffc723bda7b7dea31abdd/vulcan-logger-1.3.5.tar.gz
+[2024-04-06 21:59:00] WARNING root fetch - processPackages [py-ballisticcalc]: Timeout reached during download
+[2024-04-06 21:59:00] INFO root fetch - processPackages [py-ballisticcalc]: executing diffoscope
+[2024-04-06 21:59:00] INFO root fetch - processPackages [py-ballisticcalc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_ballisticcalc-2.0.0b4.tar.gz tmp/py_ballisticcalc-2.0.0b5.tar.gz --markdown 20240406/p/py-ballisticcalc/2.0.0b4-2.0.0b5/diff.md --exclude *.pyd
+[2024-04-06 21:59:00] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 21:59:00] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-06 21:59:00] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.4.tar.gz tmp/vulcan-logger-1.3.5.tar.gz --markdown 20240406/v/vulcan-logger/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2024-04-06 21:59:01] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.6.tar.gz]
+[2024-04-06 21:59:01] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.7.tar.gz]
+[2024-04-06 21:59:01] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark]: success
+[2024-04-06 21:59:01] INFO root fetch - processPackages [py-ballisticcalc]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc-2.0.0b4.tar.gz]
+[2024-04-06 21:59:01] INFO root fetch - processPackages [py-ballisticcalc]: Remove: archive file [/home/abi/fetcher/tmp/py_ballisticcalc-2.0.0b5.tar.gz]
+[2024-04-06 21:59:01] INFO root fetch - main [MainThread]: End processing [py-ballisticcalc]: success
+[2024-04-06 21:59:01] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.4.tar.gz]
+[2024-04-06 21:59:01] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.5.tar.gz]
+[2024-04-06 21:59:01] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-06 21:59:01] INFO root fetch - main [MainThread]: Store serial: [22650650]
