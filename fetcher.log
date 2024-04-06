@@ -10250,3 +10250,48 @@
 [2024-04-06 06:57:36] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.5.tar.gz]
 [2024-04-06 06:57:36] INFO root fetch - main [MainThread]: End processing [lbt-grasshopper]: success
 [2024-04-06 06:57:36] INFO root fetch - main [MainThread]: Store serial: [22645763]
+[2024-04-06 06:59:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645763]
+[2024-04-06 06:59:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 06:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-openupgrade-scripts
+[2024-04-06 06:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-openupgrade-scripts
+[2024-04-06 06:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-openupgrade-scripts
+[2024-04-06 06:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test-RAG-X
+[2024-04-06 06:59:45] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.1] Old Version: [17.0.1.0.1]
+[2024-04-06 06:59:45] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.1] Old Version: [17.0.1.0.1]
+[2024-04-06 06:59:45] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ac/89/1dbbab632b9797a344253e7b7ce222a549a0f9008ea4e6090bd23e63f4a1/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl
+[2024-04-06 06:59:45] INFO root fetch - processPackages [test-RAG-X]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-06 06:59:45] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: New version: [14.0.1.0.2.dev99] Old Version: [14.0.1.0.2.dev95]
+[2024-04-06 06:59:45] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ac/89/1dbbab632b9797a344253e7b7ce222a549a0f9008ea4e6090bd23e63f4a1/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl
+[2024-04-06 06:59:45] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 06:59:45] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 06:59:45] INFO root fetch - processPackages [test-RAG-X]: Downloading https://files.pythonhosted.org/packages/c0/fd/ada3f5323793639ade5799c6b604bb760f7e3e68f9f077db2ba0eccaeb04/test_RAG_X-0.1.2.tar.gz
+[2024-04-06 06:59:45] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ec/50/ce82e83016d56e83f3ba41393c3470ef868ae1581c3f47640932504291c8/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev95-py3-none-any.whl
+[2024-04-06 06:59:45] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/db/05/04688d4f82370e4bae4a14ef6020e82e09ade6c98c3acef20837d8590431/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/db/05/04688d4f82370e4bae4a14ef6020e82e09ade6c98c3acef20837d8590431/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl
+[2024-04-06 06:59:46] WARNING root fetch - processPackages [test-RAG-X]: Timeout reached during download
+[2024-04-06 06:59:46] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-openupgrade-scripts/17.0.1.0.1-17.0.1.0.1.1/diff.md --exclude *.pyd
+[2024-04-06 06:59:46] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-openupgrade-scripts/17.0.1.0.1-17.0.1.0.1.1/diff.md --exclude *.pyd
+[2024-04-06 06:59:46] WARNING root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 06:59:46] INFO root fetch - processPackages [test-RAG-X]: Downloading https://files.pythonhosted.org/packages/da/f5/1c1d6fa2cb8586aa826d2c4f5102a19205e809e3ad03071be7b0f7ec67c7/test_RAG_X-0.1.3.tar.gz
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/d0/8c/a24d16c65bf9fe5ae4605a1657606542a2bb75c0ac9281be45aa9cb0464d/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev99-py3-none-any.whl
+[2024-04-06 06:59:46] WARNING root fetch - processPackages [test-RAG-X]: Timeout reached during download
+[2024-04-06 06:59:46] INFO root fetch - processPackages [test-RAG-X]: executing diffoscope
+[2024-04-06 06:59:46] INFO root fetch - processPackages [test-RAG-X]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_RAG_X-0.1.2.tar.gz tmp/test_RAG_X-0.1.3.tar.gz --markdown 20240406/t/test-RAG-X/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-06 06:59:46] WARNING root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: executing diffoscope
+[2024-04-06 06:59:46] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev95-py3-none-any.whl.zip tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev99-py3-none-any.whl.zip --markdown 20240406/o/odoo14-addon-openupgrade-scripts/14.0.1.0.2.dev95-14.0.1.0.2.dev99/diff.md --exclude *.pyd
+[2024-04-06 06:59:47] INFO root fetch - processPackages [test-RAG-X]: Remove: archive file [/home/abi/fetcher/tmp/test_RAG_X-0.1.2.tar.gz]
+[2024-04-06 06:59:47] INFO root fetch - processPackages [test-RAG-X]: Remove: archive file [/home/abi/fetcher/tmp/test_RAG_X-0.1.3.tar.gz]
+[2024-04-06 06:59:47] INFO root fetch - main [MainThread]: End processing [test-RAG-X]: success
+[2024-04-06 06:59:48] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-06 06:59:48] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-06 06:59:48] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-04-06 06:59:48] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-04-06 06:59:48] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev95-py3-none-any.whl.zip]
+[2024-04-06 06:59:48] INFO root fetch - processPackages [odoo14-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_openupgrade_scripts-14.0.1.0.2.dev99-py3-none-any.whl.zip]
+[2024-04-06 06:59:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-openupgrade-scripts]: success
+[2024-04-06 06:59:48] INFO root fetch - main [MainThread]: Store serial: [22645780]
