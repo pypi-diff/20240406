@@ -23590,3 +23590,59 @@ EOFError: EOF read where object expected
 [2024-04-06 21:59:01] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.5.tar.gz]
 [2024-04-06 21:59:01] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
 [2024-04-06 21:59:01] INFO root fetch - main [MainThread]: Store serial: [22650650]
+[2024-04-06 22:01:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650650]
+[2024-04-06 22:01:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sbcli-jm
+[2024-04-06 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dtrc
+[2024-04-06 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asyncpow
+[2024-04-06 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PygameToolsBox
+[2024-04-06 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tree-sitter-wgsl-bevy
+[2024-04-06 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymasscode
+[2024-04-06 22:01:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: monsgrams
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [pymasscode]: Skipping, unable to determine old version
+[2024-04-06 22:01:10] INFO root fetch - main [MainThread]: End processing [pymasscode] error
+[2024-04-06 22:01:10] INFO root fetch - processPackages [PygameToolsBox]: New version: [1.0.8] Old Version: [1.0.7]
+[2024-04-06 22:01:10] INFO root fetch - processPackages [dtrc]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [tree-sitter-wgsl-bevy]: Skipping, unable to determine old version
+[2024-04-06 22:01:10] INFO root fetch - main [MainThread]: End processing [tree-sitter-wgsl-bevy] error
+[2024-04-06 22:01:10] INFO root fetch - processPackages [asyncpow]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-04-06 22:01:10] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/d1/a4/fd947818410e05a3db54d9c6525f0306d07eee9d13ce6edc3399e3252ad5/PygameToolsBox-1.0.7.tar.gz
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [sbcli-jm]: Skipping, unable to determine old version
+[2024-04-06 22:01:10] INFO root fetch - main [MainThread]: End processing [sbcli-jm] error
+[2024-04-06 22:01:10] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/f1/0c/69a647344e93636f5b396d6026a6266f33d122fa494136f395bc5801f945/dtrc-0.0.7.tar.gz
+[2024-04-06 22:01:10] INFO root fetch - processPackages [monsgrams]: New version: [1.2] Old Version: [1.1]
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [dtrc]: Timeout reached during download
+[2024-04-06 22:01:10] INFO root fetch - processPackages [asyncpow]: Downloading https://files.pythonhosted.org/packages/de/6d/38a28bc0e9a5a70ffdb502767e7c35c2bf24f5109e93fb766a63f7aa3ba8/asyncpow-0.2.3.tar.gz
+[2024-04-06 22:01:10] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/84/76/09893e2bb8c9673a5a810aa33d1f3e2fad5691566cdc67af1e456f5df742/dtrc-0.0.8.tar.gz
+[2024-04-06 22:01:10] INFO root fetch - processPackages [monsgrams]: Downloading https://files.pythonhosted.org/packages/1e/f9/3c6f10d0bca8b473a0f6f3814ed34122a987853dd683c4e9ce4d225a6ffa/monsgrams-1.1.tar.gz
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [asyncpow]: Timeout reached during download
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [dtrc]: Timeout reached during download
+[2024-04-06 22:01:10] INFO root fetch - processPackages [dtrc]: executing diffoscope
+[2024-04-06 22:01:10] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/24/ff/85d3e93c40dce53b0a2ce6a820af106f9596b94113a36afcf96c44ccea2b/PygameToolsBox-1.0.8.tar.gz
+[2024-04-06 22:01:10] INFO root fetch - processPackages [dtrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtrc-0.0.7.tar.gz tmp/dtrc-0.0.8.tar.gz --markdown 20240406/d/dtrc/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [monsgrams]: Timeout reached during download
+[2024-04-06 22:01:10] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-06 22:01:10] INFO root fetch - processPackages [PygameToolsBox]: executing diffoscope
+[2024-04-06 22:01:10] INFO root fetch - processPackages [PygameToolsBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PygameToolsBox-1.0.7.tar.gz tmp/PygameToolsBox-1.0.8.tar.gz --markdown 20240406/P/PygameToolsBox/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2024-04-06 22:01:10] INFO root fetch - processPackages [asyncpow]: Downloading https://files.pythonhosted.org/packages/3f/d6/8ab6d4e1f4220aa65fd7be3807b2f7b1579ee50714fca33b6b67e6f143c7/asyncpow-0.2.4.tar.gz
+[2024-04-06 22:01:11] WARNING root fetch - processPackages [asyncpow]: Timeout reached during download
+[2024-04-06 22:01:11] INFO root fetch - processPackages [asyncpow]: executing diffoscope
+[2024-04-06 22:01:11] INFO root fetch - processPackages [asyncpow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncpow-0.2.3.tar.gz tmp/asyncpow-0.2.4.tar.gz --markdown 20240406/a/asyncpow/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2024-04-06 22:01:11] INFO root fetch - processPackages [monsgrams]: Downloading https://files.pythonhosted.org/packages/07/36/c0644fea566337c53ca043b5da45d92eff87a1411e7d7d03bd9da2b78649/monsgrams-1.2.tar.gz
+[2024-04-06 22:01:11] WARNING root fetch - processPackages [monsgrams]: Timeout reached during download
+[2024-04-06 22:01:11] INFO root fetch - processPackages [monsgrams]: executing diffoscope
+[2024-04-06 22:01:11] INFO root fetch - processPackages [monsgrams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monsgrams-1.1.tar.gz tmp/monsgrams-1.2.tar.gz --markdown 20240406/m/monsgrams/1.1-1.2/diff.md --exclude *.pyd
+[2024-04-06 22:01:11] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.7.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.8.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - main [MainThread]: End processing [dtrc]: success
+[2024-04-06 22:01:11] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.7.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.8.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
+[2024-04-06 22:01:11] INFO root fetch - processPackages [asyncpow]: Remove: archive file [/home/abi/fetcher/tmp/asyncpow-0.2.3.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - processPackages [asyncpow]: Remove: archive file [/home/abi/fetcher/tmp/asyncpow-0.2.4.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - main [MainThread]: End processing [asyncpow]: success
+[2024-04-06 22:01:11] INFO root fetch - processPackages [monsgrams]: Remove: archive file [/home/abi/fetcher/tmp/monsgrams-1.1.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - processPackages [monsgrams]: Remove: archive file [/home/abi/fetcher/tmp/monsgrams-1.2.tar.gz]
+[2024-04-06 22:01:11] INFO root fetch - main [MainThread]: End processing [monsgrams]: success
+[2024-04-06 22:01:11] INFO root fetch - main [MainThread]: Store serial: [22650679]
