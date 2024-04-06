@@ -22720,3 +22720,20 @@ EOFError: EOF read where object expected
 [2024-04-06 21:12:40] INFO root fetch - processPackages [plotly3d]: Remove: archive file [/home/abi/fetcher/tmp/plotly3d-0.3.8.tar.gz]
 [2024-04-06 21:12:40] INFO root fetch - main [MainThread]: End processing [plotly3d]: success
 [2024-04-06 21:12:40] INFO root fetch - main [MainThread]: Store serial: [22650372]
+[2024-04-06 21:14:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650372]
+[2024-04-06 21:14:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 21:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FFATS
+[2024-04-06 21:14:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plotly3d
+[2024-04-06 21:14:49] INFO root fetch - processPackages [plotly3d]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-04-06 21:14:49] WARNING root fetch - processPackages [FFATS]: Skipping, unable to determine old version
+[2024-04-06 21:14:49] INFO root fetch - main [MainThread]: End processing [FFATS] error
+[2024-04-06 21:14:49] INFO root fetch - processPackages [plotly3d]: Downloading https://files.pythonhosted.org/packages/30/19/3ef023369feddc1b5746462857bd82804e192398f792ddbd6c058e4a5838/plotly3d-0.3.7.tar.gz
+[2024-04-06 21:14:49] WARNING root fetch - processPackages [plotly3d]: Timeout reached during download
+[2024-04-06 21:14:49] INFO root fetch - processPackages [plotly3d]: Downloading https://files.pythonhosted.org/packages/da/41/a886301baf26309ed678143c18f47df2e34f2b6525aed166d280b16e11ab/plotly3d-0.3.8.tar.gz
+[2024-04-06 21:14:49] WARNING root fetch - processPackages [plotly3d]: Timeout reached during download
+[2024-04-06 21:14:49] INFO root fetch - processPackages [plotly3d]: executing diffoscope
+[2024-04-06 21:14:49] INFO root fetch - processPackages [plotly3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plotly3d-0.3.7.tar.gz tmp/plotly3d-0.3.8.tar.gz --markdown 20240406/p/plotly3d/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2024-04-06 21:14:50] INFO root fetch - processPackages [plotly3d]: Remove: archive file [/home/abi/fetcher/tmp/plotly3d-0.3.7.tar.gz]
+[2024-04-06 21:14:50] INFO root fetch - processPackages [plotly3d]: Remove: archive file [/home/abi/fetcher/tmp/plotly3d-0.3.8.tar.gz]
+[2024-04-06 21:14:50] INFO root fetch - main [MainThread]: End processing [plotly3d]: success
+[2024-04-06 21:14:50] INFO root fetch - main [MainThread]: Store serial: [22650377]
