@@ -15988,3 +15988,42 @@ EOFError: EOF read where object expected
 [2024-04-06 14:46:17] INFO root fetch - processPackages [yamlscript]: Remove: archive file [/home/abi/fetcher/tmp/yamlscript-0.1.52.tar.gz]
 [2024-04-06 14:46:17] INFO root fetch - main [MainThread]: End processing [yamlscript]: success
 [2024-04-06 14:46:17] INFO root fetch - main [MainThread]: Store serial: [22647858]
+[2024-04-06 14:48:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647858]
+[2024-04-06 14:48:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 14:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydmt
+[2024-04-06 14:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anonymous-chatgpt
+[2024-04-06 14:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apt-mirror
+[2024-04-06 14:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrapegraphai
+[2024-04-06 14:48:26] INFO root fetch - processPackages [pydmt]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 14:48:26] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/90/d0/4a9b7c76e70b0b2ed97f243e5439c1246e88995dbf72126376727a1b8f55/pydmt-0.3.8.tar.gz
+[2024-04-06 14:48:26] WARNING root fetch - processPackages [anonymous-chatgpt]: Skipping, unable to determine old version
+[2024-04-06 14:48:26] INFO root fetch - main [MainThread]: End processing [anonymous-chatgpt] error
+[2024-04-06 14:48:26] INFO root fetch - processPackages [scrapegraphai]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 14:48:26] INFO root fetch - processPackages [apt-mirror]: New version: [4] Old Version: [3]
+[2024-04-06 14:48:26] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:48:26] INFO root fetch - processPackages [apt-mirror]: Downloading https://files.pythonhosted.org/packages/22/6a/fd4b229ec64f08265100d521f4cd00fe9d6748836b035fe066d427537016/apt-mirror-3.tar.gz
+[2024-04-06 14:48:26] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/1e/2b/051893dcdd09566d51c200b39ee85f34d8cc6db1f436aea805dac9ccfb98/scrapegraphai-0.0.8.tar.gz
+[2024-04-06 14:48:26] INFO root fetch - processPackages [pydmt]: Downloading https://files.pythonhosted.org/packages/de/12/29caefaa8dd66e68e2a1419873d4e3b8ea2960a4b4ee1c70730da957ca00/pydmt-0.3.9.tar.gz
+[2024-04-06 14:48:26] WARNING root fetch - processPackages [scrapegraphai]: Timeout reached during download
+[2024-04-06 14:48:26] WARNING root fetch - processPackages [apt-mirror]: Timeout reached during download
+[2024-04-06 14:48:26] WARNING root fetch - processPackages [pydmt]: Timeout reached during download
+[2024-04-06 14:48:26] INFO root fetch - processPackages [pydmt]: executing diffoscope
+[2024-04-06 14:48:26] INFO root fetch - processPackages [pydmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydmt-0.3.8.tar.gz tmp/pydmt-0.3.9.tar.gz --markdown 20240406/p/pydmt/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 14:48:26] INFO root fetch - processPackages [scrapegraphai]: Downloading https://files.pythonhosted.org/packages/b6/f0/b712d898b82aecb6362f2ded28ec2827006f284228da102746567d169661/scrapegraphai-0.0.9.tar.gz
+[2024-04-06 14:48:26] INFO root fetch - processPackages [apt-mirror]: Downloading https://files.pythonhosted.org/packages/c3/d9/0b8c2f237fa213aaeba967425272029ba7bc2aaa16962f0092b947b94295/apt-mirror-4.tar.gz
+[2024-04-06 14:48:27] WARNING root fetch - processPackages [apt-mirror]: Timeout reached during download
+[2024-04-06 14:48:27] INFO root fetch - processPackages [apt-mirror]: executing diffoscope
+[2024-04-06 14:48:27] INFO root fetch - processPackages [apt-mirror]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apt-mirror-3.tar.gz tmp/apt-mirror-4.tar.gz --markdown 20240406/a/apt-mirror/3-4/diff.md --exclude *.pyd
+[2024-04-06 14:48:27] WARNING root fetch - processPackages [scrapegraphai]: Timeout reached during download
+[2024-04-06 14:48:27] INFO root fetch - processPackages [scrapegraphai]: executing diffoscope
+[2024-04-06 14:48:27] INFO root fetch - processPackages [scrapegraphai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapegraphai-0.0.8.tar.gz tmp/scrapegraphai-0.0.9.tar.gz --markdown 20240406/s/scrapegraphai/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 14:48:27] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.8.tar.gz]
+[2024-04-06 14:48:27] INFO root fetch - processPackages [pydmt]: Remove: archive file [/home/abi/fetcher/tmp/pydmt-0.3.9.tar.gz]
+[2024-04-06 14:48:27] INFO root fetch - main [MainThread]: End processing [pydmt]: success
+[2024-04-06 14:48:27] INFO root fetch - processPackages [apt-mirror]: Remove: archive file [/home/abi/fetcher/tmp/apt-mirror-3.tar.gz]
+[2024-04-06 14:48:27] INFO root fetch - processPackages [apt-mirror]: Remove: archive file [/home/abi/fetcher/tmp/apt-mirror-4.tar.gz]
+[2024-04-06 14:48:27] INFO root fetch - main [MainThread]: End processing [apt-mirror]: success
+[2024-04-06 14:48:27] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.0.8.tar.gz]
+[2024-04-06 14:48:27] INFO root fetch - processPackages [scrapegraphai]: Remove: archive file [/home/abi/fetcher/tmp/scrapegraphai-0.0.9.tar.gz]
+[2024-04-06 14:48:27] INFO root fetch - main [MainThread]: End processing [scrapegraphai]: success
+[2024-04-06 14:48:27] INFO root fetch - main [MainThread]: Store serial: [22647874]
