@@ -16746,3 +16746,31 @@ EOFError: EOF read where object expected
 [2024-04-06 15:36:25] INFO root fetch - processPackages [Nuitka]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-2.1.5.tar.gz]
 [2024-04-06 15:36:25] INFO root fetch - main [MainThread]: End processing [Nuitka]: success
 [2024-04-06 15:36:25] INFO root fetch - main [MainThread]: Store serial: [22648250]
+[2024-04-06 15:38:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648250]
+[2024-04-06 15:38:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 15:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pixeloe
+[2024-04-06 15:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seeder
+[2024-04-06 15:38:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: embedding-optimizer
+[2024-04-06 15:38:34] INFO root fetch - processPackages [embedding-optimizer]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 15:38:34] WARNING root fetch - processPackages [seeder]: Skipping, unable to determine old version
+[2024-04-06 15:38:34] INFO root fetch - main [MainThread]: End processing [seeder] error
+[2024-04-06 15:38:34] INFO root fetch - processPackages [pixeloe]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-04-06 15:38:34] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/89/2e/2b498e8463365d4f62b7f6b1340df48bba8a2338c8c95852e530f30f0ada/embedding_optimizer-0.0.4.tar.gz
+[2024-04-06 15:38:34] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 15:38:34] INFO root fetch - processPackages [pixeloe]: Downloading https://files.pythonhosted.org/packages/11/97/bba3c3cecdf775a2af74a892b93d2a3c4e1f72b4199e501a729b2d3530cb/pixeloe-0.0.4.tar.gz
+[2024-04-06 15:38:34] WARNING root fetch - processPackages [pixeloe]: Timeout reached during download
+[2024-04-06 15:38:34] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/86/56/c7848c107b81aae474b91d198f9d8e292af29513ebc090254a609c98f770/embedding_optimizer-0.0.5.tar.gz
+[2024-04-06 15:38:34] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 15:38:34] INFO root fetch - processPackages [embedding-optimizer]: executing diffoscope
+[2024-04-06 15:38:34] INFO root fetch - processPackages [embedding-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedding_optimizer-0.0.4.tar.gz tmp/embedding_optimizer-0.0.5.tar.gz --markdown 20240406/e/embedding-optimizer/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 15:38:34] INFO root fetch - processPackages [pixeloe]: Downloading https://files.pythonhosted.org/packages/04/68/cd75c2f959f8591f11da5c41d077a1ce9208667472ce16a350c8d24eaa6b/pixeloe-0.0.6.tar.gz
+[2024-04-06 15:38:34] WARNING root fetch - processPackages [pixeloe]: Timeout reached during download
+[2024-04-06 15:38:34] INFO root fetch - processPackages [pixeloe]: executing diffoscope
+[2024-04-06 15:38:34] INFO root fetch - processPackages [pixeloe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pixeloe-0.0.4.tar.gz tmp/pixeloe-0.0.6.tar.gz --markdown 20240406/p/pixeloe/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 15:38:35] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.4.tar.gz]
+[2024-04-06 15:38:35] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.5.tar.gz]
+[2024-04-06 15:38:35] INFO root fetch - main [MainThread]: End processing [embedding-optimizer]: success
+[2024-04-06 15:38:35] INFO root fetch - processPackages [pixeloe]: Remove: archive file [/home/abi/fetcher/tmp/pixeloe-0.0.4.tar.gz]
+[2024-04-06 15:38:35] INFO root fetch - processPackages [pixeloe]: Remove: archive file [/home/abi/fetcher/tmp/pixeloe-0.0.6.tar.gz]
+[2024-04-06 15:38:35] INFO root fetch - main [MainThread]: End processing [pixeloe]: success
+[2024-04-06 15:38:35] INFO root fetch - main [MainThread]: Store serial: [22648260]
