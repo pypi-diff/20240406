@@ -20913,3 +20913,36 @@ EOFError: EOF read where object expected
 [2024-04-06 19:40:40] INFO root fetch - processPackages [geoglows]: Remove: archive file [/home/abi/fetcher/tmp/geoglows-1.0.0rc2.tar.gz]
 [2024-04-06 19:40:40] INFO root fetch - main [MainThread]: End processing [geoglows]: success
 [2024-04-06 19:40:40] INFO root fetch - main [MainThread]: Store serial: [22649813]
+[2024-04-06 19:42:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649813]
+[2024-04-06 19:42:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 19:42:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-tpu
+[2024-04-06 19:42:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CnbcNews
+[2024-04-06 19:42:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brahmai
+[2024-04-06 19:42:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: octomy-common
+[2024-04-06 19:42:49] WARNING root fetch - processPackages [brahmai]: Skipping, unable to determine old version
+[2024-04-06 19:42:49] INFO root fetch - processPackages [CnbcNews]: New version: [2.0] Old Version: [1.9]
+[2024-04-06 19:42:49] INFO root fetch - main [MainThread]: End processing [brahmai] error
+[2024-04-06 19:42:49] INFO root fetch - processPackages [octomy-common]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-04-06 19:42:49] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240406] Old Version: [2.17.0.dev20240405]
+[2024-04-06 19:42:49] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/c7/99/cf4929644403d9c9360aafe67a933b2666395e1ba0e55a27936027051885/CnbcNews-1.9.tar.gz
+[2024-04-06 19:42:49] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/28/66/e04971b44fe4a6f78f1f82b9b3e11edcec25ada8a99016a153468ecd3273/octomy-common-2.0.2.tar.gz
+[2024-04-06 19:42:49] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 19:42:49] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/e7/71/5fa09d0ae2cec4196e6a35402292a2ad89a5b401fa9390e74c26bcb4e0f9/tf_nightly_tpu-2.17.0.dev20240405-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-06 19:42:49] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 19:42:49] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/60/c8/e19c36e5f2a08365d7eac72ec816efc45c6552094654b7b457a423d76ec3/CnbcNews-2.0.tar.gz
+[2024-04-06 19:42:49] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 219399896>=10485760
+[2024-04-06 19:42:49] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-04-06 19:42:50] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/56/f4/3f5b9174c16f5e5e89390ed88e2f557f6f2084a6fe0661abb9a04dc24735/octomy-common-2.0.3.tar.gz
+[2024-04-06 19:42:50] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 19:42:50] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 19:42:50] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-1.9.tar.gz tmp/CnbcNews-2.0.tar.gz --markdown 20240406/C/CnbcNews/1.9-2.0/diff.md --exclude *.pyd
+[2024-04-06 19:42:50] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 19:42:50] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-06 19:42:50] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.2.tar.gz tmp/octomy-common-2.0.3.tar.gz --markdown 20240406/o/octomy-common/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2024-04-06 19:42:50] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-1.9.tar.gz]
+[2024-04-06 19:42:50] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-2.0.tar.gz]
+[2024-04-06 19:42:50] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 19:42:50] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.2.tar.gz]
+[2024-04-06 19:42:50] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.3.tar.gz]
+[2024-04-06 19:42:50] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-06 19:42:50] INFO root fetch - main [MainThread]: Store serial: [22649828]
