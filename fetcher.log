@@ -13366,3 +13366,17 @@
 [2024-04-06 11:35:38] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz]
 [2024-04-06 11:35:38] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
 [2024-04-06 11:35:38] INFO root fetch - main [MainThread]: Store serial: [22647072]
+[2024-04-06 11:37:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647072]
+[2024-04-06 11:37:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 11:37:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crowd-kit
+[2024-04-06 11:37:47] INFO root fetch - processPackages [crowd-kit]: New version: [1.3.0rc2] Old Version: [1.3.0rc1]
+[2024-04-06 11:37:47] INFO root fetch - processPackages [crowd-kit]: Downloading https://files.pythonhosted.org/packages/cc/86/4bf2cf802ae8d34b6c5e236080b291b2103be0263538e2e3358eee3c1436/crowd-kit-1.3.0rc1.tar.gz
+[2024-04-06 11:37:47] WARNING root fetch - processPackages [crowd-kit]: Timeout reached during download
+[2024-04-06 11:37:47] INFO root fetch - processPackages [crowd-kit]: Downloading https://files.pythonhosted.org/packages/5c/16/a7a56d38491c846c61a24694fc5d3b4415b2a082e0346197d7a997f0d30a/crowd-kit-1.3.0rc2.tar.gz
+[2024-04-06 11:37:47] WARNING root fetch - processPackages [crowd-kit]: Timeout reached during download
+[2024-04-06 11:37:47] INFO root fetch - processPackages [crowd-kit]: executing diffoscope
+[2024-04-06 11:37:47] INFO root fetch - processPackages [crowd-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crowd-kit-1.3.0rc1.tar.gz tmp/crowd-kit-1.3.0rc2.tar.gz --markdown 20240406/c/crowd-kit/1.3.0rc1-1.3.0rc2/diff.md --exclude *.pyd
+[2024-04-06 11:37:48] INFO root fetch - processPackages [crowd-kit]: Remove: archive file [/home/abi/fetcher/tmp/crowd-kit-1.3.0rc1.tar.gz]
+[2024-04-06 11:37:48] INFO root fetch - processPackages [crowd-kit]: Remove: archive file [/home/abi/fetcher/tmp/crowd-kit-1.3.0rc2.tar.gz]
+[2024-04-06 11:37:48] INFO root fetch - main [MainThread]: End processing [crowd-kit]: success
+[2024-04-06 11:37:48] INFO root fetch - main [MainThread]: Store serial: [22647076]
