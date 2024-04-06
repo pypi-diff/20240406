@@ -22820,3 +22820,83 @@ EOFError: EOF read where object expected
 [2024-04-06 21:19:22] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
 [2024-04-06 21:19:22] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-06 21:19:22] INFO root fetch - main [MainThread]: Store serial: [22650398]
+[2024-04-06 21:21:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650398]
+[2024-04-06 21:21:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: napalm-huawei-vrp
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NNSOM
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xia-framework
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: avtdl
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ScrollableContainers
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: soundtools
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyshv
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ScrollableContainers]: New version: [2.0.1a0] Old Version: [1.1.2]
+[2024-04-06 21:21:31] INFO root fetch - processPackages [xia-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 21:21:31] INFO root fetch - processPackages [NNSOM]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ScrollableContainers]: Downloading https://files.pythonhosted.org/packages/c3/3b/d70c04a3dcf03fbc645dc91bde472c59b0c125fe8df0bbe4b474c9acc8b2/ScrollableContainers-1.1.2.tar.gz
+[2024-04-06 21:21:31] INFO root fetch - processPackages [napalm-huawei-vrp]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-04-06 21:21:31] INFO root fetch - processPackages [pyshv]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-04-06 21:21:31] INFO root fetch - processPackages [avtdl]: New version: [0.9.9] Old Version: [0.9.14.2]
+[2024-04-06 21:21:31] INFO root fetch - processPackages [soundtools]: New version: [0.1.3.1] Old Version: [0.1.3]
+[2024-04-06 21:21:31] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/4d/ec/8ba56b22e3b523e06aaac69046406b53a851ada9fdfb0c21920204e3ccee/xia-framework-0.0.8.tar.gz
+[2024-04-06 21:21:31] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/c0/cf/0984379c404e4bc8f3f5f1f284770e75d8e69e5d002611263ef51c1fa48f/nnsom-1.4.7.tar.gz
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [ScrollableContainers]: Timeout reached during download
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 21:21:31] INFO root fetch - processPackages [napalm-huawei-vrp]: Downloading https://files.pythonhosted.org/packages/c4/f8/add74986039c34210b06aadec746370ebf9f8fd370284cc7d76405bb4f6e/napalm-huawei-vrp-1.1.0.tar.gz
+[2024-04-06 21:21:31] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/2a/23/efbe9e1d9c09b3cdb1001455e4872ca49f77db26e89c5b3c64ca62e2b404/avtdl-0.9.14.2.tar.gz
+[2024-04-06 21:21:31] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/d9/b1/5889d833b5073587c61a7edd3a9105491c73b00e3cb7dab45ad6e649e973/soundtools-0.1.3.tar.gz
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ScrollableContainers]: Downloading https://files.pythonhosted.org/packages/8a/49/47d46068c31d25a1afa37a62d831e7fcd5aa1611d1a2b6e5f270cbe813b8/scrollablecontainers-2.0.1a0.tar.gz
+[2024-04-06 21:21:31] INFO root fetch - processPackages [pyshv]: Downloading https://files.pythonhosted.org/packages/b2/89/508d7ee1249342e5f440c6384b42796381a529aa0725bf4862dcac396413/pyshv-0.5.0.tar.gz
+[2024-04-06 21:21:31] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/1a/aa/c1278b76a785a1c89cde0fa37b425dbc14d128e5a6542af6978710d87150/xia-framework-0.0.9.tar.gz
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [avtdl]: Timeout reached during download
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [ScrollableContainers]: Timeout reached during download
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ScrollableContainers]: executing diffoscope
+[2024-04-06 21:21:31] INFO root fetch - processPackages [ScrollableContainers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScrollableContainers-1.1.2.tar.gz tmp/scrollablecontainers-2.0.1a0.tar.gz --markdown 20240406/S/ScrollableContainers/1.1.2-2.0.1a0/diff.md --exclude *.pyd
+[2024-04-06 21:21:31] INFO root fetch - processPackages [NNSOM]: Downloading https://files.pythonhosted.org/packages/7a/ad/498ae18336802a84733c4a2b043585e6ca3584dd1deef648a27e331fd836/nnsom-1.4.8.tar.gz
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 21:21:31] INFO root fetch - processPackages [xia-framework]: executing diffoscope
+[2024-04-06 21:21:31] INFO root fetch - processPackages [xia-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-framework-0.0.8.tar.gz tmp/xia-framework-0.0.9.tar.gz --markdown 20240406/x/xia-framework/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [pyshv]: Timeout reached during download
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [soundtools]: Timeout reached during download
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [napalm-huawei-vrp]: Timeout reached during download
+[2024-04-06 21:21:31] WARNING root fetch - processPackages [NNSOM]: Timeout reached during download
+[2024-04-06 21:21:31] INFO root fetch - processPackages [NNSOM]: executing diffoscope
+[2024-04-06 21:21:31] INFO root fetch - processPackages [NNSOM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnsom-1.4.7.tar.gz tmp/nnsom-1.4.8.tar.gz --markdown 20240406/N/NNSOM/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2024-04-06 21:21:32] INFO root fetch - processPackages [pyshv]: Downloading https://files.pythonhosted.org/packages/4a/42/ec97681bf32b8a6a24278a009e174c1d31d0b1f1b11fa5c7de01a9df6e97/pyshv-0.6.0.tar.gz
+[2024-04-06 21:21:32] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/d6/ee/def1ead03f03a6dff648dd32d63179ec1c23279409b0464698c3dfc9104e/soundtools-0.1.3.1.tar.gz
+[2024-04-06 21:21:32] INFO root fetch - processPackages [napalm-huawei-vrp]: Downloading https://files.pythonhosted.org/packages/0f/36/8f900464b6478cc4e2a14f08600bf11e120c480f037d089eebd8ebea576f/napalm-huawei-vrp-1.2.0.tar.gz
+[2024-04-06 21:21:32] WARNING root fetch - processPackages [pyshv]: Timeout reached during download
+[2024-04-06 21:21:32] INFO root fetch - processPackages [pyshv]: executing diffoscope
+[2024-04-06 21:21:32] INFO root fetch - processPackages [pyshv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyshv-0.5.0.tar.gz tmp/pyshv-0.6.0.tar.gz --markdown 20240406/p/pyshv/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2024-04-06 21:21:32] INFO root fetch - processPackages [avtdl]: Downloading https://files.pythonhosted.org/packages/57/f2/1b50ba48422edde9ac3e722c752a043bd064d5f016c1630c297bb7c31684/avtdl-0.9.9.tar.gz
+[2024-04-06 21:21:32] WARNING root fetch - processPackages [soundtools]: Timeout reached during download
+[2024-04-06 21:21:32] INFO root fetch - processPackages [soundtools]: executing diffoscope
+[2024-04-06 21:21:32] INFO root fetch - processPackages [soundtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundtools-0.1.3.tar.gz tmp/soundtools-0.1.3.1.tar.gz --markdown 20240406/s/soundtools/0.1.3-0.1.3.1/diff.md --exclude *.pyd
+[2024-04-06 21:21:32] WARNING root fetch - processPackages [napalm-huawei-vrp]: Timeout reached during download
+[2024-04-06 21:21:32] INFO root fetch - processPackages [napalm-huawei-vrp]: executing diffoscope
+[2024-04-06 21:21:32] INFO root fetch - processPackages [napalm-huawei-vrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/napalm-huawei-vrp-1.1.0.tar.gz tmp/napalm-huawei-vrp-1.2.0.tar.gz --markdown 20240406/n/napalm-huawei-vrp/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2024-04-06 21:21:32] WARNING root fetch - processPackages [avtdl]: Timeout reached during download
+[2024-04-06 21:21:32] INFO root fetch - processPackages [avtdl]: executing diffoscope
+[2024-04-06 21:21:32] INFO root fetch - processPackages [avtdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avtdl-0.9.14.2.tar.gz tmp/avtdl-0.9.9.tar.gz --markdown 20240406/a/avtdl/0.9.14.2-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 21:21:32] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.8.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
+[2024-04-06 21:21:32] INFO root fetch - processPackages [ScrollableContainers]: Remove: archive file [/home/abi/fetcher/tmp/ScrollableContainers-1.1.2.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - processPackages [ScrollableContainers]: Remove: archive file [/home/abi/fetcher/tmp/scrollablecontainers-2.0.1a0.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - main [MainThread]: End processing [ScrollableContainers]: success
+[2024-04-06 21:21:32] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.7.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - processPackages [NNSOM]: Remove: archive file [/home/abi/fetcher/tmp/nnsom-1.4.8.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - main [MainThread]: End processing [NNSOM]: success
+[2024-04-06 21:21:32] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.1.3.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.1.3.1.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - main [MainThread]: End processing [soundtools]: success
+[2024-04-06 21:21:32] INFO root fetch - processPackages [napalm-huawei-vrp]: Remove: archive file [/home/abi/fetcher/tmp/napalm-huawei-vrp-1.1.0.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - processPackages [napalm-huawei-vrp]: Remove: archive file [/home/abi/fetcher/tmp/napalm-huawei-vrp-1.2.0.tar.gz]
+[2024-04-06 21:21:32] INFO root fetch - main [MainThread]: End processing [napalm-huawei-vrp]: success
+[2024-04-06 21:21:33] INFO root fetch - processPackages [pyshv]: Remove: archive file [/home/abi/fetcher/tmp/pyshv-0.5.0.tar.gz]
+[2024-04-06 21:21:33] INFO root fetch - processPackages [pyshv]: Remove: archive file [/home/abi/fetcher/tmp/pyshv-0.6.0.tar.gz]
+[2024-04-06 21:21:33] INFO root fetch - main [MainThread]: End processing [pyshv]: success
+[2024-04-06 21:21:33] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.14.2.tar.gz]
+[2024-04-06 21:21:33] INFO root fetch - processPackages [avtdl]: Remove: archive file [/home/abi/fetcher/tmp/avtdl-0.9.9.tar.gz]
+[2024-04-06 21:21:33] INFO root fetch - main [MainThread]: End processing [avtdl]: success
+[2024-04-06 21:21:33] INFO root fetch - main [MainThread]: Store serial: [22650419]
