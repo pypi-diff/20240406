@@ -11408,3 +11408,28 @@
 [2024-04-06 08:54:19] INFO root fetch - processPackages [db-analytics-tools]: Remove: archive file [/home/abi/fetcher/tmp/db_analytics_tools-0.1.4.9.tar.gz]
 [2024-04-06 08:54:19] INFO root fetch - main [MainThread]: End processing [db-analytics-tools]: success
 [2024-04-06 08:54:19] INFO root fetch - main [MainThread]: Store serial: [22646207]
+[2024-04-06 08:56:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646207]
+[2024-04-06 08:56:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 08:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aws-packages
+[2024-04-06 08:56:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Geode-Explicit
+[2024-04-06 08:56:29] INFO root fetch - processPackages [aws-packages]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 08:56:29] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/b0/90/6b1dcf417a30e1c35dc5f89272ce5fea6d48e664ade6d64e90d7103d0759/aws_packages-0.0.4.tar.gz
+[2024-04-06 08:56:29] INFO root fetch - processPackages [Geode-Explicit]: New version: [4.6.0rc1] Old Version: [4.6.0]
+[2024-04-06 08:56:29] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 08:56:29] INFO root fetch - processPackages [Geode-Explicit]: Downloading https://files.pythonhosted.org/packages/fe/6f/c2db2a0c07e85ecba9bd8e4f92303bd1e2bf4ce96195478214a2a175b8c5/Geode_Explicit-4.6.0-cp39-cp39-manylinux2014_x86_64.whl
+[2024-04-06 08:56:29] INFO root fetch - processPackages [aws-packages]: Downloading https://files.pythonhosted.org/packages/ec/58/0ebc4f64de82817bb09e696a2d22d87af0657ed3ed64b1815a777677c67b/aws_packages-0.0.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2024-04-06 08:56:29] WARNING root fetch - processPackages [Geode-Explicit]: Timeout reached during download
+[2024-04-06 08:56:30] INFO root fetch - processPackages [Geode-Explicit]: Downloading https://files.pythonhosted.org/packages/9f/e0/1098ea9758ecc7f61913371bf474a90c05b19a0fc6dba09ca30d9bbb0dd5/Geode_Explicit-4.6.0rc1-cp39-cp39-win_amd64.whl
+[2024-04-06 08:56:30] WARNING root fetch - processPackages [Geode-Explicit]: Timeout reached during download
+[2024-04-06 08:56:30] INFO root fetch - processPackages [Geode-Explicit]: executing diffoscope
+[2024-04-06 08:56:30] INFO root fetch - processPackages [Geode-Explicit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Geode_Explicit-4.6.0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/Geode_Explicit-4.6.0rc1-cp39-cp39-win_amd64.whl.zip --markdown 20240406/G/Geode-Explicit/4.6.0-4.6.0rc1/diff.md --exclude *.pyd
+[2024-04-06 08:56:30] WARNING root fetch - processPackages [aws-packages]: Timeout reached during download
+[2024-04-06 08:56:30] INFO root fetch - processPackages [aws-packages]: executing diffoscope
+[2024-04-06 08:56:30] INFO root fetch - processPackages [aws-packages]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_packages-0.0.4.tar.gz tmp/aws_packages-0.0.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20240406/a/aws-packages/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 08:56:31] INFO root fetch - processPackages [Geode-Explicit]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Explicit-4.6.0-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-04-06 08:56:31] INFO root fetch - processPackages [Geode-Explicit]: Remove: archive file [/home/abi/fetcher/tmp/Geode_Explicit-4.6.0rc1-cp39-cp39-win_amd64.whl.zip]
+[2024-04-06 08:56:31] INFO root fetch - main [MainThread]: End processing [Geode-Explicit]: success
+[2024-04-06 08:56:31] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.4.tar.gz]
+[2024-04-06 08:56:31] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip]
+[2024-04-06 08:56:31] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
+[2024-04-06 08:56:31] INFO root fetch - main [MainThread]: Store serial: [22646233]
