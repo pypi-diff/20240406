@@ -22512,3 +22512,50 @@ EOFError: EOF read where object expected
 [2024-04-06 21:01:36] INFO root fetch - processPackages [iog-randomizer]: Remove: archive file [/home/abi/fetcher/tmp/iog-randomizer-4.7.2.2.tar.gz]
 [2024-04-06 21:01:36] INFO root fetch - main [MainThread]: End processing [iog-randomizer]: success
 [2024-04-06 21:01:36] INFO root fetch - main [MainThread]: Store serial: [22650310]
+[2024-04-06 21:03:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650310]
+[2024-04-06 21:03:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-intra
+[2024-04-06 21:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2024-04-06 21:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iderare-pheno
+[2024-04-06 21:03:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: epidemik
+[2024-04-06 21:03:45] INFO root fetch - processPackages [epidemik]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 21:03:45] INFO root fetch - processPackages [iderare-pheno]: New version: [0.3.4] Old Version: [0.3.2]
+[2024-04-06 21:03:45] INFO root fetch - processPackages [moto]: New version: [5.0.5.dev9] Old Version: [5.0.5.dev8]
+[2024-04-06 21:03:45] INFO root fetch - processPackages [django-intra]: New version: [0.1.6] Old Version: [0.1.0]
+[2024-04-06 21:03:45] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/d0/d0/eca0a16ca168184e1906a33f24e2d1e78e54be9afd3df1a2a703e7dfcc36/iderare-pheno-0.3.2.tar.gz
+[2024-04-06 21:03:45] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/ed/46/2a9361da84c96246dd0cc47567b9cdc7059baf5a4a390c4c1f43decbed34/moto-5.0.5.dev8.tar.gz
+[2024-04-06 21:03:45] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/9e/1d/26b934fe2796d8eeb618a4b38b879420d1961bebef6d2d005d5092e48405/epidemik-0.0.5.tar.gz
+[2024-04-06 21:03:45] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 21:03:45] INFO root fetch - processPackages [django-intra]: Downloading https://files.pythonhosted.org/packages/d3/43/a3bf345dc323aeae015606f93027cb0e726e0aa7d268163d514bb5a4a4e5/django-intra-0.1.0.tar.gz
+[2024-04-06 21:03:46] WARNING root fetch - processPackages [django-intra]: Timeout reached during download
+[2024-04-06 21:03:46] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/f4/f2/64c52d71bd12e5a45f7d16f6e9d417390b31ff077df92153c444837bb45b/epidemik-0.0.6.tar.gz
+[2024-04-06 21:03:46] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 21:03:46] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 21:03:46] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 21:03:46] INFO root fetch - processPackages [django-intra]: Downloading https://files.pythonhosted.org/packages/34/fa/5f98217e634212f78575d41c92cbdd54b0139c9c24cae3f4b3d897bafcdf/django-intra-0.1.6.tar.gz
+[2024-04-06 21:03:46] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-06 21:03:46] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.5.tar.gz tmp/epidemik-0.0.6.tar.gz --markdown 20240406/e/epidemik/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 21:03:46] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/66/a1/b6f08fe486baa143a7f2688c060414ecb7431aa089f062d2d802b9b311c5/iderare-pheno-0.3.4.tar.gz
+[2024-04-06 21:03:46] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/08/c1/f93b75265b5128856f763bdb046a348f3952cca0dc9de2e9c1268050b7ba/moto-5.0.5.dev9.tar.gz
+[2024-04-06 21:03:46] WARNING root fetch - processPackages [django-intra]: Timeout reached during download
+[2024-04-06 21:03:46] INFO root fetch - processPackages [django-intra]: executing diffoscope
+[2024-04-06 21:03:46] INFO root fetch - processPackages [django-intra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-intra-0.1.0.tar.gz tmp/django-intra-0.1.6.tar.gz --markdown 20240406/d/django-intra/0.1.0-0.1.6/diff.md --exclude *.pyd
+[2024-04-06 21:03:46] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 21:03:46] INFO root fetch - processPackages [iderare-pheno]: executing diffoscope
+[2024-04-06 21:03:46] INFO root fetch - processPackages [iderare-pheno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iderare-pheno-0.3.2.tar.gz tmp/iderare-pheno-0.3.4.tar.gz --markdown 20240406/i/iderare-pheno/0.3.2-0.3.4/diff.md --exclude *.pyd
+[2024-04-06 21:03:46] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 21:03:46] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-06 21:03:46] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.5.dev8.tar.gz tmp/moto-5.0.5.dev9.tar.gz --markdown 20240406/m/moto/5.0.5.dev8-5.0.5.dev9/diff.md --exclude *.pyd
+[2024-04-06 21:03:46] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.5.tar.gz]
+[2024-04-06 21:03:46] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.6.tar.gz]
+[2024-04-06 21:03:46] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-06 21:03:46] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.1.0.tar.gz]
+[2024-04-06 21:03:46] INFO root fetch - processPackages [django-intra]: Remove: archive file [/home/abi/fetcher/tmp/django-intra-0.1.6.tar.gz]
+[2024-04-06 21:03:46] INFO root fetch - main [MainThread]: End processing [django-intra]: success
+[2024-04-06 21:03:47] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.3.2.tar.gz]
+[2024-04-06 21:03:47] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.3.4.tar.gz]
+[2024-04-06 21:03:47] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
+[2024-04-06 21:03:58] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev8.tar.gz]
+[2024-04-06 21:03:58] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
+[2024-04-06 21:03:58] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-06 21:03:58] INFO root fetch - main [MainThread]: Store serial: [22650323]
