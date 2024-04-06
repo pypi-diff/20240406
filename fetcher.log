@@ -16494,3 +16494,99 @@ EOFError: EOF read where object expected
 [2024-04-06 15:18:58] INFO root fetch - processPackages [metron-tagger]: Remove: archive file [/home/abi/fetcher/tmp/metron_tagger-2.2.4.tar.gz]
 [2024-04-06 15:18:58] INFO root fetch - main [MainThread]: End processing [metron-tagger]: success
 [2024-04-06 15:18:58] INFO root fetch - main [MainThread]: Store serial: [22648154]
+[2024-04-06 15:21:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648154]
+[2024-04-06 15:21:07] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 15:23:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648164]
+[2024-04-06 15:23:12] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: translatable-enums
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: composio-core
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-langchain
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-crewai
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-autogen
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyguiadapter
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yolink-api
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: auth-middleware
+[2024-04-06 15:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hello-app
+[2024-04-06 15:23:12] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.70] Old Version: [0.1.69]
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-core]: New version: [0.1.70] Old Version: [0.1.69]
+[2024-04-06 15:23:13] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.70] Old Version: [0.1.69]
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.70] Old Version: [0.1.69]
+[2024-04-06 15:23:13] INFO root fetch - processPackages [pyguiadapter]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 15:23:13] INFO root fetch - processPackages [translatable-enums]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [hello-app]: Skipping, unable to determine old version
+[2024-04-06 15:23:13] INFO root fetch - main [MainThread]: End processing [hello-app] error
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/1f/75/ffd2fe6c01257b84313b2e094bfceef44b3aa8c29581adb48819de50d8dd/composio_langchain-0.1.69.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [yolink-api]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/bf/36/666e0a206f1c7165e0b672545a67a87cfae15813fd9ef7a14786e6d45fe6/composio_core-0.1.69.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/cf/e6/5a7edf5ce851b7d9d729d4010d8f3ada0e18a1167e87de73594ac62501d7/auth_middleware-0.1.1.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/8b/97/5e6362af2793fd1921d63e787a5f25f2b60a7f366f1e7556bba8e8ac27da/composio_crewai-0.1.69.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/52/d9/b76f2045afdbc462ebeb1da8ee9961e4cb6fdeb9dd45134e6cf5df0fb935/composio_autogen-0.1.69.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/63/70/e1d55956ecbc1c69b82b6b56ac1401fd0767a68b6719791fbc02a0c7f16e/pyguiadapter-0.2.8.tar.gz
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [translatable-enums]: Downloading https://files.pythonhosted.org/packages/3f/84/93d278da0e68bc2338f3ac05528b5860aa1aa33d1e09de7a16f8f925a777/translatable_enums-0.0.4.tar.gz
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [pyguiadapter]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [yolink-api]: Downloading https://files.pythonhosted.org/packages/6e/a7/9e4a5168410da966d40f7bdc7d1d5843f3671ba2ac876085bd18b577c751/yolink-api-0.4.1.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/71/b1/25ac46fc3359480788df9daa16c04b1487ed5af4cf44c722b07ad6048c6d/auth_middleware-0.1.2.tar.gz
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [translatable-enums]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/ef/d7/2786a1d1d4a8b4d8c9c2f32c6968c9b4194a26a1aa9d0478ee3c9124453f/composio_crewai-0.1.70.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/a2/2f/bcf6e1599ff221e0580ecf44420401b667634a6df9102aaf46d8e54830c2/composio_langchain-0.1.70.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/70/0c/139e08664e09a36f6be946b9da6bbd901fb3f580d61247274ec28cc5b2e9/pyguiadapter-0.2.9.tar.gz
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/50/01/a1c820f6307360f92956db702e39d38a11208bbf5db5d1eca8790e5e5831/composio_core-0.1.70.tar.gz
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [yolink-api]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/5d/67/1f31dfad91710d61af53a5359e9fe334b8ffb03fa9cdc7e5f76d5404fd15/composio_autogen-0.1.70.tar.gz
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [auth-middleware]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.1.tar.gz tmp/auth_middleware-0.1.2.tar.gz --markdown 20240406/a/auth-middleware/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.69.tar.gz tmp/composio_crewai-0.1.70.tar.gz --markdown 20240406/c/composio-crewai/0.1.69-0.1.70/diff.md --exclude *.pyd
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.69.tar.gz tmp/composio_langchain-0.1.70.tar.gz --markdown 20240406/c/composio-langchain/0.1.69-0.1.70/diff.md --exclude *.pyd
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.69.tar.gz tmp/composio_core-0.1.70.tar.gz --markdown 20240406/c/composio-core/0.1.69-0.1.70/diff.md --exclude *.pyd
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [pyguiadapter]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [pyguiadapter]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [pyguiadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyguiadapter-0.2.8.tar.gz tmp/pyguiadapter-0.2.9.tar.gz --markdown 20240406/p/pyguiadapter/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 15:23:13] INFO root fetch - processPackages [translatable-enums]: Downloading https://files.pythonhosted.org/packages/90/0a/d0e06f5957af1dc4c6a38a08c1f61e6299c6ed909207f1450cb040b3804d/translatable_enums-0.0.5.tar.gz
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.69.tar.gz tmp/composio_autogen-0.1.70.tar.gz --markdown 20240406/c/composio-autogen/0.1.69-0.1.70/diff.md --exclude *.pyd
+[2024-04-06 15:23:13] INFO root fetch - processPackages [yolink-api]: Downloading https://files.pythonhosted.org/packages/49/f9/0c68dd1da5568085fde8ecfdb5a6d2298336a1fbd1d0a07bfdf65d3e27c9/yolink-api-0.4.2.tar.gz
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [translatable-enums]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [translatable-enums]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [translatable-enums]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translatable_enums-0.0.4.tar.gz tmp/translatable_enums-0.0.5.tar.gz --markdown 20240406/t/translatable-enums/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 15:23:13] WARNING root fetch - processPackages [yolink-api]: Timeout reached during download
+[2024-04-06 15:23:13] INFO root fetch - processPackages [yolink-api]: executing diffoscope
+[2024-04-06 15:23:13] INFO root fetch - processPackages [yolink-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yolink-api-0.4.1.tar.gz tmp/yolink-api-0.4.2.tar.gz --markdown 20240406/y/yolink-api/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.69.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.70.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-06 15:23:14] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.1.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.2.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.69.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.70.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.69.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.70.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-06 15:23:14] INFO root fetch - processPackages [translatable-enums]: Remove: archive file [/home/abi/fetcher/tmp/translatable_enums-0.0.4.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - processPackages [translatable-enums]: Remove: archive file [/home/abi/fetcher/tmp/translatable_enums-0.0.5.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - main [MainThread]: End processing [translatable-enums]: success
+[2024-04-06 15:23:14] INFO root fetch - processPackages [yolink-api]: Remove: archive file [/home/abi/fetcher/tmp/yolink-api-0.4.1.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - processPackages [yolink-api]: Remove: archive file [/home/abi/fetcher/tmp/yolink-api-0.4.2.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - main [MainThread]: End processing [yolink-api]: success
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.69.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.70.tar.gz]
+[2024-04-06 15:23:14] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-06 15:23:15] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.2.8.tar.gz]
+[2024-04-06 15:23:15] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.2.9.tar.gz]
+[2024-04-06 15:23:15] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
+[2024-04-06 15:23:15] INFO root fetch - main [MainThread]: Store serial: [22648200]
