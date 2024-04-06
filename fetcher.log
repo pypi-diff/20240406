@@ -15710,3 +15710,31 @@ EOFError: EOF read where object expected
 [2024-04-06 14:20:07] INFO root fetch - processPackages [omnibelt]: Remove: archive file [/home/abi/fetcher/tmp/omnibelt-0.8.4.tar.gz]
 [2024-04-06 14:20:07] INFO root fetch - main [MainThread]: End processing [omnibelt]: success
 [2024-04-06 14:20:07] INFO root fetch - main [MainThread]: Store serial: [22647777]
+[2024-04-06 14:22:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647777]
+[2024-04-06 14:22:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 14:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: omniply
+[2024-04-06 14:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotidex
+[2024-04-06 14:22:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: algotik-tse
+[2024-04-06 14:22:16] WARNING root fetch - processPackages [spotidex]: Skipping, unable to determine old version
+[2024-04-06 14:22:16] INFO root fetch - main [MainThread]: End processing [spotidex] error
+[2024-04-06 14:22:16] INFO root fetch - processPackages [omniply]: New version: [0.3] Old Version: [0.2.1]
+[2024-04-06 14:22:16] INFO root fetch - processPackages [algotik-tse]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 14:22:16] INFO root fetch - processPackages [omniply]: Downloading https://files.pythonhosted.org/packages/99/08/2d0827bec96a3058feccb74e35317486ee0a0d8b8f5b1ebdeda60d4dc317/omniply-0.2.1.tar.gz
+[2024-04-06 14:22:16] INFO root fetch - processPackages [algotik-tse]: Downloading https://files.pythonhosted.org/packages/c4/47/fe50a0bc71ecb34a10606ff54008fe070d73cdcd0da5fcd0b73d3d6882fa/algotik_tse-0.3.8.tar.gz
+[2024-04-06 14:22:16] WARNING root fetch - processPackages [algotik-tse]: Timeout reached during download
+[2024-04-06 14:22:16] WARNING root fetch - processPackages [omniply]: Timeout reached during download
+[2024-04-06 14:22:16] INFO root fetch - processPackages [algotik-tse]: Downloading https://files.pythonhosted.org/packages/32/dc/41ec638866e10547ff8422330c4e7c23c1ff2c69fe82be9357d51795e5bf/algotik_tse-0.3.9.tar.gz
+[2024-04-06 14:22:17] INFO root fetch - processPackages [omniply]: Downloading https://files.pythonhosted.org/packages/e6/9c/3ab5bc089676e8a02f0cac0f996c35c9bbc9060e312fe78ab421e873593e/omniply-0.3.tar.gz
+[2024-04-06 14:22:17] WARNING root fetch - processPackages [omniply]: Timeout reached during download
+[2024-04-06 14:22:17] INFO root fetch - processPackages [omniply]: executing diffoscope
+[2024-04-06 14:22:17] INFO root fetch - processPackages [omniply]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omniply-0.2.1.tar.gz tmp/omniply-0.3.tar.gz --markdown 20240406/o/omniply/0.2.1-0.3/diff.md --exclude *.pyd
+[2024-04-06 14:22:17] WARNING root fetch - processPackages [algotik-tse]: Timeout reached during download
+[2024-04-06 14:22:17] INFO root fetch - processPackages [algotik-tse]: executing diffoscope
+[2024-04-06 14:22:17] INFO root fetch - processPackages [algotik-tse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/algotik_tse-0.3.8.tar.gz tmp/algotik_tse-0.3.9.tar.gz --markdown 20240406/a/algotik-tse/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 14:22:17] INFO root fetch - processPackages [omniply]: Remove: archive file [/home/abi/fetcher/tmp/omniply-0.2.1.tar.gz]
+[2024-04-06 14:22:17] INFO root fetch - processPackages [omniply]: Remove: archive file [/home/abi/fetcher/tmp/omniply-0.3.tar.gz]
+[2024-04-06 14:22:17] INFO root fetch - main [MainThread]: End processing [omniply]: success
+[2024-04-06 14:22:17] INFO root fetch - processPackages [algotik-tse]: Remove: archive file [/home/abi/fetcher/tmp/algotik_tse-0.3.8.tar.gz]
+[2024-04-06 14:22:17] INFO root fetch - processPackages [algotik-tse]: Remove: archive file [/home/abi/fetcher/tmp/algotik_tse-0.3.9.tar.gz]
+[2024-04-06 14:22:17] INFO root fetch - main [MainThread]: End processing [algotik-tse]: success
+[2024-04-06 14:22:17] INFO root fetch - main [MainThread]: Store serial: [22647785]
