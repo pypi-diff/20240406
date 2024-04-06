@@ -12198,3 +12198,61 @@
 [2024-04-06 10:02:24] INFO root fetch - processPackages [ipahcc]: Remove: archive file [/home/abi/fetcher/tmp/ipahcc-0.17.tar.gz]
 [2024-04-06 10:02:24] INFO root fetch - main [MainThread]: End processing [ipahcc]: success
 [2024-04-06 10:02:24] INFO root fetch - main [MainThread]: Store serial: [22646590]
+[2024-04-06 10:04:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646590]
+[2024-04-06 10:04:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 10:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easytrajh5
+[2024-04-06 10:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydecs
+[2024-04-06 10:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asaniczka
+[2024-04-06 10:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langfun
+[2024-04-06 10:04:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rcplus_alloy_common
+[2024-04-06 10:04:33] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240405] Old Version: [0.0.2.dev20240404]
+[2024-04-06 10:04:33] INFO root fetch - processPackages [pydecs]: New version: [2024.4.6] Old Version: [2024.3.24]
+[2024-04-06 10:04:33] INFO root fetch - processPackages [easytrajh5]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 10:04:33] INFO root fetch - processPackages [rcplus_alloy_common]: New version: [5.0.0] Old Version: [4.0.4]
+[2024-04-06 10:04:33] INFO root fetch - processPackages [asaniczka]: New version: [3.1.0] Old Version: [3.0.3]
+[2024-04-06 10:04:33] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/8d/10/af84f3f65c39b1dcae086577c75e02424b1a3de02b38ba2411c9c0bd5e63/langfun-0.0.2.dev20240404.tar.gz
+[2024-04-06 10:04:33] INFO root fetch - processPackages [pydecs]: Downloading https://files.pythonhosted.org/packages/18/ff/7e79e01c9fae3408d595ca78d1fd00df751d16c5c9d9d373bc905f8a60d8/pydecs-2024.3.24.tar.gz
+[2024-04-06 10:04:33] INFO root fetch - processPackages [easytrajh5]: Downloading https://files.pythonhosted.org/packages/ac/a5/7249ce130e222e3428b9859346fb35181b6016cf90170d890ad14910cea8/easytrajh5-0.2.8.tar.gz
+[2024-04-06 10:04:33] INFO root fetch - processPackages [asaniczka]: Downloading https://files.pythonhosted.org/packages/07/f0/d9b2f551fa5991840626c61316ed1c448a43b8bec64a19bf058cbcfdb5d6/asaniczka-3.0.3.tar.gz
+[2024-04-06 10:04:33] INFO root fetch - processPackages [rcplus_alloy_common]: Downloading https://files.pythonhosted.org/packages/e7/70/7945447af5a891383ad43339251c4999dd25208e777f15cf446b28c9e6bc/rcplus_alloy_common-4.0.4.tar.gz
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [langfun]: Timeout reached during download
+[2024-04-06 10:04:33] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/70/61/19e06dd9a7d64700684d86ef23cf7c1ad3ee2f37eeb958fa640a27a494a5/langfun-0.0.2.dev20240405.tar.gz
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [pydecs]: Timeout reached during download
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [easytrajh5]: Timeout reached during download
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [asaniczka]: Timeout reached during download
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [rcplus_alloy_common]: Timeout reached during download
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [langfun]: Timeout reached during download
+[2024-04-06 10:04:33] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-04-06 10:04:33] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240404.tar.gz tmp/langfun-0.0.2.dev20240405.tar.gz --markdown 20240406/l/langfun/0.0.2.dev20240404-0.0.2.dev20240405/diff.md --exclude *.pyd
+[2024-04-06 10:04:33] INFO root fetch - processPackages [pydecs]: Downloading https://files.pythonhosted.org/packages/18/bb/9dcfec88f01785bf52a628b1b1d41654949bfa0b842c6cef7afba55367b6/pydecs-2024.4.6.tar.gz
+[2024-04-06 10:04:33] INFO root fetch - processPackages [easytrajh5]: Downloading https://files.pythonhosted.org/packages/09/b7/07cc06e0278dd723aa779432367d3ddb144d5f6e878ad36d75c4ff7598d6/easytrajh5-0.2.9.tar.gz
+[2024-04-06 10:04:33] INFO root fetch - processPackages [asaniczka]: Downloading https://files.pythonhosted.org/packages/a6/cd/9a1e150a6bbb04fbba4599af2cefde70f2fcc71d7bae0f6da93e90f9c177/asaniczka-3.1.0.tar.gz
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [pydecs]: Timeout reached during download
+[2024-04-06 10:04:33] INFO root fetch - processPackages [pydecs]: executing diffoscope
+[2024-04-06 10:04:33] INFO root fetch - processPackages [pydecs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydecs-2024.3.24.tar.gz tmp/pydecs-2024.4.6.tar.gz --markdown 20240406/p/pydecs/2024.3.24-2024.4.6/diff.md --exclude *.pyd
+[2024-04-06 10:04:33] INFO root fetch - processPackages [rcplus_alloy_common]: Downloading https://files.pythonhosted.org/packages/82/f8/e0965ff50fe03ee2fdb37467003a6aead9293f7db491c67fb71ee81fa5d7/rcplus_alloy_common-5.0.0.tar.gz
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [easytrajh5]: Timeout reached during download
+[2024-04-06 10:04:33] INFO root fetch - processPackages [easytrajh5]: executing diffoscope
+[2024-04-06 10:04:33] INFO root fetch - processPackages [easytrajh5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytrajh5-0.2.8.tar.gz tmp/easytrajh5-0.2.9.tar.gz --markdown 20240406/e/easytrajh5/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 10:04:33] WARNING root fetch - processPackages [asaniczka]: Timeout reached during download
+[2024-04-06 10:04:33] INFO root fetch - processPackages [asaniczka]: executing diffoscope
+[2024-04-06 10:04:33] INFO root fetch - processPackages [asaniczka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asaniczka-3.0.3.tar.gz tmp/asaniczka-3.1.0.tar.gz --markdown 20240406/a/asaniczka/3.0.3-3.1.0/diff.md --exclude *.pyd
+[2024-04-06 10:04:34] WARNING root fetch - processPackages [rcplus_alloy_common]: Timeout reached during download
+[2024-04-06 10:04:34] INFO root fetch - processPackages [rcplus_alloy_common]: executing diffoscope
+[2024-04-06 10:04:34] INFO root fetch - processPackages [rcplus_alloy_common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcplus_alloy_common-4.0.4.tar.gz tmp/rcplus_alloy_common-5.0.0.tar.gz --markdown 20240406/r/rcplus_alloy_common/4.0.4-5.0.0/diff.md --exclude *.pyd
+[2024-04-06 10:04:34] INFO root fetch - processPackages [easytrajh5]: Remove: archive file [/home/abi/fetcher/tmp/easytrajh5-0.2.8.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - processPackages [easytrajh5]: Remove: archive file [/home/abi/fetcher/tmp/easytrajh5-0.2.9.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - main [MainThread]: End processing [easytrajh5]: success
+[2024-04-06 10:04:34] INFO root fetch - processPackages [pydecs]: Remove: archive file [/home/abi/fetcher/tmp/pydecs-2024.3.24.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - processPackages [pydecs]: Remove: archive file [/home/abi/fetcher/tmp/pydecs-2024.4.6.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - main [MainThread]: End processing [pydecs]: success
+[2024-04-06 10:04:34] INFO root fetch - processPackages [asaniczka]: Remove: archive file [/home/abi/fetcher/tmp/asaniczka-3.0.3.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - processPackages [asaniczka]: Remove: archive file [/home/abi/fetcher/tmp/asaniczka-3.1.0.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - main [MainThread]: End processing [asaniczka]: success
+[2024-04-06 10:04:34] INFO root fetch - processPackages [rcplus_alloy_common]: Remove: archive file [/home/abi/fetcher/tmp/rcplus_alloy_common-4.0.4.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - processPackages [rcplus_alloy_common]: Remove: archive file [/home/abi/fetcher/tmp/rcplus_alloy_common-5.0.0.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - main [MainThread]: End processing [rcplus_alloy_common]: success
+[2024-04-06 10:04:34] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240404.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240405.tar.gz]
+[2024-04-06 10:04:34] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-04-06 10:04:34] INFO root fetch - main [MainThread]: Store serial: [22646605]
