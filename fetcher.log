@@ -8866,3 +8866,41 @@
 [2024-04-06 05:36:55] INFO root fetch - processPackages [CINOSUM]: Remove: archive file [/home/abi/fetcher/tmp/CINOSUM-1.0.2.tar.gz]
 [2024-04-06 05:36:55] INFO root fetch - main [MainThread]: End processing [CINOSUM]: success
 [2024-04-06 05:36:55] INFO root fetch - main [MainThread]: Store serial: [22645286]
+[2024-04-06 05:38:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645286]
+[2024-04-06 05:39:03] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 05:41:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645286]
+[2024-04-06 05:41:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 05:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wakautosolver
+[2024-04-06 05:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datalayer
+[2024-04-06 05:41:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ScreenPro2
+[2024-04-06 05:41:09] INFO root fetch - processPackages [wakautosolver]: New version: [2024.4.6] Old Version: [2024.4.5]
+[2024-04-06 05:41:09] INFO root fetch - processPackages [datalayer]: New version: [1.0.0] Old Version: [0.1.3]
+[2024-04-06 05:41:09] INFO root fetch - processPackages [ScreenPro2]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 05:41:09] INFO root fetch - processPackages [datalayer]: Downloading https://files.pythonhosted.org/packages/dc/a0/81c27841278573b78cc5de64d747bc7f7380677fb0fc7b33c775ea9cc809/datalayer-0.1.3-py3-none-any.whl
+[2024-04-06 05:41:09] INFO root fetch - processPackages [ScreenPro2]: Downloading https://files.pythonhosted.org/packages/64/10/5fd6a74f690b67d73d2f0adcb0017c7892cc5c83d022522ae67bd0d7dbcd/ScreenPro2-0.2.8-py2.py3-none-any.whl
+[2024-04-06 05:41:09] INFO root fetch - processPackages [wakautosolver]: Downloading https://files.pythonhosted.org/packages/c8/09/a19edcafaac8c68a2de822819d712a660a7990ab80d977ec25bafd53d8d6/wakautosolver-2024.4.5-py3-none-any.whl
+[2024-04-06 05:41:09] WARNING root fetch - processPackages [ScreenPro2]: Timeout reached during download
+[2024-04-06 05:41:09] WARNING root fetch - processPackages [datalayer]: Timeout reached during download
+[2024-04-06 05:41:09] WARNING root fetch - processPackages [wakautosolver]: Timeout reached during download
+[2024-04-06 05:41:09] INFO root fetch - processPackages [datalayer]: Downloading https://files.pythonhosted.org/packages/c2/cc/55874d4747c2dbf38f4abfc0259cc93ad965c802035b75324007963cf123/datalayer-1.0.0-py3-none-any.whl
+[2024-04-06 05:41:09] INFO root fetch - processPackages [ScreenPro2]: Downloading https://files.pythonhosted.org/packages/7d/8a/61bafdb52eb9fcce0d3c7b4deeef65bdf99aee21d23a408eb4bd3d9b2692/ScreenPro2-0.2.9-py2.py3-none-any.whl
+[2024-04-06 05:41:09] INFO root fetch - processPackages [wakautosolver]: Downloading https://files.pythonhosted.org/packages/99/22/8c7efc1cf82ac1d334a6550c405b8448491904c8c0cafc121831f210d077/wakautosolver-2024.4.6-py3-none-any.whl
+[2024-04-06 05:41:10] WARNING root fetch - processPackages [ScreenPro2]: Timeout reached during download
+[2024-04-06 05:41:10] INFO root fetch - processPackages [ScreenPro2]: executing diffoscope
+[2024-04-06 05:41:10] INFO root fetch - processPackages [ScreenPro2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScreenPro2-0.2.8-py2.py3-none-any.whl.zip tmp/ScreenPro2-0.2.9-py2.py3-none-any.whl.zip --markdown 20240406/S/ScreenPro2/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 05:41:10] WARNING root fetch - processPackages [datalayer]: Timeout reached during download
+[2024-04-06 05:41:10] INFO root fetch - processPackages [datalayer]: executing diffoscope
+[2024-04-06 05:41:10] INFO root fetch - processPackages [datalayer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datalayer-0.1.3-py3-none-any.whl.zip tmp/datalayer-1.0.0-py3-none-any.whl.zip --markdown 20240406/d/datalayer/0.1.3-1.0.0/diff.md --exclude *.pyd
+[2024-04-06 05:41:10] WARNING root fetch - processPackages [wakautosolver]: Timeout reached during download
+[2024-04-06 05:41:10] INFO root fetch - processPackages [wakautosolver]: executing diffoscope
+[2024-04-06 05:41:10] INFO root fetch - processPackages [wakautosolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wakautosolver-2024.4.5-py3-none-any.whl.zip tmp/wakautosolver-2024.4.6-py3-none-any.whl.zip --markdown 20240406/w/wakautosolver/2024.4.5-2024.4.6/diff.md --exclude *.pyd
+[2024-04-06 05:41:10] INFO root fetch - processPackages [ScreenPro2]: Remove: archive file [/home/abi/fetcher/tmp/ScreenPro2-0.2.8-py2.py3-none-any.whl.zip]
+[2024-04-06 05:41:10] INFO root fetch - processPackages [ScreenPro2]: Remove: archive file [/home/abi/fetcher/tmp/ScreenPro2-0.2.9-py2.py3-none-any.whl.zip]
+[2024-04-06 05:41:10] INFO root fetch - main [MainThread]: End processing [ScreenPro2]: success
+[2024-04-06 05:41:10] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.5-py3-none-any.whl.zip]
+[2024-04-06 05:41:10] INFO root fetch - processPackages [wakautosolver]: Remove: archive file [/home/abi/fetcher/tmp/wakautosolver-2024.4.6-py3-none-any.whl.zip]
+[2024-04-06 05:41:10] INFO root fetch - main [MainThread]: End processing [wakautosolver]: success
+[2024-04-06 05:41:11] INFO root fetch - processPackages [datalayer]: Remove: archive file [/home/abi/fetcher/tmp/datalayer-0.1.3-py3-none-any.whl.zip]
+[2024-04-06 05:41:11] INFO root fetch - processPackages [datalayer]: Remove: archive file [/home/abi/fetcher/tmp/datalayer-1.0.0-py3-none-any.whl.zip]
+[2024-04-06 05:41:11] INFO root fetch - main [MainThread]: End processing [datalayer]: success
+[2024-04-06 05:41:11] INFO root fetch - main [MainThread]: Store serial: [22645293]
