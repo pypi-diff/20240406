@@ -15157,3 +15157,53 @@ EOFError: EOF read where object expected
 [2024-04-06 13:44:59] INFO root fetch - processPackages [azureml-metrics]: Remove: archive file [/home/abi/fetcher/tmp/azureml_metrics-47.0.0-py3-none-any.whl.zip]
 [2024-04-06 13:44:59] INFO root fetch - main [MainThread]: End processing [azureml-metrics]: success
 [2024-04-06 13:44:59] INFO root fetch - main [MainThread]: Store serial: [22647613]
+[2024-04-06 13:47:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647613]
+[2024-04-06 13:47:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swimrankingsscraper
+[2024-04-06 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedding-optimizer
+[2024-04-06 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secvision
+[2024-04-06 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-sumologic
+[2024-04-06 13:47:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abberior-sted
+[2024-04-06 13:47:08] INFO root fetch - processPackages [swimrankingsscraper]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-06 13:47:08] WARNING root fetch - processPackages [secvision]: Skipping, unable to determine old version
+[2024-04-06 13:47:08] INFO root fetch - main [MainThread]: End processing [secvision] error
+[2024-04-06 13:47:08] INFO root fetch - processPackages [embedding-optimizer]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 13:47:08] INFO root fetch - processPackages [swimrankingsscraper]: Downloading https://files.pythonhosted.org/packages/c0/ae/24f8e7362ebb796696bd639e7e1889a88a057794aa5fb4d335b5b467dfb7/swimrankingsscraper-0.1.2.tar.gz
+[2024-04-06 13:47:08] INFO root fetch - processPackages [abberior-sted]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 13:47:08] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/37/4d/68f23345ac1df03c8c570b131635d58a5b3c75ab2a8e49a9f0c433f80f05/embedding_optimizer-0.0.1.tar.gz
+[2024-04-06 13:47:08] INFO root fetch - processPackages [pulumi-sumologic]: New version: [0.9.1a1663799436] Old Version: [0.9.0]
+[2024-04-06 13:47:08] WARNING root fetch - processPackages [swimrankingsscraper]: Timeout reached during download
+[2024-04-06 13:47:08] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 13:47:08] INFO root fetch - processPackages [swimrankingsscraper]: Downloading https://files.pythonhosted.org/packages/d8/41/38e88307ac5bf79f7dbe2bd0591f6992493c63a77c6aa232cfb85ac4d8cc/swimrankingsscraper-0.1.3.tar.gz
+[2024-04-06 13:47:08] INFO root fetch - processPackages [abberior-sted]: Downloading https://files.pythonhosted.org/packages/75/d5/0511e449a89e133e8f5099aeb968880341b386f111a385444686f137d98f/abberior-sted-0.0.1.tar.gz
+[2024-04-06 13:47:08] WARNING root fetch - processPackages [swimrankingsscraper]: Timeout reached during download
+[2024-04-06 13:47:08] INFO root fetch - processPackages [swimrankingsscraper]: executing diffoscope
+[2024-04-06 13:47:08] INFO root fetch - processPackages [swimrankingsscraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swimrankingsscraper-0.1.2.tar.gz tmp/swimrankingsscraper-0.1.3.tar.gz --markdown 20240406/s/swimrankingsscraper/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-06 13:47:08] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/6e/f2/ba414f5902bee40f219e9fb7e62d763f8263329614fc12ed2b5b02a34627/pulumi_sumologic-0.9.0.tar.gz
+[2024-04-06 13:47:08] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/d2/34/c46616f1f5bb9ebec11a2d8eec512c844dc74fe39cce2e212aada6a7bd7d/embedding_optimizer-0.0.2.tar.gz
+[2024-04-06 13:47:09] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 13:47:09] INFO root fetch - processPackages [embedding-optimizer]: executing diffoscope
+[2024-04-06 13:47:09] INFO root fetch - processPackages [embedding-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedding_optimizer-0.0.1.tar.gz tmp/embedding_optimizer-0.0.2.tar.gz --markdown 20240406/e/embedding-optimizer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 13:47:09] WARNING root fetch - processPackages [abberior-sted]: Timeout reached during download
+[2024-04-06 13:47:09] WARNING root fetch - processPackages [pulumi-sumologic]: Timeout reached during download
+[2024-04-06 13:47:09] INFO root fetch - processPackages [abberior-sted]: Downloading https://files.pythonhosted.org/packages/fc/96/e286784f8acf398cc6dc67b1292669743b423e95ba36c6c8b4d1238a67cd/abberior-sted-0.0.2.tar.gz
+[2024-04-06 13:47:09] INFO root fetch - processPackages [pulumi-sumologic]: Downloading https://files.pythonhosted.org/packages/67/c4/8f95a0de8aac6e9d9348bd2698c48e05211e3a2fabda9b0e7bcaa7b80ca8/pulumi_sumologic-0.9.1a1663799436.tar.gz
+[2024-04-06 13:47:09] INFO root fetch - processPackages [swimrankingsscraper]: Remove: archive file [/home/abi/fetcher/tmp/swimrankingsscraper-0.1.2.tar.gz]
+[2024-04-06 13:47:09] INFO root fetch - processPackages [swimrankingsscraper]: Remove: archive file [/home/abi/fetcher/tmp/swimrankingsscraper-0.1.3.tar.gz]
+[2024-04-06 13:47:09] INFO root fetch - main [MainThread]: End processing [swimrankingsscraper]: success
+[2024-04-06 13:47:09] WARNING root fetch - processPackages [pulumi-sumologic]: Timeout reached during download
+[2024-04-06 13:47:09] INFO root fetch - processPackages [pulumi-sumologic]: executing diffoscope
+[2024-04-06 13:47:09] INFO root fetch - processPackages [pulumi-sumologic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_sumologic-0.9.0.tar.gz tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz --markdown 20240406/p/pulumi-sumologic/0.9.0-0.9.1a1663799436/diff.md --exclude *.pyd
+[2024-04-06 13:47:09] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.1.tar.gz]
+[2024-04-06 13:47:09] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.2.tar.gz]
+[2024-04-06 13:47:09] INFO root fetch - main [MainThread]: End processing [embedding-optimizer]: success
+[2024-04-06 13:47:09] WARNING root fetch - processPackages [abberior-sted]: Timeout reached during download
+[2024-04-06 13:47:09] INFO root fetch - processPackages [abberior-sted]: executing diffoscope
+[2024-04-06 13:47:09] INFO root fetch - processPackages [abberior-sted]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abberior-sted-0.0.1.tar.gz tmp/abberior-sted-0.0.2.tar.gz --markdown 20240406/a/abberior-sted/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 13:47:10] INFO root fetch - processPackages [abberior-sted]: Remove: archive file [/home/abi/fetcher/tmp/abberior-sted-0.0.1.tar.gz]
+[2024-04-06 13:47:10] INFO root fetch - processPackages [abberior-sted]: Remove: archive file [/home/abi/fetcher/tmp/abberior-sted-0.0.2.tar.gz]
+[2024-04-06 13:47:10] INFO root fetch - main [MainThread]: End processing [abberior-sted]: success
+[2024-04-06 13:47:10] INFO root fetch - processPackages [pulumi-sumologic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_sumologic-0.9.0.tar.gz]
+[2024-04-06 13:47:10] INFO root fetch - processPackages [pulumi-sumologic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz]
+[2024-04-06 13:47:10] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
+[2024-04-06 13:47:10] INFO root fetch - main [MainThread]: Store serial: [22647626]
