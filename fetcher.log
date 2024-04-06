@@ -21368,3 +21368,17 @@ EOFError: EOF read where object expected
 [2024-04-06 20:02:31] INFO root fetch - processPackages [keri]: Remove: archive file [/home/abi/fetcher/tmp/keri-1.2.dev0.tar.gz]
 [2024-04-06 20:02:31] INFO root fetch - main [MainThread]: End processing [keri]: success
 [2024-04-06 20:02:31] INFO root fetch - main [MainThread]: Store serial: [22649963]
+[2024-04-06 20:04:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649963]
+[2024-04-06 20:04:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 20:04:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-framework
+[2024-04-06 20:04:40] INFO root fetch - processPackages [xia-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 20:04:40] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/4d/ec/8ba56b22e3b523e06aaac69046406b53a851ada9fdfb0c21920204e3ccee/xia-framework-0.0.8.tar.gz
+[2024-04-06 20:04:41] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 20:04:41] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/1a/aa/c1278b76a785a1c89cde0fa37b425dbc14d128e5a6542af6978710d87150/xia-framework-0.0.9.tar.gz
+[2024-04-06 20:04:41] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 20:04:41] INFO root fetch - processPackages [xia-framework]: executing diffoscope
+[2024-04-06 20:04:41] INFO root fetch - processPackages [xia-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-framework-0.0.8.tar.gz tmp/xia-framework-0.0.9.tar.gz --markdown 20240406/x/xia-framework/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 20:04:41] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.8.tar.gz]
+[2024-04-06 20:04:41] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
+[2024-04-06 20:04:41] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
+[2024-04-06 20:04:41] INFO root fetch - main [MainThread]: Store serial: [22649966]
