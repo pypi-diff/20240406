@@ -22109,3 +22109,59 @@ EOFError: EOF read where object expected
 [2024-04-06 20:39:55] INFO root fetch - processPackages [oci]: Remove: archive file [/home/abi/fetcher/tmp/oci-2.99.1.tar.gz]
 [2024-04-06 20:39:55] INFO root fetch - main [MainThread]: End processing [oci]: success
 [2024-04-06 20:39:55] INFO root fetch - main [MainThread]: Store serial: [22650183]
+[2024-04-06 20:42:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650183]
+[2024-04-06 20:42:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 20:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epidemik
+[2024-04-06 20:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tabletexifier
+[2024-04-06 20:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epidemik
+[2024-04-06 20:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypaq
+[2024-04-06 20:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: discordanalytics
+[2024-04-06 20:42:06] INFO root fetch - processPackages [epidemik]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 20:42:06] INFO root fetch - processPackages [epidemik]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 20:42:06] INFO root fetch - processPackages [discordanalytics]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 20:42:06] INFO root fetch - processPackages [tabletexifier]: New version: [0.2] Old Version: [0.1.9]
+[2024-04-06 20:42:06] INFO root fetch - processPackages [discordanalytics]: Downloading https://files.pythonhosted.org/packages/00/7c/307d0e85a2005cdd8b393686114f1c6aadedb118384d13ca73d4e40e976e/discordanalytics-0.0.1.tar.gz
+[2024-04-06 20:42:06] INFO root fetch - processPackages [pypaq]: New version: [1.7.5] Old Version: [1.7.3]
+[2024-04-06 20:42:06] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/8c/e7/32acdec58f6feb437b680a80ea00fbee0de95e20cf6915ca71cbe3290ba7/epidemik-0.0.2.tar.gz
+[2024-04-06 20:42:06] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/8c/e7/32acdec58f6feb437b680a80ea00fbee0de95e20cf6915ca71cbe3290ba7/epidemik-0.0.2.tar.gz
+[2024-04-06 20:42:06] INFO root fetch - processPackages [tabletexifier]: Downloading https://files.pythonhosted.org/packages/89/b0/b8b8ff6e700f8143ecdc575cfa186af2fd9695b29a10b3b51e9cc47ea10e/tabletexifier-0.1.9.tar.gz
+[2024-04-06 20:42:06] WARNING root fetch - processPackages [discordanalytics]: Timeout reached during download
+[2024-04-06 20:42:06] INFO root fetch - processPackages [pypaq]: Downloading https://files.pythonhosted.org/packages/77/f8/3048888d464da843c5df9ed88e0faa670e98d33f81ae79a4865e52c0b219/pypaq-1.7.3.tar.gz
+[2024-04-06 20:42:06] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:42:06] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:42:06] WARNING root fetch - processPackages [tabletexifier]: Timeout reached during download
+[2024-04-06 20:42:06] INFO root fetch - processPackages [discordanalytics]: Downloading https://files.pythonhosted.org/packages/00/07/3c35e87ab8fb458c31755eef526b98f4e2a1c4f43f514cd8b737ed9f5bcc/discordanalytics-0.0.2.tar.gz
+[2024-04-06 20:42:06] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/f0/8f/e092a66a5a9b6991978d188d176e7f0a25b8276f675307cb9d3df02e71b3/epidemik-0.0.3.tar.gz
+[2024-04-06 20:42:06] INFO root fetch - processPackages [epidemik]: Downloading https://files.pythonhosted.org/packages/f0/8f/e092a66a5a9b6991978d188d176e7f0a25b8276f675307cb9d3df02e71b3/epidemik-0.0.3.tar.gz
+[2024-04-06 20:42:06] WARNING root fetch - processPackages [discordanalytics]: Timeout reached during download
+[2024-04-06 20:42:06] INFO root fetch - processPackages [discordanalytics]: executing diffoscope
+[2024-04-06 20:42:06] INFO root fetch - processPackages [discordanalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discordanalytics-0.0.1.tar.gz tmp/discordanalytics-0.0.2.tar.gz --markdown 20240406/d/discordanalytics/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 20:42:06] WARNING root fetch - processPackages [pypaq]: Timeout reached during download
+[2024-04-06 20:42:07] INFO root fetch - processPackages [tabletexifier]: Downloading https://files.pythonhosted.org/packages/fc/13/22d24f4c85204331bbc9c3cde76a3e537ed88962bb12d128e14c810a3050/tabletexifier-0.2.tar.gz
+[2024-04-06 20:42:07] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:42:07] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-06 20:42:07] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.2.tar.gz tmp/epidemik-0.0.3.tar.gz --markdown 20240406/e/epidemik/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 20:42:07] WARNING root fetch - processPackages [epidemik]: Timeout reached during download
+[2024-04-06 20:42:07] INFO root fetch - processPackages [epidemik]: executing diffoscope
+[2024-04-06 20:42:07] INFO root fetch - processPackages [epidemik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epidemik-0.0.2.tar.gz tmp/epidemik-0.0.3.tar.gz --markdown 20240406/e/epidemik/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 20:42:07] WARNING root fetch - processPackages [tabletexifier]: Timeout reached during download
+[2024-04-06 20:42:07] INFO root fetch - processPackages [tabletexifier]: executing diffoscope
+[2024-04-06 20:42:07] INFO root fetch - processPackages [tabletexifier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabletexifier-0.1.9.tar.gz tmp/tabletexifier-0.2.tar.gz --markdown 20240406/t/tabletexifier/0.1.9-0.2/diff.md --exclude *.pyd
+[2024-04-06 20:42:07] INFO root fetch - processPackages [pypaq]: Downloading https://files.pythonhosted.org/packages/3c/ff/3fe8da6eab6c078a65b9b58e40b15aa17e00a705ec5d78113c7b34f96b32/pypaq-1.7.5.tar.gz
+[2024-04-06 20:42:07] WARNING root fetch - processPackages [pypaq]: Timeout reached during download
+[2024-04-06 20:42:07] INFO root fetch - processPackages [pypaq]: executing diffoscope
+[2024-04-06 20:42:07] INFO root fetch - processPackages [pypaq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypaq-1.7.3.tar.gz tmp/pypaq-1.7.5.tar.gz --markdown 20240406/p/pypaq/1.7.3-1.7.5/diff.md --exclude *.pyd
+[2024-04-06 20:42:07] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.2.tar.gz]
+[2024-04-06 20:42:07] INFO root fetch - processPackages [epidemik]: Remove: archive file [/home/abi/fetcher/tmp/epidemik-0.0.3.tar.gz]
+[2024-04-06 20:42:07] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-06 20:42:07] INFO root fetch - main [MainThread]: End processing [epidemik]: success
+[2024-04-06 20:42:07] INFO root fetch - processPackages [discordanalytics]: Remove: archive file [/home/abi/fetcher/tmp/discordanalytics-0.0.1.tar.gz]
+[2024-04-06 20:42:07] INFO root fetch - processPackages [discordanalytics]: Remove: archive file [/home/abi/fetcher/tmp/discordanalytics-0.0.2.tar.gz]
+[2024-04-06 20:42:07] INFO root fetch - main [MainThread]: End processing [discordanalytics]: success
+[2024-04-06 20:42:07] INFO root fetch - processPackages [tabletexifier]: Remove: archive file [/home/abi/fetcher/tmp/tabletexifier-0.1.9.tar.gz]
+[2024-04-06 20:42:07] INFO root fetch - processPackages [tabletexifier]: Remove: archive file [/home/abi/fetcher/tmp/tabletexifier-0.2.tar.gz]
+[2024-04-06 20:42:07] INFO root fetch - main [MainThread]: End processing [tabletexifier]: success
+[2024-04-06 20:42:08] INFO root fetch - processPackages [pypaq]: Remove: archive file [/home/abi/fetcher/tmp/pypaq-1.7.3.tar.gz]
+[2024-04-06 20:42:08] INFO root fetch - processPackages [pypaq]: Remove: archive file [/home/abi/fetcher/tmp/pypaq-1.7.5.tar.gz]
+[2024-04-06 20:42:08] INFO root fetch - main [MainThread]: End processing [pypaq]: success
+[2024-04-06 20:42:08] INFO root fetch - main [MainThread]: Store serial: [22650197]
