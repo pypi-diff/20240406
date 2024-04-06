@@ -19314,3 +19314,56 @@ EOFError: EOF read where object expected
 [2024-04-06 18:09:02] INFO root fetch - processPackages [pyindrav2h]: Remove: archive file [/home/abi/fetcher/tmp/pyindrav2h-0.0.3.tar.gz]
 [2024-04-06 18:09:02] INFO root fetch - main [MainThread]: End processing [pyindrav2h]: success
 [2024-04-06 18:09:02] INFO root fetch - main [MainThread]: Store serial: [22649234]
+[2024-04-06 18:11:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649234]
+[2024-04-06 18:11:10] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 18:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scalifiai-client
+[2024-04-06 18:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: protolint-bin-test
+[2024-04-06 18:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hiddifypanel
+[2024-04-06 18:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: n97fit
+[2024-04-06 18:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sae-vis
+[2024-04-06 18:11:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chromadb-data-pipes
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [protolint-bin-test]: Skipping, unable to determine old version
+[2024-04-06 18:11:11] INFO root fetch - main [MainThread]: End processing [protolint-bin-test] error
+[2024-04-06 18:11:11] INFO root fetch - processPackages [scalifiai-client]: New version: [1.3.0a4] Old Version: [1.3.0a3]
+[2024-04-06 18:11:11] INFO root fetch - processPackages [sae-vis]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-06 18:11:11] INFO root fetch - processPackages [hiddifypanel]: New version: [8.8.99] Old Version: [8.8.97]
+[2024-04-06 18:11:11] INFO root fetch - processPackages [scalifiai-client]: Downloading https://files.pythonhosted.org/packages/96/ed/874ef7278c43fce382ed2486acde2553fac9bf8db1d54fae33758391d432/scalifiai-client-1.3.0a3.tar.gz
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [n97fit]: Skipping, unable to determine old version
+[2024-04-06 18:11:11] INFO root fetch - main [MainThread]: End processing [n97fit] error
+[2024-04-06 18:11:11] INFO root fetch - processPackages [chromadb-data-pipes]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 18:11:11] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/2b/ec/fc0a2053d4f312b8c5b0abb5260bc2a821564fb37704e4fbb48812c1feb8/sae-vis-0.2.7.tar.gz
+[2024-04-06 18:11:11] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/3b/4c/15ca81d9764c196bd632b929c178a21ce2569604e1b7958aaf21f3591f24/hiddifypanel-8.8.97.tar.gz
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [scalifiai-client]: Timeout reached during download
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [sae-vis]: Timeout reached during download
+[2024-04-06 18:11:11] INFO root fetch - processPackages [scalifiai-client]: Downloading https://files.pythonhosted.org/packages/66/11/7c7c13ab9ea84f4c5e7ae531f4eb434323ba9ef793b767927ca66daa8ba7/scalifiai-client-1.3.0a4.tar.gz
+[2024-04-06 18:11:11] INFO root fetch - processPackages [chromadb-data-pipes]: Downloading https://files.pythonhosted.org/packages/7b/8e/eceb29c89e2042033a4d791d43f3ccac66bc23991d82378ec306ca0a3515/chromadb_data_pipes-0.0.7.tar.gz
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [scalifiai-client]: Timeout reached during download
+[2024-04-06 18:11:11] INFO root fetch - processPackages [sae-vis]: Downloading https://files.pythonhosted.org/packages/41/60/b7fdf368aed9c8dd61c0db677bd692930cc6ea73b861fd2925fab6460c71/sae-vis-0.2.8.tar.gz
+[2024-04-06 18:11:11] INFO root fetch - processPackages [scalifiai-client]: executing diffoscope
+[2024-04-06 18:11:11] INFO root fetch - processPackages [scalifiai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalifiai-client-1.3.0a3.tar.gz tmp/scalifiai-client-1.3.0a4.tar.gz --markdown 20240406/s/scalifiai-client/1.3.0a3-1.3.0a4/diff.md --exclude *.pyd
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [chromadb-data-pipes]: Timeout reached during download
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [sae-vis]: Timeout reached during download
+[2024-04-06 18:11:11] INFO root fetch - processPackages [sae-vis]: executing diffoscope
+[2024-04-06 18:11:11] INFO root fetch - processPackages [sae-vis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae-vis-0.2.7.tar.gz tmp/sae-vis-0.2.8.tar.gz --markdown 20240406/s/sae-vis/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2024-04-06 18:11:11] INFO root fetch - processPackages [chromadb-data-pipes]: Downloading https://files.pythonhosted.org/packages/ba/cf/0d76cd8e783563b41ad07774dd4cd9241ce271d9d4689ee3b653e35e6391/chromadb_data_pipes-0.0.8.tar.gz
+[2024-04-06 18:11:11] WARNING root fetch - processPackages [chromadb-data-pipes]: Timeout reached during download
+[2024-04-06 18:11:11] INFO root fetch - processPackages [chromadb-data-pipes]: executing diffoscope
+[2024-04-06 18:11:11] INFO root fetch - processPackages [chromadb-data-pipes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromadb_data_pipes-0.0.7.tar.gz tmp/chromadb_data_pipes-0.0.8.tar.gz --markdown 20240406/c/chromadb-data-pipes/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 18:11:12] INFO root fetch - processPackages [scalifiai-client]: Remove: archive file [/home/abi/fetcher/tmp/scalifiai-client-1.3.0a3.tar.gz]
+[2024-04-06 18:11:12] INFO root fetch - processPackages [scalifiai-client]: Remove: archive file [/home/abi/fetcher/tmp/scalifiai-client-1.3.0a4.tar.gz]
+[2024-04-06 18:11:12] INFO root fetch - main [MainThread]: End processing [scalifiai-client]: success
+[2024-04-06 18:11:12] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-06 18:11:12] INFO root fetch - processPackages [hiddifypanel]: Downloading https://files.pythonhosted.org/packages/ef/74/ab9bc5ebe1c31d96fcff0642f25280d3eebba3d867bbf874c9e8c9fe2a23/hiddifypanel-8.8.99.tar.gz
+[2024-04-06 18:11:12] INFO root fetch - processPackages [chromadb-data-pipes]: Remove: archive file [/home/abi/fetcher/tmp/chromadb_data_pipes-0.0.7.tar.gz]
+[2024-04-06 18:11:12] INFO root fetch - processPackages [chromadb-data-pipes]: Remove: archive file [/home/abi/fetcher/tmp/chromadb_data_pipes-0.0.8.tar.gz]
+[2024-04-06 18:11:12] INFO root fetch - main [MainThread]: End processing [chromadb-data-pipes]: success
+[2024-04-06 18:11:12] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.7.tar.gz]
+[2024-04-06 18:11:12] INFO root fetch - processPackages [sae-vis]: Remove: archive file [/home/abi/fetcher/tmp/sae-vis-0.2.8.tar.gz]
+[2024-04-06 18:11:12] INFO root fetch - main [MainThread]: End processing [sae-vis]: success
+[2024-04-06 18:11:12] WARNING root fetch - processPackages [hiddifypanel]: Timeout reached during download
+[2024-04-06 18:11:12] INFO root fetch - processPackages [hiddifypanel]: executing diffoscope
+[2024-04-06 18:11:12] INFO root fetch - processPackages [hiddifypanel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiddifypanel-8.8.97.tar.gz tmp/hiddifypanel-8.8.99.tar.gz --markdown 20240406/h/hiddifypanel/8.8.97-8.8.99/diff.md --exclude *.pyd
+[2024-04-06 18:11:16] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.97.tar.gz]
+[2024-04-06 18:11:16] INFO root fetch - processPackages [hiddifypanel]: Remove: archive file [/home/abi/fetcher/tmp/hiddifypanel-8.8.99.tar.gz]
+[2024-04-06 18:11:16] INFO root fetch - main [MainThread]: End processing [hiddifypanel]: success
+[2024-04-06 18:11:16] INFO root fetch - main [MainThread]: Store serial: [22649254]
