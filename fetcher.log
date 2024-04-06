@@ -25108,3 +25108,39 @@ EOFError: EOF read where object expected
 [2024-04-06 23:37:58] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-04-06 23:37:58] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-04-06 23:37:58] INFO root fetch - main [MainThread]: Store serial: [22651328]
+[2024-04-06 23:40:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651328]
+[2024-04-06 23:40:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 23:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wmill-pg
+[2024-04-06 23:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vellum-ai
+[2024-04-06 23:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atypical
+[2024-04-06 23:40:07] INFO root fetch - processPackages [wmill-pg]: New version: [1.99.0] Old Version: [1.98.0]
+[2024-04-06 23:40:07] INFO root fetch - processPackages [vellum-ai]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 23:40:07] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/a1/22/f7655b5ea090afc59651b874c61bf7bea4694e3fa9720a46058fa34c71ef/wmill_pg-1.98.0.tar.gz
+[2024-04-06 23:40:07] INFO root fetch - processPackages [atypical]: New version: [0.2.0] Old Version: [0.0.0]
+[2024-04-06 23:40:07] INFO root fetch - processPackages [vellum-ai]: Downloading https://files.pythonhosted.org/packages/78/ae/720d382b9ede37557842d97cf6c0d3aebc8a231a8345d6a89d68671b088f/vellum_ai-0.3.8.tar.gz
+[2024-04-06 23:40:07] INFO root fetch - processPackages [atypical]: Downloading https://files.pythonhosted.org/packages/47/83/43bc8c77c39f7ad66740c9b2419bfe2fc806b5976768d288903bf81702c8/atypical-0.0.0.tar.gz
+[2024-04-06 23:40:09] WARNING root fetch - processPackages [wmill-pg]: Timeout reached during download
+[2024-04-06 23:40:09] WARNING root fetch - processPackages [atypical]: Timeout reached during download
+[2024-04-06 23:40:09] WARNING root fetch - processPackages [vellum-ai]: Timeout reached during download
+[2024-04-06 23:40:09] INFO root fetch - processPackages [wmill-pg]: Downloading https://files.pythonhosted.org/packages/26/ac/296bc5f7193d111c826ef99b60bf75fe1605158a73d728a5fad8aa771331/wmill_pg-1.99.0.tar.gz
+[2024-04-06 23:40:09] WARNING root fetch - processPackages [wmill-pg]: Timeout reached during download
+[2024-04-06 23:40:09] INFO root fetch - processPackages [wmill-pg]: executing diffoscope
+[2024-04-06 23:40:09] INFO root fetch - processPackages [wmill-pg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wmill_pg-1.98.0.tar.gz tmp/wmill_pg-1.99.0.tar.gz --markdown 20240406/w/wmill-pg/1.98.0-1.99.0/diff.md --exclude *.pyd
+[2024-04-06 23:40:09] INFO root fetch - processPackages [atypical]: Downloading https://files.pythonhosted.org/packages/d4/cb/7b2b6fef90177b23dd1ac8cbd39460512d9da1045ceadb8638c61a21bd3f/atypical-0.2.0.tar.gz
+[2024-04-06 23:40:09] INFO root fetch - processPackages [vellum-ai]: Downloading https://files.pythonhosted.org/packages/bf/5a/2c938e0073e88220605a43e67a92e6c57f274bcaee9d8d1b369db835cd0c/vellum_ai-0.3.9.tar.gz
+[2024-04-06 23:40:09] WARNING root fetch - processPackages [vellum-ai]: Timeout reached during download
+[2024-04-06 23:40:09] INFO root fetch - processPackages [vellum-ai]: executing diffoscope
+[2024-04-06 23:40:09] INFO root fetch - processPackages [vellum-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vellum_ai-0.3.8.tar.gz tmp/vellum_ai-0.3.9.tar.gz --markdown 20240406/v/vellum-ai/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 23:40:09] WARNING root fetch - processPackages [atypical]: Timeout reached during download
+[2024-04-06 23:40:09] INFO root fetch - processPackages [atypical]: executing diffoscope
+[2024-04-06 23:40:09] INFO root fetch - processPackages [atypical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atypical-0.0.0.tar.gz tmp/atypical-0.2.0.tar.gz --markdown 20240406/a/atypical/0.0.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 23:40:09] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.98.0.tar.gz]
+[2024-04-06 23:40:09] INFO root fetch - processPackages [wmill-pg]: Remove: archive file [/home/abi/fetcher/tmp/wmill_pg-1.99.0.tar.gz]
+[2024-04-06 23:40:09] INFO root fetch - main [MainThread]: End processing [wmill-pg]: success
+[2024-04-06 23:40:10] INFO root fetch - processPackages [atypical]: Remove: archive file [/home/abi/fetcher/tmp/atypical-0.0.0.tar.gz]
+[2024-04-06 23:40:10] INFO root fetch - processPackages [atypical]: Remove: archive file [/home/abi/fetcher/tmp/atypical-0.2.0.tar.gz]
+[2024-04-06 23:40:10] INFO root fetch - main [MainThread]: End processing [atypical]: success
+[2024-04-06 23:40:10] INFO root fetch - processPackages [vellum-ai]: Remove: archive file [/home/abi/fetcher/tmp/vellum_ai-0.3.8.tar.gz]
+[2024-04-06 23:40:10] INFO root fetch - processPackages [vellum-ai]: Remove: archive file [/home/abi/fetcher/tmp/vellum_ai-0.3.9.tar.gz]
+[2024-04-06 23:40:10] INFO root fetch - main [MainThread]: End processing [vellum-ai]: success
+[2024-04-06 23:40:10] INFO root fetch - main [MainThread]: Store serial: [22651334]
