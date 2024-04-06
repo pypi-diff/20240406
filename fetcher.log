@@ -2459,3 +2459,17 @@
 [2024-04-06 02:37:09] INFO root fetch - processPackages [fedscale]: Remove: archive file [/home/abi/fetcher/tmp/fedscale-1.0.tar.gz]
 [2024-04-06 02:37:09] INFO root fetch - main [MainThread]: End processing [fedscale]: success
 [2024-04-06 02:37:09] INFO root fetch - main [MainThread]: Store serial: [22643411]
+[2024-04-06 02:39:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643411]
+[2024-04-06 02:39:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 02:39:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipython-openai
+[2024-04-06 02:39:18] INFO root fetch - processPackages [ipython-openai]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 02:39:18] INFO root fetch - processPackages [ipython-openai]: Downloading https://files.pythonhosted.org/packages/0b/63/1077d2dc7bbb34fbcc6e1a6f854fe8e5048b9f02adbe4124dac53c1d3a74/ipython_openai-0.0.1.tar.gz
+[2024-04-06 02:39:18] WARNING root fetch - processPackages [ipython-openai]: Timeout reached during download
+[2024-04-06 02:39:18] INFO root fetch - processPackages [ipython-openai]: Downloading https://files.pythonhosted.org/packages/f2/10/218001e78cf280eb0a4951ccbd525005172e28a381b73592b4d969cb3c88/ipython_openai-0.0.2.tar.gz
+[2024-04-06 02:39:18] WARNING root fetch - processPackages [ipython-openai]: Timeout reached during download
+[2024-04-06 02:39:18] INFO root fetch - processPackages [ipython-openai]: executing diffoscope
+[2024-04-06 02:39:18] INFO root fetch - processPackages [ipython-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipython_openai-0.0.1.tar.gz tmp/ipython_openai-0.0.2.tar.gz --markdown 20240406/i/ipython-openai/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 02:39:19] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.1.tar.gz]
+[2024-04-06 02:39:19] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.2.tar.gz]
+[2024-04-06 02:39:19] INFO root fetch - main [MainThread]: End processing [ipython-openai]: success
+[2024-04-06 02:39:19] INFO root fetch - main [MainThread]: Store serial: [22643414]
