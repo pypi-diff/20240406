@@ -9025,3 +9025,17 @@
 [2024-04-06 05:55:14] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.4.tar.gz]
 [2024-04-06 05:55:14] INFO root fetch - main [MainThread]: End processing [ipython-openai]: success
 [2024-04-06 05:55:14] INFO root fetch - main [MainThread]: Store serial: [22645326]
+[2024-04-06 05:57:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645326]
+[2024-04-06 05:57:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 05:57:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyguiadapter
+[2024-04-06 05:57:23] INFO root fetch - processPackages [pyguiadapter]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 05:57:23] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/63/70/e1d55956ecbc1c69b82b6b56ac1401fd0767a68b6719791fbc02a0c7f16e/pyguiadapter-0.2.8.tar.gz
+[2024-04-06 05:57:23] WARNING root fetch - processPackages [pyguiadapter]: Timeout reached during download
+[2024-04-06 05:57:23] INFO root fetch - processPackages [pyguiadapter]: Downloading https://files.pythonhosted.org/packages/70/0c/139e08664e09a36f6be946b9da6bbd901fb3f580d61247274ec28cc5b2e9/pyguiadapter-0.2.9.tar.gz
+[2024-04-06 05:57:23] WARNING root fetch - processPackages [pyguiadapter]: Timeout reached during download
+[2024-04-06 05:57:23] INFO root fetch - processPackages [pyguiadapter]: executing diffoscope
+[2024-04-06 05:57:23] INFO root fetch - processPackages [pyguiadapter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyguiadapter-0.2.8.tar.gz tmp/pyguiadapter-0.2.9.tar.gz --markdown 20240406/p/pyguiadapter/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 05:57:24] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.2.8.tar.gz]
+[2024-04-06 05:57:24] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.2.9.tar.gz]
+[2024-04-06 05:57:24] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
+[2024-04-06 05:57:24] INFO root fetch - main [MainThread]: Store serial: [22645329]
