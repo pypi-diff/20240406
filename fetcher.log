@@ -11268,3 +11268,42 @@
 [2024-04-06 08:42:48] INFO root fetch - processPackages [apconfig]: Remove: archive file [/home/abi/fetcher/tmp/apconfig-0.0.105.tar.gz]
 [2024-04-06 08:42:48] INFO root fetch - main [MainThread]: End processing [apconfig]: success
 [2024-04-06 08:42:48] INFO root fetch - main [MainThread]: Store serial: [22646138]
+[2024-04-06 08:44:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646138]
+[2024-04-06 08:44:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 08:44:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secvision-bindeps-linux-x64
+[2024-04-06 08:44:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter-kernels
+[2024-04-06 08:44:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipen-args
+[2024-04-06 08:44:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mxcubeweb
+[2024-04-06 08:44:57] INFO root fetch - processPackages [jupyter-kernels]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-04-06 08:44:57] INFO root fetch - processPackages [jupyter-kernels]: Downloading https://files.pythonhosted.org/packages/23/ac/30798230953c595c4564144e91e00df1273ef188846e0e7e8069f73461f9/jupyter_kernels-1.0.6-py3-none-any.whl
+[2024-04-06 08:44:57] WARNING root fetch - processPackages [secvision-bindeps-linux-x64]: Skipping, unable to determine old version
+[2024-04-06 08:44:57] INFO root fetch - main [MainThread]: End processing [secvision-bindeps-linux-x64] error
+[2024-04-06 08:44:57] INFO root fetch - processPackages [pipen-args]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 08:44:57] INFO root fetch - processPackages [mxcubeweb]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-04-06 08:44:57] INFO root fetch - processPackages [mxcubeweb]: Downloading https://files.pythonhosted.org/packages/e9/9e/c4f610f4b2e24f0448292119c5697d9e6dfdefa4d71a8b7089d4a6953107/mxcubeweb-4.8.0.tar.gz
+[2024-04-06 08:44:57] INFO root fetch - processPackages [pipen-args]: Downloading https://files.pythonhosted.org/packages/bc/98/c19ed462010e382c2a8b78873ec82c7b8a89cc9f2f4c819c3ca5d764fcea/pipen_args-0.9.8.tar.gz
+[2024-04-06 08:44:58] WARNING root fetch - processPackages [pipen-args]: Timeout reached during download
+[2024-04-06 08:44:58] WARNING root fetch - processPackages [mxcubeweb]: Timeout reached during download
+[2024-04-06 08:44:59] INFO root fetch - processPackages [pipen-args]: Downloading https://files.pythonhosted.org/packages/7d/c7/c59d3e8b1e0e76f8a3b2d312da8f37c080b3c0f5b584e0e5baa9955ebdc7/pipen_args-0.9.9.tar.gz
+[2024-04-06 08:44:59] INFO root fetch - processPackages [mxcubeweb]: Downloading https://files.pythonhosted.org/packages/70/0a/11c323a9a6ce9c93c1b0707df775fe6f1e768b7bab1fef02a49855813397/mxcubeweb-4.9.0.tar.gz
+[2024-04-06 08:44:59] WARNING root fetch - processPackages [jupyter-kernels]: Timeout reached during download
+[2024-04-06 08:44:59] WARNING root fetch - processPackages [mxcubeweb]: Timeout reached during download
+[2024-04-06 08:44:59] INFO root fetch - processPackages [mxcubeweb]: executing diffoscope
+[2024-04-06 08:44:59] INFO root fetch - processPackages [mxcubeweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mxcubeweb-4.8.0.tar.gz tmp/mxcubeweb-4.9.0.tar.gz --markdown 20240406/m/mxcubeweb/4.8.0-4.9.0/diff.md --exclude *.pyd
+[2024-04-06 08:44:59] WARNING root fetch - processPackages [pipen-args]: Timeout reached during download
+[2024-04-06 08:44:59] INFO root fetch - processPackages [pipen-args]: executing diffoscope
+[2024-04-06 08:44:59] INFO root fetch - processPackages [pipen-args]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipen_args-0.9.8.tar.gz tmp/pipen_args-0.9.9.tar.gz --markdown 20240406/p/pipen-args/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 08:44:59] INFO root fetch - processPackages [jupyter-kernels]: Downloading https://files.pythonhosted.org/packages/b7/3e/cfdb6a8e6de473c2d11edee1cf6760edb558c0ec61759112a3c80d899390/jupyter_kernels-1.0.7-py3-none-any.whl
+[2024-04-06 08:44:59] WARNING root fetch - processPackages [jupyter-kernels]: Timeout reached during download
+[2024-04-06 08:44:59] INFO root fetch - processPackages [jupyter-kernels]: executing diffoscope
+[2024-04-06 08:44:59] INFO root fetch - processPackages [jupyter-kernels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_kernels-1.0.6-py3-none-any.whl.zip tmp/jupyter_kernels-1.0.7-py3-none-any.whl.zip --markdown 20240406/j/jupyter-kernels/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2024-04-06 08:44:59] INFO root fetch - processPackages [pipen-args]: Remove: archive file [/home/abi/fetcher/tmp/pipen_args-0.9.8.tar.gz]
+[2024-04-06 08:44:59] INFO root fetch - processPackages [pipen-args]: Remove: archive file [/home/abi/fetcher/tmp/pipen_args-0.9.9.tar.gz]
+[2024-04-06 08:44:59] INFO root fetch - main [MainThread]: End processing [pipen-args]: success
+[2024-04-06 08:45:00] INFO root fetch - processPackages [mxcubeweb]: Remove: archive file [/home/abi/fetcher/tmp/mxcubeweb-4.8.0.tar.gz]
+[2024-04-06 08:45:00] INFO root fetch - processPackages [mxcubeweb]: Remove: archive file [/home/abi/fetcher/tmp/mxcubeweb-4.9.0.tar.gz]
+[2024-04-06 08:45:00] INFO root fetch - main [MainThread]: End processing [mxcubeweb]: success
+[2024-04-06 08:45:26] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.6-py3-none-any.whl.zip]
+[2024-04-06 08:45:26] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.7-py3-none-any.whl.zip]
+[2024-04-06 08:45:26] INFO root fetch - main [MainThread]: End processing [jupyter-kernels]: success
+[2024-04-06 08:45:26] INFO root fetch - main [MainThread]: Store serial: [22646151]
