@@ -24792,3 +24792,31 @@ EOFError: EOF read where object expected
 [2024-04-06 23:14:06] INFO root fetch - processPackages [kindle2pdf]: Remove: archive file [/home/abi/fetcher/tmp/kindle2pdf-0.1.3.tar.gz]
 [2024-04-06 23:14:06] INFO root fetch - main [MainThread]: End processing [kindle2pdf]: success
 [2024-04-06 23:14:06] INFO root fetch - main [MainThread]: Store serial: [22651214]
+[2024-04-06 23:16:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651214]
+[2024-04-06 23:16:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 23:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Toisto
+[2024-04-06 23:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epimodel-sensitivity
+[2024-04-06 23:16:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brahmai
+[2024-04-06 23:16:15] WARNING root fetch - processPackages [epimodel-sensitivity]: Skipping, unable to determine old version
+[2024-04-06 23:16:15] INFO root fetch - main [MainThread]: End processing [epimodel-sensitivity] error
+[2024-04-06 23:16:15] INFO root fetch - processPackages [brahmai]: New version: [0.0.1.0.1a2] Old Version: [0.0.1.0.1a0]
+[2024-04-06 23:16:15] INFO root fetch - processPackages [Toisto]: New version: [0.9.0] Old Version: [0.8.2]
+[2024-04-06 23:16:15] INFO root fetch - processPackages [brahmai]: Downloading https://files.pythonhosted.org/packages/67/cf/c52a47aff1a9e7f69432d27b4904828827b1f6fd9b0c8d41c10f11783b00/brahmai-0.0.1.0.1a0.tar.gz
+[2024-04-06 23:16:15] INFO root fetch - processPackages [Toisto]: Downloading https://files.pythonhosted.org/packages/98/78/5a993242d700f23c0e967d95076a31ddb9fa171e51c6b21095b796d40543/Toisto-0.8.2.tar.gz
+[2024-04-06 23:16:15] WARNING root fetch - processPackages [brahmai]: Timeout reached during download
+[2024-04-06 23:16:15] WARNING root fetch - processPackages [Toisto]: Timeout reached during download
+[2024-04-06 23:16:15] INFO root fetch - processPackages [brahmai]: Downloading https://files.pythonhosted.org/packages/5b/ff/62e5a43cf098c348d871d18cebb1eda1f9a4a69dd3b87e0f6ebcdb63ec87/brahmai-0.0.1.0.1a2.tar.gz
+[2024-04-06 23:16:15] INFO root fetch - processPackages [Toisto]: Downloading https://files.pythonhosted.org/packages/34/f8/c004cf7715228beb3edaae9346c9e3fa7cd21eb4cc5bc92f22aa053dc205/Toisto-0.9.0.tar.gz
+[2024-04-06 23:16:15] WARNING root fetch - processPackages [brahmai]: Timeout reached during download
+[2024-04-06 23:16:15] INFO root fetch - processPackages [brahmai]: executing diffoscope
+[2024-04-06 23:16:15] INFO root fetch - processPackages [brahmai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brahmai-0.0.1.0.1a0.tar.gz tmp/brahmai-0.0.1.0.1a2.tar.gz --markdown 20240406/b/brahmai/0.0.1.0.1a0-0.0.1.0.1a2/diff.md --exclude *.pyd
+[2024-04-06 23:16:15] WARNING root fetch - processPackages [Toisto]: Timeout reached during download
+[2024-04-06 23:16:15] INFO root fetch - processPackages [Toisto]: executing diffoscope
+[2024-04-06 23:16:15] INFO root fetch - processPackages [Toisto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Toisto-0.8.2.tar.gz tmp/Toisto-0.9.0.tar.gz --markdown 20240406/T/Toisto/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 23:16:16] INFO root fetch - processPackages [brahmai]: Remove: archive file [/home/abi/fetcher/tmp/brahmai-0.0.1.0.1a0.tar.gz]
+[2024-04-06 23:16:16] INFO root fetch - processPackages [brahmai]: Remove: archive file [/home/abi/fetcher/tmp/brahmai-0.0.1.0.1a2.tar.gz]
+[2024-04-06 23:16:16] INFO root fetch - main [MainThread]: End processing [brahmai]: success
+[2024-04-06 23:16:16] INFO root fetch - processPackages [Toisto]: Remove: archive file [/home/abi/fetcher/tmp/Toisto-0.8.2.tar.gz]
+[2024-04-06 23:16:16] INFO root fetch - processPackages [Toisto]: Remove: archive file [/home/abi/fetcher/tmp/Toisto-0.9.0.tar.gz]
+[2024-04-06 23:16:16] INFO root fetch - main [MainThread]: End processing [Toisto]: success
+[2024-04-06 23:16:16] INFO root fetch - main [MainThread]: Store serial: [22651223]
