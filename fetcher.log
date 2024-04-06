@@ -12909,3 +12909,50 @@
 [2024-04-06 11:02:53] INFO root fetch - processPackages [adbclone]: Remove: archive file [/home/abi/fetcher/tmp/adbclone-0.0.4.tar.gz]
 [2024-04-06 11:02:53] INFO root fetch - main [MainThread]: End processing [adbclone]: success
 [2024-04-06 11:02:53] INFO root fetch - main [MainThread]: Store serial: [22646943]
+[2024-04-06 11:04:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646943]
+[2024-04-06 11:05:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 11:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: languru
+[2024-04-06 11:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.common
+[2024-04-06 11:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.core
+[2024-04-06 11:05:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autogluon.features
+[2024-04-06 11:05:01] INFO root fetch - processPackages [autogluon.features]: New version: [1.0.1b20240405] Old Version: [1.0.1b20240404]
+[2024-04-06 11:05:01] INFO root fetch - processPackages [autogluon.common]: New version: [1.0.1b20240405] Old Version: [1.0.1b20240404]
+[2024-04-06 11:05:01] INFO root fetch - processPackages [autogluon.core]: New version: [1.0.1b20240405] Old Version: [1.0.1b20240404]
+[2024-04-06 11:05:01] INFO root fetch - processPackages [languru]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-04-06 11:05:01] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/03/7f/90bcc9999fb284c2c3253d0803221d444ab89aa2cbc3f8a4ed81be238ad8/autogluon.common-1.0.1b20240404.tar.gz
+[2024-04-06 11:05:01] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/98/40/1614c945c2b15e0147e4760d690a9de3ef03f38d1dc80b0404c33d7cca79/autogluon.features-1.0.1b20240404.tar.gz
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/9c/48/1d526a74f4f4d500323211adb4df5ae3276c270af9080f79df39f4a905a8/autogluon.core-1.0.1b20240404.tar.gz
+[2024-04-06 11:05:02] INFO root fetch - processPackages [languru]: Downloading https://files.pythonhosted.org/packages/fa/5e/d5fe9680b74c2dc84574da24abae13b6453050fe271b4055275f113d084a/languru-0.7.1.tar.gz
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [autogluon.features]: Timeout reached during download
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [autogluon.common]: Timeout reached during download
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [autogluon.core]: Timeout reached during download
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [languru]: Timeout reached during download
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/fb/5e/5b926dda2a78f751d7c57347f989b5e28ff48fa89652fb7c44afd8b7ba90/autogluon.features-1.0.1b20240405.tar.gz
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/dd/6c/821828fee51034240ffd65cf3b3d7a0a81330a5e672c01f0c6c0350b2daf/autogluon.common-1.0.1b20240405.tar.gz
+[2024-04-06 11:05:02] INFO root fetch - processPackages [languru]: Downloading https://files.pythonhosted.org/packages/bf/6d/07bdf7e3f764a6406fb3ce591c3c18bcae6de31e759cfce65dbdd1c9b530/languru-0.7.2.tar.gz
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/50/94/779731d603f01881c0c371a37a5aa8e682976a6c5bbeb016211330f4bd13/autogluon.core-1.0.1b20240405.tar.gz
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [autogluon.common]: Timeout reached during download
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-1.0.1b20240404.tar.gz tmp/autogluon.common-1.0.1b20240405.tar.gz --markdown 20240406/a/autogluon.common/1.0.1b20240404-1.0.1b20240405/diff.md --exclude *.pyd
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [languru]: Timeout reached during download
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [autogluon.features]: Timeout reached during download
+[2024-04-06 11:05:02] INFO root fetch - processPackages [languru]: executing diffoscope
+[2024-04-06 11:05:02] INFO root fetch - processPackages [languru]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/languru-0.7.1.tar.gz tmp/languru-0.7.2.tar.gz --markdown 20240406/l/languru/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-1.0.1b20240404.tar.gz tmp/autogluon.features-1.0.1b20240405.tar.gz --markdown 20240406/a/autogluon.features/1.0.1b20240404-1.0.1b20240405/diff.md --exclude *.pyd
+[2024-04-06 11:05:02] WARNING root fetch - processPackages [autogluon.core]: Timeout reached during download
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2024-04-06 11:05:02] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-1.0.1b20240404.tar.gz tmp/autogluon.core-1.0.1b20240405.tar.gz --markdown 20240406/a/autogluon.core/1.0.1b20240404-1.0.1b20240405/diff.md --exclude *.pyd
+[2024-04-06 11:05:03] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.0.1b20240404.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - processPackages [autogluon.features]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.features-1.0.1b20240405.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2024-04-06 11:05:03] INFO root fetch - processPackages [languru]: Remove: archive file [/home/abi/fetcher/tmp/languru-0.7.1.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - processPackages [languru]: Remove: archive file [/home/abi/fetcher/tmp/languru-0.7.2.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - main [MainThread]: End processing [languru]: success
+[2024-04-06 11:05:03] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.0.1b20240404.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - processPackages [autogluon.common]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.common-1.0.1b20240405.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2024-04-06 11:05:03] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.0.1b20240404.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - processPackages [autogluon.core]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.core-1.0.1b20240405.tar.gz]
+[2024-04-06 11:05:03] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2024-04-06 11:05:03] INFO root fetch - main [MainThread]: Store serial: [22646954]
