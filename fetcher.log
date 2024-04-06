@@ -17963,3 +17963,20 @@ EOFError: EOF read where object expected
 [2024-04-06 16:43:23] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
 [2024-04-06 16:43:23] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
 [2024-04-06 16:43:23] INFO root fetch - main [MainThread]: Store serial: [22648737]
+[2024-04-06 16:45:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648737]
+[2024-04-06 16:45:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 16:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sae-lens
+[2024-04-06 16:45:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utrc
+[2024-04-06 16:45:33] WARNING root fetch - processPackages [sae-lens]: Skipping, unable to determine old version
+[2024-04-06 16:45:33] INFO root fetch - main [MainThread]: End processing [sae-lens] error
+[2024-04-06 16:45:33] INFO root fetch - processPackages [utrc]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 16:45:33] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/15/90/7ec74d32f6f70f9c23191f98c3652a2a37a3952faa57543f8a051d538303/utrc-0.0.3.tar.gz
+[2024-04-06 16:45:33] WARNING root fetch - processPackages [utrc]: Timeout reached during download
+[2024-04-06 16:45:34] INFO root fetch - processPackages [utrc]: Downloading https://files.pythonhosted.org/packages/98/67/18bb692e7db0a445bf909f051852957d74ddd534c7cfb432470fc0900998/utrc-0.0.4.tar.gz
+[2024-04-06 16:45:34] WARNING root fetch - processPackages [utrc]: Timeout reached during download
+[2024-04-06 16:45:34] INFO root fetch - processPackages [utrc]: executing diffoscope
+[2024-04-06 16:45:34] INFO root fetch - processPackages [utrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utrc-0.0.3.tar.gz tmp/utrc-0.0.4.tar.gz --markdown 20240406/u/utrc/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 16:45:34] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.3.tar.gz]
+[2024-04-06 16:45:34] INFO root fetch - processPackages [utrc]: Remove: archive file [/home/abi/fetcher/tmp/utrc-0.0.4.tar.gz]
+[2024-04-06 16:45:34] INFO root fetch - main [MainThread]: End processing [utrc]: success
+[2024-04-06 16:45:34] INFO root fetch - main [MainThread]: Store serial: [22648745]
