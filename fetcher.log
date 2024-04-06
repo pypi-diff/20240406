@@ -24940,3 +24940,42 @@ EOFError: EOF read where object expected
 [2024-04-06 23:27:07] INFO root fetch - processPackages [legal-citation-parser]: Remove: archive file [/home/abi/fetcher/tmp/legal_citation_parser-0.1.2.tar.gz]
 [2024-04-06 23:27:07] INFO root fetch - main [MainThread]: End processing [legal-citation-parser]: success
 [2024-04-06 23:27:07] INFO root fetch - main [MainThread]: Store serial: [22651277]
+[2024-04-06 23:29:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651277]
+[2024-04-06 23:29:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 23:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antidb
+[2024-04-06 23:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: felupe
+[2024-04-06 23:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: epimodel-sensitivity-test
+[2024-04-06 23:29:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gpx-vis
+[2024-04-06 23:29:16] INFO root fetch - processPackages [antidb]: New version: [2024.4.6] Old Version: [2024.3.14]
+[2024-04-06 23:29:16] WARNING root fetch - processPackages [epimodel-sensitivity-test]: Skipping, unable to determine old version
+[2024-04-06 23:29:16] INFO root fetch - main [MainThread]: End processing [epimodel-sensitivity-test] error
+[2024-04-06 23:29:16] INFO root fetch - processPackages [gpx-vis]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-04-06 23:29:16] INFO root fetch - processPackages [felupe]: New version: [8.3.1] Old Version: [8.3.0]
+[2024-04-06 23:29:16] INFO root fetch - processPackages [antidb]: Downloading https://files.pythonhosted.org/packages/b9/17/f714d887c1c0565492023420874562b7a26c5a778daec530b81b49783457/antidb-2024.3.14.tar.gz
+[2024-04-06 23:29:16] INFO root fetch - processPackages [felupe]: Downloading https://files.pythonhosted.org/packages/77/b1/7d2fba6d5dbb73091732a5a6ccca9093ff39d5e25fc3056fdfe79f5d3969/felupe-8.3.0.tar.gz
+[2024-04-06 23:29:16] INFO root fetch - processPackages [gpx-vis]: Downloading https://files.pythonhosted.org/packages/2f/b0/8be230ccbd901756f220b3dcc16a8818aea402641c58d2c86d0afb50de21/gpx_vis-0.1.6.tar.gz
+[2024-04-06 23:29:16] WARNING root fetch - processPackages [antidb]: Timeout reached during download
+[2024-04-06 23:29:16] WARNING root fetch - processPackages [gpx-vis]: Timeout reached during download
+[2024-04-06 23:29:16] WARNING root fetch - processPackages [felupe]: Timeout reached during download
+[2024-04-06 23:29:16] INFO root fetch - processPackages [antidb]: Downloading https://files.pythonhosted.org/packages/7e/99/e0ca46def41789079d85b6d1b68ea95bed7bc6896bd8a20e1c59ec516c88/antidb-2024.4.6.tar.gz
+[2024-04-06 23:29:16] INFO root fetch - processPackages [gpx-vis]: Downloading https://files.pythonhosted.org/packages/fc/72/15d92b3f9f4273959168d2e574b682bdde0e908d3231d86f3dba52b39c0d/gpx_vis-0.2.0.tar.gz
+[2024-04-06 23:29:16] INFO root fetch - processPackages [felupe]: Downloading https://files.pythonhosted.org/packages/79/db/bf242d78ee2d0c81bc7d035566d507903068d0dcc9abf4e4a62d5a27c13b/felupe-8.3.1.tar.gz
+[2024-04-06 23:29:16] WARNING root fetch - processPackages [antidb]: Timeout reached during download
+[2024-04-06 23:29:16] INFO root fetch - processPackages [antidb]: executing diffoscope
+[2024-04-06 23:29:16] INFO root fetch - processPackages [antidb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antidb-2024.3.14.tar.gz tmp/antidb-2024.4.6.tar.gz --markdown 20240406/a/antidb/2024.3.14-2024.4.6/diff.md --exclude *.pyd
+[2024-04-06 23:29:16] WARNING root fetch - processPackages [felupe]: Timeout reached during download
+[2024-04-06 23:29:16] INFO root fetch - processPackages [felupe]: executing diffoscope
+[2024-04-06 23:29:16] INFO root fetch - processPackages [felupe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/felupe-8.3.0.tar.gz tmp/felupe-8.3.1.tar.gz --markdown 20240406/f/felupe/8.3.0-8.3.1/diff.md --exclude *.pyd
+[2024-04-06 23:29:16] WARNING root fetch - processPackages [gpx-vis]: Timeout reached during download
+[2024-04-06 23:29:16] INFO root fetch - processPackages [gpx-vis]: executing diffoscope
+[2024-04-06 23:29:16] INFO root fetch - processPackages [gpx-vis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpx_vis-0.1.6.tar.gz tmp/gpx_vis-0.2.0.tar.gz --markdown 20240406/g/gpx-vis/0.1.6-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 23:29:17] INFO root fetch - processPackages [antidb]: Remove: archive file [/home/abi/fetcher/tmp/antidb-2024.3.14.tar.gz]
+[2024-04-06 23:29:17] INFO root fetch - processPackages [antidb]: Remove: archive file [/home/abi/fetcher/tmp/antidb-2024.4.6.tar.gz]
+[2024-04-06 23:29:17] INFO root fetch - main [MainThread]: End processing [antidb]: success
+[2024-04-06 23:29:17] INFO root fetch - processPackages [gpx-vis]: Remove: archive file [/home/abi/fetcher/tmp/gpx_vis-0.1.6.tar.gz]
+[2024-04-06 23:29:17] INFO root fetch - processPackages [gpx-vis]: Remove: archive file [/home/abi/fetcher/tmp/gpx_vis-0.2.0.tar.gz]
+[2024-04-06 23:29:17] INFO root fetch - main [MainThread]: End processing [gpx-vis]: success
+[2024-04-06 23:29:17] INFO root fetch - processPackages [felupe]: Remove: archive file [/home/abi/fetcher/tmp/felupe-8.3.0.tar.gz]
+[2024-04-06 23:29:17] INFO root fetch - processPackages [felupe]: Remove: archive file [/home/abi/fetcher/tmp/felupe-8.3.1.tar.gz]
+[2024-04-06 23:29:17] INFO root fetch - main [MainThread]: End processing [felupe]: success
+[2024-04-06 23:29:17] INFO root fetch - main [MainThread]: Store serial: [22651291]
