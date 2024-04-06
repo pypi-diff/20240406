@@ -22737,3 +22737,28 @@ EOFError: EOF read where object expected
 [2024-04-06 21:14:50] INFO root fetch - processPackages [plotly3d]: Remove: archive file [/home/abi/fetcher/tmp/plotly3d-0.3.8.tar.gz]
 [2024-04-06 21:14:50] INFO root fetch - main [MainThread]: End processing [plotly3d]: success
 [2024-04-06 21:14:50] INFO root fetch - main [MainThread]: Store serial: [22650377]
+[2024-04-06 21:16:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650377]
+[2024-04-06 21:16:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 21:16:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: install-preserve
+[2024-04-06 21:16:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TokenProbs
+[2024-04-06 21:16:59] INFO root fetch - processPackages [install-preserve]: New version: [0.0.11] Old Version: [0.0.1]
+[2024-04-06 21:16:59] INFO root fetch - processPackages [TokenProbs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 21:16:59] INFO root fetch - processPackages [install-preserve]: Downloading https://files.pythonhosted.org/packages/8a/e6/637d139805456f85bde8fd10c2202c9f30e6821852d03919dfc3f193b002/install-preserve-0.0.1.tar.gz
+[2024-04-06 21:16:59] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/f5/3f/552d0f2ca9b5d9b5dee0057724885f844c83896f97bec43eb7c0acfafec1/TokenProbs-0.0.8.tar.gz
+[2024-04-06 21:16:59] WARNING root fetch - processPackages [install-preserve]: Timeout reached during download
+[2024-04-06 21:16:59] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 21:16:59] INFO root fetch - processPackages [install-preserve]: Downloading https://files.pythonhosted.org/packages/ac/b4/0c8cc8f43aa1704765349696f09228e7fac74b2b62224346c44eab772003/install-preserve-0.0.11.tar.gz
+[2024-04-06 21:16:59] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/29/ba/735a795841268a89d2be19af5ef66f193d7169a133194e72569ecf328149/TokenProbs-0.0.9.tar.gz
+[2024-04-06 21:16:59] WARNING root fetch - processPackages [install-preserve]: Timeout reached during download
+[2024-04-06 21:16:59] INFO root fetch - processPackages [install-preserve]: executing diffoscope
+[2024-04-06 21:16:59] INFO root fetch - processPackages [install-preserve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/install-preserve-0.0.1.tar.gz tmp/install-preserve-0.0.11.tar.gz --markdown 20240406/i/install-preserve/0.0.1-0.0.11/diff.md --exclude *.pyd
+[2024-04-06 21:17:00] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 21:17:00] INFO root fetch - processPackages [TokenProbs]: executing diffoscope
+[2024-04-06 21:17:00] INFO root fetch - processPackages [TokenProbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TokenProbs-0.0.8.tar.gz tmp/TokenProbs-0.0.9.tar.gz --markdown 20240406/T/TokenProbs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 21:17:00] INFO root fetch - processPackages [install-preserve]: Remove: archive file [/home/abi/fetcher/tmp/install-preserve-0.0.1.tar.gz]
+[2024-04-06 21:17:00] INFO root fetch - processPackages [install-preserve]: Remove: archive file [/home/abi/fetcher/tmp/install-preserve-0.0.11.tar.gz]
+[2024-04-06 21:17:00] INFO root fetch - main [MainThread]: End processing [install-preserve]: success
+[2024-04-06 21:17:00] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.8.tar.gz]
+[2024-04-06 21:17:00] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.9.tar.gz]
+[2024-04-06 21:17:00] INFO root fetch - main [MainThread]: End processing [TokenProbs]: success
+[2024-04-06 21:17:00] INFO root fetch - main [MainThread]: Store serial: [22650383]
