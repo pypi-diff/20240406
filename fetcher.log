@@ -18555,3 +18555,28 @@ EOFError: EOF read where object expected
 [2024-04-06 17:25:13] INFO root fetch - processPackages [nonebot-plugin-reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_reminder-0.3.1.post2.tar.gz]
 [2024-04-06 17:25:13] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-reminder]: success
 [2024-04-06 17:25:13] INFO root fetch - main [MainThread]: Store serial: [22649000]
+[2024-04-06 17:27:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649000]
+[2024-04-06 17:27:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 17:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlalchemy-dlock
+[2024-04-06 17:27:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vectara-cli
+[2024-04-06 17:27:21] INFO root fetch - processPackages [vectara-cli]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 17:27:22] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/6e/fe/a1c4e490cadff30f1b1b094fd4c5786f84b4fd280a9a5b0826c2e2982857/vectara-cli-0.1.1.tar.gz
+[2024-04-06 17:27:22] INFO root fetch - processPackages [sqlalchemy-dlock]: New version: [0.6.1] Old Version: [0.6]
+[2024-04-06 17:27:22] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-06 17:27:22] INFO root fetch - processPackages [sqlalchemy-dlock]: Downloading https://files.pythonhosted.org/packages/4d/49/f843dfe1e20215d9d622e3e20dd17e1e934fe5279036ee56b0bec7f9e6e4/sqlalchemy-dlock-0.6.tar.gz
+[2024-04-06 17:27:22] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/d3/18/d1a9d6d947eacb698b20b5706872d06fd30bb2b0a7a16890c7c7c035e9bd/vectara_cli-0.1.2.tar.gz
+[2024-04-06 17:27:22] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-06 17:27:22] WARNING root fetch - processPackages [sqlalchemy-dlock]: Timeout reached during download
+[2024-04-06 17:27:22] INFO root fetch - processPackages [vectara-cli]: executing diffoscope
+[2024-04-06 17:27:22] INFO root fetch - processPackages [vectara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectara-cli-0.1.1.tar.gz tmp/vectara_cli-0.1.2.tar.gz --markdown 20240406/v/vectara-cli/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 17:27:22] INFO root fetch - processPackages [sqlalchemy-dlock]: Downloading https://files.pythonhosted.org/packages/b7/72/aaefb6a7b0d4023f3de6d24693ab7129d6e875d8907f70a42d5bf7147023/sqlalchemy-dlock-0.6.1.tar.gz
+[2024-04-06 17:27:22] WARNING root fetch - processPackages [sqlalchemy-dlock]: Timeout reached during download
+[2024-04-06 17:27:22] INFO root fetch - processPackages [sqlalchemy-dlock]: executing diffoscope
+[2024-04-06 17:27:22] INFO root fetch - processPackages [sqlalchemy-dlock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlalchemy-dlock-0.6.tar.gz tmp/sqlalchemy-dlock-0.6.1.tar.gz --markdown 20240406/s/sqlalchemy-dlock/0.6-0.6.1/diff.md --exclude *.pyd
+[2024-04-06 17:27:23] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.1.tar.gz]
+[2024-04-06 17:27:23] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara_cli-0.1.2.tar.gz]
+[2024-04-06 17:27:23] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
+[2024-04-06 17:27:23] INFO root fetch - processPackages [sqlalchemy-dlock]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-dlock-0.6.tar.gz]
+[2024-04-06 17:27:23] INFO root fetch - processPackages [sqlalchemy-dlock]: Remove: archive file [/home/abi/fetcher/tmp/sqlalchemy-dlock-0.6.1.tar.gz]
+[2024-04-06 17:27:23] INFO root fetch - main [MainThread]: End processing [sqlalchemy-dlock]: success
+[2024-04-06 17:27:23] INFO root fetch - main [MainThread]: Store serial: [22649006]
