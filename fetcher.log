@@ -7371,3 +7371,28 @@
 [2024-04-06 03:35:57] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
 [2024-04-06 03:35:57] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
 [2024-04-06 03:35:57] INFO root fetch - main [MainThread]: Store serial: [22644763]
+[2024-04-06 03:38:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644763]
+[2024-04-06 03:38:05] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 03:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrestoolbox
+[2024-04-06 03:38:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: molsystem
+[2024-04-06 03:38:06] INFO root fetch - processPackages [molsystem]: New version: [2024.4.5] Old Version: [2024.3.13]
+[2024-04-06 03:38:06] INFO root fetch - processPackages [pyrestoolbox]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-04-06 03:38:06] INFO root fetch - processPackages [molsystem]: Downloading https://files.pythonhosted.org/packages/13/b9/34241c0170c6a30386335d14690307f47c4ab3f5dc37524831c4b8092381/molsystem-2024.3.13.tar.gz
+[2024-04-06 03:38:06] INFO root fetch - processPackages [pyrestoolbox]: Downloading https://files.pythonhosted.org/packages/90/6c/ac86b296a9e5fa01285681a47444eb2dc1a61840f24154c5af67e6297ecc/pyrestoolbox-1.4.3.tar.gz
+[2024-04-06 03:38:06] WARNING root fetch - processPackages [pyrestoolbox]: Timeout reached during download
+[2024-04-06 03:38:06] WARNING root fetch - processPackages [molsystem]: Timeout reached during download
+[2024-04-06 03:38:06] INFO root fetch - processPackages [pyrestoolbox]: Downloading https://files.pythonhosted.org/packages/da/b7/1b05edd51e51eb973b8f04c6f0e4510a97f38791e26691f24de29b1607a1/pyrestoolbox-1.4.4.tar.gz
+[2024-04-06 03:38:06] INFO root fetch - processPackages [molsystem]: Downloading https://files.pythonhosted.org/packages/ea/77/202f4f7520214300f1c2891bc2663a0e4d01f0dd4e2a13e93092666b427b/molsystem-2024.4.5.tar.gz
+[2024-04-06 03:38:06] WARNING root fetch - processPackages [pyrestoolbox]: Timeout reached during download
+[2024-04-06 03:38:06] INFO root fetch - processPackages [pyrestoolbox]: executing diffoscope
+[2024-04-06 03:38:06] INFO root fetch - processPackages [pyrestoolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrestoolbox-1.4.3.tar.gz tmp/pyrestoolbox-1.4.4.tar.gz --markdown 20240406/p/pyrestoolbox/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2024-04-06 03:38:07] WARNING root fetch - processPackages [molsystem]: Timeout reached during download
+[2024-04-06 03:38:07] INFO root fetch - processPackages [molsystem]: executing diffoscope
+[2024-04-06 03:38:07] INFO root fetch - processPackages [molsystem]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/molsystem-2024.3.13.tar.gz tmp/molsystem-2024.4.5.tar.gz --markdown 20240406/m/molsystem/2024.3.13-2024.4.5/diff.md --exclude *.pyd
+[2024-04-06 03:38:07] INFO root fetch - processPackages [pyrestoolbox]: Remove: archive file [/home/abi/fetcher/tmp/pyrestoolbox-1.4.3.tar.gz]
+[2024-04-06 03:38:07] INFO root fetch - processPackages [pyrestoolbox]: Remove: archive file [/home/abi/fetcher/tmp/pyrestoolbox-1.4.4.tar.gz]
+[2024-04-06 03:38:07] INFO root fetch - main [MainThread]: End processing [pyrestoolbox]: success
+[2024-04-06 03:38:08] INFO root fetch - processPackages [molsystem]: Remove: archive file [/home/abi/fetcher/tmp/molsystem-2024.3.13.tar.gz]
+[2024-04-06 03:38:08] INFO root fetch - processPackages [molsystem]: Remove: archive file [/home/abi/fetcher/tmp/molsystem-2024.4.5.tar.gz]
+[2024-04-06 03:38:08] INFO root fetch - main [MainThread]: End processing [molsystem]: success
+[2024-04-06 03:38:08] INFO root fetch - main [MainThread]: Store serial: [22644772]
