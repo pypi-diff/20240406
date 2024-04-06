@@ -10801,3 +10801,31 @@
 [2024-04-06 08:02:37] INFO root fetch - processPackages [llama-cpp-python]: Remove: archive file [/home/abi/fetcher/tmp/llama_cpp_python-0.2.9.tar.gz]
 [2024-04-06 08:02:37] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
 [2024-04-06 08:02:37] INFO root fetch - main [MainThread]: Store serial: [22645957]
+[2024-04-06 08:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645957]
+[2024-04-06 08:04:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 08:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-sale-input-barcode
+[2024-04-06 08:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addons-oca-stock-logistics-barcode
+[2024-04-06 08:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: download-tiktok-no-watermark
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addon-sale-input-barcode]: New version: [14.0.2.0.1.dev1] Old Version: [14.0.2.0.0]
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: New version: [14.0.20240405.0] Old Version: [14.0.20240212.0]
+[2024-04-06 08:04:47] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Skipping, unable to determine old version
+[2024-04-06 08:04:47] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark] error
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addon-sale-input-barcode]: Downloading https://files.pythonhosted.org/packages/08/4e/e339f6927f5560b2215ba97945443fdf4f051e5e23f5110c0fecc0b0c18c/odoo14_addon_sale_input_barcode-14.0.2.0.0-py3-none-any.whl
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/ab/5b/23c991698283bbe83c47aae31c89f5bc9bfaee8e6df1a64a9b9e24fc6294/odoo14_addons_oca_stock_logistics_barcode-14.0.20240212.0-py3-none-any.whl
+[2024-04-06 08:04:47] WARNING root fetch - processPackages [odoo14-addon-sale-input-barcode]: Timeout reached during download
+[2024-04-06 08:04:47] WARNING root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Timeout reached during download
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addon-sale-input-barcode]: Downloading https://files.pythonhosted.org/packages/20/e0/f297d83de0acdc63cf8726487da9b4604650ccccdc52956bc04e94075ee7/odoo14_addon_sale_input_barcode-14.0.2.0.1.dev1-py3-none-any.whl
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Downloading https://files.pythonhosted.org/packages/08/6d/2f58dae039601243bf46c895706bdcece145efc384efbf7495003c36a08f/odoo14_addons_oca_stock_logistics_barcode-14.0.20240405.0-py3-none-any.whl
+[2024-04-06 08:04:47] WARNING root fetch - processPackages [odoo14-addon-sale-input-barcode]: Timeout reached during download
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addon-sale-input-barcode]: executing diffoscope
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addon-sale-input-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_input_barcode-14.0.2.0.0-py3-none-any.whl.zip tmp/odoo14_addon_sale_input_barcode-14.0.2.0.1.dev1-py3-none-any.whl.zip --markdown 20240406/o/odoo14-addon-sale-input-barcode/14.0.2.0.0-14.0.2.0.1.dev1/diff.md --exclude *.pyd
+[2024-04-06 08:04:47] WARNING root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Timeout reached during download
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: executing diffoscope
+[2024-04-06 08:04:47] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_stock_logistics_barcode-14.0.20240212.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_stock_logistics_barcode-14.0.20240405.0-py3-none-any.whl.zip --markdown 20240406/o/odoo14-addons-oca-stock-logistics-barcode/14.0.20240212.0-14.0.20240405.0/diff.md --exclude *.pyd
+[2024-04-06 08:04:48] INFO root fetch - processPackages [odoo14-addon-sale-input-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_input_barcode-14.0.2.0.0-py3-none-any.whl.zip]
+[2024-04-06 08:04:48] INFO root fetch - processPackages [odoo14-addon-sale-input-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_input_barcode-14.0.2.0.1.dev1-py3-none-any.whl.zip]
+[2024-04-06 08:04:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-input-barcode]: success
+[2024-04-06 08:04:48] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_stock_logistics_barcode-14.0.20240212.0-py3-none-any.whl.zip]
+[2024-04-06 08:04:48] INFO root fetch - processPackages [odoo14-addons-oca-stock-logistics-barcode]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_stock_logistics_barcode-14.0.20240405.0-py3-none-any.whl.zip]
+[2024-04-06 08:04:48] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-stock-logistics-barcode]: success
+[2024-04-06 08:04:48] INFO root fetch - main [MainThread]: Store serial: [22645966]
