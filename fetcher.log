@@ -24630,3 +24630,50 @@ EOFError: EOF read where object expected
 [2024-04-06 23:01:05] INFO root fetch - processPackages [metpx-sr3]: Remove: archive file [/home/abi/fetcher/tmp/metpx_sr3-3.0.9-py3-none-any.whl.zip]
 [2024-04-06 23:01:05] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
 [2024-04-06 23:01:05] INFO root fetch - main [MainThread]: Store serial: [22651108]
+[2024-04-06 23:03:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651108]
+[2024-04-06 23:03:15] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 23:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reddit2text
+[2024-04-06 23:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysysq
+[2024-04-06 23:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: stockdatamanager
+[2024-04-06 23:03:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-framework
+[2024-04-06 23:03:15] INFO root fetch - processPackages [reddit2text]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 23:03:15] INFO root fetch - processPackages [stockdatamanager]: New version: [0.9] Old Version: [0.8]
+[2024-04-06 23:03:15] INFO root fetch - processPackages [xia-framework]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:03:15] INFO root fetch - processPackages [pysysq]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:03:15] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/53/82/85c7a48d6543b1766220c2c54d5e605c9f1a4596515c6d4d1608a5171a04/reddit2text-0.0.5.tar.gz
+[2024-04-06 23:03:15] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/4d/ec/8ba56b22e3b523e06aaac69046406b53a851ada9fdfb0c21920204e3ccee/xia-framework-0.0.8.tar.gz
+[2024-04-06 23:03:15] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/1f/9c/888eb22060f6d55ba8820f4032ab0f472c4b5b0d109108776474cc7d42ac/pysysq-0.0.8.tar.gz
+[2024-04-06 23:03:15] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/fd/1b/745895795a5ab823f2c03753cca8eb3212c15f649f4f3ba3a9f5419eabfe/stockdatamanager-0.8.tar.gz
+[2024-04-06 23:03:15] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 23:03:15] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 23:03:15] WARNING root fetch - processPackages [stockdatamanager]: Timeout reached during download
+[2024-04-06 23:03:15] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 23:03:16] INFO root fetch - processPackages [xia-framework]: Downloading https://files.pythonhosted.org/packages/1a/aa/c1278b76a785a1c89cde0fa37b425dbc14d128e5a6542af6978710d87150/xia-framework-0.0.9.tar.gz
+[2024-04-06 23:03:16] INFO root fetch - processPackages [reddit2text]: Downloading https://files.pythonhosted.org/packages/7e/91/7dd5c59e689f99af3a6e5e13e1d3eaf006870e6a7b6650e79ceb0387604e/reddit2text-0.0.6.tar.gz
+[2024-04-06 23:03:16] INFO root fetch - processPackages [stockdatamanager]: Downloading https://files.pythonhosted.org/packages/5e/ea/bffd547a88d65a049e44c3eabfa427b227482ff76e286fe25d32ff002bac/stockdatamanager-0.9.tar.gz
+[2024-04-06 23:03:16] WARNING root fetch - processPackages [xia-framework]: Timeout reached during download
+[2024-04-06 23:03:16] INFO root fetch - processPackages [xia-framework]: executing diffoscope
+[2024-04-06 23:03:16] INFO root fetch - processPackages [xia-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-framework-0.0.8.tar.gz tmp/xia-framework-0.0.9.tar.gz --markdown 20240406/x/xia-framework/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:03:16] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/92/0b/5e95d508e1985e498140aa0042e308b3d2820a76b6817553e7152decdd74/pysysq-0.0.9.tar.gz
+[2024-04-06 23:03:16] WARNING root fetch - processPackages [reddit2text]: Timeout reached during download
+[2024-04-06 23:03:16] INFO root fetch - processPackages [reddit2text]: executing diffoscope
+[2024-04-06 23:03:16] INFO root fetch - processPackages [reddit2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reddit2text-0.0.5.tar.gz tmp/reddit2text-0.0.6.tar.gz --markdown 20240406/r/reddit2text/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 23:03:16] WARNING root fetch - processPackages [stockdatamanager]: Timeout reached during download
+[2024-04-06 23:03:16] INFO root fetch - processPackages [stockdatamanager]: executing diffoscope
+[2024-04-06 23:03:16] INFO root fetch - processPackages [stockdatamanager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stockdatamanager-0.8.tar.gz tmp/stockdatamanager-0.9.tar.gz --markdown 20240406/s/stockdatamanager/0.8-0.9/diff.md --exclude *.pyd
+[2024-04-06 23:03:16] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 23:03:16] INFO root fetch - processPackages [pysysq]: executing diffoscope
+[2024-04-06 23:03:16] INFO root fetch - processPackages [pysysq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysysq-0.0.8.tar.gz tmp/pysysq-0.0.9.tar.gz --markdown 20240406/p/pysysq/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:03:16] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-0.8.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - processPackages [stockdatamanager]: Remove: archive file [/home/abi/fetcher/tmp/stockdatamanager-0.9.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - main [MainThread]: End processing [stockdatamanager]: success
+[2024-04-06 23:03:16] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.8.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - processPackages [xia-framework]: Remove: archive file [/home/abi/fetcher/tmp/xia-framework-0.0.9.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - main [MainThread]: End processing [xia-framework]: success
+[2024-04-06 23:03:16] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.5.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - processPackages [reddit2text]: Remove: archive file [/home/abi/fetcher/tmp/reddit2text-0.0.6.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - main [MainThread]: End processing [reddit2text]: success
+[2024-04-06 23:03:16] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.8.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.9.tar.gz]
+[2024-04-06 23:03:16] INFO root fetch - main [MainThread]: End processing [pysysq]: success
+[2024-04-06 23:03:16] INFO root fetch - main [MainThread]: Store serial: [22651121]
