@@ -1674,3 +1674,28 @@
 [2024-04-06 02:00:23] INFO root fetch - processPackages [tyro]: Remove: archive file [/home/abi/fetcher/tmp/tyro-0.8.2-py3-none-any.whl.zip]
 [2024-04-06 02:00:23] INFO root fetch - main [MainThread]: End processing [tyro]: success
 [2024-04-06 02:00:23] INFO root fetch - main [MainThread]: Store serial: [22643159]
+[2024-04-06 02:02:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643159]
+[2024-04-06 02:02:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 02:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tyro
+[2024-04-06 02:02:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: listmonk
+[2024-04-06 02:02:32] INFO root fetch - processPackages [listmonk]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-06 02:02:32] INFO root fetch - processPackages [tyro]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-06 02:02:32] INFO root fetch - processPackages [tyro]: Downloading https://files.pythonhosted.org/packages/11/70/cbf8182f847914bbe461572988e3cdb7bf8916365adcbb7fafd595a61e49/tyro-0.8.1.tar.gz
+[2024-04-06 02:02:32] INFO root fetch - processPackages [listmonk]: Downloading https://files.pythonhosted.org/packages/62/9d/ac493bb71c9ec3eed50c48dccec655011fe3a60ac4f258943caf476f8b1b/listmonk-0.1.7.tar.gz
+[2024-04-06 02:02:32] WARNING root fetch - processPackages [tyro]: Timeout reached during download
+[2024-04-06 02:02:32] INFO root fetch - processPackages [tyro]: Downloading https://files.pythonhosted.org/packages/9a/0c/4305bbdc39aaf37ae7a26e17c8c80b741d317ca186caed9e2c615202beca/tyro-0.8.2-py3-none-any.whl
+[2024-04-06 02:02:32] WARNING root fetch - processPackages [listmonk]: Timeout reached during download
+[2024-04-06 02:02:32] WARNING root fetch - processPackages [tyro]: Timeout reached during download
+[2024-04-06 02:02:32] INFO root fetch - processPackages [tyro]: executing diffoscope
+[2024-04-06 02:02:32] INFO root fetch - processPackages [tyro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tyro-0.8.1.tar.gz tmp/tyro-0.8.2-py3-none-any.whl.zip --markdown 20240406/t/tyro/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-06 02:02:32] INFO root fetch - processPackages [listmonk]: Downloading https://files.pythonhosted.org/packages/96/7a/64836c3590281831e4d227dc22f8ffd94acdbd81f65176905f264ffcaf18/listmonk-0.1.8.tar.gz
+[2024-04-06 02:02:32] WARNING root fetch - processPackages [listmonk]: Timeout reached during download
+[2024-04-06 02:02:32] INFO root fetch - processPackages [listmonk]: executing diffoscope
+[2024-04-06 02:02:32] INFO root fetch - processPackages [listmonk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/listmonk-0.1.7.tar.gz tmp/listmonk-0.1.8.tar.gz --markdown 20240406/l/listmonk/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2024-04-06 02:02:33] INFO root fetch - processPackages [tyro]: Remove: archive file [/home/abi/fetcher/tmp/tyro-0.8.1.tar.gz]
+[2024-04-06 02:02:33] INFO root fetch - processPackages [tyro]: Remove: archive file [/home/abi/fetcher/tmp/tyro-0.8.2-py3-none-any.whl.zip]
+[2024-04-06 02:02:33] INFO root fetch - main [MainThread]: End processing [tyro]: success
+[2024-04-06 02:02:33] INFO root fetch - processPackages [listmonk]: Remove: archive file [/home/abi/fetcher/tmp/listmonk-0.1.7.tar.gz]
+[2024-04-06 02:02:33] INFO root fetch - processPackages [listmonk]: Remove: archive file [/home/abi/fetcher/tmp/listmonk-0.1.8.tar.gz]
+[2024-04-06 02:02:33] INFO root fetch - main [MainThread]: End processing [listmonk]: success
+[2024-04-06 02:02:33] INFO root fetch - main [MainThread]: Store serial: [22643165]
