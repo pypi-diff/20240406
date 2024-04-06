@@ -12417,3 +12417,17 @@
 [2024-04-06 10:17:32] INFO root fetch - processPackages [iris-pex-embedded-python]: Remove: archive file [/home/abi/fetcher/tmp/iris_pex_embedded_python-2.3.9.tar.gz]
 [2024-04-06 10:17:32] INFO root fetch - main [MainThread]: End processing [iris-pex-embedded-python]: success
 [2024-04-06 10:17:32] INFO root fetch - main [MainThread]: Store serial: [22646673]
+[2024-04-06 10:19:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646673]
+[2024-04-06 10:19:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 10:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BasicLibrary.PY
+[2024-04-06 10:19:41] INFO root fetch - processPackages [BasicLibrary.PY]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-04-06 10:19:41] INFO root fetch - processPackages [BasicLibrary.PY]: Downloading https://files.pythonhosted.org/packages/7a/f7/9207417db62e1815b16945c6ef5928d33faefb4fbea25b73e296c7ef1b46/basiclibrary_py-0.6.8.tar.gz
+[2024-04-06 10:19:41] WARNING root fetch - processPackages [BasicLibrary.PY]: Timeout reached during download
+[2024-04-06 10:19:41] INFO root fetch - processPackages [BasicLibrary.PY]: Downloading https://files.pythonhosted.org/packages/8f/6c/23998dc6441d6989fa6035d0512666516901c034c6eb6a19c41ab50db950/basiclibrary_py-0.6.9.tar.gz
+[2024-04-06 10:19:41] WARNING root fetch - processPackages [BasicLibrary.PY]: Timeout reached during download
+[2024-04-06 10:19:41] INFO root fetch - processPackages [BasicLibrary.PY]: executing diffoscope
+[2024-04-06 10:19:41] INFO root fetch - processPackages [BasicLibrary.PY]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basiclibrary_py-0.6.8.tar.gz tmp/basiclibrary_py-0.6.9.tar.gz --markdown 20240406/B/BasicLibrary.PY/0.6.8-0.6.9/diff.md --exclude *.pyd
+[2024-04-06 10:19:42] INFO root fetch - processPackages [BasicLibrary.PY]: Remove: archive file [/home/abi/fetcher/tmp/basiclibrary_py-0.6.8.tar.gz]
+[2024-04-06 10:19:42] INFO root fetch - processPackages [BasicLibrary.PY]: Remove: archive file [/home/abi/fetcher/tmp/basiclibrary_py-0.6.9.tar.gz]
+[2024-04-06 10:19:42] INFO root fetch - main [MainThread]: End processing [BasicLibrary.PY]: success
+[2024-04-06 10:19:42] INFO root fetch - main [MainThread]: Store serial: [22646676]
