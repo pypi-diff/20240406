@@ -18519,3 +18519,39 @@ EOFError: EOF read where object expected
 [2024-04-06 17:23:03] INFO root fetch - processPackages [paita]: Remove: archive file [/home/abi/fetcher/tmp/paita-0.1.8.tar.gz]
 [2024-04-06 17:23:03] INFO root fetch - main [MainThread]: End processing [paita]: success
 [2024-04-06 17:23:03] INFO root fetch - main [MainThread]: Store serial: [22648991]
+[2024-04-06 17:25:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648991]
+[2024-04-06 17:25:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ingredient-slicer
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyscript-ltk
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-reminder
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ingredient-slicer]: New version: [0.0.83] Old Version: [0.0.81]
+[2024-04-06 17:25:12] INFO root fetch - processPackages [pyscript-ltk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ingredient-slicer]: Downloading https://files.pythonhosted.org/packages/e8/b0/2c84ae0ae465f813c4c1a498cdd169d3dd5dc0c1f4848d48808256b09bcc/ingredient_slicer-0.0.81.tar.gz
+[2024-04-06 17:25:12] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/28/6e/96be52ee89b9a24fc42d6a4a18618ca41a2b1437aed89200641a3ad7cc13/pyscript-ltk-0.1.8.tar.gz
+[2024-04-06 17:25:12] INFO root fetch - processPackages [nonebot-plugin-reminder]: New version: [0.3.1.post2] Old Version: [0.3.1.post1]
+[2024-04-06 17:25:12] WARNING root fetch - processPackages [pyscript-ltk]: Timeout reached during download
+[2024-04-06 17:25:12] WARNING root fetch - processPackages [ingredient-slicer]: Timeout reached during download
+[2024-04-06 17:25:12] INFO root fetch - processPackages [pyscript-ltk]: Downloading https://files.pythonhosted.org/packages/a3/ee/ecb05ed84434f45a5ad24d6b5fdb04a89d83f6efe69dd691866b7eaee6e9/pyscript-ltk-0.1.9.tar.gz
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ingredient-slicer]: Downloading https://files.pythonhosted.org/packages/85/9e/6e647b711316d5faf764b513374fab03dcdd67d592289c0251207572e648/ingredient_slicer-0.0.83.tar.gz
+[2024-04-06 17:25:12] INFO root fetch - processPackages [nonebot-plugin-reminder]: Downloading https://files.pythonhosted.org/packages/13/54/c3d092606c6975e0b28be9100a9ec8c03a86c26eb5423dbab4c36d0b32ef/nonebot_plugin_reminder-0.3.1.post1.tar.gz
+[2024-04-06 17:25:12] WARNING root fetch - processPackages [pyscript-ltk]: Timeout reached during download
+[2024-04-06 17:25:12] INFO root fetch - processPackages [pyscript-ltk]: executing diffoscope
+[2024-04-06 17:25:12] INFO root fetch - processPackages [pyscript-ltk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscript-ltk-0.1.8.tar.gz tmp/pyscript-ltk-0.1.9.tar.gz --markdown 20240406/p/pyscript-ltk/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 17:25:12] WARNING root fetch - processPackages [ingredient-slicer]: Timeout reached during download
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ingredient-slicer]: executing diffoscope
+[2024-04-06 17:25:12] INFO root fetch - processPackages [ingredient-slicer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ingredient_slicer-0.0.81.tar.gz tmp/ingredient_slicer-0.0.83.tar.gz --markdown 20240406/i/ingredient-slicer/0.0.81-0.0.83/diff.md --exclude *.pyd
+[2024-04-06 17:25:12] WARNING root fetch - processPackages [nonebot-plugin-reminder]: Timeout reached during download
+[2024-04-06 17:25:12] INFO root fetch - processPackages [nonebot-plugin-reminder]: Downloading https://files.pythonhosted.org/packages/1b/97/04428b431f0fc92fb549e4fdba65bf7c16865a22df4e656bc517d19e2a19/nonebot_plugin_reminder-0.3.1.post2.tar.gz
+[2024-04-06 17:25:13] WARNING root fetch - processPackages [nonebot-plugin-reminder]: Timeout reached during download
+[2024-04-06 17:25:13] INFO root fetch - processPackages [nonebot-plugin-reminder]: executing diffoscope
+[2024-04-06 17:25:13] INFO root fetch - processPackages [nonebot-plugin-reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_reminder-0.3.1.post1.tar.gz tmp/nonebot_plugin_reminder-0.3.1.post2.tar.gz --markdown 20240406/n/nonebot-plugin-reminder/0.3.1.post1-0.3.1.post2/diff.md --exclude *.pyd
+[2024-04-06 17:25:13] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.8.tar.gz]
+[2024-04-06 17:25:13] INFO root fetch - processPackages [pyscript-ltk]: Remove: archive file [/home/abi/fetcher/tmp/pyscript-ltk-0.1.9.tar.gz]
+[2024-04-06 17:25:13] INFO root fetch - main [MainThread]: End processing [pyscript-ltk]: success
+[2024-04-06 17:25:13] INFO root fetch - processPackages [ingredient-slicer]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_slicer-0.0.81.tar.gz]
+[2024-04-06 17:25:13] INFO root fetch - processPackages [ingredient-slicer]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_slicer-0.0.83.tar.gz]
+[2024-04-06 17:25:13] INFO root fetch - main [MainThread]: End processing [ingredient-slicer]: success
+[2024-04-06 17:25:13] INFO root fetch - processPackages [nonebot-plugin-reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_reminder-0.3.1.post1.tar.gz]
+[2024-04-06 17:25:13] INFO root fetch - processPackages [nonebot-plugin-reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_reminder-0.3.1.post2.tar.gz]
+[2024-04-06 17:25:13] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-reminder]: success
+[2024-04-06 17:25:13] INFO root fetch - main [MainThread]: Store serial: [22649000]
