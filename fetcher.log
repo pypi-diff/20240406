@@ -8158,3 +8158,17 @@
 [2024-04-06 04:41:32] INFO root fetch - processPackages [invertedai]: Remove: archive file [/home/abi/fetcher/tmp/invertedai-0.0.9rc0.tar.gz]
 [2024-04-06 04:41:32] INFO root fetch - main [MainThread]: End processing [invertedai]: success
 [2024-04-06 04:41:32] INFO root fetch - main [MainThread]: Store serial: [22645019]
+[2024-04-06 04:43:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645019]
+[2024-04-06 04:43:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 04:43:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: keras-nlp
+[2024-04-06 04:43:40] INFO root fetch - processPackages [keras-nlp]: New version: [0.9.1.dev0] Old Version: [0.9.0.dev1]
+[2024-04-06 04:43:40] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/f9/00/b88bde904c78f4f208e0fcbeeb26e4cf248da70c6d8ad95ce84ed3df6741/keras-nlp-0.9.0.dev1.tar.gz
+[2024-04-06 04:43:41] WARNING root fetch - processPackages [keras-nlp]: Timeout reached during download
+[2024-04-06 04:43:41] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/b6/6b/5e378df208b954e0bb2f79368dfa7a478538ef65cc2c9a28861a92e5b40e/keras-nlp-0.9.1.dev0.tar.gz
+[2024-04-06 04:43:41] WARNING root fetch - processPackages [keras-nlp]: Timeout reached during download
+[2024-04-06 04:43:41] INFO root fetch - processPackages [keras-nlp]: executing diffoscope
+[2024-04-06 04:43:41] INFO root fetch - processPackages [keras-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-0.9.0.dev1.tar.gz tmp/keras-nlp-0.9.1.dev0.tar.gz --markdown 20240406/k/keras-nlp/0.9.0.dev1-0.9.1.dev0/diff.md --exclude *.pyd
+[2024-04-06 04:43:42] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.0.dev1.tar.gz]
+[2024-04-06 04:43:42] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.1.dev0.tar.gz]
+[2024-04-06 04:43:42] INFO root fetch - main [MainThread]: End processing [keras-nlp]: success
+[2024-04-06 04:43:42] INFO root fetch - main [MainThread]: Store serial: [22645022]
