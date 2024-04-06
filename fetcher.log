@@ -22559,3 +22559,50 @@ EOFError: EOF read where object expected
 [2024-04-06 21:03:58] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
 [2024-04-06 21:03:58] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-06 21:03:58] INFO root fetch - main [MainThread]: Store serial: [22650323]
+[2024-04-06 21:06:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650323]
+[2024-04-06 21:06:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EMGFlow
+[2024-04-06 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: learning3d
+[2024-04-06 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: confluence.md
+[2024-04-06 21:06:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prospector-profile-duplicated
+[2024-04-06 21:06:07] INFO root fetch - processPackages [EMGFlow]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 21:06:07] INFO root fetch - processPackages [learning3d]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 21:06:07] INFO root fetch - processPackages [EMGFlow]: Downloading https://files.pythonhosted.org/packages/d6/1c/9408800364473e60da7c1746d330af74598a7635e82d447e60be59f0f924/emgflow-1.0.0.tar.gz
+[2024-04-06 21:06:07] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/f8/dc/8313bd0c67af7eb7056e99a62285ae5df664fbeeb580926f8b8bcf0e159e/learning3d-0.0.5.tar.gz
+[2024-04-06 21:06:07] INFO root fetch - processPackages [confluence.md]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-06 21:06:07] INFO root fetch - processPackages [prospector-profile-duplicated]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-04-06 21:06:07] WARNING root fetch - processPackages [EMGFlow]: Timeout reached during download
+[2024-04-06 21:06:07] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 21:06:07] INFO root fetch - processPackages [confluence.md]: Downloading https://files.pythonhosted.org/packages/f7/7b/95b67e3d5dc5f8882b2a0f1e4b06f40732ed932262093baf61e2aa639f8d/confluence.md-0.3.1.tar.gz
+[2024-04-06 21:06:07] INFO root fetch - processPackages [prospector-profile-duplicated]: Downloading https://files.pythonhosted.org/packages/0a/bf/fc0aab42df16a0ce545ef268da38dac557246ad3cb92d124f44574d05725/prospector_profile_duplicated-1.3.0.tar.gz
+[2024-04-06 21:06:07] INFO root fetch - processPackages [EMGFlow]: Downloading https://files.pythonhosted.org/packages/44/7d/5a3860b173916d456745022ed69feeb9914e4847381fb1c36c9d768ee09b/emgflow-1.0.1.tar.gz
+[2024-04-06 21:06:07] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/da/01/66b4c8d0166e0f7124deaa752ec3fd4e27e7f10e8930ac1446b6f79dc7d8/learning3d-0.0.6.tar.gz
+[2024-04-06 21:06:07] WARNING root fetch - processPackages [prospector-profile-duplicated]: Timeout reached during download
+[2024-04-06 21:06:07] WARNING root fetch - processPackages [EMGFlow]: Timeout reached during download
+[2024-04-06 21:06:07] INFO root fetch - processPackages [EMGFlow]: executing diffoscope
+[2024-04-06 21:06:07] INFO root fetch - processPackages [EMGFlow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emgflow-1.0.0.tar.gz tmp/emgflow-1.0.1.tar.gz --markdown 20240406/E/EMGFlow/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 21:06:07] WARNING root fetch - processPackages [confluence.md]: Timeout reached during download
+[2024-04-06 21:06:07] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 21:06:07] INFO root fetch - processPackages [learning3d]: executing diffoscope
+[2024-04-06 21:06:07] INFO root fetch - processPackages [learning3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning3d-0.0.5.tar.gz tmp/learning3d-0.0.6.tar.gz --markdown 20240406/l/learning3d/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 21:06:08] INFO root fetch - processPackages [prospector-profile-duplicated]: Downloading https://files.pythonhosted.org/packages/71/e1/2d5dd6803e91092de3298db8b27ecd5d9886591826661f2344f01c96a54b/prospector_profile_duplicated-1.4.0.tar.gz
+[2024-04-06 21:06:08] INFO root fetch - processPackages [confluence.md]: Downloading https://files.pythonhosted.org/packages/05/b8/014ab0271669e8b78afc57d46009a0d0be6e2406dea1556305638754fd64/confluence.md-0.3.2.tar.gz
+[2024-04-06 21:06:08] WARNING root fetch - processPackages [prospector-profile-duplicated]: Timeout reached during download
+[2024-04-06 21:06:08] INFO root fetch - processPackages [prospector-profile-duplicated]: executing diffoscope
+[2024-04-06 21:06:08] INFO root fetch - processPackages [prospector-profile-duplicated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prospector_profile_duplicated-1.3.0.tar.gz tmp/prospector_profile_duplicated-1.4.0.tar.gz --markdown 20240406/p/prospector-profile-duplicated/1.3.0-1.4.0/diff.md --exclude *.pyd
+[2024-04-06 21:06:08] WARNING root fetch - processPackages [confluence.md]: Timeout reached during download
+[2024-04-06 21:06:08] INFO root fetch - processPackages [confluence.md]: executing diffoscope
+[2024-04-06 21:06:08] INFO root fetch - processPackages [confluence.md]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/confluence.md-0.3.1.tar.gz tmp/confluence.md-0.3.2.tar.gz --markdown 20240406/c/confluence.md/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2024-04-06 21:06:08] INFO root fetch - processPackages [EMGFlow]: Remove: archive file [/home/abi/fetcher/tmp/emgflow-1.0.0.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - processPackages [EMGFlow]: Remove: archive file [/home/abi/fetcher/tmp/emgflow-1.0.1.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - main [MainThread]: End processing [EMGFlow]: success
+[2024-04-06 21:06:08] INFO root fetch - processPackages [prospector-profile-duplicated]: Remove: archive file [/home/abi/fetcher/tmp/prospector_profile_duplicated-1.3.0.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - processPackages [prospector-profile-duplicated]: Remove: archive file [/home/abi/fetcher/tmp/prospector_profile_duplicated-1.4.0.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - main [MainThread]: End processing [prospector-profile-duplicated]: success
+[2024-04-06 21:06:08] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.5.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.6.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - main [MainThread]: End processing [learning3d]: success
+[2024-04-06 21:06:08] INFO root fetch - processPackages [confluence.md]: Remove: archive file [/home/abi/fetcher/tmp/confluence.md-0.3.1.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - processPackages [confluence.md]: Remove: archive file [/home/abi/fetcher/tmp/confluence.md-0.3.2.tar.gz]
+[2024-04-06 21:06:08] INFO root fetch - main [MainThread]: End processing [confluence.md]: success
+[2024-04-06 21:06:08] INFO root fetch - main [MainThread]: Store serial: [22650338]
