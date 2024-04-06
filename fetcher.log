@@ -12146,3 +12146,55 @@
 [2024-04-06 10:00:13] INFO root fetch - processPackages [nonos]: Remove: archive file [/home/abi/fetcher/tmp/nonos-0.9.1.tar.gz]
 [2024-04-06 10:00:13] INFO root fetch - main [MainThread]: End processing [nonos]: success
 [2024-04-06 10:00:13] INFO root fetch - main [MainThread]: Store serial: [22646575]
+[2024-04-06 10:02:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646575]
+[2024-04-06 10:02:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: palworld-pal-editor
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: httplint
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipahcc
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plugp100
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nodoc
+[2024-04-06 10:02:22] INFO root fetch - processPackages [palworld-pal-editor]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ipahcc]: New version: [0.17] Old Version: [0.16]
+[2024-04-06 10:02:22] INFO root fetch - processPackages [httplint]: New version: [2024.4.1] Old Version: [2024.1.1]
+[2024-04-06 10:02:22] INFO root fetch - processPackages [palworld-pal-editor]: Downloading https://files.pythonhosted.org/packages/49/a2/a15e7626d2506d16fdb66afa2f65c69ca71735229e55fc64edab7343e04d/palworld-pal-editor-0.4.3.tar.gz
+[2024-04-06 10:02:22] INFO root fetch - processPackages [plugp100]: New version: [5.0.0.dev4] Old Version: [5.0.0.dev3]
+[2024-04-06 10:02:22] INFO root fetch - processPackages [nodoc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 10:02:22] WARNING root fetch - processPackages [palworld-pal-editor]: Skipping package: exceeds size limit 20481102>=10485760
+[2024-04-06 10:02:22] INFO root fetch - main [MainThread]: End processing [palworld-pal-editor] error
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ipahcc]: Downloading https://files.pythonhosted.org/packages/f6/c0/3c6407e8c9187edc5d4b2f0d4a08f62bcbe3a5b1f0caf3b858b002149f79/ipahcc-0.16.tar.gz
+[2024-04-06 10:02:22] INFO root fetch - processPackages [httplint]: Downloading https://files.pythonhosted.org/packages/1c/85/55923517efa39c4d47ae94e598c99c2602ba1506ac2e851f5138d0e13a64/httplint-2024.1.1.tar.gz
+[2024-04-06 10:02:22] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/9b/5a/fda776655a86adee758e0cdecbb85ee3e40ac093638cf77789609e9a82d9/plugp100-5.0.0.dev3.tar.gz
+[2024-04-06 10:02:22] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/4c/d1/8b9aa7fc6079375d39e4c528d339a014438130e763c7270344c15002a321/nodoc-1.0.8.tar.gz
+[2024-04-06 10:02:22] WARNING root fetch - processPackages [ipahcc]: Timeout reached during download
+[2024-04-06 10:02:22] WARNING root fetch - processPackages [httplint]: Timeout reached during download
+[2024-04-06 10:02:22] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 10:02:22] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ipahcc]: Downloading https://files.pythonhosted.org/packages/bb/92/eebf175d1e74aa965116240d9d692ab32daaa39f9be95e725ba4f6c64c89/ipahcc-0.17.tar.gz
+[2024-04-06 10:02:22] INFO root fetch - processPackages [httplint]: Downloading https://files.pythonhosted.org/packages/ad/b9/7870e155060f0c256ae700be5213bbcc880a27518030c055b09a4bf355d3/httplint-2024.4.1.tar.gz
+[2024-04-06 10:02:22] WARNING root fetch - processPackages [ipahcc]: Timeout reached during download
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ipahcc]: executing diffoscope
+[2024-04-06 10:02:22] INFO root fetch - processPackages [ipahcc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipahcc-0.16.tar.gz tmp/ipahcc-0.17.tar.gz --markdown 20240406/i/ipahcc/0.16-0.17/diff.md --exclude *.pyd
+[2024-04-06 10:02:22] WARNING root fetch - processPackages [httplint]: Timeout reached during download
+[2024-04-06 10:02:22] INFO root fetch - processPackages [httplint]: executing diffoscope
+[2024-04-06 10:02:22] INFO root fetch - processPackages [httplint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/httplint-2024.1.1.tar.gz tmp/httplint-2024.4.1.tar.gz --markdown 20240406/h/httplint/2024.1.1-2024.4.1/diff.md --exclude *.pyd
+[2024-04-06 10:02:23] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/39/7e/1eab33b8a3194bfeb5f28e6dd3edcf53eb49a0fa7b437194f85090e74f32/plugp100-5.0.0.dev4.tar.gz
+[2024-04-06 10:02:23] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/c3/01/365275f65437bdcd49fb8054d4dd45304b5a0f8ee40ef9cdaf3d0fa5ad12/nodoc-1.0.9.tar.gz
+[2024-04-06 10:02:23] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 10:02:23] INFO root fetch - processPackages [nodoc]: executing diffoscope
+[2024-04-06 10:02:23] INFO root fetch - processPackages [nodoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodoc-1.0.8.tar.gz tmp/nodoc-1.0.9.tar.gz --markdown 20240406/n/nodoc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 10:02:23] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 10:02:23] INFO root fetch - processPackages [plugp100]: executing diffoscope
+[2024-04-06 10:02:23] INFO root fetch - processPackages [plugp100]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugp100-5.0.0.dev3.tar.gz tmp/plugp100-5.0.0.dev4.tar.gz --markdown 20240406/p/plugp100/5.0.0.dev3-5.0.0.dev4/diff.md --exclude *.pyd
+[2024-04-06 10:02:23] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.8.tar.gz]
+[2024-04-06 10:02:23] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.9.tar.gz]
+[2024-04-06 10:02:23] INFO root fetch - main [MainThread]: End processing [nodoc]: success
+[2024-04-06 10:02:23] INFO root fetch - processPackages [httplint]: Remove: archive file [/home/abi/fetcher/tmp/httplint-2024.1.1.tar.gz]
+[2024-04-06 10:02:23] INFO root fetch - processPackages [httplint]: Remove: archive file [/home/abi/fetcher/tmp/httplint-2024.4.1.tar.gz]
+[2024-04-06 10:02:23] INFO root fetch - main [MainThread]: End processing [httplint]: success
+[2024-04-06 10:02:24] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev3.tar.gz]
+[2024-04-06 10:02:24] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev4.tar.gz]
+[2024-04-06 10:02:24] INFO root fetch - main [MainThread]: End processing [plugp100]: success
+[2024-04-06 10:02:24] INFO root fetch - processPackages [ipahcc]: Remove: archive file [/home/abi/fetcher/tmp/ipahcc-0.16.tar.gz]
+[2024-04-06 10:02:24] INFO root fetch - processPackages [ipahcc]: Remove: archive file [/home/abi/fetcher/tmp/ipahcc-0.17.tar.gz]
+[2024-04-06 10:02:24] INFO root fetch - main [MainThread]: End processing [ipahcc]: success
+[2024-04-06 10:02:24] INFO root fetch - main [MainThread]: Store serial: [22646590]
