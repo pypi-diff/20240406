@@ -16905,3 +16905,42 @@ EOFError: EOF read where object expected
 [2024-04-06 15:47:27] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
 [2024-04-06 15:47:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2024-04-06 15:47:27] INFO root fetch - main [MainThread]: Store serial: [22648293]
+[2024-04-06 15:49:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648293]
+[2024-04-06 15:49:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 15:49:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ewi-usb-config-cli
+[2024-04-06 15:49:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: quarkstudio
+[2024-04-06 15:49:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baekjoonapi
+[2024-04-06 15:49:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seeder
+[2024-04-06 15:49:36] INFO root fetch - processPackages [seeder]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 15:49:36] INFO root fetch - processPackages [baekjoonapi]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-06 15:49:36] INFO root fetch - processPackages [quarkstudio]: New version: [6.6.2.16] Old Version: [6.6.2.15]
+[2024-04-06 15:49:36] WARNING root fetch - processPackages [ewi-usb-config-cli]: Skipping, unable to determine old version
+[2024-04-06 15:49:36] INFO root fetch - main [MainThread]: End processing [ewi-usb-config-cli] error
+[2024-04-06 15:49:36] INFO root fetch - processPackages [seeder]: Downloading https://files.pythonhosted.org/packages/6a/2f/1dc20573a1f5672ca4bc02147eac965ae4e8455b74aef322f3e0d347e81d/seeder-0.0.1.tar.gz
+[2024-04-06 15:49:36] INFO root fetch - processPackages [baekjoonapi]: Downloading https://files.pythonhosted.org/packages/50/b7/ec1044c0b1eb48c01b9e954fc5d55c06a49c18fcc4705024b9862702dfde/baekjoonapi-0.2.4.tar.gz
+[2024-04-06 15:49:36] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/b1/fe/c7ea6837c87117372ad631e44ae114b8dfb8ec7b42d245340920593096f1/quarkstudio-6.6.2.15-cp312-none-win_amd64.whl
+[2024-04-06 15:49:37] WARNING root fetch - processPackages [seeder]: Timeout reached during download
+[2024-04-06 15:49:37] WARNING root fetch - processPackages [quarkstudio]: Timeout reached during download
+[2024-04-06 15:49:37] WARNING root fetch - processPackages [baekjoonapi]: Timeout reached during download
+[2024-04-06 15:49:37] INFO root fetch - processPackages [seeder]: Downloading https://files.pythonhosted.org/packages/99/c9/c46e3c442e800c54b2032da756107242a80ef7eed38b1bffdd77ff2ff208/seeder-0.0.2.tar.gz
+[2024-04-06 15:49:37] INFO root fetch - processPackages [quarkstudio]: Downloading https://files.pythonhosted.org/packages/a2/18/2aa4da4b7f7f6e3ab54e870f1db9c8537ec9972b4685170467b5142b436a/quarkstudio-6.6.2.16-cp312-none-win_amd64.whl
+[2024-04-06 15:49:37] WARNING root fetch - processPackages [seeder]: Timeout reached during download
+[2024-04-06 15:49:37] INFO root fetch - processPackages [seeder]: executing diffoscope
+[2024-04-06 15:49:37] INFO root fetch - processPackages [seeder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seeder-0.0.1.tar.gz tmp/seeder-0.0.2.tar.gz --markdown 20240406/s/seeder/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 15:49:37] INFO root fetch - processPackages [baekjoonapi]: Downloading https://files.pythonhosted.org/packages/d8/2f/daf857156fd2840f1c2edd4eb1ccc71a3d17afeb5b36abe9209ef1e9f5a0/baekjoonapi-0.2.5.tar.gz
+[2024-04-06 15:49:37] WARNING root fetch - processPackages [baekjoonapi]: Timeout reached during download
+[2024-04-06 15:49:37] INFO root fetch - processPackages [baekjoonapi]: executing diffoscope
+[2024-04-06 15:49:37] INFO root fetch - processPackages [baekjoonapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baekjoonapi-0.2.4.tar.gz tmp/baekjoonapi-0.2.5.tar.gz --markdown 20240406/b/baekjoonapi/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2024-04-06 15:49:37] WARNING root fetch - processPackages [quarkstudio]: Timeout reached during download
+[2024-04-06 15:49:37] INFO root fetch - processPackages [quarkstudio]: executing diffoscope
+[2024-04-06 15:49:37] INFO root fetch - processPackages [quarkstudio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarkstudio-6.6.2.15-cp312-none-win_amd64.whl.zip tmp/quarkstudio-6.6.2.16-cp312-none-win_amd64.whl.zip --markdown 20240406/q/quarkstudio/6.6.2.15-6.6.2.16/diff.md --exclude *.pyd
+[2024-04-06 15:49:37] INFO root fetch - processPackages [seeder]: Remove: archive file [/home/abi/fetcher/tmp/seeder-0.0.1.tar.gz]
+[2024-04-06 15:49:37] INFO root fetch - processPackages [seeder]: Remove: archive file [/home/abi/fetcher/tmp/seeder-0.0.2.tar.gz]
+[2024-04-06 15:49:37] INFO root fetch - main [MainThread]: End processing [seeder]: success
+[2024-04-06 15:49:38] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.2.15-cp312-none-win_amd64.whl.zip]
+[2024-04-06 15:49:38] INFO root fetch - processPackages [quarkstudio]: Remove: archive file [/home/abi/fetcher/tmp/quarkstudio-6.6.2.16-cp312-none-win_amd64.whl.zip]
+[2024-04-06 15:49:38] INFO root fetch - main [MainThread]: End processing [quarkstudio]: success
+[2024-04-06 15:49:38] INFO root fetch - processPackages [baekjoonapi]: Remove: archive file [/home/abi/fetcher/tmp/baekjoonapi-0.2.4.tar.gz]
+[2024-04-06 15:49:38] INFO root fetch - processPackages [baekjoonapi]: Remove: archive file [/home/abi/fetcher/tmp/baekjoonapi-0.2.5.tar.gz]
+[2024-04-06 15:49:38] INFO root fetch - main [MainThread]: End processing [baekjoonapi]: success
+[2024-04-06 15:49:38] INFO root fetch - main [MainThread]: Store serial: [22648311]
