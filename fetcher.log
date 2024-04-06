@@ -12873,3 +12873,17 @@
 [2024-04-06 10:54:19] INFO root fetch - processPackages [aws-packages]: Remove: archive file [/home/abi/fetcher/tmp/aws_packages-0.0.6-cp38-cp38-manylinux_2_5_i686.manylinux1_i686.whl.zip]
 [2024-04-06 10:54:19] INFO root fetch - main [MainThread]: End processing [aws-packages]: success
 [2024-04-06 10:54:19] INFO root fetch - main [MainThread]: Store serial: [22646893]
+[2024-04-06 10:56:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646893]
+[2024-04-06 10:56:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 10:56:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: icoder-math
+[2024-04-06 10:56:27] INFO root fetch - processPackages [icoder-math]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-04-06 10:56:27] INFO root fetch - processPackages [icoder-math]: Downloading https://files.pythonhosted.org/packages/3d/f3/f747160e08bf436bdb95041fda8894f2d692ca83564f358c5ef3c06c6a28/icoder_math-0.0.4.tar.gz
+[2024-04-06 10:56:27] WARNING root fetch - processPackages [icoder-math]: Timeout reached during download
+[2024-04-06 10:56:28] INFO root fetch - processPackages [icoder-math]: Downloading https://files.pythonhosted.org/packages/26/57/ef98f45093813015f7ecf7a9ca899a06d38816581bca24e262368efadc99/icoder_math-0.0.5.tar.gz
+[2024-04-06 10:56:28] WARNING root fetch - processPackages [icoder-math]: Timeout reached during download
+[2024-04-06 10:56:28] INFO root fetch - processPackages [icoder-math]: executing diffoscope
+[2024-04-06 10:56:28] INFO root fetch - processPackages [icoder-math]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icoder_math-0.0.4.tar.gz tmp/icoder_math-0.0.5.tar.gz --markdown 20240406/i/icoder-math/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2024-04-06 10:56:28] INFO root fetch - processPackages [icoder-math]: Remove: archive file [/home/abi/fetcher/tmp/icoder_math-0.0.4.tar.gz]
+[2024-04-06 10:56:28] INFO root fetch - processPackages [icoder-math]: Remove: archive file [/home/abi/fetcher/tmp/icoder_math-0.0.5.tar.gz]
+[2024-04-06 10:56:28] INFO root fetch - main [MainThread]: End processing [icoder-math]: success
+[2024-04-06 10:56:28] INFO root fetch - main [MainThread]: Store serial: [22646932]
