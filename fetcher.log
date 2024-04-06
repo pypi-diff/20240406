@@ -15571,3 +15571,50 @@ EOFError: EOF read where object expected
 [2024-04-06 14:11:10] INFO root fetch - processPackages [premai]: Remove: archive file [/home/abi/fetcher/tmp/premai-0.3.9.tar.gz]
 [2024-04-06 14:11:10] INFO root fetch - main [MainThread]: End processing [premai]: success
 [2024-04-06 14:11:10] INFO root fetch - main [MainThread]: Store serial: [22647736]
+[2024-04-06 14:13:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647736]
+[2024-04-06 14:13:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 14:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datewise
+[2024-04-06 14:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dekpkglock
+[2024-04-06 14:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk8s
+[2024-04-06 14:13:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Rryyz
+[2024-04-06 14:13:18] INFO root fetch - processPackages [Rryyz]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 14:13:19] INFO root fetch - processPackages [cdk8s]: New version: [2.9.0] Old Version: [2.8.0]
+[2024-04-06 14:13:19] INFO root fetch - processPackages [datewise]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-04-06 14:13:19] INFO root fetch - processPackages [Rryyz]: Downloading https://files.pythonhosted.org/packages/ca/78/79fe514c33c8fd2c5b722ecd42a699ecbf6405f7b8dd870df14037afc89c/Rryyz-0.0.1.tar.gz
+[2024-04-06 14:13:19] INFO root fetch - processPackages [dekpkglock]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 14:13:19] INFO root fetch - processPackages [cdk8s]: Downloading https://files.pythonhosted.org/packages/7d/c5/592391e50b273450851cb1dd87401069971eead9d407a9d5c5ec13704f65/cdk8s-2.8.0.tar.gz
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [Rryyz]: Timeout reached during download
+[2024-04-06 14:13:19] INFO root fetch - processPackages [datewise]: Downloading https://files.pythonhosted.org/packages/d6/73/570d57982e98afdf236919612ad40778179f4d41f6baf3855523376b675b/datewise-0.1.5.tar.gz
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [cdk8s]: Timeout reached during download
+[2024-04-06 14:13:19] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/e6/ae/fd077d4f28763bd3e3b1091d93e1f9b99da7f40d11b5177abdbe55586225/dekpkglock-0.1.0.tar.gz
+[2024-04-06 14:13:19] INFO root fetch - processPackages [Rryyz]: Downloading https://files.pythonhosted.org/packages/2e/38/b599bf7d9b96625e35c22e5725373c408680512e69129e64a168c961fc30/Rryyz-0.0.2.tar.gz
+[2024-04-06 14:13:19] INFO root fetch - processPackages [cdk8s]: Downloading https://files.pythonhosted.org/packages/3b/6d/920a6a9be9d1576059ced41c1fd11a3f7214589f1add4c7d3da2290b1198/cdk8s-2.9.0.tar.gz
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [Rryyz]: Timeout reached during download
+[2024-04-06 14:13:19] INFO root fetch - processPackages [Rryyz]: executing diffoscope
+[2024-04-06 14:13:19] INFO root fetch - processPackages [Rryyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Rryyz-0.0.1.tar.gz tmp/Rryyz-0.0.2.tar.gz --markdown 20240406/R/Rryyz/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [datewise]: Timeout reached during download
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [cdk8s]: Timeout reached during download
+[2024-04-06 14:13:19] INFO root fetch - processPackages [cdk8s]: executing diffoscope
+[2024-04-06 14:13:19] INFO root fetch - processPackages [cdk8s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-2.8.0.tar.gz tmp/cdk8s-2.9.0.tar.gz --markdown 20240406/c/cdk8s/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2024-04-06 14:13:19] INFO root fetch - processPackages [datewise]: Downloading https://files.pythonhosted.org/packages/98/0c/e8c991342d840e5291c89649edc9c27b195538f4e077107df4d50ee58622/datewise-0.1.6.tar.gz
+[2024-04-06 14:13:19] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/f5/8b/ba15a9437d7f84027f95f7edfad398c48cf840dd29c1b1e0c6d4696a8e24/dekpkglock-0.1.1.tar.gz
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [datewise]: Timeout reached during download
+[2024-04-06 14:13:19] INFO root fetch - processPackages [datewise]: executing diffoscope
+[2024-04-06 14:13:19] INFO root fetch - processPackages [datewise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datewise-0.1.5.tar.gz tmp/datewise-0.1.6.tar.gz --markdown 20240406/d/datewise/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2024-04-06 14:13:19] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-06 14:13:19] INFO root fetch - processPackages [dekpkglock]: executing diffoscope
+[2024-04-06 14:13:19] INFO root fetch - processPackages [dekpkglock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekpkglock-0.1.0.tar.gz tmp/dekpkglock-0.1.1.tar.gz --markdown 20240406/d/dekpkglock/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 14:13:20] INFO root fetch - processPackages [Rryyz]: Remove: archive file [/home/abi/fetcher/tmp/Rryyz-0.0.1.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - processPackages [Rryyz]: Remove: archive file [/home/abi/fetcher/tmp/Rryyz-0.0.2.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - main [MainThread]: End processing [Rryyz]: success
+[2024-04-06 14:13:20] INFO root fetch - processPackages [cdk8s]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-2.8.0.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - processPackages [cdk8s]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-2.9.0.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - main [MainThread]: End processing [cdk8s]: success
+[2024-04-06 14:13:20] INFO root fetch - processPackages [datewise]: Remove: archive file [/home/abi/fetcher/tmp/datewise-0.1.5.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - processPackages [datewise]: Remove: archive file [/home/abi/fetcher/tmp/datewise-0.1.6.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - main [MainThread]: End processing [datewise]: success
+[2024-04-06 14:13:20] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.0.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.1.tar.gz]
+[2024-04-06 14:13:20] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
+[2024-04-06 14:13:20] INFO root fetch - main [MainThread]: Store serial: [22647748]
