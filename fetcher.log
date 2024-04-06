@@ -24357,3 +24357,50 @@ EOFError: EOF read where object expected
 [2024-04-06 22:52:18] INFO root fetch - processPackages [unitsnet-py]: Remove: archive file [/home/abi/fetcher/tmp/unitsnet-py-0.1.94.tar.gz]
 [2024-04-06 22:52:18] INFO root fetch - main [MainThread]: End processing [unitsnet-py]: success
 [2024-04-06 22:52:18] INFO root fetch - main [MainThread]: Store serial: [22651024]
+[2024-04-06 22:54:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651024]
+[2024-04-06 22:54:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 22:54:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwpdb.utils.db
+[2024-04-06 22:54:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feno
+[2024-04-06 22:54:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vulcan-logger
+[2024-04-06 22:54:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wodoo
+[2024-04-06 22:54:27] INFO root fetch - processPackages [vulcan-logger]: New version: [1.3.6] Old Version: [1.3.5]
+[2024-04-06 22:54:27] INFO root fetch - processPackages [wwpdb.utils.db]: New version: [0.31] Old Version: [0.30]
+[2024-04-06 22:54:27] INFO root fetch - processPackages [feno]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-04-06 22:54:27] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/43/59/67d9425dcb6d2943307e89f66dcf92517a3e7a7ffc723bda7b7dea31abdd/vulcan-logger-1.3.5.tar.gz
+[2024-04-06 22:54:27] INFO root fetch - processPackages [wwpdb.utils.db]: Downloading https://files.pythonhosted.org/packages/64/f5/c34d6ec18100a4dd48723dd7dd08e43c1eeba50e2c5d6ea78b79f8bd1e89/wwpdb.utils.db-0.30.tar.gz
+[2024-04-06 22:54:27] INFO root fetch - processPackages [wodoo]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-04-06 22:54:27] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 22:54:27] INFO root fetch - processPackages [feno]: Downloading https://files.pythonhosted.org/packages/56/bb/fdb1d5fe852102295959af621a04ca0d000c7e1db3a87388d4217411956b/feno-0.1.2.tar.gz
+[2024-04-06 22:54:27] WARNING root fetch - processPackages [wwpdb.utils.db]: Timeout reached during download
+[2024-04-06 22:54:27] INFO root fetch - processPackages [wodoo]: Downloading https://files.pythonhosted.org/packages/53/68/7b6f7e95cfdfbd466ca0193157764107728485da639a0b0d073256be29a3/wodoo-0.5.8.tar.gz
+[2024-04-06 22:54:27] INFO root fetch - processPackages [wwpdb.utils.db]: Downloading https://files.pythonhosted.org/packages/ba/37/667f348c6886edfc5b968de4d6c7f5f0f67f0a869f546ac6bc45b6845ee5/wwpdb.utils.db-0.31.tar.gz
+[2024-04-06 22:54:27] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/4d/2e/d918be15834180954d08394d727e4921a4c03eecdec7795b5ef9f40542e4/vulcan-logger-1.3.6.tar.gz
+[2024-04-06 22:54:27] WARNING root fetch - processPackages [feno]: Timeout reached during download
+[2024-04-06 22:54:27] WARNING root fetch - processPackages [wodoo]: Timeout reached during download
+[2024-04-06 22:54:27] WARNING root fetch - processPackages [wwpdb.utils.db]: Timeout reached during download
+[2024-04-06 22:54:27] INFO root fetch - processPackages [wwpdb.utils.db]: executing diffoscope
+[2024-04-06 22:54:27] INFO root fetch - processPackages [wwpdb.utils.db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.db-0.30.tar.gz tmp/wwpdb.utils.db-0.31.tar.gz --markdown 20240406/w/wwpdb.utils.db/0.30-0.31/diff.md --exclude *.pyd
+[2024-04-06 22:54:27] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 22:54:27] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-06 22:54:27] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.5.tar.gz tmp/vulcan-logger-1.3.6.tar.gz --markdown 20240406/v/vulcan-logger/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2024-04-06 22:54:28] INFO root fetch - processPackages [feno]: Downloading https://files.pythonhosted.org/packages/d3/80/6c2226abf8322e187b1a9b062332c0842b49c432e21e22459a52f77acf57/feno-0.1.3.tar.gz
+[2024-04-06 22:54:28] INFO root fetch - processPackages [wodoo]: Downloading https://files.pythonhosted.org/packages/b7/a1/0b22b9a96e05c35661083fcac67ec4c2f1d13c9c0ac55214e82b196d393b/wodoo-0.5.9.tar.gz
+[2024-04-06 22:54:28] WARNING root fetch - processPackages [feno]: Timeout reached during download
+[2024-04-06 22:54:28] INFO root fetch - processPackages [feno]: executing diffoscope
+[2024-04-06 22:54:28] INFO root fetch - processPackages [feno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feno-0.1.2.tar.gz tmp/feno-0.1.3.tar.gz --markdown 20240406/f/feno/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2024-04-06 22:54:28] WARNING root fetch - processPackages [wodoo]: Timeout reached during download
+[2024-04-06 22:54:28] INFO root fetch - processPackages [wodoo]: executing diffoscope
+[2024-04-06 22:54:28] INFO root fetch - processPackages [wodoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wodoo-0.5.8.tar.gz tmp/wodoo-0.5.9.tar.gz --markdown 20240406/w/wodoo/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2024-04-06 22:54:28] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.5.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.6.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-06 22:54:28] INFO root fetch - processPackages [feno]: Remove: archive file [/home/abi/fetcher/tmp/feno-0.1.2.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - processPackages [feno]: Remove: archive file [/home/abi/fetcher/tmp/feno-0.1.3.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - main [MainThread]: End processing [feno]: success
+[2024-04-06 22:54:28] INFO root fetch - processPackages [wwpdb.utils.db]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.db-0.30.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - processPackages [wwpdb.utils.db]: Remove: archive file [/home/abi/fetcher/tmp/wwpdb.utils.db-0.31.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.db]: success
+[2024-04-06 22:54:28] INFO root fetch - processPackages [wodoo]: Remove: archive file [/home/abi/fetcher/tmp/wodoo-0.5.8.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - processPackages [wodoo]: Remove: archive file [/home/abi/fetcher/tmp/wodoo-0.5.9.tar.gz]
+[2024-04-06 22:54:28] INFO root fetch - main [MainThread]: End processing [wodoo]: success
+[2024-04-06 22:54:28] INFO root fetch - main [MainThread]: Store serial: [22651039]
