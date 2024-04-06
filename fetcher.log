@@ -13380,3 +13380,47 @@
 [2024-04-06 11:37:48] INFO root fetch - processPackages [crowd-kit]: Remove: archive file [/home/abi/fetcher/tmp/crowd-kit-1.3.0rc2.tar.gz]
 [2024-04-06 11:37:48] INFO root fetch - main [MainThread]: End processing [crowd-kit]: success
 [2024-04-06 11:37:48] INFO root fetch - main [MainThread]: Store serial: [22647076]
+[2024-04-06 11:39:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647076]
+[2024-04-06 11:39:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 11:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tira
+[2024-04-06 11:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyannote-onnx
+[2024-04-06 11:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: iderare-pheno
+[2024-04-06 11:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-openupgrade-scripts
+[2024-04-06 11:39:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pandasai
+[2024-04-06 11:39:56] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.1] Old Version: [17.0.1.0.1]
+[2024-04-06 11:39:56] INFO root fetch - processPackages [pandasai]: New version: [2.0a9] Old Version: [2.0a8]
+[2024-04-06 11:39:56] INFO root fetch - processPackages [pyannote-onnx]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 11:39:56] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ac/89/1dbbab632b9797a344253e7b7ce222a549a0f9008ea4e6090bd23e63f4a1/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl
+[2024-04-06 11:39:56] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/45/d0/411589316f7a6ef5ebd6102b368912a4af989b793a0944b97d0d900e6161/pandasai-2.0a8.tar.gz
+[2024-04-06 11:39:56] INFO root fetch - processPackages [tira]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 11:39:57] INFO root fetch - processPackages [pyannote-onnx]: Downloading https://files.pythonhosted.org/packages/df/11/96b89f2336d7579ad386da3b513f3e854ec9ddcad1c94245174ec135fbd4/pyannote-onnx-0.0.1.tar.gz
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [iderare-pheno]: Skipping, unable to determine old version
+[2024-04-06 11:39:57] INFO root fetch - main [MainThread]: End processing [iderare-pheno] error
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [pandasai]: Timeout reached during download
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 11:39:57] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/4b/d0/2e61e71a65015785af087e247c1a0fb86643b1a1315e058857f4c30e93d1/tira-0.0.98.tar.gz
+[2024-04-06 11:39:57] INFO root fetch - processPackages [pandasai]: Downloading https://files.pythonhosted.org/packages/a1/20/3561bdae1b48497693d449a6c68b80514d1748d9bb36a7928867f863159a/pandasai-2.0a9.tar.gz
+[2024-04-06 11:39:57] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/db/05/04688d4f82370e4bae4a14ef6020e82e09ade6c98c3acef20837d8590431/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [pyannote-onnx]: Skipping package: exceeds size limit 11080398>=10485760
+[2024-04-06 11:39:57] INFO root fetch - main [MainThread]: End processing [pyannote-onnx] error
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [tira]: Timeout reached during download
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [pandasai]: Timeout reached during download
+[2024-04-06 11:39:57] INFO root fetch - processPackages [pandasai]: executing diffoscope
+[2024-04-06 11:39:57] INFO root fetch - processPackages [pandasai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandasai-2.0a8.tar.gz tmp/pandasai-2.0a9.tar.gz --markdown 20240406/p/pandasai/2.0a8-2.0a9/diff.md --exclude *.pyd
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 11:39:57] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-04-06 11:39:57] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-openupgrade-scripts/17.0.1.0.1-17.0.1.0.1.1/diff.md --exclude *.pyd
+[2024-04-06 11:39:57] INFO root fetch - processPackages [tira]: Downloading https://files.pythonhosted.org/packages/2d/31/b9af5a5b67ff777b2c9209808c8e4e18c7fd17c6348a13651170d8884d62/tira-0.0.99.tar.gz
+[2024-04-06 11:39:57] WARNING root fetch - processPackages [tira]: Timeout reached during download
+[2024-04-06 11:39:57] INFO root fetch - processPackages [tira]: executing diffoscope
+[2024-04-06 11:39:57] INFO root fetch - processPackages [tira]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tira-0.0.98.tar.gz tmp/tira-0.0.99.tar.gz --markdown 20240406/t/tira/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 11:39:58] INFO root fetch - processPackages [pandasai]: Remove: archive file [/home/abi/fetcher/tmp/pandasai-2.0a8.tar.gz]
+[2024-04-06 11:39:58] INFO root fetch - processPackages [pandasai]: Remove: archive file [/home/abi/fetcher/tmp/pandasai-2.0a9.tar.gz]
+[2024-04-06 11:39:58] INFO root fetch - main [MainThread]: End processing [pandasai]: success
+[2024-04-06 11:39:58] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.98.tar.gz]
+[2024-04-06 11:39:58] INFO root fetch - processPackages [tira]: Remove: archive file [/home/abi/fetcher/tmp/tira-0.0.99.tar.gz]
+[2024-04-06 11:39:58] INFO root fetch - main [MainThread]: End processing [tira]: success
+[2024-04-06 11:39:59] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-06 11:39:59] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-06 11:39:59] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-04-06 11:39:59] INFO root fetch - main [MainThread]: Store serial: [22647090]
