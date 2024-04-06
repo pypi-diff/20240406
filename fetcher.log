@@ -10323,3 +10323,53 @@
 [2024-04-06 07:04:09] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
 [2024-04-06 07:04:09] INFO root fetch - main [MainThread]: End processing [leads]: success
 [2024-04-06 07:04:09] INFO root fetch - main [MainThread]: Store serial: [22645797]
+[2024-04-06 07:06:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645797]
+[2024-04-06 07:06:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 07:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dale-core-platform
+[2024-04-06 07:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: load-atoms
+[2024-04-06 07:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytest-homeassistant-custom-component
+[2024-04-06 07:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-layui29
+[2024-04-06 07:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bbg-fetch
+[2024-04-06 07:06:17] INFO root fetch - processPackages [bbg-fetch]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-06 07:06:17] INFO root fetch - processPackages [dale-core-platform]: New version: [0.2] Old Version: [0.1]
+[2024-04-06 07:06:18] WARNING root fetch - processPackages [django-layui29]: Skipping, unable to determine old version
+[2024-04-06 07:06:18] INFO root fetch - main [MainThread]: End processing [django-layui29] error
+[2024-04-06 07:06:18] INFO root fetch - processPackages [load-atoms]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 07:06:18] INFO root fetch - processPackages [bbg-fetch]: Downloading https://files.pythonhosted.org/packages/49/d4/34ffb441a19bfc51c6044bec6f5e0af0519f48c078c8ca3256cb392bff16/bbg_fetch-1.0.2.tar.gz
+[2024-04-06 07:06:18] INFO root fetch - processPackages [dale-core-platform]: Downloading https://files.pythonhosted.org/packages/ad/67/29f49c932d9658d8e83683e1f15a11c41572a9682bc4ef96aa719263fa84/dale-core-platform-0.1.tar.gz
+[2024-04-06 07:06:18] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 07:06:18] WARNING root fetch - processPackages [bbg-fetch]: Timeout reached during download
+[2024-04-06 07:06:18] INFO root fetch - processPackages [load-atoms]: Downloading https://files.pythonhosted.org/packages/37/4f/36f33eb258f1ab3753969e10d0eae895400532e8692160637ae6fc218350/load-atoms-0.2.8.tar.gz
+[2024-04-06 07:06:18] WARNING root fetch - processPackages [dale-core-platform]: Timeout reached during download
+[2024-04-06 07:06:18] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/8a/3b/b76075872ac35edad46a4fd3401c3faebda7af874b306526a1d7e1a4336a/pytest-homeassistant-custom-component-0.9.8.tar.gz
+[2024-04-06 07:06:18] INFO root fetch - processPackages [bbg-fetch]: Downloading https://files.pythonhosted.org/packages/61/85/ef8d37a966f59642b956b029a41841605f092fc1d78d88599ba8a3f41921/bbg_fetch-1.0.3.tar.gz
+[2024-04-06 07:06:18] INFO root fetch - processPackages [dale-core-platform]: Downloading https://files.pythonhosted.org/packages/a1/62/a776cd4465bdea927c26bffcb61399961cbd06f6d158e89c1a0b1632deb3/dale-core-platform-0.2.tar.gz
+[2024-04-06 07:06:18] WARNING root fetch - processPackages [pytest-homeassistant-custom-component]: Timeout reached during download
+[2024-04-06 07:06:18] WARNING root fetch - processPackages [bbg-fetch]: Timeout reached during download
+[2024-04-06 07:06:18] INFO root fetch - processPackages [bbg-fetch]: executing diffoscope
+[2024-04-06 07:06:18] INFO root fetch - processPackages [bbg-fetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbg_fetch-1.0.2.tar.gz tmp/bbg_fetch-1.0.3.tar.gz --markdown 20240406/b/bbg-fetch/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-06 07:06:18] WARNING root fetch - processPackages [dale-core-platform]: Timeout reached during download
+[2024-04-06 07:06:18] INFO root fetch - processPackages [dale-core-platform]: executing diffoscope
+[2024-04-06 07:06:18] INFO root fetch - processPackages [dale-core-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dale-core-platform-0.1.tar.gz tmp/dale-core-platform-0.2.tar.gz --markdown 20240406/d/dale-core-platform/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-06 07:06:18] WARNING root fetch - processPackages [load-atoms]: Timeout reached during download
+[2024-04-06 07:06:18] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Downloading https://files.pythonhosted.org/packages/60/4e/ba1174db4b883610c2a5afba7a30857178ada41a2368936b2e3d764bfe6a/pytest-homeassistant-custom-component-0.9.9.tar.gz
+[2024-04-06 07:06:18] INFO root fetch - processPackages [load-atoms]: Downloading https://files.pythonhosted.org/packages/b9/00/92b90f888eaeac56a7d51ad6c96961e1f51c4760c7aa70bb04a0b4c19786/load-atoms-0.2.9.tar.gz
+[2024-04-06 07:06:19] INFO root fetch - processPackages [bbg-fetch]: Remove: archive file [/home/abi/fetcher/tmp/bbg_fetch-1.0.2.tar.gz]
+[2024-04-06 07:06:19] INFO root fetch - processPackages [bbg-fetch]: Remove: archive file [/home/abi/fetcher/tmp/bbg_fetch-1.0.3.tar.gz]
+[2024-04-06 07:06:19] INFO root fetch - main [MainThread]: End processing [bbg-fetch]: success
+[2024-04-06 07:06:19] INFO root fetch - processPackages [dale-core-platform]: Remove: archive file [/home/abi/fetcher/tmp/dale-core-platform-0.1.tar.gz]
+[2024-04-06 07:06:19] INFO root fetch - processPackages [dale-core-platform]: Remove: archive file [/home/abi/fetcher/tmp/dale-core-platform-0.2.tar.gz]
+[2024-04-06 07:06:19] INFO root fetch - main [MainThread]: End processing [dale-core-platform]: success
+[2024-04-06 07:06:19] WARNING root fetch - processPackages [pytest-homeassistant-custom-component]: Timeout reached during download
+[2024-04-06 07:06:19] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: executing diffoscope
+[2024-04-06 07:06:19] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz --markdown 20240406/p/pytest-homeassistant-custom-component/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 07:06:19] WARNING root fetch - processPackages [load-atoms]: Timeout reached during download
+[2024-04-06 07:06:19] INFO root fetch - processPackages [load-atoms]: executing diffoscope
+[2024-04-06 07:06:19] INFO root fetch - processPackages [load-atoms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/load-atoms-0.2.8.tar.gz tmp/load-atoms-0.2.9.tar.gz --markdown 20240406/l/load-atoms/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 07:06:20] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.8.tar.gz]
+[2024-04-06 07:06:20] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz]
+[2024-04-06 07:06:20] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
+[2024-04-06 07:06:20] INFO root fetch - processPackages [load-atoms]: Remove: archive file [/home/abi/fetcher/tmp/load-atoms-0.2.8.tar.gz]
+[2024-04-06 07:06:20] INFO root fetch - processPackages [load-atoms]: Remove: archive file [/home/abi/fetcher/tmp/load-atoms-0.2.9.tar.gz]
+[2024-04-06 07:06:20] INFO root fetch - main [MainThread]: End processing [load-atoms]: success
+[2024-04-06 07:06:20] INFO root fetch - main [MainThread]: Store serial: [22645813]
