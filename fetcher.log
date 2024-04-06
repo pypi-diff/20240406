@@ -23311,3 +23311,22 @@ EOFError: EOF read where object expected
 [2024-04-06 21:43:42] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-04-06 21:43:42] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-04-06 21:43:42] INFO root fetch - main [MainThread]: Store serial: [22650574]
+[2024-04-06 21:45:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650574]
+[2024-04-06 21:45:51] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 21:47:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650575]
+[2024-04-06 21:47:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 21:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qbraid
+[2024-04-06 21:47:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vulcan-logger
+[2024-04-06 21:47:56] WARNING root fetch - processPackages [vulcan-logger]: Skipping, unable to determine old version
+[2024-04-06 21:47:56] INFO root fetch - main [MainThread]: End processing [vulcan-logger] error
+[2024-04-06 21:47:56] INFO root fetch - processPackages [qbraid]: New version: [0.6.0.dev20240405150331] Old Version: [0.6.0.dev20240404040745]
+[2024-04-06 21:47:57] INFO root fetch - processPackages [qbraid]: Downloading https://files.pythonhosted.org/packages/00/19/c726b621b2792d84ba16bcbb32c83202ae6bd72f50e29e8b3c8007c268bf/qbraid-0.6.0.dev20240404040745.tar.gz
+[2024-04-06 21:47:57] WARNING root fetch - processPackages [qbraid]: Timeout reached during download
+[2024-04-06 21:47:57] INFO root fetch - processPackages [qbraid]: Downloading https://files.pythonhosted.org/packages/52/58/fcf32ac6a7b17e8ebea91132443cff945dd7892f7420f0fbfcf2b38babac/qbraid-0.6.0.dev20240405150331.tar.gz
+[2024-04-06 21:47:57] WARNING root fetch - processPackages [qbraid]: Timeout reached during download
+[2024-04-06 21:47:57] INFO root fetch - processPackages [qbraid]: executing diffoscope
+[2024-04-06 21:47:57] INFO root fetch - processPackages [qbraid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbraid-0.6.0.dev20240404040745.tar.gz tmp/qbraid-0.6.0.dev20240405150331.tar.gz --markdown 20240406/q/qbraid/0.6.0.dev20240404040745-0.6.0.dev20240405150331/diff.md --exclude *.pyd
+[2024-04-06 21:47:59] INFO root fetch - processPackages [qbraid]: Remove: archive file [/home/abi/fetcher/tmp/qbraid-0.6.0.dev20240404040745.tar.gz]
+[2024-04-06 21:47:59] INFO root fetch - processPackages [qbraid]: Remove: archive file [/home/abi/fetcher/tmp/qbraid-0.6.0.dev20240405150331.tar.gz]
+[2024-04-06 21:47:59] INFO root fetch - main [MainThread]: End processing [qbraid]: success
+[2024-04-06 21:47:59] INFO root fetch - main [MainThread]: Store serial: [22650583]
