@@ -15851,3 +15851,50 @@ EOFError: EOF read where object expected
 [2024-04-06 14:33:10] INFO root fetch - processPackages [transdoc]: Remove: archive file [/home/abi/fetcher/tmp/transdoc-0.2.0.tar.gz]
 [2024-04-06 14:33:10] INFO root fetch - main [MainThread]: End processing [transdoc]: success
 [2024-04-06 14:33:10] INFO root fetch - main [MainThread]: Store serial: [22647817]
+[2024-04-06 14:35:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647817]
+[2024-04-06 14:35:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 14:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdocs
+[2024-04-06 14:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gcloud-aio-auth
+[2024-04-06 14:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gcloud-rest-auth
+[2024-04-06 14:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbmetaclean
+[2024-04-06 14:35:19] INFO root fetch - processPackages [gcloud-rest-auth]: New version: [5.3.0] Old Version: [5.2.2]
+[2024-04-06 14:35:19] INFO root fetch - processPackages [nbmetaclean]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 14:35:19] INFO root fetch - processPackages [nbdocs]: New version: [0.3.dev0] Old Version: [0.2.2]
+[2024-04-06 14:35:19] INFO root fetch - processPackages [gcloud-aio-auth]: New version: [5.3.1] Old Version: [5.3.0]
+[2024-04-06 14:35:19] INFO root fetch - processPackages [gcloud-rest-auth]: Downloading https://files.pythonhosted.org/packages/49/4f/4f8982327ef79b39fafe7ccccc49459b20120e222535f39b0300440a6fd1/gcloud_rest_auth-5.2.2.tar.gz
+[2024-04-06 14:35:19] INFO root fetch - processPackages [nbdocs]: Downloading https://files.pythonhosted.org/packages/f9/01/423efef8f67837ecb3edb0aec953805882397afc8b7142585b3a6728f780/nbdocs-0.2.2.tar.gz
+[2024-04-06 14:35:19] INFO root fetch - processPackages [gcloud-aio-auth]: Downloading https://files.pythonhosted.org/packages/55/ea/ded7ea634098cb8ac04dc9db541ff635a8b2e39658d6519ea9ed0b597ea1/gcloud_aio_auth-5.3.0.tar.gz
+[2024-04-06 14:35:19] INFO root fetch - processPackages [nbmetaclean]: Downloading https://files.pythonhosted.org/packages/3d/b3/dedc66f1042b8240967b87429008118fe44c11e34fb531ac1d2016238588/nbmetaclean-0.0.7.tar.gz
+[2024-04-06 14:35:19] WARNING root fetch - processPackages [nbdocs]: Timeout reached during download
+[2024-04-06 14:35:20] WARNING root fetch - processPackages [gcloud-rest-auth]: Timeout reached during download
+[2024-04-06 14:35:20] WARNING root fetch - processPackages [gcloud-aio-auth]: Timeout reached during download
+[2024-04-06 14:35:20] WARNING root fetch - processPackages [nbmetaclean]: Timeout reached during download
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbdocs]: Downloading https://files.pythonhosted.org/packages/79/ac/5ff86073040bac770958714c7a59f1c36052c0bd1c5d1bed34808af19464/nbdocs-0.3.dev0.tar.gz
+[2024-04-06 14:35:20] INFO root fetch - processPackages [gcloud-rest-auth]: Downloading https://files.pythonhosted.org/packages/71/43/11e4f16b1711ddc5ccfe9f50c9a6f0c9b76ce20696e5a94f2c53ad54759b/gcloud_rest_auth-5.3.0.tar.gz
+[2024-04-06 14:35:20] INFO root fetch - processPackages [gcloud-aio-auth]: Downloading https://files.pythonhosted.org/packages/1a/3a/29844f735c381c816db887fbab0f79400d25e01a8cc5b95e9f34f3b11cb0/gcloud_aio_auth-5.3.1.tar.gz
+[2024-04-06 14:35:20] WARNING root fetch - processPackages [nbdocs]: Timeout reached during download
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbdocs]: executing diffoscope
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbdocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdocs-0.2.2.tar.gz tmp/nbdocs-0.3.dev0.tar.gz --markdown 20240406/n/nbdocs/0.2.2-0.3.dev0/diff.md --exclude *.pyd
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbmetaclean]: Downloading https://files.pythonhosted.org/packages/cb/d9/5ebf26b089fd6540b656f88e75736864fd07cd40132a4756b07f60b9c4c5/nbmetaclean-0.0.8.tar.gz
+[2024-04-06 14:35:20] WARNING root fetch - processPackages [gcloud-rest-auth]: Timeout reached during download
+[2024-04-06 14:35:20] INFO root fetch - processPackages [gcloud-rest-auth]: executing diffoscope
+[2024-04-06 14:35:20] INFO root fetch - processPackages [gcloud-rest-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcloud_rest_auth-5.2.2.tar.gz tmp/gcloud_rest_auth-5.3.0.tar.gz --markdown 20240406/g/gcloud-rest-auth/5.2.2-5.3.0/diff.md --exclude *.pyd
+[2024-04-06 14:35:20] WARNING root fetch - processPackages [gcloud-aio-auth]: Timeout reached during download
+[2024-04-06 14:35:20] INFO root fetch - processPackages [gcloud-aio-auth]: executing diffoscope
+[2024-04-06 14:35:20] INFO root fetch - processPackages [gcloud-aio-auth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcloud_aio_auth-5.3.0.tar.gz tmp/gcloud_aio_auth-5.3.1.tar.gz --markdown 20240406/g/gcloud-aio-auth/5.3.0-5.3.1/diff.md --exclude *.pyd
+[2024-04-06 14:35:20] WARNING root fetch - processPackages [nbmetaclean]: Timeout reached during download
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbmetaclean]: executing diffoscope
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbmetaclean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbmetaclean-0.0.7.tar.gz tmp/nbmetaclean-0.0.8.tar.gz --markdown 20240406/n/nbmetaclean/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbdocs]: Remove: archive file [/home/abi/fetcher/tmp/nbdocs-0.2.2.tar.gz]
+[2024-04-06 14:35:20] INFO root fetch - processPackages [nbdocs]: Remove: archive file [/home/abi/fetcher/tmp/nbdocs-0.3.dev0.tar.gz]
+[2024-04-06 14:35:20] INFO root fetch - main [MainThread]: End processing [nbdocs]: success
+[2024-04-06 14:35:21] INFO root fetch - processPackages [gcloud-rest-auth]: Remove: archive file [/home/abi/fetcher/tmp/gcloud_rest_auth-5.2.2.tar.gz]
+[2024-04-06 14:35:21] INFO root fetch - processPackages [gcloud-rest-auth]: Remove: archive file [/home/abi/fetcher/tmp/gcloud_rest_auth-5.3.0.tar.gz]
+[2024-04-06 14:35:21] INFO root fetch - main [MainThread]: End processing [gcloud-rest-auth]: success
+[2024-04-06 14:35:21] INFO root fetch - processPackages [nbmetaclean]: Remove: archive file [/home/abi/fetcher/tmp/nbmetaclean-0.0.7.tar.gz]
+[2024-04-06 14:35:21] INFO root fetch - processPackages [nbmetaclean]: Remove: archive file [/home/abi/fetcher/tmp/nbmetaclean-0.0.8.tar.gz]
+[2024-04-06 14:35:21] INFO root fetch - main [MainThread]: End processing [nbmetaclean]: success
+[2024-04-06 14:35:21] INFO root fetch - processPackages [gcloud-aio-auth]: Remove: archive file [/home/abi/fetcher/tmp/gcloud_aio_auth-5.3.0.tar.gz]
+[2024-04-06 14:35:21] INFO root fetch - processPackages [gcloud-aio-auth]: Remove: archive file [/home/abi/fetcher/tmp/gcloud_aio_auth-5.3.1.tar.gz]
+[2024-04-06 14:35:21] INFO root fetch - main [MainThread]: End processing [gcloud-aio-auth]: success
+[2024-04-06 14:35:21] INFO root fetch - main [MainThread]: Store serial: [22647829]
