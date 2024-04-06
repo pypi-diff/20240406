@@ -14741,3 +14741,36 @@
 [2024-04-06 13:18:47] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
 [2024-04-06 13:18:47] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-04-06 13:18:47] INFO root fetch - main [MainThread]: Store serial: [22647480]
+[2024-04-06 13:20:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647480]
+[2024-04-06 13:20:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 13:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-digitalocean
+[2024-04-06 13:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bigdl-core-xe-21
+[2024-04-06 13:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Pickart
+[2024-04-06 13:20:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modal
+[2024-04-06 13:20:55] INFO root fetch - processPackages [modal]: New version: [0.62.9] Old Version: [0.62.8]
+[2024-04-06 13:20:55] WARNING root fetch - processPackages [Pickart]: Skipping, unable to determine old version
+[2024-04-06 13:20:55] INFO root fetch - main [MainThread]: End processing [Pickart] error
+[2024-04-06 13:20:55] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240406] Old Version: [2.5.0b20240405]
+[2024-04-06 13:20:55] INFO root fetch - processPackages [pulumi-digitalocean]: New version: [4.9.0a1637244514] Old Version: [4.9.0]
+[2024-04-06 13:20:55] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/8a/dd/32da92c8c574400929f770cfc5c78136ebc7b566de71c8e84a423d0ee9cc/modal-0.62.8-py3-none-any.whl
+[2024-04-06 13:20:55] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/2c/84/146d687fbfd54a860d8e438e8600cc205f684127d54665eb8be50225e8c4/bigdl_core_xe_21-2.5.0b20240405-cp39-cp39-win_amd64.whl
+[2024-04-06 13:20:55] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/27/fe/88f79d9daf961f609409c5330a59d5bf5ff3effa841b5317256e773c92dd/pulumi_digitalocean-4.9.0.tar.gz
+[2024-04-06 13:20:55] WARNING root fetch - processPackages [modal]: Timeout reached during download
+[2024-04-06 13:20:55] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 25408589>=10485760
+[2024-04-06 13:20:55] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-04-06 13:20:56] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/c0/f7/8dd227328bcea0baf27836ce9f00c26e7e27195101883dc782c55387e12f/modal-0.62.9-py3-none-any.whl
+[2024-04-06 13:20:56] WARNING root fetch - processPackages [pulumi-digitalocean]: Timeout reached during download
+[2024-04-06 13:20:56] WARNING root fetch - processPackages [modal]: Timeout reached during download
+[2024-04-06 13:20:56] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-04-06 13:20:56] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.8-py3-none-any.whl.zip tmp/modal-0.62.9-py3-none-any.whl.zip --markdown 20240406/m/modal/0.62.8-0.62.9/diff.md --exclude *.pyd
+[2024-04-06 13:20:56] INFO root fetch - processPackages [pulumi-digitalocean]: Downloading https://files.pythonhosted.org/packages/aa/e4/0dfa539667fb3462b4c16072050ebf8e1a80d862ac88c8b00ae29b019195/pulumi_digitalocean-4.9.0a1637244514.tar.gz
+[2024-04-06 13:20:56] WARNING root fetch - processPackages [pulumi-digitalocean]: Timeout reached during download
+[2024-04-06 13:20:56] INFO root fetch - processPackages [pulumi-digitalocean]: executing diffoscope
+[2024-04-06 13:20:56] INFO root fetch - processPackages [pulumi-digitalocean]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_digitalocean-4.9.0.tar.gz tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz --markdown 20240406/p/pulumi-digitalocean/4.9.0-4.9.0a1637244514/diff.md --exclude *.pyd
+[2024-04-06 13:20:57] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.8-py3-none-any.whl.zip]
+[2024-04-06 13:20:57] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.9-py3-none-any.whl.zip]
+[2024-04-06 13:20:57] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-04-06 13:20:57] INFO root fetch - processPackages [pulumi-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_digitalocean-4.9.0.tar.gz]
+[2024-04-06 13:20:57] INFO root fetch - processPackages [pulumi-digitalocean]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_digitalocean-4.9.0a1637244514.tar.gz]
+[2024-04-06 13:20:57] INFO root fetch - main [MainThread]: End processing [pulumi-digitalocean]: success
+[2024-04-06 13:20:57] INFO root fetch - main [MainThread]: Store serial: [22647492]
