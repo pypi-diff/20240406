@@ -24013,3 +24013,42 @@ EOFError: EOF read where object expected
 [2024-04-06 22:27:25] INFO root fetch - processPackages [xknxproject]: Remove: archive file [/home/abi/fetcher/tmp/xknxproject-3.7.1.tar.gz]
 [2024-04-06 22:27:25] INFO root fetch - main [MainThread]: End processing [xknxproject]: success
 [2024-04-06 22:27:25] INFO root fetch - main [MainThread]: Store serial: [22650844]
+[2024-04-06 22:29:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650844]
+[2024-04-06 22:29:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 22:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: legal-citation-parser
+[2024-04-06 22:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sbmlnetwork
+[2024-04-06 22:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxcontrib-confluencebuilder
+[2024-04-06 22:29:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aws-cdk-construct-devops01ua
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sbmlnetwork]: New version: [0.0.19] Old Version: [0.0.18]
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sbmlnetwork]: Downloading https://files.pythonhosted.org/packages/36/f9/4ea0b169e691b22cefafbc87071d761dec4dd0bd57964cf0cbe5556d39be/sbmlnetwork-0.0.18-py3-none-any.whl
+[2024-04-06 22:29:34] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 22:29:34] WARNING root fetch - processPackages [legal-citation-parser]: Skipping, unable to determine old version
+[2024-04-06 22:29:34] INFO root fetch - main [MainThread]: End processing [legal-citation-parser] error
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: New version: [2.5.1] Old Version: [2.5.0]
+[2024-04-06 22:29:34] WARNING root fetch - processPackages [sbmlnetwork]: Timeout reached during download
+[2024-04-06 22:29:34] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Downloading https://files.pythonhosted.org/packages/9a/05/3b5e876bbbaa440153a0d678eadae5cac472bf7b82fdc307313943bb0e64/aws_cdk_construct_devops01ua-0.0.5.tar.gz
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Downloading https://files.pythonhosted.org/packages/cf/aa/0c45e83cdb0743cdba6120a2922c0f7753da7cd3765957fa9ea91d2bf867/sphinxcontrib_confluencebuilder-2.5.0.tar.gz
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sbmlnetwork]: Downloading https://files.pythonhosted.org/packages/88/6e/6d9dc240b6f28965d18a6b324474702597f7b3bb884dbbe1d30f0d7b1682/sbmlnetwork-0.0.19-py3-none-any.whl
+[2024-04-06 22:29:34] WARNING root fetch - processPackages [aws-cdk-construct-devops01ua]: Timeout reached during download
+[2024-04-06 22:29:34] WARNING root fetch - processPackages [sbmlnetwork]: Timeout reached during download
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sbmlnetwork]: executing diffoscope
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sbmlnetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sbmlnetwork-0.0.18-py3-none-any.whl.zip tmp/sbmlnetwork-0.0.19-py3-none-any.whl.zip --markdown 20240406/s/sbmlnetwork/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2024-04-06 22:29:34] WARNING root fetch - processPackages [sphinxcontrib-confluencebuilder]: Timeout reached during download
+[2024-04-06 22:29:34] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Downloading https://files.pythonhosted.org/packages/e6/a0/a1a4586ecb0e6d8858d6c4c0f0404257c7b31da5b93c642772c0c5d5a2f9/aws_cdk_construct_devops01ua-0.0.6.tar.gz
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Downloading https://files.pythonhosted.org/packages/21/6b/aca56f1e73d12a1d6c4ab5d5a62e87aa2c96ee1712be9be179cd5923a39e/sphinxcontrib_confluencebuilder-2.5.1.tar.gz
+[2024-04-06 22:29:34] WARNING root fetch - processPackages [aws-cdk-construct-devops01ua]: Timeout reached during download
+[2024-04-06 22:29:34] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: executing diffoscope
+[2024-04-06 22:29:34] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws_cdk_construct_devops01ua-0.0.5.tar.gz tmp/aws_cdk_construct_devops01ua-0.0.6.tar.gz --markdown 20240406/a/aws-cdk-construct-devops01ua/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 22:29:34] WARNING root fetch - processPackages [sphinxcontrib-confluencebuilder]: Timeout reached during download
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: executing diffoscope
+[2024-04-06 22:29:34] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib_confluencebuilder-2.5.0.tar.gz tmp/sphinxcontrib_confluencebuilder-2.5.1.tar.gz --markdown 20240406/s/sphinxcontrib-confluencebuilder/2.5.0-2.5.1/diff.md --exclude *.pyd
+[2024-04-06 22:29:35] INFO root fetch - processPackages [sbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/sbmlnetwork-0.0.18-py3-none-any.whl.zip]
+[2024-04-06 22:29:35] INFO root fetch - processPackages [sbmlnetwork]: Remove: archive file [/home/abi/fetcher/tmp/sbmlnetwork-0.0.19-py3-none-any.whl.zip]
+[2024-04-06 22:29:35] INFO root fetch - main [MainThread]: End processing [sbmlnetwork]: success
+[2024-04-06 22:29:35] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Remove: archive file [/home/abi/fetcher/tmp/aws_cdk_construct_devops01ua-0.0.5.tar.gz]
+[2024-04-06 22:29:35] INFO root fetch - processPackages [aws-cdk-construct-devops01ua]: Remove: archive file [/home/abi/fetcher/tmp/aws_cdk_construct_devops01ua-0.0.6.tar.gz]
+[2024-04-06 22:29:35] INFO root fetch - main [MainThread]: End processing [aws-cdk-construct-devops01ua]: success
+[2024-04-06 22:29:35] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_confluencebuilder-2.5.0.tar.gz]
+[2024-04-06 22:29:35] INFO root fetch - processPackages [sphinxcontrib-confluencebuilder]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib_confluencebuilder-2.5.1.tar.gz]
+[2024-04-06 22:29:35] INFO root fetch - main [MainThread]: End processing [sphinxcontrib-confluencebuilder]: success
+[2024-04-06 22:29:35] INFO root fetch - main [MainThread]: Store serial: [22650857]
