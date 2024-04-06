@@ -15518,3 +15518,28 @@ EOFError: EOF read where object expected
 [2024-04-06 14:06:49] INFO root fetch - processPackages [pulumi-rke]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_rke-3.4.0a1712402957.tar.gz]
 [2024-04-06 14:06:49] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
 [2024-04-06 14:06:49] INFO root fetch - main [MainThread]: Store serial: [22647722]
+[2024-04-06 14:08:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647722]
+[2024-04-06 14:08:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 14:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-openupgrade-scripts
+[2024-04-06 14:08:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ih-common
+[2024-04-06 14:08:58] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [17.0.1.0.1.1] Old Version: [17.0.1.0.1]
+[2024-04-06 14:08:58] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/ac/89/1dbbab632b9797a344253e7b7ce222a549a0f9008ea4e6090bd23e63f4a1/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl
+[2024-04-06 14:08:58] INFO root fetch - processPackages [ih-common]: New version: [2.8.0] Old Version: [2.7.1]
+[2024-04-06 14:08:58] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 14:08:58] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/db/05/04688d4f82370e4bae4a14ef6020e82e09ade6c98c3acef20837d8590431/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl
+[2024-04-06 14:08:58] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/4d/0c/cf8504e53ab0ecc31714dd7033f42cbb6b0de8dfd679755465688b66f914/ih_common-2.7.1.tar.gz
+[2024-04-06 14:08:58] WARNING root fetch - processPackages [ih-common]: Timeout reached during download
+[2024-04-06 14:08:58] WARNING root fetch - processPackages [odoo-addon-openupgrade-scripts]: Timeout reached during download
+[2024-04-06 14:08:58] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2024-04-06 14:08:58] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-openupgrade-scripts/17.0.1.0.1-17.0.1.0.1.1/diff.md --exclude *.pyd
+[2024-04-06 14:08:58] INFO root fetch - processPackages [ih-common]: Downloading https://files.pythonhosted.org/packages/37/56/56af585e51da9a974b871731c3a293e02d9df6211d0f51f48aef65de6085/ih_common-2.8.0.tar.gz
+[2024-04-06 14:08:59] WARNING root fetch - processPackages [ih-common]: Timeout reached during download
+[2024-04-06 14:08:59] INFO root fetch - processPackages [ih-common]: executing diffoscope
+[2024-04-06 14:08:59] INFO root fetch - processPackages [ih-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ih_common-2.7.1.tar.gz tmp/ih_common-2.8.0.tar.gz --markdown 20240406/i/ih-common/2.7.1-2.8.0/diff.md --exclude *.pyd
+[2024-04-06 14:08:59] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.7.1.tar.gz]
+[2024-04-06 14:08:59] INFO root fetch - processPackages [ih-common]: Remove: archive file [/home/abi/fetcher/tmp/ih_common-2.8.0.tar.gz]
+[2024-04-06 14:08:59] INFO root fetch - main [MainThread]: End processing [ih-common]: success
+[2024-04-06 14:09:00] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1-py3-none-any.whl.zip]
+[2024-04-06 14:09:00] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_openupgrade_scripts-17.0.1.0.1.1-py3-none-any.whl.zip]
+[2024-04-06 14:09:00] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2024-04-06 14:09:00] INFO root fetch - main [MainThread]: Store serial: [22647726]
