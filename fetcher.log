@@ -15086,3 +15086,20 @@ EOFError: EOF read where object expected
 [2024-04-06 13:36:19] INFO root fetch - processPackages [pulumi-postgresql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_postgresql-3.9.0a1689896978.tar.gz]
 [2024-04-06 13:36:19] INFO root fetch - main [MainThread]: End processing [pulumi-postgresql]: success
 [2024-04-06 13:36:19] INFO root fetch - main [MainThread]: Store serial: [22647573]
+[2024-04-06 13:38:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647573]
+[2024-04-06 13:38:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 13:38:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embedding-optimizer
+[2024-04-06 13:38:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TravSHACL
+[2024-04-06 13:38:28] WARNING root fetch - processPackages [embedding-optimizer]: Skipping, unable to determine old version
+[2024-04-06 13:38:28] INFO root fetch - main [MainThread]: End processing [embedding-optimizer] error
+[2024-04-06 13:38:28] INFO root fetch - processPackages [TravSHACL]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-04-06 13:38:28] INFO root fetch - processPackages [TravSHACL]: Downloading https://files.pythonhosted.org/packages/9a/9c/e0c3b0e83b54db7334a353260546fbde75950c045c089b91f1d2dba5e03b/TravSHACL-1.7.0.tar.gz
+[2024-04-06 13:38:28] WARNING root fetch - processPackages [TravSHACL]: Timeout reached during download
+[2024-04-06 13:38:28] INFO root fetch - processPackages [TravSHACL]: Downloading https://files.pythonhosted.org/packages/9a/7d/58deac27478ec765d406e57a3dbc9fb42415e396c0dd67ec1a15bda0659b/TravSHACL-1.7.1.tar.gz
+[2024-04-06 13:38:28] WARNING root fetch - processPackages [TravSHACL]: Timeout reached during download
+[2024-04-06 13:38:28] INFO root fetch - processPackages [TravSHACL]: executing diffoscope
+[2024-04-06 13:38:28] INFO root fetch - processPackages [TravSHACL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TravSHACL-1.7.0.tar.gz tmp/TravSHACL-1.7.1.tar.gz --markdown 20240406/T/TravSHACL/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2024-04-06 13:38:29] INFO root fetch - processPackages [TravSHACL]: Remove: archive file [/home/abi/fetcher/tmp/TravSHACL-1.7.0.tar.gz]
+[2024-04-06 13:38:29] INFO root fetch - processPackages [TravSHACL]: Remove: archive file [/home/abi/fetcher/tmp/TravSHACL-1.7.1.tar.gz]
+[2024-04-06 13:38:29] INFO root fetch - main [MainThread]: End processing [TravSHACL]: success
+[2024-04-06 13:38:29] INFO root fetch - main [MainThread]: Store serial: [22647581]
