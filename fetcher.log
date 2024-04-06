@@ -10587,3 +10587,41 @@
 [2024-04-06 07:36:51] WARNING root fetch - processPackages [c4p]: Skipping package: exceeds size limit 43962656>=10485760
 [2024-04-06 07:36:51] INFO root fetch - main [MainThread]: End processing [c4p] error
 [2024-04-06 07:36:51] INFO root fetch - main [MainThread]: Store serial: [22645901]
+[2024-04-06 07:38:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645901]
+[2024-04-06 07:38:59] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 07:41:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645903]
+[2024-04-06 07:41:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 07:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arts
+[2024-04-06 07:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openai2
+[2024-04-06 07:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: karpet
+[2024-04-06 07:41:05] INFO root fetch - processPackages [arts]: New version: [2024.4.3] Old Version: [2024.3.6]
+[2024-04-06 07:41:05] INFO root fetch - processPackages [openai2]: New version: [1.7.1] Old Version: [1.7]
+[2024-04-06 07:41:05] INFO root fetch - processPackages [karpet]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-04-06 07:41:05] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/42/44/38c4e4d6fa145d48578fc53917a6300476fc6a4650001888443945d71a77/arts-2024.3.6.tar.gz
+[2024-04-06 07:41:05] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/70/c2/1ca2e00c67be964a46f9181a7cf68e1782b4106dbb7ddcbae4009ba20b9c/openai2-1.7.tar.gz
+[2024-04-06 07:41:05] INFO root fetch - processPackages [karpet]: Downloading https://files.pythonhosted.org/packages/9e/12/b15d3799a3938ad35ca141531f047d17e9201e4dffae74a5950ce0e59b9d/karpet-0.4.8.tar.gz
+[2024-04-06 07:41:05] WARNING root fetch - processPackages [arts]: Timeout reached during download
+[2024-04-06 07:41:05] WARNING root fetch - processPackages [openai2]: Timeout reached during download
+[2024-04-06 07:41:05] WARNING root fetch - processPackages [karpet]: Timeout reached during download
+[2024-04-06 07:41:05] INFO root fetch - processPackages [arts]: Downloading https://files.pythonhosted.org/packages/46/15/99e6a9c143a9f0f9d0a7e958d5dbf1598855ab8715f72bb675683dfe65c1/arts-2024.4.3.tar.gz
+[2024-04-06 07:41:05] INFO root fetch - processPackages [openai2]: Downloading https://files.pythonhosted.org/packages/ca/1b/7db23afce14ba6af2f7a7aa1a5c8a59e8be8a7410e4ccc1c55c2de8b37cf/openai2-1.7.1.tar.gz
+[2024-04-06 07:41:05] INFO root fetch - processPackages [karpet]: Downloading https://files.pythonhosted.org/packages/1e/03/324c00ebb25afab7966cac7a6b5202dfd208dcff3831626a30052e12e938/karpet-0.4.9.tar.gz
+[2024-04-06 07:41:05] WARNING root fetch - processPackages [arts]: Timeout reached during download
+[2024-04-06 07:41:05] INFO root fetch - processPackages [arts]: executing diffoscope
+[2024-04-06 07:41:05] INFO root fetch - processPackages [arts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arts-2024.3.6.tar.gz tmp/arts-2024.4.3.tar.gz --markdown 20240406/a/arts/2024.3.6-2024.4.3/diff.md --exclude *.pyd
+[2024-04-06 07:41:05] WARNING root fetch - processPackages [openai2]: Timeout reached during download
+[2024-04-06 07:41:05] INFO root fetch - processPackages [openai2]: executing diffoscope
+[2024-04-06 07:41:05] INFO root fetch - processPackages [openai2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai2-1.7.tar.gz tmp/openai2-1.7.1.tar.gz --markdown 20240406/o/openai2/1.7-1.7.1/diff.md --exclude *.pyd
+[2024-04-06 07:41:05] WARNING root fetch - processPackages [karpet]: Timeout reached during download
+[2024-04-06 07:41:05] INFO root fetch - processPackages [karpet]: executing diffoscope
+[2024-04-06 07:41:05] INFO root fetch - processPackages [karpet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/karpet-0.4.8.tar.gz tmp/karpet-0.4.9.tar.gz --markdown 20240406/k/karpet/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2024-04-06 07:41:06] INFO root fetch - processPackages [karpet]: Remove: archive file [/home/abi/fetcher/tmp/karpet-0.4.8.tar.gz]
+[2024-04-06 07:41:06] INFO root fetch - processPackages [karpet]: Remove: archive file [/home/abi/fetcher/tmp/karpet-0.4.9.tar.gz]
+[2024-04-06 07:41:06] INFO root fetch - main [MainThread]: End processing [karpet]: success
+[2024-04-06 07:41:06] INFO root fetch - processPackages [openai2]: Remove: archive file [/home/abi/fetcher/tmp/openai2-1.7.tar.gz]
+[2024-04-06 07:41:06] INFO root fetch - processPackages [openai2]: Remove: archive file [/home/abi/fetcher/tmp/openai2-1.7.1.tar.gz]
+[2024-04-06 07:41:06] INFO root fetch - main [MainThread]: End processing [openai2]: success
+[2024-04-06 07:41:07] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.3.6.tar.gz]
+[2024-04-06 07:41:07] INFO root fetch - processPackages [arts]: Remove: archive file [/home/abi/fetcher/tmp/arts-2024.4.3.tar.gz]
+[2024-04-06 07:41:07] INFO root fetch - main [MainThread]: End processing [arts]: success
+[2024-04-06 07:41:07] INFO root fetch - main [MainThread]: Store serial: [22645912]
