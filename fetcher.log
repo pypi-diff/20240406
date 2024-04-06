@@ -12564,3 +12564,78 @@
 [2024-04-06 10:28:23] INFO root fetch - processPackages [AllanTools]: Remove: archive file [/home/abi/fetcher/tmp/AllanTools-2024.4-py2.py3-none-any.whl.zip]
 [2024-04-06 10:28:23] INFO root fetch - main [MainThread]: End processing [AllanTools]: success
 [2024-04-06 10:28:23] INFO root fetch - main [MainThread]: Store serial: [22646718]
+[2024-04-06 10:30:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646718]
+[2024-04-06 10:30:31] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 10:32:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646720]
+[2024-04-06 10:32:37] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 10:34:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646721]
+[2024-04-06 10:34:42] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 10:36:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646721]
+[2024-04-06 10:36:47] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 10:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvfuser-cu121
+[2024-04-06 10:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvfuser-cu118
+[2024-04-06 10:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kv-api
+[2024-04-06 10:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apptrackr
+[2024-04-06 10:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: telegram-bot-reporter
+[2024-04-06 10:36:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MohuPy
+[2024-04-06 10:36:47] INFO root fetch - processPackages [kv-api]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 10:36:47] INFO root fetch - processPackages [apptrackr]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 10:36:47] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.0.dev20240405] Old Version: [0.2.0.dev20240404]
+[2024-04-06 10:36:47] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.0.dev20240405] Old Version: [0.2.0.dev20240404]
+[2024-04-06 10:36:47] INFO root fetch - processPackages [MohuPy]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-04-06 10:36:47] INFO root fetch - processPackages [telegram-bot-reporter]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-04-06 10:36:47] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/5b/f2/59ced48218dfc94ec561b2d52ce60528743dfd57955d9193d35cb2fe20dc/nvfuser_cu121-0.2.0.dev20240404.tar.gz
+[2024-04-06 10:36:47] INFO root fetch - processPackages [apptrackr]: Downloading https://files.pythonhosted.org/packages/5e/3f/31b9753739965faae8d53f9938b6fc519b8d0c425be5079c61c7b83eb5c9/apptrackr-0.1.4.tar.gz
+[2024-04-06 10:36:47] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/a7/c3/fa38005f2e51278d11f967d722c025a1eef6ad2780d2b4fdfe17665f2396/nvfuser_cu118-0.2.0.dev20240404.tar.gz
+[2024-04-06 10:36:47] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/98/51/03d2220e74ff1a9f18ce80af05bfb0669daf7ced1b7d0f2660b4eb83adc3/kv-api-0.1.0.tar.gz
+[2024-04-06 10:36:47] WARNING root fetch - processPackages [nvfuser-cu118]: Timeout reached during download
+[2024-04-06 10:36:47] WARNING root fetch - processPackages [apptrackr]: Timeout reached during download
+[2024-04-06 10:36:47] INFO root fetch - processPackages [MohuPy]: Downloading https://files.pythonhosted.org/packages/61/ed/6048b1db90969b20cebf942e49c61658e929600ad4704b5980179c36b29e/MohuPy-0.2.7.tar.gz
+[2024-04-06 10:36:47] INFO root fetch - processPackages [telegram-bot-reporter]: Downloading https://files.pythonhosted.org/packages/a1/93/56f252eebc86cb58db30e8dc2ac8793abaefb6fe6d9bc76fef75b1afb790/telegram_bot_reporter-0.1.7.tar.gz
+[2024-04-06 10:36:47] WARNING root fetch - processPackages [nvfuser-cu121]: Timeout reached during download
+[2024-04-06 10:36:47] WARNING root fetch - processPackages [kv-api]: Timeout reached during download
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [telegram-bot-reporter]: Timeout reached during download
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [MohuPy]: Timeout reached during download
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/50/c3/452272cff8038c9d75ebb55ad9bf0667e7e1cb01ad0d2e6effd93ac98ed0/nvfuser_cu118-0.2.0.dev20240405.tar.gz
+[2024-04-06 10:36:48] INFO root fetch - processPackages [apptrackr]: Downloading https://files.pythonhosted.org/packages/a4/ab/583a9b1f4cb71aa123b663018b73bfa40172f86ebf9f3f59771a6cb1a736/apptrackr-0.1.5.tar.gz
+[2024-04-06 10:36:48] INFO root fetch - processPackages [kv-api]: Downloading https://files.pythonhosted.org/packages/ae/ab/5747c39611327bf5efbdb48a70333df18eec18264f01e71f7eb119b6590a/kv-api-0.1.1.tar.gz
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/9e/5b/29bf70480e7b31319e7ff985417355cb31cd876fbc5f2a878fb237519882/nvfuser_cu121-0.2.0.dev20240405.tar.gz
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [apptrackr]: Timeout reached during download
+[2024-04-06 10:36:48] INFO root fetch - processPackages [apptrackr]: executing diffoscope
+[2024-04-06 10:36:48] INFO root fetch - processPackages [apptrackr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apptrackr-0.1.4.tar.gz tmp/apptrackr-0.1.5.tar.gz --markdown 20240406/a/apptrackr/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-06 10:36:48] INFO root fetch - processPackages [MohuPy]: Downloading https://files.pythonhosted.org/packages/94/bf/dce41f5fb01da3a689fe1346b1d089a25036fafc27be8fb5cbe25851a366/MohuPy-0.2.8.tar.gz
+[2024-04-06 10:36:48] INFO root fetch - processPackages [telegram-bot-reporter]: Downloading https://files.pythonhosted.org/packages/1e/6b/d77c8b246099c76503eafe0f11a0b43fc651030a2246141b2b99102e8e22/telegram_bot_reporter-0.1.8.tar.gz
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [nvfuser-cu118]: Timeout reached during download
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [kv-api]: Timeout reached during download
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.0.dev20240404.tar.gz tmp/nvfuser_cu118-0.2.0.dev20240405.tar.gz --markdown 20240406/n/nvfuser-cu118/0.2.0.dev20240404-0.2.0.dev20240405/diff.md --exclude *.pyd
+[2024-04-06 10:36:48] INFO root fetch - processPackages [kv-api]: executing diffoscope
+[2024-04-06 10:36:48] INFO root fetch - processPackages [kv-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kv-api-0.1.0.tar.gz tmp/kv-api-0.1.1.tar.gz --markdown 20240406/k/kv-api/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [telegram-bot-reporter]: Timeout reached during download
+[2024-04-06 10:36:48] INFO root fetch - processPackages [telegram-bot-reporter]: executing diffoscope
+[2024-04-06 10:36:48] INFO root fetch - processPackages [telegram-bot-reporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telegram_bot_reporter-0.1.7.tar.gz tmp/telegram_bot_reporter-0.1.8.tar.gz --markdown 20240406/t/telegram-bot-reporter/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [MohuPy]: Timeout reached during download
+[2024-04-06 10:36:48] WARNING root fetch - processPackages [nvfuser-cu121]: Timeout reached during download
+[2024-04-06 10:36:48] INFO root fetch - processPackages [MohuPy]: executing diffoscope
+[2024-04-06 10:36:48] INFO root fetch - processPackages [MohuPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MohuPy-0.2.7.tar.gz tmp/MohuPy-0.2.8.tar.gz --markdown 20240406/M/MohuPy/0.2.7-0.2.8/diff.md --exclude *.pyd
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.0.dev20240404.tar.gz tmp/nvfuser_cu121-0.2.0.dev20240405.tar.gz --markdown 20240406/n/nvfuser-cu121/0.2.0.dev20240404-0.2.0.dev20240405/diff.md --exclude *.pyd
+[2024-04-06 10:36:48] INFO root fetch - processPackages [apptrackr]: Remove: archive file [/home/abi/fetcher/tmp/apptrackr-0.1.4.tar.gz]
+[2024-04-06 10:36:48] INFO root fetch - processPackages [apptrackr]: Remove: archive file [/home/abi/fetcher/tmp/apptrackr-0.1.5.tar.gz]
+[2024-04-06 10:36:48] INFO root fetch - main [MainThread]: End processing [apptrackr]: success
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.0.dev20240404.tar.gz]
+[2024-04-06 10:36:48] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.0.dev20240405.tar.gz]
+[2024-04-06 10:36:48] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-04-06 10:36:49] INFO root fetch - processPackages [telegram-bot-reporter]: Remove: archive file [/home/abi/fetcher/tmp/telegram_bot_reporter-0.1.7.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - processPackages [telegram-bot-reporter]: Remove: archive file [/home/abi/fetcher/tmp/telegram_bot_reporter-0.1.8.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - main [MainThread]: End processing [telegram-bot-reporter]: success
+[2024-04-06 10:36:49] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv-api-0.1.0.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - processPackages [kv-api]: Remove: archive file [/home/abi/fetcher/tmp/kv-api-0.1.1.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - main [MainThread]: End processing [kv-api]: success
+[2024-04-06 10:36:49] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.0.dev20240404.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.0.dev20240405.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-04-06 10:36:49] INFO root fetch - processPackages [MohuPy]: Remove: archive file [/home/abi/fetcher/tmp/MohuPy-0.2.7.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - processPackages [MohuPy]: Remove: archive file [/home/abi/fetcher/tmp/MohuPy-0.2.8.tar.gz]
+[2024-04-06 10:36:49] INFO root fetch - main [MainThread]: End processing [MohuPy]: success
+[2024-04-06 10:36:49] INFO root fetch - main [MainThread]: Store serial: [22646741]
