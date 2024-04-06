@@ -7506,3 +7506,28 @@
 [2024-04-06 03:46:49] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl.zip]
 [2024-04-06 03:46:49] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
 [2024-04-06 03:46:49] INFO root fetch - main [MainThread]: Store serial: [22644804]
+[2024-04-06 03:48:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644804]
+[2024-04-06 03:48:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 03:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crewai
+[2024-04-06 03:48:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-nlp
+[2024-04-06 03:48:58] INFO root fetch - processPackages [crewai]: New version: [0.5.5] Old Version: [0.5.3]
+[2024-04-06 03:48:58] INFO root fetch - processPackages [keras-nlp]: New version: [0.9.1.dev0] Old Version: [0.9.0.dev1]
+[2024-04-06 03:48:58] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/f9/00/b88bde904c78f4f208e0fcbeeb26e4cf248da70c6d8ad95ce84ed3df6741/keras-nlp-0.9.0.dev1.tar.gz
+[2024-04-06 03:48:58] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/e9/e3/15cbe7ed14b2b805613edd70fe8d16de0f00ad49e45f0496db0d34c3274c/crewai-0.5.3.tar.gz
+[2024-04-06 03:48:58] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-06 03:48:58] WARNING root fetch - processPackages [keras-nlp]: Timeout reached during download
+[2024-04-06 03:48:59] INFO root fetch - processPackages [crewai]: Downloading https://files.pythonhosted.org/packages/4e/2d/131d296cf0495637bfea59b11af0767de8fa11466880e3d702ab43a360d0/crewai-0.5.5.tar.gz
+[2024-04-06 03:48:59] WARNING root fetch - processPackages [crewai]: Timeout reached during download
+[2024-04-06 03:48:59] INFO root fetch - processPackages [crewai]: executing diffoscope
+[2024-04-06 03:48:59] INFO root fetch - processPackages [crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai-0.5.3.tar.gz tmp/crewai-0.5.5.tar.gz --markdown 20240406/c/crewai/0.5.3-0.5.5/diff.md --exclude *.pyd
+[2024-04-06 03:48:59] INFO root fetch - processPackages [keras-nlp]: Downloading https://files.pythonhosted.org/packages/b6/6b/5e378df208b954e0bb2f79368dfa7a478538ef65cc2c9a28861a92e5b40e/keras-nlp-0.9.1.dev0.tar.gz
+[2024-04-06 03:48:59] WARNING root fetch - processPackages [keras-nlp]: Timeout reached during download
+[2024-04-06 03:48:59] INFO root fetch - processPackages [keras-nlp]: executing diffoscope
+[2024-04-06 03:48:59] INFO root fetch - processPackages [keras-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-0.9.0.dev1.tar.gz tmp/keras-nlp-0.9.1.dev0.tar.gz --markdown 20240406/k/keras-nlp/0.9.0.dev1-0.9.1.dev0/diff.md --exclude *.pyd
+[2024-04-06 03:48:59] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.3.tar.gz]
+[2024-04-06 03:48:59] INFO root fetch - processPackages [crewai]: Remove: archive file [/home/abi/fetcher/tmp/crewai-0.5.5.tar.gz]
+[2024-04-06 03:48:59] INFO root fetch - main [MainThread]: End processing [crewai]: success
+[2024-04-06 03:49:00] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.0.dev1.tar.gz]
+[2024-04-06 03:49:00] INFO root fetch - processPackages [keras-nlp]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-0.9.1.dev0.tar.gz]
+[2024-04-06 03:49:00] INFO root fetch - main [MainThread]: End processing [keras-nlp]: success
+[2024-04-06 03:49:00] INFO root fetch - main [MainThread]: Store serial: [22644810]
