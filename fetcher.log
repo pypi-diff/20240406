@@ -19683,3 +19683,17 @@ EOFError: EOF read where object expected
 [2024-04-06 18:28:45] INFO root fetch - processPackages [byma]: Remove: archive file [/home/abi/fetcher/tmp/byma-0.1.2.tar.gz]
 [2024-04-06 18:28:45] INFO root fetch - main [MainThread]: End processing [byma]: success
 [2024-04-06 18:28:45] INFO root fetch - main [MainThread]: Store serial: [22649358]
+[2024-04-06 18:30:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649358]
+[2024-04-06 18:30:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 18:30:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nestpython
+[2024-04-06 18:30:54] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 18:30:54] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-04-06 18:30:55] WARNING root fetch - processPackages [nestpython]: Timeout reached during download
+[2024-04-06 18:30:55] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-04-06 18:30:55] WARNING root fetch - processPackages [nestpython]: Timeout reached during download
+[2024-04-06 18:30:55] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-04-06 18:30:55] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240406/n/nestpython/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 18:30:55] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-04-06 18:30:55] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-04-06 18:30:55] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-04-06 18:30:55] INFO root fetch - main [MainThread]: Store serial: [22649362]
