@@ -9393,3 +9393,39 @@
 [2024-04-06 06:28:28] WARNING root fetch - processPackages [CNVoyant]: Skipping package: exceeds size limit 24008093>=10485760
 [2024-04-06 06:28:28] INFO root fetch - main [MainThread]: End processing [CNVoyant] error
 [2024-04-06 06:28:28] INFO root fetch - main [MainThread]: Store serial: [22645531]
+[2024-04-06 06:30:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645531]
+[2024-04-06 06:30:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 06:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-l10n-ro-stock-picking-comment-template
+[2024-04-06 06:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-ro-config
+[2024-04-06 06:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-l10n-ro-stock-account-date
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: New version: [16.0.0.3.0] Old Version: [16.0.0.2.0]
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-config]: New version: [17.0.1.2.0] Old Version: [17.0.1.1.0.1]
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: Downloading https://files.pythonhosted.org/packages/63/24/b43b8155454569adce4fc31ea6478db01ad1d834dca70f2a1f9967d642d9/odoo_addon_l10n_ro_stock_picking_comment_template-16.0.0.2.0-py3-none-any.whl
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-config]: Downloading https://files.pythonhosted.org/packages/e1/01/cad54e6247fee3fa680c4349baa1a986e5cd794f72813b6b8fdf8d09c099/odoo_addon_l10n_ro_config-17.0.1.1.0.1-py3-none-any.whl
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: New version: [16.0.1.2.0.1] Old Version: [16.0.1.2.0]
+[2024-04-06 06:30:37] WARNING root fetch - processPackages [odoo-addon-l10n-ro-config]: Timeout reached during download
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-config]: Downloading https://files.pythonhosted.org/packages/f0/d2/af952f7cc92d686329de051179e5f7321668ba5f18ed8bbd911e2766160b/odoo_addon_l10n_ro_config-17.0.1.2.0-py3-none-any.whl
+[2024-04-06 06:30:37] WARNING root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: Timeout reached during download
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Downloading https://files.pythonhosted.org/packages/6c/eb/62a109f7e6c15f2abd7da1532ff1ca162ca27901501e78c6fa1959dd82e3/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0-py3-none-any.whl
+[2024-04-06 06:30:37] WARNING root fetch - processPackages [odoo-addon-l10n-ro-config]: Timeout reached during download
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-config]: executing diffoscope
+[2024-04-06 06:30:37] INFO root fetch - processPackages [odoo-addon-l10n-ro-config]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_config-17.0.1.1.0.1-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_config-17.0.1.2.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-l10n-ro-config/17.0.1.1.0.1-17.0.1.2.0/diff.md --exclude *.pyd
+[2024-04-06 06:30:38] WARNING root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Timeout reached during download
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: Downloading https://files.pythonhosted.org/packages/70/5a/40cbb8f3c4c9edf7c6b99263055870c4cc8c66f2d0044e4b7d4061fbdca7/odoo_addon_l10n_ro_stock_picking_comment_template-16.0.0.3.0-py3-none-any.whl
+[2024-04-06 06:30:38] WARNING root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: Timeout reached during download
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: executing diffoscope
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock_picking_comment_template-16.0.0.2.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock_picking_comment_template-16.0.0.3.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-l10n-ro-stock-picking-comment-template/16.0.0.2.0-16.0.0.3.0/diff.md --exclude *.pyd
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Downloading https://files.pythonhosted.org/packages/ac/58/a86c2888d69348440b7170e2f53b4797686d2823277a348a082610e1b3b0/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0.1-py3-none-any.whl
+[2024-04-06 06:30:38] WARNING root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Timeout reached during download
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: executing diffoscope
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0.1-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-l10n-ro-stock-account-date/16.0.1.2.0-16.0.1.2.0.1/diff.md --exclude *.pyd
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-config]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_config-17.0.1.1.0.1-py3-none-any.whl.zip]
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-config]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_config-17.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-06 06:30:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-config]: success
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_picking_comment_template-16.0.0.2.0-py3-none-any.whl.zip]
+[2024-04-06 06:30:38] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-picking-comment-template]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_picking_comment_template-16.0.0.3.0-py3-none-any.whl.zip]
+[2024-04-06 06:30:38] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock-picking-comment-template]: success
+[2024-04-06 06:30:39] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-06 06:30:39] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock-account-date]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_ro_stock_account_date-16.0.1.2.0.1-py3-none-any.whl.zip]
+[2024-04-06 06:30:39] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock-account-date]: success
+[2024-04-06 06:30:39] INFO root fetch - main [MainThread]: Store serial: [22645535]
