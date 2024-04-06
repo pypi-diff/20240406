@@ -11143,3 +11143,80 @@
 [2024-04-06 08:33:02] INFO root fetch - processPackages [so-vits-svc-fork]: Remove: archive file [/home/abi/fetcher/tmp/so_vits_svc_fork-4.1.9.tar.gz]
 [2024-04-06 08:33:02] INFO root fetch - main [MainThread]: End processing [so-vits-svc-fork]: success
 [2024-04-06 08:33:02] INFO root fetch - main [MainThread]: Store serial: [22646102]
+[2024-04-06 08:35:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646102]
+[2024-04-06 08:35:11] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spdl
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: komodo-sdk
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apconfig
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hgraph
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylode
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-stock-release-channel
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-stock-release-channel-process-end-time
+[2024-04-06 08:35:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addons-oca-wms
+[2024-04-06 08:35:11] INFO root fetch - processPackages [apconfig]: New version: [0.0.104] Old Version: [0.0.103]
+[2024-04-06 08:35:11] INFO root fetch - processPackages [komodo-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: New version: [16.0.1.7.0.1] Old Version: [16.0.1.7.0]
+[2024-04-06 08:35:11] INFO root fetch - processPackages [apconfig]: Downloading https://files.pythonhosted.org/packages/25/f8/691c567922ff9809f3d4614320156c14b97920e1d12469805918dbafd8e6/apconfig-0.0.103.tar.gz
+[2024-04-06 08:35:11] INFO root fetch - processPackages [komodo-sdk]: Downloading https://files.pythonhosted.org/packages/be/a5/803aa38d993624250879c30214d955211c2767216b65ef5605c9582af44a/komodo_sdk-0.0.8.tar.gz
+[2024-04-06 08:35:11] WARNING root fetch - processPackages [spdl]: Skipping, unable to determine old version
+[2024-04-06 08:35:11] INFO root fetch - main [MainThread]: End processing [spdl] error
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: New version: [16.0.2.9.0] Old Version: [16.0.2.8.0]
+[2024-04-06 08:35:11] INFO root fetch - processPackages [pylode]: New version: [3.1.4] Old Version: [3.1.3]
+[2024-04-06 08:35:11] INFO root fetch - processPackages [hgraph]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addons-oca-wms]: New version: [16.0.20240405.0] Old Version: [16.0.20240403.0]
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: Downloading https://files.pythonhosted.org/packages/a1/ae/fab6279633fd3593f5f435bd49ede3c838cafe401a2ce6142269a35455ec/odoo_addon_stock_release_channel_process_end_time-16.0.1.7.0-py3-none-any.whl
+[2024-04-06 08:35:11] WARNING root fetch - processPackages [komodo-sdk]: Skipping package: exceeds size limit 41401994>=10485760
+[2024-04-06 08:35:11] INFO root fetch - main [MainThread]: End processing [komodo-sdk] error
+[2024-04-06 08:35:11] WARNING root fetch - processPackages [apconfig]: Timeout reached during download
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: Downloading https://files.pythonhosted.org/packages/52/92/1be60c2efa4c10575b7009ede41d26825460eb5beff77911075273d79984/odoo_addon_stock_release_channel-16.0.2.8.0-py3-none-any.whl
+[2024-04-06 08:35:11] WARNING root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: Timeout reached during download
+[2024-04-06 08:35:11] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/27/5e/0669a4c4cce152affb206a4b7f1163bb96547cec3b2deec3e7a6ecd8003d/hgraph-0.2.6.tar.gz
+[2024-04-06 08:35:11] INFO root fetch - processPackages [pylode]: Downloading https://files.pythonhosted.org/packages/de/ef/410f901302ea10d4817980efdd304bfbebd57f8a47bdccb228718db3425c/pylode-3.1.3.tar.gz
+[2024-04-06 08:35:11] WARNING root fetch - processPackages [odoo-addon-stock-release-channel]: Timeout reached during download
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/f9/e2/911bbc4d9027ab241552da137272a59e366737c167d460bae4d4fa3e2a51/odoo_addons_oca_wms-16.0.20240403.0-py3-none-any.whl
+[2024-04-06 08:35:11] INFO root fetch - processPackages [apconfig]: Downloading https://files.pythonhosted.org/packages/c4/28/c45f6d95a37b6afad29fbe889a12d151128d091f9b9b192aaf324d60c122/apconfig-0.0.104.tar.gz
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: Downloading https://files.pythonhosted.org/packages/72/34/26d64f89ea9154c50e7429fb00f1b20a5649bfdcd36647026241b8137389/odoo_addon_stock_release_channel-16.0.2.9.0-py3-none-any.whl
+[2024-04-06 08:35:11] WARNING root fetch - processPackages [hgraph]: Timeout reached during download
+[2024-04-06 08:35:11] INFO root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: Downloading https://files.pythonhosted.org/packages/d6/d1/19ed43094b85039265ed34c278cf24b613499fd0ac0d2fb5048f0259ebf3/odoo_addon_stock_release_channel_process_end_time-16.0.1.7.0.1-py3-none-any.whl
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [apconfig]: Timeout reached during download
+[2024-04-06 08:35:12] INFO root fetch - processPackages [apconfig]: executing diffoscope
+[2024-04-06 08:35:12] INFO root fetch - processPackages [apconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apconfig-0.0.103.tar.gz tmp/apconfig-0.0.104.tar.gz --markdown 20240406/a/apconfig/0.0.103-0.0.104/diff.md --exclude *.pyd
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [odoo-addons-oca-wms]: Timeout reached during download
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [odoo-addon-stock-release-channel]: Timeout reached during download
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: executing diffoscope
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_release_channel-16.0.2.8.0-py3-none-any.whl.zip tmp/odoo_addon_stock_release_channel-16.0.2.9.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-stock-release-channel/16.0.2.8.0-16.0.2.9.0/diff.md --exclude *.pyd
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: Timeout reached during download
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: executing diffoscope
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_release_channel_process_end_time-16.0.1.7.0-py3-none-any.whl.zip tmp/odoo_addon_stock_release_channel_process_end_time-16.0.1.7.0.1-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-stock-release-channel-process-end-time/16.0.1.7.0-16.0.1.7.0.1/diff.md --exclude *.pyd
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [pylode]: Timeout reached during download
+[2024-04-06 08:35:12] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/0b/15/c304ce16282214008b5a1a2e33dd9084bab33ced060f7e0f808aff1df1ad/hgraph-0.2.7.tar.gz
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addons-oca-wms]: Downloading https://files.pythonhosted.org/packages/5d/94/0c920185f0751c4b167ae92dbb3ad6465f9cb607d97280222bcfb00aaa0f/odoo_addons_oca_wms-16.0.20240405.0-py3-none-any.whl
+[2024-04-06 08:35:12] INFO root fetch - processPackages [pylode]: Downloading https://files.pythonhosted.org/packages/0b/79/72670359dfdf9a001f8cc39a03430e1cae268f7b9502789866f0b1d90e8f/pylode-3.1.4.tar.gz
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [hgraph]: Timeout reached during download
+[2024-04-06 08:35:12] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-04-06 08:35:12] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.6.tar.gz tmp/hgraph-0.2.7.tar.gz --markdown 20240406/h/hgraph/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [pylode]: Timeout reached during download
+[2024-04-06 08:35:12] INFO root fetch - processPackages [pylode]: executing diffoscope
+[2024-04-06 08:35:12] INFO root fetch - processPackages [pylode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylode-3.1.3.tar.gz tmp/pylode-3.1.4.tar.gz --markdown 20240406/p/pylode/3.1.3-3.1.4/diff.md --exclude *.pyd
+[2024-04-06 08:35:12] WARNING root fetch - processPackages [odoo-addons-oca-wms]: Timeout reached during download
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addons-oca-wms]: executing diffoscope
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addons-oca-wms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_wms-16.0.20240403.0-py3-none-any.whl.zip tmp/odoo_addons_oca_wms-16.0.20240405.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addons-oca-wms/16.0.20240403.0-16.0.20240405.0/diff.md --exclude *.pyd
+[2024-04-06 08:35:12] INFO root fetch - processPackages [apconfig]: Remove: archive file [/home/abi/fetcher/tmp/apconfig-0.0.103.tar.gz]
+[2024-04-06 08:35:12] INFO root fetch - processPackages [apconfig]: Remove: archive file [/home/abi/fetcher/tmp/apconfig-0.0.104.tar.gz]
+[2024-04-06 08:35:12] INFO root fetch - main [MainThread]: End processing [apconfig]: success
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_release_channel_process_end_time-16.0.1.7.0-py3-none-any.whl.zip]
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel-process-end-time]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_release_channel_process_end_time-16.0.1.7.0.1-py3-none-any.whl.zip]
+[2024-04-06 08:35:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-release-channel-process-end-time]: success
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_release_channel-16.0.2.8.0-py3-none-any.whl.zip]
+[2024-04-06 08:35:12] INFO root fetch - processPackages [odoo-addon-stock-release-channel]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_stock_release_channel-16.0.2.9.0-py3-none-any.whl.zip]
+[2024-04-06 08:35:12] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-release-channel]: success
+[2024-04-06 08:35:13] INFO root fetch - processPackages [odoo-addons-oca-wms]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_wms-16.0.20240403.0-py3-none-any.whl.zip]
+[2024-04-06 08:35:13] INFO root fetch - processPackages [odoo-addons-oca-wms]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_wms-16.0.20240405.0-py3-none-any.whl.zip]
+[2024-04-06 08:35:13] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-wms]: success
+[2024-04-06 08:35:13] INFO root fetch - processPackages [pylode]: Remove: archive file [/home/abi/fetcher/tmp/pylode-3.1.3.tar.gz]
+[2024-04-06 08:35:13] INFO root fetch - processPackages [pylode]: Remove: archive file [/home/abi/fetcher/tmp/pylode-3.1.4.tar.gz]
+[2024-04-06 08:35:13] INFO root fetch - main [MainThread]: End processing [pylode]: success
+[2024-04-06 08:35:13] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.6.tar.gz]
+[2024-04-06 08:35:13] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.7.tar.gz]
+[2024-04-06 08:35:13] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-04-06 08:35:13] INFO root fetch - main [MainThread]: Store serial: [22646122]
