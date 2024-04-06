@@ -24979,3 +24979,19 @@ EOFError: EOF read where object expected
 [2024-04-06 23:29:17] INFO root fetch - processPackages [felupe]: Remove: archive file [/home/abi/fetcher/tmp/felupe-8.3.1.tar.gz]
 [2024-04-06 23:29:17] INFO root fetch - main [MainThread]: End processing [felupe]: success
 [2024-04-06 23:29:17] INFO root fetch - main [MainThread]: Store serial: [22651291]
+[2024-04-06 23:31:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651291]
+[2024-04-06 23:31:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 23:33:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651293]
+[2024-04-06 23:33:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 23:33:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dektools
+[2024-04-06 23:33:32] INFO root fetch - processPackages [dektools]: New version: [0.1.9] Old Version: [0.1.75]
+[2024-04-06 23:33:32] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/4c/6b/02f6c2d2bc54990eb1b2acc17177cc30aa6c61a3850d2e83a50af5f71a20/dektools-0.1.75.tar.gz
+[2024-04-06 23:33:32] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-06 23:33:33] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/68/56/90836602efe1f93ffb0ab3da68807fa41e85e124836bcc0c3cc2d1b2c539/dektools-0.1.9-py3-none-any.whl
+[2024-04-06 23:33:33] WARNING root fetch - processPackages [dektools]: Timeout reached during download
+[2024-04-06 23:33:33] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-04-06 23:33:33] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.75.tar.gz tmp/dektools-0.1.9-py3-none-any.whl.zip --markdown 20240406/d/dektools/0.1.75-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 23:33:33] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.75.tar.gz]
+[2024-04-06 23:33:33] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
+[2024-04-06 23:33:33] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-04-06 23:33:33] INFO root fetch - main [MainThread]: Store serial: [22651297]
