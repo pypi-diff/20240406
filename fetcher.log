@@ -10445,3 +10445,28 @@
 [2024-04-06 07:17:32] INFO root fetch - processPackages [jupyter-kernels]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_kernels-1.0.6-py3-none-any.whl.zip]
 [2024-04-06 07:17:32] INFO root fetch - main [MainThread]: End processing [jupyter-kernels]: success
 [2024-04-06 07:17:32] INFO root fetch - main [MainThread]: Store serial: [22645830]
+[2024-04-06 07:19:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645830]
+[2024-04-06 07:19:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 07:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lmwrapper
+[2024-04-06 07:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: polymind
+[2024-04-06 07:19:41] INFO root fetch - processPackages [polymind]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 07:19:41] INFO root fetch - processPackages [polymind]: Downloading https://files.pythonhosted.org/packages/0e/aa/52a8f77530064a4a31bc4aa8116debc14a08e851bf5d42cd670dc896ca1c/polymind-0.0.6.tar.gz
+[2024-04-06 07:19:41] INFO root fetch - processPackages [lmwrapper]: New version: [0.8.7.5] Old Version: [0.8.7.4]
+[2024-04-06 07:19:41] WARNING root fetch - processPackages [polymind]: Timeout reached during download
+[2024-04-06 07:19:41] INFO root fetch - processPackages [polymind]: Downloading https://files.pythonhosted.org/packages/6b/5d/85efcce46e16627c7bdb1ca311cf5e79cf132fa11e00070c1ef96f3e1aab/polymind-0.0.7.tar.gz
+[2024-04-06 07:19:41] INFO root fetch - processPackages [lmwrapper]: Downloading https://files.pythonhosted.org/packages/69/40/54c14de78927610df7869801bec8a6b620f8efff4d0a43e5a2348dc417b4/lmwrapper-0.8.7.4.tar.gz
+[2024-04-06 07:19:41] WARNING root fetch - processPackages [polymind]: Timeout reached during download
+[2024-04-06 07:19:41] INFO root fetch - processPackages [polymind]: executing diffoscope
+[2024-04-06 07:19:41] INFO root fetch - processPackages [polymind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymind-0.0.6.tar.gz tmp/polymind-0.0.7.tar.gz --markdown 20240406/p/polymind/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 07:19:41] WARNING root fetch - processPackages [lmwrapper]: Timeout reached during download
+[2024-04-06 07:19:41] INFO root fetch - processPackages [lmwrapper]: Downloading https://files.pythonhosted.org/packages/6d/f5/575a53d9de1bcfa9af2722c5648e3031b0bd4af9c98b2315a7e10c94d3d8/lmwrapper-0.8.7.5.tar.gz
+[2024-04-06 07:19:42] WARNING root fetch - processPackages [lmwrapper]: Timeout reached during download
+[2024-04-06 07:19:42] INFO root fetch - processPackages [lmwrapper]: executing diffoscope
+[2024-04-06 07:19:42] INFO root fetch - processPackages [lmwrapper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmwrapper-0.8.7.4.tar.gz tmp/lmwrapper-0.8.7.5.tar.gz --markdown 20240406/l/lmwrapper/0.8.7.4-0.8.7.5/diff.md --exclude *.pyd
+[2024-04-06 07:19:42] INFO root fetch - processPackages [polymind]: Remove: archive file [/home/abi/fetcher/tmp/polymind-0.0.6.tar.gz]
+[2024-04-06 07:19:42] INFO root fetch - processPackages [polymind]: Remove: archive file [/home/abi/fetcher/tmp/polymind-0.0.7.tar.gz]
+[2024-04-06 07:19:42] INFO root fetch - main [MainThread]: End processing [polymind]: success
+[2024-04-06 07:19:42] INFO root fetch - processPackages [lmwrapper]: Remove: archive file [/home/abi/fetcher/tmp/lmwrapper-0.8.7.4.tar.gz]
+[2024-04-06 07:19:42] INFO root fetch - processPackages [lmwrapper]: Remove: archive file [/home/abi/fetcher/tmp/lmwrapper-0.8.7.5.tar.gz]
+[2024-04-06 07:19:42] INFO root fetch - main [MainThread]: End processing [lmwrapper]: success
+[2024-04-06 07:19:42] INFO root fetch - main [MainThread]: Store serial: [22645841]
