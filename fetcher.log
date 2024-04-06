@@ -14589,3 +14589,61 @@
 [2024-04-06 13:11:31] INFO root fetch - processPackages [pulumi-gitlab]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_gitlab-6.9.0a1708340471.tar.gz]
 [2024-04-06 13:11:31] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
 [2024-04-06 13:11:31] INFO root fetch - main [MainThread]: Store serial: [22647439]
+[2024-04-06 13:13:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647439]
+[2024-04-06 13:13:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 13:13:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyQtUIkit
+[2024-04-06 13:13:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-cloudflare
+[2024-04-06 13:13:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tb-nightly
+[2024-04-06 13:13:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apptrackr
+[2024-04-06 13:13:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-akamai
+[2024-04-06 13:13:40] INFO root fetch - processPackages [PyQtUIkit]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-04-06 13:13:40] INFO root fetch - processPackages [pulumi-cloudflare]: New version: [5.9.0a1692854882] Old Version: [5.9.0a1692851897]
+[2024-04-06 13:13:40] INFO root fetch - processPackages [apptrackr]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-06 13:13:40] INFO root fetch - processPackages [apptrackr]: Downloading https://files.pythonhosted.org/packages/87/11/d01e3e80f84c9170336e19e95376adb43743a1633672d1f2e3a2ce4c7f99/apptrackr-0.1.6.tar.gz
+[2024-04-06 13:13:40] INFO root fetch - processPackages [pulumi-akamai]: New version: [6.5.0a1712399669] Old Version: [6.5.0a1711735267]
+[2024-04-06 13:13:40] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-04-06 13:13:40] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/d6/41/9cdc40e1c2dd2d729d411caa4e3305c258d84be6ce266d98ee6d1c9505be/PyQtUIkit-2.2.1.tar.gz
+[2024-04-06 13:13:40] WARNING root fetch - processPackages [apptrackr]: Timeout reached during download
+[2024-04-06 13:13:40] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/ce/4c/bbf50ef75d6a6dc70780f846ef13e19b5ec009e8657c5b847defde7a8dd9/pulumi_cloudflare-5.9.0a1692851897.tar.gz
+[2024-04-06 13:13:40] INFO root fetch - processPackages [pulumi-akamai]: Downloading https://files.pythonhosted.org/packages/bd/8a/1f1e538218367f705d99e4ea6ae1f81b474056936b8a7f7f72822d62bb4c/pulumi_akamai-6.5.0a1711735267.tar.gz
+[2024-04-06 13:13:40] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-04-06 13:13:40] INFO root fetch - processPackages [apptrackr]: Downloading https://files.pythonhosted.org/packages/93/ab/7460bb90da07b6680f1fb1d35814689f112b580ed2c35ed8fad46121c1e2/apptrackr-0.1.7.tar.gz
+[2024-04-06 13:13:40] WARNING root fetch - processPackages [PyQtUIkit]: Timeout reached during download
+[2024-04-06 13:13:40] WARNING root fetch - processPackages [apptrackr]: Timeout reached during download
+[2024-04-06 13:13:40] INFO root fetch - processPackages [apptrackr]: executing diffoscope
+[2024-04-06 13:13:40] INFO root fetch - processPackages [apptrackr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apptrackr-0.1.6.tar.gz tmp/apptrackr-0.1.7.tar.gz --markdown 20240406/a/apptrackr/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-06 13:13:41] INFO root fetch - processPackages [PyQtUIkit]: Downloading https://files.pythonhosted.org/packages/3c/2b/4358fc3a5eac4106d9fa9a41bdccf53087ae18e7fe7ac38ecdcd27d5bda4/PyQtUIkit-2.2.2.tar.gz
+[2024-04-06 13:13:41] WARNING root fetch - processPackages [pulumi-cloudflare]: Timeout reached during download
+[2024-04-06 13:13:41] WARNING root fetch - processPackages [pulumi-akamai]: Timeout reached during download
+[2024-04-06 13:13:41] INFO root fetch - processPackages [apptrackr]: Remove: archive file [/home/abi/fetcher/tmp/apptrackr-0.1.6.tar.gz]
+[2024-04-06 13:13:41] INFO root fetch - processPackages [apptrackr]: Remove: archive file [/home/abi/fetcher/tmp/apptrackr-0.1.7.tar.gz]
+[2024-04-06 13:13:41] INFO root fetch - main [MainThread]: End processing [apptrackr]: success
+[2024-04-06 13:13:41] INFO root fetch - processPackages [pulumi-akamai]: Downloading https://files.pythonhosted.org/packages/67/aa/9fc2aeadf98645b93810395ed5dccd70198c7d1e25ac8af3f9ac103f2d0f/pulumi_akamai-6.5.0a1712399669.tar.gz
+[2024-04-06 13:13:41] WARNING root fetch - processPackages [PyQtUIkit]: Timeout reached during download
+[2024-04-06 13:13:41] INFO root fetch - processPackages [pulumi-cloudflare]: Downloading https://files.pythonhosted.org/packages/aa/45/e2040e3054cffd9ce633539517dc7f0063c0b789d73bac75a2b832e469de/pulumi_cloudflare-5.9.0a1692854882.tar.gz
+[2024-04-06 13:13:41] INFO root fetch - processPackages [PyQtUIkit]: executing diffoscope
+[2024-04-06 13:13:41] INFO root fetch - processPackages [PyQtUIkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyQtUIkit-2.2.1.tar.gz tmp/PyQtUIkit-2.2.2.tar.gz --markdown 20240406/P/PyQtUIkit/2.2.1-2.2.2/diff.md --exclude *.pyd
+[2024-04-06 13:13:41] WARNING root fetch - processPackages [pulumi-cloudflare]: Timeout reached during download
+[2024-04-06 13:13:41] INFO root fetch - processPackages [pulumi-cloudflare]: executing diffoscope
+[2024-04-06 13:13:41] INFO root fetch - processPackages [pulumi-cloudflare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_cloudflare-5.9.0a1692851897.tar.gz tmp/pulumi_cloudflare-5.9.0a1692854882.tar.gz --markdown 20240406/p/pulumi-cloudflare/5.9.0a1692851897-5.9.0a1692854882/diff.md --exclude *.pyd
+[2024-04-06 13:13:41] WARNING root fetch - processPackages [pulumi-akamai]: Timeout reached during download
+[2024-04-06 13:13:41] INFO root fetch - processPackages [pulumi-akamai]: executing diffoscope
+[2024-04-06 13:13:41] INFO root fetch - processPackages [pulumi-akamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_akamai-6.5.0a1711735267.tar.gz tmp/pulumi_akamai-6.5.0a1712399669.tar.gz --markdown 20240406/p/pulumi-akamai/6.5.0a1711735267-6.5.0a1712399669/diff.md --exclude *.pyd
+[2024-04-06 13:13:41] WARNING root fetch - processPackages [tb-nightly]: Timeout reached during download
+[2024-04-06 13:13:41] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-04-06 13:13:42] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.2.1.tar.gz]
+[2024-04-06 13:13:42] INFO root fetch - processPackages [PyQtUIkit]: Remove: archive file [/home/abi/fetcher/tmp/PyQtUIkit-2.2.2.tar.gz]
+[2024-04-06 13:13:42] INFO root fetch - main [MainThread]: End processing [PyQtUIkit]: success
+[2024-04-06 13:13:42] INFO root fetch - processPackages [pulumi-cloudflare]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudflare-5.9.0a1692851897.tar.gz]
+[2024-04-06 13:13:42] INFO root fetch - processPackages [pulumi-cloudflare]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_cloudflare-5.9.0a1692854882.tar.gz]
+[2024-04-06 13:13:42] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
+[2024-04-06 13:13:43] WARNING root fetch - processPackages [tb-nightly]: Timeout reached during download
+[2024-04-06 13:13:43] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-04-06 13:13:43] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240406/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2024-04-06 13:13:44] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-04-06 13:13:44] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-04-06 13:13:44] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-04-06 13:13:57] INFO root fetch - processPackages [pulumi-akamai]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_akamai-6.5.0a1711735267.tar.gz]
+[2024-04-06 13:13:57] INFO root fetch - processPackages [pulumi-akamai]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_akamai-6.5.0a1712399669.tar.gz]
+[2024-04-06 13:13:57] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
+[2024-04-06 13:13:57] INFO root fetch - main [MainThread]: Store serial: [22647454]
