@@ -17785,3 +17785,53 @@ EOFError: EOF read where object expected
 [2024-04-06 16:32:29] INFO root fetch - processPackages [dash-dataflow-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_dataflow_components-0.0.8.tar.gz]
 [2024-04-06 16:32:29] INFO root fetch - main [MainThread]: End processing [dash-dataflow-components]: success
 [2024-04-06 16:32:29] INFO root fetch - main [MainThread]: Store serial: [22648686]
+[2024-04-06 16:34:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648686]
+[2024-04-06 16:34:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 16:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: causadb
+[2024-04-06 16:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aioairzone-cloud
+[2024-04-06 16:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hello-app
+[2024-04-06 16:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfineflow
+[2024-04-06 16:34:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gwtools
+[2024-04-06 16:34:38] INFO root fetch - processPackages [causadb]: New version: [1.8.2] Old Version: [1.8.1]
+[2024-04-06 16:34:38] INFO root fetch - processPackages [pyfineflow]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-06 16:34:38] INFO root fetch - processPackages [causadb]: Downloading https://files.pythonhosted.org/packages/70/4e/c0645baa614203b3d68b5491feee55ab9655a87f81fc73c71a3ebc8192d1/causadb-1.8.1.tar.gz
+[2024-04-06 16:34:38] WARNING root fetch - processPackages [hello-app]: Skipping, unable to determine old version
+[2024-04-06 16:34:38] INFO root fetch - main [MainThread]: End processing [hello-app] error
+[2024-04-06 16:34:38] INFO root fetch - processPackages [aioairzone-cloud]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-04-06 16:34:38] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/48/36/a1cea9bf9b9f9ba8900717885136b7aecf3e3e1a4fec6ac8ef9c4b73f412/pyfineflow-1.0.5.tar.gz
+[2024-04-06 16:34:38] INFO root fetch - processPackages [gwtools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-04-06 16:34:38] WARNING root fetch - processPackages [causadb]: Timeout reached during download
+[2024-04-06 16:34:38] WARNING root fetch - processPackages [pyfineflow]: Timeout reached during download
+[2024-04-06 16:34:38] INFO root fetch - processPackages [aioairzone-cloud]: Downloading https://files.pythonhosted.org/packages/a5/83/a8632862a0624d8c4f949c13ccfb1b459a7836103f794bc8c489137ca641/aioairzone-cloud-0.5.0.tar.gz
+[2024-04-06 16:34:38] INFO root fetch - processPackages [gwtools]: Downloading https://files.pythonhosted.org/packages/96/83/ca8618008c290bcdef83cbede1f9f6fa902dc399121b76caaf0a13e163b2/gwtools-1.1.8.tar.gz
+[2024-04-06 16:34:38] INFO root fetch - processPackages [pyfineflow]: Downloading https://files.pythonhosted.org/packages/a3/95/569b0af07df0217ddcce9d7abf23c6040c09a77f97fa9fbc9dd0765c7d58/pyfineflow-1.0.6.tar.gz
+[2024-04-06 16:34:38] INFO root fetch - processPackages [causadb]: Downloading https://files.pythonhosted.org/packages/31/12/2342189a060df2b05ae76a07c0c3a1ee293c202723ffe30b85e06a6ca1e1/causadb-1.8.2.tar.gz
+[2024-04-06 16:34:38] WARNING root fetch - processPackages [aioairzone-cloud]: Timeout reached during download
+[2024-04-06 16:34:39] WARNING root fetch - processPackages [pyfineflow]: Timeout reached during download
+[2024-04-06 16:34:39] INFO root fetch - processPackages [pyfineflow]: executing diffoscope
+[2024-04-06 16:34:39] INFO root fetch - processPackages [pyfineflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfineflow-1.0.5.tar.gz tmp/pyfineflow-1.0.6.tar.gz --markdown 20240406/p/pyfineflow/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2024-04-06 16:34:39] WARNING root fetch - processPackages [gwtools]: Timeout reached during download
+[2024-04-06 16:34:39] WARNING root fetch - processPackages [causadb]: Timeout reached during download
+[2024-04-06 16:34:39] INFO root fetch - processPackages [causadb]: executing diffoscope
+[2024-04-06 16:34:39] INFO root fetch - processPackages [causadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causadb-1.8.1.tar.gz tmp/causadb-1.8.2.tar.gz --markdown 20240406/c/causadb/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2024-04-06 16:34:39] INFO root fetch - processPackages [aioairzone-cloud]: Downloading https://files.pythonhosted.org/packages/7c/eb/5b78f7b24f01f8deea0e416986a1eeecf794528f8f4c329b87d9eee8604a/aioairzone-cloud-0.5.1.tar.gz
+[2024-04-06 16:34:39] INFO root fetch - processPackages [gwtools]: Downloading https://files.pythonhosted.org/packages/2a/1e/037324e0edefdbbb3f291d3856a839b10a3693fafcb3747ac14090df647c/gwtools-1.1.9.tar.gz
+[2024-04-06 16:34:39] WARNING root fetch - processPackages [aioairzone-cloud]: Timeout reached during download
+[2024-04-06 16:34:39] INFO root fetch - processPackages [aioairzone-cloud]: executing diffoscope
+[2024-04-06 16:34:39] INFO root fetch - processPackages [aioairzone-cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioairzone-cloud-0.5.0.tar.gz tmp/aioairzone-cloud-0.5.1.tar.gz --markdown 20240406/a/aioairzone-cloud/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2024-04-06 16:34:39] WARNING root fetch - processPackages [gwtools]: Timeout reached during download
+[2024-04-06 16:34:39] INFO root fetch - processPackages [gwtools]: executing diffoscope
+[2024-04-06 16:34:39] INFO root fetch - processPackages [gwtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwtools-1.1.8.tar.gz tmp/gwtools-1.1.9.tar.gz --markdown 20240406/g/gwtools/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2024-04-06 16:34:39] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.0.5.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - processPackages [pyfineflow]: Remove: archive file [/home/abi/fetcher/tmp/pyfineflow-1.0.6.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - main [MainThread]: End processing [pyfineflow]: success
+[2024-04-06 16:34:39] INFO root fetch - processPackages [causadb]: Remove: archive file [/home/abi/fetcher/tmp/causadb-1.8.1.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - processPackages [causadb]: Remove: archive file [/home/abi/fetcher/tmp/causadb-1.8.2.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - main [MainThread]: End processing [causadb]: success
+[2024-04-06 16:34:39] INFO root fetch - processPackages [aioairzone-cloud]: Remove: archive file [/home/abi/fetcher/tmp/aioairzone-cloud-0.5.0.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - processPackages [aioairzone-cloud]: Remove: archive file [/home/abi/fetcher/tmp/aioairzone-cloud-0.5.1.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - main [MainThread]: End processing [aioairzone-cloud]: success
+[2024-04-06 16:34:39] INFO root fetch - processPackages [gwtools]: Remove: archive file [/home/abi/fetcher/tmp/gwtools-1.1.8.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - processPackages [gwtools]: Remove: archive file [/home/abi/fetcher/tmp/gwtools-1.1.9.tar.gz]
+[2024-04-06 16:34:39] INFO root fetch - main [MainThread]: End processing [gwtools]: success
+[2024-04-06 16:34:39] INFO root fetch - main [MainThread]: Store serial: [22648700]
