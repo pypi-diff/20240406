@@ -10646,3 +10646,28 @@
 [2024-04-06 07:47:28] INFO root fetch - processPackages [fal-client]: Remove: archive file [/home/abi/fetcher/tmp/fal_client-0.2.1.tar.gz]
 [2024-04-06 07:47:28] INFO root fetch - main [MainThread]: End processing [fal-client]: success
 [2024-04-06 07:47:28] INFO root fetch - main [MainThread]: Store serial: [22645917]
+[2024-04-06 07:49:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645917]
+[2024-04-06 07:49:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 07:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fal-client
+[2024-04-06 07:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bilireq
+[2024-04-06 07:49:37] INFO root fetch - processPackages [fal-client]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-06 07:49:37] INFO root fetch - processPackages [fal-client]: Downloading https://files.pythonhosted.org/packages/1d/0d/18c67eacba675d802e443986228367e93b478b3b6b5075a91ff7ad7d00e1/fal_client-0.2.0.tar.gz
+[2024-04-06 07:49:37] INFO root fetch - processPackages [bilireq]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-04-06 07:49:38] WARNING root fetch - processPackages [fal-client]: Timeout reached during download
+[2024-04-06 07:49:38] INFO root fetch - processPackages [fal-client]: Downloading https://files.pythonhosted.org/packages/79/aa/ae49835a67a0c53c94028951d6eedb315717e6b86f55614b983c8d3ebb9d/fal_client-0.2.1.tar.gz
+[2024-04-06 07:49:38] INFO root fetch - processPackages [bilireq]: Downloading https://files.pythonhosted.org/packages/04/90/47965a57601edbd8cc79449ea7119493515d56b6b780e3e8684f29008fe9/bilireq-0.2.8.tar.gz
+[2024-04-06 07:49:38] WARNING root fetch - processPackages [fal-client]: Timeout reached during download
+[2024-04-06 07:49:38] INFO root fetch - processPackages [fal-client]: executing diffoscope
+[2024-04-06 07:49:38] INFO root fetch - processPackages [fal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fal_client-0.2.0.tar.gz tmp/fal_client-0.2.1.tar.gz --markdown 20240406/f/fal-client/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-06 07:49:38] WARNING root fetch - processPackages [bilireq]: Timeout reached during download
+[2024-04-06 07:49:38] INFO root fetch - processPackages [bilireq]: Downloading https://files.pythonhosted.org/packages/9b/dc/8f20e047095408a81c813bd50229621a7da02f0a23eddc5176addf4ee956/bilireq-0.2.9.tar.gz
+[2024-04-06 07:49:38] INFO root fetch - processPackages [fal-client]: Remove: archive file [/home/abi/fetcher/tmp/fal_client-0.2.0.tar.gz]
+[2024-04-06 07:49:38] INFO root fetch - processPackages [fal-client]: Remove: archive file [/home/abi/fetcher/tmp/fal_client-0.2.1.tar.gz]
+[2024-04-06 07:49:38] INFO root fetch - main [MainThread]: End processing [fal-client]: success
+[2024-04-06 07:49:38] WARNING root fetch - processPackages [bilireq]: Timeout reached during download
+[2024-04-06 07:49:38] INFO root fetch - processPackages [bilireq]: executing diffoscope
+[2024-04-06 07:49:38] INFO root fetch - processPackages [bilireq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bilireq-0.2.8.tar.gz tmp/bilireq-0.2.9.tar.gz --markdown 20240406/b/bilireq/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2024-04-06 07:49:40] INFO root fetch - processPackages [bilireq]: Remove: archive file [/home/abi/fetcher/tmp/bilireq-0.2.8.tar.gz]
+[2024-04-06 07:49:40] INFO root fetch - processPackages [bilireq]: Remove: archive file [/home/abi/fetcher/tmp/bilireq-0.2.9.tar.gz]
+[2024-04-06 07:49:40] INFO root fetch - main [MainThread]: End processing [bilireq]: success
+[2024-04-06 07:49:40] INFO root fetch - main [MainThread]: Store serial: [22645923]
