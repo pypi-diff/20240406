@@ -13899,3 +13899,9 @@
 [2024-04-06 12:23:22] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.5.tar.gz]
 [2024-04-06 12:23:22] INFO root fetch - main [MainThread]: End processing [kkpyui]: success
 [2024-04-06 12:23:22] INFO root fetch - main [MainThread]: Store serial: [22647208]
+[2024-04-06 12:25:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647208]
+[2024-04-06 12:25:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 12:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SkvalpOptimizer
+[2024-04-06 12:25:31] WARNING root fetch - processPackages [SkvalpOptimizer]: Skipping, unable to determine old version
+[2024-04-06 12:25:31] INFO root fetch - main [MainThread]: End processing [SkvalpOptimizer] error
+[2024-04-06 12:25:31] INFO root fetch - main [MainThread]: Store serial: [22647213]
