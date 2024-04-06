@@ -8954,3 +8954,28 @@
 [2024-04-06 05:46:38] INFO root fetch - processPackages [jupyter-iam]: Remove: archive file [/home/abi/fetcher/tmp/jupyter_iam-1.0.0-py3-none-any.whl.zip]
 [2024-04-06 05:46:38] INFO root fetch - main [MainThread]: End processing [jupyter-iam]: success
 [2024-04-06 05:46:38] INFO root fetch - main [MainThread]: Store serial: [22645307]
+[2024-04-06 05:48:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645307]
+[2024-04-06 05:48:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 05:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yosemite-tools
+[2024-04-06 05:48:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: huojiweiguoba
+[2024-04-06 05:48:47] INFO root fetch - processPackages [yosemite-tools]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 05:48:47] INFO root fetch - processPackages [huojiweiguoba]: New version: [9.0] Old Version: [8.0]
+[2024-04-06 05:48:48] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/80/9a/7c9b2c2b10cdce3109a5e6c332b6e39d40b815dc858b12dd8a26025bd28b/yosemite-tools-0.0.1.tar.gz
+[2024-04-06 05:48:48] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 05:48:48] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/9b/6f/b64a46e83d6bfc0f46bb336114ec9f43e3939f86a70108c310351b4f02b4/huojiweiguoba-8.0.tar.gz
+[2024-04-06 05:48:48] WARNING root fetch - processPackages [huojiweiguoba]: Timeout reached during download
+[2024-04-06 05:48:48] INFO root fetch - processPackages [yosemite-tools]: Downloading https://files.pythonhosted.org/packages/d7/86/175994637311b6ee4ec70e8e677379299bb1d5d1daa1d270c1886a1fde86/yosemite-tools-0.0.2.tar.gz
+[2024-04-06 05:48:48] WARNING root fetch - processPackages [yosemite-tools]: Timeout reached during download
+[2024-04-06 05:48:48] INFO root fetch - processPackages [huojiweiguoba]: Downloading https://files.pythonhosted.org/packages/3a/79/586f36e886e9e8dcfc4129b51554721e3019a3b5fc5ca074d349a5747db3/huojiweiguoba-9.0.tar.gz
+[2024-04-06 05:48:48] INFO root fetch - processPackages [yosemite-tools]: executing diffoscope
+[2024-04-06 05:48:48] INFO root fetch - processPackages [yosemite-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yosemite-tools-0.0.1.tar.gz tmp/yosemite-tools-0.0.2.tar.gz --markdown 20240406/y/yosemite-tools/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 05:48:48] WARNING root fetch - processPackages [huojiweiguoba]: Timeout reached during download
+[2024-04-06 05:48:48] INFO root fetch - processPackages [huojiweiguoba]: executing diffoscope
+[2024-04-06 05:48:48] INFO root fetch - processPackages [huojiweiguoba]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huojiweiguoba-8.0.tar.gz tmp/huojiweiguoba-9.0.tar.gz --markdown 20240406/h/huojiweiguoba/8.0-9.0/diff.md --exclude *.pyd
+[2024-04-06 05:48:48] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.1.tar.gz]
+[2024-04-06 05:48:48] INFO root fetch - processPackages [yosemite-tools]: Remove: archive file [/home/abi/fetcher/tmp/yosemite-tools-0.0.2.tar.gz]
+[2024-04-06 05:48:48] INFO root fetch - main [MainThread]: End processing [yosemite-tools]: success
+[2024-04-06 05:48:49] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-8.0.tar.gz]
+[2024-04-06 05:48:49] INFO root fetch - processPackages [huojiweiguoba]: Remove: archive file [/home/abi/fetcher/tmp/huojiweiguoba-9.0.tar.gz]
+[2024-04-06 05:48:49] INFO root fetch - main [MainThread]: End processing [huojiweiguoba]: success
+[2024-04-06 05:48:49] INFO root fetch - main [MainThread]: Store serial: [22645313]
