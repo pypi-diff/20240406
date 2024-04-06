@@ -23219,3 +23219,42 @@ EOFError: EOF read where object expected
 [2024-04-06 21:39:15] INFO root fetch - processPackages [deepmd-kit-cu11]: Remove: archive file [/home/abi/fetcher/tmp/deepmd_kit_cu11-2.2.9-py37-none-manylinux_2_28_x86_64.whl.zip]
 [2024-04-06 21:39:15] INFO root fetch - main [MainThread]: End processing [deepmd-kit-cu11]: success
 [2024-04-06 21:39:15] INFO root fetch - main [MainThread]: Store serial: [22650543]
+[2024-04-06 21:41:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650543]
+[2024-04-06 21:41:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emlabpkg
+[2024-04-06 21:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datadreamer.dev
+[2024-04-06 21:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: download-tiktok-no-watermark
+[2024-04-06 21:41:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: merch
+[2024-04-06 21:41:26] INFO root fetch - processPackages [download-tiktok-no-watermark]: New version: [0.2.3] Old Version: [0.2.0]
+[2024-04-06 21:41:26] INFO root fetch - processPackages [emlabpkg]: New version: [4.9] Old Version: [4.8]
+[2024-04-06 21:41:26] INFO root fetch - processPackages [datadreamer.dev]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 21:41:26] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/2e/8c/2fb2ef077daad02abf2fefb401c64a305e54cb076d53476b8fe1d4ee603c/download_tiktok_no_watermark-0.2.0.tar.gz
+[2024-04-06 21:41:26] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/52/84/fdb1e8cae2adf2f6cf197367140c6b20a8c8eda120c2bc0d0194ce818811/emlabpkg-4.8.tar.gz
+[2024-04-06 21:41:26] WARNING root fetch - processPackages [merch]: Skipping, unable to determine old version
+[2024-04-06 21:41:26] INFO root fetch - main [MainThread]: End processing [merch] error
+[2024-04-06 21:41:26] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:41:26] WARNING root fetch - processPackages [emlabpkg]: Timeout reached during download
+[2024-04-06 21:41:26] INFO root fetch - processPackages [datadreamer.dev]: Downloading https://files.pythonhosted.org/packages/1f/2c/32b5de0e35ed3db2eca18fdce324ee199b1fcc089bc278d325fc111ad6b4/datadreamer_dev-0.8.0.tar.gz
+[2024-04-06 21:41:26] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/70/fd/e8c0d53b6fb88798fb28453221cb96a9d7b881b69a43deac62c3d88099e8/download_tiktok_no_watermark-0.2.3.tar.gz
+[2024-04-06 21:41:26] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/a5/5c/7b2101613235dde0b137fb467ab282b086e41c8bf81553a844a00b88ba64/emlabpkg-4.9.tar.gz
+[2024-04-06 21:41:26] WARNING root fetch - processPackages [datadreamer.dev]: Timeout reached during download
+[2024-04-06 21:41:26] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:41:26] WARNING root fetch - processPackages [emlabpkg]: Timeout reached during download
+[2024-04-06 21:41:26] INFO root fetch - processPackages [download-tiktok-no-watermark]: executing diffoscope
+[2024-04-06 21:41:26] INFO root fetch - processPackages [download-tiktok-no-watermark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/download_tiktok_no_watermark-0.2.0.tar.gz tmp/download_tiktok_no_watermark-0.2.3.tar.gz --markdown 20240406/d/download-tiktok-no-watermark/0.2.0-0.2.3/diff.md --exclude *.pyd
+[2024-04-06 21:41:26] INFO root fetch - processPackages [emlabpkg]: executing diffoscope
+[2024-04-06 21:41:26] INFO root fetch - processPackages [emlabpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlabpkg-4.8.tar.gz tmp/emlabpkg-4.9.tar.gz --markdown 20240406/e/emlabpkg/4.8-4.9/diff.md --exclude *.pyd
+[2024-04-06 21:41:27] INFO root fetch - processPackages [datadreamer.dev]: Downloading https://files.pythonhosted.org/packages/2a/ec/b17b0b2244a9b377c90f022ce710f823144beca2aad8793c5118553bc133/datadreamer_dev-0.9.0.tar.gz
+[2024-04-06 21:41:27] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.8.tar.gz]
+[2024-04-06 21:41:27] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.9.tar.gz]
+[2024-04-06 21:41:27] INFO root fetch - main [MainThread]: End processing [emlabpkg]: success
+[2024-04-06 21:41:27] WARNING root fetch - processPackages [datadreamer.dev]: Timeout reached during download
+[2024-04-06 21:41:27] INFO root fetch - processPackages [datadreamer.dev]: executing diffoscope
+[2024-04-06 21:41:27] INFO root fetch - processPackages [datadreamer.dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datadreamer_dev-0.8.0.tar.gz tmp/datadreamer_dev-0.9.0.tar.gz --markdown 20240406/d/datadreamer.dev/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 21:41:27] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.0.tar.gz]
+[2024-04-06 21:41:27] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.3.tar.gz]
+[2024-04-06 21:41:27] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark]: success
+[2024-04-06 21:41:28] INFO root fetch - processPackages [datadreamer.dev]: Remove: archive file [/home/abi/fetcher/tmp/datadreamer_dev-0.8.0.tar.gz]
+[2024-04-06 21:41:28] INFO root fetch - processPackages [datadreamer.dev]: Remove: archive file [/home/abi/fetcher/tmp/datadreamer_dev-0.9.0.tar.gz]
+[2024-04-06 21:41:28] INFO root fetch - main [MainThread]: End processing [datadreamer.dev]: success
+[2024-04-06 21:41:28] INFO root fetch - main [MainThread]: Store serial: [22650558]
