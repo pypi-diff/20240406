@@ -10507,3 +10507,23 @@
 [2024-04-06 07:26:03] INFO root fetch - processPackages [cloudoll]: Remove: archive file [/home/abi/fetcher/tmp/cloudoll-2.2.9.tar.gz]
 [2024-04-06 07:26:03] INFO root fetch - main [MainThread]: End processing [cloudoll]: success
 [2024-04-06 07:26:03] INFO root fetch - main [MainThread]: Store serial: [22645855]
+[2024-04-06 07:28:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645855]
+[2024-04-06 07:28:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 07:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yaml-to-markdown
+[2024-04-06 07:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dragonfly-grasshopper
+[2024-04-06 07:28:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: baml-core-ffi
+[2024-04-06 07:28:12] WARNING root fetch - processPackages [yaml-to-markdown]: Skipping, unable to determine old version
+[2024-04-06 07:28:12] INFO root fetch - main [MainThread]: End processing [yaml-to-markdown] error
+[2024-04-06 07:28:12] INFO root fetch - processPackages [dragonfly-grasshopper]: New version: [1.9.0] Old Version: [1.8.4]
+[2024-04-06 07:28:12] WARNING root fetch - processPackages [baml-core-ffi]: Skipping, unable to determine old version
+[2024-04-06 07:28:12] INFO root fetch - main [MainThread]: End processing [baml-core-ffi] error
+[2024-04-06 07:28:12] INFO root fetch - processPackages [dragonfly-grasshopper]: Downloading https://files.pythonhosted.org/packages/61/7c/926c180ac51778655057fbd9c2b7a694a7cfbc634c510e4bab5af0beb8d9/dragonfly-grasshopper-1.8.4.tar.gz
+[2024-04-06 07:28:13] WARNING root fetch - processPackages [dragonfly-grasshopper]: Timeout reached during download
+[2024-04-06 07:28:14] INFO root fetch - processPackages [dragonfly-grasshopper]: Downloading https://files.pythonhosted.org/packages/ed/a1/8b42a38306e46248ca16ca8ad5c9b02b4f86db7634aa329ec5ef99e2a623/dragonfly-grasshopper-1.9.0.tar.gz
+[2024-04-06 07:28:15] WARNING root fetch - processPackages [dragonfly-grasshopper]: Timeout reached during download
+[2024-04-06 07:28:15] INFO root fetch - processPackages [dragonfly-grasshopper]: executing diffoscope
+[2024-04-06 07:28:15] INFO root fetch - processPackages [dragonfly-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dragonfly-grasshopper-1.8.4.tar.gz tmp/dragonfly-grasshopper-1.9.0.tar.gz --markdown 20240406/d/dragonfly-grasshopper/1.8.4-1.9.0/diff.md --exclude *.pyd
+[2024-04-06 07:28:16] INFO root fetch - processPackages [dragonfly-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-grasshopper-1.8.4.tar.gz]
+[2024-04-06 07:28:16] INFO root fetch - processPackages [dragonfly-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/dragonfly-grasshopper-1.9.0.tar.gz]
+[2024-04-06 07:28:16] INFO root fetch - main [MainThread]: End processing [dragonfly-grasshopper]: success
+[2024-04-06 07:28:16] INFO root fetch - main [MainThread]: Store serial: [22645878]
