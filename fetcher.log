@@ -25358,3 +25358,64 @@ EOFError: EOF read where object expected
 [2024-04-06 23:53:13] INFO root fetch - processPackages [hhd]: Remove: archive file [/home/abi/fetcher/tmp/hhd-2.5.1.tar.gz]
 [2024-04-06 23:53:13] INFO root fetch - main [MainThread]: End processing [hhd]: success
 [2024-04-06 23:53:13] INFO root fetch - main [MainThread]: Store serial: [22651393]
+[2024-04-06 23:55:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651393]
+[2024-04-06 23:55:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 23:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: csv-utilite
+[2024-04-06 23:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vulcan-logger
+[2024-04-06 23:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: md2gdocs
+[2024-04-06 23:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cat-win
+[2024-04-06 23:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smaht-submitr
+[2024-04-06 23:55:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: service-oriented
+[2024-04-06 23:55:22] INFO root fetch - processPackages [vulcan-logger]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-06 23:55:22] INFO root fetch - processPackages [service-oriented]: New version: [0.0.3] Old Version: [0.0.2a9]
+[2024-04-06 23:55:22] INFO root fetch - processPackages [smaht-submitr]: New version: [0.7.0.1b90] Old Version: [0.7.0.1b9]
+[2024-04-06 23:55:22] INFO root fetch - processPackages [cat-win]: New version: [1.7.5] Old Version: [1.7.4]
+[2024-04-06 23:55:22] INFO root fetch - processPackages [csv-utilite]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 23:55:22] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/9f/35/a225d97a6772f103ec0ecc2da6d731def467557e73214d90b19145298b1d/vulcan-logger-1.3.8.tar.gz
+[2024-04-06 23:55:22] WARNING root fetch - processPackages [md2gdocs]: Skipping, unable to determine old version
+[2024-04-06 23:55:22] INFO root fetch - main [MainThread]: End processing [md2gdocs] error
+[2024-04-06 23:55:22] INFO root fetch - processPackages [service-oriented]: Downloading https://files.pythonhosted.org/packages/91/93/8808e2b0a7e857434b3c8a2d8ecd72eb853035e8af948edf46e51c3d1101/service_oriented-0.0.2a9.tar.gz
+[2024-04-06 23:55:22] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/ff/84/cead0681f1d3b22d8c2cc55c431321aa00039b758129671d6e752101a732/smaht_submitr-0.7.0.1b9.tar.gz
+[2024-04-06 23:55:22] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:55:22] WARNING root fetch - processPackages [service-oriented]: Timeout reached during download
+[2024-04-06 23:55:22] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 23:55:22] INFO root fetch - processPackages [csv-utilite]: Downloading https://files.pythonhosted.org/packages/20/67/0ed82ca9ae7564f0335d1a25d09d51b9d7cae5d7dcc8f40d0702ce0f1dc8/csv_utilite-1.0.0.tar.gz
+[2024-04-06 23:55:22] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/99/24/090cc2eb216035dfa61b40cefdc573a33824a23677c4b9a8b5eabeeb5b70/vulcan-logger-1.3.9.tar.gz
+[2024-04-06 23:55:22] INFO root fetch - processPackages [cat-win]: Downloading https://files.pythonhosted.org/packages/fb/4c/e54edb85b3c766e599140f75fbf08dffc79d9c862c0359fe71b4bc1f0013/cat_win-1.7.4-py3-none-any.whl
+[2024-04-06 23:55:22] WARNING root fetch - processPackages [csv-utilite]: Timeout reached during download
+[2024-04-06 23:55:22] INFO root fetch - processPackages [service-oriented]: Downloading https://files.pythonhosted.org/packages/fd/1f/a09d2cbbbc6332a94eae4d6d33ee58e1eb55a05bf0b895d60fe0d8405677/service_oriented-0.0.3.tar.gz
+[2024-04-06 23:55:23] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:55:23] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-06 23:55:23] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.8.tar.gz tmp/vulcan-logger-1.3.9.tar.gz --markdown 20240406/v/vulcan-logger/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2024-04-06 23:55:23] INFO root fetch - processPackages [smaht-submitr]: Downloading https://files.pythonhosted.org/packages/3e/b2/820eb38ed5d1f50586c2a4b758dc69f88a5b147238b58470c9f078443404/smaht_submitr-0.7.0.1b90.tar.gz
+[2024-04-06 23:55:23] WARNING root fetch - processPackages [cat-win]: Timeout reached during download
+[2024-04-06 23:55:23] WARNING root fetch - processPackages [service-oriented]: Timeout reached during download
+[2024-04-06 23:55:23] INFO root fetch - processPackages [service-oriented]: executing diffoscope
+[2024-04-06 23:55:23] INFO root fetch - processPackages [service-oriented]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/service_oriented-0.0.2a9.tar.gz tmp/service_oriented-0.0.3.tar.gz --markdown 20240406/s/service-oriented/0.0.2a9-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 23:55:23] INFO root fetch - processPackages [csv-utilite]: Downloading https://files.pythonhosted.org/packages/5e/1f/66b76837d3eaff66a3d34fcb28acda9c4b2d2c48e4ac7ab97c0fb72068ff/csv_utilite-1.0.1.tar.gz
+[2024-04-06 23:55:23] WARNING root fetch - processPackages [smaht-submitr]: Timeout reached during download
+[2024-04-06 23:55:23] INFO root fetch - processPackages [smaht-submitr]: executing diffoscope
+[2024-04-06 23:55:23] INFO root fetch - processPackages [smaht-submitr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smaht_submitr-0.7.0.1b9.tar.gz tmp/smaht_submitr-0.7.0.1b90.tar.gz --markdown 20240406/s/smaht-submitr/0.7.0.1b9-0.7.0.1b90/diff.md --exclude *.pyd
+[2024-04-06 23:55:23] INFO root fetch - processPackages [cat-win]: Downloading https://files.pythonhosted.org/packages/43/4b/b3c166678965e566bb9437c0af66062aa5ee832df1dc731248258cc97963/cat_win-1.7.5-py3-none-any.whl
+[2024-04-06 23:55:23] WARNING root fetch - processPackages [csv-utilite]: Timeout reached during download
+[2024-04-06 23:55:23] INFO root fetch - processPackages [csv-utilite]: executing diffoscope
+[2024-04-06 23:55:23] INFO root fetch - processPackages [csv-utilite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv_utilite-1.0.0.tar.gz tmp/csv_utilite-1.0.1.tar.gz --markdown 20240406/c/csv-utilite/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 23:55:23] WARNING root fetch - processPackages [cat-win]: Timeout reached during download
+[2024-04-06 23:55:23] INFO root fetch - processPackages [cat-win]: executing diffoscope
+[2024-04-06 23:55:23] INFO root fetch - processPackages [cat-win]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cat_win-1.7.4-py3-none-any.whl.zip tmp/cat_win-1.7.5-py3-none-any.whl.zip --markdown 20240406/c/cat-win/1.7.4-1.7.5/diff.md --exclude *.pyd
+[2024-04-06 23:55:23] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.8.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.9.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-06 23:55:23] INFO root fetch - processPackages [service-oriented]: Remove: archive file [/home/abi/fetcher/tmp/service_oriented-0.0.2a9.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - processPackages [service-oriented]: Remove: archive file [/home/abi/fetcher/tmp/service_oriented-0.0.3.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - main [MainThread]: End processing [service-oriented]: success
+[2024-04-06 23:55:23] INFO root fetch - processPackages [csv-utilite]: Remove: archive file [/home/abi/fetcher/tmp/csv_utilite-1.0.0.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - processPackages [csv-utilite]: Remove: archive file [/home/abi/fetcher/tmp/csv_utilite-1.0.1.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - main [MainThread]: End processing [csv-utilite]: success
+[2024-04-06 23:55:23] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b9.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - processPackages [smaht-submitr]: Remove: archive file [/home/abi/fetcher/tmp/smaht_submitr-0.7.0.1b90.tar.gz]
+[2024-04-06 23:55:23] INFO root fetch - main [MainThread]: End processing [smaht-submitr]: success
+[2024-04-06 23:55:24] INFO root fetch - processPackages [cat-win]: Remove: archive file [/home/abi/fetcher/tmp/cat_win-1.7.4-py3-none-any.whl.zip]
+[2024-04-06 23:55:24] INFO root fetch - processPackages [cat-win]: Remove: archive file [/home/abi/fetcher/tmp/cat_win-1.7.5-py3-none-any.whl.zip]
+[2024-04-06 23:55:24] INFO root fetch - main [MainThread]: End processing [cat-win]: success
+[2024-04-06 23:55:24] INFO root fetch - main [MainThread]: Store serial: [22651412]
