@@ -2392,3 +2392,42 @@
 [2024-04-06 02:32:47] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-04-06 02:32:47] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
 [2024-04-06 02:32:47] INFO root fetch - main [MainThread]: Store serial: [22643389]
+[2024-04-06 02:34:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643389]
+[2024-04-06 02:34:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 02:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redsauce
+[2024-04-06 02:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: state-machine-semaphore
+[2024-04-06 02:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aios-sdk
+[2024-04-06 02:34:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypscloud
+[2024-04-06 02:34:56] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-06 02:34:56] WARNING root fetch - processPackages [aios-sdk]: Skipping, unable to determine old version
+[2024-04-06 02:34:56] INFO root fetch - main [MainThread]: End processing [aios-sdk] error
+[2024-04-06 02:34:56] INFO root fetch - processPackages [redsauce]: New version: [0.0.1.1] Old Version: [0.0.1.0]
+[2024-04-06 02:34:56] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/fa/f7/eea494ef2079699969c054c97478b7e0d5db0ce186fbb2708d9a243b4366/state-machine-semaphore-0.1.98.tar.gz
+[2024-04-06 02:34:57] INFO root fetch - processPackages [redsauce]: Downloading https://files.pythonhosted.org/packages/4e/5a/7749c88c43225651aefd005c007bd39a5dcce5e60ca5bbc18e3b7e20719f/redsauce-0.0.1.0.tar.gz
+[2024-04-06 02:34:57] INFO root fetch - processPackages [pypscloud]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 02:34:57] WARNING root fetch - processPackages [redsauce]: Timeout reached during download
+[2024-04-06 02:34:57] WARNING root fetch - processPackages [state-machine-semaphore]: Timeout reached during download
+[2024-04-06 02:34:57] INFO root fetch - processPackages [redsauce]: Downloading https://files.pythonhosted.org/packages/0d/d3/1ea72a43d2f1493c92c3c89b9c185455e48450fd25e1d9db73a221f12072/redsauce-0.0.1.1.tar.gz
+[2024-04-06 02:34:57] INFO root fetch - processPackages [state-machine-semaphore]: Downloading https://files.pythonhosted.org/packages/80/0f/c73e069a7ceff3d9f61065aa4b5b338bc0b9f4f933b94a97692457bfa317/state-machine-semaphore-0.1.99.tar.gz
+[2024-04-06 02:34:57] WARNING root fetch - processPackages [redsauce]: Timeout reached during download
+[2024-04-06 02:34:57] INFO root fetch - processPackages [redsauce]: executing diffoscope
+[2024-04-06 02:34:57] INFO root fetch - processPackages [redsauce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redsauce-0.0.1.0.tar.gz tmp/redsauce-0.0.1.1.tar.gz --markdown 20240406/r/redsauce/0.0.1.0-0.0.1.1/diff.md --exclude *.pyd
+[2024-04-06 02:34:57] INFO root fetch - processPackages [pypscloud]: Downloading https://files.pythonhosted.org/packages/ae/e9/4711ed1ab3eb9653ff773fd0c3c60e8b4de3f65aa9b949fa557d08c2cae8/pypscloud-0.0.8.tar.gz
+[2024-04-06 02:34:57] WARNING root fetch - processPackages [state-machine-semaphore]: Timeout reached during download
+[2024-04-06 02:34:57] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2024-04-06 02:34:57] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20240406/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2024-04-06 02:34:57] WARNING root fetch - processPackages [pypscloud]: Timeout reached during download
+[2024-04-06 02:34:57] INFO root fetch - processPackages [pypscloud]: Downloading https://files.pythonhosted.org/packages/56/7f/2d33a563336e49dc7101d9150eef89a71b861dd07a4b9ae18b8e443dfea7/pypscloud-0.0.9.tar.gz
+[2024-04-06 02:34:57] INFO root fetch - processPackages [redsauce]: Remove: archive file [/home/abi/fetcher/tmp/redsauce-0.0.1.0.tar.gz]
+[2024-04-06 02:34:57] INFO root fetch - processPackages [redsauce]: Remove: archive file [/home/abi/fetcher/tmp/redsauce-0.0.1.1.tar.gz]
+[2024-04-06 02:34:57] INFO root fetch - main [MainThread]: End processing [redsauce]: success
+[2024-04-06 02:34:57] WARNING root fetch - processPackages [pypscloud]: Timeout reached during download
+[2024-04-06 02:34:57] INFO root fetch - processPackages [pypscloud]: executing diffoscope
+[2024-04-06 02:34:57] INFO root fetch - processPackages [pypscloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypscloud-0.0.8.tar.gz tmp/pypscloud-0.0.9.tar.gz --markdown 20240406/p/pypscloud/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 02:34:58] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.98.tar.gz]
+[2024-04-06 02:34:58] INFO root fetch - processPackages [state-machine-semaphore]: Remove: archive file [/home/abi/fetcher/tmp/state-machine-semaphore-0.1.99.tar.gz]
+[2024-04-06 02:34:58] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2024-04-06 02:34:58] INFO root fetch - processPackages [pypscloud]: Remove: archive file [/home/abi/fetcher/tmp/pypscloud-0.0.8.tar.gz]
+[2024-04-06 02:34:58] INFO root fetch - processPackages [pypscloud]: Remove: archive file [/home/abi/fetcher/tmp/pypscloud-0.0.9.tar.gz]
+[2024-04-06 02:34:58] INFO root fetch - main [MainThread]: End processing [pypscloud]: success
+[2024-04-06 02:34:58] INFO root fetch - main [MainThread]: Store serial: [22643401]
