@@ -18679,3 +18679,36 @@ EOFError: EOF read where object expected
 [2024-04-06 17:33:49] INFO root fetch - processPackages [wellets-cli]: Remove: archive file [/home/abi/fetcher/tmp/wellets_cli-1.9.2.tar.gz]
 [2024-04-06 17:33:49] INFO root fetch - main [MainThread]: End processing [wellets-cli]: success
 [2024-04-06 17:33:49] INFO root fetch - main [MainThread]: Store serial: [22649034]
+[2024-04-06 17:35:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649034]
+[2024-04-06 17:35:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yuag
+[2024-04-06 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: not-again-ai
+[2024-04-06 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hexometry
+[2024-04-06 17:35:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: komodo-sdk
+[2024-04-06 17:35:58] INFO root fetch - processPackages [komodo-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 17:35:58] INFO root fetch - processPackages [komodo-sdk]: Downloading https://files.pythonhosted.org/packages/be/a5/803aa38d993624250879c30214d955211c2767216b65ef5605c9582af44a/komodo_sdk-0.0.8.tar.gz
+[2024-04-06 17:35:58] WARNING root fetch - processPackages [hexometry]: Skipping, unable to determine old version
+[2024-04-06 17:35:58] INFO root fetch - main [MainThread]: End processing [hexometry] error
+[2024-04-06 17:35:58] INFO root fetch - processPackages [not-again-ai]: New version: [0.5.0] Old Version: [0.4.5]
+[2024-04-06 17:35:58] INFO root fetch - processPackages [yuag]: New version: [0.0.63] Old Version: [0.0.62]
+[2024-04-06 17:35:58] WARNING root fetch - processPackages [komodo-sdk]: Skipping package: exceeds size limit 41401994>=10485760
+[2024-04-06 17:35:58] INFO root fetch - main [MainThread]: End processing [komodo-sdk] error
+[2024-04-06 17:35:58] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/c7/e0/a83865866568f679fdd588af27e1a28b5aa036ebe62110d231c46ccd1e4f/yuag-0.0.62.tar.gz
+[2024-04-06 17:35:58] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/a7/47/caf42fcea68f1ff0cdca4e02f9190db80e7451c7b0e0aa90f906aff764ba/not_again_ai-0.4.5.tar.gz
+[2024-04-06 17:35:58] WARNING root fetch - processPackages [yuag]: Timeout reached during download
+[2024-04-06 17:35:58] WARNING root fetch - processPackages [not-again-ai]: Timeout reached during download
+[2024-04-06 17:35:58] INFO root fetch - processPackages [yuag]: Downloading https://files.pythonhosted.org/packages/d0/72/a0e6d2d35d8dccdfc3d96fc7b45e77fba1268d251fd8bab3c69b53f8f5d3/yuag-0.0.63.tar.gz
+[2024-04-06 17:35:58] INFO root fetch - processPackages [not-again-ai]: Downloading https://files.pythonhosted.org/packages/88/23/4ce2d605b621ce732fa2a8da213beed717ed917bbd5258624fbabec5d26d/not_again_ai-0.5.0.tar.gz
+[2024-04-06 17:35:58] WARNING root fetch - processPackages [yuag]: Timeout reached during download
+[2024-04-06 17:35:58] INFO root fetch - processPackages [yuag]: executing diffoscope
+[2024-04-06 17:35:58] INFO root fetch - processPackages [yuag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yuag-0.0.62.tar.gz tmp/yuag-0.0.63.tar.gz --markdown 20240406/y/yuag/0.0.62-0.0.63/diff.md --exclude *.pyd
+[2024-04-06 17:35:58] WARNING root fetch - processPackages [not-again-ai]: Timeout reached during download
+[2024-04-06 17:35:58] INFO root fetch - processPackages [not-again-ai]: executing diffoscope
+[2024-04-06 17:35:58] INFO root fetch - processPackages [not-again-ai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not_again_ai-0.4.5.tar.gz tmp/not_again_ai-0.5.0.tar.gz --markdown 20240406/n/not-again-ai/0.4.5-0.5.0/diff.md --exclude *.pyd
+[2024-04-06 17:35:59] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.62.tar.gz]
+[2024-04-06 17:35:59] INFO root fetch - processPackages [yuag]: Remove: archive file [/home/abi/fetcher/tmp/yuag-0.0.63.tar.gz]
+[2024-04-06 17:35:59] INFO root fetch - main [MainThread]: End processing [yuag]: success
+[2024-04-06 17:35:59] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.4.5.tar.gz]
+[2024-04-06 17:35:59] INFO root fetch - processPackages [not-again-ai]: Remove: archive file [/home/abi/fetcher/tmp/not_again_ai-0.5.0.tar.gz]
+[2024-04-06 17:35:59] INFO root fetch - main [MainThread]: End processing [not-again-ai]: success
+[2024-04-06 17:35:59] INFO root fetch - main [MainThread]: Store serial: [22649048]
