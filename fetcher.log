@@ -21429,3 +21429,17 @@ EOFError: EOF read where object expected
 [2024-04-06 20:06:52] INFO root fetch - processPackages [aicscytoparam]: Remove: archive file [/home/abi/fetcher/tmp/aicscytoparam-0.1.9.tar.gz]
 [2024-04-06 20:06:52] INFO root fetch - main [MainThread]: End processing [aicscytoparam]: success
 [2024-04-06 20:06:52] INFO root fetch - main [MainThread]: Store serial: [22649978]
+[2024-04-06 20:08:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649978]
+[2024-04-06 20:09:00] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 20:09:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unicodedata-reader
+[2024-04-06 20:09:01] INFO root fetch - processPackages [unicodedata-reader]: New version: [0.2.0] Old Version: [0.1.7]
+[2024-04-06 20:09:01] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/92/2d/bbbea9c49019588ce73a0924843d36dbf22b82e92a25dd57946a06944f1a/unicodedata-reader-0.1.7.tar.gz
+[2024-04-06 20:09:01] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 20:09:01] INFO root fetch - processPackages [unicodedata-reader]: Downloading https://files.pythonhosted.org/packages/b3/5d/734ed64c27aa0f2dc6ed80fec9fe103a29ae25f1a94b3dbfbc459798c4f1/unicodedata_reader-0.2.0.tar.gz
+[2024-04-06 20:09:01] WARNING root fetch - processPackages [unicodedata-reader]: Timeout reached during download
+[2024-04-06 20:09:01] INFO root fetch - processPackages [unicodedata-reader]: executing diffoscope
+[2024-04-06 20:09:01] INFO root fetch - processPackages [unicodedata-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicodedata-reader-0.1.7.tar.gz tmp/unicodedata_reader-0.2.0.tar.gz --markdown 20240406/u/unicodedata-reader/0.1.7-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 20:09:02] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata-reader-0.1.7.tar.gz]
+[2024-04-06 20:09:02] INFO root fetch - processPackages [unicodedata-reader]: Remove: archive file [/home/abi/fetcher/tmp/unicodedata_reader-0.2.0.tar.gz]
+[2024-04-06 20:09:02] INFO root fetch - main [MainThread]: End processing [unicodedata-reader]: success
+[2024-04-06 20:09:02] INFO root fetch - main [MainThread]: Store serial: [22649982]
