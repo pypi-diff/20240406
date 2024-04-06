@@ -16339,3 +16339,42 @@ EOFError: EOF read where object expected
 [2024-04-06 15:10:14] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.4.tar.gz]
 [2024-04-06 15:10:14] INFO root fetch - main [MainThread]: End processing [embedding-optimizer]: success
 [2024-04-06 15:10:14] INFO root fetch - main [MainThread]: Store serial: [22648076]
+[2024-04-06 15:12:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648076]
+[2024-04-06 15:12:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plugp100
+[2024-04-06 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fiscal-frenzy
+[2024-04-06 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyscard
+[2024-04-06 15:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: MMLToolbox
+[2024-04-06 15:12:23] WARNING root fetch - processPackages [fiscal-frenzy]: Skipping, unable to determine old version
+[2024-04-06 15:12:23] INFO root fetch - main [MainThread]: End processing [fiscal-frenzy] error
+[2024-04-06 15:12:23] INFO root fetch - processPackages [plugp100]: New version: [5.0.0.dev6] Old Version: [5.0.0.dev5]
+[2024-04-06 15:12:23] INFO root fetch - processPackages [MMLToolbox]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 15:12:23] INFO root fetch - processPackages [pyscard]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-04-06 15:12:23] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/e1/97/20145b24b659ed4a59542466114a582d47f668bba5a744bdb8a781cc65e0/plugp100-5.0.0.dev5.tar.gz
+[2024-04-06 15:12:23] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 15:12:23] INFO root fetch - processPackages [pyscard]: Downloading https://files.pythonhosted.org/packages/27/f9/290e3af3b9cf367d8bc9ffe13f537d26ba37ba93b1eae90777125d22d822/pyscard-2.0.8.tar.gz
+[2024-04-06 15:12:23] INFO root fetch - processPackages [MMLToolbox]: Downloading https://files.pythonhosted.org/packages/94/85/881a660b93b2f50e5b566bdf895dd30567714ad54eb5a80e043649bf60b2/MMLToolbox-1.0.8.tar.gz
+[2024-04-06 15:12:23] WARNING root fetch - processPackages [pyscard]: Timeout reached during download
+[2024-04-06 15:12:23] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/3f/5e/8db9c06afa5a9a2a1fe046989c9b7ab1f0b62a9b4631bd7bae1f97ebe63f/plugp100-5.0.0.dev6.tar.gz
+[2024-04-06 15:12:23] WARNING root fetch - processPackages [MMLToolbox]: Timeout reached during download
+[2024-04-06 15:12:23] INFO root fetch - processPackages [pyscard]: Downloading https://files.pythonhosted.org/packages/b4/42/1608722ca8fcf0311b6ca7ece39610c599b64a8d3988226c9d134ef6cbdb/pyscard-2.0.9.tar.gz
+[2024-04-06 15:12:23] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 15:12:23] INFO root fetch - processPackages [plugp100]: executing diffoscope
+[2024-04-06 15:12:23] INFO root fetch - processPackages [plugp100]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugp100-5.0.0.dev5.tar.gz tmp/plugp100-5.0.0.dev6.tar.gz --markdown 20240406/p/plugp100/5.0.0.dev5-5.0.0.dev6/diff.md --exclude *.pyd
+[2024-04-06 15:12:23] WARNING root fetch - processPackages [pyscard]: Timeout reached during download
+[2024-04-06 15:12:23] INFO root fetch - processPackages [pyscard]: executing diffoscope
+[2024-04-06 15:12:23] INFO root fetch - processPackages [pyscard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyscard-2.0.8.tar.gz tmp/pyscard-2.0.9.tar.gz --markdown 20240406/p/pyscard/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2024-04-06 15:12:23] INFO root fetch - processPackages [MMLToolbox]: Downloading https://files.pythonhosted.org/packages/1b/00/7cb4fee68a08bd17314276e652b07aa6363a35b2e2ea5c4ec1abd02e92fc/MMLToolbox-1.0.9.tar.gz
+[2024-04-06 15:12:24] WARNING root fetch - processPackages [MMLToolbox]: Timeout reached during download
+[2024-04-06 15:12:24] INFO root fetch - processPackages [MMLToolbox]: executing diffoscope
+[2024-04-06 15:12:24] INFO root fetch - processPackages [MMLToolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MMLToolbox-1.0.8.tar.gz tmp/MMLToolbox-1.0.9.tar.gz --markdown 20240406/M/MMLToolbox/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 15:12:24] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev5.tar.gz]
+[2024-04-06 15:12:24] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev6.tar.gz]
+[2024-04-06 15:12:24] INFO root fetch - main [MainThread]: End processing [plugp100]: success
+[2024-04-06 15:12:24] INFO root fetch - processPackages [MMLToolbox]: Remove: archive file [/home/abi/fetcher/tmp/MMLToolbox-1.0.8.tar.gz]
+[2024-04-06 15:12:24] INFO root fetch - processPackages [MMLToolbox]: Remove: archive file [/home/abi/fetcher/tmp/MMLToolbox-1.0.9.tar.gz]
+[2024-04-06 15:12:24] INFO root fetch - main [MainThread]: End processing [MMLToolbox]: success
+[2024-04-06 15:12:24] INFO root fetch - processPackages [pyscard]: Remove: archive file [/home/abi/fetcher/tmp/pyscard-2.0.8.tar.gz]
+[2024-04-06 15:12:24] INFO root fetch - processPackages [pyscard]: Remove: archive file [/home/abi/fetcher/tmp/pyscard-2.0.9.tar.gz]
+[2024-04-06 15:12:24] INFO root fetch - main [MainThread]: End processing [pyscard]: success
+[2024-04-06 15:12:24] INFO root fetch - main [MainThread]: Store serial: [22648095]
