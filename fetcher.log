@@ -12105,3 +12105,44 @@
 [2024-04-06 09:58:01] INFO root fetch - processPackages [pandas-plots]: Remove: archive file [/home/abi/fetcher/tmp/pandas-plots-0.9.9.tar.gz]
 [2024-04-06 09:58:01] INFO root fetch - main [MainThread]: End processing [pandas-plots]: success
 [2024-04-06 09:58:01] INFO root fetch - main [MainThread]: Store serial: [22646567]
+[2024-04-06 10:00:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646567]
+[2024-04-06 10:00:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 10:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vortexpy
+[2024-04-06 10:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: galileo-core
+[2024-04-06 10:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonos
+[2024-04-06 10:00:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: palworld-pal-editor
+[2024-04-06 10:00:10] INFO root fetch - processPackages [nonos]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 10:00:10] INFO root fetch - processPackages [nonos]: Downloading https://files.pythonhosted.org/packages/32/93/d5a6e3909a3fc23e40f53796a5bd0ce04082b7067911f5b0f928e347dd11/nonos-0.9.0.tar.gz
+[2024-04-06 10:00:10] INFO root fetch - processPackages [galileo-core]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-04-06 10:00:10] INFO root fetch - processPackages [vortexpy]: New version: [4.0.8] Old Version: [4.0.7]
+[2024-04-06 10:00:10] INFO root fetch - processPackages [palworld-pal-editor]: New version: [0.5.0] Old Version: [0.4.3]
+[2024-04-06 10:00:10] INFO root fetch - processPackages [vortexpy]: Downloading https://files.pythonhosted.org/packages/9c/06/cae468d9723db46456720fb2cfbd50083b02244931d98f94e8d0d3799702/vortexpy-4.0.7.tar.gz
+[2024-04-06 10:00:10] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/04/cc/1c6523221753c516a655a862a887dec514099626b9c70c3491b3270449d5/galileo_core-0.3.1.tar.gz
+[2024-04-06 10:00:10] INFO root fetch - processPackages [palworld-pal-editor]: Downloading https://files.pythonhosted.org/packages/49/a2/a15e7626d2506d16fdb66afa2f65c69ca71735229e55fc64edab7343e04d/palworld-pal-editor-0.4.3.tar.gz
+[2024-04-06 10:00:10] WARNING root fetch - processPackages [vortexpy]: Timeout reached during download
+[2024-04-06 10:00:10] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-06 10:00:10] WARNING root fetch - processPackages [palworld-pal-editor]: Skipping package: exceeds size limit 20481102>=10485760
+[2024-04-06 10:00:10] INFO root fetch - main [MainThread]: End processing [palworld-pal-editor] error
+[2024-04-06 10:00:10] INFO root fetch - processPackages [vortexpy]: Downloading https://files.pythonhosted.org/packages/41/53/55a70cf6614a1bbb50ccfe6b65d0c9c3919fa755df6d58b20920aaf4e6f8/vortexpy-4.0.8.tar.gz
+[2024-04-06 10:00:10] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/b4/4e/93fdc5523aba172698b0f2270c1ef5d170b63db1b820fef4d4b4f975e4c0/galileo_core-0.4.0.tar.gz
+[2024-04-06 10:00:10] WARNING root fetch - processPackages [galileo-core]: Timeout reached during download
+[2024-04-06 10:00:10] INFO root fetch - processPackages [galileo-core]: executing diffoscope
+[2024-04-06 10:00:10] INFO root fetch - processPackages [galileo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galileo_core-0.3.1.tar.gz tmp/galileo_core-0.4.0.tar.gz --markdown 20240406/g/galileo-core/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2024-04-06 10:00:11] WARNING root fetch - processPackages [vortexpy]: Timeout reached during download
+[2024-04-06 10:00:11] INFO root fetch - processPackages [vortexpy]: executing diffoscope
+[2024-04-06 10:00:11] INFO root fetch - processPackages [vortexpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vortexpy-4.0.7.tar.gz tmp/vortexpy-4.0.8.tar.gz --markdown 20240406/v/vortexpy/4.0.7-4.0.8/diff.md --exclude *.pyd
+[2024-04-06 10:00:11] WARNING root fetch - processPackages [nonos]: Timeout reached during download
+[2024-04-06 10:00:11] INFO root fetch - processPackages [nonos]: Downloading https://files.pythonhosted.org/packages/30/12/bcc290ea36666366aa72037d1d028af88bdbb6201aeac6681052af71f77d/nonos-0.9.1.tar.gz
+[2024-04-06 10:00:11] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.3.1.tar.gz]
+[2024-04-06 10:00:11] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.4.0.tar.gz]
+[2024-04-06 10:00:11] INFO root fetch - main [MainThread]: End processing [galileo-core]: success
+[2024-04-06 10:00:11] INFO root fetch - processPackages [vortexpy]: Remove: archive file [/home/abi/fetcher/tmp/vortexpy-4.0.7.tar.gz]
+[2024-04-06 10:00:11] INFO root fetch - processPackages [vortexpy]: Remove: archive file [/home/abi/fetcher/tmp/vortexpy-4.0.8.tar.gz]
+[2024-04-06 10:00:11] INFO root fetch - main [MainThread]: End processing [vortexpy]: success
+[2024-04-06 10:00:11] WARNING root fetch - processPackages [nonos]: Timeout reached during download
+[2024-04-06 10:00:11] INFO root fetch - processPackages [nonos]: executing diffoscope
+[2024-04-06 10:00:11] INFO root fetch - processPackages [nonos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonos-0.9.0.tar.gz tmp/nonos-0.9.1.tar.gz --markdown 20240406/n/nonos/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 10:00:13] INFO root fetch - processPackages [nonos]: Remove: archive file [/home/abi/fetcher/tmp/nonos-0.9.0.tar.gz]
+[2024-04-06 10:00:13] INFO root fetch - processPackages [nonos]: Remove: archive file [/home/abi/fetcher/tmp/nonos-0.9.1.tar.gz]
+[2024-04-06 10:00:13] INFO root fetch - main [MainThread]: End processing [nonos]: success
+[2024-04-06 10:00:13] INFO root fetch - main [MainThread]: Store serial: [22646575]
