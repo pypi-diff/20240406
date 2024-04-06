@@ -13003,3 +13003,63 @@
 [2024-04-06 11:07:14] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.0.1b20240406.tar.gz]
 [2024-04-06 11:07:14] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2024-04-06 11:07:14] INFO root fetch - main [MainThread]: Store serial: [22646967]
+[2024-04-06 11:09:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646967]
+[2024-04-06 11:09:23] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 11:11:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646967]
+[2024-04-06 11:11:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 11:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: score-eval
+[2024-04-06 11:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-tele
+[2024-04-06 11:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tulona
+[2024-04-06 11:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nodoc
+[2024-04-06 11:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-pagerduty
+[2024-04-06 11:11:28] INFO root fetch - processPackages [nodoc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 11:11:28] INFO root fetch - processPackages [score-eval]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 11:11:28] INFO root fetch - processPackages [test-tele]: New version: [0.0.4.9.9.7] Old Version: [0.0.4.9.9.6]
+[2024-04-06 11:11:28] INFO root fetch - processPackages [tulona]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-06 11:11:28] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/4c/d1/8b9aa7fc6079375d39e4c528d339a014438130e763c7270344c15002a321/nodoc-1.0.8.tar.gz
+[2024-04-06 11:11:28] INFO root fetch - processPackages [score-eval]: Downloading https://files.pythonhosted.org/packages/46/29/3d68ba7b45ccfea142a5ddb1eef3fd681a05f07f2d465b64b90925b107fd/score-eval-0.0.2.tar.gz
+[2024-04-06 11:11:29] INFO root fetch - processPackages [pulumi-pagerduty]: New version: [4.9.0a1709566454] Old Version: [4.9.0a1709366773]
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [score-eval]: Timeout reached during download
+[2024-04-06 11:11:29] INFO root fetch - processPackages [test-tele]: Downloading https://files.pythonhosted.org/packages/84/a1/379e320ace58eb9e482b98869901b72a63c54c0cda286cb3f4d28cd7f9b4/test_tele-0.0.4.9.9.6.tar.gz
+[2024-04-06 11:11:29] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/0e/51/8e3f7380d5bee737ef122cf6dbc421043cd7541cd3e579505fd62d2e26c2/tulona-0.2.1.tar.gz
+[2024-04-06 11:11:29] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/ba/dc/468cc1cc3ab57e83660f1775ea0d9f1dcfc62c6de9c10832b834d737ec1a/pulumi_pagerduty-4.9.0a1709366773.tar.gz
+[2024-04-06 11:11:29] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/c3/01/365275f65437bdcd49fb8054d4dd45304b5a0f8ee40ef9cdaf3d0fa5ad12/nodoc-1.0.9.tar.gz
+[2024-04-06 11:11:29] INFO root fetch - processPackages [score-eval]: Downloading https://files.pythonhosted.org/packages/86/36/077221e6754f45d512504dfc2b7f09e60112770245afadbf8f813ee85c21/score_eval-0.0.3.tar.gz
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [pulumi-pagerduty]: Timeout reached during download
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:11:29] INFO root fetch - processPackages [nodoc]: executing diffoscope
+[2024-04-06 11:11:29] INFO root fetch - processPackages [nodoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodoc-1.0.8.tar.gz tmp/nodoc-1.0.9.tar.gz --markdown 20240406/n/nodoc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [test-tele]: Timeout reached during download
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-06 11:11:29] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/ea/4e/a77d2efabe6daeb6878eeed9b4c2b3c43c2b854c19e3be4b3d627c2c0427/pulumi_pagerduty-4.9.0a1709566454.tar.gz
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [score-eval]: Timeout reached during download
+[2024-04-06 11:11:29] INFO root fetch - processPackages [score-eval]: executing diffoscope
+[2024-04-06 11:11:29] INFO root fetch - processPackages [score-eval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/score-eval-0.0.2.tar.gz tmp/score_eval-0.0.3.tar.gz --markdown 20240406/s/score-eval/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 11:11:29] INFO root fetch - processPackages [test-tele]: Downloading https://files.pythonhosted.org/packages/2e/32/dbac3573209f401eed9c7d9ee6f7b6b62059950e5eefb9cce2df47b84c69/test_tele-0.0.4.9.9.7.tar.gz
+[2024-04-06 11:11:29] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/50/65/9417ff0aeb01443fa869bc3b25220097454ca7399bdb38f6b46d2ee3bbef/tulona-0.2.2.tar.gz
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [pulumi-pagerduty]: Timeout reached during download
+[2024-04-06 11:11:29] INFO root fetch - processPackages [pulumi-pagerduty]: executing diffoscope
+[2024-04-06 11:11:29] INFO root fetch - processPackages [pulumi-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pagerduty-4.9.0a1709366773.tar.gz tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz --markdown 20240406/p/pulumi-pagerduty/4.9.0a1709366773-4.9.0a1709566454/diff.md --exclude *.pyd
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [test-tele]: Timeout reached during download
+[2024-04-06 11:11:29] INFO root fetch - processPackages [test-tele]: executing diffoscope
+[2024-04-06 11:11:29] INFO root fetch - processPackages [test-tele]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_tele-0.0.4.9.9.6.tar.gz tmp/test_tele-0.0.4.9.9.7.tar.gz --markdown 20240406/t/test-tele/0.0.4.9.9.6-0.0.4.9.9.7/diff.md --exclude *.pyd
+[2024-04-06 11:11:29] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-06 11:11:29] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-06 11:11:29] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.2.1.tar.gz tmp/tulona-0.2.2.tar.gz --markdown 20240406/t/tulona/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-06 11:11:29] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.8.tar.gz]
+[2024-04-06 11:11:29] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.9.tar.gz]
+[2024-04-06 11:11:29] INFO root fetch - main [MainThread]: End processing [nodoc]: success
+[2024-04-06 11:11:30] INFO root fetch - processPackages [score-eval]: Remove: archive file [/home/abi/fetcher/tmp/score-eval-0.0.2.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - processPackages [score-eval]: Remove: archive file [/home/abi/fetcher/tmp/score_eval-0.0.3.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - main [MainThread]: End processing [score-eval]: success
+[2024-04-06 11:11:30] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.1.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.2.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-06 11:11:30] INFO root fetch - processPackages [test-tele]: Remove: archive file [/home/abi/fetcher/tmp/test_tele-0.0.4.9.9.6.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - processPackages [test-tele]: Remove: archive file [/home/abi/fetcher/tmp/test_tele-0.0.4.9.9.7.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - main [MainThread]: End processing [test-tele]: success
+[2024-04-06 11:11:30] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709366773.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz]
+[2024-04-06 11:11:30] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
+[2024-04-06 11:11:30] INFO root fetch - main [MainThread]: Store serial: [22646982]
