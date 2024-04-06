@@ -10470,3 +10470,40 @@
 [2024-04-06 07:19:42] INFO root fetch - processPackages [lmwrapper]: Remove: archive file [/home/abi/fetcher/tmp/lmwrapper-0.8.7.5.tar.gz]
 [2024-04-06 07:19:42] INFO root fetch - main [MainThread]: End processing [lmwrapper]: success
 [2024-04-06 07:19:42] INFO root fetch - main [MainThread]: Store serial: [22645841]
+[2024-04-06 07:21:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645841]
+[2024-04-06 07:21:51] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 07:23:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645841]
+[2024-04-06 07:23:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 07:25:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645841]
+[2024-04-06 07:26:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 07:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: primula
+[2024-04-06 07:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ifcopenshell
+[2024-04-06 07:26:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloudoll
+[2024-04-06 07:26:02] INFO root fetch - processPackages [ifcopenshell]: New version: [0.7.0.240405] Old Version: [0.7.0.230217]
+[2024-04-06 07:26:02] INFO root fetch - processPackages [primula]: New version: [0.3] Old Version: [0.2]
+[2024-04-06 07:26:02] INFO root fetch - processPackages [cloudoll]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-06 07:26:02] WARNING root fetch - processPackages [ifcopenshell]: fallback to get urls: [0.7.0.230217]
+[2024-04-06 07:26:02] WARNING root fetch - processPackages [ifcopenshell]: None
+[2024-04-06 07:26:02] WARNING root fetch - processPackages [ifcopenshell]: None
+[2024-04-06 07:26:02] INFO root fetch - processPackages [primula]: Downloading https://files.pythonhosted.org/packages/a4/f5/79d0e0ce5d5cb48d6c1e4c0567b8572641783b5db1f87c3012f2e43b704f/primula-0.2.tar.gz
+[2024-04-06 07:26:02] WARNING root fetch - processPackages [ifcopenshell]: unable to get url for both version [0.7.0.230217]
+[2024-04-06 07:26:02] INFO root fetch - processPackages [cloudoll]: Downloading https://files.pythonhosted.org/packages/bf/e6/ce8d4cce32f7ef4c4563e7e4eb5002a2e8b435d8bcaa9cabae17ab7e66d0/cloudoll-2.2.8.tar.gz
+[2024-04-06 07:26:02] WARNING root fetch - processPackages [ifcopenshell]: None
+[2024-04-06 07:26:02] INFO root fetch - main [MainThread]: End processing [ifcopenshell] error
+[2024-04-06 07:26:02] WARNING root fetch - processPackages [primula]: Timeout reached during download
+[2024-04-06 07:26:02] WARNING root fetch - processPackages [cloudoll]: Timeout reached during download
+[2024-04-06 07:26:02] INFO root fetch - processPackages [primula]: Downloading https://files.pythonhosted.org/packages/ae/e4/b804d0ec5539a3ee08c7236f3bd48db4f9b152b45bc8ca481a66d285d437/primula-0.3.tar.gz
+[2024-04-06 07:26:03] WARNING root fetch - processPackages [primula]: Timeout reached during download
+[2024-04-06 07:26:03] INFO root fetch - processPackages [primula]: executing diffoscope
+[2024-04-06 07:26:03] INFO root fetch - processPackages [primula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/primula-0.2.tar.gz tmp/primula-0.3.tar.gz --markdown 20240406/p/primula/0.2-0.3/diff.md --exclude *.pyd
+[2024-04-06 07:26:03] INFO root fetch - processPackages [cloudoll]: Downloading https://files.pythonhosted.org/packages/dd/a1/030552f4a6f314f5a262aeec0fae5b22c17e5d56b7486ecbdf0b0361389c/cloudoll-2.2.9.tar.gz
+[2024-04-06 07:26:03] WARNING root fetch - processPackages [cloudoll]: Timeout reached during download
+[2024-04-06 07:26:03] INFO root fetch - processPackages [cloudoll]: executing diffoscope
+[2024-04-06 07:26:03] INFO root fetch - processPackages [cloudoll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudoll-2.2.8.tar.gz tmp/cloudoll-2.2.9.tar.gz --markdown 20240406/c/cloudoll/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2024-04-06 07:26:03] INFO root fetch - processPackages [primula]: Remove: archive file [/home/abi/fetcher/tmp/primula-0.2.tar.gz]
+[2024-04-06 07:26:03] INFO root fetch - processPackages [primula]: Remove: archive file [/home/abi/fetcher/tmp/primula-0.3.tar.gz]
+[2024-04-06 07:26:03] INFO root fetch - main [MainThread]: End processing [primula]: success
+[2024-04-06 07:26:03] INFO root fetch - processPackages [cloudoll]: Remove: archive file [/home/abi/fetcher/tmp/cloudoll-2.2.8.tar.gz]
+[2024-04-06 07:26:03] INFO root fetch - processPackages [cloudoll]: Remove: archive file [/home/abi/fetcher/tmp/cloudoll-2.2.9.tar.gz]
+[2024-04-06 07:26:03] INFO root fetch - main [MainThread]: End processing [cloudoll]: success
+[2024-04-06 07:26:03] INFO root fetch - main [MainThread]: Store serial: [22645855]
