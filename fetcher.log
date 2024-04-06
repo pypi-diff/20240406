@@ -8144,3 +8144,17 @@
 [2024-04-06 04:39:22] INFO root fetch - processPackages [odoo12-addon-account-asset-management]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_asset_management-12.0.3.2.0.99.dev8-py3-none-any.whl.zip]
 [2024-04-06 04:39:22] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-asset-management]: success
 [2024-04-06 04:39:22] INFO root fetch - main [MainThread]: Store serial: [22645016]
+[2024-04-06 04:41:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645016]
+[2024-04-06 04:41:30] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 04:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invertedai
+[2024-04-06 04:41:30] INFO root fetch - processPackages [invertedai]: New version: [0.0.9rc0] Old Version: [0.0.8.post1]
+[2024-04-06 04:41:31] INFO root fetch - processPackages [invertedai]: Downloading https://files.pythonhosted.org/packages/c0/25/85f5270ffe50614a03f568350abd2bd8faeb995b751572e4fd703a04117e/invertedai-0.0.8.post1.tar.gz
+[2024-04-06 04:41:31] WARNING root fetch - processPackages [invertedai]: Timeout reached during download
+[2024-04-06 04:41:31] INFO root fetch - processPackages [invertedai]: Downloading https://files.pythonhosted.org/packages/71/b2/b8c23b1d1cdc657c8c55161720aba463cff832f8be5e8a66d54940686ee9/invertedai-0.0.9rc0.tar.gz
+[2024-04-06 04:41:31] WARNING root fetch - processPackages [invertedai]: Timeout reached during download
+[2024-04-06 04:41:31] INFO root fetch - processPackages [invertedai]: executing diffoscope
+[2024-04-06 04:41:31] INFO root fetch - processPackages [invertedai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/invertedai-0.0.8.post1.tar.gz tmp/invertedai-0.0.9rc0.tar.gz --markdown 20240406/i/invertedai/0.0.8.post1-0.0.9rc0/diff.md --exclude *.pyd
+[2024-04-06 04:41:32] INFO root fetch - processPackages [invertedai]: Remove: archive file [/home/abi/fetcher/tmp/invertedai-0.0.8.post1.tar.gz]
+[2024-04-06 04:41:32] INFO root fetch - processPackages [invertedai]: Remove: archive file [/home/abi/fetcher/tmp/invertedai-0.0.9rc0.tar.gz]
+[2024-04-06 04:41:32] INFO root fetch - main [MainThread]: End processing [invertedai]: success
+[2024-04-06 04:41:32] INFO root fetch - main [MainThread]: Store serial: [22645019]
