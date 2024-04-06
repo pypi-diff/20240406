@@ -2367,3 +2367,28 @@
 [2024-04-06 02:28:46] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
 [2024-04-06 02:28:46] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
 [2024-04-06 02:28:46] INFO root fetch - main [MainThread]: Store serial: [22643381]
+[2024-04-06 02:30:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643381]
+[2024-04-06 02:30:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 02:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aeppl-nightly
+[2024-04-06 02:30:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NMODL-nightly
+[2024-04-06 02:30:55] INFO root fetch - processPackages [NMODL-nightly]: New version: [0.6.98] Old Version: [0.6.93]
+[2024-04-06 02:30:55] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240406] Old Version: [0.1.5.dev20240405]
+[2024-04-06 02:30:55] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/43/af/c0852a5f62b77c970bf0c0a2e613f7b8545b54cf3041901156e395e3dc24/aeppl-nightly-0.1.5.dev20240405.tar.gz
+[2024-04-06 02:30:55] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/94/bf/65d51cf0f3bd818482bc6d015444c6fa5effd03ea78ae4a494c1f1a2d189/NMODL_nightly-0.6.93-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-06 02:30:56] WARNING root fetch - processPackages [aeppl-nightly]: Timeout reached during download
+[2024-04-06 02:30:56] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/47/cb/c9604b84fcc8b760b1afacbad7141364d1a4beef8d0758388dbeb51d9dbd/aeppl-nightly-0.1.5.dev20240406.tar.gz
+[2024-04-06 02:30:56] WARNING root fetch - processPackages [aeppl-nightly]: Timeout reached during download
+[2024-04-06 02:30:56] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-04-06 02:30:56] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.5.dev20240405.tar.gz tmp/aeppl-nightly-0.1.5.dev20240406.tar.gz --markdown 20240406/a/aeppl-nightly/0.1.5.dev20240405-0.1.5.dev20240406/diff.md --exclude *.pyd
+[2024-04-06 02:30:56] WARNING root fetch - processPackages [NMODL-nightly]: Timeout reached during download
+[2024-04-06 02:30:56] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/e7/74/0082eac701e2e33195753774345536580724cd74e073c135ec8f5e9fd1a9/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-04-06 02:30:56] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl-nightly-0.1.5.dev20240405.tar.gz]
+[2024-04-06 02:30:56] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl-nightly-0.1.5.dev20240406.tar.gz]
+[2024-04-06 02:30:56] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-04-06 02:30:57] WARNING root fetch - processPackages [NMODL-nightly]: Timeout reached during download
+[2024-04-06 02:30:57] INFO root fetch - processPackages [NMODL-nightly]: executing diffoscope
+[2024-04-06 02:30:57] INFO root fetch - processPackages [NMODL-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NMODL_nightly-0.6.93-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240406/N/NMODL-nightly/0.6.93-0.6.98/diff.md --exclude *.pyd
+[2024-04-06 02:32:47] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/NMODL_nightly-0.6.93-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-06 02:32:47] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-04-06 02:32:47] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
+[2024-04-06 02:32:47] INFO root fetch - main [MainThread]: Store serial: [22643389]
