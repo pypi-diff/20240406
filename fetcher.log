@@ -23161,3 +23161,61 @@ EOFError: EOF read where object expected
 [2024-04-06 21:36:48] INFO root fetch - processPackages [agt-server]: Remove: archive file [/home/abi/fetcher/tmp/agt_server-1.2.6.tar.gz]
 [2024-04-06 21:36:48] INFO root fetch - main [MainThread]: End processing [agt-server]: success
 [2024-04-06 21:36:48] INFO root fetch - main [MainThread]: Store serial: [22650520]
+[2024-04-06 21:38:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650520]
+[2024-04-06 21:38:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 21:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: download-tiktok-no-watermark
+[2024-04-06 21:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PygameToolsBox
+[2024-04-06 21:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: deepmd-kit
+[2024-04-06 21:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deepmd-kit-cu11
+[2024-04-06 21:38:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cfnresponse
+[2024-04-06 21:38:56] INFO root fetch - processPackages [cfnresponse]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-06 21:38:56] INFO root fetch - processPackages [PygameToolsBox]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-04-06 21:38:56] INFO root fetch - processPackages [download-tiktok-no-watermark]: New version: [0.2.3] Old Version: [0.2.0]
+[2024-04-06 21:38:57] INFO root fetch - processPackages [deepmd-kit-cu11]: New version: [2.2.9] Old Version: [2.2.8]
+[2024-04-06 21:38:57] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/c7/2a/838e24e2fc588323a9e744b5360897e7c12bad779ac3eb65cfb36089b205/PygameToolsBox-1.0.5.tar.gz
+[2024-04-06 21:38:57] INFO root fetch - processPackages [deepmd-kit]: New version: [3.0.0a0] Old Version: [2.2.9]
+[2024-04-06 21:38:57] INFO root fetch - processPackages [cfnresponse]: Downloading https://files.pythonhosted.org/packages/bf/ec/422f10b635d100e3f99afdb89b58c3847e9bef099afc425319c284b5a9a4/cfnresponse-1.1.2.tar.gz
+[2024-04-06 21:38:57] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/2e/8c/2fb2ef077daad02abf2fefb401c64a305e54cb076d53476b8fe1d4ee603c/download_tiktok_no_watermark-0.2.0.tar.gz
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [cfnresponse]: Timeout reached during download
+[2024-04-06 21:38:57] INFO root fetch - processPackages [deepmd-kit]: Downloading https://files.pythonhosted.org/packages/65/53/03e20820195a22f638d9cf70007ebe3385c7baa7ec3c2756705254450223/deepmd_kit-2.2.9.tar.gz
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:38:57] INFO root fetch - processPackages [cfnresponse]: Downloading https://files.pythonhosted.org/packages/18/7f/00b2c664d9d042e02ebca40bc2d7403085967cd688eb38e82de8f8300edb/cfnresponse-1.1.3.tar.gz
+[2024-04-06 21:38:57] INFO root fetch - processPackages [deepmd-kit-cu11]: Downloading https://files.pythonhosted.org/packages/94/64/629eef34200dc7b738c4641c2e6ae865dc80f881b89c1bcecac163b5a92e/deepmd_kit_cu11-2.2.8-py37-none-manylinux_2_28_x86_64.whl
+[2024-04-06 21:38:57] INFO root fetch - processPackages [PygameToolsBox]: Downloading https://files.pythonhosted.org/packages/cb/39/f32aac4590fa2dc46ec18a49d2800171c7322a65f3b22523dde79d21bf2f/PygameToolsBox-1.0.6.tar.gz
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [cfnresponse]: Timeout reached during download
+[2024-04-06 21:38:57] INFO root fetch - processPackages [cfnresponse]: executing diffoscope
+[2024-04-06 21:38:57] INFO root fetch - processPackages [cfnresponse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfnresponse-1.1.2.tar.gz tmp/cfnresponse-1.1.3.tar.gz --markdown 20240406/c/cfnresponse/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-06 21:38:57] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/70/fd/e8c0d53b6fb88798fb28453221cb96a9d7b881b69a43deac62c3d88099e8/download_tiktok_no_watermark-0.2.3.tar.gz
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [deepmd-kit]: Timeout reached during download
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [PygameToolsBox]: Timeout reached during download
+[2024-04-06 21:38:57] INFO root fetch - processPackages [PygameToolsBox]: executing diffoscope
+[2024-04-06 21:38:57] INFO root fetch - processPackages [PygameToolsBox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PygameToolsBox-1.0.5.tar.gz tmp/PygameToolsBox-1.0.6.tar.gz --markdown 20240406/P/PygameToolsBox/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:38:57] INFO root fetch - processPackages [download-tiktok-no-watermark]: executing diffoscope
+[2024-04-06 21:38:57] INFO root fetch - processPackages [download-tiktok-no-watermark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/download_tiktok_no_watermark-0.2.0.tar.gz tmp/download_tiktok_no_watermark-0.2.3.tar.gz --markdown 20240406/d/download-tiktok-no-watermark/0.2.0-0.2.3/diff.md --exclude *.pyd
+[2024-04-06 21:38:57] INFO root fetch - processPackages [deepmd-kit]: Downloading https://files.pythonhosted.org/packages/2f/de/69a2d9cde0e8aaa26fa84cfcc92bc0cdd9eadac4b6f12bba37bc8c4b18d1/deepmd_kit-3.0.0a0.tar.gz
+[2024-04-06 21:38:57] WARNING root fetch - processPackages [deepmd-kit]: Timeout reached during download
+[2024-04-06 21:38:57] INFO root fetch - processPackages [deepmd-kit]: executing diffoscope
+[2024-04-06 21:38:57] INFO root fetch - processPackages [deepmd-kit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepmd_kit-2.2.9.tar.gz tmp/deepmd_kit-3.0.0a0.tar.gz --markdown 20240406/d/deepmd-kit/2.2.9-3.0.0a0/diff.md --exclude *.pyd
+[2024-04-06 21:38:58] INFO root fetch - processPackages [cfnresponse]: Remove: archive file [/home/abi/fetcher/tmp/cfnresponse-1.1.2.tar.gz]
+[2024-04-06 21:38:58] INFO root fetch - processPackages [cfnresponse]: Remove: archive file [/home/abi/fetcher/tmp/cfnresponse-1.1.3.tar.gz]
+[2024-04-06 21:38:58] INFO root fetch - main [MainThread]: End processing [cfnresponse]: success
+[2024-04-06 21:38:58] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.0.tar.gz]
+[2024-04-06 21:38:58] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.3.tar.gz]
+[2024-04-06 21:38:58] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark]: success
+[2024-04-06 21:38:58] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.5.tar.gz]
+[2024-04-06 21:38:58] INFO root fetch - processPackages [PygameToolsBox]: Remove: archive file [/home/abi/fetcher/tmp/PygameToolsBox-1.0.6.tar.gz]
+[2024-04-06 21:38:58] INFO root fetch - main [MainThread]: End processing [PygameToolsBox]: success
+[2024-04-06 21:38:58] WARNING root fetch - processPackages [deepmd-kit-cu11]: Timeout reached during download
+[2024-04-06 21:38:58] INFO root fetch - processPackages [deepmd-kit-cu11]: Downloading https://files.pythonhosted.org/packages/e1/c5/a787b2e18e38bcb3b82993e69995471198d0c12408d7bd8fa23781b2af0b/deepmd_kit_cu11-2.2.9-py37-none-manylinux_2_28_x86_64.whl
+[2024-04-06 21:39:00] WARNING root fetch - processPackages [deepmd-kit-cu11]: Timeout reached during download
+[2024-04-06 21:39:00] INFO root fetch - processPackages [deepmd-kit-cu11]: executing diffoscope
+[2024-04-06 21:39:00] INFO root fetch - processPackages [deepmd-kit-cu11]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepmd_kit_cu11-2.2.8-py37-none-manylinux_2_28_x86_64.whl.zip tmp/deepmd_kit_cu11-2.2.9-py37-none-manylinux_2_28_x86_64.whl.zip --markdown 20240406/d/deepmd-kit-cu11/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2024-04-06 21:39:01] INFO root fetch - processPackages [deepmd-kit]: Remove: archive file [/home/abi/fetcher/tmp/deepmd_kit-2.2.9.tar.gz]
+[2024-04-06 21:39:01] INFO root fetch - processPackages [deepmd-kit]: Remove: archive file [/home/abi/fetcher/tmp/deepmd_kit-3.0.0a0.tar.gz]
+[2024-04-06 21:39:01] INFO root fetch - main [MainThread]: End processing [deepmd-kit]: success
+[2024-04-06 21:39:15] INFO root fetch - processPackages [deepmd-kit-cu11]: Remove: archive file [/home/abi/fetcher/tmp/deepmd_kit_cu11-2.2.8-py37-none-manylinux_2_28_x86_64.whl.zip]
+[2024-04-06 21:39:15] INFO root fetch - processPackages [deepmd-kit-cu11]: Remove: archive file [/home/abi/fetcher/tmp/deepmd_kit_cu11-2.2.9-py37-none-manylinux_2_28_x86_64.whl.zip]
+[2024-04-06 21:39:15] INFO root fetch - main [MainThread]: End processing [deepmd-kit-cu11]: success
+[2024-04-06 21:39:15] INFO root fetch - main [MainThread]: Store serial: [22650543]
