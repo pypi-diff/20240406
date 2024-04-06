@@ -18162,3 +18162,31 @@ EOFError: EOF read where object expected
 [2024-04-06 16:56:24] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.2.9.tar.gz]
 [2024-04-06 16:56:24] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
 [2024-04-06 16:56:24] INFO root fetch - main [MainThread]: Store serial: [22648795]
+[2024-04-06 16:58:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648795]
+[2024-04-06 16:58:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 16:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-stock-barcodes-elaboration
+[2024-04-06 16:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyinfra-forked-by-stone-w4tch3r
+[2024-04-06 16:58:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asto
+[2024-04-06 16:58:33] WARNING root fetch - processPackages [odoo-addon-stock-barcodes-elaboration]: Skipping, unable to determine old version
+[2024-04-06 16:58:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-barcodes-elaboration] error
+[2024-04-06 16:58:33] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-04-06 16:58:33] INFO root fetch - processPackages [asto]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 16:58:33] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Downloading https://files.pythonhosted.org/packages/4b/30/32f09b56c37010801f429b0f077a3c0478c9d81750bf7963e5b99d8445e1/pyinfra_forked_by_stone-w4tch3r-0.3.1.tar.gz
+[2024-04-06 16:58:33] INFO root fetch - processPackages [asto]: Downloading https://files.pythonhosted.org/packages/35/b8/779c040b0779eb58006b5afb0a721d5b2d7556a01b04ae41c7e525f4338f/asto-0.0.8.tar.gz
+[2024-04-06 16:58:33] WARNING root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Timeout reached during download
+[2024-04-06 16:58:33] WARNING root fetch - processPackages [asto]: Timeout reached during download
+[2024-04-06 16:58:33] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Downloading https://files.pythonhosted.org/packages/9c/37/eb69d0ea1a700fc7a31ea094882716901bff79cbee80dad54c1508f65ea1/pyinfra_forked_by_stone-w4tch3r-0.3.2.tar.gz
+[2024-04-06 16:58:33] INFO root fetch - processPackages [asto]: Downloading https://files.pythonhosted.org/packages/c5/d5/771091db2f45ff52f0bb30eda5ef677ebee6feaf176b4487819da153a213/asto-0.0.9.tar.gz
+[2024-04-06 16:58:33] WARNING root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Timeout reached during download
+[2024-04-06 16:58:33] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: executing diffoscope
+[2024-04-06 16:58:33] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinfra_forked_by_stone-w4tch3r-0.3.1.tar.gz tmp/pyinfra_forked_by_stone-w4tch3r-0.3.2.tar.gz --markdown 20240406/p/pyinfra-forked-by-stone-w4tch3r/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2024-04-06 16:58:34] WARNING root fetch - processPackages [asto]: Timeout reached during download
+[2024-04-06 16:58:34] INFO root fetch - processPackages [asto]: executing diffoscope
+[2024-04-06 16:58:34] INFO root fetch - processPackages [asto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asto-0.0.8.tar.gz tmp/asto-0.0.9.tar.gz --markdown 20240406/a/asto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 16:58:34] INFO root fetch - processPackages [asto]: Remove: archive file [/home/abi/fetcher/tmp/asto-0.0.8.tar.gz]
+[2024-04-06 16:58:34] INFO root fetch - processPackages [asto]: Remove: archive file [/home/abi/fetcher/tmp/asto-0.0.9.tar.gz]
+[2024-04-06 16:58:34] INFO root fetch - main [MainThread]: End processing [asto]: success
+[2024-04-06 16:58:34] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra_forked_by_stone-w4tch3r-0.3.1.tar.gz]
+[2024-04-06 16:58:34] INFO root fetch - processPackages [pyinfra-forked-by-stone-w4tch3r]: Remove: archive file [/home/abi/fetcher/tmp/pyinfra_forked_by_stone-w4tch3r-0.3.2.tar.gz]
+[2024-04-06 16:58:34] INFO root fetch - main [MainThread]: End processing [pyinfra-forked-by-stone-w4tch3r]: success
+[2024-04-06 16:58:34] INFO root fetch - main [MainThread]: Store serial: [22648805]
