@@ -24307,3 +24307,17 @@ EOFError: EOF read where object expected
 [2024-04-06 22:47:55] INFO root fetch - processPackages [psqlpy]: Remove: archive file [/home/abi/fetcher/tmp/psqlpy-0.4.0-cp39-none-win_amd64.whl.zip]
 [2024-04-06 22:47:55] INFO root fetch - main [MainThread]: End processing [psqlpy]: success
 [2024-04-06 22:47:55] INFO root fetch - main [MainThread]: Store serial: [22650995]
+[2024-04-06 22:50:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650995]
+[2024-04-06 22:50:05] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 22:50:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlipy
+[2024-04-06 22:50:05] INFO root fetch - processPackages [mlipy]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 22:50:05] INFO root fetch - processPackages [mlipy]: Downloading https://files.pythonhosted.org/packages/ed/fa/dddfc94dc060787f3f456677f01a46aa640bd2bb6dee0cf9533ed7df0a82/mlipy-0.1.8.tar.gz
+[2024-04-06 22:50:05] WARNING root fetch - processPackages [mlipy]: Timeout reached during download
+[2024-04-06 22:50:05] INFO root fetch - processPackages [mlipy]: Downloading https://files.pythonhosted.org/packages/50/37/99813a7b2b4baa323b9788624a5fa2104d355ae37d9ff025232583581a83/mlipy-0.1.9.tar.gz
+[2024-04-06 22:50:06] WARNING root fetch - processPackages [mlipy]: Timeout reached during download
+[2024-04-06 22:50:06] INFO root fetch - processPackages [mlipy]: executing diffoscope
+[2024-04-06 22:50:06] INFO root fetch - processPackages [mlipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlipy-0.1.8.tar.gz tmp/mlipy-0.1.9.tar.gz --markdown 20240406/m/mlipy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 22:50:06] INFO root fetch - processPackages [mlipy]: Remove: archive file [/home/abi/fetcher/tmp/mlipy-0.1.8.tar.gz]
+[2024-04-06 22:50:06] INFO root fetch - processPackages [mlipy]: Remove: archive file [/home/abi/fetcher/tmp/mlipy-0.1.9.tar.gz]
+[2024-04-06 22:50:06] INFO root fetch - main [MainThread]: End processing [mlipy]: success
+[2024-04-06 22:50:06] INFO root fetch - main [MainThread]: Store serial: [22651019]
