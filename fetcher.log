@@ -16721,3 +16721,28 @@ EOFError: EOF read where object expected
 [2024-04-06 15:34:07] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
 [2024-04-06 15:34:07] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
 [2024-04-06 15:34:07] INFO root fetch - main [MainThread]: Store serial: [22648245]
+[2024-04-06 15:36:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648245]
+[2024-04-06 15:36:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 15:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Nuitka
+[2024-04-06 15:36:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mdpython
+[2024-04-06 15:36:16] INFO root fetch - processPackages [mdpython]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 15:36:16] INFO root fetch - processPackages [Nuitka]: New version: [2.1.5] Old Version: [2.1.4]
+[2024-04-06 15:36:16] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/9f/4b/7434d69b0ed20016ab2ecb2f5659172cf8992d30d2c2fd5133978e5287f8/mdpython-0.0.1.tar.gz
+[2024-04-06 15:36:16] INFO root fetch - processPackages [Nuitka]: Downloading https://files.pythonhosted.org/packages/35/18/037245c819c82a513d99f6036440159db21593e504b1247f01ef200412a8/Nuitka-2.1.4.tar.gz
+[2024-04-06 15:36:16] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-06 15:36:17] INFO root fetch - processPackages [mdpython]: Downloading https://files.pythonhosted.org/packages/85/d2/2fc7a6013d10c5b8844b051c30042047873d222408344e76f2379d35212d/mdpython-0.0.2.tar.gz
+[2024-04-06 15:36:17] WARNING root fetch - processPackages [mdpython]: Timeout reached during download
+[2024-04-06 15:36:17] INFO root fetch - processPackages [mdpython]: executing diffoscope
+[2024-04-06 15:36:17] INFO root fetch - processPackages [mdpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mdpython-0.0.1.tar.gz tmp/mdpython-0.0.2.tar.gz --markdown 20240406/m/mdpython/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 15:36:17] WARNING root fetch - processPackages [Nuitka]: Timeout reached during download
+[2024-04-06 15:36:17] INFO root fetch - processPackages [Nuitka]: Downloading https://files.pythonhosted.org/packages/a8/2c/5799947a4190249d7c9bc615785a97d24fd7de3687e72f3aec354f3b607c/Nuitka-2.1.5.tar.gz
+[2024-04-06 15:36:17] WARNING root fetch - processPackages [Nuitka]: Timeout reached during download
+[2024-04-06 15:36:17] INFO root fetch - processPackages [Nuitka]: executing diffoscope
+[2024-04-06 15:36:17] INFO root fetch - processPackages [Nuitka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Nuitka-2.1.4.tar.gz tmp/Nuitka-2.1.5.tar.gz --markdown 20240406/N/Nuitka/2.1.4-2.1.5/diff.md --exclude *.pyd
+[2024-04-06 15:36:17] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.1.tar.gz]
+[2024-04-06 15:36:17] INFO root fetch - processPackages [mdpython]: Remove: archive file [/home/abi/fetcher/tmp/mdpython-0.0.2.tar.gz]
+[2024-04-06 15:36:17] INFO root fetch - main [MainThread]: End processing [mdpython]: success
+[2024-04-06 15:36:25] INFO root fetch - processPackages [Nuitka]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-2.1.4.tar.gz]
+[2024-04-06 15:36:25] INFO root fetch - processPackages [Nuitka]: Remove: archive file [/home/abi/fetcher/tmp/Nuitka-2.1.5.tar.gz]
+[2024-04-06 15:36:25] INFO root fetch - main [MainThread]: End processing [Nuitka]: success
+[2024-04-06 15:36:25] INFO root fetch - main [MainThread]: Store serial: [22648250]
