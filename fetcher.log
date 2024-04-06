@@ -7621,3 +7621,17 @@
 [2024-04-06 04:04:08] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.0.7.tar.gz]
 [2024-04-06 04:04:08] INFO root fetch - main [MainThread]: End processing [mocker-db]: success
 [2024-04-06 04:04:08] INFO root fetch - main [MainThread]: Store serial: [22644848]
+[2024-04-06 04:06:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644848]
+[2024-04-06 04:06:17] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 04:06:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: youtube-dl-nightly
+[2024-04-06 04:06:17] INFO root fetch - processPackages [youtube-dl-nightly]: New version: [2024.4.6] Old Version: [2024.3.9]
+[2024-04-06 04:06:18] INFO root fetch - processPackages [youtube-dl-nightly]: Downloading https://files.pythonhosted.org/packages/d9/fa/465553bea0aff60a42cf5b56141c8dc241236a2e5ec9710aa764813d1857/youtube_dl_nightly-2024.3.9-py2.py3-none-any.whl
+[2024-04-06 04:06:18] WARNING root fetch - processPackages [youtube-dl-nightly]: Timeout reached during download
+[2024-04-06 04:06:19] INFO root fetch - processPackages [youtube-dl-nightly]: Downloading https://files.pythonhosted.org/packages/0f/61/f882de02f0d5cd7bdce474159568eac390cc433e8243cca68570e48a9f7c/youtube_dl_nightly-2024.4.6-py2.py3-none-any.whl
+[2024-04-06 04:06:19] WARNING root fetch - processPackages [youtube-dl-nightly]: Timeout reached during download
+[2024-04-06 04:06:19] INFO root fetch - processPackages [youtube-dl-nightly]: executing diffoscope
+[2024-04-06 04:06:19] INFO root fetch - processPackages [youtube-dl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/youtube_dl_nightly-2024.3.9-py2.py3-none-any.whl.zip tmp/youtube_dl_nightly-2024.4.6-py2.py3-none-any.whl.zip --markdown 20240406/y/youtube-dl-nightly/2024.3.9-2024.4.6/diff.md --exclude *.pyd
+[2024-04-06 04:06:22] INFO root fetch - processPackages [youtube-dl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/youtube_dl_nightly-2024.3.9-py2.py3-none-any.whl.zip]
+[2024-04-06 04:06:22] INFO root fetch - processPackages [youtube-dl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/youtube_dl_nightly-2024.4.6-py2.py3-none-any.whl.zip]
+[2024-04-06 04:06:22] INFO root fetch - main [MainThread]: End processing [youtube-dl-nightly]: success
+[2024-04-06 04:06:22] INFO root fetch - main [MainThread]: Store serial: [22644850]
