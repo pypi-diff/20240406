@@ -9334,3 +9334,54 @@
 [2024-04-06 06:24:09] INFO root fetch - processPackages [odoo-addon-l10n-it-fatturapa]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_l10n_it_fatturapa-16.0.1.0.6.3-py3-none-any.whl.zip]
 [2024-04-06 06:24:09] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-fatturapa]: success
 [2024-04-06 06:24:09] INFO root fetch - main [MainThread]: Store serial: [22645504]
+[2024-04-06 06:26:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645504]
+[2024-04-06 06:26:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 06:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: statesxt
+[2024-04-06 06:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dale-core-platform
+[2024-04-06 06:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: e3lm
+[2024-04-06 06:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dale-core-platform
+[2024-04-06 06:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dale-core-platforn
+[2024-04-06 06:26:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: icemedia
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [icemedia]: Skipping, unable to determine old version
+[2024-04-06 06:26:18] INFO root fetch - main [MainThread]: End processing [icemedia] error
+[2024-04-06 06:26:18] INFO root fetch - processPackages [statesxt]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: New version: [0.2] Old Version: [0.1]
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: New version: [0.2] Old Version: [0.1]
+[2024-04-06 06:26:18] INFO root fetch - processPackages [statesxt]: Downloading https://files.pythonhosted.org/packages/47/b1/7bab3b3848e898c3c7304e72cbbe80d304fdd571265a36aa129ec8b75421/statesxt-0.5.7.tar.gz
+[2024-04-06 06:26:18] INFO root fetch - processPackages [e3lm]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [dale-core-platforn]: Skipping, unable to determine old version
+[2024-04-06 06:26:18] INFO root fetch - main [MainThread]: End processing [dale-core-platforn] error
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: Downloading https://files.pythonhosted.org/packages/ad/67/29f49c932d9658d8e83683e1f15a11c41572a9682bc4ef96aa719263fa84/dale-core-platform-0.1.tar.gz
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [statesxt]: Timeout reached during download
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: Downloading https://files.pythonhosted.org/packages/ad/67/29f49c932d9658d8e83683e1f15a11c41572a9682bc4ef96aa719263fa84/dale-core-platform-0.1.tar.gz
+[2024-04-06 06:26:18] INFO root fetch - processPackages [e3lm]: Downloading https://files.pythonhosted.org/packages/be/64/c866fb95532131631a2cd80a6af29b3517fab0fb86da43f5bc10aa070449/e3lm-0.1.8.tar.gz
+[2024-04-06 06:26:18] INFO root fetch - processPackages [statesxt]: Downloading https://files.pythonhosted.org/packages/5b/12/6253abe96a4aac8cfd7a5db9129d8b308d27cf2765d91c6c4dea1966aaca/statesxt-0.5.8.tar.gz
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [dale-core-platform]: Timeout reached during download
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [dale-core-platform]: Timeout reached during download
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [e3lm]: Timeout reached during download
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [statesxt]: Timeout reached during download
+[2024-04-06 06:26:18] INFO root fetch - processPackages [statesxt]: executing diffoscope
+[2024-04-06 06:26:18] INFO root fetch - processPackages [statesxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statesxt-0.5.7.tar.gz tmp/statesxt-0.5.8.tar.gz --markdown 20240406/s/statesxt/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: Downloading https://files.pythonhosted.org/packages/a1/62/a776cd4465bdea927c26bffcb61399961cbd06f6d158e89c1a0b1632deb3/dale-core-platform-0.2.tar.gz
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: Downloading https://files.pythonhosted.org/packages/a1/62/a776cd4465bdea927c26bffcb61399961cbd06f6d158e89c1a0b1632deb3/dale-core-platform-0.2.tar.gz
+[2024-04-06 06:26:18] INFO root fetch - processPackages [e3lm]: Downloading https://files.pythonhosted.org/packages/41/9a/1913f37686832bca17caa2c371b3ce963ad17739530af91d8cee21496fb1/e3lm-0.1.9.tar.gz
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [dale-core-platform]: Timeout reached during download
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: executing diffoscope
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dale-core-platform-0.1.tar.gz tmp/dale-core-platform-0.2.tar.gz --markdown 20240406/d/dale-core-platform/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [dale-core-platform]: Timeout reached during download
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: executing diffoscope
+[2024-04-06 06:26:18] INFO root fetch - processPackages [dale-core-platform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dale-core-platform-0.1.tar.gz tmp/dale-core-platform-0.2.tar.gz --markdown 20240406/d/dale-core-platform/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-06 06:26:18] WARNING root fetch - processPackages [e3lm]: Timeout reached during download
+[2024-04-06 06:26:18] INFO root fetch - processPackages [e3lm]: executing diffoscope
+[2024-04-06 06:26:18] INFO root fetch - processPackages [e3lm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e3lm-0.1.8.tar.gz tmp/e3lm-0.1.9.tar.gz --markdown 20240406/e/e3lm/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 06:26:19] INFO root fetch - processPackages [statesxt]: Remove: archive file [/home/abi/fetcher/tmp/statesxt-0.5.7.tar.gz]
+[2024-04-06 06:26:19] INFO root fetch - processPackages [statesxt]: Remove: archive file [/home/abi/fetcher/tmp/statesxt-0.5.8.tar.gz]
+[2024-04-06 06:26:19] INFO root fetch - main [MainThread]: End processing [statesxt]: success
+[2024-04-06 06:26:19] INFO root fetch - processPackages [dale-core-platform]: Remove: archive file [/home/abi/fetcher/tmp/dale-core-platform-0.1.tar.gz]
+[2024-04-06 06:26:19] INFO root fetch - processPackages [dale-core-platform]: Remove: archive file [/home/abi/fetcher/tmp/dale-core-platform-0.2.tar.gz]
+[2024-04-06 06:26:19] INFO root fetch - main [MainThread]: End processing [dale-core-platform]: success
+[2024-04-06 06:26:19] INFO root fetch - main [MainThread]: End processing [dale-core-platform]: success
+[2024-04-06 06:26:19] INFO root fetch - processPackages [e3lm]: Remove: archive file [/home/abi/fetcher/tmp/e3lm-0.1.8.tar.gz]
+[2024-04-06 06:26:19] INFO root fetch - processPackages [e3lm]: Remove: archive file [/home/abi/fetcher/tmp/e3lm-0.1.9.tar.gz]
+[2024-04-06 06:26:19] INFO root fetch - main [MainThread]: End processing [e3lm]: success
+[2024-04-06 06:26:19] INFO root fetch - main [MainThread]: Store serial: [22645528]
