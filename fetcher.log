@@ -22950,3 +22950,64 @@ EOFError: EOF read where object expected
 [2024-04-06 21:23:44] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.4.0.tar.gz]
 [2024-04-06 21:23:44] INFO root fetch - main [MainThread]: End processing [ffconverter]: success
 [2024-04-06 21:23:44] INFO root fetch - main [MainThread]: Store serial: [22650441]
+[2024-04-06 21:25:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650441]
+[2024-04-06 21:25:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapy-playwright-full
+[2024-04-06 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peakrdl-halcpp
+[2024-04-06 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soundtools
+[2024-04-06 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alchemlyb
+[2024-04-06 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymasscode
+[2024-04-06 21:25:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-module-gcp-bigquery
+[2024-04-06 21:25:53] INFO root fetch - processPackages [soundtools]: New version: [0.1.3.1] Old Version: [0.1.3]
+[2024-04-06 21:25:53] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/d9/b1/5889d833b5073587c61a7edd3a9105491c73b00e3cb7dab45ad6e649e973/soundtools-0.1.3.tar.gz
+[2024-04-06 21:25:53] INFO root fetch - processPackages [alchemlyb]: New version: [2.2.0] Old Version: [2.1.0]
+[2024-04-06 21:25:53] INFO root fetch - processPackages [peakrdl-halcpp]: New version: [0.4.0] Old Version: [0.3.5]
+[2024-04-06 21:25:53] INFO root fetch - processPackages [scrapy-playwright-full]: New version: [0.0.3402] Old Version: [0.0.3401]
+[2024-04-06 21:25:53] INFO root fetch - processPackages [xia-module-gcp-bigquery]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 21:25:53] WARNING root fetch - processPackages [pymasscode]: Skipping, unable to determine old version
+[2024-04-06 21:25:53] INFO root fetch - main [MainThread]: End processing [pymasscode] error
+[2024-04-06 21:25:53] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/a6/c6/86415d972be1e160a8d487ba0a6ff5e1d2a0063c0819c713fbf2939ecc59/xia-module-gcp-bigquery-0.0.8.tar.gz
+[2024-04-06 21:25:53] WARNING root fetch - processPackages [soundtools]: Timeout reached during download
+[2024-04-06 21:25:53] INFO root fetch - processPackages [peakrdl-halcpp]: Downloading https://files.pythonhosted.org/packages/85/8d/982998d3324dff3def75084a4d05026a1469d52fac11b06b623672a791f5/peakrdl-halcpp-0.3.5.tar.gz
+[2024-04-06 21:25:53] INFO root fetch - processPackages [scrapy-playwright-full]: Downloading https://files.pythonhosted.org/packages/96/47/5c079f18af26677e88c4455196304c27b43a81c7a085af455068faa93144/scrapy-playwright-full-0.0.3401.tar.gz
+[2024-04-06 21:25:53] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/d6/ee/def1ead03f03a6dff648dd32d63179ec1c23279409b0464698c3dfc9104e/soundtools-0.1.3.1.tar.gz
+[2024-04-06 21:25:53] INFO root fetch - processPackages [alchemlyb]: Downloading https://files.pythonhosted.org/packages/ca/39/14cd965637a8f4701f7bfbc5d0c83ecf5f94ed1cb47c8d9dcdb90c3453eb/alchemlyb-2.1.0.tar.gz
+[2024-04-06 21:25:53] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 21:25:53] WARNING root fetch - processPackages [peakrdl-halcpp]: Timeout reached during download
+[2024-04-06 21:25:53] WARNING root fetch - processPackages [soundtools]: Timeout reached during download
+[2024-04-06 21:25:53] INFO root fetch - processPackages [soundtools]: executing diffoscope
+[2024-04-06 21:25:53] INFO root fetch - processPackages [soundtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundtools-0.1.3.tar.gz tmp/soundtools-0.1.3.1.tar.gz --markdown 20240406/s/soundtools/0.1.3-0.1.3.1/diff.md --exclude *.pyd
+[2024-04-06 21:25:53] WARNING root fetch - processPackages [scrapy-playwright-full]: Timeout reached during download
+[2024-04-06 21:25:53] WARNING root fetch - processPackages [alchemlyb]: Timeout reached during download
+[2024-04-06 21:25:53] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/d2/f4/072f1fc37d0ff46bf51f4ee15cacf0a45ca412deceab51ab1cc8905bf28c/xia_module_gcp_bigquery-0.0.9-py3-none-any.whl
+[2024-04-06 21:25:53] INFO root fetch - processPackages [peakrdl-halcpp]: Downloading https://files.pythonhosted.org/packages/8a/b0/a68fb5d1a4c49a73a83b3c5319e3795c68c557b3ebf84adf55e75d0cc151/peakrdl-halcpp-0.4.0.tar.gz
+[2024-04-06 21:25:54] INFO root fetch - processPackages [alchemlyb]: Downloading https://files.pythonhosted.org/packages/b5/d3/29648a5300a45488b273ce85a1242559836422ac1da07ac01ed9399e4313/alchemlyb-2.2.0.tar.gz
+[2024-04-06 21:25:54] INFO root fetch - processPackages [scrapy-playwright-full]: Downloading https://files.pythonhosted.org/packages/f3/c2/38a8b95344345595e9add36822225adda6179cf8aa3b9ed3fe2eb1b74e29/scrapy-playwright-full-0.0.3402.tar.gz
+[2024-04-06 21:25:54] WARNING root fetch - processPackages [peakrdl-halcpp]: Timeout reached during download
+[2024-04-06 21:25:54] INFO root fetch - processPackages [peakrdl-halcpp]: executing diffoscope
+[2024-04-06 21:25:54] INFO root fetch - processPackages [peakrdl-halcpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peakrdl-halcpp-0.3.5.tar.gz tmp/peakrdl-halcpp-0.4.0.tar.gz --markdown 20240406/p/peakrdl-halcpp/0.3.5-0.4.0/diff.md --exclude *.pyd
+[2024-04-06 21:25:54] WARNING root fetch - processPackages [scrapy-playwright-full]: Timeout reached during download
+[2024-04-06 21:25:54] INFO root fetch - processPackages [scrapy-playwright-full]: executing diffoscope
+[2024-04-06 21:25:54] INFO root fetch - processPackages [scrapy-playwright-full]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-playwright-full-0.0.3401.tar.gz tmp/scrapy-playwright-full-0.0.3402.tar.gz --markdown 20240406/s/scrapy-playwright-full/0.0.3401-0.0.3402/diff.md --exclude *.pyd
+[2024-04-06 21:25:54] WARNING root fetch - processPackages [alchemlyb]: Timeout reached during download
+[2024-04-06 21:25:54] INFO root fetch - processPackages [alchemlyb]: executing diffoscope
+[2024-04-06 21:25:54] INFO root fetch - processPackages [alchemlyb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alchemlyb-2.1.0.tar.gz tmp/alchemlyb-2.2.0.tar.gz --markdown 20240406/a/alchemlyb/2.1.0-2.2.0/diff.md --exclude *.pyd
+[2024-04-06 21:25:54] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.1.3.tar.gz]
+[2024-04-06 21:25:54] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.1.3.1.tar.gz]
+[2024-04-06 21:25:54] INFO root fetch - main [MainThread]: End processing [soundtools]: success
+[2024-04-06 21:25:54] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 21:25:54] INFO root fetch - processPackages [xia-module-gcp-bigquery]: executing diffoscope
+[2024-04-06 21:25:54] INFO root fetch - processPackages [xia-module-gcp-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-gcp-bigquery-0.0.8.tar.gz tmp/xia_module_gcp_bigquery-0.0.9-py3-none-any.whl.zip --markdown 20240406/x/xia-module-gcp-bigquery/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 21:25:54] INFO root fetch - processPackages [peakrdl-halcpp]: Remove: archive file [/home/abi/fetcher/tmp/peakrdl-halcpp-0.3.5.tar.gz]
+[2024-04-06 21:25:54] INFO root fetch - processPackages [peakrdl-halcpp]: Remove: archive file [/home/abi/fetcher/tmp/peakrdl-halcpp-0.4.0.tar.gz]
+[2024-04-06 21:25:54] INFO root fetch - main [MainThread]: End processing [peakrdl-halcpp]: success
+[2024-04-06 21:25:54] INFO root fetch - processPackages [scrapy-playwright-full]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-playwright-full-0.0.3401.tar.gz]
+[2024-04-06 21:25:54] INFO root fetch - processPackages [scrapy-playwright-full]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-playwright-full-0.0.3402.tar.gz]
+[2024-04-06 21:25:54] INFO root fetch - main [MainThread]: End processing [scrapy-playwright-full]: success
+[2024-04-06 21:25:55] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-bigquery-0.0.8.tar.gz]
+[2024-04-06 21:25:55] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia_module_gcp_bigquery-0.0.9-py3-none-any.whl.zip]
+[2024-04-06 21:25:55] INFO root fetch - main [MainThread]: End processing [xia-module-gcp-bigquery]: success
+[2024-04-06 21:25:55] INFO root fetch - processPackages [alchemlyb]: Remove: archive file [/home/abi/fetcher/tmp/alchemlyb-2.1.0.tar.gz]
+[2024-04-06 21:25:55] INFO root fetch - processPackages [alchemlyb]: Remove: archive file [/home/abi/fetcher/tmp/alchemlyb-2.2.0.tar.gz]
+[2024-04-06 21:25:55] INFO root fetch - main [MainThread]: End processing [alchemlyb]: success
+[2024-04-06 21:25:55] INFO root fetch - main [MainThread]: Store serial: [22650460]
