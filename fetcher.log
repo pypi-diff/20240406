@@ -18477,3 +18477,17 @@ EOFError: EOF read where object expected
 [2024-04-06 17:18:43] INFO root fetch - processPackages [screwmpc-experiments]: Remove: archive file [/home/abi/fetcher/tmp/screwmpc_experiments-0.4.3.tar.gz]
 [2024-04-06 17:18:43] INFO root fetch - main [MainThread]: End processing [screwmpc-experiments]: success
 [2024-04-06 17:18:43] INFO root fetch - main [MainThread]: Store serial: [22648973]
+[2024-04-06 17:20:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648973]
+[2024-04-06 17:20:51] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 17:20:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: afeng-py-tools
+[2024-04-06 17:20:51] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 17:20:51] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-06 17:20:51] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 17:20:52] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-06 17:20:52] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 17:20:52] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-06 17:20:52] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240406/a/afeng-py-tools/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 17:20:53] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-06 17:20:53] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-06 17:20:53] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-06 17:20:53] INFO root fetch - main [MainThread]: Store serial: [22648980]
