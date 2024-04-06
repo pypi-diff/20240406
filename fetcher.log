@@ -10186,3 +10186,39 @@
 [2024-04-06 06:53:15] INFO root fetch - processPackages [backtrader-bybit]: Remove: archive file [/home/abi/fetcher/tmp/backtrader_bybit-2.0.8.tar.gz]
 [2024-04-06 06:53:15] INFO root fetch - main [MainThread]: End processing [backtrader-bybit]: success
 [2024-04-06 06:53:15] INFO root fetch - main [MainThread]: Store serial: [22645743]
+[2024-04-06 06:55:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645743]
+[2024-04-06 06:55:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 06:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: backtrader-bybit
+[2024-04-06 06:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leads
+[2024-04-06 06:55:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ladybug-grasshopper
+[2024-04-06 06:55:24] INFO root fetch - processPackages [backtrader-bybit]: New version: [2.0.8] Old Version: [2.0.7]
+[2024-04-06 06:55:24] INFO root fetch - processPackages [backtrader-bybit]: Downloading https://files.pythonhosted.org/packages/9b/44/a244d23f143c79ea5b67f3312a411828cb50d1a16b39a6226db13c9894ec/backtrader_bybit-2.0.7.tar.gz
+[2024-04-06 06:55:24] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-06 06:55:24] INFO root fetch - processPackages [ladybug-grasshopper]: New version: [1.9.4] Old Version: [1.9.3]
+[2024-04-06 06:55:24] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-04-06 06:55:24] WARNING root fetch - processPackages [backtrader-bybit]: Timeout reached during download
+[2024-04-06 06:55:24] INFO root fetch - processPackages [backtrader-bybit]: Downloading https://files.pythonhosted.org/packages/19/61/b15e35fd9e90e4b7e20080b152f205f37d126b97c9ac87aaed64f2affbe8/backtrader_bybit-2.0.8.tar.gz
+[2024-04-06 06:55:24] INFO root fetch - processPackages [ladybug-grasshopper]: Downloading https://files.pythonhosted.org/packages/ec/49/777f995c954f015074487d7ab75a2c03b29bfd7c9fba5b15f7370a04139a/ladybug-grasshopper-1.9.3.tar.gz
+[2024-04-06 06:55:24] WARNING root fetch - processPackages [leads]: Timeout reached during download
+[2024-04-06 06:55:24] WARNING root fetch - processPackages [backtrader-bybit]: Timeout reached during download
+[2024-04-06 06:55:24] INFO root fetch - processPackages [backtrader-bybit]: executing diffoscope
+[2024-04-06 06:55:24] INFO root fetch - processPackages [backtrader-bybit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backtrader_bybit-2.0.7.tar.gz tmp/backtrader_bybit-2.0.8.tar.gz --markdown 20240406/b/backtrader-bybit/2.0.7-2.0.8/diff.md --exclude *.pyd
+[2024-04-06 06:55:24] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-04-06 06:55:24] WARNING root fetch - processPackages [ladybug-grasshopper]: Timeout reached during download
+[2024-04-06 06:55:24] WARNING root fetch - processPackages [leads]: Timeout reached during download
+[2024-04-06 06:55:24] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-04-06 06:55:24] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240406/l/leads/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2024-04-06 06:55:24] INFO root fetch - processPackages [ladybug-grasshopper]: Downloading https://files.pythonhosted.org/packages/36/c7/da7e7e51114ff7f4fdf8e1f110936d73131c1f23c71385e5ab4666ad04c4/ladybug-grasshopper-1.9.4.tar.gz
+[2024-04-06 06:55:25] INFO root fetch - processPackages [backtrader-bybit]: Remove: archive file [/home/abi/fetcher/tmp/backtrader_bybit-2.0.7.tar.gz]
+[2024-04-06 06:55:25] INFO root fetch - processPackages [backtrader-bybit]: Remove: archive file [/home/abi/fetcher/tmp/backtrader_bybit-2.0.8.tar.gz]
+[2024-04-06 06:55:25] INFO root fetch - main [MainThread]: End processing [backtrader-bybit]: success
+[2024-04-06 06:55:25] WARNING root fetch - processPackages [ladybug-grasshopper]: Timeout reached during download
+[2024-04-06 06:55:25] INFO root fetch - processPackages [ladybug-grasshopper]: executing diffoscope
+[2024-04-06 06:55:25] INFO root fetch - processPackages [ladybug-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ladybug-grasshopper-1.9.3.tar.gz tmp/ladybug-grasshopper-1.9.4.tar.gz --markdown 20240406/l/ladybug-grasshopper/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2024-04-06 06:55:25] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-04-06 06:55:25] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-04-06 06:55:25] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-04-06 06:55:26] INFO root fetch - processPackages [ladybug-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-grasshopper-1.9.3.tar.gz]
+[2024-04-06 06:55:26] INFO root fetch - processPackages [ladybug-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-grasshopper-1.9.4.tar.gz]
+[2024-04-06 06:55:26] INFO root fetch - main [MainThread]: End processing [ladybug-grasshopper]: success
+[2024-04-06 06:55:26] INFO root fetch - main [MainThread]: Store serial: [22645752]
