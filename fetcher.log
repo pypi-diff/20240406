@@ -13241,3 +13241,50 @@
 [2024-04-06 11:26:38] INFO root fetch - processPackages [tbp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tbp-nightly-2.9.0a20221130.tar.gz]
 [2024-04-06 11:26:38] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2024-04-06 11:26:38] INFO root fetch - main [MainThread]: Store serial: [22647038]
+[2024-04-06 11:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647038]
+[2024-04-06 11:28:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 11:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: causadb
+[2024-04-06 11:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lezargus
+[2024-04-06 11:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: platforms
+[2024-04-06 11:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cubaflixdownload
+[2024-04-06 11:28:47] INFO root fetch - processPackages [causadb]: New version: [1.8.1] Old Version: [1.8.0]
+[2024-04-06 11:28:47] INFO root fetch - processPackages [lezargus]: New version: [0.0.4.dev42] Old Version: [0.0.4]
+[2024-04-06 11:28:47] INFO root fetch - processPackages [platforms]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-04-06 11:28:47] INFO root fetch - processPackages [cubaflixdownload]: New version: [2.0.0] Old Version: [1.0.1]
+[2024-04-06 11:28:47] INFO root fetch - processPackages [lezargus]: Downloading https://files.pythonhosted.org/packages/47/a0/a2ba10fcc0a21e1bf938fd106649bde480de4f8b211abe9f02bbcbe73061/lezargus-0.0.4.tar.gz
+[2024-04-06 11:28:47] INFO root fetch - processPackages [causadb]: Downloading https://files.pythonhosted.org/packages/be/08/52e0623a7d78f8f394a7f4cacd0d9dce8a70e65c63c6bc47778bcc2a49ab/causadb-1.8.0.tar.gz
+[2024-04-06 11:28:47] WARNING root fetch - processPackages [causadb]: Timeout reached during download
+[2024-04-06 11:28:47] INFO root fetch - processPackages [platforms]: Downloading https://files.pythonhosted.org/packages/f7/0f/42964d996c99faf731115aa30d8cb815adad7a1496fc9f708d52b1f536a3/platforms-1.0.1.tar.gz
+[2024-04-06 11:28:47] INFO root fetch - processPackages [cubaflixdownload]: Downloading https://files.pythonhosted.org/packages/97/da/2c57f9771eb4cb603d0c85e3f35223b550dc9defabd145ff156ed5c3e9fc/cubaflixdownload-1.0.1.tar.gz
+[2024-04-06 11:28:48] INFO root fetch - processPackages [causadb]: Downloading https://files.pythonhosted.org/packages/70/4e/c0645baa614203b3d68b5491feee55ab9655a87f81fc73c71a3ebc8192d1/causadb-1.8.1.tar.gz
+[2024-04-06 11:28:48] WARNING root fetch - processPackages [platforms]: Timeout reached during download
+[2024-04-06 11:28:48] WARNING root fetch - processPackages [cubaflixdownload]: Timeout reached during download
+[2024-04-06 11:28:48] WARNING root fetch - processPackages [causadb]: Timeout reached during download
+[2024-04-06 11:28:48] INFO root fetch - processPackages [causadb]: executing diffoscope
+[2024-04-06 11:28:48] INFO root fetch - processPackages [causadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/causadb-1.8.0.tar.gz tmp/causadb-1.8.1.tar.gz --markdown 20240406/c/causadb/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2024-04-06 11:28:48] WARNING root fetch - processPackages [lezargus]: Timeout reached during download
+[2024-04-06 11:28:48] INFO root fetch - processPackages [lezargus]: Downloading https://files.pythonhosted.org/packages/f5/4d/5c3e920902a7422be6615f62d323c05bc77907d88b1597491eab5a5a85ce/lezargus-0.0.4.dev42.tar.gz
+[2024-04-06 11:28:48] INFO root fetch - processPackages [platforms]: Downloading https://files.pythonhosted.org/packages/fc/30/b58887e5e444ada16d633c0058a7629970c4248370ef84e8a1c30a38f48d/platforms-2.0.0.tar.gz
+[2024-04-06 11:28:48] INFO root fetch - processPackages [cubaflixdownload]: Downloading https://files.pythonhosted.org/packages/f4/b9/3c16cfa59c48fed65994cfa4943ccd1687f14b1b73cbee3b7ebe7f66d89e/cubaflixdownload-2.0.0.tar.gz
+[2024-04-06 11:28:48] WARNING root fetch - processPackages [platforms]: Timeout reached during download
+[2024-04-06 11:28:48] INFO root fetch - processPackages [platforms]: executing diffoscope
+[2024-04-06 11:28:48] INFO root fetch - processPackages [platforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/platforms-1.0.1.tar.gz tmp/platforms-2.0.0.tar.gz --markdown 20240406/p/platforms/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 11:28:48] WARNING root fetch - processPackages [cubaflixdownload]: Timeout reached during download
+[2024-04-06 11:28:48] INFO root fetch - processPackages [cubaflixdownload]: executing diffoscope
+[2024-04-06 11:28:48] INFO root fetch - processPackages [cubaflixdownload]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cubaflixdownload-1.0.1.tar.gz tmp/cubaflixdownload-2.0.0.tar.gz --markdown 20240406/c/cubaflixdownload/1.0.1-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 11:28:48] WARNING root fetch - processPackages [lezargus]: Timeout reached during download
+[2024-04-06 11:28:48] INFO root fetch - processPackages [lezargus]: executing diffoscope
+[2024-04-06 11:28:48] INFO root fetch - processPackages [lezargus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lezargus-0.0.4.tar.gz tmp/lezargus-0.0.4.dev42.tar.gz --markdown 20240406/l/lezargus/0.0.4-0.0.4.dev42/diff.md --exclude *.pyd
+[2024-04-06 11:28:48] INFO root fetch - processPackages [causadb]: Remove: archive file [/home/abi/fetcher/tmp/causadb-1.8.0.tar.gz]
+[2024-04-06 11:28:48] INFO root fetch - processPackages [causadb]: Remove: archive file [/home/abi/fetcher/tmp/causadb-1.8.1.tar.gz]
+[2024-04-06 11:28:48] INFO root fetch - main [MainThread]: End processing [causadb]: success
+[2024-04-06 11:28:48] INFO root fetch - processPackages [platforms]: Remove: archive file [/home/abi/fetcher/tmp/platforms-1.0.1.tar.gz]
+[2024-04-06 11:28:48] INFO root fetch - processPackages [platforms]: Remove: archive file [/home/abi/fetcher/tmp/platforms-2.0.0.tar.gz]
+[2024-04-06 11:28:48] INFO root fetch - main [MainThread]: End processing [platforms]: success
+[2024-04-06 11:28:49] INFO root fetch - processPackages [cubaflixdownload]: Remove: archive file [/home/abi/fetcher/tmp/cubaflixdownload-1.0.1.tar.gz]
+[2024-04-06 11:28:49] INFO root fetch - processPackages [cubaflixdownload]: Remove: archive file [/home/abi/fetcher/tmp/cubaflixdownload-2.0.0.tar.gz]
+[2024-04-06 11:28:49] INFO root fetch - main [MainThread]: End processing [cubaflixdownload]: success
+[2024-04-06 11:29:01] INFO root fetch - processPackages [lezargus]: Remove: archive file [/home/abi/fetcher/tmp/lezargus-0.0.4.tar.gz]
+[2024-04-06 11:29:01] INFO root fetch - processPackages [lezargus]: Remove: archive file [/home/abi/fetcher/tmp/lezargus-0.0.4.dev42.tar.gz]
+[2024-04-06 11:29:01] INFO root fetch - main [MainThread]: End processing [lezargus]: success
+[2024-04-06 11:29:01] INFO root fetch - main [MainThread]: Store serial: [22647049]
