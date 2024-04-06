@@ -20184,3 +20184,39 @@ EOFError: EOF read where object expected
 [2024-04-06 18:52:52] INFO root fetch - processPackages [sinabs]: Remove: archive file [/home/abi/fetcher/tmp/sinabs-2.0.1.dev3.tar.gz]
 [2024-04-06 18:52:52] INFO root fetch - main [MainThread]: End processing [sinabs]: success
 [2024-04-06 18:52:52] INFO root fetch - main [MainThread]: Store serial: [22649540]
+[2024-04-06 18:54:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649540]
+[2024-04-06 18:55:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 18:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-module-gcp-project
+[2024-04-06 18:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flojoy
+[2024-04-06 18:55:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CnbcNews
+[2024-04-06 18:55:01] INFO root fetch - processPackages [CnbcNews]: New version: [1.8] Old Version: [1.7]
+[2024-04-06 18:55:01] INFO root fetch - processPackages [xia-module-gcp-project]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-06 18:55:01] INFO root fetch - processPackages [flojoy]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-04-06 18:55:01] INFO root fetch - processPackages [xia-module-gcp-project]: Downloading https://files.pythonhosted.org/packages/31/ee/8133d24eb9b61a2ba9d927666dd7d9ca3ac316d5bd83afa6cbbb8229181e/xia-module-gcp-project-0.0.2.tar.gz
+[2024-04-06 18:55:01] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/f2/4a/a1c2d3423a85170bf913594ccfcd030000017e0b83db9ecc469649cb25f4/CnbcNews-1.7.tar.gz
+[2024-04-06 18:55:01] WARNING root fetch - processPackages [xia-module-gcp-project]: Timeout reached during download
+[2024-04-06 18:55:01] INFO root fetch - processPackages [flojoy]: Downloading https://files.pythonhosted.org/packages/29/06/bcb73b7f589fa3ecc21cebc3c3e9805804a3a2ec38293d04013e1bb76573/flojoy-0.3.2.tar.gz
+[2024-04-06 18:55:01] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 18:55:01] INFO root fetch - processPackages [xia-module-gcp-project]: Downloading https://files.pythonhosted.org/packages/f2/df/8a8c6847de8ba85a9e595b632683532622a350fa2b9f9799b54b7aa01084/xia-module-gcp-project-0.0.4.tar.gz
+[2024-04-06 18:55:01] WARNING root fetch - processPackages [xia-module-gcp-project]: Timeout reached during download
+[2024-04-06 18:55:01] INFO root fetch - processPackages [xia-module-gcp-project]: executing diffoscope
+[2024-04-06 18:55:01] INFO root fetch - processPackages [xia-module-gcp-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-gcp-project-0.0.2.tar.gz tmp/xia-module-gcp-project-0.0.4.tar.gz --markdown 20240406/x/xia-module-gcp-project/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 18:55:01] INFO root fetch - processPackages [CnbcNews]: Downloading https://files.pythonhosted.org/packages/39/92/5a8109f1d792fe8915f4f2d5b2bb929d0ad00666630488a5a10df57291c5/CnbcNews-1.8.tar.gz
+[2024-04-06 18:55:01] WARNING root fetch - processPackages [flojoy]: Timeout reached during download
+[2024-04-06 18:55:01] WARNING root fetch - processPackages [CnbcNews]: Timeout reached during download
+[2024-04-06 18:55:01] INFO root fetch - processPackages [CnbcNews]: executing diffoscope
+[2024-04-06 18:55:01] INFO root fetch - processPackages [CnbcNews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CnbcNews-1.7.tar.gz tmp/CnbcNews-1.8.tar.gz --markdown 20240406/C/CnbcNews/1.7-1.8/diff.md --exclude *.pyd
+[2024-04-06 18:55:01] INFO root fetch - processPackages [flojoy]: Downloading https://files.pythonhosted.org/packages/da/a3/8bd4d9fc84e1e07fe6905fdb306ca1607514bb3ce6272f6e0c2889dc004f/flojoy-0.3.3.tar.gz
+[2024-04-06 18:55:02] INFO root fetch - processPackages [xia-module-gcp-project]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-project-0.0.2.tar.gz]
+[2024-04-06 18:55:02] INFO root fetch - processPackages [xia-module-gcp-project]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-project-0.0.4.tar.gz]
+[2024-04-06 18:55:02] INFO root fetch - main [MainThread]: End processing [xia-module-gcp-project]: success
+[2024-04-06 18:55:02] WARNING root fetch - processPackages [flojoy]: Timeout reached during download
+[2024-04-06 18:55:02] INFO root fetch - processPackages [flojoy]: executing diffoscope
+[2024-04-06 18:55:02] INFO root fetch - processPackages [flojoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flojoy-0.3.2.tar.gz tmp/flojoy-0.3.3.tar.gz --markdown 20240406/f/flojoy/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2024-04-06 18:55:02] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-1.7.tar.gz]
+[2024-04-06 18:55:02] INFO root fetch - processPackages [CnbcNews]: Remove: archive file [/home/abi/fetcher/tmp/CnbcNews-1.8.tar.gz]
+[2024-04-06 18:55:02] INFO root fetch - main [MainThread]: End processing [CnbcNews]: success
+[2024-04-06 18:55:02] INFO root fetch - processPackages [flojoy]: Remove: archive file [/home/abi/fetcher/tmp/flojoy-0.3.2.tar.gz]
+[2024-04-06 18:55:02] INFO root fetch - processPackages [flojoy]: Remove: archive file [/home/abi/fetcher/tmp/flojoy-0.3.3.tar.gz]
+[2024-04-06 18:55:02] INFO root fetch - main [MainThread]: End processing [flojoy]: success
+[2024-04-06 18:55:02] INFO root fetch - main [MainThread]: Store serial: [22649549]
