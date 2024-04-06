@@ -7305,3 +7305,30 @@
 [2024-04-06 03:27:05] INFO root fetch - processPackages [marimo]: Remove: archive file [/home/abi/fetcher/tmp/marimo-0.3.9.tar.gz]
 [2024-04-06 03:27:05] INFO root fetch - main [MainThread]: End processing [marimo]: success
 [2024-04-06 03:27:05] INFO root fetch - main [MainThread]: Store serial: [22644633]
+[2024-04-06 03:29:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644633]
+[2024-04-06 03:29:15] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 03:31:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644728]
+[2024-04-06 03:31:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 03:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: homeassistant-stubs
+[2024-04-06 03:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipython-openai
+[2024-04-06 03:31:21] INFO root fetch - processPackages [ipython-openai]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 03:31:21] INFO root fetch - processPackages [ipython-openai]: Downloading https://files.pythonhosted.org/packages/f2/10/218001e78cf280eb0a4951ccbd525005172e28a381b73592b4d969cb3c88/ipython_openai-0.0.2.tar.gz
+[2024-04-06 03:31:21] WARNING root fetch - processPackages [ipython-openai]: Timeout reached during download
+[2024-04-06 03:31:21] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2024.4.1] Old Version: [2024.4.0b9]
+[2024-04-06 03:31:21] INFO root fetch - processPackages [ipython-openai]: Downloading https://files.pythonhosted.org/packages/2a/f7/0ec1c9f9567c19b498b4e433594005f08bd2c43a8c48c84df56e3d6f7740/ipython_openai-0.0.3.tar.gz
+[2024-04-06 03:31:21] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/c7/8d/150cb379d28a8143ff3ac1812a52c4bf14d7a4b8afbc6e95872c68727392/homeassistant_stubs-2024.4.0b9.tar.gz
+[2024-04-06 03:31:22] WARNING root fetch - processPackages [ipython-openai]: Timeout reached during download
+[2024-04-06 03:31:22] INFO root fetch - processPackages [ipython-openai]: executing diffoscope
+[2024-04-06 03:31:22] INFO root fetch - processPackages [ipython-openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipython_openai-0.0.2.tar.gz tmp/ipython_openai-0.0.3.tar.gz --markdown 20240406/i/ipython-openai/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 03:31:22] WARNING root fetch - processPackages [homeassistant-stubs]: Timeout reached during download
+[2024-04-06 03:31:22] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/26/e6/74168dbda3fef172a06a06c13a82b2106373614cdf365ce55989b810d8c8/homeassistant_stubs-2024.4.1.tar.gz
+[2024-04-06 03:31:22] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.2.tar.gz]
+[2024-04-06 03:31:22] INFO root fetch - processPackages [ipython-openai]: Remove: archive file [/home/abi/fetcher/tmp/ipython_openai-0.0.3.tar.gz]
+[2024-04-06 03:31:22] INFO root fetch - main [MainThread]: End processing [ipython-openai]: success
+[2024-04-06 03:31:22] WARNING root fetch - processPackages [homeassistant-stubs]: Timeout reached during download
+[2024-04-06 03:31:22] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2024-04-06 03:31:22] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2024.4.0b9.tar.gz tmp/homeassistant_stubs-2024.4.1.tar.gz --markdown 20240406/h/homeassistant-stubs/2024.4.0b9-2024.4.1/diff.md --exclude *.pyd
+[2024-04-06 03:31:34] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.4.0b9.tar.gz]
+[2024-04-06 03:31:34] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.4.1.tar.gz]
+[2024-04-06 03:31:34] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2024-04-06 03:31:34] INFO root fetch - main [MainThread]: Store serial: [22644734]
