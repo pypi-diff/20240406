@@ -23011,3 +23011,28 @@ EOFError: EOF read where object expected
 [2024-04-06 21:25:55] INFO root fetch - processPackages [alchemlyb]: Remove: archive file [/home/abi/fetcher/tmp/alchemlyb-2.2.0.tar.gz]
 [2024-04-06 21:25:55] INFO root fetch - main [MainThread]: End processing [alchemlyb]: success
 [2024-04-06 21:25:55] INFO root fetch - main [MainThread]: Store serial: [22650460]
+[2024-04-06 21:27:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650460]
+[2024-04-06 21:28:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 21:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xia-module-gcp-bigquery
+[2024-04-06 21:28:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyaogmaneo
+[2024-04-06 21:28:04] INFO root fetch - processPackages [xia-module-gcp-bigquery]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 21:28:04] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/a6/c6/86415d972be1e160a8d487ba0a6ff5e1d2a0063c0819c713fbf2939ecc59/xia-module-gcp-bigquery-0.0.8.tar.gz
+[2024-04-06 21:28:04] INFO root fetch - processPackages [pyaogmaneo]: New version: [2.4.3] Old Version: [2.4.2]
+[2024-04-06 21:28:04] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 21:28:04] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Downloading https://files.pythonhosted.org/packages/d2/f4/072f1fc37d0ff46bf51f4ee15cacf0a45ca412deceab51ab1cc8905bf28c/xia_module_gcp_bigquery-0.0.9-py3-none-any.whl
+[2024-04-06 21:28:04] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/f3/24/0f64fe9b78cb34e969a2ef159bdd6242463391573398a8b2c959e474b26e/pyaogmaneo-2.4.2.tar.gz
+[2024-04-06 21:28:04] WARNING root fetch - processPackages [xia-module-gcp-bigquery]: Timeout reached during download
+[2024-04-06 21:28:04] INFO root fetch - processPackages [xia-module-gcp-bigquery]: executing diffoscope
+[2024-04-06 21:28:04] INFO root fetch - processPackages [xia-module-gcp-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-gcp-bigquery-0.0.8.tar.gz tmp/xia_module_gcp_bigquery-0.0.9-py3-none-any.whl.zip --markdown 20240406/x/xia-module-gcp-bigquery/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 21:28:04] WARNING root fetch - processPackages [pyaogmaneo]: Timeout reached during download
+[2024-04-06 21:28:04] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/17/4e/60656d379ff00557f9c2d3972abe27686501b0939506280243ae88e14613/pyaogmaneo-2.4.3.tar.gz
+[2024-04-06 21:28:05] WARNING root fetch - processPackages [pyaogmaneo]: Timeout reached during download
+[2024-04-06 21:28:05] INFO root fetch - processPackages [pyaogmaneo]: executing diffoscope
+[2024-04-06 21:28:05] INFO root fetch - processPackages [pyaogmaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaogmaneo-2.4.2.tar.gz tmp/pyaogmaneo-2.4.3.tar.gz --markdown 20240406/p/pyaogmaneo/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2024-04-06 21:28:05] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-bigquery-0.0.8.tar.gz]
+[2024-04-06 21:28:05] INFO root fetch - processPackages [xia-module-gcp-bigquery]: Remove: archive file [/home/abi/fetcher/tmp/xia_module_gcp_bigquery-0.0.9-py3-none-any.whl.zip]
+[2024-04-06 21:28:05] INFO root fetch - main [MainThread]: End processing [xia-module-gcp-bigquery]: success
+[2024-04-06 21:28:05] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.4.2.tar.gz]
+[2024-04-06 21:28:05] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.4.3.tar.gz]
+[2024-04-06 21:28:05] INFO root fetch - main [MainThread]: End processing [pyaogmaneo]: success
+[2024-04-06 21:28:05] INFO root fetch - main [MainThread]: Store serial: [22650489]
