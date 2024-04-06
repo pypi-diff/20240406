@@ -11088,3 +11088,44 @@
 [2024-04-06 08:28:41] INFO root fetch - processPackages [primula]: Remove: archive file [/home/abi/fetcher/tmp/primula-0.3.tar.gz]
 [2024-04-06 08:28:41] INFO root fetch - main [MainThread]: End processing [primula]: success
 [2024-04-06 08:28:41] INFO root fetch - main [MainThread]: Store serial: [22646071]
+[2024-04-06 08:30:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646071]
+[2024-04-06 08:30:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 08:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: releaserr
+[2024-04-06 08:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: macrodemos
+[2024-04-06 08:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-fishing
+[2024-04-06 08:30:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: yt
+[2024-04-06 08:30:50] INFO root fetch - processPackages [nonebot-plugin-fishing]: New version: [0.2.2a3] Old Version: [0.2.2a2]
+[2024-04-06 08:30:50] INFO root fetch - processPackages [releaserr]: New version: [0.1.dev94] Old Version: [0.1.dev128]
+[2024-04-06 08:30:50] INFO root fetch - processPackages [macrodemos]: New version: [2024.4.5] Old Version: [2021.9.7]
+[2024-04-06 08:30:50] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/dc/02/7718aa4e890b04c822a2a3923aec7e767f0eee86b99d2e7479307dd3b5f9/nonebot-plugin-fishing-0.2.2a2.tar.gz
+[2024-04-06 08:30:50] INFO root fetch - processPackages [yt]: New version: [4.3.1] Old Version: [4.3.0]
+[2024-04-06 08:30:51] WARNING root fetch - processPackages [nonebot-plugin-fishing]: Timeout reached during download
+[2024-04-06 08:30:51] INFO root fetch - processPackages [macrodemos]: Downloading https://files.pythonhosted.org/packages/5c/48/768f889ce8f9f1f19b1fad8d416f54d335e68cf1f922aa18088e37da2e72/macrodemos-2021.9.7.tar.gz
+[2024-04-06 08:30:51] INFO root fetch - processPackages [releaserr]: Downloading https://files.pythonhosted.org/packages/6e/46/c46725313693f5735668a443f84cc9c4ecf7ce8d92faeb9ad4e4698c9c16/releaserr-0.1.dev128.tar.gz
+[2024-04-06 08:30:51] INFO root fetch - processPackages [nonebot-plugin-fishing]: Downloading https://files.pythonhosted.org/packages/1d/3a/b872b851903eaff2f42e22690e987c7d1f02135eb34824e50c232002777d/nonebot-plugin-fishing-0.2.2a3.tar.gz
+[2024-04-06 08:30:51] INFO root fetch - processPackages [yt]: Downloading https://files.pythonhosted.org/packages/08/b9/ba6c7e1f2c9790100ac771d0108513c75a455a63cac76a7be2e3fd8dac73/yt-4.3.0.tar.gz
+[2024-04-06 08:30:51] WARNING root fetch - processPackages [releaserr]: Timeout reached during download
+[2024-04-06 08:30:51] WARNING root fetch - processPackages [macrodemos]: Timeout reached during download
+[2024-04-06 08:30:51] WARNING root fetch - processPackages [nonebot-plugin-fishing]: Timeout reached during download
+[2024-04-06 08:30:51] INFO root fetch - processPackages [nonebot-plugin-fishing]: executing diffoscope
+[2024-04-06 08:30:51] INFO root fetch - processPackages [nonebot-plugin-fishing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-fishing-0.2.2a2.tar.gz tmp/nonebot-plugin-fishing-0.2.2a3.tar.gz --markdown 20240406/n/nonebot-plugin-fishing/0.2.2a2-0.2.2a3/diff.md --exclude *.pyd
+[2024-04-06 08:30:51] INFO root fetch - processPackages [releaserr]: Downloading https://files.pythonhosted.org/packages/7a/26/736d01b0c1fa4abbf6135fbc5d7c506888433b18ec54dd9a7ec8472d992e/releaserr-0.1.dev94.tar.gz
+[2024-04-06 08:30:51] INFO root fetch - processPackages [macrodemos]: Downloading https://files.pythonhosted.org/packages/14/ee/5c00ce2852a3943180ee1c03045687103e409f5b43ecb525d1405f259965/macrodemos-2024.4.5.tar.gz
+[2024-04-06 08:30:51] WARNING root fetch - processPackages [macrodemos]: Timeout reached during download
+[2024-04-06 08:30:51] INFO root fetch - processPackages [macrodemos]: executing diffoscope
+[2024-04-06 08:30:51] INFO root fetch - processPackages [macrodemos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/macrodemos-2021.9.7.tar.gz tmp/macrodemos-2024.4.5.tar.gz --markdown 20240406/m/macrodemos/2021.9.7-2024.4.5/diff.md --exclude *.pyd
+[2024-04-06 08:30:51] WARNING root fetch - processPackages [releaserr]: Timeout reached during download
+[2024-04-06 08:30:51] INFO root fetch - processPackages [releaserr]: executing diffoscope
+[2024-04-06 08:30:51] INFO root fetch - processPackages [releaserr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/releaserr-0.1.dev128.tar.gz tmp/releaserr-0.1.dev94.tar.gz --markdown 20240406/r/releaserr/0.1.dev128-0.1.dev94/diff.md --exclude *.pyd
+[2024-04-06 08:30:51] WARNING root fetch - processPackages [yt]: Skipping package: exceeds size limit 13706721>=10485760
+[2024-04-06 08:30:51] INFO root fetch - main [MainThread]: End processing [yt] error
+[2024-04-06 08:30:51] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-fishing-0.2.2a2.tar.gz]
+[2024-04-06 08:30:51] INFO root fetch - processPackages [nonebot-plugin-fishing]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-fishing-0.2.2a3.tar.gz]
+[2024-04-06 08:30:51] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-fishing]: success
+[2024-04-06 08:30:52] INFO root fetch - processPackages [macrodemos]: Remove: archive file [/home/abi/fetcher/tmp/macrodemos-2021.9.7.tar.gz]
+[2024-04-06 08:30:52] INFO root fetch - processPackages [macrodemos]: Remove: archive file [/home/abi/fetcher/tmp/macrodemos-2024.4.5.tar.gz]
+[2024-04-06 08:30:52] INFO root fetch - main [MainThread]: End processing [macrodemos]: success
+[2024-04-06 08:30:52] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev128.tar.gz]
+[2024-04-06 08:30:52] INFO root fetch - processPackages [releaserr]: Remove: archive file [/home/abi/fetcher/tmp/releaserr-0.1.dev94.tar.gz]
+[2024-04-06 08:30:52] INFO root fetch - main [MainThread]: End processing [releaserr]: success
+[2024-04-06 08:30:52] INFO root fetch - main [MainThread]: Store serial: [22646084]
