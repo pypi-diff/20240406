@@ -19134,3 +19134,31 @@ EOFError: EOF read where object expected
 [2024-04-06 17:58:08] INFO root fetch - processPackages [obzerveai]: Remove: archive file [/home/abi/fetcher/tmp/obzerveai-0.0.4.tar.gz]
 [2024-04-06 17:58:08] INFO root fetch - main [MainThread]: End processing [obzerveai]: success
 [2024-04-06 17:58:08] INFO root fetch - main [MainThread]: Store serial: [22649177]
+[2024-04-06 18:00:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649177]
+[2024-04-06 18:00:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 18:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pthugefileviewer
+[2024-04-06 18:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rmnt
+[2024-04-06 18:00:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ssh2_parse_key
+[2024-04-06 18:00:17] INFO root fetch - processPackages [ssh2_parse_key]: New version: [0.8.0] Old Version: [0.7.2]
+[2024-04-06 18:00:17] WARNING root fetch - processPackages [rmnt]: Skipping, unable to determine old version
+[2024-04-06 18:00:17] INFO root fetch - main [MainThread]: End processing [rmnt] error
+[2024-04-06 18:00:17] INFO root fetch - processPackages [pthugefileviewer]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-06 18:00:17] INFO root fetch - processPackages [pthugefileviewer]: Downloading https://files.pythonhosted.org/packages/0f/bc/e93be66303bc539ba7080da05eb3e7a8437b015a69678bd7d381f1c3f0b6/pthugefileviewer-0.2.0.tar.gz
+[2024-04-06 18:00:17] INFO root fetch - processPackages [ssh2_parse_key]: Downloading https://files.pythonhosted.org/packages/c1/89/e4c33d2923ab0c785c80cdf21147dc72769f3e71b4fdacb5aacddc899f67/ssh2_parse_key-0.7.2.tar.gz
+[2024-04-06 18:00:17] WARNING root fetch - processPackages [pthugefileviewer]: Timeout reached during download
+[2024-04-06 18:00:17] WARNING root fetch - processPackages [ssh2_parse_key]: Timeout reached during download
+[2024-04-06 18:00:17] INFO root fetch - processPackages [pthugefileviewer]: Downloading https://files.pythonhosted.org/packages/e0/f7/052ace1ff01d699f8f140cb51b2855e0b01d260a275a048d46f13537e056/pthugefileviewer-0.2.1.tar.gz
+[2024-04-06 18:00:18] INFO root fetch - processPackages [ssh2_parse_key]: Downloading https://files.pythonhosted.org/packages/83/17/8d2ea6007df8f8a8477da368675b4c8f62dd4b9941061c0970e1aa8ce42a/ssh2_parse_key-0.8.0.tar.gz
+[2024-04-06 18:00:18] WARNING root fetch - processPackages [pthugefileviewer]: Timeout reached during download
+[2024-04-06 18:00:18] INFO root fetch - processPackages [pthugefileviewer]: executing diffoscope
+[2024-04-06 18:00:18] INFO root fetch - processPackages [pthugefileviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pthugefileviewer-0.2.0.tar.gz tmp/pthugefileviewer-0.2.1.tar.gz --markdown 20240406/p/pthugefileviewer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-06 18:00:18] WARNING root fetch - processPackages [ssh2_parse_key]: Timeout reached during download
+[2024-04-06 18:00:18] INFO root fetch - processPackages [ssh2_parse_key]: executing diffoscope
+[2024-04-06 18:00:18] INFO root fetch - processPackages [ssh2_parse_key]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ssh2_parse_key-0.7.2.tar.gz tmp/ssh2_parse_key-0.8.0.tar.gz --markdown 20240406/s/ssh2_parse_key/0.7.2-0.8.0/diff.md --exclude *.pyd
+[2024-04-06 18:00:18] INFO root fetch - processPackages [pthugefileviewer]: Remove: archive file [/home/abi/fetcher/tmp/pthugefileviewer-0.2.0.tar.gz]
+[2024-04-06 18:00:18] INFO root fetch - processPackages [pthugefileviewer]: Remove: archive file [/home/abi/fetcher/tmp/pthugefileviewer-0.2.1.tar.gz]
+[2024-04-06 18:00:18] INFO root fetch - main [MainThread]: End processing [pthugefileviewer]: success
+[2024-04-06 18:00:18] INFO root fetch - processPackages [ssh2_parse_key]: Remove: archive file [/home/abi/fetcher/tmp/ssh2_parse_key-0.7.2.tar.gz]
+[2024-04-06 18:00:18] INFO root fetch - processPackages [ssh2_parse_key]: Remove: archive file [/home/abi/fetcher/tmp/ssh2_parse_key-0.8.0.tar.gz]
+[2024-04-06 18:00:18] INFO root fetch - main [MainThread]: End processing [ssh2_parse_key]: success
+[2024-04-06 18:00:18] INFO root fetch - main [MainThread]: Store serial: [22649188]
