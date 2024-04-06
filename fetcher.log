@@ -9216,3 +9216,52 @@
 [2024-04-06 06:17:40] INFO root fetch - processPackages [yt-fts]: Remove: archive file [/home/abi/fetcher/tmp/yt-fts-0.1.9.tar.gz]
 [2024-04-06 06:17:40] INFO root fetch - main [MainThread]: End processing [yt-fts]: success
 [2024-04-06 06:17:40] INFO root fetch - main [MainThread]: Store serial: [22645480]
+[2024-04-06 06:19:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645480]
+[2024-04-06 06:19:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 06:21:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645480]
+[2024-04-06 06:21:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 06:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-l10n-it-account-balance-report
+[2024-04-06 06:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: litellm
+[2024-04-06 06:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyFunceble-dev
+[2024-04-06 06:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sprocketship
+[2024-04-06 06:21:54] INFO root fetch - processPackages [sprocketship]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 06:21:54] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-04-06 06:21:54] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/4a/04/7c484c3ebcb486d63df55c9b565a680f305b65c0193826f913351ba314d3/sprocketship-0.0.8.tar.gz
+[2024-04-06 06:21:54] INFO root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: New version: [12.0.1.1.0.99.dev5] Old Version: [12.0.1.1.0.99.dev4]
+[2024-04-06 06:21:54] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-04-06 06:21:54] INFO root fetch - processPackages [PyFunceble-dev]: New version: [4.2.9] Old Version: [4.2.7]
+[2024-04-06 06:21:54] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 06:21:54] INFO root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: Downloading https://files.pythonhosted.org/packages/93/40/70d33089a502a8735ff428d554f698c98464a94e0afeeeb88a3851775095/odoo12_addon_l10n_it_account_balance_report-12.0.1.1.0.99.dev4-py3-none-any.whl
+[2024-04-06 06:21:54] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/3b/1f/ef5adaa427009cf67f6258034539521481c76a9ad94df0f6976077386506/sprocketship-0.0.9.tar.gz
+[2024-04-06 06:21:54] WARNING root fetch - processPackages [litellm]: Timeout reached during download
+[2024-04-06 06:21:54] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/a9/09/2ffbe87530f0aece577d1ebfa1ea3ff3585590610c864c8b8d3e5b18411c/PyFunceble-dev-4.2.7.tar.gz
+[2024-04-06 06:21:55] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 06:21:55] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 06:21:55] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.0.8.tar.gz tmp/sprocketship-0.0.9.tar.gz --markdown 20240406/s/sprocketship/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 06:21:55] WARNING root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: Timeout reached during download
+[2024-04-06 06:21:55] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-04-06 06:21:55] WARNING root fetch - processPackages [PyFunceble-dev]: Timeout reached during download
+[2024-04-06 06:21:55] INFO root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: Downloading https://files.pythonhosted.org/packages/15/f0/57172086a07377589565c08bccc525fe678dd564cdab6313fac7a0d33bb8/odoo12_addon_l10n_it_account_balance_report-12.0.1.1.0.99.dev5-py3-none-any.whl
+[2024-04-06 06:21:55] WARNING root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: Timeout reached during download
+[2024-04-06 06:21:55] INFO root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: executing diffoscope
+[2024-04-06 06:21:55] INFO root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_l10n_it_account_balance_report-12.0.1.1.0.99.dev4-py3-none-any.whl.zip tmp/odoo12_addon_l10n_it_account_balance_report-12.0.1.1.0.99.dev5-py3-none-any.whl.zip --markdown 20240406/o/odoo12-addon-l10n-it-account-balance-report/12.0.1.1.0.99.dev4-12.0.1.1.0.99.dev5/diff.md --exclude *.pyd
+[2024-04-06 06:21:55] INFO root fetch - processPackages [PyFunceble-dev]: Downloading https://files.pythonhosted.org/packages/8d/a6/ce1b409ecb908fd4d991b77970805c1b0d784005b2b00817f8b4233ac9d4/PyFunceble-dev-4.2.9.tar.gz
+[2024-04-06 06:21:55] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.8.tar.gz]
+[2024-04-06 06:21:55] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.9.tar.gz]
+[2024-04-06 06:21:55] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 06:21:55] WARNING root fetch - processPackages [PyFunceble-dev]: Timeout reached during download
+[2024-04-06 06:21:55] INFO root fetch - processPackages [PyFunceble-dev]: executing diffoscope
+[2024-04-06 06:21:55] INFO root fetch - processPackages [PyFunceble-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFunceble-dev-4.2.7.tar.gz tmp/PyFunceble-dev-4.2.9.tar.gz --markdown 20240406/P/PyFunceble-dev/4.2.7-4.2.9/diff.md --exclude *.pyd
+[2024-04-06 06:21:55] WARNING root fetch - processPackages [litellm]: Timeout reached during download
+[2024-04-06 06:21:55] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-04-06 06:21:55] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240406/l/litellm/1.9.5-1.9.dev0/diff.md --exclude *.pyd
+[2024-04-06 06:21:56] INFO root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_l10n_it_account_balance_report-12.0.1.1.0.99.dev4-py3-none-any.whl.zip]
+[2024-04-06 06:21:56] INFO root fetch - processPackages [odoo12-addon-l10n-it-account-balance-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_l10n_it_account_balance_report-12.0.1.1.0.99.dev5-py3-none-any.whl.zip]
+[2024-04-06 06:21:56] INFO root fetch - main [MainThread]: End processing [odoo12-addon-l10n-it-account-balance-report]: success
+[2024-04-06 06:21:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-04-06 06:21:56] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-04-06 06:21:56] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-04-06 06:21:57] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.7.tar.gz]
+[2024-04-06 06:21:57] INFO root fetch - processPackages [PyFunceble-dev]: Remove: archive file [/home/abi/fetcher/tmp/PyFunceble-dev-4.2.9.tar.gz]
+[2024-04-06 06:21:57] INFO root fetch - main [MainThread]: End processing [PyFunceble-dev]: success
+[2024-04-06 06:21:57] INFO root fetch - main [MainThread]: Store serial: [22645491]
