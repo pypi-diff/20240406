@@ -18887,3 +18887,50 @@ EOFError: EOF read where object expected
 [2024-04-06 17:44:40] INFO root fetch - processPackages [deforce]: Remove: archive file [/home/abi/fetcher/tmp/deforce-1.0.0.tar.gz]
 [2024-04-06 17:44:40] INFO root fetch - main [MainThread]: End processing [deforce]: success
 [2024-04-06 17:44:40] INFO root fetch - main [MainThread]: Store serial: [22649102]
+[2024-04-06 17:46:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649102]
+[2024-04-06 17:46:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 17:46:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Mopidy-Pibox
+[2024-04-06 17:46:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ring-attention-pytorch
+[2024-04-06 17:46:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beeflow-ajax
+[2024-04-06 17:46:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xia-module-gcp-project
+[2024-04-06 17:46:49] INFO root fetch - processPackages [ring-attention-pytorch]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-04-06 17:46:49] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/05/fc/886afee256722f34c1800217422065facfaf81c7431b503529e31ed4fe9f/ring-attention-pytorch-0.2.9.tar.gz
+[2024-04-06 17:46:49] INFO root fetch - processPackages [beeflow-ajax]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 17:46:49] INFO root fetch - processPackages [Mopidy-Pibox]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 17:46:49] INFO root fetch - processPackages [xia-module-gcp-project]: New version: [0.0.4] Old Version: [0.0.2]
+[2024-04-06 17:46:49] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 17:46:50] INFO root fetch - processPackages [beeflow-ajax]: Downloading https://files.pythonhosted.org/packages/d0/10/f5e038b995a81a68150066a13933a45eb4b7e7072768601471cfebee8aad/beeflow-ajax-1.0.8.tar.gz
+[2024-04-06 17:46:50] INFO root fetch - processPackages [xia-module-gcp-project]: Downloading https://files.pythonhosted.org/packages/31/ee/8133d24eb9b61a2ba9d927666dd7d9ca3ac316d5bd83afa6cbbb8229181e/xia-module-gcp-project-0.0.2.tar.gz
+[2024-04-06 17:46:50] INFO root fetch - processPackages [ring-attention-pytorch]: Downloading https://files.pythonhosted.org/packages/69/4a/8925c7ce7e550c0e2780a1c71a7a50ad68a2591d8c63f837522379a6da9f/ring-attention-pytorch-0.3.0.tar.gz
+[2024-04-06 17:46:50] WARNING root fetch - processPackages [beeflow-ajax]: Timeout reached during download
+[2024-04-06 17:46:50] INFO root fetch - processPackages [Mopidy-Pibox]: Downloading https://files.pythonhosted.org/packages/b6/d5/be0bda68dded2240cc9d7a4f0176daf6e4da001c64772850763b34040d60/Mopidy-Pibox-0.9.0.tar.gz
+[2024-04-06 17:46:50] WARNING root fetch - processPackages [ring-attention-pytorch]: Timeout reached during download
+[2024-04-06 17:46:50] INFO root fetch - processPackages [ring-attention-pytorch]: executing diffoscope
+[2024-04-06 17:46:50] INFO root fetch - processPackages [ring-attention-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ring-attention-pytorch-0.2.9.tar.gz tmp/ring-attention-pytorch-0.3.0.tar.gz --markdown 20240406/r/ring-attention-pytorch/0.2.9-0.3.0/diff.md --exclude *.pyd
+[2024-04-06 17:46:50] WARNING root fetch - processPackages [xia-module-gcp-project]: Timeout reached during download
+[2024-04-06 17:46:50] INFO root fetch - processPackages [beeflow-ajax]: Downloading https://files.pythonhosted.org/packages/dd/57/7061d2ad9089d0df0152a410f6b62148719da4ddbd07d843be395642227c/beeflow-ajax-1.0.9.tar.gz
+[2024-04-06 17:46:50] INFO root fetch - processPackages [xia-module-gcp-project]: Downloading https://files.pythonhosted.org/packages/f2/df/8a8c6847de8ba85a9e595b632683532622a350fa2b9f9799b54b7aa01084/xia-module-gcp-project-0.0.4.tar.gz
+[2024-04-06 17:46:50] WARNING root fetch - processPackages [beeflow-ajax]: Timeout reached during download
+[2024-04-06 17:46:50] WARNING root fetch - processPackages [Mopidy-Pibox]: Timeout reached during download
+[2024-04-06 17:46:50] INFO root fetch - processPackages [beeflow-ajax]: executing diffoscope
+[2024-04-06 17:46:50] INFO root fetch - processPackages [beeflow-ajax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beeflow-ajax-1.0.8.tar.gz tmp/beeflow-ajax-1.0.9.tar.gz --markdown 20240406/b/beeflow-ajax/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:46:50] WARNING root fetch - processPackages [xia-module-gcp-project]: Timeout reached during download
+[2024-04-06 17:46:50] INFO root fetch - processPackages [xia-module-gcp-project]: executing diffoscope
+[2024-04-06 17:46:50] INFO root fetch - processPackages [xia-module-gcp-project]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia-module-gcp-project-0.0.2.tar.gz tmp/xia-module-gcp-project-0.0.4.tar.gz --markdown 20240406/x/xia-module-gcp-project/0.0.2-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 17:46:50] INFO root fetch - processPackages [Mopidy-Pibox]: Downloading https://files.pythonhosted.org/packages/73/64/640b7d83f847865384b40942a17c52d6101b5661a46ada07e56480f58eec/Mopidy-Pibox-0.9.1.tar.gz
+[2024-04-06 17:46:50] WARNING root fetch - processPackages [Mopidy-Pibox]: Timeout reached during download
+[2024-04-06 17:46:50] INFO root fetch - processPackages [Mopidy-Pibox]: executing diffoscope
+[2024-04-06 17:46:50] INFO root fetch - processPackages [Mopidy-Pibox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Mopidy-Pibox-0.9.0.tar.gz tmp/Mopidy-Pibox-0.9.1.tar.gz --markdown 20240406/M/Mopidy-Pibox/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 17:46:50] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.2.9.tar.gz]
+[2024-04-06 17:46:50] INFO root fetch - processPackages [ring-attention-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/ring-attention-pytorch-0.3.0.tar.gz]
+[2024-04-06 17:46:50] INFO root fetch - main [MainThread]: End processing [ring-attention-pytorch]: success
+[2024-04-06 17:46:51] INFO root fetch - processPackages [beeflow-ajax]: Remove: archive file [/home/abi/fetcher/tmp/beeflow-ajax-1.0.8.tar.gz]
+[2024-04-06 17:46:51] INFO root fetch - processPackages [beeflow-ajax]: Remove: archive file [/home/abi/fetcher/tmp/beeflow-ajax-1.0.9.tar.gz]
+[2024-04-06 17:46:51] INFO root fetch - main [MainThread]: End processing [beeflow-ajax]: success
+[2024-04-06 17:46:51] INFO root fetch - processPackages [xia-module-gcp-project]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-project-0.0.2.tar.gz]
+[2024-04-06 17:46:51] INFO root fetch - processPackages [xia-module-gcp-project]: Remove: archive file [/home/abi/fetcher/tmp/xia-module-gcp-project-0.0.4.tar.gz]
+[2024-04-06 17:46:51] INFO root fetch - main [MainThread]: End processing [xia-module-gcp-project]: success
+[2024-04-06 17:47:14] INFO root fetch - processPackages [Mopidy-Pibox]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-Pibox-0.9.0.tar.gz]
+[2024-04-06 17:47:14] INFO root fetch - processPackages [Mopidy-Pibox]: Remove: archive file [/home/abi/fetcher/tmp/Mopidy-Pibox-0.9.1.tar.gz]
+[2024-04-06 17:47:14] INFO root fetch - main [MainThread]: End processing [Mopidy-Pibox]: success
+[2024-04-06 17:47:14] INFO root fetch - main [MainThread]: Store serial: [22649114]
