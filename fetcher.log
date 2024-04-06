@@ -7421,3 +7421,30 @@
 [2024-04-06 03:40:18] INFO root fetch - processPackages [pytest-broadcaster]: Remove: archive file [/home/abi/fetcher/tmp/pytest_broadcaster-0.9.0.tar.gz]
 [2024-04-06 03:40:18] INFO root fetch - main [MainThread]: End processing [pytest-broadcaster]: success
 [2024-04-06 03:40:18] INFO root fetch - main [MainThread]: Store serial: [22644778]
+[2024-04-06 03:42:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644778]
+[2024-04-06 03:42:27] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 03:44:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644778]
+[2024-04-06 03:44:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 03:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-microgrid
+[2024-04-06 03:44:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kubernetes-the-hard-way
+[2024-04-06 03:44:32] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: New version: [0.0.11a1712362554] Old Version: [0.0.11a1712361443]
+[2024-04-06 03:44:32] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/71/24/3c9f9ba04b2e21a3aa0b675012c97e560a94bcb1f91f35a9ade6a59bdbda/pulumi_kubernetes_the_hard_way-0.0.11a1712361443.tar.gz
+[2024-04-06 03:44:32] INFO root fetch - processPackages [python-microgrid]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-06 03:44:32] WARNING root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Timeout reached during download
+[2024-04-06 03:44:32] INFO root fetch - processPackages [python-microgrid]: Downloading https://files.pythonhosted.org/packages/d4/76/71ce7dc24687039ff7c2bf8a49a3266823b527f5d56aaa0c2243c9f7090d/python-microgrid-1.4.0.tar.gz
+[2024-04-06 03:44:33] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Downloading https://files.pythonhosted.org/packages/54/23/2b44d11e2bbbe4a1165987f83114e392b46b2bf7eabd68943ef65ab11148/pulumi_kubernetes_the_hard_way-0.0.11a1712362554.tar.gz
+[2024-04-06 03:44:33] WARNING root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Timeout reached during download
+[2024-04-06 03:44:33] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: executing diffoscope
+[2024-04-06 03:44:33] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712361443.tar.gz tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712362554.tar.gz --markdown 20240406/p/pulumi-kubernetes-the-hard-way/0.0.11a1712361443-0.0.11a1712362554/diff.md --exclude *.pyd
+[2024-04-06 03:44:34] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712361443.tar.gz]
+[2024-04-06 03:44:34] INFO root fetch - processPackages [pulumi-kubernetes-the-hard-way]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes_the_hard_way-0.0.11a1712362554.tar.gz]
+[2024-04-06 03:44:34] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes-the-hard-way]: success
+[2024-04-06 03:44:34] WARNING root fetch - processPackages [python-microgrid]: Timeout reached during download
+[2024-04-06 03:44:35] INFO root fetch - processPackages [python-microgrid]: Downloading https://files.pythonhosted.org/packages/2c/b3/41ec42c2c66665905effdfc0827c8ab8ff65ecc2137c9da7eace9c244f08/python-microgrid-1.4.1.tar.gz
+[2024-04-06 03:44:35] WARNING root fetch - processPackages [python-microgrid]: Timeout reached during download
+[2024-04-06 03:44:35] INFO root fetch - processPackages [python-microgrid]: executing diffoscope
+[2024-04-06 03:44:35] INFO root fetch - processPackages [python-microgrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-microgrid-1.4.0.tar.gz tmp/python-microgrid-1.4.1.tar.gz --markdown 20240406/p/python-microgrid/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2024-04-06 03:44:38] INFO root fetch - processPackages [python-microgrid]: Remove: archive file [/home/abi/fetcher/tmp/python-microgrid-1.4.0.tar.gz]
+[2024-04-06 03:44:38] INFO root fetch - processPackages [python-microgrid]: Remove: archive file [/home/abi/fetcher/tmp/python-microgrid-1.4.1.tar.gz]
+[2024-04-06 03:44:38] INFO root fetch - main [MainThread]: End processing [python-microgrid]: success
+[2024-04-06 03:44:38] INFO root fetch - main [MainThread]: Store serial: [22644783]
