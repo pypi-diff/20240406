@@ -11775,3 +11775,19 @@
 [2024-04-06 09:29:54] INFO root fetch - processPackages [pandasai]: Remove: archive file [/home/abi/fetcher/tmp/pandasai-2.0a9.tar.gz]
 [2024-04-06 09:29:54] INFO root fetch - main [MainThread]: End processing [pandasai]: success
 [2024-04-06 09:29:54] INFO root fetch - main [MainThread]: Store serial: [22646465]
+[2024-04-06 09:31:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646465]
+[2024-04-06 09:32:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 09:34:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646465]
+[2024-04-06 09:34:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 09:34:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cefi
+[2024-04-06 09:34:08] INFO root fetch - processPackages [cefi]: New version: [4.4.4] Old Version: [4.4.3]
+[2024-04-06 09:34:08] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/5c/71/b789f332d33d963b986e6910ccb54860e7997e21d893fb0f909c81bcf44c/cefi-4.4.3.tar.gz
+[2024-04-06 09:34:08] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-06 09:34:08] INFO root fetch - processPackages [cefi]: Downloading https://files.pythonhosted.org/packages/78/19/c204d8dabf298536961bf92ff9449930c2d477adeba1e5ad58765339f457/cefi-4.4.4.tar.gz
+[2024-04-06 09:34:09] WARNING root fetch - processPackages [cefi]: Timeout reached during download
+[2024-04-06 09:34:09] INFO root fetch - processPackages [cefi]: executing diffoscope
+[2024-04-06 09:34:09] INFO root fetch - processPackages [cefi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cefi-4.4.3.tar.gz tmp/cefi-4.4.4.tar.gz --markdown 20240406/c/cefi/4.4.3-4.4.4/diff.md --exclude *.pyd
+[2024-04-06 09:34:09] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.3.tar.gz]
+[2024-04-06 09:34:09] INFO root fetch - processPackages [cefi]: Remove: archive file [/home/abi/fetcher/tmp/cefi-4.4.4.tar.gz]
+[2024-04-06 09:34:09] INFO root fetch - main [MainThread]: End processing [cefi]: success
+[2024-04-06 09:34:09] INFO root fetch - main [MainThread]: Store serial: [22646468]
