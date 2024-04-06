@@ -20675,3 +20675,50 @@ EOFError: EOF read where object expected
 [2024-04-06 19:23:22] INFO root fetch - processPackages [repelsec]: Remove: archive file [/home/abi/fetcher/tmp/repelsec-0.3.tar.gz]
 [2024-04-06 19:23:22] INFO root fetch - main [MainThread]: End processing [repelsec]: success
 [2024-04-06 19:23:22] INFO root fetch - main [MainThread]: Store serial: [22649698]
+[2024-04-06 19:25:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649698]
+[2024-04-06 19:25:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 19:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-bilichat
+[2024-04-06 19:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: marcel
+[2024-04-06 19:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: enkanetworkv2.py
+[2024-04-06 19:25:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hwi
+[2024-04-06 19:25:31] INFO root fetch - processPackages [enkanetworkv2.py]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-04-06 19:25:31] INFO root fetch - processPackages [hwi]: New version: [3.0.0rc1] Old Version: [3.0.0]
+[2024-04-06 19:25:31] INFO root fetch - processPackages [marcel]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-04-06 19:25:31] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [5.3.2] Old Version: [5.3.1]
+[2024-04-06 19:25:31] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/b0/7c/457f726bfd62bfab43917bada8ce1bb7bac6f79efc7f9faadaf6e01c97b9/enkanetworkV2.py-2.0.0.tar.gz
+[2024-04-06 19:25:31] INFO root fetch - processPackages [hwi]: Downloading https://files.pythonhosted.org/packages/6a/ec/7cf455a046c704856754111456c8ef4f53aa4057e8e4217578765ceb88a0/hwi-3.0.0.tar.gz
+[2024-04-06 19:25:31] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/3a/07/c626f18aa14df89e1f194e115cbffaa2d99bcfc736f7251795e2f889c0d6/marcel-0.9.8-py3-none-any.whl
+[2024-04-06 19:25:31] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/25/55/5092bdac16fd1250375c36ef6bacc65f95ddd560f6b2f27aeba4158530b7/nonebot_plugin_bilichat-5.3.1.tar.gz
+[2024-04-06 19:25:31] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-06 19:25:31] WARNING root fetch - processPackages [nonebot-plugin-bilichat]: Timeout reached during download
+[2024-04-06 19:25:31] WARNING root fetch - processPackages [marcel]: Timeout reached during download
+[2024-04-06 19:25:31] INFO root fetch - processPackages [enkanetworkv2.py]: Downloading https://files.pythonhosted.org/packages/8c/af/2281cc655394872b58f54af7e8e50b0d0defbd28a8654c26e6e3b88de247/enkanetworkv2.py-2.0.1.tar.gz
+[2024-04-06 19:25:31] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/b9/df/110716ce1b77f23ff2fe1902a82c1a2cbb09e24a2e4dd7fda8f8da742c62/nonebot_plugin_bilichat-5.3.2.tar.gz
+[2024-04-06 19:25:32] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/4b/3d/fd4bc1e7906ea7d19b4ad1010b8dce76e96202ac6886bcab6162db5f992f/marcel-0.9.9-py3-none-any.whl
+[2024-04-06 19:25:32] WARNING root fetch - processPackages [hwi]: Timeout reached during download
+[2024-04-06 19:25:32] WARNING root fetch - processPackages [enkanetworkv2.py]: Timeout reached during download
+[2024-04-06 19:25:32] INFO root fetch - processPackages [enkanetworkv2.py]: executing diffoscope
+[2024-04-06 19:25:32] INFO root fetch - processPackages [enkanetworkv2.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enkanetworkV2.py-2.0.0.tar.gz tmp/enkanetworkv2.py-2.0.1.tar.gz --markdown 20240406/e/enkanetworkv2.py/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2024-04-06 19:25:32] WARNING root fetch - processPackages [nonebot-plugin-bilichat]: Timeout reached during download
+[2024-04-06 19:25:32] WARNING root fetch - processPackages [marcel]: Timeout reached during download
+[2024-04-06 19:25:32] INFO root fetch - processPackages [marcel]: executing diffoscope
+[2024-04-06 19:25:32] INFO root fetch - processPackages [marcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcel-0.9.8-py3-none-any.whl.zip tmp/marcel-0.9.9-py3-none-any.whl.zip --markdown 20240406/m/marcel/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2024-04-06 19:25:32] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2024-04-06 19:25:32] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-5.3.1.tar.gz tmp/nonebot_plugin_bilichat-5.3.2.tar.gz --markdown 20240406/n/nonebot-plugin-bilichat/5.3.1-5.3.2/diff.md --exclude *.pyd
+[2024-04-06 19:25:32] INFO root fetch - processPackages [hwi]: Downloading https://files.pythonhosted.org/packages/76/a3/77141c3a52a37c855d80156d4354c33c18e9d704ff4890dfed3ed1b7b6a6/hwi-3.0.0rc1.tar.gz
+[2024-04-06 19:25:32] WARNING root fetch - processPackages [hwi]: Timeout reached during download
+[2024-04-06 19:25:32] INFO root fetch - processPackages [hwi]: executing diffoscope
+[2024-04-06 19:25:32] INFO root fetch - processPackages [hwi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hwi-3.0.0.tar.gz tmp/hwi-3.0.0rc1.tar.gz --markdown 20240406/h/hwi/3.0.0-3.0.0rc1/diff.md --exclude *.pyd
+[2024-04-06 19:25:33] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.3.1.tar.gz]
+[2024-04-06 19:25:33] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_bilichat-5.3.2.tar.gz]
+[2024-04-06 19:25:33] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2024-04-06 19:25:33] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.8-py3-none-any.whl.zip]
+[2024-04-06 19:25:33] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
+[2024-04-06 19:25:33] INFO root fetch - main [MainThread]: End processing [marcel]: success
+[2024-04-06 19:25:33] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkV2.py-2.0.0.tar.gz]
+[2024-04-06 19:25:33] INFO root fetch - processPackages [enkanetworkv2.py]: Remove: archive file [/home/abi/fetcher/tmp/enkanetworkv2.py-2.0.1.tar.gz]
+[2024-04-06 19:25:33] INFO root fetch - main [MainThread]: End processing [enkanetworkv2.py]: success
+[2024-04-06 19:25:33] INFO root fetch - processPackages [hwi]: Remove: archive file [/home/abi/fetcher/tmp/hwi-3.0.0.tar.gz]
+[2024-04-06 19:25:33] INFO root fetch - processPackages [hwi]: Remove: archive file [/home/abi/fetcher/tmp/hwi-3.0.0rc1.tar.gz]
+[2024-04-06 19:25:33] INFO root fetch - main [MainThread]: End processing [hwi]: success
+[2024-04-06 19:25:33] INFO root fetch - main [MainThread]: Store serial: [22649714]
