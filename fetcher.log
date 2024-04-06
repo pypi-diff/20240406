@@ -23377,3 +23377,64 @@ EOFError: EOF read where object expected
 [2024-04-06 21:50:13] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
 [2024-04-06 21:50:13] INFO root fetch - main [MainThread]: End processing [fhempy]: success
 [2024-04-06 21:50:13] INFO root fetch - main [MainThread]: Store serial: [22650595]
+[2024-04-06 21:52:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650595]
+[2024-04-06 21:52:23] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 21:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: download-tiktok-no-watermark
+[2024-04-06 21:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vulcan-logger
+[2024-04-06 21:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-semantic-release
+[2024-04-06 21:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fusio-sdk
+[2024-04-06 21:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Moe
+[2024-04-06 21:52:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dekpkglock
+[2024-04-06 21:52:23] INFO root fetch - processPackages [dekpkglock]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 21:52:23] INFO root fetch - processPackages [download-tiktok-no-watermark]: New version: [0.2.5] Old Version: [0.2.3]
+[2024-04-06 21:52:23] WARNING root fetch - processPackages [vulcan-logger]: Skipping, unable to determine old version
+[2024-04-06 21:52:23] INFO root fetch - main [MainThread]: End processing [vulcan-logger] error
+[2024-04-06 21:52:23] INFO root fetch - processPackages [fusio-sdk]: New version: [5.0.3] Old Version: [5.0.2]
+[2024-04-06 21:52:24] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/f5/8b/ba15a9437d7f84027f95f7edfad398c48cf840dd29c1b1e0c6d4696a8e24/dekpkglock-0.1.1.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/70/fd/e8c0d53b6fb88798fb28453221cb96a9d7b881b69a43deac62c3d88099e8/download_tiktok_no_watermark-0.2.3.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/b8/94/631c475b8fb1fecd599f1e3ea34ec955bb8619d0087cf9093f9cd502c47a/fusio-sdk-5.0.2.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [Moe]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-04-06 21:52:24] INFO root fetch - processPackages [python-semantic-release]: New version: [9.4.1] Old Version: [9.4.0]
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [fusio-sdk]: Timeout reached during download
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-06 21:52:24] INFO root fetch - processPackages [python-semantic-release]: Downloading https://files.pythonhosted.org/packages/a9/50/5a4390f06ad3bca629cb951eb7125bc53e43be18841a6202ade772421c2e/python-semantic-release-9.4.0.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [fusio-sdk]: Downloading https://files.pythonhosted.org/packages/fe/79/9b25cf96ad86d2f27c3cf327a3abebdee7f735276f80940498b79684ef8a/fusio-sdk-5.0.3.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [Moe]: Downloading https://files.pythonhosted.org/packages/d1/b3/5d20fec373b743304ebbd1c65ea22876806752a10d90298986db077e69f0/moe-2.1.1.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [download-tiktok-no-watermark]: Downloading https://files.pythonhosted.org/packages/cd/05/6cb9ecd5ccaaad4e3ed6c79043c5f20e2a4e2ad5ffc62e2fad2790074216/download_tiktok_no_watermark-0.2.5.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [dekpkglock]: Downloading https://files.pythonhosted.org/packages/12/83/413666c28660a57cea262b18a56b58859e95626bcd4c2bdf5a64a4a640db/dekpkglock-0.1.2.tar.gz
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [fusio-sdk]: Timeout reached during download
+[2024-04-06 21:52:24] INFO root fetch - processPackages [fusio-sdk]: executing diffoscope
+[2024-04-06 21:52:24] INFO root fetch - processPackages [fusio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fusio-sdk-5.0.2.tar.gz tmp/fusio-sdk-5.0.3.tar.gz --markdown 20240406/f/fusio-sdk/5.0.2-5.0.3/diff.md --exclude *.pyd
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [python-semantic-release]: Timeout reached during download
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [download-tiktok-no-watermark]: Timeout reached during download
+[2024-04-06 21:52:24] INFO root fetch - processPackages [download-tiktok-no-watermark]: executing diffoscope
+[2024-04-06 21:52:24] INFO root fetch - processPackages [download-tiktok-no-watermark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/download_tiktok_no_watermark-0.2.3.tar.gz tmp/download_tiktok_no_watermark-0.2.5.tar.gz --markdown 20240406/d/download-tiktok-no-watermark/0.2.3-0.2.5/diff.md --exclude *.pyd
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [Moe]: Timeout reached during download
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [dekpkglock]: Timeout reached during download
+[2024-04-06 21:52:24] INFO root fetch - processPackages [dekpkglock]: executing diffoscope
+[2024-04-06 21:52:24] INFO root fetch - processPackages [dekpkglock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekpkglock-0.1.1.tar.gz tmp/dekpkglock-0.1.2.tar.gz --markdown 20240406/d/dekpkglock/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 21:52:24] INFO root fetch - processPackages [python-semantic-release]: Downloading https://files.pythonhosted.org/packages/56/a1/22e5e01e8399e7f24dbc365d39ca5907862e257b4e92c30d5a618536de1c/python-semantic-release-9.4.1.tar.gz
+[2024-04-06 21:52:24] INFO root fetch - processPackages [Moe]: Downloading https://files.pythonhosted.org/packages/1c/7c/34efc310e0ef9fae8761c57fd006e662675f7a65e5e2864e0422e418158a/moe-2.1.2.tar.gz
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [python-semantic-release]: Timeout reached during download
+[2024-04-06 21:52:24] INFO root fetch - processPackages [python-semantic-release]: executing diffoscope
+[2024-04-06 21:52:24] INFO root fetch - processPackages [python-semantic-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-semantic-release-9.4.0.tar.gz tmp/python-semantic-release-9.4.1.tar.gz --markdown 20240406/p/python-semantic-release/9.4.0-9.4.1/diff.md --exclude *.pyd
+[2024-04-06 21:52:24] WARNING root fetch - processPackages [Moe]: Timeout reached during download
+[2024-04-06 21:52:24] INFO root fetch - processPackages [Moe]: executing diffoscope
+[2024-04-06 21:52:24] INFO root fetch - processPackages [Moe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moe-2.1.1.tar.gz tmp/moe-2.1.2.tar.gz --markdown 20240406/M/Moe/2.1.1-2.1.2/diff.md --exclude *.pyd
+[2024-04-06 21:52:25] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.1.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - processPackages [dekpkglock]: Remove: archive file [/home/abi/fetcher/tmp/dekpkglock-0.1.2.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - main [MainThread]: End processing [dekpkglock]: success
+[2024-04-06 21:52:25] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.3.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - processPackages [download-tiktok-no-watermark]: Remove: archive file [/home/abi/fetcher/tmp/download_tiktok_no_watermark-0.2.5.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - main [MainThread]: End processing [download-tiktok-no-watermark]: success
+[2024-04-06 21:52:25] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio-sdk-5.0.2.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - processPackages [fusio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/fusio-sdk-5.0.3.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - main [MainThread]: End processing [fusio-sdk]: success
+[2024-04-06 21:52:25] INFO root fetch - processPackages [Moe]: Remove: archive file [/home/abi/fetcher/tmp/moe-2.1.1.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - processPackages [Moe]: Remove: archive file [/home/abi/fetcher/tmp/moe-2.1.2.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - main [MainThread]: End processing [Moe]: success
+[2024-04-06 21:52:25] INFO root fetch - processPackages [python-semantic-release]: Remove: archive file [/home/abi/fetcher/tmp/python-semantic-release-9.4.0.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - processPackages [python-semantic-release]: Remove: archive file [/home/abi/fetcher/tmp/python-semantic-release-9.4.1.tar.gz]
+[2024-04-06 21:52:25] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
+[2024-04-06 21:52:25] INFO root fetch - main [MainThread]: Store serial: [22650613]
