@@ -13454,3 +13454,17 @@
 [2024-04-06 11:42:10] INFO root fetch - processPackages [WebScripts]: Remove: archive file [/home/abi/fetcher/tmp/WebScripts-3.0.9.tar.gz]
 [2024-04-06 11:42:10] INFO root fetch - main [MainThread]: End processing [WebScripts]: success
 [2024-04-06 11:42:10] INFO root fetch - main [MainThread]: Store serial: [22647099]
+[2024-04-06 11:44:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647099]
+[2024-04-06 11:44:19] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 11:44:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlx-image
+[2024-04-06 11:44:19] INFO root fetch - processPackages [mlx-image]: New version: [0.1.7] Old Version: [0.1.5]
+[2024-04-06 11:44:19] INFO root fetch - processPackages [mlx-image]: Downloading https://files.pythonhosted.org/packages/0f/93/4da4b7d69a24d87e72aab7a7bc4a0cfbf8b998397ccac848cd5ba1016838/mlx_image-0.1.5.tar.gz
+[2024-04-06 11:44:19] WARNING root fetch - processPackages [mlx-image]: Timeout reached during download
+[2024-04-06 11:44:19] INFO root fetch - processPackages [mlx-image]: Downloading https://files.pythonhosted.org/packages/9e/af/77df61b8c3d0b8f4ddea706eafe17458e00a47da4376d63ce4f2024670a9/mlx_image-0.1.7.tar.gz
+[2024-04-06 11:44:20] WARNING root fetch - processPackages [mlx-image]: Timeout reached during download
+[2024-04-06 11:44:20] INFO root fetch - processPackages [mlx-image]: executing diffoscope
+[2024-04-06 11:44:20] INFO root fetch - processPackages [mlx-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlx_image-0.1.5.tar.gz tmp/mlx_image-0.1.7.tar.gz --markdown 20240406/m/mlx-image/0.1.5-0.1.7/diff.md --exclude *.pyd
+[2024-04-06 11:44:20] INFO root fetch - processPackages [mlx-image]: Remove: archive file [/home/abi/fetcher/tmp/mlx_image-0.1.5.tar.gz]
+[2024-04-06 11:44:20] INFO root fetch - processPackages [mlx-image]: Remove: archive file [/home/abi/fetcher/tmp/mlx_image-0.1.7.tar.gz]
+[2024-04-06 11:44:20] INFO root fetch - main [MainThread]: End processing [mlx-image]: success
+[2024-04-06 11:44:20] INFO root fetch - main [MainThread]: Store serial: [22647102]
