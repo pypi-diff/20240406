@@ -14647,3 +14647,61 @@
 [2024-04-06 13:13:57] INFO root fetch - processPackages [pulumi-akamai]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_akamai-6.5.0a1712399669.tar.gz]
 [2024-04-06 13:13:57] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
 [2024-04-06 13:13:57] INFO root fetch - main [MainThread]: Store serial: [22647454]
+[2024-04-06 13:16:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647454]
+[2024-04-06 13:16:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 13:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iderare-pheno
+[2024-04-06 13:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-mysql
+[2024-04-06 13:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-hcloud
+[2024-04-06 13:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinx_minoo_theme
+[2024-04-06 13:16:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-kong
+[2024-04-06 13:16:23] INFO root fetch - processPackages [sphinx_minoo_theme]: New version: [1.0] Old Version: [0.9.7]
+[2024-04-06 13:16:23] INFO root fetch - processPackages [iderare-pheno]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-04-06 13:16:23] INFO root fetch - processPackages [pulumi-hcloud]: New version: [1.9.0a1657117726] Old Version: [1.9.0a1654086467]
+[2024-04-06 13:16:23] INFO root fetch - processPackages [sphinx_minoo_theme]: Downloading https://files.pythonhosted.org/packages/23/3d/9dd8fbca6bdd91a507008985dda90112f73a04a0d86fcc725158e2a354d5/sphinx_minoo_theme-0.9.7.zip
+[2024-04-06 13:16:23] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/fb/e2/1bc869ed3f1728085bc0f40ee6b92b5792764649d63047297ad77a7bbfaa/iderare-pheno-0.1.6.tar.gz
+[2024-04-06 13:16:23] INFO root fetch - processPackages [pulumi-mysql]: New version: [3.3.0a1712399750] Old Version: [3.3.0a1712122937]
+[2024-04-06 13:16:23] INFO root fetch - processPackages [pulumi-kong]: New version: [4.6.0a1712399900] Old Version: [4.6.0a1712122682]
+[2024-04-06 13:16:23] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 13:16:23] INFO root fetch - processPackages [pulumi-hcloud]: Downloading https://files.pythonhosted.org/packages/9e/22/c81b563f1969f4bcdaa7c4060d0d67a0d9deb4bc415487e125f459e269e7/pulumi_hcloud-1.9.0a1654086467.tar.gz
+[2024-04-06 13:16:23] WARNING root fetch - processPackages [sphinx_minoo_theme]: Timeout reached during download
+[2024-04-06 13:16:23] INFO root fetch - processPackages [pulumi-mysql]: Downloading https://files.pythonhosted.org/packages/45/cc/7f2aed3c980195f86062829f90bf6b81a4f3cd869ed9bef02030b67a6d8a/pulumi_mysql-3.3.0a1712122937.tar.gz
+[2024-04-06 13:16:23] WARNING root fetch - processPackages [pulumi-hcloud]: Timeout reached during download
+[2024-04-06 13:16:23] INFO root fetch - processPackages [sphinx_minoo_theme]: Downloading https://files.pythonhosted.org/packages/e7/43/8e9eb633fad94d148886cd7695e3e9f4eb3d08d8ebdba786d0efbc657869/sphinx_minoo_theme-1.0.tar.gz
+[2024-04-06 13:16:23] INFO root fetch - processPackages [pulumi-kong]: Downloading https://files.pythonhosted.org/packages/e8/b3/3663d82befb1904b4071ce32f46b7636a58b9f9bc16714f97ab23a34f845/pulumi_kong-4.6.0a1712122682.tar.gz
+[2024-04-06 13:16:23] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/04/04/3d2138b0fe35f891707a190701bf90cc96bcf06f40b0a7bb382938a9b5d8/iderare-pheno-0.1.7.tar.gz
+[2024-04-06 13:16:23] WARNING root fetch - processPackages [pulumi-kong]: Timeout reached during download
+[2024-04-06 13:16:23] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 13:16:23] INFO root fetch - processPackages [iderare-pheno]: executing diffoscope
+[2024-04-06 13:16:23] INFO root fetch - processPackages [iderare-pheno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iderare-pheno-0.1.6.tar.gz tmp/iderare-pheno-0.1.7.tar.gz --markdown 20240406/i/iderare-pheno/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2024-04-06 13:16:23] WARNING root fetch - processPackages [pulumi-mysql]: Timeout reached during download
+[2024-04-06 13:16:23] WARNING root fetch - processPackages [sphinx_minoo_theme]: Timeout reached during download
+[2024-04-06 13:16:23] INFO root fetch - processPackages [sphinx_minoo_theme]: executing diffoscope
+[2024-04-06 13:16:23] INFO root fetch - processPackages [sphinx_minoo_theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_minoo_theme-0.9.7.zip tmp/sphinx_minoo_theme-1.0.tar.gz --markdown 20240406/s/sphinx_minoo_theme/0.9.7-1.0/diff.md --exclude *.pyd
+[2024-04-06 13:16:23] INFO root fetch - processPackages [pulumi-hcloud]: Downloading https://files.pythonhosted.org/packages/de/c3/b526f6942ee390fb3e0e080d961419b28ee26cada0150934184297ffeb15/pulumi_hcloud-1.9.0a1657117726.tar.gz
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-mysql]: Downloading https://files.pythonhosted.org/packages/02/ee/bed8d76de62fd70b3d1d9d40747bb5f4b3999f40d61e3b4c319466e0a82e/pulumi_mysql-3.3.0a1712399750.tar.gz
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-kong]: Downloading https://files.pythonhosted.org/packages/9b/37/4ab830236f7911379e3c29e1a8bf7836fc3e709408bd754c9393b0b9b1cd/pulumi_kong-4.6.0a1712399900.tar.gz
+[2024-04-06 13:16:24] WARNING root fetch - processPackages [pulumi-hcloud]: Timeout reached during download
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-hcloud]: executing diffoscope
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-hcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_hcloud-1.9.0a1654086467.tar.gz tmp/pulumi_hcloud-1.9.0a1657117726.tar.gz --markdown 20240406/p/pulumi-hcloud/1.9.0a1654086467-1.9.0a1657117726/diff.md --exclude *.pyd
+[2024-04-06 13:16:24] WARNING root fetch - processPackages [pulumi-mysql]: Timeout reached during download
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-mysql]: executing diffoscope
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-mysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mysql-3.3.0a1712122937.tar.gz tmp/pulumi_mysql-3.3.0a1712399750.tar.gz --markdown 20240406/p/pulumi-mysql/3.3.0a1712122937-3.3.0a1712399750/diff.md --exclude *.pyd
+[2024-04-06 13:16:24] WARNING root fetch - processPackages [pulumi-kong]: Timeout reached during download
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-kong]: executing diffoscope
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-kong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kong-4.6.0a1712122682.tar.gz tmp/pulumi_kong-4.6.0a1712399900.tar.gz --markdown 20240406/p/pulumi-kong/4.6.0a1712122682-4.6.0a1712399900/diff.md --exclude *.pyd
+[2024-04-06 13:16:24] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.1.6.tar.gz]
+[2024-04-06 13:16:24] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.1.7.tar.gz]
+[2024-04-06 13:16:24] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-mysql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mysql-3.3.0a1712122937.tar.gz]
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-mysql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_mysql-3.3.0a1712399750.tar.gz]
+[2024-04-06 13:16:24] INFO root fetch - main [MainThread]: End processing [pulumi-mysql]: success
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-kong]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kong-4.6.0a1712122682.tar.gz]
+[2024-04-06 13:16:24] INFO root fetch - processPackages [pulumi-kong]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kong-4.6.0a1712399900.tar.gz]
+[2024-04-06 13:16:24] INFO root fetch - main [MainThread]: End processing [pulumi-kong]: success
+[2024-04-06 13:16:25] INFO root fetch - processPackages [pulumi-hcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_hcloud-1.9.0a1654086467.tar.gz]
+[2024-04-06 13:16:25] INFO root fetch - processPackages [pulumi-hcloud]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_hcloud-1.9.0a1657117726.tar.gz]
+[2024-04-06 13:16:25] INFO root fetch - main [MainThread]: End processing [pulumi-hcloud]: success
+[2024-04-06 13:16:25] INFO root fetch - processPackages [sphinx_minoo_theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_minoo_theme-0.9.7.zip]
+[2024-04-06 13:16:25] INFO root fetch - processPackages [sphinx_minoo_theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_minoo_theme-1.0.tar.gz]
+[2024-04-06 13:16:25] INFO root fetch - main [MainThread]: End processing [sphinx_minoo_theme]: success
+[2024-04-06 13:16:25] INFO root fetch - main [MainThread]: Store serial: [22647471]
