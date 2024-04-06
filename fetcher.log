@@ -16879,3 +16879,12 @@ EOFError: EOF read where object expected
 [2024-04-06 15:43:08] INFO root fetch - processPackages [assemblyline]: Remove: archive file [/home/abi/fetcher/tmp/assemblyline-4.5.1.dev8.tar.gz]
 [2024-04-06 15:43:08] INFO root fetch - main [MainThread]: End processing [assemblyline]: success
 [2024-04-06 15:43:08] INFO root fetch - main [MainThread]: Store serial: [22648280]
+[2024-04-06 15:45:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648280]
+[2024-04-06 15:45:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 15:45:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seeder
+[2024-04-06 15:45:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LughaatNLP
+[2024-04-06 15:45:16] WARNING root fetch - processPackages [seeder]: Skipping, unable to determine old version
+[2024-04-06 15:45:16] INFO root fetch - main [MainThread]: End processing [seeder] error
+[2024-04-06 15:45:16] WARNING root fetch - processPackages [LughaatNLP]: Skipping, unable to determine old version
+[2024-04-06 15:45:16] INFO root fetch - main [MainThread]: End processing [LughaatNLP] error
+[2024-04-06 15:45:16] INFO root fetch - main [MainThread]: Store serial: [22648289]
