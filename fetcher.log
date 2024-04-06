@@ -11537,3 +11537,28 @@
 [2024-04-06 09:06:16] INFO root fetch - processPackages [glhf]: Remove: archive file [/home/abi/fetcher/tmp/glhf-0.0a1.tar.gz]
 [2024-04-06 09:06:16] INFO root fetch - main [MainThread]: End processing [glhf]: success
 [2024-04-06 09:06:16] INFO root fetch - main [MainThread]: Store serial: [22646327]
+[2024-04-06 09:08:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646327]
+[2024-04-06 09:08:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 09:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-hub-nightly
+[2024-04-06 09:08:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: easy-encryption-tool
+[2024-04-06 09:08:24] INFO root fetch - processPackages [easy-encryption-tool]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-04-06 09:08:24] INFO root fetch - processPackages [easy-encryption-tool]: Downloading https://files.pythonhosted.org/packages/1f/21/333e5814b5e96ce25250458d005570c673eb9d8a16c66fe5b37b288ee84d/easy_encryption_tool-1.1.7-py3-none-any.whl
+[2024-04-06 09:08:24] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-04-06 09:08:25] WARNING root fetch - processPackages [easy-encryption-tool]: Timeout reached during download
+[2024-04-06 09:08:25] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-04-06 09:08:25] INFO root fetch - processPackages [easy-encryption-tool]: Downloading https://files.pythonhosted.org/packages/e9/52/85352b70779b5408e3291f75d99035923e706e30228972224e40fd9c97d6/easy_encryption_tool-1.1.8-py3-none-any.whl
+[2024-04-06 09:08:25] WARNING root fetch - processPackages [tf-hub-nightly]: Timeout reached during download
+[2024-04-06 09:08:25] WARNING root fetch - processPackages [easy-encryption-tool]: Timeout reached during download
+[2024-04-06 09:08:25] INFO root fetch - processPackages [easy-encryption-tool]: executing diffoscope
+[2024-04-06 09:08:25] INFO root fetch - processPackages [easy-encryption-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easy_encryption_tool-1.1.7-py3-none-any.whl.zip tmp/easy_encryption_tool-1.1.8-py3-none-any.whl.zip --markdown 20240406/e/easy-encryption-tool/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2024-04-06 09:08:25] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-04-06 09:08:25] WARNING root fetch - processPackages [tf-hub-nightly]: Timeout reached during download
+[2024-04-06 09:08:25] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-04-06 09:08:25] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240406/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/diff.md --exclude *.pyd
+[2024-04-06 09:08:25] INFO root fetch - processPackages [easy-encryption-tool]: Remove: archive file [/home/abi/fetcher/tmp/easy_encryption_tool-1.1.7-py3-none-any.whl.zip]
+[2024-04-06 09:08:25] INFO root fetch - processPackages [easy-encryption-tool]: Remove: archive file [/home/abi/fetcher/tmp/easy_encryption_tool-1.1.8-py3-none-any.whl.zip]
+[2024-04-06 09:08:25] INFO root fetch - main [MainThread]: End processing [easy-encryption-tool]: success
+[2024-04-06 09:08:26] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-04-06 09:08:26] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-04-06 09:08:26] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-04-06 09:08:26] INFO root fetch - main [MainThread]: Store serial: [22646331]
