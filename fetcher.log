@@ -8328,3 +8328,67 @@
 [2024-04-06 04:56:45] INFO root fetch - processPackages [screenapi-cli]: Remove: archive file [/home/abi/fetcher/tmp/screenapi_cli-0.1.5a0.tar.gz]
 [2024-04-06 04:56:45] INFO root fetch - main [MainThread]: End processing [screenapi-cli]: success
 [2024-04-06 04:56:45] INFO root fetch - main [MainThread]: Store serial: [22645071]
+[2024-04-06 04:58:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645071]
+[2024-04-06 04:58:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ffmpegcv
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jmcomic
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tinycio
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-account-statement-import-move-line
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CINOSUM
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addons-oca-bank-statement-import
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: zetascale
+[2024-04-06 04:58:54] INFO root fetch - processPackages [odoo-addons-oca-bank-statement-import]: New version: [16.0.20240227.0] Old Version: [16.0.20240125.0]
+[2024-04-06 04:58:54] WARNING root fetch - processPackages [odoo-addon-account-statement-import-move-line]: Skipping, unable to determine old version
+[2024-04-06 04:58:54] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-statement-import-move-line] error
+[2024-04-06 04:58:54] INFO root fetch - processPackages [tinycio]: New version: [0.7.0] Old Version: [0.6.3]
+[2024-04-06 04:58:54] WARNING root fetch - processPackages [CINOSUM]: Skipping, unable to determine old version
+[2024-04-06 04:58:54] INFO root fetch - main [MainThread]: End processing [CINOSUM] error
+[2024-04-06 04:58:54] INFO root fetch - processPackages [ffmpegcv]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 04:58:54] INFO root fetch - processPackages [jmcomic]: New version: [2.5.9] Old Version: [2.5.8]
+[2024-04-06 04:58:54] INFO root fetch - processPackages [zetascale]: New version: [2.3.6] Old Version: [2.3.5]
+[2024-04-06 04:58:54] INFO root fetch - processPackages [odoo-addons-oca-bank-statement-import]: Downloading https://files.pythonhosted.org/packages/3f/12/cdf3e638c8a505ffc318cde0193fea73a807590fe8089f6a982a54223c07/odoo_addons_oca_bank_statement_import-16.0.20240125.0-py3-none-any.whl
+[2024-04-06 04:58:55] INFO root fetch - processPackages [tinycio]: Downloading https://files.pythonhosted.org/packages/1b/5c/670388fbe7aa397a1788978faecf4fcd1cbcb70920266e98ab8a868ac477/tinycio-0.6.3.tar.gz
+[2024-04-06 04:58:55] INFO root fetch - processPackages [jmcomic]: Downloading https://files.pythonhosted.org/packages/c2/0b/692621ae083b6f0dae3e532855224aebd9a51564e2f1013a6ad08a38b41f/jmcomic-2.5.8.tar.gz
+[2024-04-06 04:58:55] INFO root fetch - processPackages [ffmpegcv]: Downloading https://files.pythonhosted.org/packages/36/ea/fe81bbe890e45a521f93a5d85df66db12aab579d7cd1d7f498b67869a354/ffmpegcv-0.3.8.tar.gz
+[2024-04-06 04:58:55] INFO root fetch - processPackages [zetascale]: Downloading https://files.pythonhosted.org/packages/d6/dc/113d538d24b35afe949478fc117df09c541a9bbf85dec172243187286277/zetascale-2.3.5.tar.gz
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [odoo-addons-oca-bank-statement-import]: Timeout reached during download
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [tinycio]: Timeout reached during download
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [ffmpegcv]: Timeout reached during download
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [jmcomic]: Timeout reached during download
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [zetascale]: Timeout reached during download
+[2024-04-06 04:58:55] INFO root fetch - processPackages [tinycio]: Downloading https://files.pythonhosted.org/packages/0d/18/640bd295844dfee8fa9cd6a509de806ef3b520e3a31eccadc59fb2885ca0/tinycio-0.7.0.tar.gz
+[2024-04-06 04:58:55] INFO root fetch - processPackages [odoo-addons-oca-bank-statement-import]: Downloading https://files.pythonhosted.org/packages/3b/42/47c0dccd11dc718ba7a7e503d6c7593f527db16e4da71d71a29dafdfb094/odoo_addons_oca_bank_statement_import-16.0.20240227.0-py3-none-any.whl
+[2024-04-06 04:58:55] INFO root fetch - processPackages [zetascale]: Downloading https://files.pythonhosted.org/packages/93/aa/da0871ce18d549f4ec26541c2b9f045923476896574a2363ccf809dbed99/zetascale-2.3.6.tar.gz
+[2024-04-06 04:58:55] INFO root fetch - processPackages [ffmpegcv]: Downloading https://files.pythonhosted.org/packages/26/97/1268a6b1c4a0a4dc57d19dd5e4df5659c6265773047de0584472e14ee704/ffmpegcv-0.3.9.tar.gz
+[2024-04-06 04:58:55] INFO root fetch - processPackages [jmcomic]: Downloading https://files.pythonhosted.org/packages/aa/5a/baa797c3a5be043df94ab0012e2b6ea0ad5182101a39dbc5e24dcdf26a93/jmcomic-2.5.9.tar.gz
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [tinycio]: Timeout reached during download
+[2024-04-06 04:58:55] INFO root fetch - processPackages [tinycio]: executing diffoscope
+[2024-04-06 04:58:55] INFO root fetch - processPackages [tinycio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tinycio-0.6.3.tar.gz tmp/tinycio-0.7.0.tar.gz --markdown 20240406/t/tinycio/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [odoo-addons-oca-bank-statement-import]: Timeout reached during download
+[2024-04-06 04:58:55] INFO root fetch - processPackages [odoo-addons-oca-bank-statement-import]: executing diffoscope
+[2024-04-06 04:58:55] INFO root fetch - processPackages [odoo-addons-oca-bank-statement-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_bank_statement_import-16.0.20240125.0-py3-none-any.whl.zip tmp/odoo_addons_oca_bank_statement_import-16.0.20240227.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addons-oca-bank-statement-import/16.0.20240125.0-16.0.20240227.0/diff.md --exclude *.pyd
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [ffmpegcv]: Timeout reached during download
+[2024-04-06 04:58:55] INFO root fetch - processPackages [ffmpegcv]: executing diffoscope
+[2024-04-06 04:58:55] INFO root fetch - processPackages [ffmpegcv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffmpegcv-0.3.8.tar.gz tmp/ffmpegcv-0.3.9.tar.gz --markdown 20240406/f/ffmpegcv/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [zetascale]: Timeout reached during download
+[2024-04-06 04:58:55] INFO root fetch - processPackages [zetascale]: executing diffoscope
+[2024-04-06 04:58:55] INFO root fetch - processPackages [zetascale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zetascale-2.3.5.tar.gz tmp/zetascale-2.3.6.tar.gz --markdown 20240406/z/zetascale/2.3.5-2.3.6/diff.md --exclude *.pyd
+[2024-04-06 04:58:55] WARNING root fetch - processPackages [jmcomic]: Timeout reached during download
+[2024-04-06 04:58:55] INFO root fetch - processPackages [jmcomic]: executing diffoscope
+[2024-04-06 04:58:55] INFO root fetch - processPackages [jmcomic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jmcomic-2.5.8.tar.gz tmp/jmcomic-2.5.9.tar.gz --markdown 20240406/j/jmcomic/2.5.8-2.5.9/diff.md --exclude *.pyd
+[2024-04-06 04:58:56] INFO root fetch - processPackages [ffmpegcv]: Remove: archive file [/home/abi/fetcher/tmp/ffmpegcv-0.3.8.tar.gz]
+[2024-04-06 04:58:56] INFO root fetch - processPackages [ffmpegcv]: Remove: archive file [/home/abi/fetcher/tmp/ffmpegcv-0.3.9.tar.gz]
+[2024-04-06 04:58:56] INFO root fetch - main [MainThread]: End processing [ffmpegcv]: success
+[2024-04-06 04:58:56] INFO root fetch - processPackages [tinycio]: Remove: archive file [/home/abi/fetcher/tmp/tinycio-0.6.3.tar.gz]
+[2024-04-06 04:58:56] INFO root fetch - processPackages [tinycio]: Remove: archive file [/home/abi/fetcher/tmp/tinycio-0.7.0.tar.gz]
+[2024-04-06 04:58:56] INFO root fetch - main [MainThread]: End processing [tinycio]: success
+[2024-04-06 04:58:56] INFO root fetch - processPackages [odoo-addons-oca-bank-statement-import]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_bank_statement_import-16.0.20240125.0-py3-none-any.whl.zip]
+[2024-04-06 04:58:56] INFO root fetch - processPackages [odoo-addons-oca-bank-statement-import]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addons_oca_bank_statement_import-16.0.20240227.0-py3-none-any.whl.zip]
+[2024-04-06 04:58:56] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-bank-statement-import]: success
+[2024-04-06 04:58:56] INFO root fetch - processPackages [jmcomic]: Remove: archive file [/home/abi/fetcher/tmp/jmcomic-2.5.8.tar.gz]
+[2024-04-06 04:58:56] INFO root fetch - processPackages [jmcomic]: Remove: archive file [/home/abi/fetcher/tmp/jmcomic-2.5.9.tar.gz]
+[2024-04-06 04:58:56] INFO root fetch - main [MainThread]: End processing [jmcomic]: success
+[2024-04-06 04:58:57] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.3.5.tar.gz]
+[2024-04-06 04:58:57] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.3.6.tar.gz]
+[2024-04-06 04:58:57] INFO root fetch - main [MainThread]: End processing [zetascale]: success
+[2024-04-06 04:58:57] INFO root fetch - main [MainThread]: Store serial: [22645093]
