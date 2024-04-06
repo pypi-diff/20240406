@@ -8009,3 +8009,91 @@
 [2024-04-06 04:30:49] INFO root fetch - processPackages [celldega]: Remove: archive file [/home/abi/fetcher/tmp/celldega-0.1.0.tar.gz]
 [2024-04-06 04:30:49] INFO root fetch - main [MainThread]: End processing [celldega]: success
 [2024-04-06 04:30:49] INFO root fetch - main [MainThread]: Store serial: [22644981]
+[2024-04-06 04:32:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644981]
+[2024-04-06 04:32:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 04:34:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644981]
+[2024-04-06 04:35:02] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 04:37:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644981]
+[2024-04-06 04:37:08] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CINOSUM
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo11-addon-account-financial-report
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo12-addon-account-financial-report
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo13-addon-account-financial-report
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: paddle-billing-python-sdk
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-account-financial-report
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-account-financial-report
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-account-financial-report
+[2024-04-06 04:37:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: meteoswiss-async
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo11-addon-account-financial-report]: New version: [11.0.2.6.0.99.dev9] Old Version: [11.0.2.6.0.99.dev8]
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [CINOSUM]: Skipping, unable to determine old version
+[2024-04-06 04:37:08] INFO root fetch - main [MainThread]: End processing [CINOSUM] error
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo11-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/1c/f1/9ec064d4d6b6073b05131f3dce7a01420cc7754e08b58fc922b08a462ba2/odoo11_addon_account_financial_report-11.0.2.6.0.99.dev8-py2.py3-none-any.whl
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo-addon-account-financial-report]: New version: [16.0.1.5.4.3] Old Version: [16.0.1.5.4.2]
+[2024-04-06 04:37:08] INFO root fetch - processPackages [paddle-billing-python-sdk]: New version: [0.1.0b2] Old Version: [0.1.0b1]
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo-addon-account-financial-report]: New version: [16.0.1.5.4.3] Old Version: [16.0.1.5.4.2]
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: New version: [12.0.1.5.4.99.dev3] Old Version: [12.0.1.5.4.99.dev2]
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [meteoswiss-async]: Skipping, unable to determine old version
+[2024-04-06 04:37:08] INFO root fetch - main [MainThread]: End processing [meteoswiss-async] error
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo13-addon-account-financial-report]: New version: [13.0.2.7.1.dev3] Old Version: [13.0.2.7.1.dev2]
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: New version: [14.0.3.9.3.dev9] Old Version: [14.0.3.9.3.dev6]
+[2024-04-06 04:37:08] INFO root fetch - processPackages [paddle-billing-python-sdk]: Downloading https://files.pythonhosted.org/packages/a4/ea/c67afe8199cda63bbc523fc7f4b67f2a843628e0c3f839874c1cffa3cb09/paddle-billing-python-sdk-0.1.0b1.tar.gz
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/7f/74/a9425f9d56ffb9b34d4cdd2c73d2acaed76977f32841b6a95f1b68bd3e7f/odoo_addon_account_financial_report-16.0.1.5.4.2-py3-none-any.whl
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/7f/74/a9425f9d56ffb9b34d4cdd2c73d2acaed76977f32841b6a95f1b68bd3e7f/odoo_addon_account_financial_report-16.0.1.5.4.2-py3-none-any.whl
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/53/27/c3e815630093fe089cabbb937fe9a7d09abb121b412dc5e2a9fe952caab2/odoo12_addon_account_financial_report-12.0.1.5.4.99.dev2-py3-none-any.whl
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [odoo11-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo13-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/05/10/522801925c52bc1e13f8345c0f768d32d1105c43ade0663d38de2c2ca3fd/odoo13_addon_account_financial_report-13.0.2.7.1.dev2-py3-none-any.whl
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/70/e2/66079b700096c9b2452b033a1b26ddb218b5eea2e4392442bcae03b815ca/odoo14_addon_account_financial_report-14.0.3.9.3.dev6-py3-none-any.whl
+[2024-04-06 04:37:08] INFO root fetch - processPackages [odoo11-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/ac/86/cb4e25c9d58ce80edd98242418d9b69b030dae40dee269f43cc5cc4d94f8/odoo11_addon_account_financial_report-11.0.2.6.0.99.dev9-py2.py3-none-any.whl
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [odoo14-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [paddle-billing-python-sdk]: Timeout reached during download
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [odoo-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [odoo12-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:08] WARNING root fetch - processPackages [odoo13-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [odoo-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [odoo11-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo11-addon-account-financial-report]: executing diffoscope
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo11-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_account_financial_report-11.0.2.6.0.99.dev8-py2.py3-none-any.whl.zip tmp/odoo11_addon_account_financial_report-11.0.2.6.0.99.dev9-py2.py3-none-any.whl.zip --markdown 20240406/o/odoo11-addon-account-financial-report/11.0.2.6.0.99.dev8-11.0.2.6.0.99.dev9/diff.md --exclude *.pyd
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/21/a7/771096313bde3d9574e0eb85bb4291d5412c96e493fa7c05aa1626d3c771/odoo14_addon_account_financial_report-14.0.3.9.3.dev9-py3-none-any.whl
+[2024-04-06 04:37:09] INFO root fetch - processPackages [paddle-billing-python-sdk]: Downloading https://files.pythonhosted.org/packages/05/53/7d692b442dfd3c996959735887dca6657b21a1f4be2112532db16a06575e/paddle-billing-python-sdk-0.1.0b2.tar.gz
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo13-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/f9/29/760223ce471d9dd1f1555d170dc1ad123847eb25674a51adf5d025aedb29/odoo13_addon_account_financial_report-13.0.2.7.1.dev3-py3-none-any.whl
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/60/ab/a5b3de731c92a3c9142786b00de576a56eddf0987e62ed87a3c787b17172/odoo12_addon_account_financial_report-12.0.1.5.4.99.dev3-py3-none-any.whl
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/f7/d4/669bc12d86b3ab06c2bc815d94f5d0e2d740b7f070d0beb0a444d54fb807/odoo_addon_account_financial_report-16.0.1.5.4.3-py3-none-any.whl
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/f7/d4/669bc12d86b3ab06c2bc815d94f5d0e2d740b7f070d0beb0a444d54fb807/odoo_addon_account_financial_report-16.0.1.5.4.3-py3-none-any.whl
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [paddle-billing-python-sdk]: Timeout reached during download
+[2024-04-06 04:37:09] INFO root fetch - processPackages [paddle-billing-python-sdk]: executing diffoscope
+[2024-04-06 04:37:09] INFO root fetch - processPackages [paddle-billing-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paddle-billing-python-sdk-0.1.0b1.tar.gz tmp/paddle-billing-python-sdk-0.1.0b2.tar.gz --markdown 20240406/p/paddle-billing-python-sdk/0.1.0b1-0.1.0b2/diff.md --exclude *.pyd
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [odoo13-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo13-addon-account-financial-report]: executing diffoscope
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo13-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_account_financial_report-13.0.2.7.1.dev2-py3-none-any.whl.zip tmp/odoo13_addon_account_financial_report-13.0.2.7.1.dev3-py3-none-any.whl.zip --markdown 20240406/o/odoo13-addon-account-financial-report/13.0.2.7.1.dev2-13.0.2.7.1.dev3/diff.md --exclude *.pyd
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [odoo14-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: executing diffoscope
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev6-py3-none-any.whl.zip tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev9-py3-none-any.whl.zip --markdown 20240406/o/odoo14-addon-account-financial-report/14.0.3.9.3.dev6-14.0.3.9.3.dev9/diff.md --exclude *.pyd
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [odoo12-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: executing diffoscope
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_financial_report-12.0.1.5.4.99.dev2-py3-none-any.whl.zip tmp/odoo12_addon_account_financial_report-12.0.1.5.4.99.dev3-py3-none-any.whl.zip --markdown 20240406/o/odoo12-addon-account-financial-report/12.0.1.5.4.99.dev2-12.0.1.5.4.99.dev3/diff.md --exclude *.pyd
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [odoo-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo-addon-account-financial-report]: executing diffoscope
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_financial_report-16.0.1.5.4.2-py3-none-any.whl.zip tmp/odoo_addon_account_financial_report-16.0.1.5.4.3-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-account-financial-report/16.0.1.5.4.2-16.0.1.5.4.3/diff.md --exclude *.pyd
+[2024-04-06 04:37:09] WARNING root fetch - processPackages [odoo-addon-account-financial-report]: Timeout reached during download
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo-addon-account-financial-report]: executing diffoscope
+[2024-04-06 04:37:09] INFO root fetch - processPackages [odoo-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_financial_report-16.0.1.5.4.2-py3-none-any.whl.zip tmp/odoo_addon_account_financial_report-16.0.1.5.4.3-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-account-financial-report/16.0.1.5.4.2-16.0.1.5.4.3/diff.md --exclude *.pyd
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo11-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo11_addon_account_financial_report-11.0.2.6.0.99.dev8-py2.py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo11-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo11_addon_account_financial_report-11.0.2.6.0.99.dev9-py2.py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [odoo11-addon-account-financial-report]: success
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo13-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_account_financial_report-13.0.2.7.1.dev2-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo13-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo13_addon_account_financial_report-13.0.2.7.1.dev3-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [odoo13-addon-account-financial-report]: success
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev6-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_account_financial_report-14.0.3.9.3.dev9-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-financial-report]: success
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_financial_report-12.0.1.5.4.99.dev2-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo12-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_account_financial_report-12.0.1.5.4.99.dev3-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-financial-report]: success
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_financial_report-16.0.1.5.4.2-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - processPackages [odoo-addon-account-financial-report]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_financial_report-16.0.1.5.4.3-py3-none-any.whl.zip]
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
+[2024-04-06 04:37:10] INFO root fetch - processPackages [paddle-billing-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/paddle-billing-python-sdk-0.1.0b1.tar.gz]
+[2024-04-06 04:37:10] INFO root fetch - processPackages [paddle-billing-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/paddle-billing-python-sdk-0.1.0b2.tar.gz]
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [paddle-billing-python-sdk]: success
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-financial-report]: success
+[2024-04-06 04:37:10] INFO root fetch - main [MainThread]: Store serial: [22645006]
