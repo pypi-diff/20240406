@@ -20010,3 +20010,53 @@ EOFError: EOF read where object expected
 [2024-04-06 18:48:28] INFO root fetch - processPackages [datalad]: Remove: archive file [/home/abi/fetcher/tmp/datalad-1.0.0.tar.gz]
 [2024-04-06 18:48:28] INFO root fetch - main [MainThread]: End processing [datalad]: success
 [2024-04-06 18:48:28] INFO root fetch - main [MainThread]: Store serial: [22649490]
+[2024-04-06 18:50:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649490]
+[2024-04-06 18:50:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 18:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shell-gpt
+[2024-04-06 18:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qtile
+[2024-04-06 18:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openapi-ts
+[2024-04-06 18:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-pgbulk
+[2024-04-06 18:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-strict-fields
+[2024-04-06 18:50:37] INFO root fetch - processPackages [shell-gpt]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-06 18:50:37] INFO root fetch - processPackages [qtile]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-04-06 18:50:37] WARNING root fetch - processPackages [openapi-ts]: Skipping, unable to determine old version
+[2024-04-06 18:50:37] INFO root fetch - main [MainThread]: End processing [openapi-ts] error
+[2024-04-06 18:50:37] INFO root fetch - processPackages [django-pgbulk]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-04-06 18:50:37] INFO root fetch - processPackages [django-strict-fields]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-04-06 18:50:37] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/5d/df/9297339587e24055dc47555e3b530adff9899051548c5b46a0aa186464d7/shell_gpt-1.4.0.tar.gz
+[2024-04-06 18:50:37] INFO root fetch - processPackages [qtile]: Downloading https://files.pythonhosted.org/packages/46/c9/a8b600a7e50ff68445ed4e60b694e25fb98b86bce85117c54793b0751717/qtile-0.9.0.tar.gz
+[2024-04-06 18:50:37] WARNING root fetch - processPackages [shell-gpt]: Timeout reached during download
+[2024-04-06 18:50:37] INFO root fetch - processPackages [django-pgbulk]: Downloading https://files.pythonhosted.org/packages/31/50/56dba1dbad8c88788a2e021dfb34e2a5b9a4899c1152da01e42137b65a79/django_pgbulk-2.3.0.tar.gz
+[2024-04-06 18:50:37] INFO root fetch - processPackages [django-strict-fields]: Downloading https://files.pythonhosted.org/packages/0b/7e/7f5ebaa740e8b8ace0785bfcc07ef92fe88f7fcd763e18450a31b127b127/django_strict_fields-1.3.0.tar.gz
+[2024-04-06 18:50:37] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/0e/8c/8f2f98eb2287e51a150a61576243e1cc75e7bfc33f904c83a17af6bd5a6e/shell_gpt-1.4.1.tar.gz
+[2024-04-06 18:50:37] WARNING root fetch - processPackages [django-pgbulk]: Timeout reached during download
+[2024-04-06 18:50:38] WARNING root fetch - processPackages [shell-gpt]: Timeout reached during download
+[2024-04-06 18:50:38] INFO root fetch - processPackages [shell-gpt]: executing diffoscope
+[2024-04-06 18:50:38] INFO root fetch - processPackages [shell-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell_gpt-1.4.0.tar.gz tmp/shell_gpt-1.4.1.tar.gz --markdown 20240406/s/shell-gpt/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2024-04-06 18:50:38] WARNING root fetch - processPackages [qtile]: Timeout reached during download
+[2024-04-06 18:50:38] WARNING root fetch - processPackages [django-strict-fields]: Timeout reached during download
+[2024-04-06 18:50:38] INFO root fetch - processPackages [django-pgbulk]: Downloading https://files.pythonhosted.org/packages/7d/d4/f4bb75647750c6992f51cd32bdd4de373fade4cce0a89e4f8b2375d0d254/django_pgbulk-2.3.1.tar.gz
+[2024-04-06 18:50:38] INFO root fetch - processPackages [qtile]: Downloading https://files.pythonhosted.org/packages/a9/b2/3739b2468ab0a208b4f4879787cd21d63c96f02e72786d4dfa261ec53c12/qtile-0.9.1.tar.gz
+[2024-04-06 18:50:38] INFO root fetch - processPackages [django-strict-fields]: Downloading https://files.pythonhosted.org/packages/87/7d/bb521c9b1701014677d440c9eed7fb01988940e8aa97bbf830d2d80b4acb/django_strict_fields-1.3.1.tar.gz
+[2024-04-06 18:50:38] WARNING root fetch - processPackages [django-pgbulk]: Timeout reached during download
+[2024-04-06 18:50:38] INFO root fetch - processPackages [django-pgbulk]: executing diffoscope
+[2024-04-06 18:50:38] INFO root fetch - processPackages [django-pgbulk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_pgbulk-2.3.0.tar.gz tmp/django_pgbulk-2.3.1.tar.gz --markdown 20240406/d/django-pgbulk/2.3.0-2.3.1/diff.md --exclude *.pyd
+[2024-04-06 18:50:38] INFO root fetch - processPackages [shell-gpt]: Remove: archive file [/home/abi/fetcher/tmp/shell_gpt-1.4.0.tar.gz]
+[2024-04-06 18:50:38] INFO root fetch - processPackages [shell-gpt]: Remove: archive file [/home/abi/fetcher/tmp/shell_gpt-1.4.1.tar.gz]
+[2024-04-06 18:50:38] INFO root fetch - main [MainThread]: End processing [shell-gpt]: success
+[2024-04-06 18:50:38] WARNING root fetch - processPackages [qtile]: Timeout reached during download
+[2024-04-06 18:50:38] INFO root fetch - processPackages [qtile]: executing diffoscope
+[2024-04-06 18:50:38] INFO root fetch - processPackages [qtile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtile-0.9.0.tar.gz tmp/qtile-0.9.1.tar.gz --markdown 20240406/q/qtile/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2024-04-06 18:50:38] WARNING root fetch - processPackages [django-strict-fields]: Timeout reached during download
+[2024-04-06 18:50:38] INFO root fetch - processPackages [django-strict-fields]: executing diffoscope
+[2024-04-06 18:50:38] INFO root fetch - processPackages [django-strict-fields]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_strict_fields-1.3.0.tar.gz tmp/django_strict_fields-1.3.1.tar.gz --markdown 20240406/d/django-strict-fields/1.3.0-1.3.1/diff.md --exclude *.pyd
+[2024-04-06 18:50:39] INFO root fetch - processPackages [django-pgbulk]: Remove: archive file [/home/abi/fetcher/tmp/django_pgbulk-2.3.0.tar.gz]
+[2024-04-06 18:50:39] INFO root fetch - processPackages [django-pgbulk]: Remove: archive file [/home/abi/fetcher/tmp/django_pgbulk-2.3.1.tar.gz]
+[2024-04-06 18:50:39] INFO root fetch - main [MainThread]: End processing [django-pgbulk]: success
+[2024-04-06 18:50:39] INFO root fetch - processPackages [django-strict-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_strict_fields-1.3.0.tar.gz]
+[2024-04-06 18:50:39] INFO root fetch - processPackages [django-strict-fields]: Remove: archive file [/home/abi/fetcher/tmp/django_strict_fields-1.3.1.tar.gz]
+[2024-04-06 18:50:39] INFO root fetch - main [MainThread]: End processing [django-strict-fields]: success
+[2024-04-06 18:50:39] INFO root fetch - processPackages [qtile]: Remove: archive file [/home/abi/fetcher/tmp/qtile-0.9.0.tar.gz]
+[2024-04-06 18:50:39] INFO root fetch - processPackages [qtile]: Remove: archive file [/home/abi/fetcher/tmp/qtile-0.9.1.tar.gz]
+[2024-04-06 18:50:39] INFO root fetch - main [MainThread]: End processing [qtile]: success
+[2024-04-06 18:50:39] INFO root fetch - main [MainThread]: Store serial: [22649507]
