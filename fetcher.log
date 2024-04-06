@@ -25144,3 +25144,72 @@ EOFError: EOF read where object expected
 [2024-04-06 23:40:10] INFO root fetch - processPackages [vellum-ai]: Remove: archive file [/home/abi/fetcher/tmp/vellum_ai-0.3.9.tar.gz]
 [2024-04-06 23:40:10] INFO root fetch - main [MainThread]: End processing [vellum-ai]: success
 [2024-04-06 23:40:10] INFO root fetch - main [MainThread]: Store serial: [22651334]
+[2024-04-06 23:42:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651334]
+[2024-04-06 23:42:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 23:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: atypical
+[2024-04-06 23:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TokenProbs
+[2024-04-06 23:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brahmai
+[2024-04-06 23:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: amilib
+[2024-04-06 23:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vulcan-logger
+[2024-04-06 23:42:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: service-oriented
+[2024-04-06 23:42:19] INFO root fetch - processPackages [vulcan-logger]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-06 23:42:19] INFO root fetch - processPackages [atypical]: New version: [0.2.0] Old Version: [0.0.0]
+[2024-04-06 23:42:19] INFO root fetch - processPackages [TokenProbs]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 23:42:19] INFO root fetch - processPackages [service-oriented]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2024-04-06 23:42:19] INFO root fetch - processPackages [brahmai]: New version: [0.0.1.0.1a3] Old Version: [0.0.1.0.1a2]
+[2024-04-06 23:42:19] INFO root fetch - processPackages [amilib]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 23:42:19] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/f5/3f/552d0f2ca9b5d9b5dee0057724885f844c83896f97bec43eb7c0acfafec1/TokenProbs-0.0.8.tar.gz
+[2024-04-06 23:42:19] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/9f/35/a225d97a6772f103ec0ecc2da6d731def467557e73214d90b19145298b1d/vulcan-logger-1.3.8.tar.gz
+[2024-04-06 23:42:19] INFO root fetch - processPackages [brahmai]: Downloading https://files.pythonhosted.org/packages/5b/ff/62e5a43cf098c348d871d18cebb1eda1f9a4a69dd3b87e0f6ebcdb63ec87/brahmai-0.0.1.0.1a2.tar.gz
+[2024-04-06 23:42:19] INFO root fetch - processPackages [service-oriented]: Downloading https://files.pythonhosted.org/packages/cc/e0/a196a6cd6ec1d279dbc362dd8d9d940370eb873c7d3aa02032dc3dd534ba/service_oriented-0.0.2a8.tar.gz
+[2024-04-06 23:42:19] INFO root fetch - processPackages [atypical]: Downloading https://files.pythonhosted.org/packages/47/83/43bc8c77c39f7ad66740c9b2419bfe2fc806b5976768d288903bf81702c8/atypical-0.0.0.tar.gz
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [service-oriented]: Timeout reached during download
+[2024-04-06 23:42:19] INFO root fetch - processPackages [amilib]: Downloading https://files.pythonhosted.org/packages/c5/49/ac4d728ea246eebcfdfb01553f0262be458a8357ef12036a4893e73b11db/amilib-0.0.2.tar.gz
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [atypical]: Timeout reached during download
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [brahmai]: Timeout reached during download
+[2024-04-06 23:42:19] INFO root fetch - processPackages [TokenProbs]: Downloading https://files.pythonhosted.org/packages/29/ba/735a795841268a89d2be19af5ef66f193d7169a133194e72569ecf328149/TokenProbs-0.0.9.tar.gz
+[2024-04-06 23:42:19] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/99/24/090cc2eb216035dfa61b40cefdc573a33824a23677c4b9a8b5eabeeb5b70/vulcan-logger-1.3.9.tar.gz
+[2024-04-06 23:42:19] INFO root fetch - processPackages [atypical]: Downloading https://files.pythonhosted.org/packages/d4/cb/7b2b6fef90177b23dd1ac8cbd39460512d9da1045ceadb8638c61a21bd3f/atypical-0.2.0.tar.gz
+[2024-04-06 23:42:19] INFO root fetch - processPackages [service-oriented]: Downloading https://files.pythonhosted.org/packages/91/93/8808e2b0a7e857434b3c8a2d8ecd72eb853035e8af948edf46e51c3d1101/service_oriented-0.0.2a9.tar.gz
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [TokenProbs]: Timeout reached during download
+[2024-04-06 23:42:19] INFO root fetch - processPackages [TokenProbs]: executing diffoscope
+[2024-04-06 23:42:19] INFO root fetch - processPackages [TokenProbs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TokenProbs-0.0.8.tar.gz tmp/TokenProbs-0.0.9.tar.gz --markdown 20240406/T/TokenProbs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:42:19] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-06 23:42:19] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.8.tar.gz tmp/vulcan-logger-1.3.9.tar.gz --markdown 20240406/v/vulcan-logger/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2024-04-06 23:42:19] INFO root fetch - processPackages [brahmai]: Downloading https://files.pythonhosted.org/packages/0a/9a/a3902879730c340f8a0f4098b6285aac8c4f6532c87a3f619c5f4753927f/brahmai-0.0.1.0.1a3.tar.gz
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [atypical]: Timeout reached during download
+[2024-04-06 23:42:19] INFO root fetch - processPackages [atypical]: executing diffoscope
+[2024-04-06 23:42:19] INFO root fetch - processPackages [atypical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atypical-0.0.0.tar.gz tmp/atypical-0.2.0.tar.gz --markdown 20240406/a/atypical/0.0.0-0.2.0/diff.md --exclude *.pyd
+[2024-04-06 23:42:19] WARNING root fetch - processPackages [service-oriented]: Timeout reached during download
+[2024-04-06 23:42:19] INFO root fetch - processPackages [service-oriented]: executing diffoscope
+[2024-04-06 23:42:19] INFO root fetch - processPackages [service-oriented]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/service_oriented-0.0.2a8.tar.gz tmp/service_oriented-0.0.2a9.tar.gz --markdown 20240406/s/service-oriented/0.0.2a8-0.0.2a9/diff.md --exclude *.pyd
+[2024-04-06 23:42:20] WARNING root fetch - processPackages [brahmai]: Timeout reached during download
+[2024-04-06 23:42:20] INFO root fetch - processPackages [brahmai]: executing diffoscope
+[2024-04-06 23:42:20] INFO root fetch - processPackages [brahmai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brahmai-0.0.1.0.1a2.tar.gz tmp/brahmai-0.0.1.0.1a3.tar.gz --markdown 20240406/b/brahmai/0.0.1.0.1a2-0.0.1.0.1a3/diff.md --exclude *.pyd
+[2024-04-06 23:42:20] WARNING root fetch - processPackages [amilib]: Timeout reached during download
+[2024-04-06 23:42:20] INFO root fetch - processPackages [amilib]: Downloading https://files.pythonhosted.org/packages/bb/8f/ef646b6bd3a698e7ba9e720b215d6ee079f1b6657fc9942758b5b8d94f02/amilib-0.0.3.tar.gz
+[2024-04-06 23:42:20] WARNING root fetch - processPackages [amilib]: Timeout reached during download
+[2024-04-06 23:42:20] INFO root fetch - processPackages [amilib]: executing diffoscope
+[2024-04-06 23:42:20] INFO root fetch - processPackages [amilib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amilib-0.0.2.tar.gz tmp/amilib-0.0.3.tar.gz --markdown 20240406/a/amilib/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 23:42:20] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.8.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.9.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-06 23:42:20] INFO root fetch - processPackages [atypical]: Remove: archive file [/home/abi/fetcher/tmp/atypical-0.0.0.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - processPackages [atypical]: Remove: archive file [/home/abi/fetcher/tmp/atypical-0.2.0.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - main [MainThread]: End processing [atypical]: success
+[2024-04-06 23:42:20] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.8.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - processPackages [TokenProbs]: Remove: archive file [/home/abi/fetcher/tmp/TokenProbs-0.0.9.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - main [MainThread]: End processing [TokenProbs]: success
+[2024-04-06 23:42:20] INFO root fetch - processPackages [service-oriented]: Remove: archive file [/home/abi/fetcher/tmp/service_oriented-0.0.2a8.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - processPackages [service-oriented]: Remove: archive file [/home/abi/fetcher/tmp/service_oriented-0.0.2a9.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - main [MainThread]: End processing [service-oriented]: success
+[2024-04-06 23:42:20] INFO root fetch - processPackages [brahmai]: Remove: archive file [/home/abi/fetcher/tmp/brahmai-0.0.1.0.1a2.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - processPackages [brahmai]: Remove: archive file [/home/abi/fetcher/tmp/brahmai-0.0.1.0.1a3.tar.gz]
+[2024-04-06 23:42:20] INFO root fetch - main [MainThread]: End processing [brahmai]: success
+[2024-04-06 23:42:21] INFO root fetch - processPackages [amilib]: Remove: archive file [/home/abi/fetcher/tmp/amilib-0.0.2.tar.gz]
+[2024-04-06 23:42:21] INFO root fetch - processPackages [amilib]: Remove: archive file [/home/abi/fetcher/tmp/amilib-0.0.3.tar.gz]
+[2024-04-06 23:42:21] INFO root fetch - main [MainThread]: End processing [amilib]: success
+[2024-04-06 23:42:21] INFO root fetch - main [MainThread]: Store serial: [22651350]
