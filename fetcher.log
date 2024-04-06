@@ -13535,3 +13535,50 @@
 [2024-04-06 11:50:50] INFO root fetch - processPackages [JaxFin]: Remove: archive file [/home/abi/fetcher/tmp/JaxFin-0.3.1.tar.gz]
 [2024-04-06 11:50:50] INFO root fetch - main [MainThread]: End processing [JaxFin]: success
 [2024-04-06 11:50:50] INFO root fetch - main [MainThread]: Store serial: [22647122]
+[2024-04-06 11:52:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647122]
+[2024-04-06 11:52:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 11:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lungmask
+[2024-04-06 11:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flask-dbmigrant
+[2024-04-06 11:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kkpyui
+[2024-04-06 11:52:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iderare-pheno
+[2024-04-06 11:52:58] INFO root fetch - processPackages [iderare-pheno]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-06 11:52:58] INFO root fetch - processPackages [flask-dbmigrant]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 11:52:58] INFO root fetch - processPackages [kkpyui]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-04-06 11:52:59] INFO root fetch - processPackages [flask-dbmigrant]: Downloading https://files.pythonhosted.org/packages/48/99/484dbba4e0f7c8f96a86f171a2165b7bd78ef882ef2e138b7577c7ba9dda/flask_dbmigrant-1.0.0.tar.gz
+[2024-04-06 11:52:59] INFO root fetch - processPackages [lungmask]: New version: [0.2.20] Old Version: [0.2.19]
+[2024-04-06 11:52:59] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/2f/72/7f37c9071384c52da0ce987ae47d1b7cc0518f058349895ed4c081bb4bcd/kkpyui-0.9.4.tar.gz
+[2024-04-06 11:52:59] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/23/7b/1e82a597d2723534df33670daa80b2230695c14ac079f73d7bb2289d7504/iderare-pheno-0.1.3.tar.gz
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [flask-dbmigrant]: Timeout reached during download
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 11:52:59] INFO root fetch - processPackages [lungmask]: Downloading https://files.pythonhosted.org/packages/f2/0d/4b456c0362b7984bff581988c3e7810e840c77f99bdf7d3f8e9cc592e4ae/lungmask-0.2.19.tar.gz
+[2024-04-06 11:52:59] INFO root fetch - processPackages [flask-dbmigrant]: Downloading https://files.pythonhosted.org/packages/32/d1/0c0e7aad318439e1574ffdc0eb3013599144183bcea257e8180d72037fac/flask_dbmigrant-1.0.1.tar.gz
+[2024-04-06 11:52:59] INFO root fetch - processPackages [kkpyui]: Downloading https://files.pythonhosted.org/packages/fc/9a/f1edfb0fcbcd4f8acd8bd78fe9455405427448ed3d2f2c36e987ac03a04d/kkpyui-0.9.5.tar.gz
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [flask-dbmigrant]: Timeout reached during download
+[2024-04-06 11:52:59] INFO root fetch - processPackages [flask-dbmigrant]: executing diffoscope
+[2024-04-06 11:52:59] INFO root fetch - processPackages [flask-dbmigrant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flask_dbmigrant-1.0.0.tar.gz tmp/flask_dbmigrant-1.0.1.tar.gz --markdown 20240406/f/flask-dbmigrant/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [lungmask]: Timeout reached during download
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [kkpyui]: Timeout reached during download
+[2024-04-06 11:52:59] INFO root fetch - processPackages [kkpyui]: executing diffoscope
+[2024-04-06 11:52:59] INFO root fetch - processPackages [kkpyui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kkpyui-0.9.4.tar.gz tmp/kkpyui-0.9.5.tar.gz --markdown 20240406/k/kkpyui/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2024-04-06 11:52:59] INFO root fetch - processPackages [iderare-pheno]: Downloading https://files.pythonhosted.org/packages/d2/ca/45b9cc93d4f8874bd2ab8f7be20358d192c3657d5db857c4820404fb3f56/iderare-pheno-0.1.4.tar.gz
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [iderare-pheno]: Timeout reached during download
+[2024-04-06 11:52:59] INFO root fetch - processPackages [iderare-pheno]: executing diffoscope
+[2024-04-06 11:52:59] INFO root fetch - processPackages [iderare-pheno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iderare-pheno-0.1.3.tar.gz tmp/iderare-pheno-0.1.4.tar.gz --markdown 20240406/i/iderare-pheno/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 11:52:59] INFO root fetch - processPackages [lungmask]: Downloading https://files.pythonhosted.org/packages/8b/0c/fe7577b6b2f6f9477dd36b93792858c24cf9a66565e1145e91428ddecd50/lungmask-0.2.20.tar.gz
+[2024-04-06 11:52:59] WARNING root fetch - processPackages [lungmask]: Timeout reached during download
+[2024-04-06 11:52:59] INFO root fetch - processPackages [lungmask]: executing diffoscope
+[2024-04-06 11:52:59] INFO root fetch - processPackages [lungmask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lungmask-0.2.19.tar.gz tmp/lungmask-0.2.20.tar.gz --markdown 20240406/l/lungmask/0.2.19-0.2.20/diff.md --exclude *.pyd
+[2024-04-06 11:53:00] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.4.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - processPackages [kkpyui]: Remove: archive file [/home/abi/fetcher/tmp/kkpyui-0.9.5.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - main [MainThread]: End processing [kkpyui]: success
+[2024-04-06 11:53:00] INFO root fetch - processPackages [flask-dbmigrant]: Remove: archive file [/home/abi/fetcher/tmp/flask_dbmigrant-1.0.0.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - processPackages [flask-dbmigrant]: Remove: archive file [/home/abi/fetcher/tmp/flask_dbmigrant-1.0.1.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - main [MainThread]: End processing [flask-dbmigrant]: success
+[2024-04-06 11:53:00] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.1.3.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - processPackages [iderare-pheno]: Remove: archive file [/home/abi/fetcher/tmp/iderare-pheno-0.1.4.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - main [MainThread]: End processing [iderare-pheno]: success
+[2024-04-06 11:53:00] INFO root fetch - processPackages [lungmask]: Remove: archive file [/home/abi/fetcher/tmp/lungmask-0.2.19.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - processPackages [lungmask]: Remove: archive file [/home/abi/fetcher/tmp/lungmask-0.2.20.tar.gz]
+[2024-04-06 11:53:00] INFO root fetch - main [MainThread]: End processing [lungmask]: success
+[2024-04-06 11:53:00] INFO root fetch - main [MainThread]: Store serial: [22647134]
