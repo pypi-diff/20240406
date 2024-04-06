@@ -10721,3 +10721,9 @@
 [2024-04-06 07:54:01] INFO root fetch - processPackages [cronken]: Remove: archive file [/home/abi/fetcher/tmp/cronken-0.1.7.tar.gz]
 [2024-04-06 07:54:01] INFO root fetch - main [MainThread]: End processing [cronken]: success
 [2024-04-06 07:54:01] INFO root fetch - main [MainThread]: Store serial: [22645934]
+[2024-04-06 07:56:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645934]
+[2024-04-06 07:56:10] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 07:56:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bosing
+[2024-04-06 07:56:10] WARNING root fetch - processPackages [bosing]: Skipping, unable to determine old version
+[2024-04-06 07:56:10] INFO root fetch - main [MainThread]: End processing [bosing] error
+[2024-04-06 07:56:10] INFO root fetch - main [MainThread]: Store serial: [22645941]
