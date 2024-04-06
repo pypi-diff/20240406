@@ -14705,3 +14705,39 @@
 [2024-04-06 13:16:25] INFO root fetch - processPackages [sphinx_minoo_theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_minoo_theme-1.0.tar.gz]
 [2024-04-06 13:16:25] INFO root fetch - main [MainThread]: End processing [sphinx_minoo_theme]: success
 [2024-04-06 13:16:25] INFO root fetch - main [MainThread]: Store serial: [22647471]
+[2024-04-06 13:18:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647471]
+[2024-04-06 13:18:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 13:18:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-index-readers-wikipedia
+[2024-04-06 13:18:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moto
+[2024-04-06 13:18:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-ec
+[2024-04-06 13:18:34] INFO root fetch - processPackages [moto]: New version: [5.0.5.dev9] Old Version: [5.0.5.dev8]
+[2024-04-06 13:18:34] INFO root fetch - processPackages [llama-index-readers-wikipedia]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-06 13:18:34] INFO root fetch - processPackages [pulumi-ec]: New version: [0.8.1a1712399688] Old Version: [0.8.0]
+[2024-04-06 13:18:34] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/ed/46/2a9361da84c96246dd0cc47567b9cdc7059baf5a4a390c4c1f43decbed34/moto-5.0.5.dev8.tar.gz
+[2024-04-06 13:18:34] INFO root fetch - processPackages [llama-index-readers-wikipedia]: Downloading https://files.pythonhosted.org/packages/8b/ee/86ee1b0401f93bf269f85b2c6245b28074a524490c70d76daa86d1ff7879/llama_index_readers_wikipedia-0.1.3.tar.gz
+[2024-04-06 13:18:34] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/5b/5e/c0b02cc1f85aee9a1e93fbc7cb9424135a638e453ea2ca201ab8aef3a4fb/pulumi_ec-0.8.0.tar.gz
+[2024-04-06 13:18:35] WARNING root fetch - processPackages [pulumi-ec]: Timeout reached during download
+[2024-04-06 13:18:35] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 13:18:35] WARNING root fetch - processPackages [llama-index-readers-wikipedia]: Timeout reached during download
+[2024-04-06 13:18:35] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/08/c1/f93b75265b5128856f763bdb046a348f3952cca0dc9de2e9c1268050b7ba/moto-5.0.5.dev9.tar.gz
+[2024-04-06 13:18:35] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/41/2f/78efbe1717642075b836f4952dd3ab0fc823de124682dc2802d6dbbef5cf/pulumi_ec-0.8.1a1712399688.tar.gz
+[2024-04-06 13:18:35] INFO root fetch - processPackages [llama-index-readers-wikipedia]: Downloading https://files.pythonhosted.org/packages/f9/15/48a4105df1d2aaf16fba2f60e5fdfd3bd00a9ca2a29e05f1848a8e5911db/llama_index_readers_wikipedia-0.1.4.tar.gz
+[2024-04-06 13:18:35] WARNING root fetch - processPackages [pulumi-ec]: Timeout reached during download
+[2024-04-06 13:18:35] INFO root fetch - processPackages [pulumi-ec]: executing diffoscope
+[2024-04-06 13:18:35] INFO root fetch - processPackages [pulumi-ec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ec-0.8.0.tar.gz tmp/pulumi_ec-0.8.1a1712399688.tar.gz --markdown 20240406/p/pulumi-ec/0.8.0-0.8.1a1712399688/diff.md --exclude *.pyd
+[2024-04-06 13:18:35] WARNING root fetch - processPackages [llama-index-readers-wikipedia]: Timeout reached during download
+[2024-04-06 13:18:35] INFO root fetch - processPackages [llama-index-readers-wikipedia]: executing diffoscope
+[2024-04-06 13:18:35] INFO root fetch - processPackages [llama-index-readers-wikipedia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index_readers_wikipedia-0.1.3.tar.gz tmp/llama_index_readers_wikipedia-0.1.4.tar.gz --markdown 20240406/l/llama-index-readers-wikipedia/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 13:18:35] WARNING root fetch - processPackages [moto]: Timeout reached during download
+[2024-04-06 13:18:35] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-04-06 13:18:35] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.5.dev8.tar.gz tmp/moto-5.0.5.dev9.tar.gz --markdown 20240406/m/moto/5.0.5.dev8-5.0.5.dev9/diff.md --exclude *.pyd
+[2024-04-06 13:18:36] INFO root fetch - processPackages [llama-index-readers-wikipedia]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_wikipedia-0.1.3.tar.gz]
+[2024-04-06 13:18:36] INFO root fetch - processPackages [llama-index-readers-wikipedia]: Remove: archive file [/home/abi/fetcher/tmp/llama_index_readers_wikipedia-0.1.4.tar.gz]
+[2024-04-06 13:18:36] INFO root fetch - main [MainThread]: End processing [llama-index-readers-wikipedia]: success
+[2024-04-06 13:18:36] INFO root fetch - processPackages [pulumi-ec]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ec-0.8.0.tar.gz]
+[2024-04-06 13:18:36] INFO root fetch - processPackages [pulumi-ec]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_ec-0.8.1a1712399688.tar.gz]
+[2024-04-06 13:18:36] INFO root fetch - main [MainThread]: End processing [pulumi-ec]: success
+[2024-04-06 13:18:47] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev8.tar.gz]
+[2024-04-06 13:18:47] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.5.dev9.tar.gz]
+[2024-04-06 13:18:47] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-04-06 13:18:47] INFO root fetch - main [MainThread]: Store serial: [22647480]
