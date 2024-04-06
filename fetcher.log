@@ -16668,3 +16668,20 @@ EOFError: EOF read where object expected
 [2024-04-06 15:29:45] INFO root fetch - processPackages [ai-model-base]: Remove: archive file [/home/abi/fetcher/tmp/ai_model_base-0.0.1.dev2.tar.gz]
 [2024-04-06 15:29:45] INFO root fetch - main [MainThread]: End processing [ai-model-base]: success
 [2024-04-06 15:29:45] INFO root fetch - main [MainThread]: Store serial: [22648229]
+[2024-04-06 15:31:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648229]
+[2024-04-06 15:31:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 15:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notion2pandas
+[2024-04-06 15:31:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-background-remover
+[2024-04-06 15:31:54] INFO root fetch - processPackages [simple-background-remover]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 15:31:54] WARNING root fetch - processPackages [notion2pandas]: Skipping, unable to determine old version
+[2024-04-06 15:31:54] INFO root fetch - main [MainThread]: End processing [notion2pandas] error
+[2024-04-06 15:31:54] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/8c/ab/a83d5d77b186c475a95192e0ba6f9cff30f5279cd5d3a026cc947f0f207e/simple_background_remover-0.0.1.tar.gz
+[2024-04-06 15:31:55] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-06 15:31:55] INFO root fetch - processPackages [simple-background-remover]: Downloading https://files.pythonhosted.org/packages/62/17/6522fb2d57952dbc4e31abd0bf3ce220bfd4fbe094a0f3aad36591a15e49/simple_background_remover-0.0.2.tar.gz
+[2024-04-06 15:31:55] WARNING root fetch - processPackages [simple-background-remover]: Timeout reached during download
+[2024-04-06 15:31:55] INFO root fetch - processPackages [simple-background-remover]: executing diffoscope
+[2024-04-06 15:31:55] INFO root fetch - processPackages [simple-background-remover]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_background_remover-0.0.1.tar.gz tmp/simple_background_remover-0.0.2.tar.gz --markdown 20240406/s/simple-background-remover/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 15:31:56] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.1.tar.gz]
+[2024-04-06 15:31:56] INFO root fetch - processPackages [simple-background-remover]: Remove: archive file [/home/abi/fetcher/tmp/simple_background_remover-0.0.2.tar.gz]
+[2024-04-06 15:31:56] INFO root fetch - main [MainThread]: End processing [simple-background-remover]: success
+[2024-04-06 15:31:56] INFO root fetch - main [MainThread]: Store serial: [22648236]
