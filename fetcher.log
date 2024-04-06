@@ -20622,3 +20622,39 @@ EOFError: EOF read where object expected
 [2024-04-06 19:19:02] INFO root fetch - processPackages [climkern]: Remove: archive file [/home/abi/fetcher/tmp/climkern-1.1.0.tar.gz]
 [2024-04-06 19:19:02] INFO root fetch - main [MainThread]: End processing [climkern]: success
 [2024-04-06 19:19:02] INFO root fetch - main [MainThread]: Store serial: [22649684]
+[2024-04-06 19:21:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649684]
+[2024-04-06 19:21:10] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 19:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kafka-schema-registry-admin
+[2024-04-06 19:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: database-mysql-local
+[2024-04-06 19:21:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: beaupy
+[2024-04-06 19:21:10] INFO root fetch - processPackages [kafka-schema-registry-admin]: New version: [0.5.0] Old Version: [0.4.1]
+[2024-04-06 19:21:10] INFO root fetch - processPackages [beaupy]: New version: [3.8.2] Old Version: [3.8.1]
+[2024-04-06 19:21:10] INFO root fetch - processPackages [database-mysql-local]: New version: [0.0.285] Old Version: [0.0.284]
+[2024-04-06 19:21:11] INFO root fetch - processPackages [kafka-schema-registry-admin]: Downloading https://files.pythonhosted.org/packages/a4/c3/637a2ba66b0e70ba9f78bcb9cbf1283cae33c256c0aee50c5bc9b30938fb/kafka_schema_registry_admin-0.4.1.tar.gz
+[2024-04-06 19:21:11] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/a0/3f/14bb8be35acb65a64425a3a99d4062d4eb44ddbfab998d10d7ec79add762/database-mysql-local-0.0.284.tar.gz
+[2024-04-06 19:21:11] INFO root fetch - processPackages [beaupy]: Downloading https://files.pythonhosted.org/packages/df/18/af1421f2399b33feaf442d7bb792f720836697ed7cd0ee99969d55e9a467/beaupy-3.8.1.tar.gz
+[2024-04-06 19:21:11] WARNING root fetch - processPackages [database-mysql-local]: Timeout reached during download
+[2024-04-06 19:21:11] WARNING root fetch - processPackages [kafka-schema-registry-admin]: Timeout reached during download
+[2024-04-06 19:21:11] WARNING root fetch - processPackages [beaupy]: Timeout reached during download
+[2024-04-06 19:21:11] INFO root fetch - processPackages [database-mysql-local]: Downloading https://files.pythonhosted.org/packages/1b/9c/54e07da662a3d4dfff2dacd113f62039c7507751f98587953f8bdc2696ea/database-mysql-local-0.0.285.tar.gz
+[2024-04-06 19:21:11] INFO root fetch - processPackages [kafka-schema-registry-admin]: Downloading https://files.pythonhosted.org/packages/91/d5/65fb39f6d7edf9cf5ccfe0d0a5ec8a2399aa19302d0b044cc0a59c30ab6e/kafka_schema_registry_admin-0.5.0.tar.gz
+[2024-04-06 19:21:11] INFO root fetch - processPackages [beaupy]: Downloading https://files.pythonhosted.org/packages/53/29/02589c7fd44cb2a6f6fc08fcf78956c27ef3bad8bdaef77818c89520810f/beaupy-3.8.2.tar.gz
+[2024-04-06 19:21:11] WARNING root fetch - processPackages [database-mysql-local]: Timeout reached during download
+[2024-04-06 19:21:11] INFO root fetch - processPackages [database-mysql-local]: executing diffoscope
+[2024-04-06 19:21:11] INFO root fetch - processPackages [database-mysql-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database-mysql-local-0.0.284.tar.gz tmp/database-mysql-local-0.0.285.tar.gz --markdown 20240406/d/database-mysql-local/0.0.284-0.0.285/diff.md --exclude *.pyd
+[2024-04-06 19:21:11] WARNING root fetch - processPackages [kafka-schema-registry-admin]: Timeout reached during download
+[2024-04-06 19:21:11] INFO root fetch - processPackages [kafka-schema-registry-admin]: executing diffoscope
+[2024-04-06 19:21:11] INFO root fetch - processPackages [kafka-schema-registry-admin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kafka_schema_registry_admin-0.4.1.tar.gz tmp/kafka_schema_registry_admin-0.5.0.tar.gz --markdown 20240406/k/kafka-schema-registry-admin/0.4.1-0.5.0/diff.md --exclude *.pyd
+[2024-04-06 19:21:11] WARNING root fetch - processPackages [beaupy]: Timeout reached during download
+[2024-04-06 19:21:11] INFO root fetch - processPackages [beaupy]: executing diffoscope
+[2024-04-06 19:21:11] INFO root fetch - processPackages [beaupy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beaupy-3.8.1.tar.gz tmp/beaupy-3.8.2.tar.gz --markdown 20240406/b/beaupy/3.8.1-3.8.2/diff.md --exclude *.pyd
+[2024-04-06 19:21:12] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database-mysql-local-0.0.284.tar.gz]
+[2024-04-06 19:21:12] INFO root fetch - processPackages [database-mysql-local]: Remove: archive file [/home/abi/fetcher/tmp/database-mysql-local-0.0.285.tar.gz]
+[2024-04-06 19:21:12] INFO root fetch - main [MainThread]: End processing [database-mysql-local]: success
+[2024-04-06 19:21:12] INFO root fetch - processPackages [kafka-schema-registry-admin]: Remove: archive file [/home/abi/fetcher/tmp/kafka_schema_registry_admin-0.4.1.tar.gz]
+[2024-04-06 19:21:12] INFO root fetch - processPackages [kafka-schema-registry-admin]: Remove: archive file [/home/abi/fetcher/tmp/kafka_schema_registry_admin-0.5.0.tar.gz]
+[2024-04-06 19:21:12] INFO root fetch - main [MainThread]: End processing [kafka-schema-registry-admin]: success
+[2024-04-06 19:21:12] INFO root fetch - processPackages [beaupy]: Remove: archive file [/home/abi/fetcher/tmp/beaupy-3.8.1.tar.gz]
+[2024-04-06 19:21:12] INFO root fetch - processPackages [beaupy]: Remove: archive file [/home/abi/fetcher/tmp/beaupy-3.8.2.tar.gz]
+[2024-04-06 19:21:12] INFO root fetch - main [MainThread]: End processing [beaupy]: success
+[2024-04-06 19:21:12] INFO root fetch - main [MainThread]: Store serial: [22649693]
