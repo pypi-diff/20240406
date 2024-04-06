@@ -7824,3 +7824,39 @@
 [2024-04-06 04:15:28] INFO root fetch - processPackages [types-PyScreeze]: Remove: archive file [/home/abi/fetcher/tmp/types-PyScreeze-0.1.30.20240406.tar.gz]
 [2024-04-06 04:15:28] INFO root fetch - main [MainThread]: End processing [types-PyScreeze]: success
 [2024-04-06 04:15:28] INFO root fetch - main [MainThread]: Store serial: [22644911]
+[2024-04-06 04:17:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644911]
+[2024-04-06 04:17:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 04:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2024-04-06 04:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tibia.py
+[2024-04-06 04:17:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mat3ra-utils
+[2024-04-06 04:17:37] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20240405] Old Version: [1.2.20240404]
+[2024-04-06 04:17:37] INFO root fetch - processPackages [mat3ra-utils]: New version: [2024.4.6.post0] Old Version: [2024.3.28.post1]
+[2024-04-06 04:17:37] INFO root fetch - processPackages [tibia.py]: New version: [6.2.0] Old Version: [6.1.0]
+[2024-04-06 04:17:37] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/fc/b8/65bae739996e90f91c9ef35d4d70e5bf5a6e571aff9c88dde0022beeabde/iam_actions-1.2.20240404.tar.gz
+[2024-04-06 04:17:37] INFO root fetch - processPackages [mat3ra-utils]: Downloading https://files.pythonhosted.org/packages/56/c5/523eb8a7a50e7990be17009542cfc6e76837191c534b4980c9740317d188/mat3ra-utils-2024.3.28.post1.tar.gz
+[2024-04-06 04:17:37] INFO root fetch - processPackages [tibia.py]: Downloading https://files.pythonhosted.org/packages/1f/14/e16fba0e9186ebb854b4a9676b7864988f29018bd5b5190f130ac11ebe3e/tibia.py-6.1.0.tar.gz
+[2024-04-06 04:17:38] WARNING root fetch - processPackages [iam-actions]: Timeout reached during download
+[2024-04-06 04:17:38] WARNING root fetch - processPackages [mat3ra-utils]: Timeout reached during download
+[2024-04-06 04:17:38] WARNING root fetch - processPackages [tibia.py]: Timeout reached during download
+[2024-04-06 04:17:38] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/0f/7f/56a776a158a14dc851e1cabe186303390c35296062f5c1ad1fbbd013af6c/iam_actions-1.2.20240405.tar.gz
+[2024-04-06 04:17:38] INFO root fetch - processPackages [mat3ra-utils]: Downloading https://files.pythonhosted.org/packages/9b/27/b7f3bb3dec20fb4e33ad8c8cfd084b26f82c780312cad713e1cc23d6efa1/mat3ra-utils-2024.4.6.post0.tar.gz
+[2024-04-06 04:17:38] INFO root fetch - processPackages [tibia.py]: Downloading https://files.pythonhosted.org/packages/b7/93/bdcbb8ba7ff536c0070f5cc2a58191cec2281611fd0e192710fc91e9560f/tibia.py-6.2.0.tar.gz
+[2024-04-06 04:17:38] WARNING root fetch - processPackages [iam-actions]: Timeout reached during download
+[2024-04-06 04:17:38] WARNING root fetch - processPackages [mat3ra-utils]: Timeout reached during download
+[2024-04-06 04:17:38] INFO root fetch - processPackages [mat3ra-utils]: executing diffoscope
+[2024-04-06 04:17:38] INFO root fetch - processPackages [mat3ra-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mat3ra-utils-2024.3.28.post1.tar.gz tmp/mat3ra-utils-2024.4.6.post0.tar.gz --markdown 20240406/m/mat3ra-utils/2024.3.28.post1-2024.4.6.post0/diff.md --exclude *.pyd
+[2024-04-06 04:17:38] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2024-04-06 04:17:38] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20240404.tar.gz tmp/iam_actions-1.2.20240405.tar.gz --markdown 20240406/i/iam-actions/1.2.20240404-1.2.20240405/diff.md --exclude *.pyd
+[2024-04-06 04:17:38] WARNING root fetch - processPackages [tibia.py]: Timeout reached during download
+[2024-04-06 04:17:38] INFO root fetch - processPackages [tibia.py]: executing diffoscope
+[2024-04-06 04:17:38] INFO root fetch - processPackages [tibia.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tibia.py-6.1.0.tar.gz tmp/tibia.py-6.2.0.tar.gz --markdown 20240406/t/tibia.py/6.1.0-6.2.0/diff.md --exclude *.pyd
+[2024-04-06 04:17:39] INFO root fetch - processPackages [mat3ra-utils]: Remove: archive file [/home/abi/fetcher/tmp/mat3ra-utils-2024.3.28.post1.tar.gz]
+[2024-04-06 04:17:39] INFO root fetch - processPackages [mat3ra-utils]: Remove: archive file [/home/abi/fetcher/tmp/mat3ra-utils-2024.4.6.post0.tar.gz]
+[2024-04-06 04:17:39] INFO root fetch - main [MainThread]: End processing [mat3ra-utils]: success
+[2024-04-06 04:17:39] INFO root fetch - processPackages [tibia.py]: Remove: archive file [/home/abi/fetcher/tmp/tibia.py-6.1.0.tar.gz]
+[2024-04-06 04:17:39] INFO root fetch - processPackages [tibia.py]: Remove: archive file [/home/abi/fetcher/tmp/tibia.py-6.2.0.tar.gz]
+[2024-04-06 04:17:39] INFO root fetch - main [MainThread]: End processing [tibia.py]: success
+[2024-04-06 04:17:43] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240404.tar.gz]
+[2024-04-06 04:17:43] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240405.tar.gz]
+[2024-04-06 04:17:43] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2024-04-06 04:17:43] INFO root fetch - main [MainThread]: Store serial: [22644920]
