@@ -14025,3 +14025,28 @@
 [2024-04-06 12:40:36] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.8.dev20240406104002.tar.gz]
 [2024-04-06 12:40:36] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
 [2024-04-06 12:40:36] INFO root fetch - main [MainThread]: Store serial: [22647269]
+[2024-04-06 12:42:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647269]
+[2024-04-06 12:42:45] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skypilot-nightly
+[2024-04-06 12:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tracker-exporter
+[2024-04-06 12:42:45] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240405] Old Version: [1.0.0.dev20240404]
+[2024-04-06 12:42:45] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/df/36/ff08815c1f136d79faf1b6b69df22371754e9620b4393206464de01701df/skypilot-nightly-1.0.0.dev20240404.tar.gz
+[2024-04-06 12:42:45] INFO root fetch - processPackages [tracker-exporter]: New version: [2.0.0] Old Version: [1.0.3]
+[2024-04-06 12:42:45] WARNING root fetch - processPackages [skypilot-nightly]: Timeout reached during download
+[2024-04-06 12:42:45] INFO root fetch - processPackages [tracker-exporter]: Downloading https://files.pythonhosted.org/packages/f9/d7/628f09b821affd520981b7bcf3530632ab3a4bc5ce93f6d8a93aa04641e7/tracker-exporter-1.0.3.tar.gz
+[2024-04-06 12:42:46] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/ec/57/7a69be5ab1a9bc2a111161fb8b39ef55f9d7bf04db924bd51f603318cbde/skypilot-nightly-1.0.0.dev20240405.tar.gz
+[2024-04-06 12:42:46] WARNING root fetch - processPackages [tracker-exporter]: Timeout reached during download
+[2024-04-06 12:42:46] INFO root fetch - processPackages [tracker-exporter]: Downloading https://files.pythonhosted.org/packages/8f/f3/3a07a6d54c1a0c79c94c6cb96c7d5f00b074be3e4a44f74f3dea17b47ffc/tracker-exporter-2.0.0.tar.gz
+[2024-04-06 12:42:46] WARNING root fetch - processPackages [skypilot-nightly]: Timeout reached during download
+[2024-04-06 12:42:46] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-04-06 12:42:46] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot-nightly-1.0.0.dev20240404.tar.gz tmp/skypilot-nightly-1.0.0.dev20240405.tar.gz --markdown 20240406/s/skypilot-nightly/1.0.0.dev20240404-1.0.0.dev20240405/diff.md --exclude *.pyd
+[2024-04-06 12:42:46] WARNING root fetch - processPackages [tracker-exporter]: Timeout reached during download
+[2024-04-06 12:42:46] INFO root fetch - processPackages [tracker-exporter]: executing diffoscope
+[2024-04-06 12:42:46] INFO root fetch - processPackages [tracker-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tracker-exporter-1.0.3.tar.gz tmp/tracker-exporter-2.0.0.tar.gz --markdown 20240406/t/tracker-exporter/1.0.3-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 12:42:47] INFO root fetch - processPackages [tracker-exporter]: Remove: archive file [/home/abi/fetcher/tmp/tracker-exporter-1.0.3.tar.gz]
+[2024-04-06 12:42:47] INFO root fetch - processPackages [tracker-exporter]: Remove: archive file [/home/abi/fetcher/tmp/tracker-exporter-2.0.0.tar.gz]
+[2024-04-06 12:42:47] INFO root fetch - main [MainThread]: End processing [tracker-exporter]: success
+[2024-04-06 12:42:47] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot-nightly-1.0.0.dev20240404.tar.gz]
+[2024-04-06 12:42:47] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot-nightly-1.0.0.dev20240405.tar.gz]
+[2024-04-06 12:42:47] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-04-06 12:42:47] INFO root fetch - main [MainThread]: Store serial: [22647275]
