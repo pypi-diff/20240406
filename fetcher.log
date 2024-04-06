@@ -20339,3 +20339,31 @@ EOFError: EOF read where object expected
 [2024-04-06 18:59:28] INFO root fetch - processPackages [modern-greek-inflexion]: Remove: archive file [/home/abi/fetcher/tmp/modern-greek-inflexion-2.0.1.tar.gz]
 [2024-04-06 18:59:28] INFO root fetch - main [MainThread]: End processing [modern-greek-inflexion]: success
 [2024-04-06 18:59:28] INFO root fetch - main [MainThread]: Store serial: [22649582]
+[2024-04-06 19:01:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649582]
+[2024-04-06 19:01:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 19:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easynetwork
+[2024-04-06 19:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: medusa-logger
+[2024-04-06 19:01:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: poetry-setuptools-scm-plugin
+[2024-04-06 19:01:37] INFO root fetch - processPackages [medusa-logger]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-06 19:01:37] INFO root fetch - processPackages [easynetwork]: New version: [1.0.0rc8] Old Version: [1.0.0rc7]
+[2024-04-06 19:01:37] WARNING root fetch - processPackages [poetry-setuptools-scm-plugin]: Skipping, unable to determine old version
+[2024-04-06 19:01:37] INFO root fetch - main [MainThread]: End processing [poetry-setuptools-scm-plugin] error
+[2024-04-06 19:01:37] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/52/3a/9264db20a210ee192c05cf3d11168ec9579876a3fe97ec08e2aad28126ac/medusa-logger-1.0.2.tar.gz
+[2024-04-06 19:01:37] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:01:37] INFO root fetch - processPackages [easynetwork]: Downloading https://files.pythonhosted.org/packages/f8/0d/dcef3972beeab90421d7b001fb0f451ae162210fa64345d6fffe57ede968/easynetwork-1.0.0rc7.tar.gz
+[2024-04-06 19:01:37] INFO root fetch - processPackages [medusa-logger]: Downloading https://files.pythonhosted.org/packages/d2/43/3271c3f2fa34311f7c9142ee1bb17ae8fd89b22114d7ef64093ae92435f5/medusa-logger-1.0.3.tar.gz
+[2024-04-06 19:01:38] WARNING root fetch - processPackages [easynetwork]: Timeout reached during download
+[2024-04-06 19:01:38] WARNING root fetch - processPackages [medusa-logger]: Timeout reached during download
+[2024-04-06 19:01:38] INFO root fetch - processPackages [medusa-logger]: executing diffoscope
+[2024-04-06 19:01:38] INFO root fetch - processPackages [medusa-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/medusa-logger-1.0.2.tar.gz tmp/medusa-logger-1.0.3.tar.gz --markdown 20240406/m/medusa-logger/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-06 19:01:38] INFO root fetch - processPackages [easynetwork]: Downloading https://files.pythonhosted.org/packages/a0/13/183877a141e78b2773a7dbdca8e245fa92025432927ee1705d5f8a58008e/easynetwork-1.0.0rc8.tar.gz
+[2024-04-06 19:01:38] WARNING root fetch - processPackages [easynetwork]: Timeout reached during download
+[2024-04-06 19:01:38] INFO root fetch - processPackages [easynetwork]: executing diffoscope
+[2024-04-06 19:01:38] INFO root fetch - processPackages [easynetwork]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easynetwork-1.0.0rc7.tar.gz tmp/easynetwork-1.0.0rc8.tar.gz --markdown 20240406/e/easynetwork/1.0.0rc7-1.0.0rc8/diff.md --exclude *.pyd
+[2024-04-06 19:01:38] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.0.2.tar.gz]
+[2024-04-06 19:01:38] INFO root fetch - processPackages [medusa-logger]: Remove: archive file [/home/abi/fetcher/tmp/medusa-logger-1.0.3.tar.gz]
+[2024-04-06 19:01:38] INFO root fetch - main [MainThread]: End processing [medusa-logger]: success
+[2024-04-06 19:01:40] INFO root fetch - processPackages [easynetwork]: Remove: archive file [/home/abi/fetcher/tmp/easynetwork-1.0.0rc7.tar.gz]
+[2024-04-06 19:01:40] INFO root fetch - processPackages [easynetwork]: Remove: archive file [/home/abi/fetcher/tmp/easynetwork-1.0.0rc8.tar.gz]
+[2024-04-06 19:01:40] INFO root fetch - main [MainThread]: End processing [easynetwork]: success
+[2024-04-06 19:01:40] INFO root fetch - main [MainThread]: Store serial: [22649594]
