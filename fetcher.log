@@ -25419,3 +25419,28 @@ EOFError: EOF read where object expected
 [2024-04-06 23:55:24] INFO root fetch - processPackages [cat-win]: Remove: archive file [/home/abi/fetcher/tmp/cat_win-1.7.5-py3-none-any.whl.zip]
 [2024-04-06 23:55:24] INFO root fetch - main [MainThread]: End processing [cat-win]: success
 [2024-04-06 23:55:24] INFO root fetch - main [MainThread]: Store serial: [22651412]
+[2024-04-06 23:57:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651412]
+[2024-04-06 23:57:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 23:57:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dekvenv
+[2024-04-06 23:57:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: boilersaas
+[2024-04-06 23:57:33] INFO root fetch - processPackages [dekvenv]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 23:57:33] INFO root fetch - processPackages [boilersaas]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-04-06 23:57:33] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/4f/0b/06902f2f4ceee290cfab39fc5e233eaa2bb642fa6b79c9a76349ffa49eac/dekvenv-0.1.8.tar.gz
+[2024-04-06 23:57:33] INFO root fetch - processPackages [boilersaas]: Downloading https://files.pythonhosted.org/packages/fd/65/c0840965cd75c3a56d4825c40ca5362672f76943a82274b22b1abb1476ce/boilersaas-0.6.4.tar.gz
+[2024-04-06 23:57:33] WARNING root fetch - processPackages [boilersaas]: Timeout reached during download
+[2024-04-06 23:57:33] WARNING root fetch - processPackages [dekvenv]: Timeout reached during download
+[2024-04-06 23:57:34] INFO root fetch - processPackages [boilersaas]: Downloading https://files.pythonhosted.org/packages/98/d5/5f49e8a68411cab4bded832503f21e036cac40ec9b3918e0e14383eba6e8/boilersaas-0.6.5.tar.gz
+[2024-04-06 23:57:34] INFO root fetch - processPackages [dekvenv]: Downloading https://files.pythonhosted.org/packages/89/c5/ae26e7ab62e243bef554710c58d728eba22e25ad33a5e2f25b45dcb001d1/dekvenv-0.1.9.tar.gz
+[2024-04-06 23:57:34] WARNING root fetch - processPackages [boilersaas]: Timeout reached during download
+[2024-04-06 23:57:34] INFO root fetch - processPackages [boilersaas]: executing diffoscope
+[2024-04-06 23:57:34] INFO root fetch - processPackages [boilersaas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boilersaas-0.6.4.tar.gz tmp/boilersaas-0.6.5.tar.gz --markdown 20240406/b/boilersaas/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2024-04-06 23:57:34] WARNING root fetch - processPackages [dekvenv]: Timeout reached during download
+[2024-04-06 23:57:34] INFO root fetch - processPackages [dekvenv]: executing diffoscope
+[2024-04-06 23:57:34] INFO root fetch - processPackages [dekvenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dekvenv-0.1.8.tar.gz tmp/dekvenv-0.1.9.tar.gz --markdown 20240406/d/dekvenv/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 23:57:34] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.8.tar.gz]
+[2024-04-06 23:57:34] INFO root fetch - processPackages [dekvenv]: Remove: archive file [/home/abi/fetcher/tmp/dekvenv-0.1.9.tar.gz]
+[2024-04-06 23:57:34] INFO root fetch - main [MainThread]: End processing [dekvenv]: success
+[2024-04-06 23:57:34] INFO root fetch - processPackages [boilersaas]: Remove: archive file [/home/abi/fetcher/tmp/boilersaas-0.6.4.tar.gz]
+[2024-04-06 23:57:34] INFO root fetch - processPackages [boilersaas]: Remove: archive file [/home/abi/fetcher/tmp/boilersaas-0.6.5.tar.gz]
+[2024-04-06 23:57:34] INFO root fetch - main [MainThread]: End processing [boilersaas]: success
+[2024-04-06 23:57:34] INFO root fetch - main [MainThread]: Store serial: [22651418]
