@@ -7576,3 +7576,17 @@
 [2024-04-06 03:57:39] WARNING root fetch - processPackages [br-army-knife]: Skipping, unable to determine old version
 [2024-04-06 03:57:39] INFO root fetch - main [MainThread]: End processing [br-army-knife] error
 [2024-04-06 03:57:39] INFO root fetch - main [MainThread]: Store serial: [22644834]
+[2024-04-06 03:59:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644834]
+[2024-04-06 03:59:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 03:59:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Lisva81
+[2024-04-06 03:59:48] INFO root fetch - processPackages [Lisva81]: New version: [2.0.0] Old Version: [1.0.0]
+[2024-04-06 03:59:48] INFO root fetch - processPackages [Lisva81]: Downloading https://files.pythonhosted.org/packages/2c/94/28d65c1bac583d40a9c23ba5596f674cc0fa8cf068bde250dce26f187f0d/Lisva81-1.0.0.tar.gz
+[2024-04-06 03:59:48] WARNING root fetch - processPackages [Lisva81]: Timeout reached during download
+[2024-04-06 03:59:48] INFO root fetch - processPackages [Lisva81]: Downloading https://files.pythonhosted.org/packages/76/8a/d5bda27712aeea88c75255ed157d8f199bde26f8f911eeeeb0f8d6950142/Lisva81-2.0.0.tar.gz
+[2024-04-06 03:59:48] WARNING root fetch - processPackages [Lisva81]: Timeout reached during download
+[2024-04-06 03:59:48] INFO root fetch - processPackages [Lisva81]: executing diffoscope
+[2024-04-06 03:59:48] INFO root fetch - processPackages [Lisva81]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lisva81-1.0.0.tar.gz tmp/Lisva81-2.0.0.tar.gz --markdown 20240406/L/Lisva81/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 03:59:49] INFO root fetch - processPackages [Lisva81]: Remove: archive file [/home/abi/fetcher/tmp/Lisva81-1.0.0.tar.gz]
+[2024-04-06 03:59:49] INFO root fetch - processPackages [Lisva81]: Remove: archive file [/home/abi/fetcher/tmp/Lisva81-2.0.0.tar.gz]
+[2024-04-06 03:59:49] INFO root fetch - main [MainThread]: End processing [Lisva81]: success
+[2024-04-06 03:59:49] INFO root fetch - main [MainThread]: Store serial: [22644837]
