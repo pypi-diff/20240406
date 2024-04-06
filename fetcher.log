@@ -8766,3 +8766,61 @@
 [2024-04-06 05:30:25] INFO root fetch - processPackages [pluggy-sdk]: Remove: archive file [/home/abi/fetcher/tmp/pluggy-sdk-1.0.0.post1.tar.gz]
 [2024-04-06 05:30:25] INFO root fetch - main [MainThread]: End processing [pluggy-sdk]: success
 [2024-04-06 05:30:25] INFO root fetch - main [MainThread]: Store serial: [22645256]
+[2024-04-06 05:32:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645256]
+[2024-04-06 05:32:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sprocketship
+[2024-04-06 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastgenerateapi
+[2024-04-06 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: statesxt
+[2024-04-06 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bbg-fetch
+[2024-04-06 05:32:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-chikari-economy
+[2024-04-06 05:32:33] INFO root fetch - processPackages [sprocketship]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 05:32:33] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/4a/04/7c484c3ebcb486d63df55c9b565a680f305b65c0193826f913351ba314d3/sprocketship-0.0.8.tar.gz
+[2024-04-06 05:32:33] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 05:32:33] INFO root fetch - processPackages [bbg-fetch]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-06 05:32:33] INFO root fetch - processPackages [statesxt]: New version: [0.5.8] Old Version: [0.5.7]
+[2024-04-06 05:32:33] INFO root fetch - processPackages [fastgenerateapi]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 05:32:33] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Downloading https://files.pythonhosted.org/packages/60/fc/14e83fc939ca544afd73ce34e17391979ff41cbe8676bd7087e5cab48740/nonebot_plugin_chikari_economy-0.0.5.tar.gz
+[2024-04-06 05:32:33] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [sprocketship]: Downloading https://files.pythonhosted.org/packages/3b/1f/ef5adaa427009cf67f6258034539521481c76a9ad94df0f6976077386506/sprocketship-0.0.9.tar.gz
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [nonebot-plugin-chikari-economy]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [bbg-fetch]: Downloading https://files.pythonhosted.org/packages/49/d4/34ffb441a19bfc51c6044bec6f5e0af0519f48c078c8ca3256cb392bff16/bbg_fetch-1.0.2.tar.gz
+[2024-04-06 05:32:34] INFO root fetch - processPackages [fastgenerateapi]: Downloading https://files.pythonhosted.org/packages/7f/91/a405456acd3b77c270c049a322420d06af1f82de5a3e7eef455613f9c791/fastgenerateapi-0.0.6.tar.gz
+[2024-04-06 05:32:34] INFO root fetch - processPackages [statesxt]: Downloading https://files.pythonhosted.org/packages/47/b1/7bab3b3848e898c3c7304e72cbbe80d304fdd571265a36aa129ec8b75421/statesxt-0.5.7.tar.gz
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [sprocketship]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [sprocketship]: executing diffoscope
+[2024-04-06 05:32:34] INFO root fetch - processPackages [sprocketship]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sprocketship-0.0.8.tar.gz tmp/sprocketship-0.0.9.tar.gz --markdown 20240406/s/sprocketship/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [bbg-fetch]: Timeout reached during download
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [fastgenerateapi]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Downloading https://files.pythonhosted.org/packages/a1/23/48c8f222688479ff169ac4682695b02d4675abd186649efa8d817b222818/nonebot_plugin_chikari_economy-0.0.6.tar.gz
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [statesxt]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [bbg-fetch]: Downloading https://files.pythonhosted.org/packages/61/85/ef8d37a966f59642b956b029a41841605f092fc1d78d88599ba8a3f41921/bbg_fetch-1.0.3.tar.gz
+[2024-04-06 05:32:34] INFO root fetch - processPackages [fastgenerateapi]: Downloading https://files.pythonhosted.org/packages/83/6d/2cc828965a510fdfcf565bbee0529b755e68f8a9e0de2e06584bd1f6b9fb/fastgenerateapi-0.0.7.tar.gz
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [nonebot-plugin-chikari-economy]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: executing diffoscope
+[2024-04-06 05:32:34] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_chikari_economy-0.0.5.tar.gz tmp/nonebot_plugin_chikari_economy-0.0.6.tar.gz --markdown 20240406/n/nonebot-plugin-chikari-economy/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 05:32:34] INFO root fetch - processPackages [statesxt]: Downloading https://files.pythonhosted.org/packages/5b/12/6253abe96a4aac8cfd7a5db9129d8b308d27cf2765d91c6c4dea1966aaca/statesxt-0.5.8.tar.gz
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [bbg-fetch]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [bbg-fetch]: executing diffoscope
+[2024-04-06 05:32:34] INFO root fetch - processPackages [bbg-fetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bbg_fetch-1.0.2.tar.gz tmp/bbg_fetch-1.0.3.tar.gz --markdown 20240406/b/bbg-fetch/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [fastgenerateapi]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [fastgenerateapi]: executing diffoscope
+[2024-04-06 05:32:34] INFO root fetch - processPackages [fastgenerateapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastgenerateapi-0.0.6.tar.gz tmp/fastgenerateapi-0.0.7.tar.gz --markdown 20240406/f/fastgenerateapi/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 05:32:34] WARNING root fetch - processPackages [statesxt]: Timeout reached during download
+[2024-04-06 05:32:34] INFO root fetch - processPackages [statesxt]: executing diffoscope
+[2024-04-06 05:32:34] INFO root fetch - processPackages [statesxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statesxt-0.5.7.tar.gz tmp/statesxt-0.5.8.tar.gz --markdown 20240406/s/statesxt/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2024-04-06 05:32:34] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.8.tar.gz]
+[2024-04-06 05:32:34] INFO root fetch - processPackages [sprocketship]: Remove: archive file [/home/abi/fetcher/tmp/sprocketship-0.0.9.tar.gz]
+[2024-04-06 05:32:34] INFO root fetch - main [MainThread]: End processing [sprocketship]: success
+[2024-04-06 05:32:35] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_economy-0.0.5.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - processPackages [nonebot-plugin-chikari-economy]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_chikari_economy-0.0.6.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-chikari-economy]: success
+[2024-04-06 05:32:35] INFO root fetch - processPackages [bbg-fetch]: Remove: archive file [/home/abi/fetcher/tmp/bbg_fetch-1.0.2.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - processPackages [bbg-fetch]: Remove: archive file [/home/abi/fetcher/tmp/bbg_fetch-1.0.3.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - main [MainThread]: End processing [bbg-fetch]: success
+[2024-04-06 05:32:35] INFO root fetch - processPackages [fastgenerateapi]: Remove: archive file [/home/abi/fetcher/tmp/fastgenerateapi-0.0.6.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - processPackages [fastgenerateapi]: Remove: archive file [/home/abi/fetcher/tmp/fastgenerateapi-0.0.7.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - main [MainThread]: End processing [fastgenerateapi]: success
+[2024-04-06 05:32:35] INFO root fetch - processPackages [statesxt]: Remove: archive file [/home/abi/fetcher/tmp/statesxt-0.5.7.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - processPackages [statesxt]: Remove: archive file [/home/abi/fetcher/tmp/statesxt-0.5.8.tar.gz]
+[2024-04-06 05:32:35] INFO root fetch - main [MainThread]: End processing [statesxt]: success
+[2024-04-06 05:32:35] INFO root fetch - main [MainThread]: Store serial: [22645274]
