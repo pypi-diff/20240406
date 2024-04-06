@@ -11935,3 +11935,73 @@
 [2024-04-06 09:47:10] INFO root fetch - processPackages [dxsp]: Remove: archive file [/home/abi/fetcher/tmp/dxsp-9.0.7.tar.gz]
 [2024-04-06 09:47:10] INFO root fetch - main [MainThread]: End processing [dxsp]: success
 [2024-04-06 09:47:10] INFO root fetch - main [MainThread]: Store serial: [22646512]
+[2024-04-06 09:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646512]
+[2024-04-06 09:49:19] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: just_design_phase
+[2024-04-06 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: datamaker-faker
+[2024-04-06 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-spread-grid
+[2024-04-06 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redis-async-client
+[2024-04-06 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rsync-time-machine
+[2024-04-06 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tdrpa.tdcore
+[2024-04-06 09:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: just_design_phase
+[2024-04-06 09:49:19] INFO root fetch - processPackages [redis-async-client]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-04-06 09:49:19] INFO root fetch - processPackages [tdrpa.tdcore]: New version: [1.1.28] Old Version: [1.1.27]
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 09:49:19] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/f9/77/4a6d9aecffb1440089146245f5e64fd47283f40b4f3105b986ae6cddeacd/tdrpa.tdcore-1.1.27-py39-none-win_amd64.whl
+[2024-04-06 09:49:19] INFO root fetch - processPackages [dash-spread-grid]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 09:49:19] INFO root fetch - processPackages [rsync-time-machine]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [datamaker-faker]: Skipping, unable to determine old version
+[2024-04-06 09:49:19] INFO root fetch - main [MainThread]: End processing [datamaker-faker] error
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/cc/74/bdcda59f5a54085539c4784585ee09459e98d1bdbbd5853f7a9b11c943b5/just_design_phase-0.0.3.tar.gz
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/cc/74/bdcda59f5a54085539c4784585ee09459e98d1bdbbd5853f7a9b11c943b5/just_design_phase-0.0.3.tar.gz
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 09:49:19] INFO root fetch - processPackages [redis-async-client]: Downloading https://files.pythonhosted.org/packages/ed/58/4bc017a18c90896e6ee7d6d0bbb69728a07183d6a0dce92a250f9d70adb4/redis_async_client-0.1.0.tar.gz
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [tdrpa.tdcore]: Timeout reached during download
+[2024-04-06 09:49:19] INFO root fetch - processPackages [rsync-time-machine]: Downloading https://files.pythonhosted.org/packages/e1/30/50c92b9d5564ad46c8e5dae3e45b7e6c033c4364f51656a220f97d0dd487/rsync-time-machine-1.3.2.tar.gz
+[2024-04-06 09:49:19] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/6f/a4/d0f84b0109b1c3fc67a2e6c29b1578e36cc8a38d94b8da0e51f8bbeb45fc/dash_spread_grid-0.0.1.tar.gz
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [redis-async-client]: Timeout reached during download
+[2024-04-06 09:49:19] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/0e/92/4ccb1247723756dc83935b86962f8b5892b56c9928526f6efbeb61b880dc/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/a3/bf/51766cf08e013aec73f4c9d29d3766544560dc635c9971e14570c904738c/just_design_phase-0.0.4.tar.gz
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/a3/bf/51766cf08e013aec73f4c9d29d3766544560dc635c9971e14570c904738c/just_design_phase-0.0.4.tar.gz
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [rsync-time-machine]: Timeout reached during download
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [tdrpa.tdcore]: Timeout reached during download
+[2024-04-06 09:49:19] INFO root fetch - processPackages [tdrpa.tdcore]: executing diffoscope
+[2024-04-06 09:49:19] INFO root fetch - processPackages [tdrpa.tdcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdcore-1.1.27-py39-none-win_amd64.whl.zip tmp/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl.zip --markdown 20240406/t/tdrpa.tdcore/1.1.27-1.1.28/diff.md --exclude *.pyd
+[2024-04-06 09:49:19] INFO root fetch - processPackages [redis-async-client]: Downloading https://files.pythonhosted.org/packages/0b/d9/5b3a55c23c77ff28c664986d293239b9a7fcefbcecaf4255e279cda47acc/redis_async_client-0.1.1.tar.gz
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.3.tar.gz tmp/just_design_phase-0.0.4.tar.gz --markdown 20240406/j/just_design_phase/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 09:49:19] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 09:49:19] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.3.tar.gz tmp/just_design_phase-0.0.4.tar.gz --markdown 20240406/j/just_design_phase/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 09:49:20] WARNING root fetch - processPackages [redis-async-client]: Timeout reached during download
+[2024-04-06 09:49:20] INFO root fetch - processPackages [redis-async-client]: executing diffoscope
+[2024-04-06 09:49:20] INFO root fetch - processPackages [redis-async-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redis_async_client-0.1.0.tar.gz tmp/redis_async_client-0.1.1.tar.gz --markdown 20240406/r/redis-async-client/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2024-04-06 09:49:20] INFO root fetch - processPackages [rsync-time-machine]: Downloading https://files.pythonhosted.org/packages/55/cd/a65a8dd6407a1526fdca34f5f5776e61142843baadc105a2da3b96a7a509/rsync-time-machine-1.3.3.tar.gz
+[2024-04-06 09:49:20] INFO root fetch - processPackages [dash-spread-grid]: Downloading https://files.pythonhosted.org/packages/3e/b3/8b140080110d2949af9088d903cfab83af1ed4a73952d08a9b55aa8d94d0/dash_spread_grid-0.0.2.tar.gz
+[2024-04-06 09:49:20] WARNING root fetch - processPackages [rsync-time-machine]: Timeout reached during download
+[2024-04-06 09:49:20] INFO root fetch - processPackages [rsync-time-machine]: executing diffoscope
+[2024-04-06 09:49:20] INFO root fetch - processPackages [rsync-time-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rsync-time-machine-1.3.2.tar.gz tmp/rsync-time-machine-1.3.3.tar.gz --markdown 20240406/r/rsync-time-machine/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2024-04-06 09:49:20] WARNING root fetch - processPackages [dash-spread-grid]: Timeout reached during download
+[2024-04-06 09:49:20] INFO root fetch - processPackages [dash-spread-grid]: executing diffoscope
+[2024-04-06 09:49:20] INFO root fetch - processPackages [dash-spread-grid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_spread_grid-0.0.1.tar.gz tmp/dash_spread_grid-0.0.2.tar.gz --markdown 20240406/d/dash-spread-grid/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 09:49:20] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.3.tar.gz]
+[2024-04-06 09:49:20] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.4.tar.gz]
+[2024-04-06 09:49:20] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 09:49:20] INFO root fetch - processPackages [redis-async-client]: Remove: archive file [/home/abi/fetcher/tmp/redis_async_client-0.1.0.tar.gz]
+[2024-04-06 09:49:20] INFO root fetch - processPackages [redis-async-client]: Remove: archive file [/home/abi/fetcher/tmp/redis_async_client-0.1.1.tar.gz]
+[2024-04-06 09:49:20] INFO root fetch - main [MainThread]: End processing [redis-async-client]: success
+[2024-04-06 09:49:20] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 09:49:20] INFO root fetch - processPackages [rsync-time-machine]: Remove: archive file [/home/abi/fetcher/tmp/rsync-time-machine-1.3.2.tar.gz]
+[2024-04-06 09:49:20] INFO root fetch - processPackages [rsync-time-machine]: Remove: archive file [/home/abi/fetcher/tmp/rsync-time-machine-1.3.3.tar.gz]
+[2024-04-06 09:49:20] INFO root fetch - main [MainThread]: End processing [rsync-time-machine]: success
+[2024-04-06 09:49:21] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.1.tar.gz]
+[2024-04-06 09:49:21] INFO root fetch - processPackages [dash-spread-grid]: Remove: archive file [/home/abi/fetcher/tmp/dash_spread_grid-0.0.2.tar.gz]
+[2024-04-06 09:49:21] INFO root fetch - main [MainThread]: End processing [dash-spread-grid]: success
+[2024-04-06 09:49:22] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.27-py39-none-win_amd64.whl.zip]
+[2024-04-06 09:49:22] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl.zip]
+[2024-04-06 09:49:22] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
+[2024-04-06 09:49:22] INFO root fetch - main [MainThread]: Store serial: [22646537]
