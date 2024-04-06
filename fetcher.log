@@ -18337,3 +18337,75 @@ EOFError: EOF read where object expected
 [2024-04-06 17:09:57] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240405-py3-none-win_amd64.whl.zip]
 [2024-04-06 17:09:57] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
 [2024-04-06 17:09:57] INFO root fetch - main [MainThread]: Store serial: [22648848]
+[2024-04-06 17:12:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648848]
+[2024-04-06 17:12:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CnbcNews
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DrissionRecorder
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-resolver
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tulona
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ingredient-parser-nlp
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: octomy-common
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: asto
+[2024-04-06 17:12:10] INFO root fetch - processPackages [tulona]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-06 17:12:10] INFO root fetch - processPackages [octomy-common]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-04-06 17:12:10] INFO root fetch - processPackages [nonebot-plugin-resolver]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 17:12:10] INFO root fetch - processPackages [asto]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 17:12:10] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/0e/51/8e3f7380d5bee737ef122cf6dbc421043cd7541cd3e579505fd62d2e26c2/tulona-0.2.1.tar.gz
+[2024-04-06 17:12:10] WARNING root fetch - processPackages [CnbcNews]: Skipping, unable to determine old version
+[2024-04-06 17:12:10] INFO root fetch - main [MainThread]: End processing [CnbcNews] error
+[2024-04-06 17:12:10] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/16/b3/5e402bbf4c65626af7ae6cf863111c7cb38da1b309e576d7ddf841802e1c/octomy-common-2.0.1.tar.gz
+[2024-04-06 17:12:10] INFO root fetch - processPackages [DrissionRecorder]: New version: [3.4.13] Old Version: [3.4.12]
+[2024-04-06 17:12:10] INFO root fetch - processPackages [ingredient-parser-nlp]: New version: [0.1.0b9] Old Version: [0.1.0b8]
+[2024-04-06 17:12:10] INFO root fetch - processPackages [asto]: Downloading https://files.pythonhosted.org/packages/35/b8/779c040b0779eb58006b5afb0a721d5b2d7556a01b04ae41c7e525f4338f/asto-0.0.8.tar.gz
+[2024-04-06 17:12:11] INFO root fetch - processPackages [nonebot-plugin-resolver]: Downloading https://files.pythonhosted.org/packages/88/54/857412fe6bbfe439887833b37c3585e8c97abcb84abb04add963660e8a27/nonebot_plugin_resolver-1.0.8.tar.gz
+[2024-04-06 17:12:11] INFO root fetch - processPackages [DrissionRecorder]: Downloading https://files.pythonhosted.org/packages/08/cb/d6ca90a16839b355ee9303a75a04b29b6a23b8edc48432357764a0f48775/DrissionRecorder-3.4.12.tar.gz
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [asto]: Timeout reached during download
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [tulona]: Downloading https://files.pythonhosted.org/packages/50/65/9417ff0aeb01443fa869bc3b25220097454ca7399bdb38f6b46d2ee3bbef/tulona-0.2.2.tar.gz
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [nonebot-plugin-resolver]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [ingredient-parser-nlp]: Downloading https://files.pythonhosted.org/packages/89/5f/5546783f3f75e34ffef356366f28c87e3683796ea283e023ba19865c97b3/ingredient_parser_nlp-0.1.0b8.tar.gz
+[2024-04-06 17:12:11] INFO root fetch - processPackages [asto]: Downloading https://files.pythonhosted.org/packages/c5/d5/771091db2f45ff52f0bb30eda5ef677ebee6feaf176b4487819da153a213/asto-0.0.9.tar.gz
+[2024-04-06 17:12:11] INFO root fetch - processPackages [nonebot-plugin-resolver]: Downloading https://files.pythonhosted.org/packages/51/a7/510bd8c201f4db070bbc88a1b7c29f9640737628810f3c87d503898dfb6b/nonebot_plugin_resolver-1.0.9.tar.gz
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [tulona]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [tulona]: executing diffoscope
+[2024-04-06 17:12:11] INFO root fetch - processPackages [tulona]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tulona-0.2.1.tar.gz tmp/tulona-0.2.2.tar.gz --markdown 20240406/t/tulona/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [DrissionRecorder]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [octomy-common]: Downloading https://files.pythonhosted.org/packages/28/66/e04971b44fe4a6f78f1f82b9b3e11edcec25ada8a99016a153468ecd3273/octomy-common-2.0.2.tar.gz
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [asto]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [asto]: executing diffoscope
+[2024-04-06 17:12:11] INFO root fetch - processPackages [asto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asto-0.0.8.tar.gz tmp/asto-0.0.9.tar.gz --markdown 20240406/a/asto/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [nonebot-plugin-resolver]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [nonebot-plugin-resolver]: executing diffoscope
+[2024-04-06 17:12:11] INFO root fetch - processPackages [nonebot-plugin-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_resolver-1.0.8.tar.gz tmp/nonebot_plugin_resolver-1.0.9.tar.gz --markdown 20240406/n/nonebot-plugin-resolver/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [ingredient-parser-nlp]: Timeout reached during download
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [octomy-common]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [octomy-common]: executing diffoscope
+[2024-04-06 17:12:11] INFO root fetch - processPackages [octomy-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octomy-common-2.0.1.tar.gz tmp/octomy-common-2.0.2.tar.gz --markdown 20240406/o/octomy-common/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2024-04-06 17:12:11] INFO root fetch - processPackages [DrissionRecorder]: Downloading https://files.pythonhosted.org/packages/1a/bc/329f9e4e352e104e9160591d649de413d51e8993b5ee1b459019c8071fb2/DrissionRecorder-3.4.13.tar.gz
+[2024-04-06 17:12:11] INFO root fetch - processPackages [ingredient-parser-nlp]: Downloading https://files.pythonhosted.org/packages/a2/b2/ae053a29dd122e6419a1102b0c52329de38b4ac22d88a282f7f0b8d577f0/ingredient_parser_nlp-0.1.0b9.tar.gz
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [DrissionRecorder]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [DrissionRecorder]: executing diffoscope
+[2024-04-06 17:12:11] INFO root fetch - processPackages [DrissionRecorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DrissionRecorder-3.4.12.tar.gz tmp/DrissionRecorder-3.4.13.tar.gz --markdown 20240406/D/DrissionRecorder/3.4.12-3.4.13/diff.md --exclude *.pyd
+[2024-04-06 17:12:11] WARNING root fetch - processPackages [ingredient-parser-nlp]: Timeout reached during download
+[2024-04-06 17:12:11] INFO root fetch - processPackages [ingredient-parser-nlp]: executing diffoscope
+[2024-04-06 17:12:11] INFO root fetch - processPackages [ingredient-parser-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ingredient_parser_nlp-0.1.0b8.tar.gz tmp/ingredient_parser_nlp-0.1.0b9.tar.gz --markdown 20240406/i/ingredient-parser-nlp/0.1.0b8-0.1.0b9/diff.md --exclude *.pyd
+[2024-04-06 17:12:12] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.1.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.2.2.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - main [MainThread]: End processing [tulona]: success
+[2024-04-06 17:12:12] INFO root fetch - processPackages [asto]: Remove: archive file [/home/abi/fetcher/tmp/asto-0.0.8.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - processPackages [asto]: Remove: archive file [/home/abi/fetcher/tmp/asto-0.0.9.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - main [MainThread]: End processing [asto]: success
+[2024-04-06 17:12:12] INFO root fetch - processPackages [nonebot-plugin-resolver]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_resolver-1.0.8.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - processPackages [nonebot-plugin-resolver]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_resolver-1.0.9.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-resolver]: success
+[2024-04-06 17:12:12] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.1.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - processPackages [octomy-common]: Remove: archive file [/home/abi/fetcher/tmp/octomy-common-2.0.2.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - main [MainThread]: End processing [octomy-common]: success
+[2024-04-06 17:12:12] INFO root fetch - processPackages [DrissionRecorder]: Remove: archive file [/home/abi/fetcher/tmp/DrissionRecorder-3.4.12.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - processPackages [DrissionRecorder]: Remove: archive file [/home/abi/fetcher/tmp/DrissionRecorder-3.4.13.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - main [MainThread]: End processing [DrissionRecorder]: success
+[2024-04-06 17:12:12] INFO root fetch - processPackages [ingredient-parser-nlp]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_parser_nlp-0.1.0b8.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - processPackages [ingredient-parser-nlp]: Remove: archive file [/home/abi/fetcher/tmp/ingredient_parser_nlp-0.1.0b9.tar.gz]
+[2024-04-06 17:12:12] INFO root fetch - main [MainThread]: End processing [ingredient-parser-nlp]: success
+[2024-04-06 17:12:12] INFO root fetch - main [MainThread]: Store serial: [22648868]
