@@ -15348,3 +15348,31 @@ EOFError: EOF read where object expected
 [2024-04-06 13:53:45] INFO root fetch - processPackages [pulumi-aiven]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_aiven-6.9.0a1704274395.tar.gz]
 [2024-04-06 13:53:45] INFO root fetch - main [MainThread]: End processing [pulumi-aiven]: success
 [2024-04-06 13:53:45] INFO root fetch - main [MainThread]: Store serial: [22647666]
+[2024-04-06 13:55:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647666]
+[2024-04-06 13:55:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 13:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vasprocar
+[2024-04-06 13:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedding-optimizer
+[2024-04-06 13:55:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abberior-sted
+[2024-04-06 13:55:54] INFO root fetch - processPackages [abberior-sted]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-04-06 13:55:54] INFO root fetch - processPackages [embedding-optimizer]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 13:55:54] INFO root fetch - processPackages [abberior-sted]: Downloading https://files.pythonhosted.org/packages/75/d5/0511e449a89e133e8f5099aeb968880341b386f111a385444686f137d98f/abberior-sted-0.0.1.tar.gz
+[2024-04-06 13:55:54] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/d2/34/c46616f1f5bb9ebec11a2d8eec512c844dc74fe39cce2e212aada6a7bd7d/embedding_optimizer-0.0.2.tar.gz
+[2024-04-06 13:55:54] WARNING root fetch - processPackages [vasprocar]: Skipping, unable to determine old version
+[2024-04-06 13:55:54] INFO root fetch - main [MainThread]: End processing [vasprocar] error
+[2024-04-06 13:55:54] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 13:55:54] WARNING root fetch - processPackages [abberior-sted]: Timeout reached during download
+[2024-04-06 13:55:54] INFO root fetch - processPackages [abberior-sted]: Downloading https://files.pythonhosted.org/packages/fc/96/e286784f8acf398cc6dc67b1292669743b423e95ba36c6c8b4d1238a67cd/abberior-sted-0.0.2.tar.gz
+[2024-04-06 13:55:54] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/e4/a8/0d9c8204b15bf7a0ad3faa22ef4dad2ad0229998d6745d4628061da688d9/embedding_optimizer-0.0.3.tar.gz
+[2024-04-06 13:55:54] WARNING root fetch - processPackages [abberior-sted]: Timeout reached during download
+[2024-04-06 13:55:54] INFO root fetch - processPackages [abberior-sted]: executing diffoscope
+[2024-04-06 13:55:54] INFO root fetch - processPackages [abberior-sted]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abberior-sted-0.0.1.tar.gz tmp/abberior-sted-0.0.2.tar.gz --markdown 20240406/a/abberior-sted/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2024-04-06 13:55:54] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 13:55:54] INFO root fetch - processPackages [embedding-optimizer]: executing diffoscope
+[2024-04-06 13:55:54] INFO root fetch - processPackages [embedding-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedding_optimizer-0.0.2.tar.gz tmp/embedding_optimizer-0.0.3.tar.gz --markdown 20240406/e/embedding-optimizer/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 13:55:55] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.2.tar.gz]
+[2024-04-06 13:55:55] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.3.tar.gz]
+[2024-04-06 13:55:55] INFO root fetch - main [MainThread]: End processing [embedding-optimizer]: success
+[2024-04-06 13:55:55] INFO root fetch - processPackages [abberior-sted]: Remove: archive file [/home/abi/fetcher/tmp/abberior-sted-0.0.1.tar.gz]
+[2024-04-06 13:55:55] INFO root fetch - processPackages [abberior-sted]: Remove: archive file [/home/abi/fetcher/tmp/abberior-sted-0.0.2.tar.gz]
+[2024-04-06 13:55:55] INFO root fetch - main [MainThread]: End processing [abberior-sted]: success
+[2024-04-06 13:55:55] INFO root fetch - main [MainThread]: Store serial: [22647675]
