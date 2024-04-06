@@ -24995,3 +24995,55 @@ EOFError: EOF read where object expected
 [2024-04-06 23:33:33] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.9-py3-none-any.whl.zip]
 [2024-04-06 23:33:33] INFO root fetch - main [MainThread]: End processing [dektools]: success
 [2024-04-06 23:33:33] INFO root fetch - main [MainThread]: Store serial: [22651297]
+[2024-04-06 23:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651297]
+[2024-04-06 23:35:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ffxiv_stats
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: football-stats-scraper
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LOLZTEAM
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ciscoconfparse2
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vulcan-logger
+[2024-04-06 23:35:42] INFO root fetch - processPackages [vulcan-logger]: New version: [1.3.9] Old Version: [1.3.8]
+[2024-04-06 23:35:42] INFO root fetch - processPackages [football-stats-scraper]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-04-06 23:35:42] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/9f/35/a225d97a6772f103ec0ecc2da6d731def467557e73214d90b19145298b1d/vulcan-logger-1.3.8.tar.gz
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ffxiv_stats]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-04-06 23:35:42] INFO root fetch - processPackages [LOLZTEAM]: New version: [1.3.0] Old Version: [1.2.9]
+[2024-04-06 23:35:42] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/dc/a9/3b038141b46ae740ed7953edc0260889298f47c048c07815ce6b4c4f110d/football_stats_scraper-0.1.3-py3-none-any.whl
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-04-06 23:35:42] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-06 23:35:42] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/40/93/88cbb40b0e8088728e691f58afda242af201113348ce2f4ce320b9462539/ffxiv_stats-0.4.1.tar.gz
+[2024-04-06 23:35:42] INFO root fetch - processPackages [LOLZTEAM]: Downloading https://files.pythonhosted.org/packages/47/12/eaee8d6bb7957e905fc9d16fc63d695d7684e9ed32ed71acfcf72179a0ea/LOLZTEAM-1.2.9.tar.gz
+[2024-04-06 23:35:42] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-04-06 23:35:42] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/3e/2e/47f03d0367694704280fcfdd11857a897fdffc590dd685b78688d98e2b0d/football_stats_scraper-0.1.4-py3-none-any.whl
+[2024-04-06 23:35:42] INFO root fetch - processPackages [vulcan-logger]: Downloading https://files.pythonhosted.org/packages/99/24/090cc2eb216035dfa61b40cefdc573a33824a23677c4b9a8b5eabeeb5b70/vulcan-logger-1.3.9.tar.gz
+[2024-04-06 23:35:42] WARNING root fetch - processPackages [LOLZTEAM]: Timeout reached during download
+[2024-04-06 23:35:42] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-06 23:35:42] INFO root fetch - processPackages [football-stats-scraper]: executing diffoscope
+[2024-04-06 23:35:42] INFO root fetch - processPackages [football-stats-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/football_stats_scraper-0.1.3-py3-none-any.whl.zip tmp/football_stats_scraper-0.1.4-py3-none-any.whl.zip --markdown 20240406/f/football-stats-scraper/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2024-04-06 23:35:43] WARNING root fetch - processPackages [vulcan-logger]: Timeout reached during download
+[2024-04-06 23:35:43] INFO root fetch - processPackages [vulcan-logger]: executing diffoscope
+[2024-04-06 23:35:43] INFO root fetch - processPackages [vulcan-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vulcan-logger-1.3.8.tar.gz tmp/vulcan-logger-1.3.9.tar.gz --markdown 20240406/v/vulcan-logger/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2024-04-06 23:35:43] INFO root fetch - processPackages [LOLZTEAM]: Downloading https://files.pythonhosted.org/packages/f5/bb/c2df5959c398db016978a91f3b4eb271a8d3580aedeecbcf77b2f28dd3b3/LOLZTEAM-1.3.0.tar.gz
+[2024-04-06 23:35:43] WARNING root fetch - processPackages [ffxiv_stats]: Timeout reached during download
+[2024-04-06 23:35:43] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-04-06 23:35:43] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-04-06 23:35:43] WARNING root fetch - processPackages [LOLZTEAM]: Timeout reached during download
+[2024-04-06 23:35:43] INFO root fetch - processPackages [LOLZTEAM]: executing diffoscope
+[2024-04-06 23:35:43] INFO root fetch - processPackages [LOLZTEAM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LOLZTEAM-1.2.9.tar.gz tmp/LOLZTEAM-1.3.0.tar.gz --markdown 20240406/L/LOLZTEAM/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2024-04-06 23:35:43] INFO root fetch - processPackages [ffxiv_stats]: Downloading https://files.pythonhosted.org/packages/39/60/1067fc67a247e2e1ee596b3300fb10ea38ba0757d41eb82b9c6db29451d3/ffxiv_stats-0.4.2.tar.gz
+[2024-04-06 23:35:43] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.3-py3-none-any.whl.zip]
+[2024-04-06 23:35:43] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.4-py3-none-any.whl.zip]
+[2024-04-06 23:35:43] INFO root fetch - main [MainThread]: End processing [football-stats-scraper]: success
+[2024-04-06 23:35:43] WARNING root fetch - processPackages [ffxiv_stats]: Timeout reached during download
+[2024-04-06 23:35:43] INFO root fetch - processPackages [ffxiv_stats]: executing diffoscope
+[2024-04-06 23:35:43] INFO root fetch - processPackages [ffxiv_stats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffxiv_stats-0.4.1.tar.gz tmp/ffxiv_stats-0.4.2.tar.gz --markdown 20240406/f/ffxiv_stats/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2024-04-06 23:35:43] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.8.tar.gz]
+[2024-04-06 23:35:43] INFO root fetch - processPackages [vulcan-logger]: Remove: archive file [/home/abi/fetcher/tmp/vulcan-logger-1.3.9.tar.gz]
+[2024-04-06 23:35:43] INFO root fetch - main [MainThread]: End processing [vulcan-logger]: success
+[2024-04-06 23:35:44] INFO root fetch - processPackages [LOLZTEAM]: Remove: archive file [/home/abi/fetcher/tmp/LOLZTEAM-1.2.9.tar.gz]
+[2024-04-06 23:35:44] INFO root fetch - processPackages [LOLZTEAM]: Remove: archive file [/home/abi/fetcher/tmp/LOLZTEAM-1.3.0.tar.gz]
+[2024-04-06 23:35:44] INFO root fetch - main [MainThread]: End processing [LOLZTEAM]: success
+[2024-04-06 23:35:44] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.1.tar.gz]
+[2024-04-06 23:35:44] INFO root fetch - processPackages [ffxiv_stats]: Remove: archive file [/home/abi/fetcher/tmp/ffxiv_stats-0.4.2.tar.gz]
+[2024-04-06 23:35:44] INFO root fetch - main [MainThread]: End processing [ffxiv_stats]: success
+[2024-04-06 23:35:44] INFO root fetch - main [MainThread]: Store serial: [22651311]
