@@ -17533,3 +17533,30 @@ EOFError: EOF read where object expected
 [2024-04-06 16:16:06] INFO root fetch - processPackages [etrc]: Remove: archive file [/home/abi/fetcher/tmp/etrc-0.0.9.tar.gz]
 [2024-04-06 16:16:06] INFO root fetch - main [MainThread]: End processing [etrc]: success
 [2024-04-06 16:16:06] INFO root fetch - main [MainThread]: Store serial: [22648599]
+[2024-04-06 16:18:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648599]
+[2024-04-06 16:18:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 16:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sssom
+[2024-04-06 16:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyGz1
+[2024-04-06 16:18:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: filetrack
+[2024-04-06 16:18:15] INFO root fetch - processPackages [PyGz1]: New version: [0.3] Old Version: [0.2]
+[2024-04-06 16:18:15] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/d6/c4/0e759226bb1aa01ab9e3ffbcade9331804213633639d86c41276f4bd6ebe/PyGz1-0.2.tar.gz
+[2024-04-06 16:18:15] WARNING root fetch - processPackages [filetrack]: Skipping, unable to determine old version
+[2024-04-06 16:18:15] INFO root fetch - main [MainThread]: End processing [filetrack] error
+[2024-04-06 16:18:15] INFO root fetch - processPackages [sssom]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-04-06 16:18:15] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:18:15] INFO root fetch - processPackages [sssom]: Downloading https://files.pythonhosted.org/packages/bc/1d/845e820bdf3fb64a96a4b54277683b7bc338468650be3461d0eea40eabc8/sssom-0.4.5.tar.gz
+[2024-04-06 16:18:15] WARNING root fetch - processPackages [sssom]: Timeout reached during download
+[2024-04-06 16:18:15] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/3a/af/9a5a208ae952a34c360bf3a36ba3c299f64d43e6cf097382ceb69fc168c6/PyGz1-0.3.tar.gz
+[2024-04-06 16:18:15] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:18:15] INFO root fetch - processPackages [PyGz1]: executing diffoscope
+[2024-04-06 16:18:15] INFO root fetch - processPackages [PyGz1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGz1-0.2.tar.gz tmp/PyGz1-0.3.tar.gz --markdown 20240406/P/PyGz1/0.2-0.3/diff.md --exclude *.pyd
+[2024-04-06 16:18:15] INFO root fetch - processPackages [sssom]: Downloading https://files.pythonhosted.org/packages/c6/b6/c1435cfb42816b9c7ea31f2a4373afaf9b8889e1bdaeeea32aeaed820501/sssom-0.4.6.tar.gz
+[2024-04-06 16:18:15] WARNING root fetch - processPackages [sssom]: Timeout reached during download
+[2024-04-06 16:18:15] INFO root fetch - processPackages [sssom]: executing diffoscope
+[2024-04-06 16:18:15] INFO root fetch - processPackages [sssom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sssom-0.4.5.tar.gz tmp/sssom-0.4.6.tar.gz --markdown 20240406/s/sssom/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2024-04-06 16:18:16] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.2.tar.gz]
+[2024-04-06 16:18:16] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.3.tar.gz]
+[2024-04-06 16:18:16] INFO root fetch - main [MainThread]: End processing [PyGz1]: success
+[2024-04-06 16:21:15] ERROR root fetch - processPackages [sssom]: Timeout during execution of pkgdiff
+[2024-04-06 16:21:15] INFO root fetch - main [MainThread]: End processing [sssom] error
+[2024-04-06 16:21:15] INFO root fetch - main [MainThread]: Store serial: [22648609]
