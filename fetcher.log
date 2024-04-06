@@ -23075,3 +23075,50 @@ EOFError: EOF read where object expected
 [2024-04-06 21:32:26] INFO root fetch - processPackages [ffconverter]: Remove: archive file [/home/abi/fetcher/tmp/ffconverter-2.4.0.tar.gz]
 [2024-04-06 21:32:26] INFO root fetch - main [MainThread]: End processing [ffconverter]: success
 [2024-04-06 21:32:26] INFO root fetch - main [MainThread]: Store serial: [22650497]
+[2024-04-06 21:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650497]
+[2024-04-06 21:34:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 21:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vectara-cli
+[2024-04-06 21:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pthugefileviewer
+[2024-04-06 21:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dtrc
+[2024-04-06 21:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cfnresponse
+[2024-04-06 21:34:35] INFO root fetch - processPackages [pthugefileviewer]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-04-06 21:34:35] INFO root fetch - processPackages [vectara-cli]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 21:34:35] INFO root fetch - processPackages [pthugefileviewer]: Downloading https://files.pythonhosted.org/packages/0f/bc/e93be66303bc539ba7080da05eb3e7a8437b015a69678bd7d381f1c3f0b6/pthugefileviewer-0.2.0.tar.gz
+[2024-04-06 21:34:35] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/28/e9/8603abb54bdc5b30c0a99de558b73f321f8ef30f43423aa8e3132e2c2443/vectara-cli-0.1.4.tar.gz
+[2024-04-06 21:34:35] INFO root fetch - processPackages [dtrc]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 21:34:35] INFO root fetch - processPackages [cfnresponse]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-04-06 21:34:35] WARNING root fetch - processPackages [pthugefileviewer]: Timeout reached during download
+[2024-04-06 21:34:35] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-06 21:34:35] INFO root fetch - processPackages [pthugefileviewer]: Downloading https://files.pythonhosted.org/packages/e0/f7/052ace1ff01d699f8f140cb51b2855e0b01d260a275a048d46f13537e056/pthugefileviewer-0.2.1.tar.gz
+[2024-04-06 21:34:35] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/f1/0c/69a647344e93636f5b396d6026a6266f33d122fa494136f395bc5801f945/dtrc-0.0.7.tar.gz
+[2024-04-06 21:34:35] INFO root fetch - processPackages [cfnresponse]: Downloading https://files.pythonhosted.org/packages/bf/ec/422f10b635d100e3f99afdb89b58c3847e9bef099afc425319c284b5a9a4/cfnresponse-1.1.2.tar.gz
+[2024-04-06 21:34:35] WARNING root fetch - processPackages [pthugefileviewer]: Timeout reached during download
+[2024-04-06 21:34:35] INFO root fetch - processPackages [pthugefileviewer]: executing diffoscope
+[2024-04-06 21:34:35] INFO root fetch - processPackages [pthugefileviewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pthugefileviewer-0.2.0.tar.gz tmp/pthugefileviewer-0.2.1.tar.gz --markdown 20240406/p/pthugefileviewer/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2024-04-06 21:34:35] WARNING root fetch - processPackages [cfnresponse]: Timeout reached during download
+[2024-04-06 21:34:35] WARNING root fetch - processPackages [dtrc]: Timeout reached during download
+[2024-04-06 21:34:36] INFO root fetch - processPackages [vectara-cli]: Downloading https://files.pythonhosted.org/packages/2f/3d/55223ad0337f2bc3391eb591580a406376729bcb0c3c6e0bd93b601162c1/vectara-cli-0.1.5.tar.gz
+[2024-04-06 21:34:36] WARNING root fetch - processPackages [vectara-cli]: Timeout reached during download
+[2024-04-06 21:34:36] INFO root fetch - processPackages [vectara-cli]: executing diffoscope
+[2024-04-06 21:34:36] INFO root fetch - processPackages [vectara-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vectara-cli-0.1.4.tar.gz tmp/vectara-cli-0.1.5.tar.gz --markdown 20240406/v/vectara-cli/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-06 21:34:36] INFO root fetch - processPackages [cfnresponse]: Downloading https://files.pythonhosted.org/packages/18/7f/00b2c664d9d042e02ebca40bc2d7403085967cd688eb38e82de8f8300edb/cfnresponse-1.1.3.tar.gz
+[2024-04-06 21:34:36] INFO root fetch - processPackages [dtrc]: Downloading https://files.pythonhosted.org/packages/84/76/09893e2bb8c9673a5a810aa33d1f3e2fad5691566cdc67af1e456f5df742/dtrc-0.0.8.tar.gz
+[2024-04-06 21:34:36] WARNING root fetch - processPackages [cfnresponse]: Timeout reached during download
+[2024-04-06 21:34:36] INFO root fetch - processPackages [cfnresponse]: executing diffoscope
+[2024-04-06 21:34:36] INFO root fetch - processPackages [cfnresponse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cfnresponse-1.1.2.tar.gz tmp/cfnresponse-1.1.3.tar.gz --markdown 20240406/c/cfnresponse/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2024-04-06 21:34:36] WARNING root fetch - processPackages [dtrc]: Timeout reached during download
+[2024-04-06 21:34:36] INFO root fetch - processPackages [dtrc]: executing diffoscope
+[2024-04-06 21:34:36] INFO root fetch - processPackages [dtrc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dtrc-0.0.7.tar.gz tmp/dtrc-0.0.8.tar.gz --markdown 20240406/d/dtrc/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 21:34:36] INFO root fetch - processPackages [pthugefileviewer]: Remove: archive file [/home/abi/fetcher/tmp/pthugefileviewer-0.2.0.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - processPackages [pthugefileviewer]: Remove: archive file [/home/abi/fetcher/tmp/pthugefileviewer-0.2.1.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - main [MainThread]: End processing [pthugefileviewer]: success
+[2024-04-06 21:34:36] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.4.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - processPackages [vectara-cli]: Remove: archive file [/home/abi/fetcher/tmp/vectara-cli-0.1.5.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - main [MainThread]: End processing [vectara-cli]: success
+[2024-04-06 21:34:36] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.7.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - processPackages [dtrc]: Remove: archive file [/home/abi/fetcher/tmp/dtrc-0.0.8.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - main [MainThread]: End processing [dtrc]: success
+[2024-04-06 21:34:36] INFO root fetch - processPackages [cfnresponse]: Remove: archive file [/home/abi/fetcher/tmp/cfnresponse-1.1.2.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - processPackages [cfnresponse]: Remove: archive file [/home/abi/fetcher/tmp/cfnresponse-1.1.3.tar.gz]
+[2024-04-06 21:34:36] INFO root fetch - main [MainThread]: End processing [cfnresponse]: success
+[2024-04-06 21:34:36] INFO root fetch - main [MainThread]: Store serial: [22650510]
