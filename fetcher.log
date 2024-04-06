@@ -15072,3 +15072,17 @@ EOFError: EOF read where object expected
 [2024-04-06 13:34:09] INFO root fetch - processPackages [pulumi-datadog]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_datadog-4.9.0a1653604828.tar.gz]
 [2024-04-06 13:34:09] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
 [2024-04-06 13:34:09] INFO root fetch - main [MainThread]: Store serial: [22647570]
+[2024-04-06 13:36:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647570]
+[2024-04-06 13:36:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 13:36:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-postgresql
+[2024-04-06 13:36:18] INFO root fetch - processPackages [pulumi-postgresql]: New version: [3.9.0a1689896978] Old Version: [3.9.0a1689315090]
+[2024-04-06 13:36:18] INFO root fetch - processPackages [pulumi-postgresql]: Downloading https://files.pythonhosted.org/packages/ed/e0/7fdde90ef74fd102795261322b0ac8625336995854691a442d881f55cb87/pulumi_postgresql-3.9.0a1689315090.tar.gz
+[2024-04-06 13:36:18] WARNING root fetch - processPackages [pulumi-postgresql]: Timeout reached during download
+[2024-04-06 13:36:19] INFO root fetch - processPackages [pulumi-postgresql]: Downloading https://files.pythonhosted.org/packages/a0/7c/da57549229c7dc197fea08a82cd8c820b56d0bf8e0ed12fafc5fec8b3eff/pulumi_postgresql-3.9.0a1689896978.tar.gz
+[2024-04-06 13:36:19] WARNING root fetch - processPackages [pulumi-postgresql]: Timeout reached during download
+[2024-04-06 13:36:19] INFO root fetch - processPackages [pulumi-postgresql]: executing diffoscope
+[2024-04-06 13:36:19] INFO root fetch - processPackages [pulumi-postgresql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_postgresql-3.9.0a1689315090.tar.gz tmp/pulumi_postgresql-3.9.0a1689896978.tar.gz --markdown 20240406/p/pulumi-postgresql/3.9.0a1689315090-3.9.0a1689896978/diff.md --exclude *.pyd
+[2024-04-06 13:36:19] INFO root fetch - processPackages [pulumi-postgresql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_postgresql-3.9.0a1689315090.tar.gz]
+[2024-04-06 13:36:19] INFO root fetch - processPackages [pulumi-postgresql]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_postgresql-3.9.0a1689896978.tar.gz]
+[2024-04-06 13:36:19] INFO root fetch - main [MainThread]: End processing [pulumi-postgresql]: success
+[2024-04-06 13:36:19] INFO root fetch - main [MainThread]: Store serial: [22647573]
