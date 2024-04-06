@@ -24820,3 +24820,33 @@ EOFError: EOF read where object expected
 [2024-04-06 23:16:16] INFO root fetch - processPackages [Toisto]: Remove: archive file [/home/abi/fetcher/tmp/Toisto-0.9.0.tar.gz]
 [2024-04-06 23:16:16] INFO root fetch - main [MainThread]: End processing [Toisto]: success
 [2024-04-06 23:16:16] INFO root fetch - main [MainThread]: Store serial: [22651223]
+[2024-04-06 23:18:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22651223]
+[2024-04-06 23:18:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 23:18:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: football-stats-scraper
+[2024-04-06 23:18:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: transit2
+[2024-04-06 23:18:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aligned-textgrid
+[2024-04-06 23:18:25] INFO root fetch - processPackages [football-stats-scraper]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 23:18:25] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/b8/bb/a205d44e5a522ee06251d698c789206f8f5621c3f7fbdc93eae8318fc875/football_stats_scraper-0.1.1-py3-none-any.whl
+[2024-04-06 23:18:25] INFO root fetch - processPackages [aligned-textgrid]: New version: [0.6.5] Old Version: [0.6.4]
+[2024-04-06 23:18:25] INFO root fetch - processPackages [transit2]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 23:18:26] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-06 23:18:26] INFO root fetch - processPackages [aligned-textgrid]: Downloading https://files.pythonhosted.org/packages/d3/a9/a2233cea2ed00fdc8ab3fe77d695f41c9da561458b95cab91f01f84207d3/aligned_textgrid-0.6.4.tar.gz
+[2024-04-06 23:18:26] INFO root fetch - processPackages [transit2]: Downloading https://files.pythonhosted.org/packages/5b/da/e76a18ef4b158a6682fd59588bf1bbce15437ccbb18eec6f351db60c6ec5/transit2-1.0.8.tar.gz
+[2024-04-06 23:18:26] INFO root fetch - processPackages [football-stats-scraper]: Downloading https://files.pythonhosted.org/packages/a3/8a/318c8f9f0621cf18cbcea8c1a9e2d14a2d9ce394b33d1e57f0c7005ed3f0/football_stats_scraper-0.1.2-py3-none-any.whl
+[2024-04-06 23:18:26] WARNING root fetch - processPackages [aligned-textgrid]: Timeout reached during download
+[2024-04-06 23:18:26] WARNING root fetch - processPackages [football-stats-scraper]: Timeout reached during download
+[2024-04-06 23:18:26] INFO root fetch - processPackages [football-stats-scraper]: executing diffoscope
+[2024-04-06 23:18:26] INFO root fetch - processPackages [football-stats-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/football_stats_scraper-0.1.1-py3-none-any.whl.zip tmp/football_stats_scraper-0.1.2-py3-none-any.whl.zip --markdown 20240406/f/football-stats-scraper/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 23:18:26] INFO root fetch - processPackages [aligned-textgrid]: Downloading https://files.pythonhosted.org/packages/8b/25/c49cc5ed3692e70f234196cc270da285f7a604004a4cbf5bef5af515e2a0/aligned_textgrid-0.6.5.tar.gz
+[2024-04-06 23:18:26] WARNING root fetch - processPackages [aligned-textgrid]: Timeout reached during download
+[2024-04-06 23:18:26] INFO root fetch - processPackages [aligned-textgrid]: executing diffoscope
+[2024-04-06 23:18:26] INFO root fetch - processPackages [aligned-textgrid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aligned_textgrid-0.6.4.tar.gz tmp/aligned_textgrid-0.6.5.tar.gz --markdown 20240406/a/aligned-textgrid/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2024-04-06 23:18:26] WARNING root fetch - processPackages [transit2]: Skipping package: exceeds size limit 83779554>=10485760
+[2024-04-06 23:18:26] INFO root fetch - main [MainThread]: End processing [transit2] error
+[2024-04-06 23:18:26] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.1-py3-none-any.whl.zip]
+[2024-04-06 23:18:26] INFO root fetch - processPackages [football-stats-scraper]: Remove: archive file [/home/abi/fetcher/tmp/football_stats_scraper-0.1.2-py3-none-any.whl.zip]
+[2024-04-06 23:18:26] INFO root fetch - main [MainThread]: End processing [football-stats-scraper]: success
+[2024-04-06 23:18:27] INFO root fetch - processPackages [aligned-textgrid]: Remove: archive file [/home/abi/fetcher/tmp/aligned_textgrid-0.6.4.tar.gz]
+[2024-04-06 23:18:27] INFO root fetch - processPackages [aligned-textgrid]: Remove: archive file [/home/abi/fetcher/tmp/aligned_textgrid-0.6.5.tar.gz]
+[2024-04-06 23:18:27] INFO root fetch - main [MainThread]: End processing [aligned-textgrid]: success
+[2024-04-06 23:18:27] INFO root fetch - main [MainThread]: Store serial: [22651231]
