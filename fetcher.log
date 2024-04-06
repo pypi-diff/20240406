@@ -17280,3 +17280,130 @@ EOFError: EOF read where object expected
 [2024-04-06 16:07:22] INFO root fetch - processPackages [rookiepy]: Remove: archive file [/home/abi/fetcher/tmp/rookiepy-0.3.7-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.whl.zip]
 [2024-04-06 16:07:22] INFO root fetch - main [MainThread]: End processing [rookiepy]: success
 [2024-04-06 16:07:22] INFO root fetch - main [MainThread]: Store serial: [22648467]
+[2024-04-06 16:09:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648467]
+[2024-04-06 16:09:31] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: learning3d
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simplebox
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-sale-margin-security
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-sale-margin-delivered-security
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-core
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: composio-langchain
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: composio-crewai
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: composio-autogen
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: boxedfactory
+[2024-04-06 16:09:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sunpy-sphinx-theme
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.72] Old Version: [0.1.71]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.72] Old Version: [0.1.71]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.72] Old Version: [0.1.71]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-core]: New version: [0.1.72] Old Version: [0.1.71]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [boxedfactory]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: New version: [16.0.3.1.0] Old Version: [16.0.2.0.0.5]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [learning3d]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a188] Old Version: [0.0.1a186]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: New version: [16.0.1.2.0] Old Version: [16.0.1.0.0.4]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [sunpy-sphinx-theme]: New version: [2.0.8rc1] Old Version: [2.0.7]
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/15/01/6d05dada2f386ecf56a2b5fb3b8c381fd0ba45829034b7615638f428e693/composio_autogen-0.1.71.tar.gz
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/49/ea/6d84f1f2367c3582fbf06ee7ecfca734b3152a58e87d0fed498c398fb9eb/composio_langchain-0.1.71.tar.gz
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/04/e6/977a4fa47415728b4afd04225efb4654851a465ece90f1413f1b594320f2/composio_crewai-0.1.71.tar.gz
+[2024-04-06 16:09:31] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/b5/27/ab492e353731e05831720ef80d095d593bf32bd9a146d717af7c2243a3a7/composio_core-0.1.71.tar.gz
+[2024-04-06 16:09:32] INFO root fetch - processPackages [boxedfactory]: Downloading https://files.pythonhosted.org/packages/2e/3c/74917fe9bf4746dceec97aab9548b9fffa2ba6fdcf12be4bf475c48f6f6c/boxedfactory-0.0.7.tar.gz
+[2024-04-06 16:09:32] INFO root fetch - processPackages [sunpy-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/85/3a/3dc8fd2d84ed0e4658902cc9a11d4a0fea8bfbe9979cb90e987504020364/sunpy-sphinx-theme-2.0.7.tar.gz
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Downloading https://files.pythonhosted.org/packages/bc/96/af48dbdc2f0f9b09299986e27cd058caec9c2401e0048f89cc7ded715d22/odoo_addon_sale_margin_security-16.0.2.0.0.5-py3-none-any.whl
+[2024-04-06 16:09:32] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/c3/78/6acc9b3c9deae3ad6aea0c2c9a2c62c7441a498ced31718944f50d3841ab/simplebox-0.0.1a186-py3-none-any.whl
+[2024-04-06 16:09:32] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/01/11/ecfb75080f9e08869bf58234902f4e745eb5e4e7dd2606f938f17aad382e/learning3d-0.0.2.tar.gz
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Downloading https://files.pythonhosted.org/packages/07/6f/e793d4772fd5282c89fd178b1fa36745a488cde9d0c20bf73a720341fb15/odoo_addon_sale_margin_delivered_security-16.0.1.0.0.4-py3-none-any.whl
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [boxedfactory]: Timeout reached during download
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [sunpy-sphinx-theme]: Timeout reached during download
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/fe/8d/cf26db1fc29abf487b4021c6e185cfb73d636f257371e9b393fa5201dd6c/composio_autogen-0.1.72.tar.gz
+[2024-04-06 16:09:32] INFO root fetch - processPackages [boxedfactory]: Downloading https://files.pythonhosted.org/packages/db/84/654120932bbb70daaf8d11dec99ef25e174c66768fdc8559e2b74616c9d3/boxedfactory-0.0.8.tar.gz
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [odoo-addon-sale-margin-security]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/02/2d/51951ec9957879863843ab6e1f897a031039ea49394824b61fb894bed4de/composio_crewai-0.1.72.tar.gz
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/25/e1/9c8c61095b9a8836c203a6e483c2068f03269038f51f0f70ad6d511c6824/composio_core-0.1.72.tar.gz
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/8d/5f/18bda90b45bc747f2442d02c97073a2c1524ff806a66879b2ceb91629718/composio_langchain-0.1.72.tar.gz
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [simplebox]: Timeout reached during download
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.71.tar.gz tmp/composio_autogen-0.1.72.tar.gz --markdown 20240406/c/composio-autogen/0.1.71-0.1.72/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [boxedfactory]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [boxedfactory]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [boxedfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxedfactory-0.0.7.tar.gz tmp/boxedfactory-0.0.8.tar.gz --markdown 20240406/b/boxedfactory/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Downloading https://files.pythonhosted.org/packages/bd/79/158a47c28de35350114b18a7056631360ca90826366730c0326398171743/odoo_addon_sale_margin_delivered_security-16.0.1.2.0-py3-none-any.whl
+[2024-04-06 16:09:32] INFO root fetch - processPackages [sunpy-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/5f/c5/217c44e14c8e61b2d993a139f31e57a4ec941b7230657ea2c505079ed638/sunpy-sphinx-theme-2.0.8rc1.tar.gz
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.71.tar.gz tmp/composio_crewai-0.1.72.tar.gz --markdown 20240406/c/composio-crewai/0.1.71-0.1.72/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Downloading https://files.pythonhosted.org/packages/a2/08/48656d6dcc3534608efe076d0988f2816e38dce5247b8aca3ae4bc71ca8d/odoo_addon_sale_margin_security-16.0.3.1.0-py3-none-any.whl
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.71.tar.gz tmp/composio_core-0.1.72.tar.gz --markdown 20240406/c/composio-core/0.1.71-0.1.72/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.71.tar.gz tmp/composio_langchain-0.1.72.tar.gz --markdown 20240406/c/composio-langchain/0.1.71-0.1.72/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/d1/b7/6f128998547d3e68153764c4ef28098a98efb35d898608ebd9ac2d8598bd/simplebox-0.0.1a188-py3-none-any.whl
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_margin_delivered_security-16.0.1.0.0.4-py3-none-any.whl.zip tmp/odoo_addon_sale_margin_delivered_security-16.0.1.2.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-sale-margin-delivered-security/16.0.1.0.0.4-16.0.1.2.0/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [odoo-addon-sale-margin-security]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_margin_security-16.0.2.0.0.5-py3-none-any.whl.zip tmp/odoo_addon_sale_margin_security-16.0.3.1.0-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-sale-margin-security/16.0.2.0.0.5-16.0.3.1.0/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [sunpy-sphinx-theme]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [sunpy-sphinx-theme]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [sunpy-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunpy-sphinx-theme-2.0.7.tar.gz tmp/sunpy-sphinx-theme-2.0.8rc1.tar.gz --markdown 20240406/s/sunpy-sphinx-theme/2.0.7-2.0.8rc1/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [simplebox]: Timeout reached during download
+[2024-04-06 16:09:32] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2024-04-06 16:09:32] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a186-py3-none-any.whl.zip tmp/simplebox-0.0.1a188-py3-none-any.whl.zip --markdown 20240406/s/simplebox/0.0.1a186-0.0.1a188/diff.md --exclude *.pyd
+[2024-04-06 16:09:32] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 16:09:33] INFO root fetch - processPackages [learning3d]: Downloading https://files.pythonhosted.org/packages/2f/18/ae0587589fe0ec6ad1317fe9a9c582115f7266db70f557a48d39f12d8b58/learning3d-0.0.3.tar.gz
+[2024-04-06 16:09:33] WARNING root fetch - processPackages [learning3d]: Timeout reached during download
+[2024-04-06 16:09:33] INFO root fetch - processPackages [learning3d]: executing diffoscope
+[2024-04-06 16:09:33] INFO root fetch - processPackages [learning3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/learning3d-0.0.2.tar.gz tmp/learning3d-0.0.3.tar.gz --markdown 20240406/l/learning3d/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.71.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.72.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-autogen]: Start processing: pidx
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-06 16:09:33] INFO root fetch - processPackages [boxedfactory]: Remove: archive file [/home/abi/fetcher/tmp/boxedfactory-0.0.7.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [boxedfactory]: Remove: archive file [/home/abi/fetcher/tmp/boxedfactory-0.0.8.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [boxedfactory]: Start processing: TransformationQA-ZongqianLi
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [boxedfactory]: success
+[2024-04-06 16:09:33] INFO root fetch - processPackages [pidx]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.71.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.72.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.71.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.72.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-06 16:09:33] ERROR root fetch - processPackages [TransformationQA-ZongqianLi]: Unable to get metadata: No such project 'TransformationQA-ZongqianLi'
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [TransformationQA-ZongqianLi] error
+[2024-04-06 16:09:33] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_security-16.0.2.0.0.5-py3-none-any.whl.zip]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [odoo-addon-sale-margin-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_security-16.0.3.1.0-py3-none-any.whl.zip]
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-margin-security]: success
+[2024-04-06 16:09:33] INFO root fetch - processPackages [sunpy-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-sphinx-theme-2.0.7.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [sunpy-sphinx-theme]: Remove: archive file [/home/abi/fetcher/tmp/sunpy-sphinx-theme-2.0.8rc1.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [sunpy-sphinx-theme]: success
+[2024-04-06 16:09:33] INFO root fetch - processPackages [pidx]: Downloading https://files.pythonhosted.org/packages/a9/80/0637e5d0b455ed89c906b27c152c2c32f67cf3bcc7e1c21c893977747243/pidx-0.0.8.tar.gz
+[2024-04-06 16:09:33] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_delivered_security-16.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [odoo-addon-sale-margin-delivered-security]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_sale_margin_delivered_security-16.0.1.2.0-py3-none-any.whl.zip]
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-margin-delivered-security]: success
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.71.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.72.tar.gz]
+[2024-04-06 16:09:33] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-06 16:09:33] WARNING root fetch - processPackages [pidx]: Timeout reached during download
+[2024-04-06 16:09:33] INFO root fetch - processPackages [pidx]: Downloading https://files.pythonhosted.org/packages/08/9a/254f599938ac7b7447100629949de04b8f65f479ff0a84d6464835e33497/pidx-0.0.9.tar.gz
+[2024-04-06 16:09:34] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a186-py3-none-any.whl.zip]
+[2024-04-06 16:09:34] INFO root fetch - processPackages [simplebox]: Remove: archive file [/home/abi/fetcher/tmp/simplebox-0.0.1a188-py3-none-any.whl.zip]
+[2024-04-06 16:09:34] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2024-04-06 16:09:34] WARNING root fetch - processPackages [pidx]: Timeout reached during download
+[2024-04-06 16:09:34] INFO root fetch - processPackages [pidx]: executing diffoscope
+[2024-04-06 16:09:34] INFO root fetch - processPackages [pidx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pidx-0.0.8.tar.gz tmp/pidx-0.0.9.tar.gz --markdown 20240406/p/pidx/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 16:09:34] INFO root fetch - processPackages [pidx]: Remove: archive file [/home/abi/fetcher/tmp/pidx-0.0.8.tar.gz]
+[2024-04-06 16:09:34] INFO root fetch - processPackages [pidx]: Remove: archive file [/home/abi/fetcher/tmp/pidx-0.0.9.tar.gz]
+[2024-04-06 16:09:34] INFO root fetch - main [MainThread]: End processing [pidx]: success
+[2024-04-06 16:09:34] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.2.tar.gz]
+[2024-04-06 16:09:34] INFO root fetch - processPackages [learning3d]: Remove: archive file [/home/abi/fetcher/tmp/learning3d-0.0.3.tar.gz]
+[2024-04-06 16:09:34] INFO root fetch - main [MainThread]: End processing [learning3d]: success
+[2024-04-06 16:09:34] INFO root fetch - main [MainThread]: Store serial: [22648535]
