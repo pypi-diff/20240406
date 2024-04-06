@@ -24144,3 +24144,38 @@ EOFError: EOF read where object expected
 [2024-04-06 22:36:09] WARNING root fetch - processPackages [winpwnage]: Skipping, unable to determine old version
 [2024-04-06 22:36:09] INFO root fetch - main [MainThread]: End processing [winpwnage] error
 [2024-04-06 22:36:09] INFO root fetch - main [MainThread]: Store serial: [22650896]
+[2024-04-06 22:38:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650896]
+[2024-04-06 22:38:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 22:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fhempy
+[2024-04-06 22:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zxing
+[2024-04-06 22:38:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysysq
+[2024-04-06 22:38:18] INFO root fetch - processPackages [pysysq]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-04-06 22:38:18] INFO root fetch - processPackages [fhempy]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-04-06 22:38:19] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/06/51/3e61c19accc6dcd3c26b8862f85d5d23eab2c2512aafc2fb7a1339cd06f5/pysysq-0.0.5-py3-none-any.whl
+[2024-04-06 22:38:19] INFO root fetch - processPackages [zxing]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-04-06 22:38:19] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/d2/9f/6c8a1b574ab9ebcb16717b47728d87e796444aafde42304c0ca6f1aa435c/fhempy-0.1.98.tar.gz
+[2024-04-06 22:38:19] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 22:38:19] INFO root fetch - processPackages [zxing]: Downloading https://files.pythonhosted.org/packages/4b/ad/8e74e1a027c90baf7ba17760a80afe0a7f7b63725035d1f152a75e801b62/zxing-1.0.2.tar.gz
+[2024-04-06 22:38:19] INFO root fetch - processPackages [pysysq]: Downloading https://files.pythonhosted.org/packages/cc/9a/132e91d3896572b4126c0e9d08342f6a4835bf5fa9ebd455ce7e67c38f44/pysysq-0.0.6.tar.gz
+[2024-04-06 22:38:19] WARNING root fetch - processPackages [pysysq]: Timeout reached during download
+[2024-04-06 22:38:19] INFO root fetch - processPackages [pysysq]: executing diffoscope
+[2024-04-06 22:38:19] INFO root fetch - processPackages [pysysq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysysq-0.0.5-py3-none-any.whl.zip tmp/pysysq-0.0.6.tar.gz --markdown 20240406/p/pysysq/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2024-04-06 22:38:19] WARNING root fetch - processPackages [fhempy]: Timeout reached during download
+[2024-04-06 22:38:19] WARNING root fetch - processPackages [zxing]: Timeout reached during download
+[2024-04-06 22:38:19] INFO root fetch - processPackages [fhempy]: Downloading https://files.pythonhosted.org/packages/10/f0/a98a9f9c84c66f700cf969aeda5c6d9fa1047cde3a99fc922c76be9e951e/fhempy-0.1.99.tar.gz
+[2024-04-06 22:38:19] INFO root fetch - processPackages [zxing]: Downloading https://files.pythonhosted.org/packages/a7/ac/2a004e63cd205900191a189028762c2e9b39e2c95f8e0f6fa50626612ac3/zxing-1.0.3.tar.gz
+[2024-04-06 22:38:19] WARNING root fetch - processPackages [fhempy]: Timeout reached during download
+[2024-04-06 22:38:19] INFO root fetch - processPackages [fhempy]: executing diffoscope
+[2024-04-06 22:38:19] INFO root fetch - processPackages [fhempy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhempy-0.1.98.tar.gz tmp/fhempy-0.1.99.tar.gz --markdown 20240406/f/fhempy/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2024-04-06 22:38:19] WARNING root fetch - processPackages [zxing]: Timeout reached during download
+[2024-04-06 22:38:19] INFO root fetch - processPackages [zxing]: executing diffoscope
+[2024-04-06 22:38:19] INFO root fetch - processPackages [zxing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zxing-1.0.2.tar.gz tmp/zxing-1.0.3.tar.gz --markdown 20240406/z/zxing/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2024-04-06 22:38:20] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.5-py3-none-any.whl.zip]
+[2024-04-06 22:38:20] INFO root fetch - processPackages [pysysq]: Remove: archive file [/home/abi/fetcher/tmp/pysysq-0.0.6.tar.gz]
+[2024-04-06 22:38:20] INFO root fetch - main [MainThread]: End processing [pysysq]: success
+[2024-04-06 22:38:21] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.98.tar.gz]
+[2024-04-06 22:38:21] INFO root fetch - processPackages [fhempy]: Remove: archive file [/home/abi/fetcher/tmp/fhempy-0.1.99.tar.gz]
+[2024-04-06 22:38:21] INFO root fetch - main [MainThread]: End processing [fhempy]: success
+[2024-04-06 22:41:19] ERROR root fetch - processPackages [zxing]: Timeout during execution of pkgdiff
+[2024-04-06 22:41:19] INFO root fetch - main [MainThread]: End processing [zxing] error
+[2024-04-06 22:41:19] INFO root fetch - main [MainThread]: Store serial: [22650904]
