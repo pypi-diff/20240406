@@ -19228,3 +19228,50 @@ EOFError: EOF read where object expected
 [2024-04-06 18:04:39] INFO root fetch - processPackages [aiolifx-themes]: Remove: archive file [/home/abi/fetcher/tmp/aiolifx_themes-0.4.9.tar.gz]
 [2024-04-06 18:04:39] INFO root fetch - main [MainThread]: End processing [aiolifx-themes]: success
 [2024-04-06 18:04:39] INFO root fetch - main [MainThread]: Store serial: [22649208]
+[2024-04-06 18:06:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649208]
+[2024-04-06 18:06:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 18:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: geoglows
+[2024-04-06 18:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scalifiai-client
+[2024-04-06 18:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: periflow-client
+[2024-04-06 18:06:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: typed-stream
+[2024-04-06 18:06:47] INFO root fetch - processPackages [typed-stream]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-06 18:06:47] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/10/f3/9ca887bf05fe3aa24b638a70a59a310bd2e51bcc51db98fcce7555184246/typed_stream-0.8.1.tar.gz
+[2024-04-06 18:06:47] INFO root fetch - processPackages [scalifiai-client]: New version: [1.3.0a4] Old Version: [1.3.0a3]
+[2024-04-06 18:06:47] INFO root fetch - processPackages [periflow-client]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-06 18:06:47] INFO root fetch - processPackages [geoglows]: New version: [1.0.0rc1] Old Version: [0.9b0]
+[2024-04-06 18:06:47] WARNING root fetch - processPackages [typed-stream]: Timeout reached during download
+[2024-04-06 18:06:47] INFO root fetch - processPackages [scalifiai-client]: Downloading https://files.pythonhosted.org/packages/96/ed/874ef7278c43fce382ed2486acde2553fac9bf8db1d54fae33758391d432/scalifiai-client-1.3.0a3.tar.gz
+[2024-04-06 18:06:47] INFO root fetch - processPackages [geoglows]: Downloading https://files.pythonhosted.org/packages/a3/ad/70b809d16fc2a41f069c21b7f7f188fd7dd38d10637ad4a0dca73f53707b/geoglows-0.9b0.tar.gz
+[2024-04-06 18:06:47] INFO root fetch - processPackages [periflow-client]: Downloading https://files.pythonhosted.org/packages/7f/9e/9eef3451c20aa7c032a4e501373e0d2d22ce77bd3032d4a90c1ce92ebc22/periflow_client-0.2.1.tar.gz
+[2024-04-06 18:06:47] INFO root fetch - processPackages [typed-stream]: Downloading https://files.pythonhosted.org/packages/bb/24/f83cc57bb674412ca23bf059d7fda90ee02a53f9e08c6abc49d9a6b56408/typed_stream-0.8.2.tar.gz
+[2024-04-06 18:06:47] WARNING root fetch - processPackages [periflow-client]: Timeout reached during download
+[2024-04-06 18:06:48] WARNING root fetch - processPackages [scalifiai-client]: Timeout reached during download
+[2024-04-06 18:06:48] WARNING root fetch - processPackages [typed-stream]: Timeout reached during download
+[2024-04-06 18:06:48] INFO root fetch - processPackages [typed-stream]: executing diffoscope
+[2024-04-06 18:06:48] INFO root fetch - processPackages [typed-stream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typed_stream-0.8.1.tar.gz tmp/typed_stream-0.8.2.tar.gz --markdown 20240406/t/typed-stream/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-06 18:06:48] INFO root fetch - processPackages [periflow-client]: Downloading https://files.pythonhosted.org/packages/aa/6d/5944531654bd4bf0847a7f689b2be3330b024ce6d639a855aaa4c75f3bd8/periflow_client-0.2.2.tar.gz
+[2024-04-06 18:06:48] INFO root fetch - processPackages [scalifiai-client]: Downloading https://files.pythonhosted.org/packages/66/11/7c7c13ab9ea84f4c5e7ae531f4eb434323ba9ef793b767927ca66daa8ba7/scalifiai-client-1.3.0a4.tar.gz
+[2024-04-06 18:06:48] WARNING root fetch - processPackages [periflow-client]: Timeout reached during download
+[2024-04-06 18:06:48] INFO root fetch - processPackages [periflow-client]: executing diffoscope
+[2024-04-06 18:06:48] INFO root fetch - processPackages [periflow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/periflow_client-0.2.1.tar.gz tmp/periflow_client-0.2.2.tar.gz --markdown 20240406/p/periflow-client/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-06 18:06:48] WARNING root fetch - processPackages [scalifiai-client]: Timeout reached during download
+[2024-04-06 18:06:48] INFO root fetch - processPackages [scalifiai-client]: executing diffoscope
+[2024-04-06 18:06:48] INFO root fetch - processPackages [scalifiai-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scalifiai-client-1.3.0a3.tar.gz tmp/scalifiai-client-1.3.0a4.tar.gz --markdown 20240406/s/scalifiai-client/1.3.0a3-1.3.0a4/diff.md --exclude *.pyd
+[2024-04-06 18:06:48] INFO root fetch - processPackages [typed-stream]: Remove: archive file [/home/abi/fetcher/tmp/typed_stream-0.8.1.tar.gz]
+[2024-04-06 18:06:48] INFO root fetch - processPackages [typed-stream]: Remove: archive file [/home/abi/fetcher/tmp/typed_stream-0.8.2.tar.gz]
+[2024-04-06 18:06:48] INFO root fetch - main [MainThread]: End processing [typed-stream]: success
+[2024-04-06 18:06:48] INFO root fetch - processPackages [scalifiai-client]: Remove: archive file [/home/abi/fetcher/tmp/scalifiai-client-1.3.0a3.tar.gz]
+[2024-04-06 18:06:48] INFO root fetch - processPackages [scalifiai-client]: Remove: archive file [/home/abi/fetcher/tmp/scalifiai-client-1.3.0a4.tar.gz]
+[2024-04-06 18:06:48] INFO root fetch - main [MainThread]: End processing [scalifiai-client]: success
+[2024-04-06 18:06:49] INFO root fetch - processPackages [periflow-client]: Remove: archive file [/home/abi/fetcher/tmp/periflow_client-0.2.1.tar.gz]
+[2024-04-06 18:06:49] INFO root fetch - processPackages [periflow-client]: Remove: archive file [/home/abi/fetcher/tmp/periflow_client-0.2.2.tar.gz]
+[2024-04-06 18:06:49] INFO root fetch - main [MainThread]: End processing [periflow-client]: success
+[2024-04-06 18:06:50] WARNING root fetch - processPackages [geoglows]: Timeout reached during download
+[2024-04-06 18:06:50] INFO root fetch - processPackages [geoglows]: Downloading https://files.pythonhosted.org/packages/fe/dc/49f803e5fefbf8ce82870aed814168a5b854a058031f8072b738969c5885/geoglows-1.0.0rc1.tar.gz
+[2024-04-06 18:06:50] WARNING root fetch - processPackages [geoglows]: Timeout reached during download
+[2024-04-06 18:06:50] INFO root fetch - processPackages [geoglows]: executing diffoscope
+[2024-04-06 18:06:50] INFO root fetch - processPackages [geoglows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geoglows-0.9b0.tar.gz tmp/geoglows-1.0.0rc1.tar.gz --markdown 20240406/g/geoglows/0.9b0-1.0.0rc1/diff.md --exclude *.pyd
+[2024-04-06 18:06:51] INFO root fetch - processPackages [geoglows]: Remove: archive file [/home/abi/fetcher/tmp/geoglows-0.9b0.tar.gz]
+[2024-04-06 18:06:51] INFO root fetch - processPackages [geoglows]: Remove: archive file [/home/abi/fetcher/tmp/geoglows-1.0.0rc1.tar.gz]
+[2024-04-06 18:06:51] INFO root fetch - main [MainThread]: End processing [geoglows]: success
+[2024-04-06 18:06:51] INFO root fetch - main [MainThread]: Store serial: [22649221]
