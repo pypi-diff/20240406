@@ -21867,3 +21867,23 @@ EOFError: EOF read where object expected
 [2024-04-06 20:26:46] INFO root fetch - processPackages [flatpack]: Remove: archive file [/home/abi/fetcher/tmp/flatpack-3.2.9.tar.gz]
 [2024-04-06 20:26:46] INFO root fetch - main [MainThread]: End processing [flatpack]: success
 [2024-04-06 20:26:46] INFO root fetch - main [MainThread]: Store serial: [22650103]
+[2024-04-06 20:28:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650103]
+[2024-04-06 20:28:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 20:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epidemik
+[2024-04-06 20:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybud-gui
+[2024-04-06 20:28:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emlabpkg
+[2024-04-06 20:28:55] WARNING root fetch - processPackages [epidemik]: Skipping, unable to determine old version
+[2024-04-06 20:28:55] INFO root fetch - main [MainThread]: End processing [epidemik] error
+[2024-04-06 20:28:55] WARNING root fetch - processPackages [pybud-gui]: Skipping, unable to determine old version
+[2024-04-06 20:28:55] INFO root fetch - main [MainThread]: End processing [pybud-gui] error
+[2024-04-06 20:28:55] INFO root fetch - processPackages [emlabpkg]: New version: [4.9] Old Version: [4.8]
+[2024-04-06 20:28:55] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/52/84/fdb1e8cae2adf2f6cf197367140c6b20a8c8eda120c2bc0d0194ce818811/emlabpkg-4.8.tar.gz
+[2024-04-06 20:28:55] WARNING root fetch - processPackages [emlabpkg]: Timeout reached during download
+[2024-04-06 20:28:55] INFO root fetch - processPackages [emlabpkg]: Downloading https://files.pythonhosted.org/packages/a5/5c/7b2101613235dde0b137fb467ab282b086e41c8bf81553a844a00b88ba64/emlabpkg-4.9.tar.gz
+[2024-04-06 20:28:55] WARNING root fetch - processPackages [emlabpkg]: Timeout reached during download
+[2024-04-06 20:28:55] INFO root fetch - processPackages [emlabpkg]: executing diffoscope
+[2024-04-06 20:28:55] INFO root fetch - processPackages [emlabpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emlabpkg-4.8.tar.gz tmp/emlabpkg-4.9.tar.gz --markdown 20240406/e/emlabpkg/4.8-4.9/diff.md --exclude *.pyd
+[2024-04-06 20:28:56] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.8.tar.gz]
+[2024-04-06 20:28:56] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.9.tar.gz]
+[2024-04-06 20:28:56] INFO root fetch - main [MainThread]: End processing [emlabpkg]: success
+[2024-04-06 20:28:56] INFO root fetch - main [MainThread]: Store serial: [22650115]
