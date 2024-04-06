@@ -12478,3 +12478,39 @@
 [2024-04-06 10:21:52] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.6.0.tar.gz]
 [2024-04-06 10:21:52] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
 [2024-04-06 10:21:52] INFO root fetch - main [MainThread]: Store serial: [22646688]
+[2024-04-06 10:23:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646688]
+[2024-04-06 10:24:00] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 10:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: just_design_phase
+[2024-04-06 10:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hashed
+[2024-04-06 10:24:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: contact-location-local
+[2024-04-06 10:24:00] INFO root fetch - processPackages [just_design_phase]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-04-06 10:24:00] INFO root fetch - processPackages [hashed]: New version: [2.0.0] Old Version: [1.0.0]
+[2024-04-06 10:24:01] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/e5/d8/f93749acabe946ca1b88441244d1d14ef4bbce0a2b5ade0e6353cfe977d5/just_design_phase-0.0.6.tar.gz
+[2024-04-06 10:24:01] INFO root fetch - processPackages [contact-location-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 10:24:01] INFO root fetch - processPackages [hashed]: Downloading https://files.pythonhosted.org/packages/d9/18/95e7cd09026d755a247f868deca215963f13859fd06d13e4cffaf5cb7260/hashed-1.0.0.tar.gz
+[2024-04-06 10:24:01] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 10:24:01] WARNING root fetch - processPackages [hashed]: Timeout reached during download
+[2024-04-06 10:24:01] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/2f/0c/a80370d5a9bb7d4535cdfd68c9e49af2fc39ef7974e7a123bd9fcc9ad854/contact-location-local-0.0.8.tar.gz
+[2024-04-06 10:24:01] INFO root fetch - processPackages [just_design_phase]: Downloading https://files.pythonhosted.org/packages/d6/22/df0f4222a249970163b3371926a27bb24e7b321b49cc59c6124a780ce9e5/just_design_phase-0.0.7.tar.gz
+[2024-04-06 10:24:01] WARNING root fetch - processPackages [contact-location-local]: Timeout reached during download
+[2024-04-06 10:24:01] WARNING root fetch - processPackages [just_design_phase]: Timeout reached during download
+[2024-04-06 10:24:01] INFO root fetch - processPackages [just_design_phase]: executing diffoscope
+[2024-04-06 10:24:01] INFO root fetch - processPackages [just_design_phase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/just_design_phase-0.0.6.tar.gz tmp/just_design_phase-0.0.7.tar.gz --markdown 20240406/j/just_design_phase/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2024-04-06 10:24:01] INFO root fetch - processPackages [hashed]: Downloading https://files.pythonhosted.org/packages/9d/08/6341b01a8a922af3f6d8867ac149686f788f9fc8fdc0762ea6617eed2322/hashed-2.0.0.tar.gz
+[2024-04-06 10:24:01] WARNING root fetch - processPackages [hashed]: Timeout reached during download
+[2024-04-06 10:24:01] INFO root fetch - processPackages [hashed]: executing diffoscope
+[2024-04-06 10:24:01] INFO root fetch - processPackages [hashed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashed-1.0.0.tar.gz tmp/hashed-2.0.0.tar.gz --markdown 20240406/h/hashed/1.0.0-2.0.0/diff.md --exclude *.pyd
+[2024-04-06 10:24:01] INFO root fetch - processPackages [contact-location-local]: Downloading https://files.pythonhosted.org/packages/17/5e/49b98779429d62238b93acafaaf4d268506159b2d1d0246a13b4e42b474d/contact-location-local-0.0.9.tar.gz
+[2024-04-06 10:24:01] WARNING root fetch - processPackages [contact-location-local]: Timeout reached during download
+[2024-04-06 10:24:01] INFO root fetch - processPackages [contact-location-local]: executing diffoscope
+[2024-04-06 10:24:01] INFO root fetch - processPackages [contact-location-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/contact-location-local-0.0.8.tar.gz tmp/contact-location-local-0.0.9.tar.gz --markdown 20240406/c/contact-location-local/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 10:24:02] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.6.tar.gz]
+[2024-04-06 10:24:02] INFO root fetch - processPackages [just_design_phase]: Remove: archive file [/home/abi/fetcher/tmp/just_design_phase-0.0.7.tar.gz]
+[2024-04-06 10:24:02] INFO root fetch - main [MainThread]: End processing [just_design_phase]: success
+[2024-04-06 10:24:02] INFO root fetch - processPackages [hashed]: Remove: archive file [/home/abi/fetcher/tmp/hashed-1.0.0.tar.gz]
+[2024-04-06 10:24:02] INFO root fetch - processPackages [hashed]: Remove: archive file [/home/abi/fetcher/tmp/hashed-2.0.0.tar.gz]
+[2024-04-06 10:24:02] INFO root fetch - main [MainThread]: End processing [hashed]: success
+[2024-04-06 10:24:02] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.8.tar.gz]
+[2024-04-06 10:24:02] INFO root fetch - processPackages [contact-location-local]: Remove: archive file [/home/abi/fetcher/tmp/contact-location-local-0.0.9.tar.gz]
+[2024-04-06 10:24:02] INFO root fetch - main [MainThread]: End processing [contact-location-local]: success
+[2024-04-06 10:24:02] INFO root fetch - main [MainThread]: Store serial: [22646697]
