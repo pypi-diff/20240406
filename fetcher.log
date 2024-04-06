@@ -8297,3 +8297,34 @@
 [2024-04-06 04:54:36] INFO root fetch - processPackages [pyvidplayer2]: Remove: archive file [/home/abi/fetcher/tmp/pyvidplayer2-0.9.9.tar.gz]
 [2024-04-06 04:54:36] INFO root fetch - main [MainThread]: End processing [pyvidplayer2]: success
 [2024-04-06 04:54:36] INFO root fetch - main [MainThread]: Store serial: [22645053]
+[2024-04-06 04:56:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645053]
+[2024-04-06 04:56:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 04:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: screenapi-cli
+[2024-04-06 04:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: icemedia
+[2024-04-06 04:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RelaDB
+[2024-04-06 04:56:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: test-upload-to-pypi-project
+[2024-04-06 04:56:44] INFO root fetch - processPackages [RelaDB]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-04-06 04:56:44] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/88/32/85b501d7d0f373cdaf7982ad83f94926de4896b2b71a3e7fa5a3cf57a4f3/RelaDB-1.0.0.tar.gz
+[2024-04-06 04:56:44] WARNING root fetch - processPackages [test-upload-to-pypi-project]: Skipping, unable to determine old version
+[2024-04-06 04:56:44] INFO root fetch - main [MainThread]: End processing [test-upload-to-pypi-project] error
+[2024-04-06 04:56:44] INFO root fetch - processPackages [screenapi-cli]: New version: [0.1.5a0] Old Version: [0.1.4]
+[2024-04-06 04:56:44] WARNING root fetch - processPackages [icemedia]: Skipping, unable to determine old version
+[2024-04-06 04:56:44] INFO root fetch - main [MainThread]: End processing [icemedia] error
+[2024-04-06 04:56:44] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-06 04:56:44] INFO root fetch - processPackages [RelaDB]: Downloading https://files.pythonhosted.org/packages/89/64/6c3ccc566e2bd92b2a02a52deed91811bef1c6a14ddcbc13b3390fda3ba4/RelaDB-1.0.1.tar.gz
+[2024-04-06 04:56:44] INFO root fetch - processPackages [screenapi-cli]: Downloading https://files.pythonhosted.org/packages/b3/cb/9b58c727fd355866943d8ec01db058445f2d6f036eba1340a3a885eceae2/screenapi_cli-0.1.4.tar.gz
+[2024-04-06 04:56:45] WARNING root fetch - processPackages [RelaDB]: Timeout reached during download
+[2024-04-06 04:56:45] INFO root fetch - processPackages [RelaDB]: executing diffoscope
+[2024-04-06 04:56:45] INFO root fetch - processPackages [RelaDB]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RelaDB-1.0.0.tar.gz tmp/RelaDB-1.0.1.tar.gz --markdown 20240406/R/RelaDB/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2024-04-06 04:56:45] WARNING root fetch - processPackages [screenapi-cli]: Timeout reached during download
+[2024-04-06 04:56:45] INFO root fetch - processPackages [screenapi-cli]: Downloading https://files.pythonhosted.org/packages/7e/33/ce32872e061966a981e805e393d7cb5f2b6e2de03acb883bcd198e753709/screenapi_cli-0.1.5a0.tar.gz
+[2024-04-06 04:56:45] WARNING root fetch - processPackages [screenapi-cli]: Timeout reached during download
+[2024-04-06 04:56:45] INFO root fetch - processPackages [screenapi-cli]: executing diffoscope
+[2024-04-06 04:56:45] INFO root fetch - processPackages [screenapi-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screenapi_cli-0.1.4.tar.gz tmp/screenapi_cli-0.1.5a0.tar.gz --markdown 20240406/s/screenapi-cli/0.1.4-0.1.5a0/diff.md --exclude *.pyd
+[2024-04-06 04:56:45] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-1.0.0.tar.gz]
+[2024-04-06 04:56:45] INFO root fetch - processPackages [RelaDB]: Remove: archive file [/home/abi/fetcher/tmp/RelaDB-1.0.1.tar.gz]
+[2024-04-06 04:56:45] INFO root fetch - main [MainThread]: End processing [RelaDB]: success
+[2024-04-06 04:56:45] INFO root fetch - processPackages [screenapi-cli]: Remove: archive file [/home/abi/fetcher/tmp/screenapi_cli-0.1.4.tar.gz]
+[2024-04-06 04:56:45] INFO root fetch - processPackages [screenapi-cli]: Remove: archive file [/home/abi/fetcher/tmp/screenapi_cli-0.1.5a0.tar.gz]
+[2024-04-06 04:56:45] INFO root fetch - main [MainThread]: End processing [screenapi-cli]: success
+[2024-04-06 04:56:45] INFO root fetch - main [MainThread]: Store serial: [22645071]
