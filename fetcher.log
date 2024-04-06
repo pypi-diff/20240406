@@ -13769,3 +13769,39 @@
 [2024-04-06 12:08:16] INFO root fetch - processPackages [spikeinterface]: Remove: archive file [/home/abi/fetcher/tmp/spikeinterface-0.99.1.tar.gz]
 [2024-04-06 12:08:16] INFO root fetch - main [MainThread]: End processing [spikeinterface]: success
 [2024-04-06 12:08:16] INFO root fetch - main [MainThread]: Store serial: [22647181]
+[2024-04-06 12:10:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647181]
+[2024-04-06 12:10:24] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 12:10:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etudatasphere
+[2024-04-06 12:10:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: praklib
+[2024-04-06 12:10:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: microservices-common
+[2024-04-06 12:10:24] INFO root fetch - processPackages [praklib]: New version: [0.1.41] Old Version: [0.1.4]
+[2024-04-06 12:10:24] INFO root fetch - processPackages [praklib]: Downloading https://files.pythonhosted.org/packages/9f/cd/7e7fe84ae2183c5f89bcc521d6796ab68537218b9b670e2d8e176ec6e007/praklib-0.1.4.tar.gz
+[2024-04-06 12:10:24] INFO root fetch - processPackages [etudatasphere]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-04-06 12:10:25] INFO root fetch - processPackages [microservices-common]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-04-06 12:10:25] WARNING root fetch - processPackages [praklib]: Timeout reached during download
+[2024-04-06 12:10:25] INFO root fetch - processPackages [microservices-common]: Downloading https://files.pythonhosted.org/packages/ff/76/c2d25642b80551f678555bf84a37c1ea75b0f163c34de343e8e88dc23134/microservices_common-1.0.1.tar.gz
+[2024-04-06 12:10:25] INFO root fetch - processPackages [etudatasphere]: Downloading https://files.pythonhosted.org/packages/57/b6/9b02c2f9c46893bccf8933d66e91f9e7b399b52cc6f93b0d56e885a0a287/etudatasphere-0.1.1.tar.gz
+[2024-04-06 12:10:25] WARNING root fetch - processPackages [microservices-common]: Timeout reached during download
+[2024-04-06 12:10:25] INFO root fetch - processPackages [praklib]: Downloading https://files.pythonhosted.org/packages/3a/58/aa766da26de7081e9248f1963c78bea7607abb8c63b4feafe170d6d78fa4/praklib-0.1.41.tar.gz
+[2024-04-06 12:10:25] WARNING root fetch - processPackages [etudatasphere]: Timeout reached during download
+[2024-04-06 12:10:25] WARNING root fetch - processPackages [praklib]: Timeout reached during download
+[2024-04-06 12:10:25] INFO root fetch - processPackages [praklib]: executing diffoscope
+[2024-04-06 12:10:25] INFO root fetch - processPackages [praklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/praklib-0.1.4.tar.gz tmp/praklib-0.1.41.tar.gz --markdown 20240406/p/praklib/0.1.4-0.1.41/diff.md --exclude *.pyd
+[2024-04-06 12:10:25] INFO root fetch - processPackages [microservices-common]: Downloading https://files.pythonhosted.org/packages/c5/0e/a7ab67184b186d2706f1461a35863b4a36a390d3f8545a127807eec23530/microservices_common-1.0.2.tar.gz
+[2024-04-06 12:10:25] INFO root fetch - processPackages [etudatasphere]: Downloading https://files.pythonhosted.org/packages/1d/ab/d719dc35e2525c77f5d72cd9239125f31b5e58b7d669675e7f4aab73b4a7/etudatasphere-0.1.2.tar.gz
+[2024-04-06 12:10:25] WARNING root fetch - processPackages [etudatasphere]: Timeout reached during download
+[2024-04-06 12:10:25] INFO root fetch - processPackages [etudatasphere]: executing diffoscope
+[2024-04-06 12:10:25] INFO root fetch - processPackages [etudatasphere]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etudatasphere-0.1.1.tar.gz tmp/etudatasphere-0.1.2.tar.gz --markdown 20240406/e/etudatasphere/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2024-04-06 12:10:25] WARNING root fetch - processPackages [microservices-common]: Timeout reached during download
+[2024-04-06 12:10:25] INFO root fetch - processPackages [microservices-common]: executing diffoscope
+[2024-04-06 12:10:25] INFO root fetch - processPackages [microservices-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/microservices_common-1.0.1.tar.gz tmp/microservices_common-1.0.2.tar.gz --markdown 20240406/m/microservices-common/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2024-04-06 12:10:25] INFO root fetch - processPackages [praklib]: Remove: archive file [/home/abi/fetcher/tmp/praklib-0.1.4.tar.gz]
+[2024-04-06 12:10:25] INFO root fetch - processPackages [praklib]: Remove: archive file [/home/abi/fetcher/tmp/praklib-0.1.41.tar.gz]
+[2024-04-06 12:10:25] INFO root fetch - main [MainThread]: End processing [praklib]: success
+[2024-04-06 12:10:26] INFO root fetch - processPackages [etudatasphere]: Remove: archive file [/home/abi/fetcher/tmp/etudatasphere-0.1.1.tar.gz]
+[2024-04-06 12:10:26] INFO root fetch - processPackages [etudatasphere]: Remove: archive file [/home/abi/fetcher/tmp/etudatasphere-0.1.2.tar.gz]
+[2024-04-06 12:10:26] INFO root fetch - main [MainThread]: End processing [etudatasphere]: success
+[2024-04-06 12:10:26] INFO root fetch - processPackages [microservices-common]: Remove: archive file [/home/abi/fetcher/tmp/microservices_common-1.0.1.tar.gz]
+[2024-04-06 12:10:26] INFO root fetch - processPackages [microservices-common]: Remove: archive file [/home/abi/fetcher/tmp/microservices_common-1.0.2.tar.gz]
+[2024-04-06 12:10:26] INFO root fetch - main [MainThread]: End processing [microservices-common]: success
+[2024-04-06 12:10:26] INFO root fetch - main [MainThread]: Store serial: [22647188]
