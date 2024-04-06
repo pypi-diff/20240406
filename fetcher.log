@@ -7332,3 +7332,28 @@
 [2024-04-06 03:31:34] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.4.1.tar.gz]
 [2024-04-06 03:31:34] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2024-04-06 03:31:34] INFO root fetch - main [MainThread]: Store serial: [22644734]
+[2024-04-06 03:33:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644734]
+[2024-04-06 03:33:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 03:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wi1-bot
+[2024-04-06 03:33:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lisaanalysistools
+[2024-04-06 03:33:43] INFO root fetch - processPackages [lisaanalysistools]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-04-06 03:33:43] INFO root fetch - processPackages [wi1-bot]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-04-06 03:33:44] INFO root fetch - processPackages [lisaanalysistools]: Downloading https://files.pythonhosted.org/packages/b0/42/9f52615c541697c2ac17ed6d59618bb8949b472cfb0f9c258ca570eb8365/lisaanalysistools-1.0.3.tar.gz
+[2024-04-06 03:33:44] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/82/96/770356273f625bc920700c9800b62d758fd9958b1ebcadd7ec2da22c2803/wi1-bot-1.4.1.tar.gz
+[2024-04-06 03:33:44] WARNING root fetch - processPackages [wi1-bot]: Timeout reached during download
+[2024-04-06 03:33:44] WARNING root fetch - processPackages [lisaanalysistools]: Timeout reached during download
+[2024-04-06 03:33:44] INFO root fetch - processPackages [wi1-bot]: Downloading https://files.pythonhosted.org/packages/a9/f1/90ed6c2afcced7e92a42cc969ff4ef72549b283f8924afbc33e1b9fbffec/wi1-bot-1.4.2.tar.gz
+[2024-04-06 03:33:44] INFO root fetch - processPackages [lisaanalysistools]: Downloading https://files.pythonhosted.org/packages/3d/96/9d626b30d52cdc419fda0b8c9ecd0a9bbcba3a9aa496bcf60bc9f8a7b847/lisaanalysistools-1.0.4.tar.gz
+[2024-04-06 03:33:44] WARNING root fetch - processPackages [wi1-bot]: Timeout reached during download
+[2024-04-06 03:33:44] INFO root fetch - processPackages [wi1-bot]: executing diffoscope
+[2024-04-06 03:33:44] INFO root fetch - processPackages [wi1-bot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wi1-bot-1.4.1.tar.gz tmp/wi1-bot-1.4.2.tar.gz --markdown 20240406/w/wi1-bot/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2024-04-06 03:33:44] WARNING root fetch - processPackages [lisaanalysistools]: Timeout reached during download
+[2024-04-06 03:33:44] INFO root fetch - processPackages [lisaanalysistools]: executing diffoscope
+[2024-04-06 03:33:44] INFO root fetch - processPackages [lisaanalysistools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lisaanalysistools-1.0.3.tar.gz tmp/lisaanalysistools-1.0.4.tar.gz --markdown 20240406/l/lisaanalysistools/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2024-04-06 03:33:45] INFO root fetch - processPackages [wi1-bot]: Remove: archive file [/home/abi/fetcher/tmp/wi1-bot-1.4.1.tar.gz]
+[2024-04-06 03:33:45] INFO root fetch - processPackages [wi1-bot]: Remove: archive file [/home/abi/fetcher/tmp/wi1-bot-1.4.2.tar.gz]
+[2024-04-06 03:33:45] INFO root fetch - main [MainThread]: End processing [wi1-bot]: success
+[2024-04-06 03:33:45] INFO root fetch - processPackages [lisaanalysistools]: Remove: archive file [/home/abi/fetcher/tmp/lisaanalysistools-1.0.3.tar.gz]
+[2024-04-06 03:33:45] INFO root fetch - processPackages [lisaanalysistools]: Remove: archive file [/home/abi/fetcher/tmp/lisaanalysistools-1.0.4.tar.gz]
+[2024-04-06 03:33:45] INFO root fetch - main [MainThread]: End processing [lisaanalysistools]: success
+[2024-04-06 03:33:45] INFO root fetch - main [MainThread]: Store serial: [22644740]
