@@ -16315,3 +16315,27 @@ EOFError: EOF read where object expected
 [2024-04-06 15:08:04] WARNING root fetch - processPackages [shellgpt-tr]: Skipping, unable to determine old version
 [2024-04-06 15:08:04] INFO root fetch - main [MainThread]: End processing [shellgpt-tr] error
 [2024-04-06 15:08:04] INFO root fetch - main [MainThread]: Store serial: [22648054]
+[2024-04-06 15:10:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648054]
+[2024-04-06 15:10:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 15:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msgpipe
+[2024-04-06 15:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: secvision-bindeps-linux-x64
+[2024-04-06 15:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tvaug
+[2024-04-06 15:10:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embedding-optimizer
+[2024-04-06 15:10:13] INFO root fetch - processPackages [embedding-optimizer]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-04-06 15:10:13] INFO root fetch - processPackages [secvision-bindeps-linux-x64]: New version: [24.2.3] Old Version: [24.2.2]
+[2024-04-06 15:10:13] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/e4/a8/0d9c8204b15bf7a0ad3faa22ef4dad2ad0229998d6745d4628061da688d9/embedding_optimizer-0.0.3.tar.gz
+[2024-04-06 15:10:13] WARNING root fetch - processPackages [msgpipe]: Skipping, unable to determine old version
+[2024-04-06 15:10:13] INFO root fetch - main [MainThread]: End processing [msgpipe] error
+[2024-04-06 15:10:13] WARNING root fetch - processPackages [tvaug]: Skipping, unable to determine old version
+[2024-04-06 15:10:13] INFO root fetch - main [MainThread]: End processing [tvaug] error
+[2024-04-06 15:10:13] ERROR root fetch - processPackages [secvision-bindeps-linux-x64]: Unable to fetch info: No such project/version 'secvision-bindeps-linux-x64' 24.2.2
+[2024-04-06 15:10:13] INFO root fetch - main [MainThread]: End processing [secvision-bindeps-linux-x64] error
+[2024-04-06 15:10:13] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 15:10:13] INFO root fetch - processPackages [embedding-optimizer]: Downloading https://files.pythonhosted.org/packages/89/2e/2b498e8463365d4f62b7f6b1340df48bba8a2338c8c95852e530f30f0ada/embedding_optimizer-0.0.4.tar.gz
+[2024-04-06 15:10:13] WARNING root fetch - processPackages [embedding-optimizer]: Timeout reached during download
+[2024-04-06 15:10:13] INFO root fetch - processPackages [embedding-optimizer]: executing diffoscope
+[2024-04-06 15:10:13] INFO root fetch - processPackages [embedding-optimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedding_optimizer-0.0.3.tar.gz tmp/embedding_optimizer-0.0.4.tar.gz --markdown 20240406/e/embedding-optimizer/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2024-04-06 15:10:14] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.3.tar.gz]
+[2024-04-06 15:10:14] INFO root fetch - processPackages [embedding-optimizer]: Remove: archive file [/home/abi/fetcher/tmp/embedding_optimizer-0.0.4.tar.gz]
+[2024-04-06 15:10:14] INFO root fetch - main [MainThread]: End processing [embedding-optimizer]: success
+[2024-04-06 15:10:14] INFO root fetch - main [MainThread]: Store serial: [22648076]
