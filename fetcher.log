@@ -16057,3 +16057,85 @@ EOFError: EOF read where object expected
 [2024-04-06 14:50:38] INFO root fetch - processPackages [liba]: Remove: archive file [/home/abi/fetcher/tmp/liba-0.1.9.post1.tar.gz]
 [2024-04-06 14:50:38] INFO root fetch - main [MainThread]: End processing [liba]: success
 [2024-04-06 14:50:38] INFO root fetch - main [MainThread]: Store serial: [22647883]
+[2024-04-06 14:52:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647883]
+[2024-04-06 14:52:47] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 14:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647888]
+[2024-04-06 14:54:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-04-06 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MacTools
+[2024-04-06 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiogram-prometheus
+[2024-04-06 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: composio-core
+[2024-04-06 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: composio-langchain
+[2024-04-06 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: composio-crewai
+[2024-04-06 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: plugp100
+[2024-04-06 14:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: composio-autogen
+[2024-04-06 14:54:53] INFO root fetch - processPackages [plugp100]: New version: [5.0.0.dev5] Old Version: [5.0.0.dev4]
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-autogen]: New version: [0.1.69] Old Version: [0.1.68]
+[2024-04-06 14:54:53] INFO root fetch - processPackages [aiogram-prometheus]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-crewai]: New version: [0.1.69] Old Version: [0.1.68]
+[2024-04-06 14:54:53] INFO root fetch - processPackages [MacTools]: New version: [1.4.0] Old Version: [1.3.2]
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-langchain]: New version: [0.1.69] Old Version: [0.1.68]
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-core]: New version: [0.1.69] Old Version: [0.1.68]
+[2024-04-06 14:54:53] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/39/7e/1eab33b8a3194bfeb5f28e6dd3edcf53eb49a0fa7b437194f85090e74f32/plugp100-5.0.0.dev4.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [MacTools]: Downloading https://files.pythonhosted.org/packages/4c/76/fa75c77bbbe7f3e039338e99a65a96f2eae33f99e08e5fa8f38ad5bde345/MacTools-1.3.2.tar.gz
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/bd/34/ea3384ecf630e27e4a1afe05b43494514ff9453941039e712c2cca8007e0/composio_autogen-0.1.68.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/e3/ab/5007b5168de94187088fb8e30d86106fc52cc829bfa462daea38cf5b990d/composio_crewai-0.1.68.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [aiogram-prometheus]: Downloading https://files.pythonhosted.org/packages/03/88/6a04becfa725a9d5b89f092b64475a0aed09bb31f89edb6488d7c1d3e040/aiogram_prometheus-0.2.1.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/2d/d4/5517cd7db467ce943185919f7272837e9055df466761525e84e871c1fb12/composio_langchain-0.1.68.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/84/95/1baa1a86ca62a94fbb056c4b5bb04376ae1b075d0845be65f931569ee332/composio_core-0.1.68.tar.gz
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [aiogram-prometheus]: Timeout reached during download
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-06 14:54:53] INFO root fetch - processPackages [plugp100]: Downloading https://files.pythonhosted.org/packages/e1/97/20145b24b659ed4a59542466114a582d47f668bba5a744bdb8a781cc65e0/plugp100-5.0.0.dev5.tar.gz
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [plugp100]: Timeout reached during download
+[2024-04-06 14:54:53] INFO root fetch - processPackages [plugp100]: executing diffoscope
+[2024-04-06 14:54:53] INFO root fetch - processPackages [plugp100]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugp100-5.0.0.dev4.tar.gz tmp/plugp100-5.0.0.dev5.tar.gz --markdown 20240406/p/plugp100/5.0.0.dev4-5.0.0.dev5/diff.md --exclude *.pyd
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-autogen]: Downloading https://files.pythonhosted.org/packages/52/d9/b76f2045afdbc462ebeb1da8ee9961e4cb6fdeb9dd45134e6cf5df0fb935/composio_autogen-0.1.69.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [aiogram-prometheus]: Downloading https://files.pythonhosted.org/packages/ef/fa/29e670915763d5c3b4dcbb05f1013681f782a0f77212b6c8242efbfea6f7/aiogram_prometheus-0.2.2.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-langchain]: Downloading https://files.pythonhosted.org/packages/1f/75/ffd2fe6c01257b84313b2e094bfceef44b3aa8c29581adb48819de50d8dd/composio_langchain-0.1.69.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-crewai]: Downloading https://files.pythonhosted.org/packages/8b/97/5e6362af2793fd1921d63e787a5f25f2b60a7f366f1e7556bba8e8ac27da/composio_crewai-0.1.69.tar.gz
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-core]: Downloading https://files.pythonhosted.org/packages/bf/36/666e0a206f1c7165e0b672545a67a87cfae15813fd9ef7a14786e6d45fe6/composio_core-0.1.69.tar.gz
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [MacTools]: Timeout reached during download
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [aiogram-prometheus]: Timeout reached during download
+[2024-04-06 14:54:53] INFO root fetch - processPackages [aiogram-prometheus]: executing diffoscope
+[2024-04-06 14:54:53] INFO root fetch - processPackages [aiogram-prometheus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiogram_prometheus-0.2.1.tar.gz tmp/aiogram_prometheus-0.2.2.tar.gz --markdown 20240406/a/aiogram-prometheus/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [composio-core]: Timeout reached during download
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-core]: executing diffoscope
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_core-0.1.68.tar.gz tmp/composio_core-0.1.69.tar.gz --markdown 20240406/c/composio-core/0.1.68-0.1.69/diff.md --exclude *.pyd
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [composio-langchain]: Timeout reached during download
+[2024-04-06 14:54:53] WARNING root fetch - processPackages [composio-autogen]: Timeout reached during download
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-langchain]: executing diffoscope
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_langchain-0.1.68.tar.gz tmp/composio_langchain-0.1.69.tar.gz --markdown 20240406/c/composio-langchain/0.1.68-0.1.69/diff.md --exclude *.pyd
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-autogen]: executing diffoscope
+[2024-04-06 14:54:53] INFO root fetch - processPackages [composio-autogen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_autogen-0.1.68.tar.gz tmp/composio_autogen-0.1.69.tar.gz --markdown 20240406/c/composio-autogen/0.1.68-0.1.69/diff.md --exclude *.pyd
+[2024-04-06 14:54:54] WARNING root fetch - processPackages [composio-crewai]: Timeout reached during download
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-crewai]: executing diffoscope
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-crewai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/composio_crewai-0.1.68.tar.gz tmp/composio_crewai-0.1.69.tar.gz --markdown 20240406/c/composio-crewai/0.1.68-0.1.69/diff.md --exclude *.pyd
+[2024-04-06 14:54:54] INFO root fetch - processPackages [MacTools]: Downloading https://files.pythonhosted.org/packages/41/d6/f8ac0e9022ceefdff1e6a98cf9ad94bbf1062adfb21c1b59439fe7b17ec1/MacTools-1.4.0.tar.gz
+[2024-04-06 14:54:54] WARNING root fetch - processPackages [MacTools]: Timeout reached during download
+[2024-04-06 14:54:54] INFO root fetch - processPackages [MacTools]: executing diffoscope
+[2024-04-06 14:54:54] INFO root fetch - processPackages [MacTools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MacTools-1.3.2.tar.gz tmp/MacTools-1.4.0.tar.gz --markdown 20240406/M/MacTools/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2024-04-06 14:54:54] INFO root fetch - processPackages [aiogram-prometheus]: Remove: archive file [/home/abi/fetcher/tmp/aiogram_prometheus-0.2.1.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - processPackages [aiogram-prometheus]: Remove: archive file [/home/abi/fetcher/tmp/aiogram_prometheus-0.2.2.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - main [MainThread]: End processing [aiogram-prometheus]: success
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.68.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-langchain]: Remove: archive file [/home/abi/fetcher/tmp/composio_langchain-0.1.69.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - main [MainThread]: End processing [composio-langchain]: success
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.68.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-crewai]: Remove: archive file [/home/abi/fetcher/tmp/composio_crewai-0.1.69.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - main [MainThread]: End processing [composio-crewai]: success
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.68.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-core]: Remove: archive file [/home/abi/fetcher/tmp/composio_core-0.1.69.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - main [MainThread]: End processing [composio-core]: success
+[2024-04-06 14:54:54] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev4.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - processPackages [plugp100]: Remove: archive file [/home/abi/fetcher/tmp/plugp100-5.0.0.dev5.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - main [MainThread]: End processing [plugp100]: success
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.68.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - processPackages [composio-autogen]: Remove: archive file [/home/abi/fetcher/tmp/composio_autogen-0.1.69.tar.gz]
+[2024-04-06 14:54:54] INFO root fetch - main [MainThread]: End processing [composio-autogen]: success
+[2024-04-06 14:54:56] INFO root fetch - processPackages [MacTools]: Remove: archive file [/home/abi/fetcher/tmp/MacTools-1.3.2.tar.gz]
+[2024-04-06 14:54:56] INFO root fetch - processPackages [MacTools]: Remove: archive file [/home/abi/fetcher/tmp/MacTools-1.4.0.tar.gz]
+[2024-04-06 14:54:56] INFO root fetch - main [MainThread]: End processing [MacTools]: success
+[2024-04-06 14:54:56] INFO root fetch - main [MainThread]: Store serial: [22647915]
