@@ -7448,3 +7448,61 @@
 [2024-04-06 03:44:38] INFO root fetch - processPackages [python-microgrid]: Remove: archive file [/home/abi/fetcher/tmp/python-microgrid-1.4.1.tar.gz]
 [2024-04-06 03:44:38] INFO root fetch - main [MainThread]: End processing [python-microgrid]: success
 [2024-04-06 03:44:38] INFO root fetch - main [MainThread]: Store serial: [22644783]
+[2024-04-06 03:46:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22644783]
+[2024-04-06 03:46:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 03:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mini-racer
+[2024-04-06 03:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tdrpa.tdcore
+[2024-04-06 03:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crewai-tools
+[2024-04-06 03:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lsx
+[2024-04-06 03:46:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lishixian
+[2024-04-06 03:46:46] INFO root fetch - processPackages [crewai-tools]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-04-06 03:46:46] INFO root fetch - processPackages [lishixian]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-06 03:46:46] INFO root fetch - processPackages [tdrpa.tdcore]: New version: [1.1.28] Old Version: [1.1.27]
+[2024-04-06 03:46:46] INFO root fetch - processPackages [lsx]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-04-06 03:46:46] INFO root fetch - processPackages [mini-racer]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lishixian]: Downloading https://files.pythonhosted.org/packages/18/d3/a2826f3b20b38a03fa4bf9223cef8b58ed57a44adc0c87793dd14c99aedc/lishixian-0.3.3.tar.gz
+[2024-04-06 03:46:47] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/f9/77/4a6d9aecffb1440089146245f5e64fd47283f40b4f3105b986ae6cddeacd/tdrpa.tdcore-1.1.27-py39-none-win_amd64.whl
+[2024-04-06 03:46:47] INFO root fetch - processPackages [crewai-tools]: Downloading https://files.pythonhosted.org/packages/a8/d3/e9f47b69942fc603fe535d46eb4fa5b32b49d11b1f09b336ec6ca8c5c6a4/crewai_tools-0.1.4.tar.gz
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lsx]: Downloading https://files.pythonhosted.org/packages/6f/7a/4edb6af3e3e1a77da3bdbdf83a21ef9bd78a56ff307805d4c3a13afd4786/lsx-0.3.3.tar.gz
+[2024-04-06 03:46:47] INFO root fetch - processPackages [mini-racer]: Downloading https://files.pythonhosted.org/packages/44/3a/c9e66f4c9c692be4658b8237c571eb952a40d38cf7b80b74b273fa902ecf/mini_racer-0.8.1.tar.gz
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [lishixian]: Timeout reached during download
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [tdrpa.tdcore]: Timeout reached during download
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [mini-racer]: Timeout reached during download
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [crewai-tools]: Timeout reached during download
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [lsx]: Timeout reached during download
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lishixian]: Downloading https://files.pythonhosted.org/packages/d2/20/869288edc716cc5df9f5542f26ee684bd7cb9e13c727edb0849b3767c81c/lishixian-0.3.4.tar.gz
+[2024-04-06 03:46:47] INFO root fetch - processPackages [tdrpa.tdcore]: Downloading https://files.pythonhosted.org/packages/0e/92/4ccb1247723756dc83935b86962f8b5892b56c9928526f6efbeb61b880dc/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl
+[2024-04-06 03:46:47] INFO root fetch - processPackages [crewai-tools]: Downloading https://files.pythonhosted.org/packages/77/86/e51b18f64260b78ddcdab0192fd70d823b443937866cecab163f44485d92/crewai_tools-0.1.5.tar.gz
+[2024-04-06 03:46:47] INFO root fetch - processPackages [mini-racer]: Downloading https://files.pythonhosted.org/packages/23/f1/8a84ac147dd69560bc9c5163e2fc9821bef5e9d55cae3ab387889ec41334/mini_racer-0.9.0.tar.gz
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lsx]: Downloading https://files.pythonhosted.org/packages/28/62/0e965f34cd5e883c1425db2863c5a2cc589c760a6c5ec05a0997735abfde/lsx-0.3.4.tar.gz
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [crewai-tools]: Timeout reached during download
+[2024-04-06 03:46:47] INFO root fetch - processPackages [crewai-tools]: executing diffoscope
+[2024-04-06 03:46:47] INFO root fetch - processPackages [crewai-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crewai_tools-0.1.4.tar.gz tmp/crewai_tools-0.1.5.tar.gz --markdown 20240406/c/crewai-tools/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [lishixian]: Timeout reached during download
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lishixian]: executing diffoscope
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lishixian]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lishixian-0.3.3.tar.gz tmp/lishixian-0.3.4.tar.gz --markdown 20240406/l/lishixian/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [tdrpa.tdcore]: Timeout reached during download
+[2024-04-06 03:46:47] INFO root fetch - processPackages [tdrpa.tdcore]: executing diffoscope
+[2024-04-06 03:46:47] INFO root fetch - processPackages [tdrpa.tdcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tdrpa.tdcore-1.1.27-py39-none-win_amd64.whl.zip tmp/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl.zip --markdown 20240406/t/tdrpa.tdcore/1.1.27-1.1.28/diff.md --exclude *.pyd
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [lsx]: Timeout reached during download
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lsx]: executing diffoscope
+[2024-04-06 03:46:47] INFO root fetch - processPackages [lsx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsx-0.3.3.tar.gz tmp/lsx-0.3.4.tar.gz --markdown 20240406/l/lsx/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2024-04-06 03:46:47] WARNING root fetch - processPackages [mini-racer]: Timeout reached during download
+[2024-04-06 03:46:47] INFO root fetch - processPackages [mini-racer]: executing diffoscope
+[2024-04-06 03:46:47] INFO root fetch - processPackages [mini-racer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mini_racer-0.8.1.tar.gz tmp/mini_racer-0.9.0.tar.gz --markdown 20240406/m/mini-racer/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 03:46:48] INFO root fetch - processPackages [lishixian]: Remove: archive file [/home/abi/fetcher/tmp/lishixian-0.3.3.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - processPackages [lishixian]: Remove: archive file [/home/abi/fetcher/tmp/lishixian-0.3.4.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - main [MainThread]: End processing [lishixian]: success
+[2024-04-06 03:46:48] INFO root fetch - processPackages [crewai-tools]: Remove: archive file [/home/abi/fetcher/tmp/crewai_tools-0.1.4.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - processPackages [crewai-tools]: Remove: archive file [/home/abi/fetcher/tmp/crewai_tools-0.1.5.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - main [MainThread]: End processing [crewai-tools]: success
+[2024-04-06 03:46:48] INFO root fetch - processPackages [lsx]: Remove: archive file [/home/abi/fetcher/tmp/lsx-0.3.3.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - processPackages [lsx]: Remove: archive file [/home/abi/fetcher/tmp/lsx-0.3.4.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - main [MainThread]: End processing [lsx]: success
+[2024-04-06 03:46:48] INFO root fetch - processPackages [mini-racer]: Remove: archive file [/home/abi/fetcher/tmp/mini_racer-0.8.1.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - processPackages [mini-racer]: Remove: archive file [/home/abi/fetcher/tmp/mini_racer-0.9.0.tar.gz]
+[2024-04-06 03:46:48] INFO root fetch - main [MainThread]: End processing [mini-racer]: success
+[2024-04-06 03:46:49] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.27-py39-none-win_amd64.whl.zip]
+[2024-04-06 03:46:49] INFO root fetch - processPackages [tdrpa.tdcore]: Remove: archive file [/home/abi/fetcher/tmp/tdrpa.tdcore-1.1.28-py39-none-win_amd64.whl.zip]
+[2024-04-06 03:46:49] INFO root fetch - main [MainThread]: End processing [tdrpa.tdcore]: success
+[2024-04-06 03:46:49] INFO root fetch - main [MainThread]: Store serial: [22644804]
