@@ -1649,3 +1649,28 @@
 [2024-04-06 01:58:12] INFO root fetch - processPackages [poetry-aws-plugin]: Remove: archive file [/home/abi/fetcher/tmp/poetry_aws_plugin-0.1.4.tar.gz]
 [2024-04-06 01:58:12] INFO root fetch - main [MainThread]: End processing [poetry-aws-plugin]: success
 [2024-04-06 01:58:12] INFO root fetch - main [MainThread]: Store serial: [22643156]
+[2024-04-06 02:00:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643156]
+[2024-04-06 02:00:20] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zipline.py
+[2024-04-06 02:00:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tyro
+[2024-04-06 02:00:21] INFO root fetch - processPackages [zipline.py]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-04-06 02:00:21] INFO root fetch - processPackages [tyro]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-06 02:00:21] INFO root fetch - processPackages [zipline.py]: Downloading https://files.pythonhosted.org/packages/97/87/01b8399182012c00aaa5272f4c4a7227987424a010e1358f717f58c0c5c2/zipline.py-0.8.1.tar.gz
+[2024-04-06 02:00:21] INFO root fetch - processPackages [tyro]: Downloading https://files.pythonhosted.org/packages/11/70/cbf8182f847914bbe461572988e3cdb7bf8916365adcbb7fafd595a61e49/tyro-0.8.1.tar.gz
+[2024-04-06 02:00:21] WARNING root fetch - processPackages [tyro]: Timeout reached during download
+[2024-04-06 02:00:21] WARNING root fetch - processPackages [zipline.py]: Timeout reached during download
+[2024-04-06 02:00:22] INFO root fetch - processPackages [tyro]: Downloading https://files.pythonhosted.org/packages/9a/0c/4305bbdc39aaf37ae7a26e17c8c80b741d317ca186caed9e2c615202beca/tyro-0.8.2-py3-none-any.whl
+[2024-04-06 02:00:22] INFO root fetch - processPackages [zipline.py]: Downloading https://files.pythonhosted.org/packages/d5/b6/1fe727539631526b39e768efe1883f3822182eb71a3658a6a939d21f97e0/zipline.py-0.9.0.tar.gz
+[2024-04-06 02:00:22] WARNING root fetch - processPackages [zipline.py]: Timeout reached during download
+[2024-04-06 02:00:22] INFO root fetch - processPackages [zipline.py]: executing diffoscope
+[2024-04-06 02:00:22] INFO root fetch - processPackages [zipline.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zipline.py-0.8.1.tar.gz tmp/zipline.py-0.9.0.tar.gz --markdown 20240406/z/zipline.py/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 02:00:22] INFO root fetch - processPackages [zipline.py]: Remove: archive file [/home/abi/fetcher/tmp/zipline.py-0.8.1.tar.gz]
+[2024-04-06 02:00:22] INFO root fetch - processPackages [zipline.py]: Remove: archive file [/home/abi/fetcher/tmp/zipline.py-0.9.0.tar.gz]
+[2024-04-06 02:00:22] INFO root fetch - main [MainThread]: End processing [zipline.py]: success
+[2024-04-06 02:00:22] WARNING root fetch - processPackages [tyro]: Timeout reached during download
+[2024-04-06 02:00:22] INFO root fetch - processPackages [tyro]: executing diffoscope
+[2024-04-06 02:00:22] INFO root fetch - processPackages [tyro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tyro-0.8.1.tar.gz tmp/tyro-0.8.2-py3-none-any.whl.zip --markdown 20240406/t/tyro/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-06 02:00:23] INFO root fetch - processPackages [tyro]: Remove: archive file [/home/abi/fetcher/tmp/tyro-0.8.1.tar.gz]
+[2024-04-06 02:00:23] INFO root fetch - processPackages [tyro]: Remove: archive file [/home/abi/fetcher/tmp/tyro-0.8.2-py3-none-any.whl.zip]
+[2024-04-06 02:00:23] INFO root fetch - main [MainThread]: End processing [tyro]: success
+[2024-04-06 02:00:23] INFO root fetch - main [MainThread]: Store serial: [22643159]
