@@ -13493,3 +13493,28 @@
 [2024-04-06 11:46:30] INFO root fetch - processPackages [DeepTorchBlocks]: Remove: archive file [/home/abi/fetcher/tmp/DeepTorchBlocks-0.0.1a0.tar.gz]
 [2024-04-06 11:46:30] INFO root fetch - main [MainThread]: End processing [DeepTorchBlocks]: success
 [2024-04-06 11:46:30] INFO root fetch - main [MainThread]: Store serial: [22647108]
+[2024-04-06 11:48:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647108]
+[2024-04-06 11:48:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 11:48:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: blocklint
+[2024-04-06 11:48:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mplhep
+[2024-04-06 11:48:38] INFO root fetch - processPackages [blocklint]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-04-06 11:48:38] INFO root fetch - processPackages [mplhep]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-04-06 11:48:39] INFO root fetch - processPackages [blocklint]: Downloading https://files.pythonhosted.org/packages/a5/69/271e9a69074304a678eb22a1149133487df14f7ab0a57af0d3ac19553782/blocklint-0.2.4.tar.gz
+[2024-04-06 11:48:39] INFO root fetch - processPackages [mplhep]: Downloading https://files.pythonhosted.org/packages/3e/23/96f4d67432c03f398c31ba59fd42fddda4c686a75e62bbb632f2600d90f4/mplhep-0.3.8.tar.gz
+[2024-04-06 11:48:39] WARNING root fetch - processPackages [blocklint]: Timeout reached during download
+[2024-04-06 11:48:39] WARNING root fetch - processPackages [mplhep]: Timeout reached during download
+[2024-04-06 11:48:39] INFO root fetch - processPackages [blocklint]: Downloading https://files.pythonhosted.org/packages/a0/94/57d3020226a2bab2bd7db41eac864dbb63602efb883809a3fc6347736be9/blocklint-0.2.5.tar.gz
+[2024-04-06 11:48:39] INFO root fetch - processPackages [mplhep]: Downloading https://files.pythonhosted.org/packages/79/7d/14def2d0871d2c96df5d1427dad4024d57c8ca1c5ed0e3e57724ae2f430c/mplhep-0.3.9.tar.gz
+[2024-04-06 11:48:39] WARNING root fetch - processPackages [blocklint]: Timeout reached during download
+[2024-04-06 11:48:39] INFO root fetch - processPackages [blocklint]: executing diffoscope
+[2024-04-06 11:48:39] INFO root fetch - processPackages [blocklint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/blocklint-0.2.4.tar.gz tmp/blocklint-0.2.5.tar.gz --markdown 20240406/b/blocklint/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2024-04-06 11:48:39] WARNING root fetch - processPackages [mplhep]: Timeout reached during download
+[2024-04-06 11:48:39] INFO root fetch - processPackages [mplhep]: executing diffoscope
+[2024-04-06 11:48:39] INFO root fetch - processPackages [mplhep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mplhep-0.3.8.tar.gz tmp/mplhep-0.3.9.tar.gz --markdown 20240406/m/mplhep/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2024-04-06 11:48:40] INFO root fetch - processPackages [blocklint]: Remove: archive file [/home/abi/fetcher/tmp/blocklint-0.2.4.tar.gz]
+[2024-04-06 11:48:40] INFO root fetch - processPackages [blocklint]: Remove: archive file [/home/abi/fetcher/tmp/blocklint-0.2.5.tar.gz]
+[2024-04-06 11:48:40] INFO root fetch - main [MainThread]: End processing [blocklint]: success
+[2024-04-06 11:48:40] INFO root fetch - processPackages [mplhep]: Remove: archive file [/home/abi/fetcher/tmp/mplhep-0.3.8.tar.gz]
+[2024-04-06 11:48:40] INFO root fetch - processPackages [mplhep]: Remove: archive file [/home/abi/fetcher/tmp/mplhep-0.3.9.tar.gz]
+[2024-04-06 11:48:40] INFO root fetch - main [MainThread]: End processing [mplhep]: success
+[2024-04-06 11:48:40] INFO root fetch - main [MainThread]: Store serial: [22647115]
