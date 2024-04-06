@@ -8222,3 +8222,39 @@
 [2024-04-06 04:48:04] INFO root fetch - processPackages [zetascale]: Remove: archive file [/home/abi/fetcher/tmp/zetascale-2.3.6.tar.gz]
 [2024-04-06 04:48:04] INFO root fetch - main [MainThread]: End processing [zetascale]: success
 [2024-04-06 04:48:04] INFO root fetch - main [MainThread]: Store serial: [22645033]
+[2024-04-06 04:50:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645033]
+[2024-04-06 04:50:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 04:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-invoice-crm-tag
+[2024-04-06 04:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leads
+[2024-04-06 04:50:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mocker-db
+[2024-04-06 04:50:13] INFO root fetch - processPackages [mocker-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 04:50:13] INFO root fetch - processPackages [mocker-db]: Downloading https://files.pythonhosted.org/packages/43/b3/99f3b5b22f030173cc25be7a395e0cf51687f8fc4c5dd20be0d2c718a6ce/mocker_db-0.0.8.tar.gz
+[2024-04-06 04:50:13] INFO root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: New version: [17.0.1.0.0.4] Old Version: [17.0.1.0.0.2]
+[2024-04-06 04:50:13] INFO root fetch - processPackages [leads]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-04-06 04:50:13] WARNING root fetch - processPackages [mocker-db]: Timeout reached during download
+[2024-04-06 04:50:13] INFO root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: Downloading https://files.pythonhosted.org/packages/92/fe/764d28c182448529f61449a938a3e5157f0fb2e7799a6b200ed46511b7a8/odoo_addon_account_invoice_crm_tag-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-06 04:50:13] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/84/22/bb12180e417960ef462483ba20dfa702c1c44cabac5e47042cf8d4f7061a/leads-0.8.8.tar.gz
+[2024-04-06 04:50:13] INFO root fetch - processPackages [mocker-db]: Downloading https://files.pythonhosted.org/packages/96/81/add75b28ef0af016b2d26d84a95ef7067713780c998b6b0820eb3f402b03/mocker_db-0.0.9.tar.gz
+[2024-04-06 04:50:13] WARNING root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: Timeout reached during download
+[2024-04-06 04:50:13] WARNING root fetch - processPackages [mocker-db]: Timeout reached during download
+[2024-04-06 04:50:13] INFO root fetch - processPackages [mocker-db]: executing diffoscope
+[2024-04-06 04:50:13] INFO root fetch - processPackages [mocker-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mocker_db-0.0.8.tar.gz tmp/mocker_db-0.0.9.tar.gz --markdown 20240406/m/mocker-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 04:50:13] WARNING root fetch - processPackages [leads]: Timeout reached during download
+[2024-04-06 04:50:13] INFO root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: Downloading https://files.pythonhosted.org/packages/bc/56/627737481b39e2e20e70d6142607f9e5ddbc7931e3c296b484c01547a975/odoo_addon_account_invoice_crm_tag-17.0.1.0.0.4-py3-none-any.whl
+[2024-04-06 04:50:14] WARNING root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: Timeout reached during download
+[2024-04-06 04:50:14] INFO root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: executing diffoscope
+[2024-04-06 04:50:14] INFO root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_crm_tag-17.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_crm_tag-17.0.1.0.0.4-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-account-invoice-crm-tag/17.0.1.0.0.2-17.0.1.0.0.4/diff.md --exclude *.pyd
+[2024-04-06 04:50:14] INFO root fetch - processPackages [leads]: Downloading https://files.pythonhosted.org/packages/39/e8/fa2e5f7f0d11837315b2fee4d21c7cb7c4973873d9d51b4abc5b357bf19f/leads-0.8.9.tar.gz
+[2024-04-06 04:50:14] WARNING root fetch - processPackages [leads]: Timeout reached during download
+[2024-04-06 04:50:14] INFO root fetch - processPackages [leads]: executing diffoscope
+[2024-04-06 04:50:14] INFO root fetch - processPackages [leads]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leads-0.8.8.tar.gz tmp/leads-0.8.9.tar.gz --markdown 20240406/l/leads/0.8.8-0.8.9/diff.md --exclude *.pyd
+[2024-04-06 04:50:14] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.0.8.tar.gz]
+[2024-04-06 04:50:14] INFO root fetch - processPackages [mocker-db]: Remove: archive file [/home/abi/fetcher/tmp/mocker_db-0.0.9.tar.gz]
+[2024-04-06 04:50:14] INFO root fetch - main [MainThread]: End processing [mocker-db]: success
+[2024-04-06 04:50:14] INFO root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_crm_tag-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-06 04:50:14] INFO root fetch - processPackages [odoo-addon-account-invoice-crm-tag]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_crm_tag-17.0.1.0.0.4-py3-none-any.whl.zip]
+[2024-04-06 04:50:14] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-crm-tag]: success
+[2024-04-06 04:50:15] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.8.tar.gz]
+[2024-04-06 04:50:15] INFO root fetch - processPackages [leads]: Remove: archive file [/home/abi/fetcher/tmp/leads-0.8.9.tar.gz]
+[2024-04-06 04:50:15] INFO root fetch - main [MainThread]: End processing [leads]: success
+[2024-04-06 04:50:15] INFO root fetch - main [MainThread]: Store serial: [22645044]
