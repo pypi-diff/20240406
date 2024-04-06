@@ -17098,3 +17098,64 @@ EOFError: EOF read where object expected
 [2024-04-06 16:00:40] INFO root fetch - processPackages [nonebot-plugin-animalvoice]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_animalvoice-0.2.0.tar.gz]
 [2024-04-06 16:00:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-animalvoice]: success
 [2024-04-06 16:00:40] INFO root fetch - main [MainThread]: Store serial: [22648375]
+[2024-04-06 16:02:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648375]
+[2024-04-06 16:02:49] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-04-06 16:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: json-handler-registry
+[2024-04-06 16:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-account-invoice-margin-sale
+[2024-04-06 16:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pfolio
+[2024-04-06 16:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AstroToolkit
+[2024-04-06 16:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyGz1
+[2024-04-06 16:02:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: novelWriter
+[2024-04-06 16:02:49] INFO root fetch - processPackages [PyGz1]: New version: [0.2] Old Version: [0.1]
+[2024-04-06 16:02:49] INFO root fetch - processPackages [json-handler-registry]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-04-06 16:02:49] INFO root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.0.2.2]
+[2024-04-06 16:02:49] WARNING root fetch - processPackages [pfolio]: Skipping, unable to determine old version
+[2024-04-06 16:02:49] INFO root fetch - main [MainThread]: End processing [pfolio] error
+[2024-04-06 16:02:49] INFO root fetch - processPackages [AstroToolkit]: New version: [1.4.0] Old Version: [1.3.5]
+[2024-04-06 16:02:49] INFO root fetch - processPackages [novelWriter]: New version: [2.4b1] Old Version: [2.3rc1]
+[2024-04-06 16:02:49] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/41/53/ddbaa694013d2e2633ca008589bb04a2e8653666ed6d4df3545cb18dab40/PyGz1-0.1.tar.gz
+[2024-04-06 16:02:50] INFO root fetch - processPackages [json-handler-registry]: Downloading https://files.pythonhosted.org/packages/a6/f8/d20c5ef634a9457d1dc483ea1ee321022e3bb68a426c638e9e19b56dbb5a/json-handler-registry-1.4.0.tar.gz
+[2024-04-06 16:02:50] INFO root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: Downloading https://files.pythonhosted.org/packages/47/cf/c00e8933c2ba12e4fa5eaef8023f345ef99b5d5968137d89fc9dba61acd8/odoo_addon_account_invoice_margin_sale-16.0.1.0.2.2-py3-none-any.whl
+[2024-04-06 16:02:50] INFO root fetch - processPackages [novelWriter]: Downloading https://files.pythonhosted.org/packages/e1/bc/8221891286c01833616d04e729bc38e94059f11eaf54ce69ef21f60229cd/novelWriter-2.3rc1.tar.gz
+[2024-04-06 16:02:50] INFO root fetch - processPackages [AstroToolkit]: Downloading https://files.pythonhosted.org/packages/dd/88/a102651dbf6357a2627879ab2167d7a0f5e9cdac00e7fe2e33ecb99970cd/AstroToolkit-1.3.5.tar.gz
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [json-handler-registry]: Timeout reached during download
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: Timeout reached during download
+[2024-04-06 16:02:50] INFO root fetch - processPackages [json-handler-registry]: Downloading https://files.pythonhosted.org/packages/75/4b/b44457cc2f7a9fd7be9ebfc274cf7e18f69490c357d2e661ed79d633b275/json-handler-registry-1.5.0.tar.gz
+[2024-04-06 16:02:50] INFO root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: Downloading https://files.pythonhosted.org/packages/04/9f/b1a06d376d7ef03fc7654d7388e7b6814fecd1de2d928b20a8a49cd6ba3c/odoo_addon_account_invoice_margin_sale-17.0.1.0.0.2-py3-none-any.whl
+[2024-04-06 16:02:50] INFO root fetch - processPackages [PyGz1]: Downloading https://files.pythonhosted.org/packages/d6/c4/0e759226bb1aa01ab9e3ffbcade9331804213633639d86c41276f4bd6ebe/PyGz1-0.2.tar.gz
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [AstroToolkit]: Timeout reached during download
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [json-handler-registry]: Timeout reached during download
+[2024-04-06 16:02:50] INFO root fetch - processPackages [json-handler-registry]: executing diffoscope
+[2024-04-06 16:02:50] INFO root fetch - processPackages [json-handler-registry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/json-handler-registry-1.4.0.tar.gz tmp/json-handler-registry-1.5.0.tar.gz --markdown 20240406/j/json-handler-registry/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [PyGz1]: Timeout reached during download
+[2024-04-06 16:02:50] INFO root fetch - processPackages [PyGz1]: executing diffoscope
+[2024-04-06 16:02:50] INFO root fetch - processPackages [PyGz1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyGz1-0.1.tar.gz tmp/PyGz1-0.2.tar.gz --markdown 20240406/P/PyGz1/0.1-0.2/diff.md --exclude *.pyd
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: Timeout reached during download
+[2024-04-06 16:02:50] INFO root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: executing diffoscope
+[2024-04-06 16:02:50] INFO root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_invoice_margin_sale-16.0.1.0.2.2-py3-none-any.whl.zip tmp/odoo_addon_account_invoice_margin_sale-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240406/o/odoo-addon-account-invoice-margin-sale/16.0.1.0.2.2-17.0.1.0.0.2/diff.md --exclude *.pyd
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [novelWriter]: Timeout reached during download
+[2024-04-06 16:02:50] INFO root fetch - processPackages [AstroToolkit]: Downloading https://files.pythonhosted.org/packages/bd/b9/54de1bddbccd150911e2994f4c1b70c1b1f7d1be3e82b084c4631c1af57b/AstroToolkit-1.4.0.tar.gz
+[2024-04-06 16:02:50] WARNING root fetch - processPackages [AstroToolkit]: Timeout reached during download
+[2024-04-06 16:02:50] INFO root fetch - processPackages [AstroToolkit]: executing diffoscope
+[2024-04-06 16:02:50] INFO root fetch - processPackages [AstroToolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AstroToolkit-1.3.5.tar.gz tmp/AstroToolkit-1.4.0.tar.gz --markdown 20240406/A/AstroToolkit/1.3.5-1.4.0/diff.md --exclude *.pyd
+[2024-04-06 16:02:50] INFO root fetch - processPackages [novelWriter]: Downloading https://files.pythonhosted.org/packages/ab/af/0a82d54961e984a1c566617e20da37b84e6a9f6a54ad19be522375fa27b2/novelWriter-2.4b1.tar.gz
+[2024-04-06 16:02:51] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.1.tar.gz]
+[2024-04-06 16:02:51] INFO root fetch - processPackages [PyGz1]: Remove: archive file [/home/abi/fetcher/tmp/PyGz1-0.2.tar.gz]
+[2024-04-06 16:02:51] INFO root fetch - main [MainThread]: End processing [PyGz1]: success
+[2024-04-06 16:02:51] INFO root fetch - processPackages [json-handler-registry]: Remove: archive file [/home/abi/fetcher/tmp/json-handler-registry-1.4.0.tar.gz]
+[2024-04-06 16:02:51] INFO root fetch - processPackages [json-handler-registry]: Remove: archive file [/home/abi/fetcher/tmp/json-handler-registry-1.5.0.tar.gz]
+[2024-04-06 16:02:51] INFO root fetch - main [MainThread]: End processing [json-handler-registry]: success
+[2024-04-06 16:02:51] INFO root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_margin_sale-16.0.1.0.2.2-py3-none-any.whl.zip]
+[2024-04-06 16:02:51] INFO root fetch - processPackages [odoo-addon-account-invoice-margin-sale]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_account_invoice_margin_sale-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-04-06 16:02:51] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-invoice-margin-sale]: success
+[2024-04-06 16:02:51] WARNING root fetch - processPackages [novelWriter]: Timeout reached during download
+[2024-04-06 16:02:51] INFO root fetch - processPackages [novelWriter]: executing diffoscope
+[2024-04-06 16:02:51] INFO root fetch - processPackages [novelWriter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/novelWriter-2.3rc1.tar.gz tmp/novelWriter-2.4b1.tar.gz --markdown 20240406/n/novelWriter/2.3rc1-2.4b1/diff.md --exclude *.pyd
+[2024-04-06 16:02:51] INFO root fetch - processPackages [AstroToolkit]: Remove: archive file [/home/abi/fetcher/tmp/AstroToolkit-1.3.5.tar.gz]
+[2024-04-06 16:02:51] INFO root fetch - processPackages [AstroToolkit]: Remove: archive file [/home/abi/fetcher/tmp/AstroToolkit-1.4.0.tar.gz]
+[2024-04-06 16:02:51] INFO root fetch - main [MainThread]: End processing [AstroToolkit]: success
+[2024-04-06 16:02:55] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.3rc1.tar.gz]
+[2024-04-06 16:02:55] INFO root fetch - processPackages [novelWriter]: Remove: archive file [/home/abi/fetcher/tmp/novelWriter-2.4b1.tar.gz]
+[2024-04-06 16:02:55] INFO root fetch - main [MainThread]: End processing [novelWriter]: success
+[2024-04-06 16:02:55] INFO root fetch - main [MainThread]: Store serial: [22648389]
