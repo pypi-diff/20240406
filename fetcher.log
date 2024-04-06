@@ -16590,3 +16590,28 @@ EOFError: EOF read where object expected
 [2024-04-06 15:23:15] INFO root fetch - processPackages [pyguiadapter]: Remove: archive file [/home/abi/fetcher/tmp/pyguiadapter-0.2.9.tar.gz]
 [2024-04-06 15:23:15] INFO root fetch - main [MainThread]: End processing [pyguiadapter]: success
 [2024-04-06 15:23:15] INFO root fetch - main [MainThread]: Store serial: [22648200]
+[2024-04-06 15:25:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648200]
+[2024-04-06 15:25:23] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 15:25:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: boxedfactory
+[2024-04-06 15:25:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: masonite-orm
+[2024-04-06 15:25:23] INFO root fetch - processPackages [masonite-orm]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-04-06 15:25:23] INFO root fetch - processPackages [boxedfactory]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-04-06 15:25:24] INFO root fetch - processPackages [masonite-orm]: Downloading https://files.pythonhosted.org/packages/ea/84/d39c9ff439c3257b47e4aa605938418049bf6f278ed966fdfa07fe333465/masonite-orm-2.9.1.tar.gz
+[2024-04-06 15:25:24] INFO root fetch - processPackages [boxedfactory]: Downloading https://files.pythonhosted.org/packages/2e/3c/74917fe9bf4746dceec97aab9548b9fffa2ba6fdcf12be4bf475c48f6f6c/boxedfactory-0.0.7.tar.gz
+[2024-04-06 15:25:24] WARNING root fetch - processPackages [masonite-orm]: Timeout reached during download
+[2024-04-06 15:25:24] WARNING root fetch - processPackages [boxedfactory]: Timeout reached during download
+[2024-04-06 15:25:24] INFO root fetch - processPackages [boxedfactory]: Downloading https://files.pythonhosted.org/packages/db/84/654120932bbb70daaf8d11dec99ef25e174c66768fdc8559e2b74616c9d3/boxedfactory-0.0.8.tar.gz
+[2024-04-06 15:25:24] INFO root fetch - processPackages [masonite-orm]: Downloading https://files.pythonhosted.org/packages/4b/cb/e6f52dd5935c838951bb402ba1be869636672ee259a077729657a11a2481/masonite-orm-2.9.2.tar.gz
+[2024-04-06 15:25:24] WARNING root fetch - processPackages [boxedfactory]: Timeout reached during download
+[2024-04-06 15:25:24] WARNING root fetch - processPackages [masonite-orm]: Timeout reached during download
+[2024-04-06 15:25:24] INFO root fetch - processPackages [boxedfactory]: executing diffoscope
+[2024-04-06 15:25:24] INFO root fetch - processPackages [boxedfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/boxedfactory-0.0.7.tar.gz tmp/boxedfactory-0.0.8.tar.gz --markdown 20240406/b/boxedfactory/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2024-04-06 15:25:24] INFO root fetch - processPackages [masonite-orm]: executing diffoscope
+[2024-04-06 15:25:24] INFO root fetch - processPackages [masonite-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masonite-orm-2.9.1.tar.gz tmp/masonite-orm-2.9.2.tar.gz --markdown 20240406/m/masonite-orm/2.9.1-2.9.2/diff.md --exclude *.pyd
+[2024-04-06 15:25:25] INFO root fetch - processPackages [boxedfactory]: Remove: archive file [/home/abi/fetcher/tmp/boxedfactory-0.0.7.tar.gz]
+[2024-04-06 15:25:25] INFO root fetch - processPackages [boxedfactory]: Remove: archive file [/home/abi/fetcher/tmp/boxedfactory-0.0.8.tar.gz]
+[2024-04-06 15:25:25] INFO root fetch - main [MainThread]: End processing [boxedfactory]: success
+[2024-04-06 15:25:25] INFO root fetch - processPackages [masonite-orm]: Remove: archive file [/home/abi/fetcher/tmp/masonite-orm-2.9.1.tar.gz]
+[2024-04-06 15:25:25] INFO root fetch - processPackages [masonite-orm]: Remove: archive file [/home/abi/fetcher/tmp/masonite-orm-2.9.2.tar.gz]
+[2024-04-06 15:25:25] INFO root fetch - main [MainThread]: End processing [masonite-orm]: success
+[2024-04-06 15:25:25] INFO root fetch - main [MainThread]: Store serial: [22648215]
