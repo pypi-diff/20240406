@@ -21887,3 +21887,42 @@ EOFError: EOF read where object expected
 [2024-04-06 20:28:56] INFO root fetch - processPackages [emlabpkg]: Remove: archive file [/home/abi/fetcher/tmp/emlabpkg-4.9.tar.gz]
 [2024-04-06 20:28:56] INFO root fetch - main [MainThread]: End processing [emlabpkg]: success
 [2024-04-06 20:28:56] INFO root fetch - main [MainThread]: Store serial: [22650115]
+[2024-04-06 20:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22650115]
+[2024-04-06 20:31:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moval
+[2024-04-06 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: install-preserve
+[2024-04-06 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: weight-training-tracker
+[2024-04-06 20:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redsauce
+[2024-04-06 20:31:05] INFO root fetch - processPackages [redsauce]: New version: [0.0.1.1] Old Version: [0.0.1.0]
+[2024-04-06 20:31:05] INFO root fetch - processPackages [weight-training-tracker]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-04-06 20:31:05] INFO root fetch - processPackages [moval]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-04-06 20:31:05] WARNING root fetch - processPackages [install-preserve]: Skipping, unable to determine old version
+[2024-04-06 20:31:05] INFO root fetch - main [MainThread]: End processing [install-preserve] error
+[2024-04-06 20:31:05] INFO root fetch - processPackages [weight-training-tracker]: Downloading https://files.pythonhosted.org/packages/cd/aa/c38f33930c86850366b55421f41626063905c2fe2c8f17bc2775f40065e1/weight_training_tracker-0.8.0.tar.gz
+[2024-04-06 20:31:05] INFO root fetch - processPackages [redsauce]: Downloading https://files.pythonhosted.org/packages/4e/5a/7749c88c43225651aefd005c007bd39a5dcce5e60ca5bbc18e3b7e20719f/redsauce-0.0.1.0.tar.gz
+[2024-04-06 20:31:05] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/29/eb/e18ee2ec17a40ed8b0164a528278dc7f8c7dd6216f26b43e2ab1491137df/moval-0.2.6.tar.gz
+[2024-04-06 20:31:05] WARNING root fetch - processPackages [redsauce]: Timeout reached during download
+[2024-04-06 20:31:05] WARNING root fetch - processPackages [weight-training-tracker]: Timeout reached during download
+[2024-04-06 20:31:05] WARNING root fetch - processPackages [moval]: Timeout reached during download
+[2024-04-06 20:31:05] INFO root fetch - processPackages [redsauce]: Downloading https://files.pythonhosted.org/packages/0d/d3/1ea72a43d2f1493c92c3c89b9c185455e48450fd25e1d9db73a221f12072/redsauce-0.0.1.1.tar.gz
+[2024-04-06 20:31:05] INFO root fetch - processPackages [weight-training-tracker]: Downloading https://files.pythonhosted.org/packages/58/f6/886d8555f118679f1a90a58f2aba160c8ebfa8b00157c0a2b157a947d0da/weight_training_tracker-0.9.0.tar.gz
+[2024-04-06 20:31:05] INFO root fetch - processPackages [moval]: Downloading https://files.pythonhosted.org/packages/99/04/ebdefd68bc29baa6fef495b2db8ec3569036036148f3954c58625f88df8c/moval-0.2.7.tar.gz
+[2024-04-06 20:31:05] WARNING root fetch - processPackages [weight-training-tracker]: Timeout reached during download
+[2024-04-06 20:31:05] INFO root fetch - processPackages [weight-training-tracker]: executing diffoscope
+[2024-04-06 20:31:05] INFO root fetch - processPackages [weight-training-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/weight_training_tracker-0.8.0.tar.gz tmp/weight_training_tracker-0.9.0.tar.gz --markdown 20240406/w/weight-training-tracker/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2024-04-06 20:31:05] WARNING root fetch - processPackages [moval]: Timeout reached during download
+[2024-04-06 20:31:05] INFO root fetch - processPackages [moval]: executing diffoscope
+[2024-04-06 20:31:05] INFO root fetch - processPackages [moval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moval-0.2.6.tar.gz tmp/moval-0.2.7.tar.gz --markdown 20240406/m/moval/0.2.6-0.2.7/diff.md --exclude *.pyd
+[2024-04-06 20:31:05] WARNING root fetch - processPackages [redsauce]: Timeout reached during download
+[2024-04-06 20:31:05] INFO root fetch - processPackages [redsauce]: executing diffoscope
+[2024-04-06 20:31:05] INFO root fetch - processPackages [redsauce]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redsauce-0.0.1.0.tar.gz tmp/redsauce-0.0.1.1.tar.gz --markdown 20240406/r/redsauce/0.0.1.0-0.0.1.1/diff.md --exclude *.pyd
+[2024-04-06 20:31:06] INFO root fetch - processPackages [weight-training-tracker]: Remove: archive file [/home/abi/fetcher/tmp/weight_training_tracker-0.8.0.tar.gz]
+[2024-04-06 20:31:06] INFO root fetch - processPackages [weight-training-tracker]: Remove: archive file [/home/abi/fetcher/tmp/weight_training_tracker-0.9.0.tar.gz]
+[2024-04-06 20:31:06] INFO root fetch - main [MainThread]: End processing [weight-training-tracker]: success
+[2024-04-06 20:31:06] INFO root fetch - processPackages [redsauce]: Remove: archive file [/home/abi/fetcher/tmp/redsauce-0.0.1.0.tar.gz]
+[2024-04-06 20:31:06] INFO root fetch - processPackages [redsauce]: Remove: archive file [/home/abi/fetcher/tmp/redsauce-0.0.1.1.tar.gz]
+[2024-04-06 20:31:06] INFO root fetch - main [MainThread]: End processing [redsauce]: success
+[2024-04-06 20:31:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.2.6.tar.gz]
+[2024-04-06 20:31:06] INFO root fetch - processPackages [moval]: Remove: archive file [/home/abi/fetcher/tmp/moval-0.2.7.tar.gz]
+[2024-04-06 20:31:06] INFO root fetch - main [MainThread]: End processing [moval]: success
+[2024-04-06 20:31:06] INFO root fetch - main [MainThread]: Store serial: [22650131]
