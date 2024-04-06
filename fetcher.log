@@ -14190,3 +14190,17 @@
 [2024-04-06 12:53:38] INFO root fetch - processPackages [theflow]: Remove: archive file [/home/abi/fetcher/tmp/theflow-0.8.6.tar.gz]
 [2024-04-06 12:53:38] INFO root fetch - main [MainThread]: End processing [theflow]: success
 [2024-04-06 12:53:38] INFO root fetch - main [MainThread]: Store serial: [22647327]
+[2024-04-06 12:55:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647327]
+[2024-04-06 12:55:47] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 12:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sphinx_minoo_theme
+[2024-04-06 12:55:47] INFO root fetch - processPackages [sphinx_minoo_theme]: New version: [1.0] Old Version: [0.9.7]
+[2024-04-06 12:55:47] INFO root fetch - processPackages [sphinx_minoo_theme]: Downloading https://files.pythonhosted.org/packages/23/3d/9dd8fbca6bdd91a507008985dda90112f73a04a0d86fcc725158e2a354d5/sphinx_minoo_theme-0.9.7.zip
+[2024-04-06 12:55:48] WARNING root fetch - processPackages [sphinx_minoo_theme]: Timeout reached during download
+[2024-04-06 12:55:48] INFO root fetch - processPackages [sphinx_minoo_theme]: Downloading https://files.pythonhosted.org/packages/e7/43/8e9eb633fad94d148886cd7695e3e9f4eb3d08d8ebdba786d0efbc657869/sphinx_minoo_theme-1.0.tar.gz
+[2024-04-06 12:55:48] WARNING root fetch - processPackages [sphinx_minoo_theme]: Timeout reached during download
+[2024-04-06 12:55:48] INFO root fetch - processPackages [sphinx_minoo_theme]: executing diffoscope
+[2024-04-06 12:55:48] INFO root fetch - processPackages [sphinx_minoo_theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinx_minoo_theme-0.9.7.zip tmp/sphinx_minoo_theme-1.0.tar.gz --markdown 20240406/s/sphinx_minoo_theme/0.9.7-1.0/diff.md --exclude *.pyd
+[2024-04-06 12:55:50] INFO root fetch - processPackages [sphinx_minoo_theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_minoo_theme-0.9.7.zip]
+[2024-04-06 12:55:50] INFO root fetch - processPackages [sphinx_minoo_theme]: Remove: archive file [/home/abi/fetcher/tmp/sphinx_minoo_theme-1.0.tar.gz]
+[2024-04-06 12:55:50] INFO root fetch - main [MainThread]: End processing [sphinx_minoo_theme]: success
+[2024-04-06 12:55:50] INFO root fetch - main [MainThread]: Store serial: [22647330]
