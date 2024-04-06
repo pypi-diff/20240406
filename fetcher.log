@@ -18452,3 +18452,28 @@ EOFError: EOF read where object expected
 [2024-04-06 17:16:32] INFO root fetch - processPackages [rapidfuzz]: Remove: archive file [/home/abi/fetcher/tmp/rapidfuzz-3.7.0.tar.gz]
 [2024-04-06 17:16:32] INFO root fetch - main [MainThread]: End processing [rapidfuzz]: success
 [2024-04-06 17:16:32] INFO root fetch - main [MainThread]: Store serial: [22648930]
+[2024-04-06 17:18:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22648930]
+[2024-04-06 17:18:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 17:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: screwmpc-experiments
+[2024-04-06 17:18:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: abses
+[2024-04-06 17:18:41] INFO root fetch - processPackages [abses]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-04-06 17:18:41] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/6d/6b/3f4575cf846c7903997edf64687bfcf77697dbd912a9a810a5f292c26e19/abses-0.5.4.tar.gz
+[2024-04-06 17:18:41] INFO root fetch - processPackages [screwmpc-experiments]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-04-06 17:18:41] WARNING root fetch - processPackages [abses]: Timeout reached during download
+[2024-04-06 17:18:41] INFO root fetch - processPackages [screwmpc-experiments]: Downloading https://files.pythonhosted.org/packages/87/94/e24665ab47f399a544fc636220722f538747327d13fe7c3540a5c4eb33d7/screwmpc_experiments-0.4.2.tar.gz
+[2024-04-06 17:18:42] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/40/cd/2a4d0258c9ac4bcf1f6983283ff6655f11f70965989e33606dce8cc608c4/abses-0.5.5.tar.gz
+[2024-04-06 17:18:42] WARNING root fetch - processPackages [screwmpc-experiments]: Timeout reached during download
+[2024-04-06 17:18:42] WARNING root fetch - processPackages [abses]: Timeout reached during download
+[2024-04-06 17:18:42] INFO root fetch - processPackages [abses]: executing diffoscope
+[2024-04-06 17:18:42] INFO root fetch - processPackages [abses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abses-0.5.4.tar.gz tmp/abses-0.5.5.tar.gz --markdown 20240406/a/abses/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2024-04-06 17:18:42] INFO root fetch - processPackages [screwmpc-experiments]: Downloading https://files.pythonhosted.org/packages/ec/bd/bdf25286e83d403fdbf18f7aa7226fddb69e4901e8599c4ce1743e2affbb/screwmpc_experiments-0.4.3.tar.gz
+[2024-04-06 17:18:42] WARNING root fetch - processPackages [screwmpc-experiments]: Timeout reached during download
+[2024-04-06 17:18:42] INFO root fetch - processPackages [screwmpc-experiments]: executing diffoscope
+[2024-04-06 17:18:42] INFO root fetch - processPackages [screwmpc-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/screwmpc_experiments-0.4.2.tar.gz tmp/screwmpc_experiments-0.4.3.tar.gz --markdown 20240406/s/screwmpc-experiments/0.4.2-0.4.3/diff.md --exclude *.pyd
+[2024-04-06 17:18:42] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.5.4.tar.gz]
+[2024-04-06 17:18:42] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.5.5.tar.gz]
+[2024-04-06 17:18:42] INFO root fetch - main [MainThread]: End processing [abses]: success
+[2024-04-06 17:18:43] INFO root fetch - processPackages [screwmpc-experiments]: Remove: archive file [/home/abi/fetcher/tmp/screwmpc_experiments-0.4.2.tar.gz]
+[2024-04-06 17:18:43] INFO root fetch - processPackages [screwmpc-experiments]: Remove: archive file [/home/abi/fetcher/tmp/screwmpc_experiments-0.4.3.tar.gz]
+[2024-04-06 17:18:43] INFO root fetch - main [MainThread]: End processing [screwmpc-experiments]: success
+[2024-04-06 17:18:43] INFO root fetch - main [MainThread]: Store serial: [22648973]
