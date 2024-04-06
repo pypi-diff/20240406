@@ -15207,3 +15207,61 @@ EOFError: EOF read where object expected
 [2024-04-06 13:47:10] INFO root fetch - processPackages [pulumi-sumologic]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_sumologic-0.9.1a1663799436.tar.gz]
 [2024-04-06 13:47:10] INFO root fetch - main [MainThread]: End processing [pulumi-sumologic]: success
 [2024-04-06 13:47:10] INFO root fetch - main [MainThread]: Store serial: [22647626]
+[2024-04-06 13:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647626]
+[2024-04-06 13:49:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-splunk
+[2024-04-06 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: brother
+[2024-04-06 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: koalix-crm
+[2024-04-06 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-snowflake
+[2024-04-06 13:49:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-tls
+[2024-04-06 13:49:18] INFO root fetch - processPackages [brother]: New version: [4.1.0] Old Version: [4.0.2]
+[2024-04-06 13:49:18] INFO root fetch - processPackages [pulumi-splunk]: New version: [1.3.0a1712403003] Old Version: [1.3.0a1712123812]
+[2024-04-06 13:49:18] INFO root fetch - processPackages [pulumi-tls]: New version: [5.1.0a1712403158] Old Version: [5.1.0a1711743582]
+[2024-04-06 13:49:18] INFO root fetch - processPackages [koalix-crm]: New version: [1.14.0rc1] Old Version: [1.13.dev9]
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-snowflake]: New version: [0.9.1a1656367704] Old Version: [0.9.1a1654087017]
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/80/e3/0a8a91a99bf37e1831ca106e2188f1316e69904c6af5f80ca451b5bb4f34/pulumi_splunk-1.3.0a1712123812.tar.gz
+[2024-04-06 13:49:19] INFO root fetch - processPackages [brother]: Downloading https://files.pythonhosted.org/packages/6a/ac/66b10dafffaa447ebd268f1904974ad04c729dc174aa8986d60dadbb275c/brother-4.0.2.tar.gz
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/0a/02/7778cf7642a22179ff5bf6af6780ccf921fef8548107894d95c35e2d976f/pulumi_tls-5.1.0a1711743582.tar.gz
+[2024-04-06 13:49:19] INFO root fetch - processPackages [koalix-crm]: Downloading https://files.pythonhosted.org/packages/56/1f/a457a0c5c7861c933500deea33b80eea886a9bb386bf9b25280f4f8820e1/koalix-crm-1.13.dev9.tar.gz
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-snowflake]: Downloading https://files.pythonhosted.org/packages/ac/12/8a15836613d8faa0153d0c1b5818bfe83f875f5770e55c406bbc2e2f4297/pulumi_snowflake-0.9.1a1654087017.tar.gz
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [brother]: Timeout reached during download
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [pulumi-tls]: Timeout reached during download
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [pulumi-splunk]: Timeout reached during download
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [pulumi-snowflake]: Timeout reached during download
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-tls]: Downloading https://files.pythonhosted.org/packages/96/26/b98b5127e4a0365270e5859702f7b1b7ddfb2d118c32cd84529eaee6c246/pulumi_tls-5.1.0a1712403158.tar.gz
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-splunk]: Downloading https://files.pythonhosted.org/packages/97/e8/e11c594b660c40d2d2a0866da34ac98f585ce780058dc385a54a076ea8f9/pulumi_splunk-1.3.0a1712403003.tar.gz
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [koalix-crm]: Timeout reached during download
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [pulumi-splunk]: Timeout reached during download
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-splunk]: executing diffoscope
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-splunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_splunk-1.3.0a1712123812.tar.gz tmp/pulumi_splunk-1.3.0a1712403003.tar.gz --markdown 20240406/p/pulumi-splunk/1.3.0a1712123812-1.3.0a1712403003/diff.md --exclude *.pyd
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-snowflake]: Downloading https://files.pythonhosted.org/packages/12/24/eac91fa678665e057906195a9e93366ecf0bc7997bd228eb1159a41ae631/pulumi_snowflake-0.9.1a1656367704.tar.gz
+[2024-04-06 13:49:19] INFO root fetch - processPackages [brother]: Downloading https://files.pythonhosted.org/packages/0e/c7/b8b5f74c13d981010b2cafcc5fa72d2d65a2466bd22333642d0660f56c13/brother-4.1.0.tar.gz
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [pulumi-tls]: Timeout reached during download
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-tls]: executing diffoscope
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-tls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_tls-5.1.0a1711743582.tar.gz tmp/pulumi_tls-5.1.0a1712403158.tar.gz --markdown 20240406/p/pulumi-tls/5.1.0a1711743582-5.1.0a1712403158/diff.md --exclude *.pyd
+[2024-04-06 13:49:19] INFO root fetch - processPackages [koalix-crm]: Downloading https://files.pythonhosted.org/packages/2b/16/97039bfbbe23a012651e3737e436e29dc33db67cd8149e2a263ecdbb4fd7/koalix-crm-1.14.0rc1.tar.gz
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [pulumi-snowflake]: Timeout reached during download
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-snowflake]: executing diffoscope
+[2024-04-06 13:49:19] INFO root fetch - processPackages [pulumi-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz --markdown 20240406/p/pulumi-snowflake/0.9.1a1654087017-0.9.1a1656367704/diff.md --exclude *.pyd
+[2024-04-06 13:49:19] WARNING root fetch - processPackages [brother]: Timeout reached during download
+[2024-04-06 13:49:19] INFO root fetch - processPackages [brother]: executing diffoscope
+[2024-04-06 13:49:19] INFO root fetch - processPackages [brother]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brother-4.0.2.tar.gz tmp/brother-4.1.0.tar.gz --markdown 20240406/b/brother/4.0.2-4.1.0/diff.md --exclude *.pyd
+[2024-04-06 13:49:20] WARNING root fetch - processPackages [koalix-crm]: Timeout reached during download
+[2024-04-06 13:49:20] INFO root fetch - processPackages [koalix-crm]: executing diffoscope
+[2024-04-06 13:49:20] INFO root fetch - processPackages [koalix-crm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/koalix-crm-1.13.dev9.tar.gz tmp/koalix-crm-1.14.0rc1.tar.gz --markdown 20240406/k/koalix-crm/1.13.dev9-1.14.0rc1/diff.md --exclude *.pyd
+[2024-04-06 13:49:20] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1711743582.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - processPackages [pulumi-tls]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_tls-5.1.0a1712403158.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - main [MainThread]: End processing [pulumi-tls]: success
+[2024-04-06 13:49:20] INFO root fetch - processPackages [pulumi-splunk]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_splunk-1.3.0a1712123812.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - processPackages [pulumi-splunk]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_splunk-1.3.0a1712403003.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - main [MainThread]: End processing [pulumi-splunk]: success
+[2024-04-06 13:49:20] INFO root fetch - processPackages [brother]: Remove: archive file [/home/abi/fetcher/tmp/brother-4.0.2.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - processPackages [brother]: Remove: archive file [/home/abi/fetcher/tmp/brother-4.1.0.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - main [MainThread]: End processing [brother]: success
+[2024-04-06 13:49:20] INFO root fetch - processPackages [pulumi-snowflake]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - processPackages [pulumi-snowflake]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz]
+[2024-04-06 13:49:20] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
+[2024-04-06 13:49:22] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.13.dev9.tar.gz]
+[2024-04-06 13:49:22] INFO root fetch - processPackages [koalix-crm]: Remove: archive file [/home/abi/fetcher/tmp/koalix-crm-1.14.0rc1.tar.gz]
+[2024-04-06 13:49:22] INFO root fetch - main [MainThread]: End processing [koalix-crm]: success
+[2024-04-06 13:49:22] INFO root fetch - main [MainThread]: Store serial: [22647644]
