@@ -10923,3 +10923,20 @@
 [2024-04-06 08:11:20] INFO root fetch - processPackages [score-eval]: Remove: archive file [/home/abi/fetcher/tmp/score_eval-0.0.3.tar.gz]
 [2024-04-06 08:11:20] INFO root fetch - main [MainThread]: End processing [score-eval]: success
 [2024-04-06 08:11:20] INFO root fetch - main [MainThread]: Store serial: [22645992]
+[2024-04-06 08:13:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645992]
+[2024-04-06 08:13:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 08:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ubnesieh
+[2024-04-06 08:13:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pretext
+[2024-04-06 08:13:29] WARNING root fetch - processPackages [ubnesieh]: Skipping, unable to determine old version
+[2024-04-06 08:13:29] INFO root fetch - main [MainThread]: End processing [ubnesieh] error
+[2024-04-06 08:13:29] INFO root fetch - processPackages [pretext]: New version: [2.3.9.dev20240302] Old Version: [2.3.9.dev20240229]
+[2024-04-06 08:13:29] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/ce/64/85bc57578fbf3322df1cb4958d7c6cf0dda4d8184eb5611f8245cb5d98eb/pretext-2.3.9.dev20240229.tar.gz
+[2024-04-06 08:13:30] WARNING root fetch - processPackages [pretext]: Timeout reached during download
+[2024-04-06 08:13:30] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/3f/2d/22e687f1fb945aeb16176a4f9c25da1aab63664c88cd2966d7ad79f1b144/pretext-2.3.9.dev20240302.tar.gz
+[2024-04-06 08:13:30] WARNING root fetch - processPackages [pretext]: Timeout reached during download
+[2024-04-06 08:13:30] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2024-04-06 08:13:30] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-2.3.9.dev20240229.tar.gz tmp/pretext-2.3.9.dev20240302.tar.gz --markdown 20240406/p/pretext/2.3.9.dev20240229-2.3.9.dev20240302/diff.md --exclude *.pyd
+[2024-04-06 08:13:33] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240229.tar.gz]
+[2024-04-06 08:13:33] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.3.9.dev20240302.tar.gz]
+[2024-04-06 08:13:33] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2024-04-06 08:13:33] INFO root fetch - main [MainThread]: Store serial: [22645998]
