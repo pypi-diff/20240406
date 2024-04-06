@@ -19403,3 +19403,61 @@ EOFError: EOF read where object expected
 [2024-04-06 18:13:28] INFO root fetch - processPackages [protolint-bin-test]: Remove: archive file [/home/abi/fetcher/tmp/protolint_bin_test-0.49.4.post4-py2.py3-none-linux_armv7l.whl.zip]
 [2024-04-06 18:13:28] INFO root fetch - main [MainThread]: End processing [protolint-bin-test]: success
 [2024-04-06 18:13:28] INFO root fetch - main [MainThread]: Store serial: [22649266]
+[2024-04-06 18:15:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649266]
+[2024-04-06 18:15:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-04-06 18:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygmtsar
+[2024-04-06 18:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-migration-docs
+[2024-04-06 18:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyplate-hte
+[2024-04-06 18:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: protolint-bin-test
+[2024-04-06 18:15:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mloptimizer
+[2024-04-06 18:15:37] INFO root fetch - processPackages [protolint-bin-test]: New version: [0.49.4.post5] Old Version: [0.49.4.post4]
+[2024-04-06 18:15:37] INFO root fetch - processPackages [protolint-bin-test]: Downloading https://files.pythonhosted.org/packages/c6/a3/d746b1f0bfa6a07af0a58dca387fd4961aa577fe209bc4d6b57dd5fec0d9/protolint_bin_test-0.49.4.post4-py2.py3-none-linux_armv7l.whl
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pyplate-hte]: New version: [0.4.1] Old Version: [0.4]
+[2024-04-06 18:15:37] INFO root fetch - processPackages [django-migration-docs]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-04-06 18:15:37] INFO root fetch - processPackages [mloptimizer]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pygmtsar]: New version: [2024.3.15.post7] Old Version: [2024.3.15.post5]
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pyplate-hte]: Downloading https://files.pythonhosted.org/packages/02/5d/6bdd040fccd492d14909744e926fbf50e5741b5657b10474f2a6c3c92d16/pyplate-hte-0.4.tar.gz
+[2024-04-06 18:15:37] INFO root fetch - processPackages [django-migration-docs]: Downloading https://files.pythonhosted.org/packages/fe/ab/3d295f1e0d6adf5553adaab89e608850a0e87dfb830289f9688ce7e10174/django_migration_docs-1.2.0.tar.gz
+[2024-04-06 18:15:37] INFO root fetch - processPackages [mloptimizer]: Downloading https://files.pythonhosted.org/packages/cd/51/02dac43f67ac6a016d3e709e3da8e79e19338943f9a96d7604ec87c34e71/mloptimizer-0.8.4.tar.gz
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/7c/42/ad29bdff330fd167d3db028e05244f01787714ef7d3b90b9fcd2d1ecd847/pygmtsar-2024.3.15.post5.tar.gz
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [pyplate-hte]: Timeout reached during download
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [django-migration-docs]: Timeout reached during download
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [pygmtsar]: Timeout reached during download
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [protolint-bin-test]: Timeout reached during download
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [mloptimizer]: Timeout reached during download
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pyplate-hte]: Downloading https://files.pythonhosted.org/packages/a8/04/580fc728f48540a13c88d107918ca2d44c243bef09bcdb0bc95ac35e6848/pyplate-hte-0.4.1.tar.gz
+[2024-04-06 18:15:37] INFO root fetch - processPackages [django-migration-docs]: Downloading https://files.pythonhosted.org/packages/58/60/c06ee5f117094c2f6f45a9601c3af6ded2e4402bcb53987a1e5a7552fce6/django_migration_docs-1.2.1.tar.gz
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pygmtsar]: Downloading https://files.pythonhosted.org/packages/83/10/320cb812e09a719ce1958d50d842f51f9a8ca6d5fdc267be20e00957d522/pygmtsar-2024.3.15.post7.tar.gz
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [pyplate-hte]: Timeout reached during download
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pyplate-hte]: executing diffoscope
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pyplate-hte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplate-hte-0.4.tar.gz tmp/pyplate-hte-0.4.1.tar.gz --markdown 20240406/p/pyplate-hte/0.4-0.4.1/diff.md --exclude *.pyd
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [django-migration-docs]: Timeout reached during download
+[2024-04-06 18:15:37] INFO root fetch - processPackages [django-migration-docs]: executing diffoscope
+[2024-04-06 18:15:37] INFO root fetch - processPackages [django-migration-docs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_migration_docs-1.2.0.tar.gz tmp/django_migration_docs-1.2.1.tar.gz --markdown 20240406/d/django-migration-docs/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2024-04-06 18:15:37] INFO root fetch - processPackages [mloptimizer]: Downloading https://files.pythonhosted.org/packages/b5/ed/7017736e46164b0db7178ef567cfec928e01d547e7a45f32c66aa77c80eb/mloptimizer-0.8.5.tar.gz
+[2024-04-06 18:15:37] INFO root fetch - processPackages [protolint-bin-test]: Downloading https://files.pythonhosted.org/packages/45/41/ccb525409091428288105ead76153b9c8976c313e000edceab8ac2dea512/protolint_bin_test-0.49.4.post5-py2.py3-none-win_arm64.whl
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [pygmtsar]: Timeout reached during download
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pygmtsar]: executing diffoscope
+[2024-04-06 18:15:37] INFO root fetch - processPackages [pygmtsar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygmtsar-2024.3.15.post5.tar.gz tmp/pygmtsar-2024.3.15.post7.tar.gz --markdown 20240406/p/pygmtsar/2024.3.15.post5-2024.3.15.post7/diff.md --exclude *.pyd
+[2024-04-06 18:15:37] WARNING root fetch - processPackages [mloptimizer]: Timeout reached during download
+[2024-04-06 18:15:37] INFO root fetch - processPackages [mloptimizer]: executing diffoscope
+[2024-04-06 18:15:37] INFO root fetch - processPackages [mloptimizer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mloptimizer-0.8.4.tar.gz tmp/mloptimizer-0.8.5.tar.gz --markdown 20240406/m/mloptimizer/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2024-04-06 18:15:38] INFO root fetch - processPackages [django-migration-docs]: Remove: archive file [/home/abi/fetcher/tmp/django_migration_docs-1.2.0.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - processPackages [django-migration-docs]: Remove: archive file [/home/abi/fetcher/tmp/django_migration_docs-1.2.1.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - main [MainThread]: End processing [django-migration-docs]: success
+[2024-04-06 18:15:38] INFO root fetch - processPackages [mloptimizer]: Remove: archive file [/home/abi/fetcher/tmp/mloptimizer-0.8.4.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - processPackages [mloptimizer]: Remove: archive file [/home/abi/fetcher/tmp/mloptimizer-0.8.5.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - main [MainThread]: End processing [mloptimizer]: success
+[2024-04-06 18:15:38] INFO root fetch - processPackages [pyplate-hte]: Remove: archive file [/home/abi/fetcher/tmp/pyplate-hte-0.4.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - processPackages [pyplate-hte]: Remove: archive file [/home/abi/fetcher/tmp/pyplate-hte-0.4.1.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - main [MainThread]: End processing [pyplate-hte]: success
+[2024-04-06 18:15:38] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.3.15.post5.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - processPackages [pygmtsar]: Remove: archive file [/home/abi/fetcher/tmp/pygmtsar-2024.3.15.post7.tar.gz]
+[2024-04-06 18:15:38] INFO root fetch - main [MainThread]: End processing [pygmtsar]: success
+[2024-04-06 18:15:39] WARNING root fetch - processPackages [protolint-bin-test]: Timeout reached during download
+[2024-04-06 18:15:39] INFO root fetch - processPackages [protolint-bin-test]: executing diffoscope
+[2024-04-06 18:15:39] INFO root fetch - processPackages [protolint-bin-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protolint_bin_test-0.49.4.post4-py2.py3-none-linux_armv7l.whl.zip tmp/protolint_bin_test-0.49.4.post5-py2.py3-none-win_arm64.whl.zip --markdown 20240406/p/protolint-bin-test/0.49.4.post4-0.49.4.post5/diff.md --exclude *.pyd
+[2024-04-06 18:15:40] INFO root fetch - processPackages [protolint-bin-test]: Remove: archive file [/home/abi/fetcher/tmp/protolint_bin_test-0.49.4.post4-py2.py3-none-linux_armv7l.whl.zip]
+[2024-04-06 18:15:40] INFO root fetch - processPackages [protolint-bin-test]: Remove: archive file [/home/abi/fetcher/tmp/protolint_bin_test-0.49.4.post5-py2.py3-none-win_arm64.whl.zip]
+[2024-04-06 18:15:40] INFO root fetch - main [MainThread]: End processing [protolint-bin-test]: success
+[2024-04-06 18:15:40] INFO root fetch - main [MainThread]: Store serial: [22649281]
