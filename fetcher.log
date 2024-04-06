@@ -2744,3 +2744,30 @@
 [2024-04-06 02:54:57] INFO root fetch - processPackages [azure-monitor-opentelemetry-exporter]: Remove: archive file [/home/abi/fetcher/tmp/azure-monitor-opentelemetry-exporter-1.0.0b9.zip]
 [2024-04-06 02:54:57] INFO root fetch - main [MainThread]: End processing [azure-monitor-opentelemetry-exporter]: success
 [2024-04-06 02:54:57] INFO root fetch - main [MainThread]: Store serial: [22643490]
+[2024-04-06 02:57:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643490]
+[2024-04-06 02:57:05] INFO root fetch - main [MainThread]: No changed packages found
+[2024-04-06 02:59:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22643490]
+[2024-04-06 02:59:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 02:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sentify
+[2024-04-06 02:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: botocore-a-la-carte-ivs-realtime
+[2024-04-06 02:59:10] INFO root fetch - processPackages [sentify]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-04-06 02:59:11] INFO root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: New version: [1.34.9] Old Version: [1.34.8]
+[2024-04-06 02:59:11] INFO root fetch - processPackages [sentify]: Downloading https://files.pythonhosted.org/packages/4d/a7/67fcb246539c1d11a812449fa8385d1a48f66dbb1ce316a77d0427a74510/sentify-0.8.1.tar.gz
+[2024-04-06 02:59:11] WARNING root fetch - processPackages [sentify]: Timeout reached during download
+[2024-04-06 02:59:11] INFO root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: Downloading https://files.pythonhosted.org/packages/5d/d7/39a02f575924199c895d6ceec9491309fba7cc50abe1f7b0f9d16fac7260/botocore-a-la-carte-ivs-realtime-1.34.8.tar.gz
+[2024-04-06 02:59:11] WARNING root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: Timeout reached during download
+[2024-04-06 02:59:11] INFO root fetch - processPackages [sentify]: Downloading https://files.pythonhosted.org/packages/ef/a0/d16abf3343bcd4b666953d2ba98f82a08163d7221520fbc9ac5187dbc565/sentify-0.8.2.tar.gz
+[2024-04-06 02:59:11] WARNING root fetch - processPackages [sentify]: Timeout reached during download
+[2024-04-06 02:59:11] INFO root fetch - processPackages [sentify]: executing diffoscope
+[2024-04-06 02:59:11] INFO root fetch - processPackages [sentify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sentify-0.8.1.tar.gz tmp/sentify-0.8.2.tar.gz --markdown 20240406/s/sentify/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2024-04-06 02:59:11] INFO root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: Downloading https://files.pythonhosted.org/packages/9c/0a/435d9c5a89495f3edee84b9d057fcc4161fac5a92149bf4b073d9269c65e/botocore-a-la-carte-ivs-realtime-1.34.9.tar.gz
+[2024-04-06 02:59:11] WARNING root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: Timeout reached during download
+[2024-04-06 02:59:11] INFO root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: executing diffoscope
+[2024-04-06 02:59:11] INFO root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-ivs-realtime-1.34.8.tar.gz tmp/botocore-a-la-carte-ivs-realtime-1.34.9.tar.gz --markdown 20240406/b/botocore-a-la-carte-ivs-realtime/1.34.8-1.34.9/diff.md --exclude *.pyd
+[2024-04-06 02:59:12] INFO root fetch - processPackages [sentify]: Remove: archive file [/home/abi/fetcher/tmp/sentify-0.8.1.tar.gz]
+[2024-04-06 02:59:12] INFO root fetch - processPackages [sentify]: Remove: archive file [/home/abi/fetcher/tmp/sentify-0.8.2.tar.gz]
+[2024-04-06 02:59:12] INFO root fetch - main [MainThread]: End processing [sentify]: success
+[2024-04-06 02:59:12] INFO root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-ivs-realtime-1.34.8.tar.gz]
+[2024-04-06 02:59:12] INFO root fetch - processPackages [botocore-a-la-carte-ivs-realtime]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-ivs-realtime-1.34.9.tar.gz]
+[2024-04-06 02:59:12] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-ivs-realtime]: success
+[2024-04-06 02:59:12] INFO root fetch - main [MainThread]: Store serial: [22643497]
