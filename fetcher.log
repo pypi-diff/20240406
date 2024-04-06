@@ -13352,3 +13352,17 @@
 [2024-04-06 11:33:28] INFO root fetch - processPackages [yfinance-cache]: Remove: archive file [/home/abi/fetcher/tmp/yfinance-cache-0.6.0rc2.tar.gz]
 [2024-04-06 11:33:28] INFO root fetch - main [MainThread]: End processing [yfinance-cache]: success
 [2024-04-06 11:33:28] INFO root fetch - main [MainThread]: Store serial: [22647069]
+[2024-04-06 11:35:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22647069]
+[2024-04-06 11:35:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-04-06 11:35:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-pagerduty
+[2024-04-06 11:35:37] INFO root fetch - processPackages [pulumi-pagerduty]: New version: [4.9.0a1709566454] Old Version: [4.9.0a1709366773]
+[2024-04-06 11:35:37] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/ba/dc/468cc1cc3ab57e83660f1775ea0d9f1dcfc62c6de9c10832b834d737ec1a/pulumi_pagerduty-4.9.0a1709366773.tar.gz
+[2024-04-06 11:35:37] WARNING root fetch - processPackages [pulumi-pagerduty]: Timeout reached during download
+[2024-04-06 11:35:37] INFO root fetch - processPackages [pulumi-pagerduty]: Downloading https://files.pythonhosted.org/packages/ea/4e/a77d2efabe6daeb6878eeed9b4c2b3c43c2b854c19e3be4b3d627c2c0427/pulumi_pagerduty-4.9.0a1709566454.tar.gz
+[2024-04-06 11:35:37] WARNING root fetch - processPackages [pulumi-pagerduty]: Timeout reached during download
+[2024-04-06 11:35:37] INFO root fetch - processPackages [pulumi-pagerduty]: executing diffoscope
+[2024-04-06 11:35:37] INFO root fetch - processPackages [pulumi-pagerduty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_pagerduty-4.9.0a1709366773.tar.gz tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz --markdown 20240406/p/pulumi-pagerduty/4.9.0a1709366773-4.9.0a1709566454/diff.md --exclude *.pyd
+[2024-04-06 11:35:38] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709366773.tar.gz]
+[2024-04-06 11:35:38] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz]
+[2024-04-06 11:35:38] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
+[2024-04-06 11:35:38] INFO root fetch - main [MainThread]: Store serial: [22647072]
