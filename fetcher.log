@@ -19461,3 +19461,28 @@ EOFError: EOF read where object expected
 [2024-04-06 18:15:40] INFO root fetch - processPackages [protolint-bin-test]: Remove: archive file [/home/abi/fetcher/tmp/protolint_bin_test-0.49.4.post5-py2.py3-none-win_arm64.whl.zip]
 [2024-04-06 18:15:40] INFO root fetch - main [MainThread]: End processing [protolint-bin-test]: success
 [2024-04-06 18:15:40] INFO root fetch - main [MainThread]: Store serial: [22649281]
+[2024-04-06 18:17:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649281]
+[2024-04-06 18:17:49] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 18:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shell-gpt
+[2024-04-06 18:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot_plugin_acm_reminder
+[2024-04-06 18:17:49] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-04-06 18:17:49] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Downloading https://files.pythonhosted.org/packages/fa/ff/54ddce2fbec612851fabc54d70a3dcd09fc9425f02dc347c60ccbbaab97c/nonebot-plugin-acm-reminder-0.1.8.tar.gz
+[2024-04-06 18:17:49] INFO root fetch - processPackages [shell-gpt]: New version: [1.4.1] Old Version: [1.4.0]
+[2024-04-06 18:17:49] WARNING root fetch - processPackages [nonebot_plugin_acm_reminder]: Timeout reached during download
+[2024-04-06 18:17:49] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/5d/df/9297339587e24055dc47555e3b530adff9899051548c5b46a0aa186464d7/shell_gpt-1.4.0.tar.gz
+[2024-04-06 18:17:49] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Downloading https://files.pythonhosted.org/packages/ba/b1/b7f510f7d6f0f0e713d42f2b794808f1bf3649779381c248698aaf6516cf/nonebot-plugin-acm-reminder-0.1.9.tar.gz
+[2024-04-06 18:17:49] WARNING root fetch - processPackages [nonebot_plugin_acm_reminder]: Timeout reached during download
+[2024-04-06 18:17:49] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: executing diffoscope
+[2024-04-06 18:17:49] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-acm-reminder-0.1.8.tar.gz tmp/nonebot-plugin-acm-reminder-0.1.9.tar.gz --markdown 20240406/n/nonebot_plugin_acm_reminder/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2024-04-06 18:17:49] WARNING root fetch - processPackages [shell-gpt]: Timeout reached during download
+[2024-04-06 18:17:50] INFO root fetch - processPackages [shell-gpt]: Downloading https://files.pythonhosted.org/packages/0e/8c/8f2f98eb2287e51a150a61576243e1cc75e7bfc33f904c83a17af6bd5a6e/shell_gpt-1.4.1.tar.gz
+[2024-04-06 18:17:50] WARNING root fetch - processPackages [shell-gpt]: Timeout reached during download
+[2024-04-06 18:17:50] INFO root fetch - processPackages [shell-gpt]: executing diffoscope
+[2024-04-06 18:17:50] INFO root fetch - processPackages [shell-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shell_gpt-1.4.0.tar.gz tmp/shell_gpt-1.4.1.tar.gz --markdown 20240406/s/shell-gpt/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2024-04-06 18:17:50] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-acm-reminder-0.1.8.tar.gz]
+[2024-04-06 18:17:50] INFO root fetch - processPackages [nonebot_plugin_acm_reminder]: Remove: archive file [/home/abi/fetcher/tmp/nonebot-plugin-acm-reminder-0.1.9.tar.gz]
+[2024-04-06 18:17:50] INFO root fetch - main [MainThread]: End processing [nonebot_plugin_acm_reminder]: success
+[2024-04-06 18:17:51] INFO root fetch - processPackages [shell-gpt]: Remove: archive file [/home/abi/fetcher/tmp/shell_gpt-1.4.0.tar.gz]
+[2024-04-06 18:17:51] INFO root fetch - processPackages [shell-gpt]: Remove: archive file [/home/abi/fetcher/tmp/shell_gpt-1.4.1.tar.gz]
+[2024-04-06 18:17:51] INFO root fetch - main [MainThread]: End processing [shell-gpt]: success
+[2024-04-06 18:17:51] INFO root fetch - main [MainThread]: Store serial: [22649290]
