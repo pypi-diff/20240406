@@ -19697,3 +19697,39 @@ EOFError: EOF read where object expected
 [2024-04-06 18:30:55] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
 [2024-04-06 18:30:55] INFO root fetch - main [MainThread]: End processing [nestpython]: success
 [2024-04-06 18:30:55] INFO root fetch - main [MainThread]: Store serial: [22649362]
+[2024-04-06 18:32:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22649362]
+[2024-04-06 18:33:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 18:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qbraid-core
+[2024-04-06 18:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: afeng-py-tools
+[2024-04-06 18:33:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wellets-cli
+[2024-04-06 18:33:04] INFO root fetch - processPackages [wellets-cli]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-04-06 18:33:04] INFO root fetch - processPackages [afeng-py-tools]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-04-06 18:33:04] INFO root fetch - processPackages [wellets-cli]: Downloading https://files.pythonhosted.org/packages/06/13/2df74c2c59337ad44899e5af47ec6ee451c5ead1f9f87c864489f75dcc4a/wellets_cli-1.9.1.tar.gz
+[2024-04-06 18:33:04] INFO root fetch - processPackages [qbraid-core]: New version: [0.1.0.dev4] Old Version: [0.1.0.dev3]
+[2024-04-06 18:33:04] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/03/96/e24f6bbf418707708ed1ab31dd8f4af000cdfcd56c3955e6bcf876e28182/afeng-py-tools-0.0.98.tar.gz
+[2024-04-06 18:33:04] WARNING root fetch - processPackages [wellets-cli]: Timeout reached during download
+[2024-04-06 18:33:04] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 18:33:04] INFO root fetch - processPackages [qbraid-core]: Downloading https://files.pythonhosted.org/packages/66/03/613aa6ca188c1e5d3284a3707ac08032944a2ed19917591cd6623e5dcd05/qbraid-core-0.1.0.dev3.tar.gz
+[2024-04-06 18:33:04] INFO root fetch - processPackages [wellets-cli]: Downloading https://files.pythonhosted.org/packages/b9/1d/596afb71e5f997f054c78efabde376506f3870fcee6bcc072ba3dd57b85e/wellets_cli-1.9.2.tar.gz
+[2024-04-06 18:33:04] INFO root fetch - processPackages [afeng-py-tools]: Downloading https://files.pythonhosted.org/packages/b2/0a/41c6034fd5c224a859e4249b1b09e63d7acefba4ae5ac80d406a778a1e32/afeng-py-tools-0.0.99.tar.gz
+[2024-04-06 18:33:04] WARNING root fetch - processPackages [wellets-cli]: Timeout reached during download
+[2024-04-06 18:33:04] INFO root fetch - processPackages [wellets-cli]: executing diffoscope
+[2024-04-06 18:33:04] INFO root fetch - processPackages [wellets-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wellets_cli-1.9.1.tar.gz tmp/wellets_cli-1.9.2.tar.gz --markdown 20240406/w/wellets-cli/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2024-04-06 18:33:04] WARNING root fetch - processPackages [qbraid-core]: Timeout reached during download
+[2024-04-06 18:33:04] WARNING root fetch - processPackages [afeng-py-tools]: Timeout reached during download
+[2024-04-06 18:33:04] INFO root fetch - processPackages [afeng-py-tools]: executing diffoscope
+[2024-04-06 18:33:04] INFO root fetch - processPackages [afeng-py-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/afeng-py-tools-0.0.98.tar.gz tmp/afeng-py-tools-0.0.99.tar.gz --markdown 20240406/a/afeng-py-tools/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2024-04-06 18:33:04] INFO root fetch - processPackages [qbraid-core]: Downloading https://files.pythonhosted.org/packages/ab/6c/64ba9683d74923bfc86db687d0a858e36a4fd7489379072a0147bc0a6308/qbraid-core-0.1.0.dev4.tar.gz
+[2024-04-06 18:33:05] WARNING root fetch - processPackages [qbraid-core]: Timeout reached during download
+[2024-04-06 18:33:05] INFO root fetch - processPackages [qbraid-core]: executing diffoscope
+[2024-04-06 18:33:05] INFO root fetch - processPackages [qbraid-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbraid-core-0.1.0.dev3.tar.gz tmp/qbraid-core-0.1.0.dev4.tar.gz --markdown 20240406/q/qbraid-core/0.1.0.dev3-0.1.0.dev4/diff.md --exclude *.pyd
+[2024-04-06 18:33:05] INFO root fetch - processPackages [wellets-cli]: Remove: archive file [/home/abi/fetcher/tmp/wellets_cli-1.9.1.tar.gz]
+[2024-04-06 18:33:05] INFO root fetch - processPackages [wellets-cli]: Remove: archive file [/home/abi/fetcher/tmp/wellets_cli-1.9.2.tar.gz]
+[2024-04-06 18:33:05] INFO root fetch - main [MainThread]: End processing [wellets-cli]: success
+[2024-04-06 18:33:05] INFO root fetch - processPackages [qbraid-core]: Remove: archive file [/home/abi/fetcher/tmp/qbraid-core-0.1.0.dev3.tar.gz]
+[2024-04-06 18:33:05] INFO root fetch - processPackages [qbraid-core]: Remove: archive file [/home/abi/fetcher/tmp/qbraid-core-0.1.0.dev4.tar.gz]
+[2024-04-06 18:33:05] INFO root fetch - main [MainThread]: End processing [qbraid-core]: success
+[2024-04-06 18:33:05] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.98.tar.gz]
+[2024-04-06 18:33:05] INFO root fetch - processPackages [afeng-py-tools]: Remove: archive file [/home/abi/fetcher/tmp/afeng-py-tools-0.0.99.tar.gz]
+[2024-04-06 18:33:05] INFO root fetch - main [MainThread]: End processing [afeng-py-tools]: success
+[2024-04-06 18:33:05] INFO root fetch - main [MainThread]: Store serial: [22649371]
