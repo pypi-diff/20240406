@@ -10222,3 +10222,31 @@
 [2024-04-06 06:55:26] INFO root fetch - processPackages [ladybug-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/ladybug-grasshopper-1.9.4.tar.gz]
 [2024-04-06 06:55:26] INFO root fetch - main [MainThread]: End processing [ladybug-grasshopper]: success
 [2024-04-06 06:55:26] INFO root fetch - main [MainThread]: Store serial: [22645752]
+[2024-04-06 06:57:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645752]
+[2024-04-06 06:57:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 06:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansar-connect
+[2024-04-06 06:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lbt-grasshopper
+[2024-04-06 06:57:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yaml-to-markdown
+[2024-04-06 06:57:35] WARNING root fetch - processPackages [yaml-to-markdown]: Skipping, unable to determine old version
+[2024-04-06 06:57:35] INFO root fetch - main [MainThread]: End processing [yaml-to-markdown] error
+[2024-04-06 06:57:35] INFO root fetch - processPackages [ansar-connect]: New version: [0.1.134] Old Version: [0.1.133]
+[2024-04-06 06:57:35] INFO root fetch - processPackages [lbt-grasshopper]: New version: [1.8.5] Old Version: [1.8.4]
+[2024-04-06 06:57:35] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/9b/39/cc378379f38e80dda29a7bb6ec5dd0d138557e7021d7b5de2d5a70b0d8fc/ansar-connect-0.1.133.tar.gz
+[2024-04-06 06:57:35] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/e2/1e/8114327cf949963eb04ff805430f9b23fc1597b26a35b7642088592decb1/lbt-grasshopper-1.8.4.tar.gz
+[2024-04-06 06:57:35] WARNING root fetch - processPackages [ansar-connect]: Timeout reached during download
+[2024-04-06 06:57:35] WARNING root fetch - processPackages [lbt-grasshopper]: Timeout reached during download
+[2024-04-06 06:57:36] INFO root fetch - processPackages [ansar-connect]: Downloading https://files.pythonhosted.org/packages/bc/af/45f78f1dd4892d4dc868b04db58db12f662ae8b8ff9c04a30cdba1996de1/ansar-connect-0.1.134.tar.gz
+[2024-04-06 06:57:36] WARNING root fetch - processPackages [ansar-connect]: Timeout reached during download
+[2024-04-06 06:57:36] INFO root fetch - processPackages [ansar-connect]: executing diffoscope
+[2024-04-06 06:57:36] INFO root fetch - processPackages [ansar-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansar-connect-0.1.133.tar.gz tmp/ansar-connect-0.1.134.tar.gz --markdown 20240406/a/ansar-connect/0.1.133-0.1.134/diff.md --exclude *.pyd
+[2024-04-06 06:57:36] INFO root fetch - processPackages [lbt-grasshopper]: Downloading https://files.pythonhosted.org/packages/6c/78/39a2fb4082a82ef9b5b1f006e9a23f3e7330b9417efd00339b8a424a8273/lbt-grasshopper-1.8.5.tar.gz
+[2024-04-06 06:57:36] WARNING root fetch - processPackages [lbt-grasshopper]: Timeout reached during download
+[2024-04-06 06:57:36] INFO root fetch - processPackages [lbt-grasshopper]: executing diffoscope
+[2024-04-06 06:57:36] INFO root fetch - processPackages [lbt-grasshopper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lbt-grasshopper-1.8.4.tar.gz tmp/lbt-grasshopper-1.8.5.tar.gz --markdown 20240406/l/lbt-grasshopper/1.8.4-1.8.5/diff.md --exclude *.pyd
+[2024-04-06 06:57:36] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.133.tar.gz]
+[2024-04-06 06:57:36] INFO root fetch - processPackages [ansar-connect]: Remove: archive file [/home/abi/fetcher/tmp/ansar-connect-0.1.134.tar.gz]
+[2024-04-06 06:57:36] INFO root fetch - main [MainThread]: End processing [ansar-connect]: success
+[2024-04-06 06:57:36] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.4.tar.gz]
+[2024-04-06 06:57:36] INFO root fetch - processPackages [lbt-grasshopper]: Remove: archive file [/home/abi/fetcher/tmp/lbt-grasshopper-1.8.5.tar.gz]
+[2024-04-06 06:57:36] INFO root fetch - main [MainThread]: End processing [lbt-grasshopper]: success
+[2024-04-06 06:57:36] INFO root fetch - main [MainThread]: Store serial: [22645763]
