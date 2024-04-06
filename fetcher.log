@@ -13063,3 +13063,28 @@
 [2024-04-06 11:11:30] INFO root fetch - processPackages [pulumi-pagerduty]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_pagerduty-4.9.0a1709566454.tar.gz]
 [2024-04-06 11:11:30] INFO root fetch - main [MainThread]: End processing [pulumi-pagerduty]: success
 [2024-04-06 11:11:30] INFO root fetch - main [MainThread]: Store serial: [22646982]
+[2024-04-06 11:13:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646982]
+[2024-04-06 11:13:39] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-04-06 11:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Comel
+[2024-04-06 11:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nodoc
+[2024-04-06 11:13:39] INFO root fetch - processPackages [nodoc]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-04-06 11:13:39] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/4c/d1/8b9aa7fc6079375d39e4c528d339a014438130e763c7270344c15002a321/nodoc-1.0.8.tar.gz
+[2024-04-06 11:13:39] INFO root fetch - processPackages [Comel]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-04-06 11:13:39] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:13:39] INFO root fetch - processPackages [Comel]: Downloading https://files.pythonhosted.org/packages/e5/f2/d9943883622afbe6f174135a295e128446b0bfc8c8e58e4d8cfef715e5eb/Comel-0.2.2.tar.gz
+[2024-04-06 11:13:39] INFO root fetch - processPackages [nodoc]: Downloading https://files.pythonhosted.org/packages/c3/01/365275f65437bdcd49fb8054d4dd45304b5a0f8ee40ef9cdaf3d0fa5ad12/nodoc-1.0.9.tar.gz
+[2024-04-06 11:13:40] WARNING root fetch - processPackages [nodoc]: Timeout reached during download
+[2024-04-06 11:13:40] INFO root fetch - processPackages [nodoc]: executing diffoscope
+[2024-04-06 11:13:40] INFO root fetch - processPackages [nodoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodoc-1.0.8.tar.gz tmp/nodoc-1.0.9.tar.gz --markdown 20240406/n/nodoc/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2024-04-06 11:13:40] WARNING root fetch - processPackages [Comel]: Timeout reached during download
+[2024-04-06 11:13:40] INFO root fetch - processPackages [Comel]: Downloading https://files.pythonhosted.org/packages/c3/cd/0e53caf909d2b968873d90b17a0c61ebb7e9a943a1a8d80104c71de12075/Comel-0.2.3.tar.gz
+[2024-04-06 11:13:40] WARNING root fetch - processPackages [Comel]: Timeout reached during download
+[2024-04-06 11:13:40] INFO root fetch - processPackages [Comel]: executing diffoscope
+[2024-04-06 11:13:40] INFO root fetch - processPackages [Comel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Comel-0.2.2.tar.gz tmp/Comel-0.2.3.tar.gz --markdown 20240406/C/Comel/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2024-04-06 11:13:40] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.8.tar.gz]
+[2024-04-06 11:13:40] INFO root fetch - processPackages [nodoc]: Remove: archive file [/home/abi/fetcher/tmp/nodoc-1.0.9.tar.gz]
+[2024-04-06 11:13:40] INFO root fetch - main [MainThread]: End processing [nodoc]: success
+[2024-04-06 11:13:40] INFO root fetch - processPackages [Comel]: Remove: archive file [/home/abi/fetcher/tmp/Comel-0.2.2.tar.gz]
+[2024-04-06 11:13:40] INFO root fetch - processPackages [Comel]: Remove: archive file [/home/abi/fetcher/tmp/Comel-0.2.3.tar.gz]
+[2024-04-06 11:13:40] INFO root fetch - main [MainThread]: End processing [Comel]: success
+[2024-04-06 11:13:40] INFO root fetch - main [MainThread]: Store serial: [22646989]
