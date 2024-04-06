@@ -8617,3 +8617,31 @@
 [2024-04-06 05:18:53] INFO root fetch - processPackages [scores]: Remove: archive file [/home/abi/fetcher/tmp/scores-0.5.tar.gz]
 [2024-04-06 05:18:53] INFO root fetch - main [MainThread]: End processing [scores]: success
 [2024-04-06 05:18:53] INFO root fetch - main [MainThread]: Store serial: [22645221]
+[2024-04-06 05:20:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22645221]
+[2024-04-06 05:21:02] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-04-06 05:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-currency-rate-update-xe
+[2024-04-06 05:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addons-oca-currency
+[2024-04-06 05:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pystools
+[2024-04-06 05:21:02] WARNING root fetch - processPackages [odoo14-addon-currency-rate-update-xe]: Skipping, unable to determine old version
+[2024-04-06 05:21:02] INFO root fetch - main [MainThread]: End processing [odoo14-addon-currency-rate-update-xe] error
+[2024-04-06 05:21:02] INFO root fetch - processPackages [odoo14-addons-oca-currency]: New version: [14.0.20240405.0] Old Version: [14.0.20230920.0]
+[2024-04-06 05:21:02] INFO root fetch - processPackages [pystools]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 05:21:02] INFO root fetch - processPackages [pystools]: Downloading https://files.pythonhosted.org/packages/d3/f1/f6fef6b574bd57970579f257d2f3b2adf9f6b87b20d9dc2c11e18d2a4a47/pystools-0.0.8.tar.gz
+[2024-04-06 05:21:02] INFO root fetch - processPackages [odoo14-addons-oca-currency]: Downloading https://files.pythonhosted.org/packages/3f/ba/9c10d437cd3aaa0177213a84d67182764f4459ca81c8b038f2c9ac107dc2/odoo14_addons_oca_currency-14.0.20230920.0-py3-none-any.whl
+[2024-04-06 05:21:02] WARNING root fetch - processPackages [odoo14-addons-oca-currency]: Timeout reached during download
+[2024-04-06 05:21:02] INFO root fetch - processPackages [odoo14-addons-oca-currency]: Downloading https://files.pythonhosted.org/packages/e7/ed/76c094591093f3dfb02ec4237aa7c680ae6a15da9da3791e13a322390b21/odoo14_addons_oca_currency-14.0.20240405.0-py3-none-any.whl
+[2024-04-06 05:21:02] WARNING root fetch - processPackages [odoo14-addons-oca-currency]: Timeout reached during download
+[2024-04-06 05:21:02] INFO root fetch - processPackages [odoo14-addons-oca-currency]: executing diffoscope
+[2024-04-06 05:21:02] INFO root fetch - processPackages [odoo14-addons-oca-currency]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_currency-14.0.20230920.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_currency-14.0.20240405.0-py3-none-any.whl.zip --markdown 20240406/o/odoo14-addons-oca-currency/14.0.20230920.0-14.0.20240405.0/diff.md --exclude *.pyd
+[2024-04-06 05:21:03] WARNING root fetch - processPackages [pystools]: Timeout reached during download
+[2024-04-06 05:21:03] INFO root fetch - processPackages [odoo14-addons-oca-currency]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_currency-14.0.20230920.0-py3-none-any.whl.zip]
+[2024-04-06 05:21:03] INFO root fetch - processPackages [odoo14-addons-oca-currency]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addons_oca_currency-14.0.20240405.0-py3-none-any.whl.zip]
+[2024-04-06 05:21:03] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-currency]: success
+[2024-04-06 05:21:03] INFO root fetch - processPackages [pystools]: Downloading https://files.pythonhosted.org/packages/9b/5a/9f2cf38e22565c5aa2ecb7be3dbecb7a44f7d23efbd86fd532eacd613f62/pystools-0.0.9.tar.gz
+[2024-04-06 05:21:03] WARNING root fetch - processPackages [pystools]: Timeout reached during download
+[2024-04-06 05:21:03] INFO root fetch - processPackages [pystools]: executing diffoscope
+[2024-04-06 05:21:03] INFO root fetch - processPackages [pystools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystools-0.0.8.tar.gz tmp/pystools-0.0.9.tar.gz --markdown 20240406/p/pystools/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 05:21:04] INFO root fetch - processPackages [pystools]: Remove: archive file [/home/abi/fetcher/tmp/pystools-0.0.8.tar.gz]
+[2024-04-06 05:21:04] INFO root fetch - processPackages [pystools]: Remove: archive file [/home/abi/fetcher/tmp/pystools-0.0.9.tar.gz]
+[2024-04-06 05:21:04] INFO root fetch - main [MainThread]: End processing [pystools]: success
+[2024-04-06 05:21:04] INFO root fetch - main [MainThread]: Store serial: [22645229]
