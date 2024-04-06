@@ -11609,3 +11609,34 @@
 [2024-04-06 09:10:36] INFO root fetch - processPackages [pyln-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/pyln_grpc_proto-24.2.1.tar.gz]
 [2024-04-06 09:10:36] INFO root fetch - main [MainThread]: End processing [pyln-grpc-proto]: success
 [2024-04-06 09:10:36] INFO root fetch - main [MainThread]: Store serial: [22646345]
+[2024-04-06 09:12:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [22646345]
+[2024-04-06 09:12:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-04-06 09:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leakysim
+[2024-04-06 09:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kilmlogger
+[2024-04-06 09:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zensvi
+[2024-04-06 09:12:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygments-lexer-petrichorscript
+[2024-04-06 09:12:45] INFO root fetch - processPackages [kilmlogger]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-04-06 09:12:45] WARNING root fetch - processPackages [pygments-lexer-petrichorscript]: Skipping, unable to determine old version
+[2024-04-06 09:12:45] INFO root fetch - main [MainThread]: End processing [pygments-lexer-petrichorscript] error
+[2024-04-06 09:12:45] WARNING root fetch - processPackages [leakysim]: Skipping, unable to determine old version
+[2024-04-06 09:12:45] INFO root fetch - main [MainThread]: End processing [leakysim] error
+[2024-04-06 09:12:45] INFO root fetch - processPackages [zensvi]: New version: [0.9.8] Old Version: [0.9.7]
+[2024-04-06 09:12:45] INFO root fetch - processPackages [kilmlogger]: Downloading https://files.pythonhosted.org/packages/c2/d3/02d583711bd244538f5576dc61859e71ff9ba4faa947cdf90fbd3f69d8ec/kilmlogger-0.0.8.tar.gz
+[2024-04-06 09:12:45] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/c4/b3/5f6efb302a54041edfdb7cee7e64caaad9afec14cd8770bb2ceb8f6b6fc8/zensvi-0.9.7.tar.gz
+[2024-04-06 09:12:45] WARNING root fetch - processPackages [zensvi]: Timeout reached during download
+[2024-04-06 09:12:45] WARNING root fetch - processPackages [kilmlogger]: Timeout reached during download
+[2024-04-06 09:12:45] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/58/a0/fa16c5167950fd72ac2b9de84f31f095275d7e96dede1c5f126683fca082/zensvi-0.9.8.tar.gz
+[2024-04-06 09:12:46] INFO root fetch - processPackages [kilmlogger]: Downloading https://files.pythonhosted.org/packages/81/61/c6e2ccb23089fad8ec80bbd9e825578f4726f3dd9244183ce10dc6e224a1/kilmlogger-0.0.9.tar.gz
+[2024-04-06 09:12:46] WARNING root fetch - processPackages [zensvi]: Timeout reached during download
+[2024-04-06 09:12:46] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2024-04-06 09:12:46] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.9.7.tar.gz tmp/zensvi-0.9.8.tar.gz --markdown 20240406/z/zensvi/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2024-04-06 09:12:46] WARNING root fetch - processPackages [kilmlogger]: Timeout reached during download
+[2024-04-06 09:12:46] INFO root fetch - processPackages [kilmlogger]: executing diffoscope
+[2024-04-06 09:12:46] INFO root fetch - processPackages [kilmlogger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240406:/home/abi/fetcher/20240406:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kilmlogger-0.0.8.tar.gz tmp/kilmlogger-0.0.9.tar.gz --markdown 20240406/k/kilmlogger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2024-04-06 09:12:46] INFO root fetch - processPackages [kilmlogger]: Remove: archive file [/home/abi/fetcher/tmp/kilmlogger-0.0.8.tar.gz]
+[2024-04-06 09:12:46] INFO root fetch - processPackages [kilmlogger]: Remove: archive file [/home/abi/fetcher/tmp/kilmlogger-0.0.9.tar.gz]
+[2024-04-06 09:12:46] INFO root fetch - main [MainThread]: End processing [kilmlogger]: success
+[2024-04-06 09:12:46] INFO root fetch - processPackages [zensvi]: Remove: archive file [/home/abi/fetcher/tmp/zensvi-0.9.7.tar.gz]
+[2024-04-06 09:12:46] INFO root fetch - processPackages [zensvi]: Remove: archive file [/home/abi/fetcher/tmp/zensvi-0.9.8.tar.gz]
+[2024-04-06 09:12:46] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2024-04-06 09:12:46] INFO root fetch - main [MainThread]: Store serial: [22646384]
